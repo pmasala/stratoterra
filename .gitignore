@@ -1,0 +1,36 @@
+# Environment and secrets
+.env
+.env.local
+*.env
+
+# API keys
+api_keys.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if using build tools)
+node_modules/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Staging raw data (regenerated each run)
+staging/raw_collected/
+staging/processed/
+
+# Large archive snapshots (keep in git history, not working tree)
+# archive/
+
+# Test reports (regenerated)
+tests/reports/
