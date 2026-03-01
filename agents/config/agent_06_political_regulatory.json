@@ -1,0 +1,45 @@
+{
+  "id": "agent_06",
+  "name": "Political & Regulatory Gatherer",
+  "phase": 1,
+  "phase_name": "GATHER",
+  "description": "Monitors elections, government changes, political instability events, and investment-relevant regulatory developments across all tracked countries.",
+  "inputs": [
+    "data/indices/country_list.json"
+  ],
+  "outputs": [
+    "staging/raw_collected/political_regulatory_{DATE}.json"
+  ],
+  "timeout_minutes": 15,
+  "api_sources": [
+    "Freedom House (freedomhouse.org)",
+    "IDEA Electoral Data (idea.int)",
+    "Economist Intelligence Unit (eiu.com)",
+    "Transparency International (transparency.org)",
+    "V-Dem Institute (v-dem.net)",
+    "ICRG Political Risk (prsgroup.com)"
+  ],
+  "record_types": [
+    "election",
+    "government_change",
+    "cabinet_reshuffle",
+    "policy_shift",
+    "unrest",
+    "coup_attempt",
+    "protest",
+    "regulation_change",
+    "capital_controls",
+    "expropriation",
+    "constitutional_change",
+    "judicial_ruling",
+    "central_bank_independence_change"
+  ],
+  "investor_relevance_thresholds": {
+    "high": "Directly affects capital flows, FDI rules, or property rights",
+    "medium": "Affects operating environment or political risk premium",
+    "low": "Background context, no immediate investor impact"
+  },
+  "retry_on_failure": true,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_06_political_regulatory.md"
+}

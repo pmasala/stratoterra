@@ -1,0 +1,37 @@
+{
+  "id": "agent_15",
+  "name": "Data Quality Reporter",
+  "phase": 7,
+  "phase_name": "FINALIZE",
+  "description": "Generates a comprehensive quality report covering data coverage, staleness, confidence scores, validation outcomes, and agent performance. Presents the report to the human operator before archiving.",
+  "inputs": [
+    "data/countries/*.json",
+    "data/metadata/last_update.json",
+    "data/metadata/update_log.json",
+    "staging/validated/validated_updates_{DATE}.json",
+    "staging/run_log.json"
+  ],
+  "outputs": [
+    "data/metadata/quality_report_{DATE}.json"
+  ],
+  "timeout_minutes": 10,
+  "quality_checks": [
+    "coverage_per_country",
+    "coverage_per_tier",
+    "staleness_by_factor_and_tier",
+    "confidence_per_country_and_layer",
+    "validation_verdict_distribution",
+    "agent_performance_duration_and_records"
+  ],
+  "coverage_targets": {
+    "tier_1_min_pct": 90,
+    "tier_2_min_pct": 70,
+    "tier_3_min_pct": 50
+  },
+  "confidence_flag_threshold": 0.3,
+  "staleness_flag_priority": ["tier_1", "tier_2", "tier_3"],
+  "human_review_required": true,
+  "retry_on_failure": false,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_15_quality.md"
+}

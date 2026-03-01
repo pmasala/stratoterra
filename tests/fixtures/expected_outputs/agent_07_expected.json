@@ -1,0 +1,74 @@
+{
+  "_description": "Minimal expected output structure from Agent 07 (Fact Extractor & Structurer). Used by UT-AGT-002.",
+  "_schema_version": "1.0",
+  "processing_date": "2026-03-01",
+  "agent": "fact_extractor",
+  "run_id": "2026-W09",
+  "factor_updates": [
+    {
+      "update_id": "upd_001",
+      "target": "country",
+      "country_code": "USA",
+      "relation_id": null,
+      "factor_path": "macroeconomic.gdp_real_growth_rate_pct",
+      "new_value": 2.5,
+      "previous_value": null,
+      "source_agent": "official_stats_gatherer",
+      "source_name": "IMF WEO",
+      "source_url": "https://www.imf.org/en/Publications/WEO",
+      "source_date": "2026-01-31",
+      "confidence": 0.90,
+      "anomaly_flag": false,
+      "conflict_flag": false,
+      "alternatives": [],
+      "notes": ""
+    },
+    {
+      "update_id": "upd_002",
+      "target": "country",
+      "country_code": "TUR",
+      "relation_id": null,
+      "factor_path": "macroeconomic.inflation_rate_cpi_pct",
+      "new_value": 45.2,
+      "previous_value": null,
+      "source_agent": "official_stats_gatherer",
+      "source_name": "World Bank",
+      "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TR",
+      "source_date": "2026-02-15",
+      "confidence": 0.88,
+      "anomaly_flag": false,
+      "conflict_flag": false,
+      "alternatives": [],
+      "notes": ""
+    }
+  ],
+  "event_signals": [
+    {
+      "event_id": "evt_2026-03-01_001",
+      "affected_countries": ["USA", "CHN"],
+      "affected_factors": ["relations.CHN_USA.trade.tension_index"],
+      "signal_direction": "negative",
+      "signal_strength": 0.7,
+      "description": "Escalation in trade rhetoric between US and China"
+    }
+  ],
+  "unmapped_records": [],
+  "summary": {
+    "total_input_records": 50,
+    "direct_updates": 2,
+    "event_signals": 1,
+    "unmapped": 0,
+    "conflicts_detected": 0
+  },
+  "_required_fields": [
+    "processing_date", "agent", "run_id",
+    "factor_updates", "event_signals", "unmapped_records", "summary"
+  ],
+  "_required_update_fields": [
+    "update_id", "target", "country_code", "factor_path",
+    "new_value", "confidence", "anomaly_flag", "conflict_flag"
+  ],
+  "_required_summary_fields": [
+    "total_input_records", "direct_updates", "event_signals"
+  ]
+}

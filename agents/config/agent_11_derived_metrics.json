@@ -1,0 +1,45 @@
+{
+  "id": "agent_11",
+  "name": "Derived Metrics Calculator",
+  "phase": 5,
+  "phase_name": "ANALYZE",
+  "description": "Computes composite and derived scores from base factors for all 75 countries, including national power index, political risk premium, market accessibility score, and resource self-sufficiency. Updates global rankings.",
+  "inputs": [
+    "data/countries/*.json"
+  ],
+  "outputs": [
+    "data/countries/*.json",
+    "data/global/global_rankings.json"
+  ],
+  "timeout_minutes": 15,
+  "derived_scores": {
+    "resource_self_sufficiency_index": {
+      "range": "0-1",
+      "components": ["energy", "food", "water", "key_minerals"],
+      "formula": "average of (production/consumption) capped at 1.0"
+    },
+    "energy_independence_index": {
+      "range": "0-1",
+      "formula": "domestic_energy_production / domestic_energy_consumption"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "range": "0-1",
+      "formula": "based on maritime_chokepoint_dependency and trade_volumes"
+    },
+    "composite_national_power_index": {
+      "range": "0-100",
+      "formula": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power"
+    },
+    "political_risk_premium_bps": {
+      "range": "0+",
+      "formula": "rating_base_spread + stability_adjustment + conflict_adjustment + sanctions_adjustment + democracy_adjustment"
+    },
+    "market_accessibility_score": {
+      "range": "0-1",
+      "components": ["capital_account_openness", "stock_market_cap", "financial_development_index", "ease_of_doing_business"]
+    }
+  },
+  "retry_on_failure": false,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_11_derived_metrics.md"
+}

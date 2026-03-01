@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://stratoterra.io/schemas/briefing_schema.json",
+  "title": "WeeklyBriefing",
+  "description": "Schema for the weekly briefing file (data/global/weekly_briefing_{date}.json or data/chunks/global/weekly_briefing.json).",
+  "type": "object",
+  "required": [
+    "headline",
+    "date",
+    "market_context",
+    "top_stories",
+    "regional_summaries"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "headline": {
+      "type": "string",
+      "description": "Main headline for the weekly briefing",
+      "minLength": 1
+    },
+    "date": {
+      "type": "string",
+      "description": "Publication date of the briefing in ISO 8601 format (date or date-time)",
+      "minLength": 1
+    },
+    "schema_version": {
+      "type": "string",
+      "description": "Schema version string"
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "ISO 8601 UTC timestamp of generation",
+      "format": "date-time"
+    },
+    "market_context": {
+      "type": ["string", "object"],
+      "description": "High-level market context for the week. May be a string summary or a structured object."
+    },
+    "top_stories": {
+      "type": "array",
+      "description": "List of top geopolitical stories of the week",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["title", "summary"],
+        "additionalProperties": true,
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "countries_involved": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Z]{3}$"
+            }
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["critical", "warning", "watch", "informational"]
+          }
+        }
+      }
+    },
+    "regional_summaries": {
+      "type": "object",
+      "description": "Keyed by region name, each value is a summary string or object for that region",
+      "additionalProperties": {
+        "type": ["string", "object"]
+      },
+      "minProperties": 1
+    },
+    "analyst_note": {
+      "type": "string",
+      "description": "Optional note from the AI analyst"
+    },
+    "ai_generated": {
+      "type": "boolean",
+      "description": "Flag indicating AI-generated content (must be labeled per project rules)"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "agent_08",
+  "name": "Cross-Validator & Anomaly Detector",
+  "phase": 3,
+  "phase_name": "VALIDATE",
+  "description": "Validates every proposed factor update against plausibility ranges, historical change magnitudes, cross-source consistency, and internal consistency rules. Produces verdicts and escalates uncertain high-impact changes for human review.",
+  "inputs": [
+    "staging/processed/factor_updates_{DATE}.json",
+    "data/countries/*.json",
+    "data/timeseries/*.json"
+  ],
+  "outputs": [
+    "staging/validated/validated_updates_{DATE}.json",
+    "staging/validated/escalation_report_{DATE}.json"
+  ],
+  "timeout_minutes": 20,
+  "plausibility_ranges": {
+    "gdp_real_growth_rate_pct": [-30, 30],
+    "inflation_rate_cpi_pct": [-10, 1000],
+    "population_quarterly_change_pct": [-2, 2],
+    "military_personnel_quarterly_change_pct": [-20, 20],
+    "exchange_rate_weekly_change_pct": [-30, 30],
+    "all_indices_within_defined_range": true
+  },
+  "verdict_types": ["ACCEPT", "ACCEPT_WITH_NOTE", "FLAG", "REJECT", "ESCALATE"],
+  "escalate_criteria": [
+    "sovereign_credit_rating_change",
+    "leadership_change_head_of_state",
+    "new_comprehensive_sanctions",
+    "sanctions_lifted",
+    "gdp_growth_change_gt_3pp",
+    "military_conflict_status_change",
+    "nuclear_status_change",
+    "confidence_lt_0.4_significant_change"
+  ],
+  "escalate_target_max": 20,
+  "human_review_required": true,
+  "retry_on_failure": false,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_08_validator.md"
+}

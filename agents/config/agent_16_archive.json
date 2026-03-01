@@ -1,0 +1,59 @@
+{
+  "id": "agent_16",
+  "name": "Archive & Commit Preparer",
+  "phase": 7,
+  "phase_name": "FINALIZE",
+  "description": "Creates an archive snapshot, cleans staging directories, generates UI-optimized chunk files, and prepares the git commit message for human review and execution.",
+  "inputs": [
+    "data/countries/*.json",
+    "data/relations/*.json",
+    "data/indices/*.json",
+    "data/global/*.json",
+    "data/metadata/quality_report_{DATE}.json",
+    "staging/run_log.json"
+  ],
+  "outputs": [
+    "archive/{RUN_ID}/last_update_snapshot.json",
+    "data/chunks/country-summary/all_countries_summary.json",
+    "data/chunks/country-detail/*.json",
+    "data/chunks/relations/*.json",
+    "data/chunks/global/*.json",
+    "data/chunks/manifest.json",
+    "data/indices/relation_index.json"
+  ],
+  "timeout_minutes": 10,
+  "staging_cleanup": {
+    "delete": ["staging/raw_collected/*"],
+    "keep": ["staging/validated/*", "staging/trends/*", "staging/run_log.json"]
+  },
+  "chunk_generation": {
+    "all_countries_summary": {
+      "target_path": "data/chunks/country-summary/all_countries_summary.json",
+      "target_size_kb": 500,
+      "fields_included": [
+        "code", "name", "tier", "lat", "lon",
+        "composite_national_power_index",
+        "overall_investment_risk_score",
+        "political_stability_score",
+        "gdp_nominal_usd",
+        "gdp_real_growth_rate_pct",
+        "active_alerts_count",
+        "top_alert_severity",
+        "narrative_headline",
+        "last_updated"
+      ]
+    },
+    "country_detail": "full country JSON per-file in data/chunks/country-detail/",
+    "relations": "bilateral pair summaries in data/chunks/relations/"
+  },
+  "git_commit": {
+    "action": "prepare_message_for_human_review",
+    "human_executes": true,
+    "message_template": "Weekly update {RUN_ID}\n\nCountries updated: {N}\nRelations updated: {N}\nNew alerts: {N_critical} critical, {N_warning} warning, {N_watch} watch\nCoverage: {pct}% avg across Tier 1\nQuality: {confidence_avg} avg confidence\n\nTop changes:\n- {change_1}\n- {change_2}\n- {change_3}"
+  },
+  "prerequisite_agent": "agent_15",
+  "prerequisite_condition": "human_acknowledged_quality_report",
+  "retry_on_failure": false,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_16_archive_commit.md"
+}

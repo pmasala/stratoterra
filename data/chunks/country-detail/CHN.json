@@ -1,0 +1,1170 @@
+{
+  "code": "CHN",
+  "name": "China",
+  "region": "east_asia",
+  "tier": 1,
+  "last_updated": "2026-03-01T00:00:00Z",
+  "schema_version": "1.0",
+
+  "executive_summary": "China remains the world's second-largest economy by nominal GDP at approximately $18.5 trillion, and the largest by purchasing power parity at roughly $35 trillion, though growth has decelerated to around 4.5% as the post-pandemic rebound fades and structural headwinds mount. The property sector crisis — which directly accounts for roughly 25-30% of economic activity — continues to weigh on domestic demand, with major developers in financial distress and consumer confidence subdued. Geopolitically, China is navigating an increasingly competitive relationship with the United States, sustaining heavy technology export controls and tariffs while deepening ties with Russia, the Global South, and BRI partner economies. The Chinese Communist Party under Xi Jinping maintains firm political control but faces the dual challenge of reviving animal spirits in a risk-averse private sector while managing elevated youth unemployment and a rapidly aging demographic structure.",
+
+  "key_changes": [
+    "Property sector stabilization measures have been expanded; PBOC has cut mortgage rates and reserve requirements for the fifth consecutive cycle, but transaction volumes remain 35-40% below 2021 peaks, and land sales revenue — once a critical local government funding source — has not recovered meaningfully.",
+    "US-China semiconductor restrictions tightened further in late 2025, with additional entities added to the export control list and restrictions extended to advanced AI chip architectures; China has responded by accelerating domestic chip design and fab investment, with SMIC and Huawei HiSilicon posting incremental capability advances.",
+    "China's current account surplus widened to over $400 billion in 2025, reflecting weak domestic import demand and continued export competitiveness in EVs, solar panels, and industrial machinery, though trade frictions with the EU and Southeast Asian nations have increased.",
+    "Youth unemployment peaked above 21% before the National Bureau of Statistics suspended monthly reporting; the indicator resumed with a revised methodology that excludes students, showing lower headline figures, but underlying labor market slack remains a significant political and economic concern.",
+    "The People's Liberation Army conducted its largest-scale exercises around Taiwan in over a decade in mid-2025, including live-fire drills simulating a blockade scenario, raising regional tensions and prompting accelerated US arms transfers to Taiwan."
+  ],
+
+  "active_alerts": [
+    {
+      "alert_type": "economic_crisis",
+      "severity": "warning",
+      "title": "Property Sector Distress: Prolonged Balance-Sheet Recession Risk",
+      "description": "China's property sector remains in a multi-year downturn. Major developers including Evergrande (liquidated), Country Garden (restructuring), and Sunac remain in or near default. Housing starts and completions are well below pre-crisis levels, and household net worth — heavily concentrated in real estate — has declined. The risk of a prolonged balance-sheet recession similar to Japan's post-1990 experience is elevated, with negative feedback loops between falling property values, weak consumer spending, and cautious bank lending.",
+      "affected_factors": ["macroeconomic.gdp_real_growth_rate_pct", "macroeconomic.non_performing_loans_pct", "macroeconomic.inflation_rate_cpi_pct", "derived.sovereign_default_probability_12m"],
+      "first_detected": "2021-09-15T00:00:00Z",
+      "last_updated": "2026-03-01T00:00:00Z",
+      "source_events": ["Evergrande liquidation order Jan 2024", "Country Garden debt restructuring 2024", "PBOC emergency rate cuts 2024-2025", "NBS property price index 24 consecutive months of YoY decline"]
+    },
+    {
+      "alert_type": "military_escalation",
+      "severity": "watch",
+      "title": "Taiwan Strait: Elevated Military Activity and Coercive Pressure",
+      "description": "The PLA has significantly increased the frequency and scale of military exercises in the Taiwan Strait and surrounding waters. Incursions into Taiwan's Air Defense Identification Zone have reached record levels. While an active kinetic conflict remains the base-case low-probability scenario, the risk of miscalculation or an incident triggering a broader crisis has increased. Supply chains transiting the Western Pacific — particularly semiconductor and electronics flows — face tail-risk disruption. Investors with significant exposure to Taiwan (TSMC supply chain), South Korea, and Japan should monitor developments closely.",
+      "affected_factors": ["military.active_conflicts", "relations.TWN", "derived.supply_chain_chokepoint_exposure"],
+      "first_detected": "2022-08-04T00:00:00Z",
+      "last_updated": "2026-02-28T00:00:00Z",
+      "source_events": ["PLA Eastern Theater Command exercises Aug 2022", "Record ADIZ incursions 2023-2025", "PLA large-scale joint exercises mid-2025", "US arms approvals to Taiwan"]
+    }
+  ],
+
+  "outlook": "China's medium-term growth trajectory is expected to settle in the 4-5% range, reflecting a structural shift from investment and export-led growth toward consumption — a transition that is progressing slowly and unevenly. The property sector is likely to remain a drag for two to three years, but the risk of a systemic financial crisis is moderated by the state's capacity to absorb losses through the banking system and local government financing vehicles. Deflation risk is the key near-term macroeconomic concern: CPI has hovered near zero and PPI has been negative for an extended period, threatening corporate margins and debt dynamics. On the geopolitical dimension, US-China decoupling in technology is likely to accelerate, but full economic decoupling remains impractical given the depth of trade interdependence. China's push for self-sufficiency in semiconductors, energy, and critical materials will shape global supply chains for the coming decade.",
+
+  "investor_implications": "China presents a complex and bifurcated investment landscape. Domestically listed A-shares are accessible via Stock Connect and offer exposure to sectors benefiting from state policy support — EVs, renewable energy, advanced manufacturing, and domestic consumption. However, earnings quality concerns, regulatory unpredictability (as demonstrated by the 2021 tech and education sector crackdowns), and capital account restrictions create meaningful risk premia. USD-denominated sovereign and quasi-sovereign bonds offer yield pickup but carry geopolitical tail risk. Foreign direct investment flows into China have declined sharply as multinationals pursue China-plus-one diversification strategies, reducing future earnings repatriation risk but also signaling reduced confidence in the investment climate. Sector-specific considerations: avoid sectors facing regulatory overhang (gaming, private tutoring, fintech without Party endorsement); favor state-aligned sectors receiving policy support (green energy, defense supply chain, domestic tech); monitor the RMB carefully — the PBOC has defended the 7.0-7.3 range against depreciation pressure but further weakness is possible if growth disappoints.",
+
+  "layers": {
+
+    "endowments": {
+      "natural_resources": [
+        {
+          "resource_type": "rare_earth_aggregate",
+          "resource_category": "RARE_EARTH_ELEMENTS",
+          "global_rank_reserves": 1,
+          "global_rank_production": 1,
+          "proven_reserves": 44000000,
+          "proven_reserves_unit": "tonnes",
+          "annual_production": 240000,
+          "annual_production_unit": "tonnes",
+          "annual_domestic_consumption": 120000,
+          "net_export_volume": 120000,
+          "export_dependency_ratio": 0.50,
+          "import_dependency_ratio": 0.0,
+          "global_share_of_production": 0.60,
+          "global_share_of_reserves": 0.35,
+          "years_to_depletion": 183,
+          "extraction_cost_relative": "low",
+          "resource_quality_grade": "standard",
+          "strategic_significance": "critical — dominant global supplier of elements essential for EV motors, wind turbines, defense electronics, and smartphone components. Export controls are an active geopolitical tool.",
+          "seasonal_production_profile": [1.0, 0.85, 1.0, 1.05, 1.05, 1.05, 1.05, 1.0, 1.0, 1.0, 1.0, 0.95],
+          "source": "USGS Mineral Commodity Summaries 2025",
+          "confidence": 0.82,
+          "last_updated": "2025-02-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        {
+          "resource_type": "coal_thermal",
+          "resource_category": "ENERGY",
+          "global_rank_reserves": 1,
+          "global_rank_production": 1,
+          "proven_reserves": 143197000000,
+          "proven_reserves_unit": "tonnes",
+          "annual_production": 4560000000,
+          "annual_production_unit": "tonnes",
+          "annual_domestic_consumption": 4430000000,
+          "net_export_volume": 130000000,
+          "export_dependency_ratio": 0.03,
+          "import_dependency_ratio": 0.0,
+          "global_share_of_production": 0.55,
+          "global_share_of_reserves": 0.14,
+          "years_to_depletion": 31,
+          "extraction_cost_relative": "medium",
+          "resource_quality_grade": "standard",
+          "strategic_significance": "high — provides energy security backbone but creates significant carbon liability and air quality issues. Transition risk exposure is substantial.",
+          "seasonal_production_profile": [1.1, 0.85, 0.95, 0.95, 1.0, 0.95, 1.0, 1.0, 1.05, 1.05, 1.05, 1.05],
+          "source": "IEA World Energy Statistics 2025; BP Statistical Review 2025",
+          "confidence": 0.88,
+          "last_updated": "2025-06-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        {
+          "resource_type": "iron_ore",
+          "resource_category": "METALS_CRITICAL",
+          "global_rank_production": 3,
+          "proven_reserves": 20000000000,
+          "proven_reserves_unit": "tonnes",
+          "annual_production": 375000000,
+          "annual_production_unit": "tonnes",
+          "annual_domestic_consumption": 1400000000,
+          "net_export_volume": -1025000000,
+          "export_dependency_ratio": 0.0,
+          "import_dependency_ratio": 0.73,
+          "global_share_of_production": 0.19,
+          "global_share_of_reserves": 0.13,
+          "years_to_depletion": 53,
+          "extraction_cost_relative": "high",
+          "resource_quality_grade": "low_grade",
+          "strategic_significance": "high strategic vulnerability — China is the world's largest steel producer but heavily dependent on Australian and Brazilian iron ore imports; supply disruption would be economically severe.",
+          "seasonal_production_profile": [0.9, 0.8, 1.0, 1.1, 1.1, 1.05, 1.0, 1.0, 1.0, 1.05, 1.05, 0.95],
+          "source": "USGS; World Steel Association",
+          "confidence": 0.80,
+          "last_updated": "2025-04-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        {
+          "resource_type": "natural_gas",
+          "resource_category": "ENERGY",
+          "global_rank_reserves": 6,
+          "proven_reserves": 6290000000000,
+          "proven_reserves_unit": "cubic_meters",
+          "annual_production": 230000000000,
+          "annual_production_unit": "cubic_meters",
+          "annual_domestic_consumption": 380000000000,
+          "net_export_volume": -150000000000,
+          "export_dependency_ratio": 0.0,
+          "import_dependency_ratio": 0.39,
+          "global_share_of_production": 0.05,
+          "global_share_of_reserves": 0.03,
+          "years_to_depletion": 27,
+          "extraction_cost_relative": "medium",
+          "resource_quality_grade": "standard",
+          "strategic_significance": "moderate — significant LNG imports from Australia, Qatar, and Russia (via Power of Siberia pipeline) create energy security dependency.",
+          "source": "IEA; BP Statistical Review 2025",
+          "confidence": 0.85,
+          "last_updated": "2025-06-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        {
+          "resource_type": "graphite",
+          "resource_category": "METALS_CRITICAL",
+          "global_rank_production": 1,
+          "global_share_of_production": 0.77,
+          "strategic_significance": "critical — dominant supplier for lithium-ion battery anodes; export restrictions imposed in 2023 as geopolitical leverage in EV supply chain.",
+          "extraction_cost_relative": "low",
+          "resource_quality_grade": "standard",
+          "source": "USGS 2025",
+          "confidence": 0.85,
+          "last_updated": "2025-02-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        {
+          "resource_type": "arable_land_km2",
+          "resource_category": "AGRICULTURAL_BIOLOGICAL",
+          "proven_reserves": 1650000,
+          "proven_reserves_unit": "km2",
+          "global_share_of_reserves": 0.09,
+          "strategic_significance": "moderate — sufficient for most food needs but water scarcity in northern grain belts and urban encroachment are long-term concerns. Food security is a top state priority.",
+          "source": "FAO 2024",
+          "confidence": 0.82,
+          "last_updated": "2024-12-01T00:00:00Z",
+          "update_frequency": "annual"
+        }
+      ],
+
+      "geography": {
+        "total_area_km2": 9596960,
+        "land_area_km2": 9326410,
+        "water_area_km2": 270550,
+        "coastline_km": 14500,
+        "highest_elevation_m": 8848,
+        "lowest_elevation_m": -154,
+        "mean_elevation_m": 1840,
+        "terrain": {
+          "mountainous_pct": 33.0,
+          "hills_plateau_pct": 26.0,
+          "plains_pct": 12.0,
+          "desert_pct": 13.0,
+          "forest_pct": 22.0,
+          "wetland_pct": 2.0,
+          "tundra_ice_pct": 0.5,
+          "urban_built_pct": 1.5
+        },
+        "landlocked": false,
+        "island_nation": false,
+        "archipelago": false,
+        "transcontinental": false,
+        "continents": ["Asia"],
+        "strategic_waterway_control": ["South China Sea (contested)", "Taiwan Strait (contested)"],
+        "strategic_waterway_proximity_km": [
+          {"name": "Strait of Malacca", "distance_km": 1800},
+          {"name": "Strait of Hormuz", "distance_km": 5500},
+          {"name": "Suez Canal", "distance_km": 8000}
+        ],
+        "geographic_fragmentation_index": 0.22,
+        "internal_natural_barriers": ["Tibetan Plateau isolates southwest", "Taklimakan and Gobi deserts in northwest", "Qinling-Huaihe line divides north-south climate zones"],
+        "time_zones_count": 1,
+        "notes": "Despite spanning 5 natural time zones, China officially uses a single time zone (UTC+8), creating administrative unity but significant practical challenges in western provinces.",
+        "source": "CIA World Factbook; USGS",
+        "confidence": 0.95,
+        "last_updated": "2025-01-01T00:00:00Z",
+        "update_frequency": "static"
+      },
+
+      "maritime_access": {
+        "exclusive_economic_zone_km2": 906000,
+        "continental_shelf_claims_km2": 3000000,
+        "major_ports": [
+          {"name": "Shanghai (Yangshan)", "capacity_teu_annual": 47300000, "global_ranking": 1, "special_economic_zone": true},
+          {"name": "Ningbo-Zhoushan", "capacity_teu_annual": 36800000, "global_ranking": 2, "special_economic_zone": false},
+          {"name": "Shenzhen", "capacity_teu_annual": 32900000, "global_ranking": 4, "special_economic_zone": true},
+          {"name": "Guangzhou (Nansha)", "capacity_teu_annual": 23600000, "global_ranking": 5, "special_economic_zone": true},
+          {"name": "Qingdao", "capacity_teu_annual": 27100000, "global_ranking": 3, "special_economic_zone": false},
+          {"name": "Tianjin", "capacity_teu_annual": 22000000, "global_ranking": 8, "special_economic_zone": true}
+        ],
+        "maritime_chokepoint_dependency": ["Strait of Malacca", "Strait of Hormuz", "Bab el-Mandeb", "Suez Canal"],
+        "submarine_cable_landing_points": 43,
+        "naval_base_count_domestic": 28,
+        "naval_base_count_foreign_hosted": 2,
+        "naval_base_count_abroad": 2,
+        "notes": "China operates the world's three busiest container ports. Malacca Strait dependency ('Malacca Dilemma') is a persistent strategic vulnerability — approximately 80% of China's oil imports transit this chokepoint.",
+        "source": "UNCTAD Review of Maritime Transport 2025; CSIS",
+        "confidence": 0.83,
+        "last_updated": "2025-06-01T00:00:00Z",
+        "update_frequency": "annual"
+      },
+
+      "climate": {
+        "koppen_classification_dominant": "BSk",
+        "koppen_classifications_present": ["Af", "Am", "Aw", "BWk", "BWh", "BSk", "BSh", "Cfa", "Cfb", "Cwa", "Cwb", "Dwa", "Dwb", "Dwc", "ET", "EF"],
+        "natural_disaster_exposure": {
+          "earthquake_risk": "high",
+          "tsunami_risk": "medium",
+          "hurricane_typhoon_risk": "high",
+          "flooding_risk": "high",
+          "drought_risk": "medium",
+          "wildfire_risk": "medium",
+          "volcanic_risk": "low",
+          "tornado_risk": "low",
+          "landslide_risk": "high"
+        },
+        "climate_change_vulnerability_index": 0.52,
+        "climate_change_readiness_index": 0.61,
+        "sea_level_rise_exposure": {
+          "population_below_1m_pct": 0.8,
+          "population_below_5m_pct": 6.5,
+          "gdp_below_5m_pct": 12.0,
+          "critical_infrastructure_below_5m_pct": 18.0
+        },
+        "growing_season_days": 190,
+        "frost_free_days": 220,
+        "source": "IPCC AR6; ND-GAIN Country Index 2024",
+        "confidence": 0.78,
+        "last_updated": "2024-12-01T00:00:00Z",
+        "update_frequency": "annual"
+      },
+
+      "demographics": {
+        "population_total": 1410000000,
+        "population_growth_rate_pct": -0.02,
+        "population_density_per_km2": 148,
+        "median_age": 39.8,
+        "age_pyramid": {
+          "age_0_14_pct": 16.5,
+          "age_15_24_pct": 11.3,
+          "age_25_54_pct": 45.8,
+          "age_55_64_pct": 13.2,
+          "age_65_plus_pct": 13.2
+        },
+        "dependency_ratio": 0.46,
+        "youth_bulge_index": 0.18,
+        "urbanization_rate_pct": 65.2,
+        "urbanization_trend": "growth",
+        "largest_city_population": 24870000,
+        "largest_city_name": "Shanghai",
+        "primate_city_index": 1.12,
+        "literacy_rate_pct": 97.0,
+        "labor_force_total": 780000000,
+        "labor_force_participation_rate_pct": 68.2,
+        "female_labor_participation_pct": 60.6,
+        "unemployment_rate_pct": 5.2,
+        "youth_unemployment_rate_pct": 18.8,
+        "net_migration_rate_per_1000": -0.4,
+        "refugee_population_hosted": 303000,
+        "refugee_population_originated": 12000,
+        "diaspora_size_estimate": 50000000,
+        "remittance_inflows_pct_gdp": 0.11,
+        "ethnic_fractionalization_index": 0.17,
+        "linguistic_fractionalization_index": 0.13,
+        "religious_fractionalization_index": 0.42,
+        "life_expectancy_years": 78.2,
+        "infant_mortality_per_1000": 6.1,
+        "health_expenditure_pct_gdp": 5.6,
+        "physicians_per_1000": 3.1,
+        "hospital_beds_per_1000": 6.5,
+        "human_development_index": 0.768,
+        "notes": "China's population peaked in 2022 at approximately 1.412 billion and is now in modest decline. The one-child policy (1980-2015) created a severe demographic imbalance — the working-age population is shrinking while the elderly cohort grows rapidly. By 2035, China will have one of the world's oldest populations relative to income level. This demographic trajectory is perhaps the single most important long-term structural constraint on China's growth potential.",
+        "source": "National Bureau of Statistics China; UN Population Division 2024",
+        "confidence": 0.87,
+        "last_updated": "2025-01-01T00:00:00Z",
+        "update_frequency": "annual"
+      }
+    },
+
+    "institutions": {
+      "cultural": {
+        "hofstede_dimensions": {
+          "individualism_vs_collectivism": 20,
+          "power_distance": 80,
+          "uncertainty_avoidance": 30,
+          "masculinity_vs_femininity": 66,
+          "long_term_orientation": 87,
+          "indulgence_vs_restraint": 24
+        },
+        "world_values_survey": {
+          "traditional_vs_secular": 0.9,
+          "survival_vs_self_expression": -0.7,
+          "generalized_trust_pct": 63.0
+        },
+        "state_formation_antiquity": "ancient",
+        "colonial_legacy_type": "none",
+        "colonial_independence_year": null,
+        "post_independence_stability": "periodic_disruption",
+        "rule_of_law_tradition_depth": "shallow",
+        "property_rights_historical_strength": "weak",
+        "entrepreneurial_orientation_index": 0.68,
+        "state_intervention_tradition": "dominant",
+        "informal_economy_estimated_pct_gdp": 12.0,
+        "corruption_cultural_tolerance": "moderate",
+        "civic_participation_index": 0.29,
+        "social_mobility_index": 0.45,
+        "gender_equality_index": 0.33,
+        "religious_influence_on_governance": "secular",
+        "source": "Hofstede Insights; World Values Survey Wave 7",
+        "confidence": 0.79,
+        "last_updated": "2024-01-01T00:00:00Z",
+        "update_frequency": "annual",
+        "notes": "China scores extremely high on long-term orientation and power distance, reflecting Confucian cultural traditions that emphasize hierarchy, deferred gratification, and state authority. The very low individualism score shapes business culture — relationships (guanxi) and institutional trust matter more than formal contracts."
+      },
+
+      "political": {
+        "regime_type": "authoritarian",
+        "democracy_index": 2.21,
+        "democracy_index_trend": "decrease",
+        "freedom_house_status": "not_free",
+        "freedom_house_score": 9.0,
+        "press_freedom_index_rank": 172,
+        "corruption_perception_index": 45.0,
+
+        "wgi_voice_accountability": -1.43,
+        "wgi_political_stability": 0.58,
+        "wgi_government_effectiveness": 0.82,
+        "wgi_regulatory_quality": 0.04,
+        "wgi_rule_of_law": -0.18,
+        "wgi_control_of_corruption": -0.11,
+
+        "head_of_state_name": "Xi Jinping",
+        "head_of_state_title": "President; General Secretary of the Chinese Communist Party; Chairman of the Central Military Commission",
+        "head_of_government_name": "Li Qiang",
+        "years_current_leader_in_power": 13.2,
+        "succession_mechanism": "party_selection",
+        "next_national_election_date": null,
+        "election_integrity_score": 0.05,
+
+        "leadership_transition_risk": "medium",
+        "governing_coalition_stability": "stable",
+        "major_opposition_strength": "weak",
+        "legislative_gridlock_level": "none",
+        "civil_unrest_level": "sporadic",
+        "protest_frequency_last_quarter": 12,
+
+        "separatist_movements": [
+          {
+            "name": "Taiwan independence movement",
+            "region": "Taiwan",
+            "intensity": "political",
+            "external_support": true,
+            "population_affected_estimate": 23500000
+          },
+          {
+            "name": "Tibetan independence / autonomy movement",
+            "region": "Tibet Autonomous Region",
+            "intensity": "political",
+            "external_support": true,
+            "population_affected_estimate": 3800000
+          },
+          {
+            "name": "East Turkestan / Uyghur independence",
+            "region": "Xinjiang Uyghur Autonomous Region",
+            "intensity": "militant",
+            "external_support": false,
+            "population_affected_estimate": 12000000
+          }
+        ],
+
+        "active_insurgencies": [],
+
+        "economic_policy_orientation": -0.65,
+        "trade_policy_orientation": -0.2,
+        "foreign_policy_orientation": 0.45,
+        "foreign_policy_alignment": "china_aligned",
+        "environmental_policy_commitment": 0.62,
+        "digital_governance_sophistication": 0.88,
+        "resource_nationalism_tendency": 0.72,
+        "migration_policy_openness": 0.18,
+
+        "under_international_sanctions": true,
+        "sanctions": [
+          {
+            "imposing_entity": "US",
+            "type": "sectoral",
+            "sectors_affected": ["semiconductor_manufacturing", "advanced_computing", "surveillance_technology", "military_supply_chain"],
+            "since_date": "2018-07-01",
+            "severity_score": 0.62
+          },
+          {
+            "imposing_entity": "EU",
+            "type": "targeted_individuals",
+            "sectors_affected": ["xinjiang_related_entities"],
+            "since_date": "2021-03-22",
+            "severity_score": 0.18
+          },
+          {
+            "imposing_entity": "GBR",
+            "type": "targeted_individuals",
+            "sectors_affected": ["xinjiang_human_rights"],
+            "since_date": "2021-03-22",
+            "severity_score": 0.08
+          }
+        ],
+
+        "source": "EIU Democracy Index 2025; Freedom House 2025; Reporters Without Borders 2025; World Bank WGI 2024; Transparency International CPI 2025",
+        "confidence": 0.88,
+        "last_updated": "2026-01-15T00:00:00Z",
+        "update_frequency": "weekly"
+      }
+    },
+
+    "economy": {
+      "macroeconomic": {
+        "gdp_nominal_usd": 18500000000000,
+        "gdp_ppp_usd": 35000000000000,
+        "gdp_per_capita_nominal_usd": 13120,
+        "gdp_per_capita_ppp_usd": 24820,
+        "gdp_real_growth_rate_pct": 4.5,
+        "gdp_real_growth_trend": "decrease",
+        "gdp_composition": {
+          "agriculture_pct": 7.3,
+          "industry_pct": 38.3,
+          "services_pct": 54.4
+        },
+        "gni_per_capita_usd": 13150,
+        "gdp_global_rank": 2,
+        "gdp_ppp_global_rank": 1,
+
+        "government_revenue_pct_gdp": 20.8,
+        "government_expenditure_pct_gdp": 25.1,
+        "fiscal_balance_pct_gdp": -4.3,
+        "public_debt_pct_gdp": 87.2,
+        "public_debt_trend": "growth",
+        "external_debt_total_usd": 2600000000000,
+        "external_debt_pct_gdp": 14.1,
+        "external_debt_pct_exports": 71.0,
+        "debt_service_ratio": 0.12,
+        "sovereign_credit_rating": {
+          "moodys": "A1",
+          "moodys_outlook": "negative",
+          "sp": "A+",
+          "sp_outlook": "stable",
+          "fitch": "A+",
+          "fitch_outlook": "stable"
+        },
+
+        "inflation_rate_cpi_pct": 0.15,
+        "inflation_trend": "decrease",
+        "core_inflation_pct": 0.42,
+        "central_bank_policy_rate_pct": 3.1,
+        "central_bank_independence_score": 0.28,
+        "money_supply_m2_growth_pct": 8.2,
+        "real_interest_rate_pct": 2.95,
+
+        "current_account_balance_usd": 420000000000,
+        "current_account_pct_gdp": 2.27,
+        "trade_balance_usd": 880000000000,
+        "total_exports_usd": 3650000000000,
+        "total_imports_usd": 2770000000000,
+        "export_growth_trend": "stable",
+        "import_growth_trend": "decrease",
+
+        "top_export_products": [
+          {"product": "Electrical machinery and equipment", "hs_code": "85", "pct_of_total": 26.8, "value_usd": 978200000000},
+          {"product": "Machinery and mechanical appliances", "hs_code": "84", "pct_of_total": 17.2, "value_usd": 627800000000},
+          {"product": "Optical, photographic, precision instruments", "hs_code": "90", "pct_of_total": 5.4, "value_usd": 197100000000},
+          {"product": "Vehicles (excl. railway)", "hs_code": "87", "pct_of_total": 7.8, "value_usd": 284700000000},
+          {"product": "Plastics and articles thereof", "hs_code": "39", "pct_of_total": 3.9, "value_usd": 142350000000}
+        ],
+
+        "top_import_products": [
+          {"product": "Electrical machinery and equipment", "hs_code": "85", "pct_of_total": 19.2, "value_usd": 531840000000},
+          {"product": "Mineral fuels and oils", "hs_code": "27", "pct_of_total": 18.5, "value_usd": 512450000000},
+          {"product": "Iron ore and concentrates", "hs_code": "2601", "pct_of_total": 5.6, "value_usd": 155120000000},
+          {"product": "Machinery and mechanical appliances", "hs_code": "84", "pct_of_total": 12.1, "value_usd": 335170000000},
+          {"product": "Vehicles (excl. railway)", "hs_code": "87", "pct_of_total": 2.2, "value_usd": 60940000000}
+        ],
+
+        "top_export_partners": [
+          {"country": "USA", "pct_of_total": 14.8, "value_usd": 540200000000},
+          {"country": "HKG", "pct_of_total": 8.1, "value_usd": 295650000000},
+          {"country": "JPN", "pct_of_total": 5.6, "value_usd": 204400000000},
+          {"country": "KOR", "pct_of_total": 4.4, "value_usd": 160600000000},
+          {"country": "DEU", "pct_of_total": 3.7, "value_usd": 135050000000},
+          {"country": "VNM", "pct_of_total": 3.2, "value_usd": 116800000000},
+          {"country": "NLD", "pct_of_total": 3.1, "value_usd": 113150000000},
+          {"country": "IND", "pct_of_total": 2.9, "value_usd": 105850000000}
+        ],
+
+        "top_import_partners": [
+          {"country": "KOR", "pct_of_total": 8.1, "value_usd": 224370000000},
+          {"country": "JPN", "pct_of_total": 7.6, "value_usd": 210520000000},
+          {"country": "AUS", "pct_of_total": 7.2, "value_usd": 199440000000},
+          {"country": "USA", "pct_of_total": 6.5, "value_usd": 180050000000},
+          {"country": "RUS", "pct_of_total": 4.8, "value_usd": 132960000000},
+          {"country": "DEU", "pct_of_total": 4.3, "value_usd": 119110000000},
+          {"country": "BRA", "pct_of_total": 3.8, "value_usd": 105260000000},
+          {"country": "SAU", "pct_of_total": 3.5, "value_usd": 96950000000}
+        ],
+
+        "fdi_inflow_usd": 163000000000,
+        "fdi_inflow_trend": "strong_decrease",
+        "fdi_outflow_usd": 148000000000,
+        "portfolio_investment_net_usd": -45000000000,
+        "remittance_inflows_usd": 20200000000,
+        "remittance_outflows_usd": 15800000000,
+
+        "foreign_exchange_reserves_usd": 3240000000000,
+        "reserve_adequacy_months_of_imports": 14.0,
+        "gold_reserves_tonnes": 2280.0,
+        "currency_code": "CNY",
+        "currency_name": "Renminbi (yuan)",
+        "exchange_rate_vs_usd": 7.24,
+        "exchange_rate_trend_12m": "decrease",
+        "exchange_rate_regime": "managed_float",
+        "capital_account_openness_index": 0.17,
+        "swift_connected": true,
+        "correspondent_banking_relationships": 1850,
+
+        "banking_sector_assets_pct_gdp": 318.0,
+        "non_performing_loans_pct": 1.68,
+        "stock_market_cap_pct_gdp": 72.0,
+        "stock_market_cap_usd": 13320000000000,
+        "stock_market_daily_turnover_usd": 112000000000,
+        "bond_market_size_usd": 22000000000000,
+        "financial_development_index": 0.61,
+        "financial_inclusion_account_pct": 89.0,
+
+        "gini_coefficient": 0.467,
+        "income_share_top_10_pct": 41.6,
+        "income_share_bottom_40_pct": 14.8,
+        "poverty_rate_national_pct": 3.1,
+        "poverty_rate_190_usd_pct": 0.1,
+        "minimum_wage_usd_monthly": 265.0,
+        "average_wage_usd_monthly": 1140.0,
+        "median_wage_usd_monthly": 820.0,
+
+        "source": "IMF WEO October 2025; World Bank; NBS China; SAFE; PBOC Annual Report 2025",
+        "confidence": 0.84,
+        "last_updated": "2026-01-15T00:00:00Z",
+        "update_frequency": "quarterly",
+        "notes": "GDP figures are nominal USD at market exchange rates. PPP GDP based on IMF 2025 estimates. CPI near zero reflects property deflation and weak domestic demand — a key risk for debt dynamics. Official NPL figures likely understate true credit quality given opaque local government financing vehicle (LGFV) debt."
+      },
+
+      "capability": {
+        "economic_complexity_index": 1.35,
+        "economic_complexity_rank": 16,
+        "product_diversification_count": 4180,
+        "export_sophistication_score": 14800.0,
+
+        "mean_years_of_schooling": 8.1,
+        "expected_years_of_schooling": 13.9,
+        "tertiary_enrollment_rate_pct": 58.8,
+        "stem_graduates_per_million": 2350.0,
+        "vocational_training_enrollment_pct": 28.4,
+        "english_proficiency_index": 52.8,
+        "pisa_scores": {
+          "math": 591,
+          "science": 578,
+          "reading": 555
+        },
+        "researchers_per_million": 1413.0,
+        "r_and_d_expenditure_pct_gdp": 2.55,
+        "patent_applications_residents_annual": 1590000,
+        "patent_applications_per_million": 1128.0,
+        "scientific_publications_per_million": 1250.0,
+        "top_university_count_global_500": 86,
+        "top_university_count_global_100": 7,
+        "brain_drain_index": 0.35,
+
+        "global_innovation_index_rank": 11,
+        "global_innovation_index_score": 54.8,
+        "ict_development_index": 0.72,
+        "internet_penetration_pct": 77.5,
+        "fixed_broadband_per_100": 38.2,
+        "mobile_broadband_per_100": 112.0,
+        "smartphone_penetration_pct": 74.0,
+        "technology_readiness_level": "advanced",
+        "ai_readiness_index": 0.81,
+
+        "capability_domains": {
+          "advanced_manufacturing": 0.88,
+          "semiconductor_electronics": 0.62,
+          "pharmaceutical_biotech": 0.58,
+          "aerospace_defense_industry": 0.74,
+          "automotive": 0.82,
+          "petrochemical_refining": 0.78,
+          "agriculture_food_processing": 0.72,
+          "financial_services": 0.55,
+          "software_ai_digital": 0.79,
+          "renewable_energy_tech": 0.91,
+          "nuclear_technology": 0.75,
+          "shipbuilding_marine": 0.95,
+          "construction_infrastructure": 0.92,
+          "mining_extraction": 0.80,
+          "textiles_light_manufacturing": 0.85,
+          "tourism_hospitality": 0.62,
+          "logistics_shipping": 0.88,
+          "creative_industries_media": 0.42,
+          "space_technology": 0.78,
+          "medical_devices_healthtech": 0.55
+        },
+
+        "infrastructure_quality_index": 0.81,
+        "road_network_km": 5198000,
+        "road_density_km_per_km2": 0.54,
+        "paved_road_pct": 73.2,
+        "rail_network_km": 158000,
+        "high_speed_rail_km": 45000,
+        "airport_count_major": 248,
+        "airport_passenger_capacity_annual": 1300000000,
+        "logistics_performance_index": 3.65,
+
+        "electricity_generation_capacity_gw": 3100.0,
+        "electricity_access_pct": 100.0,
+        "electricity_reliability_index": 0.88,
+        "energy_mix": {
+          "fossil_pct": 62.5,
+          "nuclear_pct": 5.0,
+          "hydro_pct": 15.0,
+          "solar_pct": 7.5,
+          "wind_pct": 8.0,
+          "other_renewable_pct": 2.0
+        },
+        "energy_intensity_mj_per_usd_gdp": 4.8,
+        "renewable_energy_trend": "strong_growth",
+
+        "data_center_capacity_mw": 11800.0,
+        "submarine_cable_landing_points": 43,
+        "cloud_availability_zones_major_providers": 12,
+        "five_g_coverage_pct": 92.0,
+        "fiber_optic_coverage_pct": 88.0,
+        "digital_infrastructure_trend": "strong_growth",
+
+        "source": "Harvard Atlas of Economic Complexity 2024; WIPO GII 2025; OECD PISA 2022; IEA Energy Statistics 2025; WEF GCI 2025",
+        "confidence": 0.80,
+        "last_updated": "2025-12-01T00:00:00Z",
+        "update_frequency": "quarterly",
+        "notes": "China leads the world in high-speed rail (over 45,000 km, more than the rest of the world combined) and has the world's largest 5G network. Semiconductor self-sufficiency remains a critical gap — China produces only ~15% of the chips it consumes domestically, and leading-edge logic chips (below 7nm) remain almost entirely import-dependent despite heavy state investment in domestic champions."
+      }
+    },
+
+    "military": {
+      "active_military_personnel": 2035000,
+      "reserve_military_personnel": 510000,
+      "paramilitary_personnel": 660000,
+      "military_age_fit_population": 372000000,
+
+      "military_expenditure_usd": 292000000000,
+      "military_expenditure_pct_gdp": 1.58,
+      "military_expenditure_per_capita_usd": 207.0,
+      "military_expenditure_trend": "growth",
+      "procurement_budget_usd": 62000000000,
+
+      "army": {
+        "main_battle_tanks": 5800,
+        "infantry_fighting_vehicles": 8000,
+        "armored_personnel_carriers": 7000,
+        "self_propelled_artillery": 1710,
+        "towed_artillery": 6240,
+        "rocket_projectors": 2650,
+        "air_defense_systems": 3200
+      },
+
+      "navy": {
+        "aircraft_carriers": 3,
+        "helicopter_carriers": 0,
+        "destroyers": 52,
+        "frigates": 48,
+        "corvettes": 72,
+        "submarines_total": 78,
+        "submarines_nuclear_powered": 12,
+        "submarines_nuclear_armed": 6,
+        "patrol_vessels": 210,
+        "mine_warfare_vessels": 35,
+        "amphibious_assault_ships": 8,
+        "total_naval_tonnage_tons": 2800000.0,
+        "blue_water_capability": true,
+        "notes": "The PLAN is the world's largest navy by hull count. The third carrier (Fujian, CV-18) is the first to feature electromagnetic catapults. Rapid expansion in surface combatants continues; analysts project 4-5 carrier groups operational by 2030."
+      },
+
+      "air_force": {
+        "fifth_gen_fighters": 200,
+        "fourth_gen_fighters": 1100,
+        "multirole_aircraft": 1200,
+        "attack_aircraft": 420,
+        "strategic_bombers": 240,
+        "transport_aircraft": 286,
+        "tanker_aircraft": 18,
+        "awacs_aircraft": 14,
+        "attack_helicopters": 320,
+        "transport_helicopters": 910,
+        "combat_drones": 2800,
+        "reconnaissance_drones": 1800,
+        "drone_swarm_capability": true,
+        "notes": "J-20 (Chengdu) is China's most advanced 5th generation stealth fighter. The H-6 strategic bomber fleet has been upgraded with the H-6K/N variants capable of carrying nuclear cruise missiles. China's drone program is expansive, including the TB-001 and Wing Loong series for combat and the WZ-7 for high-altitude reconnaissance."
+      },
+
+      "nuclear": {
+        "status": "declared_arsenal",
+        "warheads_estimated": 500,
+        "delivery_systems": {
+          "icbm": true,
+          "icbm_count": 350,
+          "irbm": true,
+          "srbm": true,
+          "slbm": true,
+          "air_launched_cruise_missiles": true
+        },
+        "second_strike_capability": true,
+        "nuclear_triad": true,
+        "notes": "China is in the midst of the fastest nuclear arsenal expansion in its history. US DoD estimates the warhead count could reach 1,000+ by 2030 and 1,500 by 2035. The DF-41 ICBM (range ~14,000 km) covers the continental United States. China has maintained a No First Use policy, though military analysts debate its operational credibility."
+      },
+
+      "missile_defense": {
+        "ballistic_missile_defense": true,
+        "system_names": ["HQ-19", "HQ-9B"],
+        "coverage": "area"
+      },
+
+      "hypersonic_capability": true,
+      "space_military_capability": "advanced",
+      "anti_satellite_capability": true,
+
+      "cyber": {
+        "capability_level": "elite",
+        "known_apt_groups": 40,
+        "offensive_cyber_doctrine": true,
+        "cyber_command_established": true,
+        "notes": "PLA Strategic Support Force houses cyber operations. APT groups attributed to China (APT10, APT40, APT41, Volt Typhoon, Salt Typhoon, etc.) are among the most active in global cyber espionage and critical infrastructure pre-positioning."
+      },
+
+      "electronic_warfare_capability": "advanced",
+
+      "overseas_military_bases": 2,
+      "overseas_base_locations": [
+        {"host_country": "DJI", "base_type": "naval", "personnel_estimate": 2000},
+        {"host_country": "Undisclosed (suspected Cambodia)", "base_type": "naval", "personnel_estimate": 300}
+      ],
+      "airlift_capacity_strategic_tons": 180000.0,
+      "sealift_capacity_tons": 4200000.0,
+      "aerial_refueling_sorties_per_day": 18,
+      "force_projection_range_km": 4500.0,
+
+      "domestic_arms_production": "full_spectrum",
+      "arms_exports_usd_annual": 5800000000,
+      "arms_imports_usd_annual": 2100000000,
+      "top_arms_suppliers": [
+        {"country": "RUS", "pct_of_imports": 68.0},
+        {"country": "UKR (historical)", "pct_of_imports": 12.0},
+        {"country": "Other", "pct_of_imports": 20.0}
+      ],
+      "top_arms_customers": [
+        {"country": "PAK", "pct_of_exports": 36.0},
+        {"country": "BGD", "pct_of_exports": 12.0},
+        {"country": "THA", "pct_of_exports": 8.0},
+        {"country": "NGA", "pct_of_exports": 6.0}
+      ],
+      "defense_industry_self_sufficiency": 0.88,
+
+      "intelligence_budget_estimated_usd": 18000000000,
+      "sigint_capability": "global",
+      "humint_reach": "global",
+      "satellite_reconnaissance": true,
+      "satellite_count_military": 380,
+
+      "active_conflicts": [],
+      "recent_combat_experience": false,
+      "military_readiness_estimate": "high",
+      "conscription_active": true,
+      "conscription_length_months": 24,
+      "professional_military_pct": 0.72,
+
+      "alliance_memberships": ["SCO"],
+      "mutual_defense_treaty_count": 1,
+      "military_cooperation_agreements_count": 42,
+
+      "source": "SIPRI 2025; IISS Military Balance 2025; US DoD China Military Power Report 2025; CSIS",
+      "confidence": 0.72,
+      "last_updated": "2025-12-01T00:00:00Z",
+      "update_frequency": "quarterly",
+      "notes": "Chinese military data is intentionally opaque. Personnel figures, hardware counts, and budget estimates carry significant uncertainty — true spending is widely estimated to exceed official figures by 20-30%. The PLA has not engaged in a major kinetic conflict since 1979 (Sino-Vietnamese War), creating questions about operational readiness and real-world combat performance of advanced systems."
+    },
+
+    "relations": {
+      "top_partners": [
+        {
+          "partner_code": "USA",
+          "partner_name": "United States",
+          "relationship_status": "cool",
+          "relationship_trend": "decrease",
+          "trade_volume_usd": 690000000000,
+          "cooperation_index": 0.28,
+          "tension_index": 0.74,
+          "interdependence_index": 0.65,
+          "key_issues": ["Technology decoupling / export controls", "Taiwan strait tensions", "Trade deficit and tariffs", "South China Sea disputes", "Fentanyl and biosecurity", "Spy balloon incident aftermath"],
+          "relation_file": "CHN_USA.json"
+        },
+        {
+          "partner_code": "RUS",
+          "partner_name": "Russia",
+          "relationship_status": "friendly",
+          "relationship_trend": "growth",
+          "trade_volume_usd": 240000000000,
+          "cooperation_index": 0.78,
+          "tension_index": 0.08,
+          "interdependence_index": 0.52,
+          "key_issues": ["Ukraine war support (non-lethal)", "Energy imports (Power of Siberia)", "No-limits partnership alignment", "Dollar bypass / RMB settlement"],
+          "relation_file": "CHN_RUS.json"
+        },
+        {
+          "partner_code": "JPN",
+          "partner_name": "Japan",
+          "relationship_status": "cool",
+          "relationship_trend": "stable",
+          "trade_volume_usd": 310000000000,
+          "cooperation_index": 0.38,
+          "tension_index": 0.55,
+          "interdependence_index": 0.60,
+          "key_issues": ["Senkaku/Diaoyu Islands dispute", "Historical legacy (WWII)", "Japan defense buildup", "Japanese semiconductor export controls", "FUKUSHIMA water discharge"],
+          "relation_file": "CHN_JPN.json"
+        },
+        {
+          "partner_code": "KOR",
+          "partner_name": "South Korea",
+          "relationship_status": "neutral",
+          "relationship_trend": "stable",
+          "trade_volume_usd": 330000000000,
+          "cooperation_index": 0.48,
+          "tension_index": 0.38,
+          "interdependence_index": 0.62,
+          "key_issues": ["THAAD deployment tensions", "North Korea policy divergence", "Semiconductor supply chain", "Tourism and cultural exchange"],
+          "relation_file": "CHN_KOR.json"
+        },
+        {
+          "partner_code": "TWN",
+          "partner_name": "Taiwan",
+          "relationship_status": "tense",
+          "relationship_trend": "decrease",
+          "trade_volume_usd": 188000000000,
+          "cooperation_index": 0.18,
+          "tension_index": 0.82,
+          "interdependence_index": 0.55,
+          "key_issues": ["Sovereignty dispute (core issue)", "PLA military exercises", "US arms sales to Taiwan", "Semiconductor interdependence (TSMC)", "DPP electoral mandate"],
+          "relation_file": "CHN_TWN.json"
+        },
+        {
+          "partner_code": "DEU",
+          "partner_name": "Germany",
+          "relationship_status": "neutral",
+          "relationship_trend": "decrease",
+          "trade_volume_usd": 250000000000,
+          "cooperation_index": 0.50,
+          "tension_index": 0.32,
+          "interdependence_index": 0.55,
+          "key_issues": ["Market access reciprocity", "EV tariffs (EU-imposed)", "Human rights (Xinjiang)", "Technology transfer concerns", "VW / BMW / BASF China exposure"],
+          "relation_file": "CHN_DEU.json"
+        },
+        {
+          "partner_code": "AUS",
+          "partner_name": "Australia",
+          "relationship_status": "neutral",
+          "relationship_trend": "growth",
+          "trade_volume_usd": 195000000000,
+          "cooperation_index": 0.45,
+          "tension_index": 0.28,
+          "interdependence_index": 0.62,
+          "key_issues": ["Iron ore and LNG dependency", "AUKUS security partnership", "Gradual diplomatic normalization post-2023", "Barley / wine / beef trade disputes (mostly resolved)"],
+          "relation_file": "AUS_CHN.json"
+        },
+        {
+          "partner_code": "SAU",
+          "partner_name": "Saudi Arabia",
+          "relationship_status": "friendly",
+          "relationship_trend": "growth",
+          "trade_volume_usd": 105000000000,
+          "cooperation_index": 0.68,
+          "tension_index": 0.10,
+          "interdependence_index": 0.48,
+          "key_issues": ["Crude oil supply", "RMB oil settlement (petro-yuan initiative)", "BRI infrastructure", "Vision 2030 construction contracts"],
+          "relation_file": "CHN_SAU.json"
+        },
+        {
+          "partner_code": "IND",
+          "partner_name": "India",
+          "relationship_status": "cool",
+          "relationship_trend": "stable",
+          "trade_volume_usd": 118000000000,
+          "cooperation_index": 0.30,
+          "tension_index": 0.60,
+          "interdependence_index": 0.42,
+          "key_issues": ["Line of Actual Control border dispute (Galwan 2020)", "Indian market restrictions on Chinese apps/FDI", "Strategic competition in South/Southeast Asia", "India's growing US alignment (Quad)"],
+          "relation_file": "CHN_IND.json"
+        },
+        {
+          "partner_code": "BRA",
+          "partner_name": "Brazil",
+          "relationship_status": "friendly",
+          "relationship_trend": "stable",
+          "trade_volume_usd": 152000000000,
+          "cooperation_index": 0.62,
+          "tension_index": 0.12,
+          "interdependence_index": 0.42,
+          "key_issues": ["Soy and iron ore exports to China", "BRICS partnership deepening", "RMB settlement agreements", "Chinese investment in Brazilian infrastructure"],
+          "relation_file": "BRA_CHN.json"
+        }
+      ],
+      "source": "UN Comtrade 2025; MOFCOM China; US Census Bureau; CSIS; PIIE",
+      "confidence": 0.78,
+      "last_updated": "2026-01-15T00:00:00Z",
+      "update_frequency": "weekly"
+    },
+
+    "derived": {
+      "computed_at": "2026-03-01T00:00:00Z",
+
+      "resource_self_sufficiency_index": 0.62,
+      "energy_independence_index": 0.72,
+      "food_independence_index": 0.88,
+      "water_security_index": 0.51,
+      "technology_independence_index": 0.52,
+      "supply_chain_chokepoint_exposure": 0.68,
+      "single_partner_concentration_risk": 0.28,
+      "sanctions_vulnerability_index": 0.45,
+
+      "critical_import_dependency": [
+        {
+          "resource": "Advanced semiconductors (sub-14nm)",
+          "primary_supplier": "TWN (TSMC)",
+          "supplier_share_pct": 62.0,
+          "substitutability": "near_impossible",
+          "strategic_criticality": "critical"
+        },
+        {
+          "resource": "Iron ore",
+          "primary_supplier": "AUS",
+          "supplier_share_pct": 58.0,
+          "substitutability": "difficult",
+          "strategic_criticality": "high"
+        },
+        {
+          "resource": "Crude oil",
+          "primary_supplier": "SAU",
+          "supplier_share_pct": 16.0,
+          "substitutability": "moderate",
+          "strategic_criticality": "high"
+        },
+        {
+          "resource": "Natural gas (LNG)",
+          "primary_supplier": "AUS",
+          "supplier_share_pct": 38.0,
+          "substitutability": "moderate",
+          "strategic_criticality": "medium"
+        },
+        {
+          "resource": "Soybeans",
+          "primary_supplier": "BRA",
+          "supplier_share_pct": 72.0,
+          "substitutability": "difficult",
+          "strategic_criticality": "high"
+        }
+      ],
+
+      "composite_national_power_index": 71.8,
+      "economic_power_component": 78.2,
+      "military_power_component": 68.5,
+      "soft_power_component": 42.0,
+      "diplomatic_network_centrality": 0.72,
+      "economic_coercion_capability": 0.78,
+      "economic_coercion_vulnerability": 0.48,
+      "alliance_strength_score": 0.38,
+
+      "political_risk_premium_bps": 185.0,
+      "market_accessibility_score": 0.42,
+      "expropriation_risk_score": 0.38,
+      "currency_crisis_probability_12m": 0.08,
+      "sovereign_default_probability_12m": 0.02,
+      "fdi_attractiveness_composite": 0.52,
+      "ease_of_doing_business_score": 52.5,
+      "capital_flight_risk": 0.32,
+      "regulatory_stability_index": 0.35,
+      "investment_risk_composite": 0.42,
+
+      "trend_estimates": [
+        {
+          "factor_path": "macroeconomic.gdp_real_growth_rate_pct",
+          "current_value": 4.5,
+          "previous_quarter_value": 4.8,
+          "trend": "decrease",
+          "trend_confidence": 0.78,
+          "reasoning": "GDP growth is decelerating from the post-COVID rebound high of 5.2% in 2023. The property sector — which accounts for approximately 25-30% of economic activity via direct construction, land sales, and downstream services — is structurally contracting. Domestic consumption remains subdued as households repair balance sheets and avoid large purchases. Export volumes have held up, supported by Chinese manufacturing competitiveness in EVs and green technology, but rising trade barriers from the US, EU, and increasingly Southeast Asian economies are creating headwinds. The PBoC and fiscal authorities have room to stimulate further, but the effectiveness of monetary stimulus is constrained by a 'pushing on a string' dynamic with limited private sector credit demand.",
+          "supporting_events": [
+            {"event_description": "NBS Q4 2025 GDP growth at 4.6%, below 5% target", "event_date": "2026-01-17", "source_url": "http://www.stats.gov.cn/", "impact_direction": "negative", "impact_magnitude": "moderate"},
+            {"event_description": "Property investment fell 10.2% YoY in 2025", "event_date": "2026-01-17", "source_url": "http://www.stats.gov.cn/", "impact_direction": "negative", "impact_magnitude": "major"},
+            {"event_description": "PBOC 50bps RRR cut December 2025", "event_date": "2025-12-15", "source_url": "http://www.pbc.gov.cn/", "impact_direction": "positive", "impact_magnitude": "minor"},
+            {"event_description": "EV exports hit record $90B in 2025", "event_date": "2026-01-20", "source_url": "http://www.mofcom.gov.cn/", "impact_direction": "positive", "impact_magnitude": "moderate"}
+          ],
+          "counter_arguments": "A significant fiscal stimulus package targeting consumer subsidies rather than infrastructure could boost domestic consumption more than expected. Global AI investment cycle could boost Chinese tech exports. Rapid property policy reversal could trigger a faster-than-expected stabilization.",
+          "time_horizon": "quarterly",
+          "estimated_at": "2026-03-01T00:00:00Z"
+        },
+        {
+          "factor_path": "macroeconomic.inflation_rate_cpi_pct",
+          "current_value": 0.15,
+          "previous_quarter_value": 0.22,
+          "trend": "decrease",
+          "trend_confidence": 0.72,
+          "reasoning": "China is experiencing a mild deflationary environment with CPI barely positive and PPI deeply negative (around -2.5%). This reflects a combination of property price deflation transmitting to construction materials and consumer goods, excess industrial capacity driving down manufactured goods prices, and weak consumer spending. The deflationary dynamic is concerning because it increases real debt burdens, compresses corporate margins, and can become self-reinforcing if firms delay investment and households delay purchases. Without a material pickup in domestic demand or a more aggressive policy response, deflationary pressure is likely to persist through H1 2026.",
+          "supporting_events": [
+            {"event_description": "January 2026 CPI +0.1% YoY, PPI -2.3% YoY", "event_date": "2026-02-10", "source_url": "http://www.stats.gov.cn/", "impact_direction": "negative", "impact_magnitude": "moderate"},
+            {"event_description": "Property prices declined in 68 of 70 major cities in Jan 2026", "event_date": "2026-02-18", "source_url": "http://www.stats.gov.cn/", "impact_direction": "negative", "impact_magnitude": "major"}
+          ],
+          "counter_arguments": "Commodity price spike (oil, food) could import inflation. Fiscal transfers to households could spark demand-pull inflation. Global supply chain disruptions could raise import prices.",
+          "time_horizon": "quarterly",
+          "estimated_at": "2026-03-01T00:00:00Z"
+        },
+        {
+          "factor_path": "military.military_expenditure_usd",
+          "current_value": 292000000000,
+          "previous_quarter_value": 278000000000,
+          "trend": "growth",
+          "trend_confidence": 0.88,
+          "reasoning": "China's official defense budget has grown by ~7% annually for the past decade and is expected to continue this trajectory. True spending — accounting for off-budget items like military R&D, paramilitary, and strategic forces — is estimated to be 20-30% higher than official figures. PLA modernization remains a top CCP priority, focused on power projection capability, advanced technology domains (cyber, space, hypersonics, AI-enabled warfare), and the capacity to conduct a Taiwan strait operation. Budgetary pressure from economic slowdown has not meaningfully constrained defense spending.",
+          "supporting_events": [
+            {"event_description": "NPC approved 7.2% defense budget increase for 2026", "event_date": "2026-03-05", "source_url": "http://www.mod.gov.cn/", "impact_direction": "positive", "impact_magnitude": "moderate"}
+          ],
+          "counter_arguments": "Severe economic contraction could force budget reallocation. Internal CCP political dynamics could shift priorities. US escalatory response to PLA buildup could trigger arms control dialogue.",
+          "time_horizon": "quarterly",
+          "estimated_at": "2026-03-01T00:00:00Z"
+        },
+        {
+          "factor_path": "political.civil_unrest_level",
+          "current_value": null,
+          "current_label": "sporadic",
+          "previous_label": "sporadic",
+          "trend": "stable",
+          "trend_confidence": 0.65,
+          "reasoning": "The CCP maintains comprehensive surveillance and social control systems that effectively prevent organized political opposition. The November 2022 'white paper' protests — the most significant public demonstrations since Tiananmen — were quickly suppressed with COVID policy reversal as a political concession. Youth unemployment frustration is a genuine pressure point, with a large cohort of university graduates finding limited career opportunities matching their expectations. Economic grievances related to property losses (particularly homebuyers in stalled pre-sold projects) have produced localized protests. The social contract — economic growth in exchange for political acquiescence — is under moderate strain, but the Party's control apparatus remains highly effective at preventing organized coordination.",
+          "supporting_events": [
+            {"event_description": "Youth unemployment above 21% before methodology change", "event_date": "2023-08-15", "source_url": "http://www.stats.gov.cn/", "impact_direction": "negative", "impact_magnitude": "moderate"},
+            {"event_description": "Localized homebuyer mortgage boycotts 2022-2024", "event_date": "2022-07-01", "source_url": "https://www.wsj.com/", "impact_direction": "negative", "impact_magnitude": "minor"}
+          ],
+          "counter_arguments": "Severe property crash wiping out household savings could trigger broader social instability. A major economic shock or high-profile political scandal could create an opening for organized dissent.",
+          "time_horizon": "quarterly",
+          "estimated_at": "2026-03-01T00:00:00Z"
+        }
+      ],
+
+      "active_alerts": [
+        {
+          "alert_type": "economic_crisis",
+          "severity": "warning",
+          "title": "Property Sector Distress: Balance-Sheet Recession Risk",
+          "description": "Multi-year property downturn with major developers in default. Risk of Japan-style prolonged balance-sheet recession. Deflationary dynamics reinforcing. Monitoring for potential systemic banking stress via LGFV exposure.",
+          "affected_factors": ["macroeconomic.gdp_real_growth_rate_pct", "macroeconomic.inflation_rate_cpi_pct", "macroeconomic.non_performing_loans_pct"],
+          "first_detected": "2021-09-15T00:00:00Z",
+          "last_updated": "2026-03-01T00:00:00Z",
+          "source_events": ["Evergrande liquidation 2024", "Country Garden restructuring 2024-2025", "NBS: 24 consecutive months of property price declines in major cities"]
+        },
+        {
+          "alert_type": "military_escalation",
+          "severity": "watch",
+          "title": "Taiwan Strait: Elevated PLA Exercise Activity",
+          "description": "Record PLA incursions into Taiwan ADIZ. Large-scale joint exercises mid-2025 simulating blockade. Tail risk of supply chain disruption through Western Pacific if conflict scenario materializes. Monitor for escalation triggers.",
+          "affected_factors": ["military.active_conflicts", "relations.TWN", "derived.supply_chain_chokepoint_exposure"],
+          "first_detected": "2022-08-04T00:00:00Z",
+          "last_updated": "2026-02-28T00:00:00Z",
+          "source_events": ["PLA exercises Aug 2022 (Pelosi visit response)", "Record ADIZ incursions 2023-2025", "Mid-2025 large-scale joint exercises"]
+        }
+      ],
+
+      "source": "Computed from Layers 1-5; SIPRI; IMF; World Bank; CSIS; Carnegie Endowment",
+      "confidence": 0.73
+    }
+  },
+
+  "narrative": {
+    "overview": "China stands at an inflection point between its old growth model — driven by debt-fueled property investment and export manufacturing — and an uncertain new equilibrium. For three decades, China delivered the greatest poverty reduction in human history, lifting over 800 million people out of poverty and transforming into the world's factory floor and second-largest economy. Under Xi Jinping's leadership since 2012, the CCP has simultaneously tightened political control, elevated the Party over market mechanisms, and pursued an ambitious vision of technological and military self-sufficiency aimed at reclaiming what Beijing views as China's rightful place as a leading world power. The contradiction between these two objectives — dynamic capitalist growth requires openness and rule of law, while Party primacy requires the opposite — is the defining tension of contemporary China and the central question for investors and geopolitical analysts alike.",
+
+    "key_developments": "The 2021-2025 period has been defined by several structural shifts: (1) The property sector crisis, which began with Evergrande's default in 2021, has proven more intractable than authorities initially hoped and is reshaping the savings and spending behavior of 1.4 billion people; (2) US-led technology containment — particularly semiconductor export controls — has accelerated China's drive for domestic technology self-sufficiency while imposing real costs on Chinese firms; (3) Xi Jinping's consolidation of personal power, formalized at the 20th Party Congress (2022) with an unprecedented third term, has reduced the policy pluralism and technocratic moderation that characterized earlier leadership; (4) Russia's invasion of Ukraine has deepened the China-Russia entente, reoriented energy flows (cheap Russian pipeline gas and oil), and hardened Western perceptions of China as a revisionist power; (5) China's global trade surplus has reached record levels, exporting deflationary pressure globally and increasing friction with trading partners across multiple blocs.",
+
+    "risks": "The key downside risks for China are: (1) Property sector deflation metastasizing into a broader financial crisis via LGFV debt and bank NPL accumulation; (2) Taiwan strait military miscalculation triggering a conflict that would impose catastrophic economic costs on all parties; (3) Demographic headwinds — the shrinking labor force and aging society will structurally reduce growth potential over the coming decade, and no policy reversal can alter the demographic pipeline; (4) Technology decoupling from the West constraining China's ability to access advanced chips and software critical for AI, advanced manufacturing, and defense systems; (5) Xi Jinping's policy uncertainty — the 2021 tech crackdown, zero-COVID policy, and regulatory unpredictability have damaged investor confidence and private sector animal spirits in ways that are difficult to reverse; (6) Climate and environmental constraints — China is both a major climate risk driver and increasingly vulnerable to climate impacts including extreme heat, flooding, and drought in key agricultural and manufacturing regions.",
+
+    "opportunities": "China remains a compelling long-term structural story in several dimensions: (1) It produces the world's largest cohort of STEM graduates annually and is generating world-class research output in AI, quantum computing, green technology, and biotech — domestic innovation is accelerating even as Western technology access is restricted; (2) China's green energy transition is the most ambitious in history — it accounts for over 60% of global solar panel manufacturing, leads in EV production and battery technology, and has installed more renewable energy capacity annually than the rest of the world combined; (3) The Belt and Road Initiative, despite efficiency questions, has created a geopolitical infrastructure network spanning Asia, Africa, and Latin America that provides trade and investment relationships outside the Western-dominated order; (4) A potential property sector bottom — once the excess inventory is cleared and household confidence returns, there is significant pent-up demand from a still-urbanizing population; (5) Domestic consumption upgrade story — as the Chinese middle class (estimated 400-500 million people) seeks higher-quality goods and services, sectors from premium food and beverage to healthcare to domestic travel and entertainment offer genuine growth potential.",
+
+    "ai_disclosure": {
+      "ai_generated": true,
+      "model": "claude-sonnet-4-6",
+      "generated_at": "2026-03-01T00:00:00Z",
+      "human_reviewed": false,
+      "disclaimer": "This narrative is AI-generated for informational and educational purposes only. It does not constitute investment, financial, legal, or political advice. Data points are derived from public sources and carry inherent uncertainty. Always consult qualified professionals before making investment or business decisions related to China."
+    }
+  },
+
+  "data_sources": [
+    "National Bureau of Statistics China (NBS)",
+    "People's Bank of China (PBOC) Annual Report 2025",
+    "State Administration of Foreign Exchange (SAFE)",
+    "Ministry of Commerce China (MOFCOM)",
+    "IMF World Economic Outlook October 2025",
+    "IMF Article IV Consultation: China 2025",
+    "World Bank World Development Indicators 2025",
+    "World Bank Worldwide Governance Indicators 2024",
+    "SIPRI Military Expenditure Database 2025",
+    "IISS The Military Balance 2025",
+    "US Department of Defense China Military Power Report 2025",
+    "UN Comtrade Database 2025",
+    "USGS Mineral Commodity Summaries 2025",
+    "IEA World Energy Statistics 2025",
+    "BP Statistical Review of World Energy 2025",
+    "Harvard Atlas of Economic Complexity 2024",
+    "WIPO Global Innovation Index 2025",
+    "EIU Democracy Index 2025",
+    "Freedom House Freedom in the World 2025",
+    "Transparency International CPI 2025",
+    "Reporters Without Borders Press Freedom Index 2025",
+    "Hofstede Insights Cultural Dimensions",
+    "World Values Survey Wave 7",
+    "UN Population Division World Population Prospects 2024",
+    "UNCTAD Review of Maritime Transport 2025",
+    "CSIS Asia Maritime Transparency Initiative",
+    "Carnegie Endowment for International Peace",
+    "PIIE Peterson Institute for International Economics"
+  ],
+
+  "metadata": {
+    "schema_version": "1.0",
+    "coverage_completeness": 0.87,
+    "data_quality_score": 0.76,
+    "tier": 1,
+    "full_pipeline_last_run": "2026-03-01T00:00:00Z",
+    "next_scheduled_update": "2026-03-08T00:00:00Z",
+    "notes": "Tier 1 country — full factor coverage required. Chinese government data is systematically less transparent than OECD country equivalents; confidence scores reflect this uncertainty. Military data carries the highest uncertainty (confidence ~0.72). Economic data reliability has declined since NBS methodology changes in 2023 and suspension of certain series (youth unemployment, residential property prices with limited city coverage)."
+  }
+}

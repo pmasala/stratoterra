@@ -1,0 +1,68 @@
+{
+  "id": "agent_03",
+  "name": "News & Events Gatherer",
+  "phase": 1,
+  "phase_name": "GATHER",
+  "description": "Scans major news sources and GDELT for geopolitically and economically significant events from the past 7 days, extracting structured event records.",
+  "inputs": [
+    "data/indices/country_list.json"
+  ],
+  "outputs": [
+    "staging/raw_collected/news_events_{DATE}.json"
+  ],
+  "timeout_minutes": 45,
+  "api_sources": [
+    "GDELT Project API (api.gdeltproject.org/api/v2)",
+    "Reuters (reuters.com)",
+    "Associated Press (apnews.com)",
+    "Financial Times (ft.com)",
+    "Wall Street Journal (wsj.com)",
+    "Bloomberg (bloomberg.com)",
+    "Al Jazeera (aljazeera.com)"
+  ],
+  "event_targets": {
+    "major_events_target": "5-15",
+    "moderate_events_target": "30-50",
+    "minor_events_target": "50-100",
+    "total_target": "80-150"
+  },
+  "event_types": [
+    "election_held",
+    "election_announced",
+    "trade_policy_change",
+    "military_deployment",
+    "military_exercise",
+    "sanctions_imposed",
+    "sanctions_lifted",
+    "arms_deal",
+    "diplomatic_meeting",
+    "diplomatic_rupture",
+    "summit",
+    "treaty_signed",
+    "treaty_withdrawn",
+    "protest",
+    "coup_attempt",
+    "leadership_change",
+    "central_bank_decision",
+    "debt_restructuring",
+    "nationalization",
+    "natural_disaster",
+    "cyber_attack",
+    "chokepoint_disruption"
+  ],
+  "regions": [
+    "North America",
+    "Europe",
+    "East Asia",
+    "South Asia",
+    "Middle East",
+    "Africa",
+    "Latin America",
+    "Central Asia",
+    "Southeast Asia",
+    "Oceania"
+  ],
+  "retry_on_failure": true,
+  "idempotent": false,
+  "prompt_file": "agents/prompts/agent_03_news_events.md"
+}

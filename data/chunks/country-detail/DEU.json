@@ -1,0 +1,750 @@
+{
+  "code": "DEU",
+  "name": "Germany",
+  "region": "europe",
+  "tier": 1,
+  "last_updated": "2026-02-28T12:00:00Z",
+  "executive_summary": "Germany faces its most prolonged industrial recession in decades, driven by high energy costs following the post-2022 restructuring of European energy supplies, declining export competitiveness in automotive and manufacturing, and structural fiscal constraints imposed by the constitutional debt brake. The economy is technically stagnant at ~0.5% GDP growth, with manufacturing PMI persistently below 50. Despite these headwinds, Germany retains world-class industrial infrastructure, a highly skilled workforce, strong institutions, and the second-highest economic complexity globally. The energy transition is accelerating but at significant short-term cost. Political uncertainty rose following the collapse of the Scholz coalition in late 2024, with a new government navigating competing demands for fiscal stimulus and debt discipline.",
+  "key_changes": [
+    "New CDU-led coalition government formed in early 2025 after snap elections, with Friedrich Merz as Chancellor",
+    "Bundeswehr modernization budget increased following NATO 2% GDP commitment reaffirmation",
+    "Volkswagen announced plant restructuring and workforce reduction of ~35,000 jobs through 2027",
+    "Germany achieved 62% renewable electricity share in 2025, exceeding annual target",
+    "Inflation eased to ~2.3%, approaching ECB target, reducing pressure on household consumption"
+  ],
+  "active_alerts": [
+    {
+      "id": "DEU-2026-001",
+      "severity": "watch",
+      "type": "economic",
+      "title": "Energy transition cost burden threatening industrial competitiveness",
+      "description": "German industrial electricity prices remain 2-3x US and Chinese levels, accelerating offshoring of energy-intensive manufacturing. Chemical, steel, and glass sectors reporting capacity reductions. Risk of persistent deindustrialization if energy cost gap is not narrowed within 3-5 years.",
+      "countries_affected": ["DEU"],
+      "created_at": "2026-01-15T00:00:00Z",
+      "updated_at": "2026-02-28T00:00:00Z",
+      "investor_action": "Monitor energy-intensive industrial equity exposure; watch for policy subsidies targeting industrial energy costs"
+    }
+  ],
+  "outlook": "Germany's near-term outlook is one of managed stagnation transitioning toward modest recovery by 2027. The new government's willingness to relax the debt brake for defense and infrastructure spending provides some fiscal stimulus, but structural competitiveness challenges in manufacturing will persist. Germany's strong institutional base, rule of law, and EU leadership role underpin long-term investment-grade status. The successful buildout of LNG import capacity and renewable energy provides a credible—if costly—path to energy security.",
+  "investor_implications": "Germany remains a core Tier 1 market with investment-grade sovereign debt and strong rule of law. Short-term headwinds favor defensive positioning: avoid energy-intensive industrials and legacy automotive OEMs. Opportunities exist in renewable energy infrastructure, defense suppliers (Rheinmetall, HENSOLDT), and Mittelstand exporters with diversified end-markets. EUR-denominated sovereign bonds are stable but offer limited yield premium. Political risk is low to moderate; fiscal reform debate is a watch item but unlikely to produce systemic instability.",
+  "layers": {
+    "endowments": {
+      "resources": {
+        "hydrocarbon_reserves_billion_boe": {
+          "value": 0.3,
+          "source": "EIA",
+          "confidence": 0.85,
+          "last_updated": "2025-06-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Minimal domestic oil and gas; legacy lignite coal deposits remain but declining"
+        },
+        "natural_gas_production_bcm_per_year": {
+          "value": 4.5,
+          "source": "EIA",
+          "confidence": 0.88,
+          "last_updated": "2025-09-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "renewable_energy_potential": {
+          "value": "high",
+          "source": "IRENA",
+          "confidence": 0.82,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Strong wind (North Sea/Baltic) and solar potential; significant offshore wind expansion underway"
+        },
+        "critical_minerals": {
+          "value": "minimal",
+          "source": "USGS",
+          "confidence": 0.80,
+          "last_updated": "2024-12-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Dependent on imports for lithium, cobalt, rare earths; potash production is a notable exception"
+        },
+        "arable_land_pct_total": {
+          "value": 34.1,
+          "source": "World Bank",
+          "confidence": 0.92,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "freshwater_resources_km3_per_year": {
+          "value": 154.0,
+          "source": "FAO AQUASTAT",
+          "confidence": 0.88,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "energy_independence_index": {
+          "value": 0.35,
+          "source": "Eurostat / EIA",
+          "confidence": 0.87,
+          "last_updated": "2025-09-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Heavily import-dependent; LNG terminal buildout since 2022 has improved but not resolved structural dependency"
+        }
+      },
+      "geography": {
+        "area_km2": 357114,
+        "landlocked": false,
+        "coastline_km": 2389,
+        "terrain": "Mostly lowland plains in north; uplands in center; Bavarian Alps in south",
+        "climate_zone": "temperate",
+        "natural_disaster_risk": "low",
+        "strategic_location_notes": "Central European position makes Germany the critical hub for EU east-west and north-south trade corridors; Rhine-Ruhr industrial heartland; major Baltic and North Sea port access",
+        "chokepoint_adjacency": ["North Sea shipping lanes", "Baltic Sea access"],
+        "border_countries": ["FRA", "BEL", "LUX", "NLD", "DNK", "POL", "CZE", "AUT", "CHE"]
+      },
+      "demographics": {
+        "population": {
+          "value": 84000000,
+          "source": "Destatis / World Bank",
+          "confidence": 0.95,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "population_growth_rate_pct": {
+          "value": 0.1,
+          "source": "World Bank",
+          "confidence": 0.90,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Sustained only by net immigration; native birth rate below replacement"
+        },
+        "median_age_years": {
+          "value": 45.7,
+          "source": "UN Population Division",
+          "confidence": 0.92,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Among the oldest populations globally; aging society creates structural fiscal pressure"
+        },
+        "working_age_population_pct": {
+          "value": 62.4,
+          "source": "Destatis",
+          "confidence": 0.92,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "urbanization_rate_pct": {
+          "value": 77.8,
+          "source": "World Bank",
+          "confidence": 0.90,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "tertiary_education_pct": {
+          "value": 36.2,
+          "source": "OECD",
+          "confidence": 0.88,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "High vocational training participation supplements formal tertiary rates"
+        },
+        "immigration_stock_pct_population": {
+          "value": 18.5,
+          "source": "Destatis",
+          "confidence": 0.90,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual"
+        }
+      }
+    },
+    "institutions": {
+      "political": {
+        "regime_type": "parliamentary_democracy",
+        "regime_stability": {
+          "value": 0.78,
+          "source": "World Bank WGI / EIU",
+          "confidence": 0.85,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "government_effectiveness": {
+          "value": 0.88,
+          "source": "World Bank WGI",
+          "confidence": 0.87,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "election_cycle_years": 4,
+        "next_election_date": "2029-01-01",
+        "head_of_government": "Friedrich Merz (Chancellor, CDU)",
+        "ruling_coalition": "CDU/CSU - SPD",
+        "political_risk_notes": "Coalition stability is moderate; AfD's continued rise in polls (approx 20% support) creates governance pressure but no near-term risk to democratic institutions",
+        "sanctions_regime": "EU common sanctions; Russia, Belarus, Iran, North Korea among sanctioned entities",
+        "corruption_perception_index": {
+          "value": 78.0,
+          "source": "Transparency International",
+          "confidence": 0.88,
+          "last_updated": "2026-01-28T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Score out of 100; higher is less corrupt. Germany ranks ~9th globally"
+        },
+        "rule_of_law_index": {
+          "value": 0.88,
+          "source": "World Bank WGI",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "press_freedom_index": {
+          "value": 0.82,
+          "source": "RSF",
+          "confidence": 0.82,
+          "last_updated": "2025-05-01T00:00:00Z",
+          "update_frequency": "annual"
+        }
+      },
+      "governance": {
+        "regulatory_quality": {
+          "value": 0.86,
+          "source": "World Bank WGI",
+          "confidence": 0.88,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "voice_and_accountability": {
+          "value": 0.85,
+          "source": "World Bank WGI",
+          "confidence": 0.88,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "fiscal_transparency": "high",
+        "debt_brake_constitutional": true,
+        "eu_budget_net_contributor": true
+      },
+      "cultural": {
+        "hofstede_power_distance": 35,
+        "hofstede_individualism": 67,
+        "hofstede_uncertainty_avoidance": 65,
+        "hofstede_long_term_orientation": 83,
+        "social_trust_index": {
+          "value": 0.62,
+          "source": "World Values Survey",
+          "confidence": 0.75,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "static"
+        },
+        "innovation_culture_notes": "Strong engineering and applied research culture; Fraunhofer Institutes model widely emulated; risk aversion limits startup ecosystem relative to US/UK",
+        "official_languages": ["German"]
+      }
+    },
+    "economy": {
+      "macro": {
+        "gdp_nominal_usd": {
+          "value": 4500000000000,
+          "trend": "stable",
+          "source": "IMF WEO / Destatis",
+          "confidence": 0.92,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "quarterly",
+          "trend_reasoning": "GDP in nominal USD terms marginally positive in 2025; EUR/USD rate fluctuations partially offset stagnant real growth",
+          "evidence": [
+            "IMF April 2025 WEO: Germany GDP $4.52T for 2025",
+            "Destatis Q3 2025: real GDP +0.2% QoQ",
+            "ECB projections: 2025 Germany growth revised down to 0.4%"
+          ],
+          "counter_arguments": [
+            "Manufacturing orders showing tentative recovery in late 2025",
+            "Services sector remains resilient"
+          ]
+        },
+        "gdp_growth_rate_pct": {
+          "value": 0.5,
+          "trend": "stable",
+          "source": "IMF WEO / Destatis",
+          "confidence": 0.88,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "quarterly"
+        },
+        "gdp_per_capita_usd": {
+          "value": 53571,
+          "source": "IMF WEO",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "gdp_ppp_usd": {
+          "value": 5500000000000,
+          "source": "IMF WEO",
+          "confidence": 0.88,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "inflation_rate_pct": {
+          "value": 2.3,
+          "trend": "decrease",
+          "source": "Destatis / ECB",
+          "confidence": 0.93,
+          "last_updated": "2026-01-31T00:00:00Z",
+          "update_frequency": "monthly"
+        },
+        "unemployment_rate_pct": {
+          "value": 5.6,
+          "trend": "stable",
+          "source": "Bundesagentur fur Arbeit / Destatis",
+          "confidence": 0.93,
+          "last_updated": "2026-01-31T00:00:00Z",
+          "update_frequency": "monthly",
+          "notes": "Creeping up from historic lows of ~2.9%; structural unemployment rising in manufacturing transition"
+        },
+        "current_account_balance_pct_gdp": {
+          "value": 5.8,
+          "trend": "decrease",
+          "source": "Bundesbank / IMF",
+          "confidence": 0.88,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "quarterly",
+          "notes": "Surplus narrowing from peak ~8%; energy import costs elevated"
+        },
+        "budget_balance_pct_gdp": {
+          "value": -2.0,
+          "trend": "stable",
+          "source": "BMF / Eurostat",
+          "confidence": 0.88,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "public_debt_pct_gdp": {
+          "value": 65.2,
+          "trend": "stable",
+          "source": "IMF / Bundesbank",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "economic_complexity_index": {
+          "value": 2.1,
+          "trend": "stable",
+          "source": "Harvard CID / MIT Observatory",
+          "confidence": 0.82,
+          "last_updated": "2024-12-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "World #2 economic complexity; extremely diversified high-value-added export basket"
+        }
+      },
+      "financial": {
+        "currency": "EUR",
+        "exchange_rate_vs_usd": {
+          "value": 1.085,
+          "trend": "stable",
+          "source": "ECB",
+          "confidence": 0.95,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "daily"
+        },
+        "sovereign_credit_rating": {
+          "moodys": "Aaa",
+          "sp": "AAA",
+          "fitch": "AAA",
+          "source": "Rating agency publications",
+          "confidence": 0.98,
+          "last_updated": "2025-12-01T00:00:00Z",
+          "update_frequency": "monthly"
+        },
+        "10yr_bond_yield_pct": {
+          "value": 2.55,
+          "trend": "decrease",
+          "source": "Bundesbank / Bloomberg",
+          "confidence": 0.95,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "daily"
+        },
+        "investment_risk_index": {
+          "value": 0.15,
+          "source": "Composite: WGI, EIU, World Bank DB",
+          "confidence": 0.85,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "weekly",
+          "notes": "0=no risk, 1=maximum risk; Germany among lowest globally"
+        },
+        "banking_sector_stability": "stable",
+        "stock_market_cap_pct_gdp": {
+          "value": 55.0,
+          "source": "Deutsche Borse / World Bank",
+          "confidence": 0.85,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "quarterly"
+        }
+      },
+      "trade": {
+        "trade_openness_pct_gdp": {
+          "value": 88.0,
+          "source": "World Bank / Destatis",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Exports + imports as % of GDP; highly open economy"
+        },
+        "exports_usd_bn": {
+          "value": 1622.0,
+          "trend": "stable",
+          "source": "Destatis / World Bank",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "imports_usd_bn": {
+          "value": 1548.0,
+          "trend": "stable",
+          "source": "Destatis / World Bank",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "top_export_categories": [
+          "Motor vehicles and parts",
+          "Machinery and equipment",
+          "Chemicals and pharmaceuticals",
+          "Electronic equipment",
+          "Aircraft components"
+        ],
+        "top_import_categories": [
+          "Energy (LNG, oil, pipeline gas)",
+          "Electronic components",
+          "Vehicles and parts",
+          "Metals and ores",
+          "Pharmaceutical ingredients"
+        ],
+        "wto_member": true,
+        "eu_single_market": true
+      },
+      "labor": {
+        "labor_force_millions": {
+          "value": 45.8,
+          "source": "Destatis / ILO",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "quarterly"
+        },
+        "labor_productivity_index": {
+          "value": 0.82,
+          "source": "OECD",
+          "confidence": 0.82,
+          "last_updated": "2024-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Relative to US = 1.0"
+        },
+        "minimum_wage_usd_per_hour": {
+          "value": 13.80,
+          "source": "BMAS",
+          "confidence": 0.95,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "skilled_labor_availability": "high",
+        "vocational_training_system": "world_class"
+      }
+    },
+    "military": {
+      "personnel": {
+        "active_military": {
+          "value": 183000,
+          "source": "IISS Military Balance / BMVg",
+          "confidence": 0.92,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "reserve_military": {
+          "value": 60000,
+          "source": "IISS Military Balance",
+          "confidence": 0.85,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "paramilitary": {
+          "value": 0,
+          "source": "IISS Military Balance",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "conscription": false,
+        "conscription_notes": "Suspended in 2011; debate about reintroduction ongoing amid NATO pressure"
+      },
+      "spending": {
+        "military_spending_usd_bn": {
+          "value": 68.0,
+          "trend": "growth",
+          "source": "SIPRI / BMVg",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "2025 figure; Zeitenwende commitment driving sustained increase from ~1.4% to ~2% of GDP"
+        },
+        "military_spending_pct_gdp": {
+          "value": 1.98,
+          "trend": "growth",
+          "source": "SIPRI / NATO",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "special_defense_fund_usd_bn": {
+          "value": 105.0,
+          "source": "Bundestag / BMVg",
+          "confidence": 0.92,
+          "last_updated": "2025-06-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "100B EUR Sondervermogen announced 2022; partially disbursed through 2025"
+        }
+      },
+      "capabilities": {
+        "nuclear_status": "non_nuclear_nato_sharing",
+        "nuclear_notes": "Participates in NATO nuclear sharing; US B61 bombs stored at Buchel Air Base under dual-key arrangement",
+        "air_force_combat_aircraft": {
+          "value": 128,
+          "source": "IISS Military Balance",
+          "confidence": 0.88,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Eurofighter Typhoon fleet; F-35A acquisition underway to replace Tornado in nuclear role"
+        },
+        "main_battle_tanks": {
+          "value": 320,
+          "source": "IISS Military Balance",
+          "confidence": 0.88,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Leopard 2 variants; inventory well below Cold War peak; deliveries to Ukraine reduced stockpile"
+        },
+        "naval_vessels": {
+          "frigates": 10,
+          "submarines": 6,
+          "source": "IISS Military Balance",
+          "confidence": 0.85,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "cyber_capability": "advanced",
+        "defense_industrial_base": "tier_1",
+        "arms_export_rank": 5
+      },
+      "conflicts": {
+        "active_conflicts": [],
+        "involvement_notes": "No direct combat deployment; training and equipping Ukrainian forces; NATO reassurance deployments in Eastern Europe (Lithuania enhanced Forward Presence)",
+        "peacekeeping_deployments": ["Mali MINUSMA (withdrawn 2023)", "Kosovo KFOR ongoing"],
+        "ukraine_military_aid_usd_bn": {
+          "value": 17.5,
+          "source": "Kiel Institute Ukraine Support Tracker",
+          "confidence": 0.88,
+          "last_updated": "2026-02-01T00:00:00Z",
+          "update_frequency": "monthly"
+        }
+      }
+    },
+    "relations": {
+      "top_partners": [
+        {
+          "code": "USA",
+          "name": "United States",
+          "relationship_quality": "allied",
+          "trade_volume_usd_bn": 290.0,
+          "notes": "Largest single-country trade partner; NATO ally; some tension over defense spending burden-sharing and trade balance"
+        },
+        {
+          "code": "FRA",
+          "name": "France",
+          "relationship_quality": "allied",
+          "trade_volume_usd_bn": 185.0,
+          "notes": "Core EU axis; Franco-German engine of European integration; occasional divergence on defense and industrial policy"
+        },
+        {
+          "code": "CHN",
+          "name": "China",
+          "relationship_quality": "neutral",
+          "trade_volume_usd_bn": 255.0,
+          "notes": "Critical trading partner for German auto/machinery sector; EU-China relations cooling; strategic dependency under review"
+        },
+        {
+          "code": "NLD",
+          "name": "Netherlands",
+          "relationship_quality": "allied",
+          "trade_volume_usd_bn": 195.0,
+          "notes": "Major transit route for German exports/imports; Rotterdam-Rhine corridor"
+        },
+        {
+          "code": "POL",
+          "name": "Poland",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 142.0,
+          "notes": "Largest eastern neighbor; EU member; historically tense but relations improved since PiS government exit"
+        },
+        {
+          "code": "ITA",
+          "name": "Italy",
+          "relationship_quality": "allied",
+          "trade_volume_usd_bn": 138.0,
+          "notes": "Major EU partner; historical north-south EU fiscal divide but shared eurozone interests"
+        },
+        {
+          "code": "GBR",
+          "name": "United Kingdom",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 118.0,
+          "notes": "Post-Brexit trade relations stabilizing; defense cooperation via bilateral treaty"
+        },
+        {
+          "code": "AUT",
+          "name": "Austria",
+          "relationship_quality": "allied",
+          "trade_volume_usd_bn": 92.0,
+          "notes": "Deep economic integration; shared German-language cultural zone"
+        },
+        {
+          "code": "CHE",
+          "name": "Switzerland",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 88.0,
+          "notes": "Non-EU but deeply integrated; significant financial and pharmaceutical ties"
+        },
+        {
+          "code": "RUS",
+          "name": "Russia",
+          "relationship_quality": "hostile",
+          "trade_volume_usd_bn": 12.0,
+          "notes": "Relations severed following 2022 invasion of Ukraine; sanctions in place; residual commodity trade minimal; Nord Stream pipelines destroyed"
+        }
+      ],
+      "alliances": [
+        {
+          "name": "NATO",
+          "type": "military",
+          "member_since": "1955-05-05",
+          "role": "founding_member_with_conditions",
+          "notes": "West Germany a founding member 1955; reunified Germany confirmed 1990; Zeitenwende marks major shift in German strategic culture"
+        },
+        {
+          "name": "European Union",
+          "type": "economic_political",
+          "member_since": "1957-03-25",
+          "role": "founding_member_leading_economy",
+          "notes": "Germany is the EU's largest economy; dominant influence on ECB, Eurozone fiscal rules, and EU external trade policy"
+        },
+        {
+          "name": "G7",
+          "type": "economic_coordination",
+          "member_since": "1975-01-01",
+          "role": "member"
+        },
+        {
+          "name": "G20",
+          "type": "economic_coordination",
+          "member_since": "1999-01-01",
+          "role": "member"
+        },
+        {
+          "name": "OECD",
+          "type": "economic",
+          "member_since": "1961-09-27",
+          "role": "founding_member"
+        },
+        {
+          "name": "UN Security Council",
+          "type": "political",
+          "role": "elected_non_permanent_member",
+          "notes": "Regularly elected to UNSC; advocates permanent seat as part of broader UN reform"
+        }
+      ]
+    },
+    "derived": {
+      "composite_power_score": {
+        "value": 0.72,
+        "source": "Stratoterra composite model",
+        "confidence": 0.78,
+        "last_updated": "2026-02-28T00:00:00Z",
+        "update_frequency": "weekly",
+        "components": {
+          "economic_power": 0.78,
+          "military_power": 0.58,
+          "diplomatic_influence": 0.75,
+          "technological_capacity": 0.80,
+          "institutional_strength": 0.88
+        }
+      },
+      "investment_risk_composite": {
+        "value": 0.15,
+        "trend": "stable",
+        "source": "Stratoterra composite model",
+        "confidence": 0.85,
+        "last_updated": "2026-02-28T00:00:00Z",
+        "update_frequency": "weekly",
+        "components": {
+          "political_risk": 0.12,
+          "economic_risk": 0.18,
+          "currency_risk": 0.10,
+          "regulatory_risk": 0.08,
+          "geopolitical_risk": 0.22
+        }
+      },
+      "geopolitical_stability_score": {
+        "value": 0.78,
+        "trend": "stable",
+        "source": "Stratoterra composite model",
+        "confidence": 0.82,
+        "last_updated": "2026-02-28T00:00:00Z",
+        "update_frequency": "weekly"
+      },
+      "economic_resilience_score": {
+        "value": 0.72,
+        "source": "Stratoterra composite model",
+        "confidence": 0.80,
+        "last_updated": "2026-02-28T00:00:00Z",
+        "update_frequency": "weekly",
+        "notes": "Strong institutional base and export diversification offset energy vulnerability and aging demographics"
+      },
+      "vulnerability_indices": {
+        "energy_vulnerability": {
+          "value": 0.68,
+          "source": "Stratoterra composite",
+          "confidence": 0.82,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "weekly",
+          "notes": "Structural import dependency; improving with LNG infrastructure but remains elevated"
+        },
+        "food_security_index": {
+          "value": 0.88,
+          "source": "GFSI / Stratoterra",
+          "confidence": 0.82,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "supply_chain_concentration": {
+          "value": 0.42,
+          "source": "Stratoterra composite",
+          "confidence": 0.72,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "weekly",
+          "notes": "Exposure to Chinese intermediate goods in automotive and electronics supply chains"
+        },
+        "demographic_pressure": {
+          "value": 0.62,
+          "source": "Stratoterra composite",
+          "confidence": 0.80,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Aging population creates long-term pension and healthcare fiscal pressure; offset by immigration"
+        }
+      },
+      "trend_summary": {
+        "economic_trajectory": "stable",
+        "political_trajectory": "stable",
+        "military_trajectory": "growth",
+        "diplomatic_trajectory": "stable",
+        "overall_trajectory": "stable"
+      }
+    }
+  },
+  "narrative": {
+    "executive_overview": "Germany in 2025-2026 faces a structural inflection point. The industrial model that generated export surpluses and broad prosperity for three decades—anchored by cheap Russian energy, globalized supply chains, and booming Chinese demand for capital goods—has fractured simultaneously on all three dimensions. The Zeitenwende (turning point) declared by Chancellor Scholz after the 2022 Russian invasion of Ukraine has proven to be as much an economic and industrial shock as a strategic one. Energy costs remain structurally elevated, the Chinese electric vehicle transition has disrupted German automotive dominance, and the global trading system faces fragmentation pressures. Despite this, Germany's fundamentals remain formidable: world-class industrial infrastructure, an unparalleled engineering workforce, EU leadership, and institutions of exceptional quality. The central question is whether Germany can execute the energy transition and industrial restructuring at sufficient speed to avoid a sustained decline in its relative economic position.",
+    "key_developments": "The new CDU-led coalition government that took office in early 2025 following snap elections has modestly relaxed fiscal constraints for defense and critical infrastructure spending, utilizing a constitutional amendment that carves out security expenditure from the debt brake. Military spending reached approximately 2% of GDP for the first time since the Cold War, driven by the 100 billion EUR Sondervermogen. In the industrial sphere, Volkswagen's announced restructuring—closing multiple German factories and cutting tens of thousands of jobs—marked a symbolic end to the era of assumed German automotive supremacy. Simultaneously, renewable energy reached 62% of electricity generation, providing a credible foundation for long-term energy cost reduction, though the transition period remains costly. Inflation has returned near ECB target levels, allowing the ECB to maintain an easing path that provides some support for German growth prospects in 2026-2027.",
+    "risk_factors": "The primary risk is a self-reinforcing deindustrialization spiral where high energy costs drive manufacturing offshoring, which reduces the tax base and skilled employment base, which undermines the fiscal capacity to invest in the energy transition, which perpetuates high energy costs. Secondary risks include political polarization, with the AfD capturing approximately 20% of the national vote, creating governance complexity even if the party remains excluded from coalitions. China risk is bilateral: Germany is deeply exposed to Chinese market demand for its exports AND to Chinese competition replacing German products globally, especially in EVs. Demographic aging creates structural fiscal pressure on pensions and healthcare. The Russian security threat, while not existential, demands sustained defense investment that competes with industrial transition spending.",
+    "opportunities": "Germany's economic complexity of 2.1 (world #2) represents an enormous latent advantage. The same engineering capabilities that built internal combustion engine supremacy are being redirected to hydrogen, offshore wind turbines, battery manufacturing, and defense systems. Germany is positioned to be a leading supplier of green industrial equipment globally. The €300 billion EU investment mobilization under the European Green Deal creates a large captive market for German engineering firms. Defense spending normalization across NATO Europe is a multi-decade tailwind for German defense manufacturers such as Rheinmetall, HENSOLDT, and Thales Deutschland. The Mittelstand—Germany's network of ~3.5 million mid-sized family-owned industrial champions—has historically demonstrated remarkable adaptation capacity and retains world-leading positions in specialized industrial niches.",
+    "ai_generated": true,
+    "generation_date": "2026-02-28T12:00:00Z",
+    "model_version": "stratoterra-agent-v1.0",
+    "disclaimer": "AI-generated analysis. Not investment advice. Based on public data sources as of February 2026."
+  }
+}

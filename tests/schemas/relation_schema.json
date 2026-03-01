@@ -1,0 +1,192 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://stratoterra.io/schemas/relation_schema.json",
+  "title": "BilateralRelation",
+  "description": "Schema for bilateral relation files (e.g. data/relations/CHN_USA.json). country_a must be alphabetically before country_b.",
+  "type": "object",
+  "required": [
+    "pair",
+    "country_a",
+    "country_b",
+    "composite_score",
+    "relationship_type",
+    "trade",
+    "diplomatic",
+    "military",
+    "financial"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "pair": {
+      "type": "string",
+      "description": "Canonical pair identifier in alphabetical order, e.g. CHN_USA",
+      "pattern": "^[A-Z]{3}_[A-Z]{3}$"
+    },
+    "country_a": {
+      "type": "string",
+      "description": "ISO 3166-1 alpha-3 code of the alphabetically first country",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "country_b": {
+      "type": "string",
+      "description": "ISO 3166-1 alpha-3 code of the alphabetically second country",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "composite_score": {
+      "type": "number",
+      "description": "Overall relationship score, 0 (fully hostile) to 1 (fully allied)",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "relationship_type": {
+      "type": "string",
+      "description": "Qualitative classification of the relationship",
+      "enum": [
+        "allied",
+        "friendly",
+        "neutral",
+        "cool",
+        "hostile"
+      ]
+    },
+    "last_updated": {
+      "type": "string",
+      "description": "ISO 8601 UTC timestamp of last update",
+      "format": "date-time"
+    },
+    "trade": {
+      "type": "object",
+      "description": "Bilateral trade dimension",
+      "additionalProperties": true,
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "a_exports_to_b_usd": {
+          "type": "number",
+          "minimum": 0
+        },
+        "b_exports_to_a_usd": {
+          "type": "number",
+          "minimum": 0
+        },
+        "total_bilateral_trade_usd": {
+          "type": "number",
+          "minimum": 0
+        },
+        "a_trade_dependency": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "b_trade_dependency": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "diplomatic": {
+      "type": "object",
+      "description": "Diplomatic and political dimension",
+      "additionalProperties": true,
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "un_voting_alignment": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "formal_relations_status": {
+          "type": "string"
+        }
+      }
+    },
+    "military": {
+      "type": "object",
+      "description": "Military and security dimension",
+      "additionalProperties": true,
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "alliance_status": {
+          "type": "string"
+        },
+        "joint_exercises": {
+          "type": "boolean"
+        }
+      }
+    },
+    "financial": {
+      "type": "object",
+      "description": "Financial and investment dimension",
+      "additionalProperties": true,
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "a_fdi_in_b_usd": {
+          "type": "number",
+          "minimum": 0
+        },
+        "b_fdi_in_a_usd": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "people": {
+      "type": "object",
+      "description": "People-to-people dimension (diaspora, tourism, students)",
+      "additionalProperties": true,
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "science_tech": {
+      "type": "object",
+      "description": "Science and technology cooperation dimension",
+      "additionalProperties": true,
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "energy": {
+      "type": "object",
+      "description": "Energy trade and dependency dimension",
+      "additionalProperties": true,
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "power_asymmetry": {
+      "type": "number",
+      "description": "Power asymmetry index: -1 (country_a dominant) to +1 (country_b dominant)",
+      "minimum": -1,
+      "maximum": 1
+    }
+  }
+}

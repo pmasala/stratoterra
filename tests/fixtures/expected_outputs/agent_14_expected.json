@@ -1,0 +1,97 @@
+{
+  "_description": "Minimal expected output structure from Agent 14 (Weekly Briefing Generator). Used by UT-AGT-004.",
+  "_schema_version": "1.0",
+  "briefing_id": "2026-W09",
+  "generated_at": "2026-03-01T14:00:00Z",
+  "ai_generated": true,
+  "period_covered": "Week of 2026-03-01",
+  "headline": "Global markets steady as central banks signal caution while geopolitical tensions persist in Eastern Europe and the Taiwan Strait.",
+  "top_stories": [
+    {
+      "rank": 1,
+      "title": "Fed Holds Rates, Signals One Cut in 2026",
+      "summary": "The Federal Reserve held its benchmark rate at 4.5-4.75% at its March meeting, citing persistent services inflation. Chair Powell signaled one 25bps cut later in the year if disinflation continues. Markets had priced in two cuts, leading to a modest bond sell-off.",
+      "countries_affected": ["USA"],
+      "investor_impact": "Dollar strengthened modestly; US Treasury yields rose 10-15bps along the curve. EM assets under mild pressure.",
+      "severity": "major",
+      "alert_linked": null
+    },
+    {
+      "rank": 2,
+      "title": "Taiwan Strait Tensions Elevated After PLA Exercises",
+      "summary": "China's PLA conducted air and naval exercises in the Taiwan Strait for the third consecutive week, the largest in scale since 2022. Taiwan's defense ministry reported 45 aircraft incursions across the median line. Washington urged restraint.",
+      "countries_affected": ["CHN", "TWN", "USA"],
+      "investor_impact": "Taiwan semiconductor and tech stocks declined 3-4%. Risk premium on Taiwan-linked assets widened.",
+      "severity": "major",
+      "alert_linked": "alert_2026-02-15_003"
+    }
+  ],
+  "regional_summaries": {
+    "North America": "The US economy remains solid with Q4 GDP confirmed at 2.4%. Canada's central bank signaled a pause after two consecutive cuts.",
+    "Europe": "The ECB cut rates by 25bps to 2.5%, citing weak growth. Germany's industrial output declined 0.8% in January.",
+    "East Asia": "Taiwan Strait tensions dominated the week. South Korea's export data beat expectations, driven by semiconductor demand.",
+    "South Asia": "India maintained its outperformance, with 7.2% growth confirmed for Q3. Elections in three states concluded peacefully.",
+    "Middle East & North Africa": "Oil prices edged up on OPEC+ compliance reports. Saudi Arabia's non-oil sector growth accelerated.",
+    "Sub-Saharan Africa": "Nigeria's naira stabilized after central bank interventions. Kenya's Eurobond refinancing completed successfully.",
+    "Latin America": "Brazil's central bank held the Selic rate amid fiscal concerns. Argentina's IMF negotiations progressed.",
+    "Central Asia": "Kazakhstan's oil revenues bolstered its sovereign wealth fund. Uzbekistan announced new FDI reforms.",
+    "Southeast Asia": "Vietnam continued to attract manufacturing FDI as supply chains diversify from China.",
+    "Oceania": "Australia's RBA signaled further easing as domestic demand remains subdued."
+  },
+  "market_context": {
+    "summary": "Brent crude rose 3% on supply discipline. The dollar strengthened after the Fed's hawkish hold. EM currencies broadly weaker.",
+    "notable_moves": [
+      {
+        "asset": "Brent Crude",
+        "direction": "up",
+        "change_pct": 3.2,
+        "driver": "OPEC+ compliance and Middle East supply uncertainty"
+      },
+      {
+        "asset": "EUR/USD",
+        "direction": "down",
+        "change_pct": -1.1,
+        "driver": "ECB rate cut and divergence with Fed"
+      },
+      {
+        "asset": "US 10Y Treasury",
+        "direction": "up",
+        "change_bps": 12,
+        "driver": "Fed hawkish hold"
+      }
+    ]
+  },
+  "watchlist_updates": [
+    {
+      "country_code": "ARG",
+      "country_name": "Argentina",
+      "situation": "Debt restructuring and IMF program negotiations ongoing",
+      "change_this_week": "Positive signals from IMF technical mission; primary surplus target maintained",
+      "alert_severity": "warning"
+    }
+  ],
+  "data_quality_summary": {
+    "countries_updated": 55,
+    "factors_updated": 320,
+    "avg_confidence": 0.83,
+    "escalations_reviewed": 3,
+    "alerts_active": {
+      "critical": 1,
+      "warning": 4,
+      "watch": 12
+    }
+  },
+  "_required_fields": [
+    "briefing_id", "generated_at", "ai_generated", "period_covered",
+    "headline", "top_stories", "regional_summaries", "market_context",
+    "watchlist_updates", "data_quality_summary"
+  ],
+  "_required_top_story_fields": [
+    "rank", "title", "summary", "countries_affected", "investor_impact", "severity"
+  ],
+  "_required_regional_keys": [
+    "North America", "Europe", "East Asia", "South Asia",
+    "Middle East & North Africa", "Sub-Saharan Africa", "Latin America",
+    "Central Asia", "Southeast Asia", "Oceania"
+  ]
+}

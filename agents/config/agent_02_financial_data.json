@@ -1,0 +1,42 @@
+{
+  "id": "agent_02",
+  "name": "Financial Data Gatherer",
+  "phase": 1,
+  "phase_name": "GATHER",
+  "description": "Collects current financial market data including exchange rates, sovereign bond yields, stock indices, and commodity prices.",
+  "inputs": [
+    "data/indices/country_list.json"
+  ],
+  "outputs": [
+    "staging/raw_collected/financial_data_{DATE}.json"
+  ],
+  "timeout_minutes": 20,
+  "api_sources": [
+    "ExchangeRate-API (exchangerate-api.com)",
+    "Trading Economics (tradingeconomics.com)",
+    "Investing.com (web fetch)",
+    "Yahoo Finance (web fetch)",
+    "Moody's / S&P / Fitch rating pages (web fetch)"
+  ],
+  "target_indicators": [
+    "exchange_rate_vs_usd",
+    "exchange_rate_weekly_change_pct",
+    "sovereign_bond_yield_10yr_pct",
+    "sovereign_bond_yield_weekly_change_bps",
+    "stock_index_level",
+    "stock_index_weekly_change_pct",
+    "brent_crude_usd_per_barrel",
+    "wti_crude_usd_per_barrel",
+    "natural_gas_usd_per_mmbtu",
+    "gold_usd_per_oz",
+    "copper_usd_per_tonne",
+    "wheat_usd_per_bushel"
+  ],
+  "volatility_thresholds": {
+    "fx_weekly_change_pct": 3.0,
+    "yield_weekly_change_bps": 50
+  },
+  "retry_on_failure": true,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_02_financial_data.md"
+}

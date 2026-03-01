@@ -1,0 +1,35 @@
+{
+  "id": "agent_07",
+  "name": "Fact Extractor & Structurer",
+  "phase": 2,
+  "phase_name": "PROCESS",
+  "description": "Transforms all raw collected data from Phase 1 agents into structured factor updates mapped to the canonical schema in 01_FACTOR_MODEL_SPEC.md. Normalizes values, handles conflicts, and classifies event signals.",
+  "inputs": [
+    "staging/raw_collected/official_stats_{DATE}.json",
+    "staging/raw_collected/financial_data_{DATE}.json",
+    "staging/raw_collected/news_events_{DATE}.json",
+    "staging/raw_collected/trade_sanctions_{DATE}.json",
+    "staging/raw_collected/military_conflict_{DATE}.json",
+    "staging/raw_collected/political_regulatory_{DATE}.json",
+    "docs/01_FACTOR_MODEL_SPEC.md"
+  ],
+  "outputs": [
+    "staging/processed/factor_updates_{DATE}.json"
+  ],
+  "timeout_minutes": 30,
+  "update_classification": {
+    "DIRECT_UPDATE": "Certainty level >= officially_announced, maps to a specific factor_path",
+    "SIGNAL": "Event suggests trend direction without a precise new value",
+    "IRRELEVANT": "Does not affect any tracked factor"
+  },
+  "confidence_by_source": {
+    "official_api_world_bank_imf": "0.85-0.95",
+    "financial_market_data": "0.90-0.95",
+    "web_scraped_official_page": "0.70-0.85",
+    "news_extracted": "0.50-0.70"
+  },
+  "conflict_threshold_pct": 20,
+  "retry_on_failure": false,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_07_processor.md"
+}

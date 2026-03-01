@@ -1,0 +1,178 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://stratoterra.io/schemas/country_detail_schema.json",
+  "title": "CountryDetail",
+  "description": "Schema for per-country detail files (e.g. data/chunks/country-detail/USA.json).",
+  "type": "object",
+  "required": [
+    "code",
+    "name",
+    "region",
+    "tier",
+    "last_updated",
+    "executive_summary",
+    "key_changes",
+    "active_alerts",
+    "outlook",
+    "investor_implications",
+    "layers",
+    "narrative"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "ISO 3166-1 alpha-3 country code",
+      "minLength": 3,
+      "maxLength": 3,
+      "pattern": "^[A-Z]{3}$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Country display name",
+      "minLength": 1
+    },
+    "region": {
+      "type": "string",
+      "description": "Geopolitical region classification",
+      "enum": [
+        "north_america",
+        "latin_america",
+        "europe",
+        "middle_east",
+        "sub_saharan_africa",
+        "south_asia",
+        "east_asia",
+        "southeast_asia",
+        "central_asia",
+        "oceania"
+      ]
+    },
+    "tier": {
+      "type": "integer",
+      "description": "Country tier: 1=major economy, 2=regional player, 3=frontier/watchlist",
+      "minimum": 1,
+      "maximum": 3
+    },
+    "last_updated": {
+      "type": "string",
+      "description": "ISO 8601 UTC timestamp of last update",
+      "format": "date-time"
+    },
+    "executive_summary": {
+      "type": "string",
+      "description": "Short AI-generated summary paragraph for this country",
+      "minLength": 10
+    },
+    "key_changes": {
+      "type": "array",
+      "description": "Bullet-point list of the most significant changes this week",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "active_alerts": {
+      "type": "array",
+      "description": "Active alerts relevant to this country",
+      "items": {
+        "type": "object",
+        "required": ["severity", "title", "description"],
+        "additionalProperties": true,
+        "properties": {
+          "severity": {
+            "type": "string",
+            "enum": ["critical", "warning", "watch"]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "outlook": {
+      "type": "string",
+      "description": "Medium-term outlook narrative",
+      "minLength": 1
+    },
+    "investor_implications": {
+      "type": "string",
+      "description": "Key investor implications derived from the data",
+      "minLength": 1
+    },
+    "layers": {
+      "type": "object",
+      "description": "The six-layer factor model for this country",
+      "required": [
+        "endowments",
+        "institutions",
+        "economy",
+        "military",
+        "relations",
+        "derived"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "endowments": {
+          "type": "object",
+          "description": "Layer 1: Natural endowments — geography, resources, demographics",
+          "additionalProperties": true
+        },
+        "institutions": {
+          "type": "object",
+          "description": "Layer 2: Institutional quality — governance, rule of law, political system",
+          "additionalProperties": true
+        },
+        "economy": {
+          "type": "object",
+          "description": "Layer 3: Economic performance — GDP, trade, fiscal, monetary",
+          "additionalProperties": true
+        },
+        "military": {
+          "type": "object",
+          "description": "Layer 4: Military capability — spending, personnel, hardware, nuclear",
+          "additionalProperties": true
+        },
+        "relations": {
+          "type": "object",
+          "description": "Layer 5: International relations — alliances, memberships, diplomatic posture",
+          "additionalProperties": true
+        },
+        "derived": {
+          "type": "object",
+          "description": "Layer 6: Derived metrics — composite scores, risk indices, capability rankings",
+          "additionalProperties": true
+        }
+      }
+    },
+    "narrative": {
+      "type": "object",
+      "description": "AI-generated narrative sections for the country",
+      "additionalProperties": true,
+      "properties": {
+        "executive_summary": {
+          "type": "string"
+        },
+        "key_changes_this_week": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "outlook": {
+          "type": "string"
+        },
+        "investor_implications": {
+          "type": "string"
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

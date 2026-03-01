@@ -1,0 +1,45 @@
+{
+  "id": "agent_10",
+  "name": "Trend Estimator",
+  "phase": 5,
+  "phase_name": "ANALYZE",
+  "description": "Produces quarterly trend estimates for 11 key factors across all Tier 1 and Tier 2 countries (~605 estimates). Each estimate includes reasoning, supporting evidence, counter-arguments, and investor implications.",
+  "inputs": [
+    "data/countries/*.json",
+    "staging/processed/factor_updates_{DATE}.json",
+    "staging/raw_collected/news_events_{DATE}.json"
+  ],
+  "outputs": [
+    "staging/trends/trend_estimates_{DATE}.json",
+    "data/countries/*.json"
+  ],
+  "timeout_minutes": 45,
+  "trend_labels": [
+    "strong_growth",
+    "growth",
+    "stable",
+    "decrease",
+    "strong_decrease"
+  ],
+  "factors_estimated": [
+    "macroeconomic.gdp_real_growth_rate_pct",
+    "macroeconomic.inflation_rate_cpi_pct",
+    "macroeconomic.current_account_balance_pct_gdp",
+    "macroeconomic.government_debt_pct_gdp",
+    "political.political_stability_score",
+    "military.military_expenditure_pct_gdp",
+    "trade.trade_openness_index",
+    "macroeconomic.fdi_inflows_usd",
+    "macroeconomic.exchange_rate_vs_usd",
+    "derived.overall_investment_risk_score",
+    "relations.top_partner.relationship_health_score"
+  ],
+  "coverage": {
+    "tier_1_countries": 30,
+    "tier_2_countries": 25,
+    "total_estimates_target": 605
+  },
+  "retry_on_failure": false,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_10_trends.md"
+}

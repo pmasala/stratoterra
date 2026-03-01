@@ -1,0 +1,50 @@
+{
+  "id": "agent_14",
+  "name": "Weekly Briefing Generator",
+  "phase": 6,
+  "phase_name": "SYNTHESIZE",
+  "description": "Generates the weekly global briefing document synthesizing all country narratives, alerts, financial market context, and regional summaries into a single investor-facing document.",
+  "inputs": [
+    "data/countries/*.json",
+    "data/indices/alert_index.json",
+    "data/global/event_feed.json",
+    "staging/raw_collected/financial_data_{DATE}.json",
+    "staging/trends/trend_estimates_{DATE}.json",
+    "staging/run_log.json"
+  ],
+  "outputs": [
+    "data/global/weekly_briefing_{DATE}.json"
+  ],
+  "timeout_minutes": 15,
+  "briefing_sections": [
+    "headline",
+    "top_stories",
+    "regional_summaries",
+    "market_context",
+    "watchlist_updates",
+    "data_quality_summary"
+  ],
+  "top_stories_count": "3-5",
+  "regions": [
+    "North America",
+    "Europe",
+    "East Asia",
+    "South Asia",
+    "Middle East & North Africa",
+    "Sub-Saharan Africa",
+    "Latin America",
+    "Central Asia",
+    "Southeast Asia",
+    "Oceania"
+  ],
+  "content_guidelines": {
+    "audience": "Sophisticated institutional investor",
+    "tone": "Clear, professional, investor-focused",
+    "ai_label_required": true,
+    "headline_length": "One compelling sentence",
+    "regional_summary_length": "2-3 sentences per region"
+  },
+  "retry_on_failure": false,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_14_briefing.md"
+}

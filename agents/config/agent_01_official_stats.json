@@ -1,0 +1,48 @@
+{
+  "id": "agent_01",
+  "name": "Official Statistics Gatherer",
+  "phase": 1,
+  "phase_name": "GATHER",
+  "description": "Collects macroeconomic, demographic, and trade data from World Bank, IMF WEO, and UN sources for all 75 tracked countries.",
+  "inputs": [
+    "data/indices/country_list.json",
+    "data/metadata/last_update.json"
+  ],
+  "outputs": [
+    "staging/raw_collected/official_stats_{DATE}.json"
+  ],
+  "timeout_minutes": 30,
+  "api_sources": [
+    "World Bank API (api.worldbank.org/v2)",
+    "IMF WEO (imf.org/en/Publications/WEO)",
+    "UN Data (data.un.org)",
+    "UNDP Human Development Reports"
+  ],
+  "target_indicators": [
+    "gdp_nominal_usd",
+    "gdp_real_growth_rate_pct",
+    "gdp_per_capita_usd",
+    "inflation_rate_cpi_pct",
+    "unemployment_rate_pct",
+    "government_debt_pct_gdp",
+    "current_account_balance_pct_gdp",
+    "total_exports_usd",
+    "total_imports_usd",
+    "foreign_exchange_reserves_usd",
+    "central_bank_policy_rate_pct",
+    "sovereign_credit_rating",
+    "population_total",
+    "population_growth_rate_pct",
+    "median_age",
+    "life_expectancy_years",
+    "hdi_score"
+  ],
+  "coverage_targets": {
+    "tier_1_min_indicators": 12,
+    "tier_2_min_indicators": 8,
+    "tier_3_min_indicators": 4
+  },
+  "retry_on_failure": true,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_01_official_stats.md"
+}

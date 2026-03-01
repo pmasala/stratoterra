@@ -1,0 +1,42 @@
+{
+  "id": "agent_05",
+  "name": "Military & Conflict Gatherer",
+  "phase": 1,
+  "phase_name": "GATHER",
+  "description": "Monitors military developments, active conflicts, arms deals, military exercises, and nuclear/missile activities from SIPRI, ACLED, and news sources.",
+  "inputs": [
+    "data/indices/country_list.json",
+    "data/countries/*.json"
+  ],
+  "outputs": [
+    "staging/raw_collected/military_conflict_{DATE}.json"
+  ],
+  "timeout_minutes": 15,
+  "api_sources": [
+    "SIPRI (sipri.org)",
+    "ACLED API (acleddata.com)",
+    "Global Firepower (globalfirepower.com)",
+    "Jane's Defence (janes.com)",
+    "IISS Military Balance (iiss.org)",
+    "UN OCHA Situation Reports (unocha.org)"
+  ],
+  "record_types": [
+    "conflict_escalation",
+    "conflict_deescalation",
+    "conflict_new",
+    "conflict_ended",
+    "military_exercise",
+    "arms_deal",
+    "troop_deployment",
+    "nuclear_activity",
+    "missile_test",
+    "cyber_attack",
+    "military_spending_change",
+    "base_opened",
+    "base_closed"
+  ],
+  "active_conflict_countries": "read from data/countries/",
+  "retry_on_failure": true,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_05_military_conflict.md"
+}

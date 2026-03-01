@@ -1,0 +1,309 @@
+/* ==========================================================================
+   Stratoterra — Responsive Design
+   ========================================================================== */
+
+/* --- Tablet: 768px - 1279px --- */
+@media (max-width: 1279px) {
+  :root {
+    --panel-width: 100%;
+    --panel-max-width: 100%;
+    --panel-min-width: 100%;
+  }
+
+  .header-center {
+    flex: 0 1 240px;
+  }
+
+  .nav-link {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  /* Panel as full-width overlay */
+  .panel {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    z-index: 950;
+  }
+
+  #main-content.panel-open #map-container {
+    flex: 1;
+  }
+
+  /* Factor grid single column on narrow tablets */
+  .factor-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rankings-table {
+    font-size: 12px;
+  }
+
+  .rankings-table th,
+  .rankings-table td {
+    padding: 6px 8px;
+  }
+}
+
+/* --- Mobile: < 768px --- */
+@media (max-width: 767px) {
+  /* Header compact */
+  #header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .header-left {
+    order: 1;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .header-center {
+    order: 3;
+    flex: 1 1 100%;
+  }
+
+  .header-right {
+    order: 2;
+    margin-left: auto;
+  }
+
+  /* Bottom tab navigation */
+  #main-nav {
+    display: none;
+  }
+
+  #bottom-bar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 6px 8px;
+    gap: 4px;
+  }
+
+  .metric-selector,
+  .overlay-selector {
+    flex: 1 1 45%;
+  }
+
+  .last-updated {
+    flex: 1 1 100%;
+    text-align: center;
+    padding-top: 4px;
+  }
+
+  /* Mobile bottom tab bar */
+  .mobile-tab-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg-secondary);
+    border-top: var(--border-subtle);
+    z-index: 1100;
+    padding: 4px 0;
+    justify-content: space-around;
+  }
+
+  .mobile-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 4px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 10px;
+    cursor: pointer;
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+  }
+
+  .mobile-tab.active {
+    color: var(--text-accent);
+  }
+
+  .mobile-tab__icon {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+
+  /* Full-screen panel on mobile */
+  .panel {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  #main-content.panel-open #map-container {
+    flex: 1;
+  }
+
+  /* Factor grid single column */
+  .factor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Layer tabs scroll */
+  .layer-tabs {
+    padding: 0 8px;
+  }
+
+  .layer-tab {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  /* View containers full width */
+  .view-container {
+    padding: 12px 8px;
+  }
+
+  /* Rankings as cards on mobile */
+  .rankings-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Alert summary compact */
+  .alert-summary-bar {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .alert-summary-count {
+    padding: 10px;
+  }
+
+  .alert-summary-count__num {
+    font-size: 20px;
+  }
+
+  /* Comparison tool */
+  .compare-tags {
+    flex-wrap: wrap;
+  }
+
+  .radar-container canvas {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  /* Briefing */
+  .market-strip {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .market-chip {
+    min-width: 60px;
+  }
+
+  /* Disclaimer */
+  #disclaimer {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  /* Ensure touch targets >= 44px */
+  .nav-link,
+  .layer-tab,
+  .region-tab,
+  .panel-header__back,
+  .panel-header__close,
+  .alert-filter-select,
+  #metric-select,
+  #overlay-select,
+  .reasoning-toggle,
+  .source-toggle {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Search */
+  #search {
+    padding: 10px 12px;
+    font-size: 16px; /* Prevents iOS zoom */
+  }
+
+  .search-dropdown__item {
+    padding: 12px;
+    min-height: 44px;
+  }
+}
+
+/* --- Large Desktop: >= 1440px --- */
+@media (min-width: 1440px) {
+  .rankings,
+  .alerts-dashboard,
+  .briefing,
+  .comparison,
+  .relation-explorer {
+    max-width: 1200px;
+  }
+}
+
+/* --- Accessibility: Focus Indicators --- */
+*:focus-visible {
+  outline: 2px solid var(--text-accent);
+  outline-offset: 2px;
+}
+
+.nav-link:focus-visible,
+.layer-tab:focus-visible,
+.region-tab:focus-visible {
+  outline: 2px solid var(--text-accent);
+  outline-offset: -2px;
+  border-radius: var(--radius-sm);
+}
+
+/* --- Accessibility: Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* --- Accessibility: High Contrast --- */
+@media (prefers-contrast: high) {
+  :root {
+    --border-subtle: 1px solid rgba(200, 200, 255, 0.4);
+    --border-card: 1px solid rgba(200, 200, 255, 0.3);
+  }
+
+  .factor-card {
+    border-width: 2px;
+  }
+}
+
+/* --- Print --- */
+@media print {
+  #header, #bottom-bar, #disclaimer, .color-legend, .leaflet-control-zoom {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .panel {
+    position: static;
+    width: 100%;
+    transform: none;
+  }
+}

@@ -1,0 +1,738 @@
+{
+  "code": "BRA",
+  "name": "Brazil",
+  "region": "latin_america",
+  "tier": 1,
+  "last_updated": "2026-02-28T12:00:00Z",
+  "executive_summary": "Brazil is the dominant economy of Latin America and a global agricultural and resource superpower, yet its potential has been chronically constrained by institutional volatility, structural fiscal imbalances, and regulatory complexity. Under President Lula's third term (2023-2026), the economy has stabilized at ~2.8% growth, driven by record agricultural harvests, robust commodity exports, and resilient domestic consumption. Brazil's extraordinary natural endowments—the world's largest agricultural land reserve, vast mineral wealth, and near-energy-independence—provide structural advantages that few emerging markets can match. However, political volatility, a complex tax code, high real interest rates, and persistent concerns about Amazon deforestation policy continue to weigh on foreign investment. The country holds a unique geopolitical position as a BRICS member, MERCOSUR leader, and non-aligned swing state with strategic influence over South Atlantic shipping lanes.",
+  "key_changes": [
+    "Record soybean and corn harvests in 2025 drove agricultural exports to a new high of ~$180B",
+    "Banco Central do Brasil raised the Selic rate to 13.75% in early 2026 to combat inflation re-acceleration",
+    "Petrobras announced record oil production of 3.2 million boe/day from pre-salt fields in 2025",
+    "Amazon deforestation rate fell 50% in 2023-2024 under Lula's renewed IBAMA enforcement, but 2025 saw partial reversal driven by agribusiness pressure",
+    "BRICS+ expansion discussions positioned Brazil as a key voice on Global South monetary architecture"
+  ],
+  "active_alerts": [
+    {
+      "id": "BRA-2026-001",
+      "severity": "watch",
+      "type": "environmental_political",
+      "title": "Amazon deforestation policy under political pressure from agribusiness lobby",
+      "description": "After significant deforestation reductions in 2023-2024, the rate rose in H2 2025 amid congressional pressure from the bancada ruralista (agribusiness caucus). The EU Deforestation Regulation enforcement (effective 2025) creates trade risk for Brazilian beef and soy exporters if compliance cannot be demonstrated. Potential EU market access disruption could affect ~$12B in annual exports.",
+      "countries_affected": ["BRA", "EU bloc"],
+      "created_at": "2026-01-10T00:00:00Z",
+      "updated_at": "2026-02-28T00:00:00Z",
+      "investor_action": "Monitor EU Deforestation Regulation enforcement timeline; assess exposure to Brazilian agricultural commodity exporters with Amazonian supply chains"
+    }
+  ],
+  "outlook": "Brazil's medium-term outlook is cautiously positive but highly path-dependent on fiscal consolidation and institutional stability. Agricultural sector dynamism and pre-salt oil production provide a strong export foundation through 2030. The primary risk scenario is fiscal slippage under social spending pressure leading to currency depreciation, inflation, and a return to boom-bust cycles. The positive scenario is sustained reform execution attracting FDI into the green economy transition—where Brazil has extraordinary natural advantages in bioenergy, clean mining, and sustainable agriculture. Presidential election in late 2026 is a significant political risk event.",
+  "investor_implications": "Brazil offers a high-risk, high-reward profile for EM investors. Attractive opportunities exist in agricultural supply chains (equipment, logistics, inputs), energy (Petrobras, pre-salt deepwater), financial sector (Itau, BTG Pactual), and green economy transition (biofuels, green steel, clean mining). Sovereign bonds offer attractive real yields but carry BRL depreciation risk and political event risk around the 2026 election. Local market investors benefit from Brazil's deep capital markets (B3 is Latin America's largest exchange). Avoid state-linked enterprises with potential political interference. Use options to hedge BRL exposure around election volatility windows.",
+  "layers": {
+    "endowments": {
+      "resources": {
+        "hydrocarbon_reserves_billion_boe": {
+          "value": 15.3,
+          "source": "ANP / EIA",
+          "confidence": 0.88,
+          "last_updated": "2025-06-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Pre-salt deepwater reserves significantly expanded proven reserves since 2006; Petrobras world-leading deepwater operator"
+        },
+        "natural_gas_production_bcm_per_year": {
+          "value": 28.0,
+          "source": "EIA / ANP",
+          "confidence": 0.85,
+          "last_updated": "2025-09-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "renewable_energy_potential": {
+          "value": "exceptional",
+          "source": "IRENA / EPE",
+          "confidence": 0.90,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "World-leading hydropower; exceptional solar irradiance; major wind resources in northeast; sugar cane ethanol 40+ year infrastructure"
+        },
+        "critical_minerals": {
+          "value": "world_class",
+          "source": "USGS / IBRAM",
+          "confidence": 0.88,
+          "last_updated": "2024-12-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "World's largest niobium reserves (>90% global); major lithium, copper, iron ore (Carajas), manganese, bauxite, gold reserves"
+        },
+        "iron_ore_production_mn_tonnes_per_year": {
+          "value": 420.0,
+          "source": "USGS / IBRAM",
+          "confidence": 0.90,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "World #2 iron ore producer and exporter; Carajas mine among world's highest-quality deposits"
+        },
+        "arable_land_pct_total": {
+          "value": 8.6,
+          "source": "World Bank / IBGE",
+          "confidence": 0.88,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Percentage understates absolute area—Brazil has the world's largest agricultural expansion frontier in the Cerrado"
+        },
+        "freshwater_resources_km3_per_year": {
+          "value": 8233.0,
+          "source": "FAO AQUASTAT",
+          "confidence": 0.88,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "World #1 in renewable freshwater resources; Amazon basin dominant"
+        },
+        "energy_independence_index": {
+          "value": 0.78,
+          "source": "EPE / EIA",
+          "confidence": 0.87,
+          "last_updated": "2025-09-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Near energy self-sufficient; ethanol, hydro, pre-salt oil combine to provide high energy security"
+        }
+      },
+      "geography": {
+        "area_km2": 8515767,
+        "landlocked": false,
+        "coastline_km": 7491,
+        "terrain": "Mostly flat to rolling lowlands in north (Amazon); some hills, mountains, narrow coastal belt; highlands in south",
+        "climate_zone": "tropical_to_subtropical",
+        "natural_disaster_risk": "moderate",
+        "natural_disaster_notes": "Periodic Amazon flooding; southern states prone to irregular rainfall and occasional drought; no significant seismic risk",
+        "strategic_location_notes": "Dominates South American landmass; controls South Atlantic approaches; Amazon Basin is world's largest biome and carbon sink; shares borders with 10 of 12 South American nations",
+        "chokepoint_adjacency": ["South Atlantic shipping lanes", "Santos port (Latin America's busiest)"],
+        "border_countries": ["ARG", "BOL", "COL", "GUY", "PRY", "PER", "SUR", "URY", "VEN"]
+      },
+      "demographics": {
+        "population": {
+          "value": 216000000,
+          "source": "IBGE / World Bank",
+          "confidence": 0.93,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "population_growth_rate_pct": {
+          "value": 0.7,
+          "source": "IBGE / World Bank",
+          "confidence": 0.90,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Slowing but still positive; fertility rate ~1.7 below replacement but population momentum continues"
+        },
+        "median_age_years": {
+          "value": 34.1,
+          "source": "UN Population Division",
+          "confidence": 0.90,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Younger than most developed markets; demographic dividend still partially available"
+        },
+        "working_age_population_pct": {
+          "value": 69.8,
+          "source": "IBGE",
+          "confidence": 0.90,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "urbanization_rate_pct": {
+          "value": 87.8,
+          "source": "World Bank",
+          "confidence": 0.90,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Highly urbanized; Sao Paulo metro ~22M is Western Hemisphere's largest city"
+        },
+        "tertiary_education_pct": {
+          "value": 21.4,
+          "source": "INEP / World Bank",
+          "confidence": 0.85,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Rising but below OECD average; skills gap constrains industrial upgrading"
+        },
+        "gini_coefficient": {
+          "value": 52.9,
+          "source": "World Bank / IBGE",
+          "confidence": 0.85,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Among world's highest inequality; improving slowly from peak; social spending programs (Bolsa Familia) have partially reduced poverty"
+        }
+      }
+    },
+    "institutions": {
+      "political": {
+        "regime_type": "federal_presidential_democracy",
+        "regime_stability": {
+          "value": 0.42,
+          "source": "World Bank WGI / EIU",
+          "confidence": 0.82,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "History of political volatility, impeachments, and corruption scandals (Lava Jato); democratic institutions functioning but under periodic stress"
+        },
+        "government_effectiveness": {
+          "value": 0.52,
+          "source": "World Bank WGI",
+          "confidence": 0.82,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "election_cycle_years": 4,
+        "next_election_date": "2026-10-04",
+        "head_of_government": "Luiz Inacio Lula da Silva (President)",
+        "ruling_coalition": "PT-led broad coalition (fragmented Congress)",
+        "political_risk_notes": "Coalition politics require constant negotiation with ~30 parties; 2026 election is major uncertainty event; Lula health concerns a tail risk; Bolsonaro movement retains ~35-40% support",
+        "corruption_perception_index": {
+          "value": 36.0,
+          "source": "Transparency International",
+          "confidence": 0.85,
+          "last_updated": "2026-01-28T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Score out of 100; lower indicates higher perceived corruption. Significant improvement from Lava Jato nadir"
+        },
+        "rule_of_law_index": {
+          "value": 0.45,
+          "source": "World Bank WGI",
+          "confidence": 0.82,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "press_freedom_index": {
+          "value": 0.58,
+          "source": "RSF",
+          "confidence": 0.80,
+          "last_updated": "2025-05-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Free press present but polarized; journalist safety concerns in some regions"
+        }
+      },
+      "governance": {
+        "regulatory_quality": {
+          "value": 0.48,
+          "source": "World Bank WGI",
+          "confidence": 0.82,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Complex regulatory environment; Custo Brasil (Brazil cost) remains major investment deterrent"
+        },
+        "voice_and_accountability": {
+          "value": 0.62,
+          "source": "World Bank WGI",
+          "confidence": 0.82,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "tax_complexity": "very_high",
+        "tax_reform_status": "Comprehensive reform passed 2024; implementation through 2033",
+        "fiscal_balance_trend": "deteriorating",
+        "central_bank_independence": "formal_independence_since_2021"
+      },
+      "cultural": {
+        "hofstede_power_distance": 69,
+        "hofstede_individualism": 38,
+        "hofstede_uncertainty_avoidance": 76,
+        "hofstede_long_term_orientation": 44,
+        "social_trust_index": {
+          "value": 0.29,
+          "source": "World Values Survey",
+          "confidence": 0.75,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "static"
+        },
+        "entrepreneurship_notes": "Strong informal entrepreneurial culture; fintech sector world-leading (Nubank, Pix system); constrained by regulatory complexity",
+        "official_languages": ["Portuguese"]
+      }
+    },
+    "economy": {
+      "macro": {
+        "gdp_nominal_usd": {
+          "value": 2200000000000,
+          "trend": "growth",
+          "source": "IMF WEO / IBGE",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "quarterly",
+          "trend_reasoning": "Growth driven by agricultural exports, domestic consumption, and oil production increases; offset by high real interest rates constraining investment",
+          "evidence": [
+            "IMF April 2025 WEO: Brazil GDP $2.18T for 2025",
+            "IBGE Q3 2025: real GDP +0.9% QoQ",
+            "Agribusiness sector contributed ~25% of GDP in 2025"
+          ],
+          "counter_arguments": [
+            "Selic rate at 13.75% significantly constraining credit growth",
+            "Fiscal framework credibility under question"
+          ]
+        },
+        "gdp_growth_rate_pct": {
+          "value": 2.8,
+          "trend": "stable",
+          "source": "IMF WEO / IBGE",
+          "confidence": 0.85,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "quarterly"
+        },
+        "gdp_per_capita_usd": {
+          "value": 10185,
+          "source": "IMF WEO",
+          "confidence": 0.88,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "gdp_ppp_usd": {
+          "value": 4100000000000,
+          "source": "IMF WEO",
+          "confidence": 0.85,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "inflation_rate_pct": {
+          "value": 5.1,
+          "trend": "growth",
+          "source": "IBGE IPCA / Banco Central",
+          "confidence": 0.93,
+          "last_updated": "2026-01-31T00:00:00Z",
+          "update_frequency": "monthly",
+          "notes": "Above 3% target center; Banco Central raised Selic to combat persistent services inflation"
+        },
+        "unemployment_rate_pct": {
+          "value": 6.8,
+          "trend": "decrease",
+          "source": "IBGE PNAD",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "monthly",
+          "notes": "Formal unemployment declining; informal sector employment remains large (~40% of workforce)"
+        },
+        "current_account_balance_pct_gdp": {
+          "value": -1.2,
+          "trend": "stable",
+          "source": "Banco Central / IMF",
+          "confidence": 0.85,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "quarterly",
+          "notes": "Modest deficit; agricultural surplus partially offset by services and income outflows"
+        },
+        "budget_balance_pct_gdp": {
+          "value": -7.5,
+          "trend": "decrease",
+          "source": "STN / IMF",
+          "confidence": 0.85,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Primary deficit concern; gross public debt rising; fiscal framework credibility critical"
+        },
+        "public_debt_pct_gdp": {
+          "value": 90.5,
+          "trend": "growth",
+          "source": "STN / IMF",
+          "confidence": 0.85,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "High by EM standards; largely BRL-denominated which reduces default risk but creates inflation/currency risk"
+        },
+        "economic_complexity_index": {
+          "value": 0.5,
+          "trend": "stable",
+          "source": "Harvard CID / MIT Observatory",
+          "confidence": 0.80,
+          "last_updated": "2024-12-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Moderate complexity; commodities dominant in export basket; industrial sector sophisticated but compressed by Dutch Disease dynamics"
+        }
+      },
+      "financial": {
+        "currency": "BRL",
+        "exchange_rate_vs_usd": {
+          "value": 5.85,
+          "trend": "decrease",
+          "source": "Banco Central / Bloomberg",
+          "confidence": 0.95,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "daily",
+          "notes": "BRL has depreciated ~15% against USD over 2024-2025 amid fiscal concerns"
+        },
+        "sovereign_credit_rating": {
+          "moodys": "Ba1",
+          "sp": "BB",
+          "fitch": "BB",
+          "source": "Rating agency publications",
+          "confidence": 0.95,
+          "last_updated": "2025-11-01T00:00:00Z",
+          "update_frequency": "monthly",
+          "notes": "Sub-investment grade; Moodys on stable outlook; upgrade path requires sustained fiscal consolidation"
+        },
+        "selic_rate_pct": {
+          "value": 13.75,
+          "trend": "growth",
+          "source": "Banco Central do Brasil",
+          "confidence": 0.98,
+          "last_updated": "2026-02-05T00:00:00Z",
+          "update_frequency": "monthly",
+          "notes": "One of world's highest real interest rates; constrains investment and credit growth"
+        },
+        "investment_risk_index": {
+          "value": 0.45,
+          "source": "Composite: WGI, EIU, World Bank DB",
+          "confidence": 0.80,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "weekly"
+        },
+        "banking_sector_stability": "adequate",
+        "banking_notes": "Well-regulated banking sector (BCB); large banks (Bradesco, Itau, BB) well-capitalized; high spread environment profitable for banks but constraining for economy",
+        "fintech_sector": "world_leading",
+        "fintech_notes": "Pix instant payment system world-class; Nubank largest digital bank globally by customers; Open Finance framework advanced"
+      },
+      "trade": {
+        "trade_openness_pct_gdp": {
+          "value": 33.0,
+          "source": "World Bank / MDIC",
+          "confidence": 0.88,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Relatively closed economy by global standards; large domestic market reduces trade dependence"
+        },
+        "exports_usd_bn": {
+          "value": 355.0,
+          "trend": "growth",
+          "source": "MDIC / World Bank",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "imports_usd_bn": {
+          "value": 280.0,
+          "trend": "stable",
+          "source": "MDIC / World Bank",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "top_export_categories": [
+          "Soybeans and soy products",
+          "Crude petroleum",
+          "Iron ore",
+          "Beef and poultry",
+          "Sugar and ethanol",
+          "Pulp and paper",
+          "Corn"
+        ],
+        "top_import_categories": [
+          "Petroleum products and fuels",
+          "Electronic components and equipment",
+          "Industrial machinery",
+          "Vehicles and parts",
+          "Pharmaceuticals and chemicals"
+        ],
+        "top_trading_partners": ["CHN", "USA", "ARG", "NLD", "DEU"],
+        "china_trade_dependency_notes": "China accounts for ~35% of Brazilian exports (primarily commodities); creates strategic dependency and vulnerability to Chinese economic slowdown",
+        "wto_member": true,
+        "mercosur_member": true
+      },
+      "agriculture": {
+        "agricultural_gdp_pct": {
+          "value": 25.0,
+          "source": "IBGE / MAPA",
+          "confidence": 0.88,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Including agro-industry; Brazil world #1 or #2 exporter of soybeans, beef, chicken, orange juice, coffee, sugar, corn"
+        },
+        "soybean_production_mn_tonnes": {
+          "value": 162.0,
+          "source": "CONAB / USDA",
+          "confidence": 0.90,
+          "last_updated": "2026-01-01T00:00:00Z",
+          "update_frequency": "monthly"
+        },
+        "arable_land_expansion_frontier": "large",
+        "cerrado_expansion_notes": "Cerrado (Brazilian savanna) contains world's largest remaining agricultural expansion frontier; tension between food production expansion and biodiversity conservation"
+      }
+    },
+    "military": {
+      "personnel": {
+        "active_military": {
+          "value": 367000,
+          "source": "IISS Military Balance / MD Brasil",
+          "confidence": 0.90,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "reserve_military": {
+          "value": 1340000,
+          "source": "IISS Military Balance",
+          "confidence": 0.82,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "paramilitary": {
+          "value": 395000,
+          "source": "IISS Military Balance",
+          "confidence": 0.80,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Includes Federal Police, Border Force, and state military police (PMs)"
+        },
+        "conscription": true,
+        "conscription_notes": "Selective conscription; most eligibles exempt in practice; professional core"
+      },
+      "spending": {
+        "military_spending_usd_bn": {
+          "value": 22.0,
+          "trend": "stable",
+          "source": "SIPRI / MD Brasil",
+          "confidence": 0.88,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "military_spending_pct_gdp": {
+          "value": 1.0,
+          "trend": "stable",
+          "source": "SIPRI",
+          "confidence": 0.88,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        }
+      },
+      "capabilities": {
+        "nuclear_status": "non_nuclear_signatory",
+        "nuclear_notes": "NPT signatory; Treaty of Tlatelolco (LANFZ); domestic uranium enrichment program for nuclear energy, not weapons",
+        "air_force_combat_aircraft": {
+          "value": 42,
+          "source": "IISS Military Balance",
+          "confidence": 0.85,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Gripen NG fleet (18 delivered by 2025); aging F-5 fleet phasing out"
+        },
+        "navy_notes": "South Atlantic regional power; aircraft carrier (NAe Atlantico, former HMS Ocean) operational; submarine expansion program underway with France (Prosub - 4 conventional, 1 nuclear-powered hull by 2029)",
+        "nuclear_submarine_program": "under_construction",
+        "defense_industrial_base": "developing",
+        "arms_export_notes": "Embraer Super Tucano light attack aircraft significant export success; ASTROS rocket artillery system exported"
+      },
+      "conflicts": {
+        "active_conflicts": [],
+        "involvement_notes": "No interstate conflicts; significant internal security challenges: organized crime (PCC, CV), drug trafficking, public security crisis in major cities",
+        "internal_security_notes": "Homicide rate ~25/100,000; Rio de Janeiro and Sao Paulo metropolitan security crisis; military used for internal security operations in Rio favelas",
+        "amazon_border_security": "Joint military-police Amazon border operations; SIVAM surveillance system",
+        "un_peacekeeping": "MINUSTAH (Haiti, concluded); MONUSCO contributor; historically significant contributor to UN peace operations"
+      }
+    },
+    "relations": {
+      "top_partners": [
+        {
+          "code": "CHN",
+          "name": "China",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 175.0,
+          "notes": "Largest trading partner; China buys ~35% of Brazilian exports; BRICS partnership; Brazil balances China ties with US relationship"
+        },
+        {
+          "code": "USA",
+          "name": "United States",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 98.0,
+          "notes": "Key partner; Brazilian exports of agricultural products, iron ore; FDI source; some tension over Amazon policy and trade rules"
+        },
+        {
+          "code": "ARG",
+          "name": "Argentina",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 28.0,
+          "notes": "MERCOSUR partner; largest regional relationship; Argentina's economic instability creates volatility for Brazilian exporters"
+        },
+        {
+          "code": "DEU",
+          "name": "Germany",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 22.0,
+          "notes": "EU trade; German industrial investment in Brazil significant (Volkswagen, Bayer, Siemens long-term presence)"
+        },
+        {
+          "code": "NLD",
+          "name": "Netherlands",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 21.0,
+          "notes": "Major destination for Brazilian agricultural commodities via Rotterdam; Rotterdam Rule distorts bilateral trade statistics"
+        },
+        {
+          "code": "RUS",
+          "name": "Russia",
+          "relationship_quality": "neutral",
+          "trade_volume_usd_bn": 8.0,
+          "notes": "BRICS partner; Brazil declined to sanction Russia over Ukraine; fertilizer imports (potassium, nitrogen) create dependency; complex non-aligned positioning"
+        },
+        {
+          "code": "IND",
+          "name": "India",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 14.0,
+          "notes": "BRICS partner; growing agricultural trade; similar positions on Global South multilateral reform"
+        },
+        {
+          "code": "SAU",
+          "name": "Saudi Arabia",
+          "relationship_quality": "neutral",
+          "trade_volume_usd_bn": 6.0,
+          "notes": "Growing Gulf investment interest in Brazilian agri and infrastructure; Brazil attends G20 Saudi summits"
+        },
+        {
+          "code": "JPN",
+          "name": "Japan",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 12.0,
+          "notes": "Historical Brazilian-Japanese ties (Nikkei community); Japanese investment in Brazilian agriculture and infrastructure"
+        },
+        {
+          "code": "URY",
+          "name": "Uruguay",
+          "relationship_quality": "allied",
+          "trade_volume_usd_bn": 4.0,
+          "notes": "MERCOSUR partner; deep economic integration; La Plata basin shared resources"
+        }
+      ],
+      "alliances": [
+        {
+          "name": "MERCOSUR",
+          "type": "economic_political",
+          "member_since": "1991-03-26",
+          "role": "founding_member_dominant_economy",
+          "notes": "Brazil is MERCOSUR's dominant economy (~75% of bloc GDP); EU-MERCOSUR trade agreement under ratification"
+        },
+        {
+          "name": "BRICS",
+          "type": "economic_political",
+          "member_since": "2009-06-16",
+          "role": "founding_member",
+          "notes": "Active BRICS member; hosted G20 2024; non-aligned positioning between US and China blocs"
+        },
+        {
+          "name": "G20",
+          "type": "economic_coordination",
+          "member_since": "1999-01-01",
+          "role": "member_and_2024_host"
+        },
+        {
+          "name": "UNASUR / CELAC",
+          "type": "regional_political",
+          "role": "member",
+          "notes": "South American political coordination forums; Brazil's regional leadership role"
+        },
+        {
+          "name": "NPT",
+          "type": "arms_control",
+          "member_since": "1998-09-18",
+          "role": "non_nuclear_signatory"
+        },
+        {
+          "name": "WTO",
+          "type": "economic",
+          "member_since": "1995-01-01",
+          "role": "member",
+          "notes": "Active WTO litigant; historically significant role in Doha agriculture negotiations"
+        }
+      ]
+    },
+    "derived": {
+      "composite_power_score": {
+        "value": 0.52,
+        "source": "Stratoterra composite model",
+        "confidence": 0.75,
+        "last_updated": "2026-02-28T00:00:00Z",
+        "update_frequency": "weekly",
+        "components": {
+          "economic_power": 0.55,
+          "military_power": 0.42,
+          "diplomatic_influence": 0.58,
+          "technological_capacity": 0.48,
+          "institutional_strength": 0.45
+        }
+      },
+      "investment_risk_composite": {
+        "value": 0.45,
+        "trend": "stable",
+        "source": "Stratoterra composite model",
+        "confidence": 0.78,
+        "last_updated": "2026-02-28T00:00:00Z",
+        "update_frequency": "weekly",
+        "components": {
+          "political_risk": 0.52,
+          "economic_risk": 0.48,
+          "currency_risk": 0.55,
+          "regulatory_risk": 0.50,
+          "geopolitical_risk": 0.22
+        }
+      },
+      "geopolitical_stability_score": {
+        "value": 0.42,
+        "trend": "stable",
+        "source": "Stratoterra composite model",
+        "confidence": 0.78,
+        "last_updated": "2026-02-28T00:00:00Z",
+        "update_frequency": "weekly"
+      },
+      "economic_resilience_score": {
+        "value": 0.58,
+        "source": "Stratoterra composite model",
+        "confidence": 0.75,
+        "last_updated": "2026-02-28T00:00:00Z",
+        "update_frequency": "weekly",
+        "notes": "Extraordinary natural endowments provide structural resilience; offset by institutional and fiscal vulnerabilities"
+      },
+      "vulnerability_indices": {
+        "energy_vulnerability": {
+          "value": 0.25,
+          "source": "Stratoterra composite",
+          "confidence": 0.80,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "weekly",
+          "notes": "Near energy self-sufficiency; hydropower drought risk is primary concern"
+        },
+        "food_security_index": {
+          "value": 0.72,
+          "source": "GFSI / Stratoterra",
+          "confidence": 0.80,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Brazil is food secure at national level; domestic inequality means food insecurity persists for ~10% of population"
+        },
+        "commodity_price_dependency": {
+          "value": 0.72,
+          "source": "Stratoterra composite",
+          "confidence": 0.80,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "weekly",
+          "notes": "High exposure to agricultural and mineral commodity price cycles; China demand a key driver"
+        },
+        "fiscal_vulnerability": {
+          "value": 0.65,
+          "source": "Stratoterra composite",
+          "confidence": 0.78,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "weekly",
+          "notes": "High public debt/GDP, constitutional spending mandates, and political spending pressure create sustained fiscal risk"
+        }
+      },
+      "trend_summary": {
+        "economic_trajectory": "stable",
+        "political_trajectory": "decrease",
+        "military_trajectory": "stable",
+        "diplomatic_trajectory": "growth",
+        "overall_trajectory": "stable"
+      }
+    }
+  },
+  "narrative": {
+    "executive_overview": "Brazil's story is one of extraordinary natural wealth and frustrated potential. With the world's largest freshwater reserves, the longest Atlantic coastline in South America, 160+ million hectares of arable land, world-class mineral reserves, near energy self-sufficiency, and a continental-scale market of 216 million people, Brazil should rank among the world's wealthiest nations. Instead, it occupies a middle-income plateau that has persisted for decades—what economists call the 'middle-income trap.' The constraints are institutional: baroque tax complexity, constitutional spending mandates that leave little fiscal flexibility, a political system that incentivizes pork-barrel spending over structural reform, and cyclical political polarization that disrupts policy continuity. Lula's third term has provided a measure of stability and delivered genuine improvements in social spending and Amazon protection, but the fundamental structural challenges remain largely unaddressed.",
+    "key_developments": "The 2025 agricultural year was exceptional, with record soybean harvests and robust cattle production generating approximately $180 billion in agricultural exports—a global record that cemented Brazil's position as the world's leading food exporter. Petrobras pre-salt production reached 3.2 million barrels of oil equivalent per day, generating substantial royalty revenues and supporting fiscal accounts. However, the positive export performance has not translated into broad-based industrialization; the manufacturing sector continues to shrink as a share of GDP (now ~11%), a process of premature deindustrialization that constrains productivity growth and job quality. The Banco Central raised the Selic rate to 13.75% in early 2026 amid persistent services inflation, increasing the already heavy debt service burden. BRICS engagement has intensified, with Brazil playing an active role in discussions around alternative payment infrastructure and multilateral development bank reform.",
+    "risk_factors": "The 2026 presidential election is the most immediate risk catalyst, with polls suggesting a closely contested race between Lula and a fragmented right-wing opposition. Electoral uncertainty is amplifying BRL volatility and suppressing investment decisions. Fiscal trajectory is the medium-term risk: constitutional minimum spending floors on health and education, combined with indexed pension expenditures and congressional appetite for new transfer programs, make primary surplus achievement difficult. The Amazon deforestation policy faces sustained pressure from the bancada ruralista, creating EU trade agreement ratification risk and reputational costs for Brazilian commodities. Chinese economic deceleration represents a tail risk for commodity prices, which would disproportionately affect Brazilian export revenues and fiscal accounts.",
+    "opportunities": "Brazil's opportunities are proportionate to its endowments—enormous. The global clean energy transition creates massive demand for the critical minerals in which Brazil is extraordinarily rich: lithium for batteries, nickel, copper, niobium (where Brazil has a near-monopoly), and rare earths. Brazil's sustainable aviation fuel (SAF) production capacity using sugarcane ethanol is world-leading. The EU-MERCOSUR trade agreement, if ratified, opens a 450-million-person market for Brazilian agricultural products under preferential terms. Brazilian fintech is a global benchmark—Pix, Nubank, and Open Finance demonstrate world-class financial innovation that can be scaled regionally. Offshore wind potential in the northeast is among the world's best and remains largely untapped.",
+    "ai_generated": true,
+    "generation_date": "2026-02-28T12:00:00Z",
+    "model_version": "stratoterra-agent-v1.0",
+    "disclaimer": "AI-generated analysis. Not investment advice. Based on public data sources as of February 2026."
+  }
+}

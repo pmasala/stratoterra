@@ -1,0 +1,48 @@
+{
+  "id": "agent_12",
+  "name": "Alert Generator",
+  "phase": 5,
+  "phase_name": "ANALYZE",
+  "description": "Scans all updated country data for threshold breaches and generates or updates alerts at critical, warning, and watch severity levels. Updates the alert index and event feed.",
+  "inputs": [
+    "data/indices/alert_index.json",
+    "data/countries/*.json",
+    "staging/trends/trend_estimates_{DATE}.json"
+  ],
+  "outputs": [
+    "data/indices/alert_index.json",
+    "data/global/event_feed.json"
+  ],
+  "timeout_minutes": 10,
+  "alert_severities": ["critical", "warning", "watch"],
+  "trigger_thresholds": {
+    "critical": [
+      "default_probability > 0.5",
+      "currency_crisis_probability > 0.7",
+      "active_conflict escalated to high",
+      "coup or unconstitutional leadership change",
+      "comprehensive sanctions imposed",
+      "expropriation of foreign assets"
+    ],
+    "warning": [
+      "sovereign credit rating downgrade",
+      "political_stability trend = strong_decrease",
+      "gdp_trend = strong_decrease for 2+ quarters",
+      "inflation_rate > 50%",
+      "fx_reserves < 3 months imports",
+      "election within 30 days in country with political_stability < -1.0"
+    ],
+    "watch": [
+      "any trend direction reversal",
+      "new targeted sanctions",
+      "policy shift announcement",
+      "leadership change",
+      "major protests (severity >= major)",
+      "chokepoint disruption affecting tracked country"
+    ]
+  },
+  "alert_lifecycle_states": ["new", "ongoing", "escalated", "deescalated", "resolved"],
+  "retry_on_failure": false,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_12_alerts.md"
+}

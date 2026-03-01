@@ -1,0 +1,472 @@
+{
+  "code": "USA",
+  "name": "United States",
+  "region": "north_america",
+  "tier": 1,
+  "last_updated": "2026-02-28T12:00:00Z",
+
+  "executive_summary": "The United States remains the world's largest economy by nominal GDP, anchoring a global network of alliances and projecting unmatched military power across all domains. Despite persistent fiscal pressures — with the federal deficit exceeding 6% of GDP and total debt at 123% of GDP — the economy has demonstrated notable resilience, sustained by robust consumer spending, a tight labor market, and surging investment in artificial intelligence infrastructure. The Federal Reserve's restrictive monetary stance has slowed inflation from its 2022 peak toward 3%, though the path back to the 2% target remains contested. Geopolitically, the United States faces its most consequential strategic competition since the Cold War, managing simultaneous friction with China across technology, trade, and security, and continued support to Ukraine amid Russian aggression.",
+
+  "key_changes": [
+    "Federal Reserve holds rates at 5.25%, with markets pricing two 25bp cuts by end of 2026",
+    "Defense budget increases to $886B (3.5% of GDP), reflecting Indo-Pacific strategic priorities",
+    "AI investment surge drives capex by major tech firms above $200B annually",
+    "US-China semiconductor export controls tightened; retaliation risk elevated",
+    "Fiscal deficit widens to 6.3% of GDP on rising interest payments exceeding $1T annually",
+    "Oil production reaches record 13M barrels/day, reinforcing energy independence",
+    "AUKUS submarine pathway advances; first Virginia-class transfer to Australia confirmed",
+    "Commercial real estate delinquency rates rise above 10% in office sector"
+  ],
+
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Fiscal deficit exceeds 6% of GDP",
+      "description": "The federal fiscal deficit reached 6.3% of GDP in FY2025, driven by mandatory spending growth and interest payments now exceeding $1 trillion annually. Debt-to-GDP stands at 123%, with CBO projections showing no stabilization path under current policy. Political gridlock reduces near-term probability of meaningful consolidation."
+    },
+    {
+      "severity": "watch",
+      "title": "US-China technology decoupling accelerates",
+      "description": "Expanded semiconductor export controls and retaliatory Chinese restrictions on rare earth and critical mineral exports create supply chain vulnerabilities for US manufacturers. Risk of escalation into broader trade conflict remains elevated ahead of 2026 midterm political dynamics."
+    },
+    {
+      "severity": "watch",
+      "title": "Commercial real estate stress in regional banks",
+      "description": "Office vacancy rates exceeding 20% in major metros are stressing regional bank balance sheets. CRE loan delinquencies above 10% raise systemic risk concerns, though large bank capital buffers limit contagion probability."
+    }
+  ],
+
+  "outlook": "Near-term outlook is cautiously positive, with GDP growth expected to hold near 2% in 2026 as AI-driven productivity gains partially offset the drag from tight monetary policy and elevated borrowing costs. The labor market remains the primary buffer against recession, though a sharper-than-expected slowdown in job creation or a credit event in regional banking could shift the trajectory. Geopolitical risks — particularly around Taiwan Strait tensions and Middle East instability — represent the principal tail risks to growth and financial stability.",
+
+  "investor_implications": "US Treasuries remain the global safe-haven benchmark, though the fiscal trajectory warrants monitoring of term premium dynamics and potential credit rating actions. Equities are supported by AI-driven earnings growth in technology and infrastructure sectors, but valuations in mega-cap tech leave limited margin of safety. The USD retains dominant reserve currency status; no credible challenger exists on a 5-year horizon. Selective exposure to defense, semiconductors, and energy infrastructure is consistent with the strategic competition theme.",
+
+  "layers": {
+    "endowments": {
+      "natural_resources": {
+        "top_resources": [
+          {
+            "name": "Oil",
+            "production_daily_barrels": 13000000,
+            "reserves_barrels": 44400000000,
+            "global_rank": 1,
+            "source": "EIA",
+            "confidence": 0.92
+          },
+          {
+            "name": "Natural Gas",
+            "production_bcm_year": 1030,
+            "reserves_bcm": 13700,
+            "global_rank": 1,
+            "source": "EIA",
+            "confidence": 0.91
+          },
+          {
+            "name": "Coal",
+            "production_mt_year": 540,
+            "reserves_mt": 249000,
+            "global_rank": 3,
+            "source": "EIA",
+            "confidence": 0.90
+          },
+          {
+            "name": "Copper",
+            "production_kt_year": 1200,
+            "reserves_mt": 48,
+            "global_rank": 5,
+            "source": "USGS",
+            "confidence": 0.87
+          },
+          {
+            "name": "Gold",
+            "production_t_year": 170,
+            "reserves_t": 3000,
+            "global_rank": 4,
+            "source": "USGS",
+            "confidence": 0.86
+          },
+          {
+            "name": "Corn",
+            "production_mt_year": 390,
+            "global_rank": 1,
+            "source": "USDA",
+            "confidence": 0.93
+          },
+          {
+            "name": "Soybeans",
+            "production_mt_year": 113,
+            "global_rank": 1,
+            "source": "USDA",
+            "confidence": 0.93
+          }
+        ],
+        "arable_land_pct": 16.6,
+        "freshwater_per_capita_m3": 8800,
+        "forest_cover_pct": 33.9,
+        "resource_self_sufficiency": 0.82,
+        "critical_mineral_exposure": "Moderate — dependent on imports for REEs, cobalt, manganese despite domestic diversification efforts",
+        "source": "USGS, EIA, USDA",
+        "confidence": 0.90
+      },
+      "geography": {
+        "area_km2": 9833520,
+        "coastline_km": 19924,
+        "borders_count": 2,
+        "border_countries": ["CAN", "MEX"],
+        "terrain_type": "Vast central plain, Rocky Mountains in west, Appalachians in east, coastal lowlands",
+        "climate_zones": ["Temperate", "Tropical (Hawaii, Florida)", "Arctic (Alaska)", "Arid (Southwest)", "Semi-arid (Great Plains)"],
+        "natural_hazards": ["Hurricanes (Gulf, Atlantic coasts)", "Tornadoes (Midwest)", "Earthquakes (West Coast)", "Wildfires (West)"],
+        "strategic_position": "Two-ocean power (Atlantic and Pacific) enabling global force projection; NATO's primary military anchor; controls Western Hemisphere approaches",
+        "chokepoint_proximity": ["Panama Canal"],
+        "overseas_territories": ["Puerto Rico", "Guam", "US Virgin Islands", "American Samoa", "Northern Mariana Islands"],
+        "source": "CIA World Factbook",
+        "confidence": 0.98
+      },
+      "demographics": {
+        "population": 334000000,
+        "population_growth_pct": 0.5,
+        "median_age": 38.5,
+        "urbanization_pct": 83.0,
+        "working_age_pct": 64.0,
+        "dependency_ratio": 53.7,
+        "net_migration_per_1000": 3.0,
+        "fertility_rate": 1.66,
+        "life_expectancy": 78.9,
+        "literacy_rate_pct": 99.0,
+        "human_development_index": 0.921,
+        "hdi_rank": 21,
+        "gini_coefficient": 41.5,
+        "poverty_rate_pct": 11.5,
+        "ethnic_composition_note": "White 57.8%, Hispanic 18.7%, Black 12.1%, Asian 5.9%, other/multiracial 5.5%",
+        "source": "UN Population Division, UNDP, US Census Bureau",
+        "confidence": 0.93
+      }
+    },
+    "institutions": {
+      "political_system": {
+        "regime_type": "Federal presidential constitutional republic",
+        "head_of_state": "President",
+        "government_type": "Presidential",
+        "legislative_type": "Bicameral (Senate 100 seats + House of Representatives 435 seats)",
+        "judicial_apex": "Supreme Court (9 justices, lifetime appointments)",
+        "federalism_level": "Strong — 50 states retain significant autonomous powers",
+        "current_administration_party": "Republican",
+        "senate_control": "Republican",
+        "house_control": "Republican",
+        "next_election": "2028-11-07",
+        "next_midterm": "2026-11-03",
+        "years_since_transition": 248,
+        "constitutional_age_years": 236,
+        "source": "EIU, Freedom House, Congress.gov",
+        "confidence": 0.98
+      },
+      "governance": {
+        "democracy_index": 7.85,
+        "democracy_classification": "Flawed democracy",
+        "freedom_score": 83,
+        "freedom_status": "Free",
+        "press_freedom_rank": 55,
+        "corruption_perceptions_index": 69,
+        "corruption_rank": 24,
+        "rule_of_law_score": 0.78,
+        "government_effectiveness": 0.82,
+        "regulatory_quality": 0.90,
+        "voice_accountability": 0.80,
+        "political_stability_index": 0.62,
+        "judicial_independence": 0.84,
+        "property_rights_score": 0.88,
+        "ease_of_doing_business_rank": 55,
+        "source": "World Governance Indicators, Transparency International, EIU, Reporters Without Borders",
+        "confidence": 0.88
+      },
+      "cultural": {
+        "hofstede_individualism": 91,
+        "hofstede_power_distance": 40,
+        "hofstede_uncertainty_avoidance": 46,
+        "hofstede_masculinity": 62,
+        "hofstede_long_term_orientation": 26,
+        "hofstede_indulgence": 68,
+        "social_trust_index": 0.31,
+        "religiosity_index": 0.53,
+        "primary_language": "English",
+        "significant_languages": ["Spanish"],
+        "cultural_influence_note": "Dominant global soft power through entertainment, technology, academic, and consumer brand exports",
+        "source": "Hofstede Insights, World Values Survey",
+        "confidence": 0.75
+      }
+    },
+    "economy": {
+      "macro": {
+        "gdp_nominal_usd": 28500000000000,
+        "gdp_ppp_usd": 28500000000000,
+        "gdp_real_growth_pct": 2.3,
+        "gdp_per_capita_usd": 85300,
+        "gdp_per_capita_ppp_usd": 85300,
+        "inflation_rate_pct": 3.1,
+        "core_inflation_pct": 3.4,
+        "unemployment_rate_pct": 3.9,
+        "participation_rate_pct": 62.7,
+        "debt_to_gdp_pct": 123.0,
+        "fiscal_balance_gdp_pct": -6.3,
+        "primary_balance_gdp_pct": -3.8,
+        "interest_payments_usd": 1050000000000,
+        "current_account_gdp_pct": -3.0,
+        "current_account_usd": -855000000000,
+        "gross_savings_pct_gdp": 17.8,
+        "investment_pct_gdp": 21.0,
+        "foreign_reserves_usd": 244000000000,
+        "net_international_investment_position_usd": -19800000000000,
+        "source": "World Bank, IMF WEO, BEA, BLS",
+        "confidence": 0.93,
+        "trend": {
+          "direction": "growth",
+          "assessment": "US economy shows resilient growth driven by consumer spending, government fiscal support, and a historic surge in AI and data center investment. Growth is broad-based but uneven, with manufacturing lagging services.",
+          "evidence": [
+            "Q3 2025 GDP at 2.3% annualized, above consensus expectations",
+            "Unemployment holding near 3.9% despite rate tightening cycle",
+            "Consumer spending growing at 2.8% in real terms",
+            "AI-related capex by top 5 tech firms exceeded $200B in 2025",
+            "ISM Services PMI consistently above 52"
+          ],
+          "counter_arguments": [
+            "Federal fiscal deficit unsustainable at 6.3% of GDP; interest payments now largest budget item",
+            "Commercial real estate stress creating regional bank vulnerabilities",
+            "Manufacturing PMI has been in contraction for 9 of past 12 months",
+            "Household savings rate collapsed to 3.5%, limiting future consumption buffer"
+          ],
+          "confidence": 0.80
+        }
+      },
+      "financial": {
+        "policy_rate_pct": 5.25,
+        "policy_rate_lower_bound_pct": 5.25,
+        "policy_rate_upper_bound_pct": 5.50,
+        "ten_year_yield_pct": 4.35,
+        "two_year_yield_pct": 4.65,
+        "yield_curve_slope_bp": -30,
+        "credit_rating_sp": "AA+",
+        "credit_rating_moodys": "Aaa",
+        "credit_rating_fitch": "AA+",
+        "credit_outlook": "Stable (Moody's), Negative Watch (Fitch)",
+        "stock_market_index": "S&P 500",
+        "stock_market_level": 5650,
+        "stock_market_ytd_pct": 4.2,
+        "stock_market_pe_ratio": 22.4,
+        "currency_code": "USD",
+        "fx_rate_per_usd": 1.0,
+        "fx_ytd_change_pct": 0.0,
+        "dollar_index_dxy": 104.5,
+        "banking_sector_health": 0.75,
+        "banking_tier1_capital_ratio_pct": 13.8,
+        "npl_ratio_pct": 1.6,
+        "m2_growth_pct": 3.8,
+        "source": "Federal Reserve, Trading Economics, S&P Global, Moody's, Fitch",
+        "confidence": 0.92
+      },
+      "trade": {
+        "exports_usd": 2085000000000,
+        "imports_usd": 3277000000000,
+        "trade_balance_usd": -1192000000000,
+        "goods_exports_usd": 1645000000000,
+        "goods_imports_usd": 2873000000000,
+        "services_exports_usd": 898000000000,
+        "services_imports_usd": 604000000000,
+        "trade_openness_pct": 27.0,
+        "top_export_products": [
+          "Refined petroleum",
+          "Aircraft and aerospace parts",
+          "Semiconductors and integrated circuits",
+          "Soybeans and agricultural products",
+          "Vehicles and auto parts",
+          "LNG and natural gas",
+          "Pharmaceuticals",
+          "Medical devices"
+        ],
+        "top_import_products": [
+          "Crude oil and petroleum products",
+          "Vehicles and auto parts",
+          "Consumer electronics",
+          "Pharmaceuticals and medical",
+          "Machinery and equipment",
+          "Apparel and footwear",
+          "Steel and aluminum"
+        ],
+        "top_trade_partners": ["CHN", "CAN", "MEX", "JPN", "DEU"],
+        "top_export_destinations": ["CAN", "MEX", "CHN", "JPN", "GBR"],
+        "top_import_origins": ["CHN", "MEX", "CAN", "DEU", "JPN"],
+        "fta_count": 14,
+        "fta_partners": ["CAN", "MEX", "AUS", "KOR", "JPN", "SGP", "CHL", "PER", "COL", "OMN", "BHR", "ISR", "MAR", "GTM"],
+        "wto_member": true,
+        "sanctions_status": "Primary sanctioning entity — administers OFAC SDN list covering RUS, IRN, PRK, CUB, VEN, SYR and others",
+        "tariff_regime": "Elevated — 2025 tariffs on CHN imports averaging 25-145% by category; section 232 steel/aluminum tariffs maintained",
+        "export_controls": "ITAR, EAR — extensive controls on defense articles, advanced semiconductors, AI chips",
+        "source": "UN Comtrade, US Census Bureau, USTR, WTO",
+        "confidence": 0.88
+      },
+      "sectoral": {
+        "gdp_composition_pct": {
+          "services": 77.6,
+          "industry": 18.9,
+          "agriculture": 0.9,
+          "construction": 4.3,
+          "government": 12.0
+        },
+        "top_industries": [
+          "Financial services and insurance",
+          "Real estate",
+          "Technology and information",
+          "Healthcare and social assistance",
+          "Professional and business services",
+          "Manufacturing (aerospace, defense, chemicals, pharma)",
+          "Retail trade",
+          "Energy (oil, gas, renewables)"
+        ],
+        "rd_spending_pct_gdp": 3.5,
+        "patent_applications_annual": 595000,
+        "startup_ecosystem_rank": 1,
+        "source": "BEA, NSF",
+        "confidence": 0.88
+      }
+    },
+    "military": {
+      "personnel": {
+        "active_military": 1390000,
+        "reserve_military": 845000,
+        "national_guard": 450000,
+        "paramilitary": 0,
+        "conscription": false,
+        "all_volunteer_since": 1973,
+        "officer_quality_note": "Professional all-volunteer force with extensive combat experience from post-9/11 operations",
+        "source": "IISS Military Balance, Global Firepower, DoD",
+        "confidence": 0.88
+      },
+      "spending": {
+        "defense_budget_usd": 886000000000,
+        "defense_pct_gdp": 3.5,
+        "spending_trend": "growth",
+        "five_year_cagr_pct": 4.2,
+        "r_and_d_budget_usd": 145000000000,
+        "procurement_budget_usd": 165000000000,
+        "operations_maintenance_usd": 295000000000,
+        "personnel_costs_usd": 195000000000,
+        "arms_imports_usd": 2100000000,
+        "arms_exports_usd": 15800000000,
+        "arms_export_rank": 1,
+        "source": "SIPRI, Office of the Secretary of Defense",
+        "confidence": 0.90
+      },
+      "capabilities": {
+        "tanks": 6100,
+        "armored_fighting_vehicles": 41000,
+        "self_propelled_artillery": 1500,
+        "aircraft_total": 13300,
+        "fighter_aircraft": 2085,
+        "strategic_bombers": 155,
+        "military_helicopters": 5400,
+        "naval_vessels": 484,
+        "aircraft_carriers": 11,
+        "submarines": 68,
+        "surface_combatants": 105,
+        "nuclear_warheads": 5550,
+        "deployed_warheads": 1670,
+        "strategic_warheads": 1670,
+        "nuclear_status": "declared_state",
+        "nuclear_triad": true,
+        "icbm_count": 400,
+        "slbm_count": 220,
+        "strategic_bomber_capable": true,
+        "cyber_capability_tier": 1,
+        "cyber_command": "USCYBERCOM",
+        "space_capability": true,
+        "space_force_established": 2019,
+        "gps_operator": true,
+        "power_projection_score": 0.98,
+        "overseas_bases_count": 750,
+        "overseas_troops_deployed": 170000,
+        "source": "Global Firepower, SIPRI, FAS, IISS Military Balance",
+        "confidence": 0.82
+      },
+      "conflicts": {
+        "active_conflicts": [],
+        "recent_incidents": [
+          "Houthi strikes in Red Sea (Operation Prosperity Guardian — force protection and freedom of navigation)",
+          "Continued counterterrorism operations in AFRICOM and CENTCOM AORs",
+          "Cyber and intelligence operations supporting Ukraine (not direct combat role)"
+        ],
+        "security_commitments": [
+          "NATO Article 5 collective defense",
+          "US-Japan Mutual Defense Treaty",
+          "US-South Korea Mutual Defense Treaty",
+          "US-Australia ANZUS Treaty",
+          "US-Philippines Mutual Defense Treaty",
+          "Israel security assistance framework"
+        ],
+        "peacekeeping_contributions": 34,
+        "source": "ACLED, IISS, DoD",
+        "confidence": 0.85
+      }
+    },
+    "relations": {
+      "top_partners": [
+        {"code": "GBR", "quality": 0.92, "type": "allied", "note": "Special Relationship; FVEY, NATO, AUKUS partner"},
+        {"code": "CAN", "quality": 0.90, "type": "allied", "note": "Largest bilateral trade relationship; NORAD; shared border"},
+        {"code": "JPN", "quality": 0.87, "type": "allied", "note": "Anchor of Indo-Pacific strategy; host to 54,000 US troops"},
+        {"code": "DEU", "quality": 0.85, "type": "allied", "note": "NATO's largest European military; host to 35,000 US troops"},
+        {"code": "AUS", "quality": 0.88, "type": "allied", "note": "AUKUS nuclear submarine partner; FVEY; critical Indo-Pacific node"},
+        {"code": "KOR", "quality": 0.83, "type": "friendly", "note": "28,500 US troops; KORUS FTA; semiconductor supply chain partner"},
+        {"code": "ISR", "quality": 0.82, "type": "friendly", "note": "Close security partnership; active MOU for $3.8B annual assistance"},
+        {"code": "IND", "quality": 0.72, "type": "friendly", "note": "QUAD member; growing strategic partnership; non-aligned tradition persists"},
+        {"code": "FRA", "quality": 0.80, "type": "allied", "note": "NATO founder; P5 partner; occasional friction on strategic autonomy"},
+        {"code": "MEX", "quality": 0.68, "type": "neutral", "note": "Third-largest trade partner; immigration tensions; security cooperation on cartels"},
+        {"code": "SAU", "quality": 0.60, "type": "neutral", "note": "Oil market relationship; Abraham Accords broker; human rights tensions"},
+        {"code": "CHN", "quality": 0.32, "type": "cool", "note": "Systemic rivalry; managed competition; Taiwan primary flashpoint"},
+        {"code": "RUS", "quality": 0.15, "type": "hostile", "note": "Near-adversary; Ukraine conflict; extensive sanctions regime; nuclear peer"}
+      ],
+      "alliance_memberships": ["NATO", "AUKUS", "FVEY", "QUAD", "G7", "G20"],
+      "multilateral_memberships": ["UN Security Council (P5)", "IMF", "World Bank", "WTO", "OECD", "APEC", "OAS", "ICC (non-member)"],
+      "un_security_council_member": true,
+      "un_security_council_type": "permanent",
+      "un_voting_alignment_west": 0.95,
+      "diplomatic_missions_count": 273,
+      "diplomatic_reach_score": 0.98,
+      "soft_power_note": "Dominant in entertainment, higher education, technology brands, international media, and English-language internet",
+      "source": "UN Voting Data, US State Department, CFR Alliance Tracker",
+      "confidence": 0.85
+    },
+    "derived": {
+      "composite_power_index": 0.95,
+      "economic_power": 0.94,
+      "military_power": 0.98,
+      "technology_index": 0.93,
+      "soft_power_index": 0.88,
+      "diplomatic_influence": 0.96,
+      "vulnerability_index": 0.22,
+      "supply_chain_exposure": 0.35,
+      "energy_independence": 0.92,
+      "food_security_score": 0.95,
+      "investment_risk_score": 0.18,
+      "economic_complexity_index": 1.75,
+      "innovation_index": 0.90,
+      "global_connectivity_score": 0.96,
+      "financial_system_depth": 0.97,
+      "institutional_quality": 0.84,
+      "geopolitical_risk_score": 0.28,
+      "strategic_autonomy_score": 0.96,
+      "index_notes": {
+        "vulnerability_index": "Low — two-ocean geography, energy independence, dollar dominance, and alliance network limit external coercion",
+        "supply_chain_exposure": "Moderate — semiconductor and rare earth dependence on Asia remains strategic vulnerability",
+        "geopolitical_risk_score": "Below average for a great power — primary risks are domestic fiscal and China-Taiwan contingency"
+      },
+      "source": "Computed from layer data; cross-referenced with Lowy, Portland, and CSIS power indices",
+      "confidence": 0.80
+    }
+  },
+
+  "narrative": {
+    "executive_overview": "The United States maintains its position as the world's preeminent economic and military power, with a GDP exceeding $28 trillion and defense spending approaching $900 billion annually. The economy has demonstrated remarkable resilience despite the most aggressive Federal Reserve tightening cycle in four decades, with growth stabilizing around 2.3% and unemployment holding near historic lows at 3.9%. A historic surge in artificial intelligence infrastructure investment — concentrated in semiconductor fabs, data centers, and energy generation — is reshaping the technology sector and creating a potential multiyear productivity tailwind. Geopolitically, the United States manages its most consequential strategic competition since the Cold War: a multidimensional rivalry with China spanning technology, trade, military posture, and diplomatic influence, set against the backdrop of continued support for Ukraine and an increasingly complex Middle East engagement calculus.",
+    "key_developments": "The Federal Reserve's decision to maintain rates at 5.25% through early 2026 reflects persistent services inflation and a labor market that has defied rate-tightening logic. Markets are pricing two 25bp cuts by December 2026, contingent on continued disinflation. The fiscal picture is the primary medium-term concern: interest payments on federal debt have exceeded $1 trillion annually for the first time, constituting the single largest budget line item, and the Congressional Budget Office projects no debt stabilization path under current law. The defense budget's growth to $886 billion (3.5% of GDP) reflects a bipartisan consensus on China-focused Indo-Pacific strategy, manifested in accelerated AUKUS submarine cooperation, expanded QUAD coordination, and significant investment in long-range strike and undersea capabilities. Energy independence through shale production has fundamentally altered America's strategic position, reducing vulnerability to Middle Eastern instability and enabling LNG exports that provide leverage in European and Asian energy markets.",
+    "risk_factors": "The primary systemic risk is the fiscal trajectory: a 6.3% structural deficit with demographic-driven mandatory spending growth and no near-term political pathway to consolidation. A sovereign credit event is not a near-term base case, but incremental erosion of dollar reserve status through gradual diversification by central banks is a slow-burn risk. Commercial real estate stress — particularly in the office sector with vacancy rates above 20% in major metros — is creating balance sheet pressure at regional banks, echoing (though at lower severity than) the 2023 Silicon Valley Bank dynamics. Political polarization, measured by partisan distance in Congress, is at its highest recorded level, impairing legislative function on budget, immigration, and infrastructure. The US-China technology decoupling trajectory creates bilateral escalation risk: expanded semiconductor export controls are effective but invite retaliation through rare earth and critical mineral restrictions, and any Taiwan Strait miscalculation would trigger a global economic shock of unprecedented magnitude.",
+    "opportunities": "AI-driven productivity gains represent the most significant potential growth catalyst since the internet era; early evidence from knowledge-worker sectors suggests 10-30% productivity improvements, which if sustained would substantially alleviate fiscal pressures through higher tax revenue and GDP growth. Energy independence — with oil production at a record 13 million barrels per day — provides both strategic autonomy and export revenue. The nearshoring and friendshoring trend, accelerated by US-China decoupling, is redirecting manufacturing investment to Mexico, allied Asia, and domestic facilities, particularly in semiconductors (CHIPS Act), electric vehicles, and defense industrial base. The dollar's continued dominance as the global reserve currency (approximately 59% of global reserves) provides structural seigniorage benefits and the unique capacity to run persistent current account deficits at low cost. The US higher education and innovation ecosystem — with 17 of the world's top 20 research universities — ensures continued competitive advantage in frontier technology development.",
+    "ai_generated": true,
+    "generated_date": "2026-02-28T12:00:00Z"
+  }
+}

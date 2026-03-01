@@ -1,0 +1,42 @@
+{
+  "id": "agent_13",
+  "name": "Country Profile Synthesizer",
+  "phase": 6,
+  "phase_name": "SYNTHESIZE",
+  "description": "Generates concise, investor-focused narrative sections for each Tier 1 and Tier 2 country, summarizing the current state, weekly changes, outlook, and investor implications. All generated content is labeled as AI-generated.",
+  "inputs": [
+    "data/countries/*.json",
+    "staging/trends/trend_estimates_{DATE}.json",
+    "staging/raw_collected/news_events_{DATE}.json",
+    "data/indices/alert_index.json"
+  ],
+  "outputs": [
+    "data/countries/*.json"
+  ],
+  "timeout_minutes": 30,
+  "coverage": {
+    "tier_1_countries": 30,
+    "tier_2_countries": 25,
+    "total_countries": 55
+  },
+  "narrative_sections": [
+    "executive_summary",
+    "key_changes_this_week",
+    "outlook",
+    "investor_implications",
+    "data_quality_note"
+  ],
+  "content_guidelines": {
+    "audience": "Sophisticated institutional investor",
+    "tone": "Concise, factual, not sensational",
+    "lead": "What changed, not background context",
+    "length_executive_summary": "3-5 sentences",
+    "length_outlook": "2-3 sentences",
+    "length_investor_implications": "2-3 sentences",
+    "time_per_country_seconds": 30,
+    "ai_label_required": true
+  },
+  "retry_on_failure": false,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_13_narratives.md"
+}

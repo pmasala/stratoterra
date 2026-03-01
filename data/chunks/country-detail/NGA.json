@@ -1,0 +1,862 @@
+{
+  "code": "NGA",
+  "name": "Nigeria",
+  "region": "sub_saharan_africa",
+  "tier": 2,
+  "last_updated": "2026-02-28T12:00:00Z",
+  "executive_summary": "Nigeria is Africa's most populous nation and largest economy by nominal GDP, yet structural fragility—oil dependence, security challenges, currency instability, and inadequate infrastructure—constrains the country's immense demographic and resource potential. Under President Tinubu's reforms (since May 2023), Nigeria has undertaken its most significant economic restructuring in decades: unifying the foreign exchange rate, ending the costly fuel subsidy that consumed ~3% of GDP, and liberalizing the naira. These reforms are necessary but painful, generating significant inflation and social hardship in the near term. The northeast insurgency (Boko Haram/ISWAP) continues to destabilize Borno and neighboring states. Despite these challenges, Nigeria's 224 million people—set to reach 400 million by 2050—represent an extraordinary market opportunity and demographic force that no serious Africa strategy can ignore.",
+  "key_changes": [
+    "Naira devaluation of ~70% in 2023-2024 following FX unification; naira now at ~1,580/USD",
+    "Petrol subsidy removal (June 2023) ended decades of price controls; petrol price ~5x higher in naira terms",
+    "Inflation reached 34% in 2024 before beginning to moderate in 2025 to ~26%",
+    "NNPCL (Nigerian National Petroleum Company Limited) reported oil production recovery to ~1.5 million bpd in Q4 2025, up from lows of ~1.2 million bpd",
+    "Nigeria joined BRICS as a partner state in 2024, formalizing non-aligned positioning"
+  ],
+  "active_alerts": [
+    {
+      "id": "NGA-2026-001",
+      "severity": "warning",
+      "type": "security",
+      "title": "Ongoing ISWAP/Boko Haram insurgency in northeast Nigeria",
+      "description": "The Islamic State West Africa Province (ISWAP) continues to control territory in Borno State and conduct attacks in northeast Nigeria and Lake Chad basin. Over 2 million people remain displaced. Military operations have degraded but not eliminated insurgent capacity. Attacks on military positions, aid workers, and civilian infrastructure ongoing. Spillover into Cameroon, Niger, and Chad creating regional instability.",
+      "countries_affected": ["NGA", "CMR", "NER", "TCD"],
+      "created_at": "2022-01-01T00:00:00Z",
+      "updated_at": "2026-02-28T00:00:00Z",
+      "investor_action": "Avoid commercial operations in northeast Nigeria (Borno, Yobe, Adamawa states); budget for enhanced security costs in northern Nigeria broadly; monitor Lake Chad Basin Commission coordination efforts"
+    },
+    {
+      "id": "NGA-2026-002",
+      "severity": "watch",
+      "type": "economic",
+      "title": "Naira depreciation risk and inflation persistence",
+      "description": "Despite FX unification, the naira remains under significant depreciation pressure due to oil production shortfalls, dollarization of domestic transactions, and thin FX reserves (~$38B). Inflation at ~26% is declining but well above the CBN 6-9% target band. Another significant devaluation episode is a credible risk if oil prices fall or domestic revenue underperforms. This creates execution risk for all naira-denominated investment returns.",
+      "countries_affected": ["NGA"],
+      "created_at": "2025-06-01T00:00:00Z",
+      "updated_at": "2026-02-28T00:00:00Z",
+      "investor_action": "USD-denominate contracts where possible; hedge FX exposure; monitor CBN reserves and oil production data monthly; consider sovereign hard-currency bonds (Eurobonds) over local currency exposure for portfolio positioning"
+    }
+  ],
+  "outlook": "Nigeria's near-term outlook is one of reform-driven stabilization with significant execution risk. The Tinubu reform package is economically correct—FX unification and subsidy removal were necessary for long-term sustainability—but the social and political costs are severe and could undermine reform momentum ahead of 2027 governorship elections. If reforms hold and oil production recovers to 1.8+ million bpd, Nigeria could achieve 4-5% growth by 2027 and begin genuine fiscal consolidation. The downside scenario—reform fatigue, renewed FX controls, and oil sector stagnation—would maintain the structural stagnation of the past decade. Nigeria's demographic scale means even a partial realization of its potential will make it among Africa's largest investment opportunities.",
+  "investor_implications": "Nigeria is a high-risk, potentially high-reward frontier/emerging market. The reform context creates selective opportunities: Nigerian Eurobonds offer attractive yields (spread ~700bps over UST) for risk-tolerant fixed income investors willing to accept country risk. Telecoms (MTN Nigeria, Airtel Africa) and consumer staples (Nestle Nigeria, Unilever) offer exposure to the consumer market but face naira translation losses. The Dangote Refinery (650,000 bpd capacity) is transformative for the downstream sector if it reaches full production. Oil sector: international oil companies (Shell, TotalEnergies, ExxonMobil) have been divesting onshore assets to local players due to security and ESG concerns; deepwater blocks are cleaner but capital-intensive. Fintech (Flutterwave, Paystack, Interswitch) offers high-growth exposure to financial inclusion wave. Minimize local currency cash holdings; target hard-currency revenue streams.",
+  "layers": {
+    "endowments": {
+      "resources": {
+        "hydrocarbon_reserves_billion_boe": {
+          "value": 37.5,
+          "source": "NNPCL / EIA / BP Statistical Review",
+          "confidence": 0.80,
+          "last_updated": "2025-06-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Proven oil reserves 36.97 billion barrels (African #2, world top 10); significant gas reserves ~200 TCF (world #9); associated gas flaring historically high but declining"
+        },
+        "oil_production_million_bpd": {
+          "value": 1.5,
+          "trend": "growth",
+          "source": "NNPCL / OPEC",
+          "confidence": 0.82,
+          "last_updated": "2026-01-31T00:00:00Z",
+          "update_frequency": "monthly",
+          "notes": "Production significantly below OPEC quota (~1.8 mbpd) due to theft, vandalism, and underinvestment; recovering from 2022-2023 lows"
+        },
+        "natural_gas_production_bcm_per_year": {
+          "value": 49.0,
+          "source": "EIA / NNPCL",
+          "confidence": 0.78,
+          "last_updated": "2025-09-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Significant flaring; NLNG exports LNG; domestic gas infrastructure underdeveloped relative to reserves"
+        },
+        "renewable_energy_potential": {
+          "value": "high",
+          "source": "IRENA / REN21",
+          "confidence": 0.80,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Excellent solar irradiance across country; Niger River hydro; significant wind potential; largely untapped due to grid infrastructure constraints"
+        },
+        "critical_minerals": {
+          "value": "significant",
+          "source": "USGS / Ministry of Solid Minerals",
+          "confidence": 0.72,
+          "last_updated": "2024-12-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Lithium (Nassarawa State deposits under development), tin, columbite, gold, limestone; solid minerals sector severely underexplored and underdeveloped"
+        },
+        "arable_land_pct_total": {
+          "value": 37.3,
+          "source": "World Bank / FAO",
+          "confidence": 0.82,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "freshwater_resources_km3_per_year": {
+          "value": 286.2,
+          "source": "FAO AQUASTAT",
+          "confidence": 0.80,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "energy_independence_index": {
+          "value": 0.85,
+          "source": "EIA / Stratoterra",
+          "confidence": 0.80,
+          "last_updated": "2025-09-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Oil exporter; paradoxically imports refined petroleum products due to refinery dysfunction (pre-Dangote Refinery); now improving with Dangote ramp-up"
+        }
+      },
+      "geography": {
+        "area_km2": 923768,
+        "landlocked": false,
+        "coastline_km": 853,
+        "terrain": "Southern lowlands merging into central hills and plateaus; mountains in southeast; plains in north",
+        "climate_zone": "tropical_to_arid",
+        "climate_notes": "Rainforest in south; savanna in center; Sahel and semi-arid in far north; increasing desertification pressure in north",
+        "natural_disaster_risk": "moderate",
+        "natural_disaster_notes": "Flooding in Niger Delta and coastal areas; drought in north; desertification advancing southward",
+        "strategic_location_notes": "West Africa's dominant power; Gulf of Guinea oil production hub; controls key Atlantic approach zones; shares borders with 4 West African states and Chad",
+        "niger_delta": "World-class oil production zone; history of environmental damage and militant activity",
+        "chokepoint_adjacency": ["Gulf of Guinea oil transit", "Lagos Port (West Africa's largest)"],
+        "border_countries": ["BEN", "CMR", "NER", "TCD"]
+      },
+      "demographics": {
+        "population": {
+          "value": 224000000,
+          "source": "NBS / World Bank / UN",
+          "confidence": 0.82,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Census data disputed; 2023 census projected 220-230M; Africa's most populous nation"
+        },
+        "population_growth_rate_pct": {
+          "value": 2.5,
+          "source": "World Bank / UN DESA",
+          "confidence": 0.82,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "One of world's fastest-growing large populations; set to reach ~400M by 2050 and potentially surpass USA"
+        },
+        "median_age_years": {
+          "value": 18.4,
+          "source": "UN Population Division",
+          "confidence": 0.82,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Extremely young population; largest youth cohort in Africa; potential demographic dividend if education and jobs delivered"
+        },
+        "working_age_population_pct": {
+          "value": 54.8,
+          "source": "NBS / ILO",
+          "confidence": 0.78,
+          "last_updated": "2025-01-01T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "urbanization_rate_pct": {
+          "value": 54.3,
+          "source": "World Bank",
+          "confidence": 0.80,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Rapidly urbanizing; Lagos metro ~15-20M (population estimates vary widely); Kano, Ibadan, Abuja growing rapidly"
+        },
+        "tertiary_education_pct": {
+          "value": 10.8,
+          "source": "World Bank / NBS",
+          "confidence": 0.72,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Low tertiary enrollment relative to population; significant ASUU strike disruption in recent years; brain drain is acute"
+        },
+        "brain_drain_severity": "severe",
+        "brain_drain_notes": "Japa phenomenon: large-scale emigration of skilled Nigerians to UK, Canada, USA, Gulf; 2022-2024 saw historic outflow of doctors, nurses, engineers",
+        "youth_unemployment_rate_pct": {
+          "value": 42.0,
+          "source": "NBS",
+          "confidence": 0.72,
+          "last_updated": "2025-06-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Including underemployment; critically high; creates social instability risk"
+        },
+        "gini_coefficient": {
+          "value": 35.1,
+          "source": "World Bank",
+          "confidence": 0.70,
+          "last_updated": "2023-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Moderate by global standards but significant north-south and urban-rural disparities; data quality limited"
+        }
+      }
+    },
+    "institutions": {
+      "political": {
+        "regime_type": "federal_presidential_democracy",
+        "regime_stability": {
+          "value": 0.22,
+          "source": "World Bank WGI / EIU",
+          "confidence": 0.78,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Democratic form maintained since 1999 return to civilian rule; institutions fragile; electoral disputes common; military retains political influence"
+        },
+        "government_effectiveness": {
+          "value": 0.28,
+          "source": "World Bank WGI",
+          "confidence": 0.78,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "election_cycle_years": 4,
+        "next_election_date": "2027-02-01",
+        "head_of_government": "Bola Ahmed Tinubu (President)",
+        "ruling_party": "APC (All Progressives Congress)",
+        "political_risk_notes": "2023 election results disputed; Supreme Court upheld Tinubu victory; political tensions remain; 2027 governorship elections upcoming flashpoint; ethno-regional politics (Yoruba-Igbo-Hausa-Fulani) structurally fragile",
+        "corruption_perception_index": {
+          "value": 25.0,
+          "source": "Transparency International",
+          "confidence": 0.82,
+          "last_updated": "2026-01-28T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Score out of 100; lower indicates higher perceived corruption. Nigeria ranks ~145th globally"
+        },
+        "rule_of_law_index": {
+          "value": 0.22,
+          "source": "World Bank WGI",
+          "confidence": 0.78,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "press_freedom_index": {
+          "value": 0.38,
+          "source": "RSF",
+          "confidence": 0.75,
+          "last_updated": "2025-05-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Press active and critical; journalists face intimidation, arrest; regulatory harassment of media houses"
+        }
+      },
+      "governance": {
+        "regulatory_quality": {
+          "value": 0.30,
+          "source": "World Bank WGI",
+          "confidence": 0.78,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "voice_and_accountability": {
+          "value": 0.38,
+          "source": "World Bank WGI",
+          "confidence": 0.78,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "federalism_notes": "36 states plus FCT; state governments have significant autonomy; oil revenue sharing between federal and state governments is persistent tension point (resource control debate)",
+        "oil_revenue_sharing": "13% derivation to oil-producing states; remainder to federal and all states formula; NDDC (Niger Delta Development Commission) manages additional transfers"
+      },
+      "cultural": {
+        "hofstede_power_distance": 80,
+        "hofstede_individualism": 30,
+        "hofstede_uncertainty_avoidance": 55,
+        "hofstede_long_term_orientation": 13,
+        "ethnolinguistic_diversity": "extreme",
+        "ethnolinguistic_notes": "250-500 ethnic groups (estimates vary); Hausa-Fulani, Yoruba, Igbo are the three largest (~60% combined); major ethnolinguistic diversity is both cultural richness and governance challenge",
+        "social_trust_index": {
+          "value": 0.22,
+          "source": "Afrobarometer / World Values Survey",
+          "confidence": 0.68,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "static"
+        },
+        "nollywood_notes": "Nigeria's film industry (Nollywood) is world's 2nd largest by output; significant soft power and Pan-African cultural influence",
+        "tech_ecosystem": "Lagos is Africa's leading startup hub; over 200 active tech startups; Yaba 'Silicon Valley' of Africa; unicorns: Flutterwave, Interswitch",
+        "official_languages": ["English"],
+        "major_regional_languages": ["Hausa", "Yoruba", "Igbo"]
+      }
+    },
+    "economy": {
+      "macro": {
+        "gdp_nominal_usd": {
+          "value": 477000000000,
+          "trend": "growth",
+          "source": "IMF WEO / NBS",
+          "confidence": 0.78,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "quarterly",
+          "trend_reasoning": "GDP in USD depressed by naira devaluation; real growth ~3% but nominal USD GDP significantly reduced by FX moves",
+          "evidence": [
+            "IMF April 2025 WEO: Nigeria GDP $477B for 2025 (down from $477B pre-devaluation estimate at old rate)",
+            "NBS Q3 2025: real GDP +2.8% YoY",
+            "Oil sector recovery contributing ~0.5pp to growth"
+          ],
+          "counter_arguments": [
+            "Services and consumer sector showing resilience",
+            "Agricultural sector grew 4.5% in 2025"
+          ]
+        },
+        "gdp_growth_rate_pct": {
+          "value": 3.0,
+          "trend": "growth",
+          "source": "IMF WEO / NBS",
+          "confidence": 0.78,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "quarterly"
+        },
+        "gdp_per_capita_usd": {
+          "value": 2129,
+          "source": "IMF WEO",
+          "confidence": 0.75,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Significantly depressed by naira devaluation; PPP per capita ~$6,200 better reflects living standards"
+        },
+        "gdp_ppp_usd": {
+          "value": 1380000000000,
+          "source": "IMF WEO",
+          "confidence": 0.75,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "inflation_rate_pct": {
+          "value": 26.1,
+          "trend": "decrease",
+          "source": "NBS CPI / CBN",
+          "confidence": 0.85,
+          "last_updated": "2026-01-31T00:00:00Z",
+          "update_frequency": "monthly",
+          "notes": "Declining from 34% peak in 2024; food inflation dominant; naira stabilization helping but structural supply constraints persist"
+        },
+        "unemployment_rate_pct": {
+          "value": 33.3,
+          "trend": "stable",
+          "source": "NBS",
+          "confidence": 0.68,
+          "last_updated": "2025-06-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "NBS revised definition; includes underemployment; informal sector engagement widespread but low productivity"
+        },
+        "current_account_balance_pct_gdp": {
+          "value": 0.8,
+          "trend": "growth",
+          "source": "CBN / IMF",
+          "confidence": 0.72,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "quarterly",
+          "notes": "Modest surplus driven by oil exports; subsidy removal improved import bill for petroleum products"
+        },
+        "budget_balance_pct_gdp": {
+          "value": -5.2,
+          "trend": "decrease",
+          "source": "FMFBNP / IMF",
+          "confidence": 0.72,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Revenue/GDP among world's lowest (~8%); debt service consuming ~40% of revenue; subsidy removal improving balance"
+        },
+        "public_debt_pct_gdp": {
+          "value": 42.5,
+          "trend": "stable",
+          "source": "DMO / IMF",
+          "confidence": 0.75,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Moderate debt/GDP ratio; however revenue base is so narrow that debt service burden is severely constraining"
+        },
+        "economic_complexity_index": {
+          "value": -0.8,
+          "trend": "stable",
+          "source": "Harvard CID / MIT Observatory",
+          "confidence": 0.78,
+          "last_updated": "2024-12-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Low complexity; export basket dominated by crude oil and agricultural commodities; manufacturing severely underdeveloped"
+        }
+      },
+      "financial": {
+        "currency": "NGN",
+        "exchange_rate_vs_usd": {
+          "value": 1580.0,
+          "trend": "decrease",
+          "source": "CBN / FMDQ",
+          "confidence": 0.90,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "daily",
+          "notes": "Naira trading at 1,580/USD following 2023-2024 unification and devaluation; black market/parallel rate largely converged with official rate post-unification"
+        },
+        "sovereign_credit_rating": {
+          "moodys": "Caa1",
+          "sp": "B-",
+          "fitch": "B-",
+          "source": "Rating agency publications",
+          "confidence": 0.90,
+          "last_updated": "2025-11-01T00:00:00Z",
+          "update_frequency": "monthly",
+          "notes": "Highly speculative grade; Caa1/B- reflects fiscal stress, governance concerns, and oil production volatility; Eurobond spreads elevated"
+        },
+        "cbn_policy_rate_pct": {
+          "value": 27.5,
+          "trend": "growth",
+          "source": "Central Bank of Nigeria",
+          "confidence": 0.95,
+          "last_updated": "2026-02-07T00:00:00Z",
+          "update_frequency": "bimonthly",
+          "notes": "CBN aggressively tightening to combat inflation and support naira; real rates still marginally negative"
+        },
+        "fx_reserves_usd_bn": {
+          "value": 38.5,
+          "trend": "stable",
+          "source": "CBN",
+          "confidence": 0.85,
+          "last_updated": "2026-02-15T00:00:00Z",
+          "update_frequency": "weekly",
+          "notes": "Adequate for ~5.5 months of imports; FX reserve management critical for naira stability"
+        },
+        "investment_risk_index": {
+          "value": 0.72,
+          "source": "Composite: WGI, EIU, World Bank DB",
+          "confidence": 0.75,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "weekly"
+        },
+        "banking_sector_stability": "under_pressure",
+        "banking_notes": "CBN completed bank recapitalization exercise in 2024-2025; tier-1 banks (Access, Zenith, GTB, UBA) adequately capitalized; naira devaluation created mark-to-market gains on USD assets but FX exposure management complex",
+        "eurobond_spread_bps": {
+          "value": 700,
+          "trend": "stable",
+          "source": "Bloomberg / EMBI",
+          "confidence": 0.85,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "daily"
+        }
+      },
+      "trade": {
+        "trade_openness_pct_gdp": {
+          "value": 25.0,
+          "source": "World Bank / NBS",
+          "confidence": 0.72,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Relatively closed; oil dominates exports; limited manufactured export base"
+        },
+        "exports_usd_bn": {
+          "value": 65.0,
+          "trend": "stable",
+          "source": "NBS / CBN / UNCTAD",
+          "confidence": 0.75,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "imports_usd_bn": {
+          "value": 56.0,
+          "trend": "stable",
+          "source": "NBS / CBN / UNCTAD",
+          "confidence": 0.75,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "top_export_categories": [
+          "Crude petroleum and petroleum products",
+          "LNG",
+          "Cocoa and cocoa products",
+          "Sesame seeds",
+          "Cashew nuts"
+        ],
+        "top_import_categories": [
+          "Refined petroleum products (reducing with Dangote Refinery)",
+          "Industrial machinery and equipment",
+          "Food (wheat, rice, sugar)",
+          "Chemicals and pharmaceuticals",
+          "Vehicles"
+        ],
+        "top_trading_partners": ["IND", "USA", "CHN", "ESP", "NLD"],
+        "oil_export_pct_total_exports": {
+          "value": 87.0,
+          "source": "NBS / NNPCL",
+          "confidence": 0.82,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Extreme oil export concentration; key structural vulnerability"
+        },
+        "wto_member": true,
+        "afcfta_member": true,
+        "afcfta_notes": "Nigeria ratified AfCFTA 2020; implementation creates opportunities for manufactured goods within Africa; also creates competitive threat in manufacturing"
+      },
+      "oil_sector": {
+        "opec_quota_million_bpd": {
+          "value": 1.8,
+          "source": "OPEC Secretariat",
+          "confidence": 0.90,
+          "last_updated": "2026-01-01T00:00:00Z",
+          "update_frequency": "monthly"
+        },
+        "current_production_million_bpd": {
+          "value": 1.5,
+          "source": "NNPCL / OPEC",
+          "confidence": 0.80,
+          "last_updated": "2026-01-31T00:00:00Z",
+          "update_frequency": "monthly",
+          "notes": "Below quota due to theft (bunkering), pipeline vandalism, and underinvestment; recovery trajectory positive"
+        },
+        "oil_theft_losses_million_bpd": {
+          "value": 0.15,
+          "source": "NUPRC / industry estimates",
+          "confidence": 0.60,
+          "last_updated": "2025-09-01T00:00:00Z",
+          "update_frequency": "quarterly",
+          "notes": "Estimates vary widely; significant governance and security challenge"
+        },
+        "dangote_refinery_status": "partial_operation",
+        "dangote_refinery_notes": "650,000 bpd capacity Dangote Refinery in Lagos; began production 2024; transformative for import dependency; reaching ~300,000 bpd by end 2025"
+      }
+    },
+    "military": {
+      "personnel": {
+        "active_military": {
+          "value": 223000,
+          "source": "IISS Military Balance / DHQ Nigeria",
+          "confidence": 0.80,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual"
+        },
+        "reserve_military": {
+          "value": 0,
+          "source": "IISS Military Balance",
+          "confidence": 0.72,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "No formal organized reserve structure; informal reservist capacity limited"
+        },
+        "paramilitary": {
+          "value": 80000,
+          "source": "IISS Military Balance",
+          "confidence": 0.72,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Nigeria Police Force, Nigeria Security and Civil Defence Corps, others"
+        },
+        "conscription": false,
+        "police_force": {
+          "value": 370000,
+          "source": "NPF / NBS",
+          "confidence": 0.68,
+          "last_updated": "2024-01-01T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Severely understaffed relative to population; significant equipment and training gaps"
+        }
+      },
+      "spending": {
+        "military_spending_usd_bn": {
+          "value": 3.0,
+          "trend": "growth",
+          "source": "SIPRI / Nigerian Budget Office",
+          "confidence": 0.78,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Constrained by fiscal pressures; significant gap between official allocation and actual expenditure; US$ figures sensitive to naira exchange rate used"
+        },
+        "military_spending_pct_gdp": {
+          "value": 0.6,
+          "trend": "stable",
+          "source": "SIPRI",
+          "confidence": 0.75,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Low relative to security challenges; below AU recommended 1% threshold"
+        }
+      },
+      "capabilities": {
+        "nuclear_status": "non_nuclear",
+        "air_force_combat_aircraft": {
+          "value": 22,
+          "source": "IISS Military Balance",
+          "confidence": 0.75,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Alpha Jets, F-7 Airguards, JF-17 Thunder (new acquisitions); serviceability rates historically poor"
+        },
+        "navy_vessels": {
+          "value": 18,
+          "source": "IISS Military Balance",
+          "confidence": 0.72,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Focus on Gulf of Guinea patrol; piracy suppression mission; limited blue-water capability"
+        },
+        "defense_industrial_base": "minimal",
+        "arms_import_sources": ["USA", "CHN", "RUS", "PAK", "BRA"],
+        "counterterrorism_capability": "moderate_and_improving",
+        "special_forces_notes": "Special Forces Command operational; benefiting from US and UK training assistance for ISWAP operations"
+      },
+      "conflicts": {
+        "active_conflicts": [
+          {
+            "name": "Northeast Insurgency (ISWAP/Boko Haram)",
+            "type": "insurgency",
+            "location": "Borno, Yobe, Adamawa states",
+            "status": "ongoing",
+            "started": "2009-07-26",
+            "intensity": "medium",
+            "displaced_persons": 2100000,
+            "notes": "ISWAP is Islamic State-affiliated; controls parts of Borno; conducts raids and IED attacks; MNJTF (Multinational Joint Task Force) with Cameroon, Niger, Chad conducting operations"
+          },
+          {
+            "name": "Banditry and Farmer-Herder Conflict",
+            "type": "internal_armed_violence",
+            "location": "Northwest and North-Central states (Zamfara, Katsina, Niger, Benue)",
+            "status": "ongoing",
+            "started": "2011-01-01",
+            "intensity": "medium",
+            "notes": "Escalating conflict between Fulani herders and farming communities; bandit gangs conducting mass kidnappings for ransom; state capacity to respond severely limited"
+          },
+          {
+            "name": "Niger Delta Militancy (residual)",
+            "type": "armed_group",
+            "location": "Rivers, Delta, Bayelsa states",
+            "status": "low_level",
+            "started": "2006-01-01",
+            "intensity": "low",
+            "notes": "Largely dormant since 2017 amnesty program but persistent threat; pipeline vandalism and oil theft economically significant"
+          },
+          {
+            "name": "Biafran Separatism (IPOB/ESN)",
+            "type": "separatist_insurgency",
+            "location": "Southeast states (Anambra, Imo, Enugu, Ebonyi, Abia)",
+            "status": "low_to_medium",
+            "started": "2015-01-01",
+            "intensity": "low",
+            "notes": "IPOB and its armed wing ESN conducting operations; Monday sit-at-home orders paralyzing commerce; Nigerian army in counter-operations"
+          }
+        ]
+      }
+    },
+    "relations": {
+      "top_partners": [
+        {
+          "code": "USA",
+          "name": "United States",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 14.0,
+          "notes": "Strategic partnership; US largest oil customer historically (now reduced); security cooperation on ISWAP; AGOA beneficiary; tensions over rule of law and LGBTQ+ issues"
+        },
+        {
+          "code": "CHN",
+          "name": "China",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 22.0,
+          "notes": "Major trading partner; Chinese infrastructure investment (standard gauge railway, roads); debt concerns moderate; trade dominated by Chinese exports to Nigeria"
+        },
+        {
+          "code": "IND",
+          "name": "India",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 18.0,
+          "notes": "Major export destination for Nigerian crude; large Indian diaspora in Nigeria; pharmaceutical imports from India significant"
+        },
+        {
+          "code": "GBR",
+          "name": "United Kingdom",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 8.0,
+          "notes": "Former colonial power; Commonwealth member; largest source of Nigerian diaspora remittances; security cooperation on counterterrorism; brain drain destination (Nigerian healthcare workers)"
+        },
+        {
+          "code": "GHA",
+          "name": "Ghana",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 3.5,
+          "notes": "Key West African neighbor; ECOWAS partner; periodic trade and migration tensions"
+        },
+        {
+          "code": "ZAF",
+          "name": "South Africa",
+          "relationship_quality": "neutral",
+          "trade_volume_usd_bn": 4.5,
+          "notes": "Africa's two largest economies; competitive relationship; MTN and DSTv operations; periodic Nigeria-South Africa xenophobic violence incidents create diplomatic tensions"
+        },
+        {
+          "code": "FRA",
+          "name": "France",
+          "relationship_quality": "cool",
+          "trade_volume_usd_bn": 5.0,
+          "notes": "Complex relationship; Nigeria critical of French influence in West Africa (Francafrique); 2023 Niger coup created tensions; French military withdrawal from Sahel seen ambivalently in Abuja"
+        },
+        {
+          "code": "BEN",
+          "name": "Benin",
+          "relationship_quality": "friendly",
+          "trade_volume_usd_bn": 2.0,
+          "notes": "Neighbor; ECOWAS partner; significant informal cross-border trade (often larger than formal)"
+        },
+        {
+          "code": "NER",
+          "name": "Niger",
+          "relationship_quality": "cool",
+          "trade_volume_usd_bn": 1.5,
+          "notes": "Border neighbor; 2023 military coup led to ECOWAS sanctions Nigeria championed; relations normalized after sanctions lifted; ISWAP border security coordination ongoing"
+        },
+        {
+          "code": "SAU",
+          "name": "Saudi Arabia",
+          "relationship_quality": "neutral",
+          "trade_volume_usd_bn": 3.0,
+          "notes": "OPEC relationship; religious significance (Nigerian Muslim pilgrims to Mecca); Gulf investment interest in Nigerian agriculture and infrastructure growing"
+        }
+      ],
+      "alliances": [
+        {
+          "name": "OPEC",
+          "type": "economic_commodity",
+          "member_since": "1971-07-01",
+          "role": "member",
+          "notes": "Significant but declining influence within OPEC; production shortfalls reduce quota negotiating leverage"
+        },
+        {
+          "name": "African Union",
+          "type": "political",
+          "member_since": "1963-05-25",
+          "role": "major_member",
+          "notes": "Nigeria is a major AU contributor; aspirations for permanent African seat on UN Security Council"
+        },
+        {
+          "name": "ECOWAS",
+          "type": "regional_economic_political",
+          "member_since": "1975-05-28",
+          "role": "dominant_member",
+          "notes": "Nigeria is ECOWAS dominant economy (~70% of bloc GDP); Nigeria championed ECOWAS sanctions against Niger and Mali juntas; credibility of ECOWAS security role in flux after failed collective response to Sahel coups"
+        },
+        {
+          "name": "BRICS Partner",
+          "type": "economic_political",
+          "member_since": "2024-01-01",
+          "role": "partner_state",
+          "notes": "Nigeria joined as BRICS partner (not full member) in 2024; non-aligned positioning between Western and China/Russia blocs"
+        },
+        {
+          "name": "Commonwealth of Nations",
+          "type": "political_cultural",
+          "member_since": "1960-10-01",
+          "role": "member"
+        },
+        {
+          "name": "AfCFTA",
+          "type": "economic",
+          "member_since": "2020-07-29",
+          "role": "member",
+          "notes": "Late ratifier; Nigeria's large market is critical to AfCFTA success; implementation uneven"
+        },
+        {
+          "name": "G20",
+          "type": "economic_coordination",
+          "member_since": "2023-09-10",
+          "role": "member",
+          "notes": "Added to G20 at South Africa's insistence during 2023 India Presidency; Africa's only direct G20 member (alongside South Africa)"
+        }
+      ]
+    },
+    "derived": {
+      "composite_power_score": {
+        "value": 0.32,
+        "source": "Stratoterra composite model",
+        "confidence": 0.70,
+        "last_updated": "2026-02-28T00:00:00Z",
+        "update_frequency": "weekly",
+        "components": {
+          "economic_power": 0.30,
+          "military_power": 0.28,
+          "diplomatic_influence": 0.42,
+          "technological_capacity": 0.25,
+          "institutional_strength": 0.22
+        }
+      },
+      "investment_risk_composite": {
+        "value": 0.72,
+        "trend": "decrease",
+        "source": "Stratoterra composite model",
+        "confidence": 0.72,
+        "last_updated": "2026-02-28T00:00:00Z",
+        "update_frequency": "weekly",
+        "components": {
+          "political_risk": 0.72,
+          "economic_risk": 0.75,
+          "currency_risk": 0.80,
+          "regulatory_risk": 0.70,
+          "geopolitical_risk": 0.60,
+          "security_risk": 0.75
+        }
+      },
+      "geopolitical_stability_score": {
+        "value": 0.22,
+        "trend": "stable",
+        "source": "Stratoterra composite model",
+        "confidence": 0.72,
+        "last_updated": "2026-02-28T00:00:00Z",
+        "update_frequency": "weekly"
+      },
+      "economic_resilience_score": {
+        "value": 0.35,
+        "source": "Stratoterra composite model",
+        "confidence": 0.68,
+        "last_updated": "2026-02-28T00:00:00Z",
+        "update_frequency": "weekly",
+        "notes": "Natural resource wealth provides baseline resilience; offset by mono-commodity dependence, fiscal fragility, and institutional weakness"
+      },
+      "vulnerability_indices": {
+        "energy_vulnerability": {
+          "value": 0.20,
+          "source": "Stratoterra composite",
+          "confidence": 0.72,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "weekly",
+          "notes": "Low energy import risk as oil exporter; paradoxically energy access for population remains poor (42% electrification)"
+        },
+        "energy_access_deficit": {
+          "value": 0.75,
+          "source": "IEA / World Bank",
+          "confidence": 0.80,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "~95 million Nigerians lack reliable electricity access; one of world's largest energy access deficits despite being an oil exporter"
+        },
+        "food_security_index": {
+          "value": 0.38,
+          "source": "GFSI / FAO",
+          "confidence": 0.72,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Significant food insecurity; 25+ million Nigerians facing acute food insecurity; north worst affected by conflict and climate"
+        },
+        "oil_revenue_dependency": {
+          "value": 0.88,
+          "source": "FMFBNP / CBN",
+          "confidence": 0.82,
+          "last_updated": "2025-12-31T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "~70% of government revenue from oil/gas; extreme vulnerability to commodity price and production shocks"
+        },
+        "demographic_pressure": {
+          "value": 0.85,
+          "source": "Stratoterra composite",
+          "confidence": 0.78,
+          "last_updated": "2026-02-28T00:00:00Z",
+          "update_frequency": "annual",
+          "notes": "Rapid population growth creating severe pressure on education, healthcare, jobs, and infrastructure; potential demographic dividend requires massive investment"
+        }
+      },
+      "trend_summary": {
+        "economic_trajectory": "growth",
+        "political_trajectory": "stable",
+        "military_trajectory": "stable",
+        "diplomatic_trajectory": "stable",
+        "overall_trajectory": "stable"
+      }
+    }
+  },
+  "narrative": {
+    "executive_overview": "Nigeria embodies the paradox of African potential: a nation with extraordinary natural and human endowments that has consistently underperformed relative to its structural advantages. Africa's most populous country and largest economy (by nominal GDP) is also one of the continent's most fragile states—riven by security challenges, ethnic and religious divisions, governance deficits, and an economic structure so dependent on petroleum revenues that even being a major oil exporter has not translated into broad-based development. President Tinubu's reform program, launched in May 2023, represents the most significant economic policy shift in decades: fuel subsidy removal, FX unification, and Central Bank autonomy restoration. These reforms are structurally correct and necessary. They are also deeply painful—inflation surged to 34%, the naira lost 70% of its value, and real wages collapsed. The critical question is whether Nigeria's political system can sustain the reform trajectory long enough for the benefits to materialize, or whether social and political pressure will force a retreat.",
+    "key_developments": "The removal of the fuel subsidy—which had cost the federal government $10 billion annually while distorting the economy and enriching smugglers—is Tinubu's most consequential early decision. Petrol prices rose 5-fold overnight, generating significant social hardship but also restoring fiscal space. The FX market unification eliminated a two-tier system that had created rent-seeking opportunities worth billions annually but had choked off legitimate foreign investment by making it impossible to repatriate profits at fair rates. Foreign portfolio investment has begun to return, attracted by genuinely positive real yields on Nigerian Treasury Bills (30%+ Tbill yields vs. 26% inflation). The Dangote Refinery, after years of delays, began production in 2024 and is progressively ramping up toward its 650,000 bpd design capacity—a development that could fundamentally transform Nigeria's balance of payments by eliminating the $8-10 billion annual refined product import bill.",
+    "risk_factors": "The primary risk is political: the 2027 elections create powerful incentives for social spending expansion that could reverse fiscal gains. The president's political base requires resource distribution to sustain coalition cohesion, creating permanent tension between reform and patronage. Security is the second major risk dimension: ISWAP controls meaningful territory in the northeast, banditry in the northwest has become so severe that multiple states border on ungovernable, and IPOB/ESN activities in the southeast are paralyzing commerce. The military is stretched across four distinct theatres simultaneously with inadequate equipment and funding. Currency risk remains: another major naira devaluation would reset the reform gains and could trigger social unrest. Oil production shortfalls below 1.5 million bpd would severely constrain fiscal revenues. Finally, the demographic trajectory creates a structural long-term risk: Nigeria is adding approximately 5-6 million people per year, requiring job creation at a scale that has never been achieved in the country's history.",
+    "opportunities": "Nigeria's opportunities are genuinely exceptional when viewed against its structural position. The demographic dividend—224 million people with a median age of 18—represents the largest youth labor force in Africa and one of the largest globally. If education and governance improve, this population becomes an extraordinary competitive asset. The technology and fintech sector has demonstrated world-class innovation: Flutterwave's payment infrastructure serves 34 countries, Interswitch processed $24 billion in transactions in 2024, and Paystack (acquired by Stripe) is expanding across Africa. Nigeria's agricultural land—largely unfarmable due to insecurity, poor roads, and lack of irrigation—represents a massive untapped food production opportunity that could feed not just Nigeria but much of West Africa. The Dangote Refinery is transformative: full operation would make Nigeria a net petroleum product exporter, a historic reversal. Critical minerals (lithium in Nassarawa, gold, tin, columbite) are largely unexploited and create a clean energy transition opportunity if governance improves. Nigeria's cultural influence—Afrobeats (Burna Boy, Wizkid, Davido), Nollywood, and tech innovation—provides soft power and diaspora connection well beyond its economic weight.",
+    "ai_generated": true,
+    "generation_date": "2026-02-28T12:00:00Z",
+    "model_version": "stratoterra-agent-v1.0",
+    "disclaimer": "AI-generated analysis. Not investment advice. Based on public data sources as of February 2026."
+  }
+}

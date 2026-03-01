@@ -1,0 +1,56 @@
+{
+  "_description": "Minimal expected output structure from Agent 01 (Official Statistics Gatherer). Used by UT-AGT-001.",
+  "_schema_version": "1.0",
+  "agent": "official_stats_gatherer",
+  "run_id": "2026-W09",
+  "collection_date": "2026-03-01",
+  "records": [
+    {
+      "country_code": "USA",
+      "factor_path": "macroeconomic.gdp_nominal_usd",
+      "new_value": 28500000000000,
+      "source": "World Bank / IMF WEO",
+      "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=US",
+      "source_date": "2025-12-31",
+      "confidence": 0.92,
+      "notes": ""
+    },
+    {
+      "country_code": "USA",
+      "factor_path": "macroeconomic.gdp_real_growth_rate_pct",
+      "new_value": 2.5,
+      "source": "IMF WEO",
+      "source_url": "https://www.imf.org/en/Publications/WEO",
+      "source_date": "2026-01-31",
+      "confidence": 0.90,
+      "notes": ""
+    },
+    {
+      "country_code": "DEU",
+      "factor_path": "macroeconomic.gdp_nominal_usd",
+      "new_value": 4400000000000,
+      "source": "World Bank",
+      "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=DE",
+      "source_date": "2025-12-31",
+      "confidence": 0.90,
+      "notes": ""
+    }
+  ],
+  "skipped": [
+    {
+      "country_code": "SSD",
+      "factor_path": "macroeconomic.gdp_per_capita_usd",
+      "reason": "No reliable data available from standard sources"
+    }
+  ],
+  "summary": {
+    "total_records": 3,
+    "countries_covered": 2,
+    "tier_1_avg_indicators": 12,
+    "tier_2_avg_indicators": 8,
+    "tier_3_avg_indicators": 4
+  },
+  "_required_fields": ["agent", "run_id", "collection_date", "records", "summary"],
+  "_required_record_fields": ["country_code", "factor_path", "new_value", "source", "confidence"],
+  "_required_summary_fields": ["total_records", "countries_covered"]
+}

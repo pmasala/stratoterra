@@ -1,0 +1,125 @@
+{
+  "_description": "Minimal expected output structure from Agent 15 (Data Quality Reporter). Used by UT-AGT-005.",
+  "_schema_version": "1.0",
+  "report_date": "2026-03-01",
+  "run_id": "2026-W09",
+  "generated_at": "2026-03-01T15:30:00Z",
+  "coverage": {
+    "tier_1_avg_pct": 91.2,
+    "tier_2_avg_pct": 74.8,
+    "tier_3_avg_pct": 52.3,
+    "flagged_countries": [
+      {
+        "code": "RUS",
+        "tier": 1,
+        "coverage_pct": 78.5,
+        "reason": "Sanctions-related data gaps in financial and trade layers"
+      }
+    ]
+  },
+  "staleness": {
+    "total_stale_factors": 12,
+    "by_tier": {
+      "tier_1": [
+        {
+          "country_code": "SAU",
+          "factor_path": "institutions.ease_of_doing_business_score",
+          "last_updated": "2025-10-01",
+          "days_stale": 151,
+          "expected_frequency": "quarterly"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": []
+    }
+  },
+  "confidence": {
+    "overall_avg": 0.83,
+    "by_layer": {
+      "endowments": 0.91,
+      "institutions": 0.78,
+      "economy": 0.87,
+      "military": 0.72,
+      "relations": 0.81,
+      "derived": 0.85
+    },
+    "low_confidence_countries": [
+      {
+        "code": "VEN",
+        "avg_confidence": 0.45,
+        "reason": "Limited data access due to political situation"
+      }
+    ]
+  },
+  "validation": {
+    "total": 320,
+    "accept": 298,
+    "accept_with_note": 12,
+    "flag": 5,
+    "reject": 2,
+    "escalate": 3,
+    "rejected_details": [
+      {
+        "update_id": "upd_187",
+        "country_code": "ARG",
+        "factor_path": "macroeconomic.gdp_real_growth_rate_pct",
+        "reason": "Value of 45.2 outside plausible range [-30, 30]",
+        "source": "web-scraped page"
+      }
+    ]
+  },
+  "agent_performance": [
+    {
+      "agent_id": "agent_01",
+      "started_at": "2026-03-01T08:00:00Z",
+      "completed_at": "2026-03-01T08:22:15Z",
+      "duration_minutes": 22.25,
+      "records_processed": 450,
+      "errors": 0,
+      "warnings": 5
+    },
+    {
+      "agent_id": "agent_02",
+      "started_at": "2026-03-01T08:22:15Z",
+      "completed_at": "2026-03-01T08:37:42Z",
+      "duration_minutes": 15.45,
+      "records_processed": 180,
+      "errors": 0,
+      "warnings": 2
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "high",
+      "action": "Investigate Russia data gaps — sanctions regime limits financial layer coverage",
+      "reason": "RUS Tier 1 coverage at 78.5%, below 80% threshold"
+    },
+    {
+      "priority": "medium",
+      "action": "Update ease_of_doing_business_score for Saudi Arabia",
+      "reason": "World Bank Doing Business report published in Q4 2025, data not yet collected"
+    },
+    {
+      "priority": "low",
+      "action": "Add alternative military data source for non-SIPRI countries",
+      "reason": "Military layer has lowest average confidence at 0.72"
+    }
+  ],
+  "_required_fields": [
+    "report_date", "run_id", "generated_at",
+    "coverage", "staleness", "confidence", "validation",
+    "agent_performance", "recommendations"
+  ],
+  "_required_coverage_fields": [
+    "tier_1_avg_pct", "tier_2_avg_pct", "tier_3_avg_pct", "flagged_countries"
+  ],
+  "_required_validation_fields": [
+    "total", "accept", "accept_with_note", "flag", "reject", "escalate"
+  ],
+  "_coverage_targets": {
+    "tier_1_min": 90,
+    "tier_2_min": 70,
+    "tier_3_min": 50,
+    "tier_1_flag_below": 80
+  }
+}

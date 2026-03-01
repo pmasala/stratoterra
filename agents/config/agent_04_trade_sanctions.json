@@ -1,0 +1,46 @@
+{
+  "id": "agent_04",
+  "name": "Trade & Sanctions Gatherer",
+  "phase": 1,
+  "phase_name": "GATHER",
+  "description": "Monitors trade policy changes, new sanctions, WTO disputes, tariff changes, and supply chain disruptions at key maritime chokepoints.",
+  "inputs": [
+    "data/indices/country_list.json",
+    "data/metadata/last_update.json"
+  ],
+  "outputs": [
+    "staging/raw_collected/trade_sanctions_{DATE}.json"
+  ],
+  "timeout_minutes": 15,
+  "api_sources": [
+    "OFAC SDN List (ofac.treas.gov)",
+    "WTO Dispute Settlement (wto.org)",
+    "UN Sanctions Committees (un.org/securitycouncil/sanctions)",
+    "EU Sanctions Map (sanctionsmap.eu)",
+    "US Federal Register (federalregister.gov)"
+  ],
+  "record_types": [
+    "sanction_change",
+    "trade_agreement",
+    "wto_dispute",
+    "tariff_change",
+    "supply_chain_disruption",
+    "export_control_change",
+    "import_ban",
+    "trade_corridor_update"
+  ],
+  "chokepoints_monitored": [
+    "Strait of Hormuz",
+    "Suez Canal",
+    "Panama Canal",
+    "Strait of Malacca",
+    "Taiwan Strait",
+    "Bab el-Mandeb",
+    "Bosphorus",
+    "Danish Straits",
+    "Cape of Good Hope"
+  ],
+  "retry_on_failure": true,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_04_trade_sanctions.md"
+}
