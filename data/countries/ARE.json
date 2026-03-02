@@ -115,7 +115,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 22000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -188,5 +196,58 @@
     "outlook": "The UAE's brand as a safe, neutral business hub has suffered its most severe reputational blow since independence. Tourism, aviation, and real estate -- the pillars of Dubai's diversified economy -- face significant near-term disruption. Abu Dhabi's oil-backed fiscal position provides resilience, and the ADCOP pipeline bypass offers partial mitigation for crude exports. Recovery of investor confidence will depend on conflict resolution timeline and Hormuz reopening.",
     "investor_implications": "Differentiate sharply between Abu Dhabi (oil-backed, SWF-buffered, pipeline bypass available) and Dubai (services-exposed, tourism/aviation-dependent). UAE real estate and hospitality face 6-12 month recovery period. Defense procurement spending will surge. AED peg is secure given massive reserves ($238B). Sovereign debt remains investment grade.",
     "data_quality_note": "UAE macro data is current and reliable (AA-rated sovereign). Chokepoint exposure and conflict impact estimates carry higher uncertainty given rapidly evolving situation."
+  },
+  "code": "ARE",
+  "name": "United Arab Emirates",
+  "executive_summary": "The UAE suffered direct Iranian missile and drone strikes on Dubai and Abu Dhabi on Feb 28 -- the first hostile attack on UAE soil. UAE intercepted 132 of 137 missiles and 195 of 209 drones, but debris damaged the Burj Al Arab and Dubai airport (world's busiest for international traffic). Embassy with Iran closed. The UAE's carefully cultivated neutral posture is shattered. Supply chain chokepoint exposure at 76% makes the UAE critically dependent on Strait of Hormuz reopening. AA/Aa2 credit rating provides fiscal resilience via sovereign wealth funds.",
+  "key_changes": [
+    "Iranian missiles and drones struck Dubai and Abu Dhabi on Feb 28; 1 killed, 7+ wounded at Dubai airport (major)",
+    "UAE closed Tehran embassy and recalled ambassador -- diplomatic rupture with Iran",
+    "Etihad Airways suspended all operations until March 2; 2,280 regional flight cancellations",
+    "Strait of Hormuz 70% traffic collapse directly threatens UAE's oil/LNG exports (76% chokepoint exposure)",
+    "AED/USD peg maintained at 3.6725 -- no devaluation risk despite crisis"
+  ],
+  "outlook": "The UAE's brand as a safe, neutral business hub has suffered its most severe reputational blow since independence. Tourism, aviation, and real estate -- the pillars of Dubai's diversified economy -- face significant near-term disruption. Abu Dhabi's oil-backed fiscal position provides resilience, and the ADCOP pipeline bypass offers partial mitigation for crude exports. Recovery of investor confidence will depend on conflict resolution timeline and Hormuz reopening.",
+  "investor_implications": "Differentiate sharply between Abu Dhabi (oil-backed, SWF-buffered, pipeline bypass available) and Dubai (services-exposed, tourism/aviation-dependent). UAE real estate and hospitality face 6-12 month recovery period. Defense procurement spending will surge. AED peg is secure given massive reserves ($238B). Sovereign debt remains investment grade.",
+  "active_alerts": [
+    {
+      "severity": "critical",
+      "title": "United Arab Emirates critically exposed to Strait of Hormuz closure (76% chokepoint exposure)",
+      "description": "The Strait of Hormuz experienced a 70% traffic collapse following US-Israeli strikes on Iran. Iran's IRGC broadcast VHF warnings closing the strait, attacked 3 commercial ships, and threatened all vessels. United Arab Emirates has 76% supply chain chokepoint exposure. Oil and LNG exports are severely disrupted. This is the most severe global energy supply disruption in decades and directly threatens United Arab Emirates's fiscal position and economic stability."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 10986400,
+      "population_growth_pct": 4.68316095317394,
+      "life_expectancy": 82.909
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 569097000000.0,
+      "gdp_real_growth_pct": 4.8,
+      "gdp_per_capita_usd": 51347.902,
+      "inflation_cpi_pct": 1.6,
+      "unemployment_rate_pct": 2.174,
+      "current_account_pct_gdp": 13.2,
+      "govt_debt_pct_gdp": 34,
+      "fx_reserves_usd": 237931339945.397,
+      "sovereign_credit_rating": "S&P: AA, Moody's: Aa2, Fitch: AA-",
+      "central_bank_policy_rate_pct": 3.65
+    },
+    "military": {
+      "military_spending_usd": 22000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.312,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.76,
+      "composite_national_power_index": 44.5,
+      "political_risk_premium_bps": 60,
+      "market_accessibility_score": 0.581
+    }
   }
 }

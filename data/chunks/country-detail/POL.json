@@ -129,6 +129,13 @@
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W09"
+    },
+    "military_spending_usd": {
+      "value": 38000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
     }
   },
   "trade": {},
@@ -201,5 +208,57 @@
     "outlook": "Poland's defense-led fiscal expansion continues given proximity to the Russia-Ukraine war. Economic growth remains robust. Political gridlock limits reform agenda but defense spending has bipartisan support.",
     "investor_implications": "Polish defense sector benefits from sustained spending. PLN faces modest pressure from risk-off. WIG20 faces mixed signals. Polish government bonds carry higher yield than eurozone peers. EU structural funds continue to support infrastructure.",
     "data_quality_note": "Poland macro data is high quality from GUS and NBP."
+  },
+  "code": "POL",
+  "name": "Poland",
+  "executive_summary": "Poland's defense spending reached $38B reflecting its frontline NATO position near Russia and Ukraine. EU defense consensus supports further increases. GDP growth at 3.5% is among the strongest in Europe. Political gridlock between Tusk government and PiS president continues. Oil price surge creates moderate import cost pressure.",
+  "key_changes": [
+    "Defense spending at $38B -- among highest in NATO as share of GDP",
+    "EU defense procurement consensus emerging",
+    "No major domestic events beyond ongoing political gridlock"
+  ],
+  "outlook": "Poland's defense-led fiscal expansion continues given proximity to the Russia-Ukraine war. Economic growth remains robust. Political gridlock limits reform agenda but defense spending has bipartisan support.",
+  "investor_implications": "Polish defense sector benefits from sustained spending. PLN faces modest pressure from risk-off. WIG20 faces mixed signals. Polish government bonds carry higher yield than eurozone peers. EU structural funds continue to support infrastructure.",
+  "active_alerts": [
+    {
+      "severity": "watch",
+      "title": "Poland sees record defense spending $38B but president-PM institutional conflict threatens EU funds",
+      "description": "Poland's defense spending at $38B with strong_growth trend in military expenditure. However, PM Tusk and President Nawrocki locked in institutional tug-of-war. Labour law reform rollback threatens EUR 2.5B in EU Recovery Fund. Despite political friction, Poland expected to record highest GDP growth in EU."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 36559233,
+      "population_growth_pct": -0.349832361234927,
+      "life_expectancy": 78.5073170731707
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 1039618999999.9999,
+      "gdp_real_growth_pct": 3.2,
+      "gdp_per_capita_usd": 28484.671,
+      "inflation_cpi_pct": 3.8,
+      "unemployment_rate_pct": 2.976,
+      "current_account_pct_gdp": -0.7,
+      "govt_debt_pct_gdp": 60,
+      "fx_reserves_usd": 223114909804.172,
+      "sovereign_credit_rating": "S&P: A-, Moody's: A2, Fitch: A",
+      "central_bank_policy_rate_pct": 5.75
+    },
+    "military": {
+      "defense_spending_usd": 38000000000,
+      "military_spending_usd": 38000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.688,
+      "energy_independence_index": 0.45,
+      "supply_chain_chokepoint_exposure": 0.35,
+      "composite_national_power_index": 42.4,
+      "political_risk_premium_bps": 50,
+      "market_accessibility_score": 0.536
+    }
   }
 }

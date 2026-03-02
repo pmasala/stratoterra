@@ -174,5 +174,55 @@
     "outlook": "Qatar's economic model is built on LNG exports transiting the Strait of Hormuz. Extended closure would severely impact fiscal revenues and economic growth. Qatar's North Field expansion project timeline may face disruption. Diplomatic role as mediator between Iran and the West is suspended by the direct military attack. Qatar has limited pipeline alternatives compared to Saudi Arabia's options.",
     "investor_implications": "Qatar LNG contracts and QatarEnergy bonds face force majeure risk if Hormuz disruption extends beyond weeks. Energy sector fundamentals remain strong long-term but near-term operational risk is extreme. Qatar sovereign wealth fund ($450B+) provides massive fiscal buffer. Monitor Hormuz reopening timeline as the critical variable.",
     "data_quality_note": "Qatar macro data is current. LNG export disruption estimates are inferred from Hormuz traffic data rather than direct reporting from QatarEnergy."
+  },
+  "code": "QAT",
+  "name": "Qatar",
+  "executive_summary": "Qatar was struck by 65 Iranian missiles and 12 drones on Mar 1, with most intercepted but 16 people injured. Explosions rocked Doha. Qatar's LNG export infrastructure -- the backbone of its economy and the world's largest LNG exporter -- faces severe disruption from Hormuz closure (66% chokepoint exposure). Qatar had maintained relatively warm relations with Iran, making the strikes a diplomatic shock. Supply chain chokepoint exposure is the second-highest among Gulf states.",
+  "key_changes": [
+    "Iran launched 65 missiles and 12 drones at Qatar on Mar 1; 16 injured (major)",
+    "Doha airport operations severely disrupted; regional aviation hub status compromised",
+    "Strait of Hormuz 70% traffic collapse threatens Qatar's LNG export capacity",
+    "Qatar's diplomatic mediation role between Iran and West effectively suspended"
+  ],
+  "outlook": "Qatar's economic model is built on LNG exports transiting the Strait of Hormuz. Extended closure would severely impact fiscal revenues and economic growth. Qatar's North Field expansion project timeline may face disruption. Diplomatic role as mediator between Iran and the West is suspended by the direct military attack. Qatar has limited pipeline alternatives compared to Saudi Arabia's options.",
+  "investor_implications": "Qatar LNG contracts and QatarEnergy bonds face force majeure risk if Hormuz disruption extends beyond weeks. Energy sector fundamentals remain strong long-term but near-term operational risk is extreme. Qatar sovereign wealth fund ($450B+) provides massive fiscal buffer. Monitor Hormuz reopening timeline as the critical variable.",
+  "active_alerts": [
+    {
+      "severity": "critical",
+      "title": "Qatar critically exposed to Strait of Hormuz closure (66% chokepoint exposure)",
+      "description": "The Strait of Hormuz experienced a 70% traffic collapse following US-Israeli strikes on Iran. Iran's IRGC broadcast VHF warnings closing the strait, attacked 3 commercial ships, and threatened all vessels. Qatar has 66% supply chain chokepoint exposure. Oil and LNG exports are severely disrupted. This is the most severe global energy supply disruption in decades and directly threatens Qatar's fiscal position and economic stability."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 2857822,
+      "population_growth_pct": 7.32265165181291,
+      "life_expectancy": 82.368
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 222119000000.0,
+      "gdp_real_growth_pct": 2.9,
+      "gdp_per_capita_usd": 71441.418,
+      "inflation_cpi_pct": 0.1,
+      "unemployment_rate_pct": 0.13,
+      "current_account_pct_gdp": 10.8,
+      "govt_debt_pct_gdp": 40.6,
+      "fx_reserves_usd": 53987415590.4034,
+      "sovereign_credit_rating": "S&P: AA, Moody's: Aa2, Fitch: AA-",
+      "central_bank_policy_rate_pct": null
+    },
+    "military": {},
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.302,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.66,
+      "composite_national_power_index": 32.9,
+      "political_risk_premium_bps": 60,
+      "market_accessibility_score": 0.514
+    }
   }
 }

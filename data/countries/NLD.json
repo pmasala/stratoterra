@@ -122,7 +122,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 17000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -193,5 +201,50 @@
     "outlook": "Netherlands' open economy is exposed to global trade disruption from tariffs and Hormuz closure. Rotterdam port may benefit from rerouting of trade flows. ASML and semiconductor equipment sector face China export control dynamics.",
     "investor_implications": "AEX faces trade disruption headwinds. ASML is a key position for semiconductor exposure. Shell benefits from oil surge. Dutch government bonds benefit from AAA flight-to-quality.",
     "data_quality_note": "Netherlands macro data is high quality from CBS and DNB."
+  },
+  "code": "NLD",
+  "name": "Netherlands",
+  "executive_summary": "The Netherlands faces moderate exposure to global trade disruption given its high trade openness. EU-Mercosur provisional application affects Dutch trade dynamics. ECB held at 2%. GDP growth at 1.4%. Rotterdam port activity may shift with Hormuz-related rerouting. Netherlands is a logistics hub exposed to global supply chain disruptions.",
+  "key_changes": [
+    "EU-Mercosur provisional application affects Dutch trade dynamics",
+    "Rotterdam port may see shifts from Hormuz-related rerouting",
+    "ECB held at 2%"
+  ],
+  "outlook": "Netherlands' open economy is exposed to global trade disruption from tariffs and Hormuz closure. Rotterdam port may benefit from rerouting of trade flows. ASML and semiconductor equipment sector face China export control dynamics.",
+  "investor_implications": "AEX faces trade disruption headwinds. ASML is a key position for semiconductor exposure. Shell benefits from oil surge. Dutch government bonds benefit from AAA flight-to-quality.",
+  "active_alerts": [],
+  "layers": {
+    "endowments": {
+      "population": 17993485,
+      "population_growth_pct": 0.648823280021657,
+      "life_expectancy": 81.9146341463415
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 1320635000000.0,
+      "gdp_real_growth_pct": 1.4,
+      "gdp_per_capita_usd": 73173.715,
+      "inflation_cpi_pct": 2.9,
+      "unemployment_rate_pct": 3.874,
+      "current_account_pct_gdp": 9.5,
+      "govt_debt_pct_gdp": 44,
+      "fx_reserves_usd": 79129152086.1887,
+      "sovereign_credit_rating": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "central_bank_policy_rate_pct": 2.0
+    },
+    "military": {
+      "military_spending_usd": 17000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.65,
+      "energy_independence_index": 0.6,
+      "supply_chain_chokepoint_exposure": 0.57,
+      "composite_national_power_index": 54.1,
+      "political_risk_premium_bps": 0,
+      "market_accessibility_score": 0.758
+    }
   }
 }

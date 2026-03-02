@@ -115,7 +115,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 5000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -185,5 +193,49 @@
     "outlook": "Malaysia's diversified economy and energy export position provide resilience. Semiconductor packaging sector benefits from global chip demand. Palm oil prices supported by commodity rally.",
     "investor_implications": "Petronas-linked investments benefit from oil surge. Ringgit under modest pressure from USD strength. KLCI faces mixed signals. Semiconductor and palm oil sectors are key positions.",
     "data_quality_note": "Malaysia macro data is current from Bank Negara and DOSM."
+  },
+  "code": "MYS",
+  "name": "Malaysia",
+  "executive_summary": "Malaysia faces moderate exposure to the Hormuz disruption as an energy exporter that could benefit from supply reallocation. GDP growth at 4.9%. No significant country-specific events this week. Singapore chokepoint exposure may redirect some trade through Malaysian ports.",
+  "key_changes": [
+    "Oil price surge provides mixed impact (energy exporter benefits, import costs rise)",
+    "No major domestic events"
+  ],
+  "outlook": "Malaysia's diversified economy and energy export position provide resilience. Semiconductor packaging sector benefits from global chip demand. Palm oil prices supported by commodity rally.",
+  "investor_implications": "Petronas-linked investments benefit from oil surge. Ringgit under modest pressure from USD strength. KLCI faces mixed signals. Semiconductor and palm oil sectors are key positions.",
+  "active_alerts": [],
+  "layers": {
+    "endowments": {
+      "population": 35557673,
+      "population_growth_pct": 1.22058891015438,
+      "life_expectancy": 76.657
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 470572000000.0,
+      "gdp_real_growth_pct": 4.5,
+      "gdp_per_capita_usd": 13900.839,
+      "inflation_cpi_pct": 1.6,
+      "unemployment_rate_pct": 3.764,
+      "current_account_pct_gdp": 1.5,
+      "govt_debt_pct_gdp": 70.4,
+      "fx_reserves_usd": 116229205257.758,
+      "sovereign_credit_rating": "S&P: A-, Moody's: A3, Fitch: BBB+",
+      "central_bank_policy_rate_pct": 3.0
+    },
+    "military": {
+      "military_spending_usd": 5000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.825,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.59,
+      "composite_national_power_index": 33.3,
+      "political_risk_premium_bps": 75,
+      "market_accessibility_score": 0.652
+    }
   }
 }

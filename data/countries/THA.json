@@ -115,7 +115,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 7500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -186,5 +194,50 @@
     "outlook": "Thailand's tourism recovery trajectory may face modest headwinds from Gulf aviation disruptions. Oil import costs pressure current account. Domestic political stability provides a stable backdrop.",
     "investor_implications": "SET faces headwinds from oil costs and tourism uncertainty. THB under modest pressure. Thai government bonds stable. Tourism and aviation stocks face near-term risk.",
     "data_quality_note": "Thailand macro data is current from BOT and NESDC."
+  },
+  "code": "THA",
+  "name": "Thailand",
+  "executive_summary": "Thailand faces moderate exposure to the oil price surge as a net energy importer. GDP growth at 3.5%. Tourism sector faces indirect disruption from Middle East aviation disruptions. No significant country-specific events this week. Political stability maintained under current government.",
+  "key_changes": [
+    "Oil price surge creates import cost pressure",
+    "Middle East aviation disruptions may affect tourism arrivals from Gulf region",
+    "No major domestic events"
+  ],
+  "outlook": "Thailand's tourism recovery trajectory may face modest headwinds from Gulf aviation disruptions. Oil import costs pressure current account. Domestic political stability provides a stable backdrop.",
+  "investor_implications": "SET faces headwinds from oil costs and tourism uncertainty. THB under modest pressure. Thai government bonds stable. Tourism and aviation stocks face near-term risk.",
+  "active_alerts": [],
+  "layers": {
+    "endowments": {
+      "population": 71668011,
+      "population_growth_pct": -0.0480210554154485,
+      "life_expectancy": 76.412
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 558573000000.0,
+      "gdp_real_growth_pct": 2,
+      "gdp_per_capita_usd": 7942.299,
+      "inflation_cpi_pct": 0.2,
+      "unemployment_rate_pct": 0.781,
+      "current_account_pct_gdp": 1.7,
+      "govt_debt_pct_gdp": 64.9,
+      "fx_reserves_usd": 236933974075.014,
+      "sovereign_credit_rating": "S&P: BBB+, Moody's: Baa1, Fitch: BBB+",
+      "central_bank_policy_rate_pct": 1.75
+    },
+    "military": {
+      "military_spending_usd": 7500000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.713,
+      "energy_independence_index": 0.55,
+      "supply_chain_chokepoint_exposure": 0.58,
+      "composite_national_power_index": 32.6,
+      "political_risk_premium_bps": 100,
+      "market_accessibility_score": 0.594
+    }
   }
 }

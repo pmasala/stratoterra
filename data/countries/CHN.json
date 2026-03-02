@@ -122,7 +122,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 296000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -195,5 +203,63 @@
     "outlook": "China's growth trajectory faces headwinds from the US tariff escalation but the PBOC FX policy shift signals active management of trade competitiveness. The NPC session (March 5) will set economic targets and potentially announce stimulus measures. The March 30 Trump-Xi summit is the critical near-term catalyst for US-China trade relations. Oil price surge creates modest inflationary pressure but China's strategic petroleum reserves and Russia pipeline supply provide partial insulation.",
     "investor_implications": "Chinese equities face cross-currents: tariff headwinds vs potential NPC stimulus announcements. CNY management signals tolerance for modest depreciation to offset tariff impact. Chinese defense stocks may benefit from regional security deterioration. Monitor semiconductor sector for any escalation in tech decoupling. Hong Kong-listed China equities may see volatility around NPC.",
     "data_quality_note": "China macro data carries standard caveats about reliability. PBOC policy actions are officially confirmed. GDP and inflation figures are from IMF/World Bank sources."
+  },
+  "code": "CHN",
+  "name": "China",
+  "executive_summary": "China faces mounting trade pressure with US tariffs reaching 20% cumulative, while the PBOC cut the FX forward reserve ratio from 20% to 0% to slow yuan appreciation -- a significant reversal of prior policy. NPC opens March 5 with economic targets in focus. China expressed 'deep concern' over the Iran conflict but positioned itself as neutral. GDP growth at 4.5% with a stable-to-decrease outlook. Trump-Xi summit planned for March 30 in Beijing.",
+  "key_changes": [
+    "PBOC cut FX forward reserve ratio from 20% to 0% to slow yuan appreciation (moderate)",
+    "US imposed additional 10% tariff on China (20% total) effective March 4 (major)",
+    "Trump-Xi summit planned for March 30 in Beijing amid tariff escalation",
+    "NPC opens March 5 -- annual economic growth targets and policy signals expected",
+    "China positioned as neutral on Iran conflict; may benefit from trade realignment"
+  ],
+  "outlook": "China's growth trajectory faces headwinds from the US tariff escalation but the PBOC FX policy shift signals active management of trade competitiveness. The NPC session (March 5) will set economic targets and potentially announce stimulus measures. The March 30 Trump-Xi summit is the critical near-term catalyst for US-China trade relations. Oil price surge creates modest inflationary pressure but China's strategic petroleum reserves and Russia pipeline supply provide partial insulation.",
+  "investor_implications": "Chinese equities face cross-currents: tariff headwinds vs potential NPC stimulus announcements. CNY management signals tolerance for modest depreciation to offset tariff impact. Chinese defense stocks may benefit from regional security deterioration. Monitor semiconductor sector for any escalation in tech decoupling. Hong Kong-listed China equities may see volatility around NPC.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "China GDP growth decelerating amid US tariff war and unprecedented Taiwan military exercises",
+      "description": "China's GDP growth trend shifted to decrease (4.8% current) amid US tariff escalation and domestic structural challenges. Foreign-invested fixed asset investment fell 14.1%. China conducted unprecedented blockade simulation around Taiwan (Justice Mission 2025). PLA drone flew through Taiwanese airspace. Rare earth export controls suspended for 1 year. NPC opening March 5 to set economic direction. The convergence of trade war, military tensions, and domestic slowdown creates elevated risk."
+    },
+    {
+      "severity": "watch",
+      "title": "Chinese state-sponsored cyber campaigns targeting US critical infrastructure continue in 2026",
+      "description": "Two major Chinese state-sponsored cyber campaigns continue: Volt Typhoon infiltrated US critical infrastructure, Salt Typhoon targeted telecom networks. Combined with Iran-aligned hacktivists conducting cyber attacks against US and Israeli systems, cyber risk is elevated globally. This affects technology sector valuations and defense spending priorities."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 1408975000,
+      "population_growth_pct": -0.123063407363995,
+      "life_expectancy": 77.953
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 19398577000000.0,
+      "gdp_real_growth_pct": 4.8,
+      "gdp_per_capita_usd": 13806.031,
+      "inflation_cpi_pct": 0,
+      "unemployment_rate_pct": 4.615,
+      "current_account_pct_gdp": 3.3,
+      "govt_debt_pct_gdp": 96.3,
+      "fx_reserves_usd": 3456024808739.12,
+      "sovereign_credit_rating": "S&P: A+, Moody's: A1, Fitch: A+",
+      "central_bank_policy_rate_pct": 3.1
+    },
+    "military": {
+      "military_spending_usd": 296000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.75,
+      "energy_independence_index": 0.75,
+      "supply_chain_chokepoint_exposure": 0.466,
+      "composite_national_power_index": 74.8,
+      "political_risk_premium_bps": 80,
+      "market_accessibility_score": 0.526
+    }
   }
 }

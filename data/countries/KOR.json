@@ -129,7 +129,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 48000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -201,5 +209,62 @@
     "outlook": "South Korea's political transition following Yoon's impeachment and conviction creates governance uncertainty until new elections establish a clear mandate. The oil price shock is a direct headwind for Korea's energy-intensive manufacturing base (semiconductors, steel, shipbuilding). North Korea's nuclear expansion plans maintain elevated regional security risk. Samsung and semiconductor exports remain the key growth driver.",
     "investor_implications": "KOSPI faces multiple headwinds: oil costs, political uncertainty, and North Korean risk. KRW under depreciation pressure from oil import bills and USD safe-haven demand. Korean semiconductor stocks (Samsung, SK Hynix) may decouple on AI demand fundamentals. Sovereign bonds (AA/Aa2) provide relative safety. Monitor political transition timeline.",
     "data_quality_note": "South Korea macro data is high quality. Political transition timeline uncertain. North Korea assessments from open-source intelligence."
+  },
+  "code": "KOR",
+  "name": "South Korea",
+  "executive_summary": "South Korea is highly exposed to the oil price surge with only 15% energy independence. Former President Yoon's conviction adds political uncertainty despite the Constitutional Court's upholding of his impeachment. North Korea's 9th Party Congress concluded with ICBM modernization pledges adding to the security environment. BOK held rates steady. KOSPI faces pressure from the convergence of oil exposure, political transition, and North Korean threats.",
+  "key_changes": [
+    "Oil +13% surge creates significant import cost pressure (energy independence: 15%) (warning)",
+    "North Korea 9th Party Congress: Kim re-elected, daughter promoted, nuclear expansion planned (moderate)",
+    "Former President Yoon conviction adds to political transition uncertainty",
+    "BOK held rates steady amid energy cost and political uncertainty"
+  ],
+  "outlook": "South Korea's political transition following Yoon's impeachment and conviction creates governance uncertainty until new elections establish a clear mandate. The oil price shock is a direct headwind for Korea's energy-intensive manufacturing base (semiconductors, steel, shipbuilding). North Korea's nuclear expansion plans maintain elevated regional security risk. Samsung and semiconductor exports remain the key growth driver.",
+  "investor_implications": "KOSPI faces multiple headwinds: oil costs, political uncertainty, and North Korean risk. KRW under depreciation pressure from oil import bills and USD safe-haven demand. Korean semiconductor stocks (Samsung, SK Hynix) may decouple on AI demand fundamentals. Sovereign bonds (AA/Aa2) provide relative safety. Monitor political transition timeline.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "South Korea highly exposed to oil price surge (energy independence: 15%)",
+      "description": "Oil prices surged 13% following the Iran conflict and Strait of Hormuz 70% traffic collapse. South Korea has an energy independence index of only 0.15, making it highly vulnerable to sustained energy price increases. Brent crude forecast to spike to $100/barrel if conflict persists. This threatens inflation, trade balance, and GDP growth for energy-import-dependent economies."
+    },
+    {
+      "severity": "watch",
+      "title": "South Korea: Former President Yoon sentenced to life for insurrection; Lee government stabilizing",
+      "description": "Former President Yoon found guilty of insurrection and sentenced to life in prison on Feb 19 for December 2024 martial law attempt. President Lee Jae-myung (Democratic Party) in office since June 2025. Political situation stabilizing under new liberal government. However, institutional fragility exposed and South Korea downgraded from 'full democracy' in EIU index."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 51751065,
+      "population_growth_pct": 0.0743178674548815,
+      "life_expectancy": 83.4292682926829
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 1858572000000.0,
+      "gdp_real_growth_pct": 0.9,
+      "gdp_per_capita_usd": 35962.344,
+      "inflation_cpi_pct": 2,
+      "unemployment_rate_pct": 2.683,
+      "current_account_pct_gdp": 4.8,
+      "govt_debt_pct_gdp": 53.4,
+      "fx_reserves_usd": 418218648901.669,
+      "sovereign_credit_rating": "S&P: AA, Moody's: Aa2, Fitch: AA-",
+      "central_bank_policy_rate_pct": 2.5
+    },
+    "military": {
+      "military_spending_usd": 48000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.388,
+      "energy_independence_index": 0.15,
+      "supply_chain_chokepoint_exposure": 0.58,
+      "composite_national_power_index": 60.8,
+      "political_risk_premium_bps": 10,
+      "market_accessibility_score": 0.699
+    }
   }
 }

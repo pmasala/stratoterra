@@ -129,7 +129,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 83500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -200,5 +208,56 @@
     "outlook": "India's growth momentum remains strong but the oil price shock is the primary near-term risk, potentially widening the current account deficit and putting pressure on the rupee. Diaspora safety in Gulf states is a political concern. US-India trade deal negotiations provide potential upside.",
     "investor_implications": "Rupee under depreciation pressure from oil import costs. Nifty faces energy cost headwinds but domestic consumption story remains intact. Indian IT services benefit from USD strength. Monitor RBI intervention in FX markets.",
     "data_quality_note": "India macro data is current from RBI and government sources."
+  },
+  "code": "IND",
+  "name": "India",
+  "executive_summary": "India expressed 'deep concern' over the Iran conflict while facing dual exposure through oil import dependency and millions of diaspora workers in Gulf states. GDP growth at 6.2% remains robust. US tariff escalation creates headwinds but a US-India trade deal is in progress. India's oil import bill will rise significantly if Hormuz disruption persists.",
+  "key_changes": [
+    "India urged restraint on Iran conflict; faces oil import and diaspora exposure",
+    "US-India trade deal negotiations continue despite 15% global tariff",
+    "Oil +13% surge threatens current account deficit widening"
+  ],
+  "outlook": "India's growth momentum remains strong but the oil price shock is the primary near-term risk, potentially widening the current account deficit and putting pressure on the rupee. Diaspora safety in Gulf states is a political concern. US-India trade deal negotiations provide potential upside.",
+  "investor_implications": "Rupee under depreciation pressure from oil import costs. Nifty faces energy cost headwinds but domestic consumption story remains intact. Indian IT services benefit from USD strength. Monitor RBI intervention in FX markets.",
+  "active_alerts": [
+    {
+      "severity": "watch",
+      "title": "India faces 50% US tariffs over Russian crude purchases; GDP growth decelerating",
+      "description": "Trump administration imposed 50% tariffs on India over Russian crude purchases and failed trade deal deadline. GDP growth trend is decrease (6.6% current but decelerating). Current account deficit worsening. Exchange rate depreciating. However, US-India trade deal announced Feb 6 slashing tariffs on Indian goods may offset some impact. Record capital expenditure in 2026-27 budget."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 1450935791,
+      "population_growth_pct": 0.890706546985984,
+      "life_expectancy": 72.003
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 4125212999999.9995,
+      "gdp_real_growth_pct": 6.6,
+      "gdp_per_capita_usd": 2818.027,
+      "inflation_cpi_pct": 2.8,
+      "unemployment_rate_pct": 4.219,
+      "current_account_pct_gdp": -1,
+      "govt_debt_pct_gdp": 81.4,
+      "fx_reserves_usd": 643042560625.541,
+      "sovereign_credit_rating": "S&P: BBB, Moody's: Baa3, Fitch: BBB",
+      "central_bank_policy_rate_pct": 5.25
+    },
+    "military": {
+      "military_spending_usd": 83500000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.688,
+      "energy_independence_index": 0.55,
+      "supply_chain_chokepoint_exposure": 0.45,
+      "composite_national_power_index": 54.6,
+      "political_risk_premium_bps": 150,
+      "market_accessibility_score": 0.509
+    }
   }
 }

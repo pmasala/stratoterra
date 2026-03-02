@@ -129,7 +129,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 32400000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -200,5 +208,50 @@
     "outlook": "Australia is a relative beneficiary of the global energy shock as a net exporter. The RBA rate hike signals continued inflation concern. AUKUS defense spending is a structural positive for the economy.",
     "investor_implications": "ASX benefits from energy and mining sector weighting. AUD supported by commodity prices and higher rates. Australian government bonds face modest upward yield pressure. Housing market faces headwind from rate hike.",
     "data_quality_note": "Australia macro data is high quality from ABS and RBA."
+  },
+  "code": "AUS",
+  "name": "Australia",
+  "executive_summary": "Australia benefits from commodity price surge as a major energy and minerals exporter. RBA hiked unexpectedly to 3.85% -- a hawkish signal. GDP growth at 1.8% is stable. AUKUS program advancing. Domestic economy faces rate headwind but energy exports provide external sector support. Political stability maintained.",
+  "key_changes": [
+    "RBA hiked to 3.85% -- unexpected hawkish move amid persistent inflation",
+    "Energy and commodity exports benefit from global price surge",
+    "AUKUS and Indo-Pacific defense cooperation advancing"
+  ],
+  "outlook": "Australia is a relative beneficiary of the global energy shock as a net exporter. The RBA rate hike signals continued inflation concern. AUKUS defense spending is a structural positive for the economy.",
+  "investor_implications": "ASX benefits from energy and mining sector weighting. AUD supported by commodity prices and higher rates. Australian government bonds face modest upward yield pressure. Housing market faces headwind from rate hike.",
+  "active_alerts": [],
+  "layers": {
+    "endowments": {
+      "population": 27196812,
+      "population_growth_pct": 1.99383715356028,
+      "life_expectancy": 83.0512195121951
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 1829508000000.0,
+      "gdp_real_growth_pct": 1.8,
+      "gdp_per_capita_usd": 65946.015,
+      "inflation_cpi_pct": 2.6,
+      "unemployment_rate_pct": 4.09,
+      "current_account_pct_gdp": -1.8,
+      "govt_debt_pct_gdp": 51,
+      "fx_reserves_usd": 60404058269.2777,
+      "sovereign_credit_rating": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "central_bank_policy_rate_pct": 3.85
+    },
+    "military": {
+      "military_spending_usd": 32400000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.975,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.36,
+      "composite_national_power_index": 56.8,
+      "political_risk_premium_bps": 0,
+      "market_accessibility_score": 0.753
+    }
   }
 }

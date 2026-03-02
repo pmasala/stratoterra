@@ -122,7 +122,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 6500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -192,5 +200,49 @@
     "outlook": "Switzerland's safe-haven status is reinforced by the global risk environment. SNB may face appreciation pressure requiring intervention. Financial sector benefits from capital inflows.",
     "investor_implications": "CHF strength is the primary dynamic. Swiss equities (SMI) benefit from defensive positioning. Swiss government bonds at premium valuations. Pharmaceuticals (Novartis, Roche) and food (Nestle) provide defensive portfolio exposure.",
     "data_quality_note": "Switzerland macro data is high quality from SNB and FSO."
+  },
+  "code": "CHE",
+  "name": "Switzerland",
+  "executive_summary": "Switzerland benefits from safe-haven flows with the Swiss franc strengthening. GDP growth at 1.6% is stable. SNB policy remains accommodative. No significant country-specific events. Switzerland's neutrality and financial stability attract capital during geopolitical crises.",
+  "key_changes": [
+    "CHF benefiting from safe-haven flows amid Iran conflict",
+    "No major domestic events"
+  ],
+  "outlook": "Switzerland's safe-haven status is reinforced by the global risk environment. SNB may face appreciation pressure requiring intervention. Financial sector benefits from capital inflows.",
+  "investor_implications": "CHF strength is the primary dynamic. Swiss equities (SMI) benefit from defensive positioning. Swiss government bonds at premium valuations. Pharmaceuticals (Novartis, Roche) and food (Nestle) provide defensive portfolio exposure.",
+  "active_alerts": [],
+  "layers": {
+    "endowments": {
+      "population": 9005582,
+      "population_growth_pct": 1.30500749907811,
+      "life_expectancy": 84.0560975609756
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 1002666000000.0,
+      "gdp_real_growth_pct": 0.9,
+      "gdp_per_capita_usd": 111046.892,
+      "inflation_cpi_pct": 0.1,
+      "unemployment_rate_pct": 4.873,
+      "current_account_pct_gdp": 7,
+      "govt_debt_pct_gdp": 36.9,
+      "fx_reserves_usd": 909365744096.394,
+      "sovereign_credit_rating": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "central_bank_policy_rate_pct": 0.0
+    },
+    "military": {
+      "military_spending_usd": 6500000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.512,
+      "energy_independence_index": 0.45,
+      "supply_chain_chokepoint_exposure": 0.36,
+      "composite_national_power_index": 58.0,
+      "political_risk_premium_bps": 0,
+      "market_accessibility_score": 0.903
+    }
   }
 }

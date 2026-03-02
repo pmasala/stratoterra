@@ -115,7 +115,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 19000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -187,5 +195,62 @@
     "outlook": "Taiwan's strategic importance as the global semiconductor hub continues to generate both economic opportunity and geopolitical risk. Energy vulnerability is the immediate concern with oil prices potentially reaching $100/barrel. China's NPC (March 5) and Trump-Xi summit (March 30) are key dates for cross-strait dynamics. TSMC's position in AI chip supply chains provides structural support but also makes Taiwan a focal point for great power competition.",
     "investor_implications": "TSMC remains a core holding for tech-exposed portfolios but geopolitical risk discount should be maintained. TAIEX faces headwinds from energy costs and China tensions. Taiwan sovereign bonds (AA/Aa3) provide safety. Semiconductor sector may decouple from broader market on AI fundamentals. Monitor NPC and Trump-Xi summit for cross-strait signals.",
     "data_quality_note": "Taiwan macro data is high quality. Energy independence is a derived metric. Arms deal values are from media reporting. Cross-strait risk assessment is qualitative."
+  },
+  "code": "TWN",
+  "name": "Taiwan",
+  "executive_summary": "Taiwan has the lowest energy independence in the dataset at 5%, making it extremely vulnerable to the oil price surge and Hormuz disruption. Cross-strait tensions remain elevated after China's PBOC FX policy shift and ongoing military posturing. A $10B+ US arms deal signals continued defense commitment. US tariff escalation adds export pressure for semiconductor-heavy economy. TSMC remains globally critical for AI chip supply.",
+  "key_changes": [
+    "Oil +13% surge creates extreme import cost pressure (energy independence: 5%) (warning)",
+    "US-Taiwan $10B+ arms deal signed amid cross-strait tensions",
+    "China PBOC FX shift signals tolerance for yuan weakening -- competitive pressure on Taiwan exports",
+    "Japan stated SDF could intervene if China acts militarily on Taiwan"
+  ],
+  "outlook": "Taiwan's strategic importance as the global semiconductor hub continues to generate both economic opportunity and geopolitical risk. Energy vulnerability is the immediate concern with oil prices potentially reaching $100/barrel. China's NPC (March 5) and Trump-Xi summit (March 30) are key dates for cross-strait dynamics. TSMC's position in AI chip supply chains provides structural support but also makes Taiwan a focal point for great power competition.",
+  "investor_implications": "TSMC remains a core holding for tech-exposed portfolios but geopolitical risk discount should be maintained. TAIEX faces headwinds from energy costs and China tensions. Taiwan sovereign bonds (AA/Aa3) provide safety. Semiconductor sector may decouple from broader market on AI fundamentals. Monitor NPC and Trump-Xi summit for cross-strait signals.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Taiwan highly exposed to oil price surge (energy independence: 5%)",
+      "description": "Oil prices surged 13% following the Iran conflict and Strait of Hormuz 70% traffic collapse. Taiwan has an energy independence index of only 0.05, making it highly vulnerable to sustained energy price increases. Brent crude forecast to spike to $100/barrel if conflict persists. This threatens inflation, trade balance, and GDP growth for energy-import-dependent economies."
+    },
+    {
+      "severity": "watch",
+      "title": "Taiwan faces unprecedented Chinese military escalation with blockade simulation and airspace violation",
+      "description": "China conducted blockade simulation exercises (Justice Mission 2025) around Taiwan Dec 29-30. PLA drone flew through Taiwanese airspace over Pratas Island on Jan 17 -- possibly first confirmed PLA violation in decades. Opposition parties blocked asymmetric defense budget for 6th time. US-Taiwan $10B+ arms package announced but US hesitating on delivery ahead of Trump's Beijing visit. Chokepoint exposure at 0.69, energy independence at only 0.05."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 23380000.0,
+      "population_growth_pct": -0.04,
+      "life_expectancy": 80.9
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 884387000000.0,
+      "gdp_real_growth_pct": 3.7,
+      "gdp_per_capita_usd": 37826.616,
+      "inflation_cpi_pct": 1.7,
+      "unemployment_rate_pct": 3.4,
+      "current_account_pct_gdp": 13.8,
+      "govt_debt_pct_gdp": 23.4,
+      "fx_reserves_usd": null,
+      "sovereign_credit_rating": "S&P: AA+, Moody's: Aa3, Fitch: NR",
+      "central_bank_policy_rate_pct": 2.125
+    },
+    "military": {
+      "military_spending_usd": 19000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.287,
+      "energy_independence_index": 0.05,
+      "supply_chain_chokepoint_exposure": 0.69,
+      "composite_national_power_index": 50.0,
+      "political_risk_premium_bps": 10,
+      "market_accessibility_score": 0.805
+    }
   }
 }

@@ -122,7 +122,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 8000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -194,5 +202,57 @@
     "outlook": "The March 4 tariff implementation is the most significant near-term risk for Mexico's economy. Auto sector exemption provides temporary relief for the largest bilateral trade category. Nearshoring momentum that benefited Mexico in 2023-2025 faces a structural challenge if tariffs persist. Judicial reform creates additional institutional risk for foreign investors. Peso may face depreciation pressure.",
     "investor_implications": "Mexican peso (MXN) under pressure from tariff implementation. Mexican equities with high US export exposure face margin compression. Nearshoring theme requires reassessment if tariffs persist. Mexican sovereign bonds (BBB/Baa2) remain investment grade but spread widening expected. Auto sector bonds face elevated uncertainty until April 2 deadline.",
     "data_quality_note": "Mexico macro data is current. Tariff implementation details are confirmed via White House and USTR. Exemption timeline (auto to April 2) subject to change."
+  },
+  "code": "MEX",
+  "name": "Mexico",
+  "executive_summary": "Mexico faces the imminent implementation of 25% US tariffs on general imports and 10% on energy effective March 4 -- a severe blow to a $4.8T bilateral trade relationship. The tariffs follow the SCOTUS IEEPA ruling and Trump's pivot to alternative authority. Mexico's judicial reform controversy continues to create institutional uncertainty. Auto imports were temporarily exempted until April 2. GDP growth at 0.7% reflects the tariff uncertainty already priced in.",
+  "key_changes": [
+    "25% US tariffs on Mexico effective March 4 (10% on energy); auto exemption until April 2 (major)",
+    "SCOTUS struck down IEEPA tariffs but Trump reimposed under Section 122 (transformative for trade policy)",
+    "USMCA-covered imports temporarily exempted from 15% global tariff",
+    "Judicial reform institutional uncertainty persists"
+  ],
+  "outlook": "The March 4 tariff implementation is the most significant near-term risk for Mexico's economy. Auto sector exemption provides temporary relief for the largest bilateral trade category. Nearshoring momentum that benefited Mexico in 2023-2025 faces a structural challenge if tariffs persist. Judicial reform creates additional institutional risk for foreign investors. Peso may face depreciation pressure.",
+  "investor_implications": "Mexican peso (MXN) under pressure from tariff implementation. Mexican equities with high US export exposure face margin compression. Nearshoring theme requires reassessment if tariffs persist. Mexican sovereign bonds (BBB/Baa2) remain investment grade but spread widening expected. Auto sector bonds face elevated uncertainty until April 2 deadline.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Mexico faces 25% US tariffs, GDP decrease trend, and judicial reform undermining investment",
+      "description": "Mexico's GDP growth trend is decrease (1% current) with 25% tariffs from US effective March 4. Judicial reform with elected judges and only 13% turnout undermines rule of law. USMCA renegotiation in 2026 will pressure Sheinbaum government. Political stability and FDI trends also decreasing. Risk premium at 150 bps but could rise rapidly."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 130861007,
+      "population_growth_pct": 0.860515443690537,
+      "life_expectancy": 75.069
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 1862740000000.0,
+      "gdp_real_growth_pct": 1,
+      "gdp_per_capita_usd": 13966.98,
+      "inflation_cpi_pct": 3.9,
+      "unemployment_rate_pct": 2.673,
+      "current_account_pct_gdp": -0.2,
+      "govt_debt_pct_gdp": 58.9,
+      "fx_reserves_usd": 232035392464.815,
+      "sovereign_credit_rating": "S&P: BBB, Moody's: Baa2, Fitch: BBB",
+      "central_bank_policy_rate_pct": 7.0
+    },
+    "military": {
+      "military_spending_usd": 8000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.787,
+      "energy_independence_index": 0.85,
+      "supply_chain_chokepoint_exposure": 0.31,
+      "composite_national_power_index": 37.2,
+      "political_risk_premium_bps": 150,
+      "market_accessibility_score": 0.505
+    }
   }
 }

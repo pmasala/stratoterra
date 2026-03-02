@@ -122,7 +122,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 9500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -193,5 +201,50 @@
     "outlook": "Indonesia's growth trajectory remains stable. The new Prabowo government's economic policy direction is being established. Commodity exports provide resilience but oil import costs rise.",
     "investor_implications": "IDR stable; JCI faces modest headwinds from global risk-off. Indonesian sovereign bonds (BBB/Baa2) remain investment grade. Commodity sector mixed (palm oil, coal positive; energy costs negative).",
     "data_quality_note": "Indonesia macro data is current from Bank Indonesia and BPS."
+  },
+  "code": "IDN",
+  "name": "Indonesia",
+  "executive_summary": "Indonesia faces moderate exposure to the oil price surge. GDP growth at 5.1% remains robust. The new government under President Prabowo is consolidating. No significant country-specific events this week. Global trade disruption from tariffs creates some headwind for commodity exports.",
+  "key_changes": [
+    "Oil price surge creates modest import cost pressure",
+    "US 15% global tariff affects Indonesian exports",
+    "No major domestic political or economic events"
+  ],
+  "outlook": "Indonesia's growth trajectory remains stable. The new Prabowo government's economic policy direction is being established. Commodity exports provide resilience but oil import costs rise.",
+  "investor_implications": "IDR stable; JCI faces modest headwinds from global risk-off. Indonesian sovereign bonds (BBB/Baa2) remain investment grade. Commodity sector mixed (palm oil, coal positive; energy costs negative).",
+  "active_alerts": [],
+  "layers": {
+    "endowments": {
+      "population": 283487931,
+      "population_growth_pct": 0.813871513351669,
+      "life_expectancy": 71.146
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 1443256000000.0,
+      "gdp_real_growth_pct": 4.9,
+      "gdp_per_capita_usd": 5074.049,
+      "inflation_cpi_pct": 1.8,
+      "unemployment_rate_pct": 3.237,
+      "current_account_pct_gdp": -1.1,
+      "govt_debt_pct_gdp": 40.8,
+      "fx_reserves_usd": 155708275547.574,
+      "sovereign_credit_rating": "S&P: BBB, Moody's: Baa2, Fitch: BBB",
+      "central_bank_policy_rate_pct": 4.75
+    },
+    "military": {
+      "military_spending_usd": 9500000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.975,
+      "energy_independence_index": 0.9,
+      "supply_chain_chokepoint_exposure": 0.41,
+      "composite_national_power_index": 34.3,
+      "political_risk_premium_bps": 150,
+      "market_accessibility_score": 0.444
+    }
   }
 }

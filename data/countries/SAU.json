@@ -115,7 +115,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 75000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -187,5 +195,57 @@
     "outlook": "Saudi Arabia's diplomatic balancing act -- condemning both sides while deepening US defense ties -- reflects its complex geopolitical position. The East-West pipeline provides partial Hormuz bypass capacity, giving Saudi Arabia more export resilience than smaller Gulf states. Oil price surge benefits Saudi fiscal position in the near term if exports can be maintained. Vision 2030 mega-projects (NEOM, The Line) face financing and confidence headwinds.",
     "investor_implications": "Saudi Aramco remains the key position; higher oil prices benefit but Hormuz disruption creates export uncertainty. Saudi sovereign bonds are investment grade (A/A1). Vision 2030-linked investments face increased execution risk from regional instability. Defense sector procurement is a clear beneficiary. TASI index likely volatile.",
     "data_quality_note": "Saudi macro data is current and reliable. Export route analysis based on known pipeline capacity. Diplomatic positioning assessment relies on official statements."
+  },
+  "code": "SAU",
+  "name": "Saudi Arabia",
+  "executive_summary": "Saudi Arabia issued a carefully balanced statement condemning both Iranian attacks on Gulf states and the US-Israeli strikes that precipitated them. This neutral positioning signals Riyadh will not join the US-Israel campaign. Saudi Arabia's 52% Hormuz chokepoint exposure is partially mitigated by the East-West pipeline and Red Sea terminals. A $9B US arms deal was signed this week. Vision 2030 economic diversification faces headwinds from regional instability.",
+  "key_changes": [
+    "Saudi Arabia condemned 'in strongest terms' both Iranian Gulf attacks and US-Israeli strikes on Iran (moderate)",
+    "US-Saudi $9B arms deal signed, signaling deepening defense relationship",
+    "Strait of Hormuz 70% traffic collapse; Saudi has partial bypass via East-West pipeline",
+    "Saudi maintained diplomatic neutrality -- will not join US-Israel military campaign"
+  ],
+  "outlook": "Saudi Arabia's diplomatic balancing act -- condemning both sides while deepening US defense ties -- reflects its complex geopolitical position. The East-West pipeline provides partial Hormuz bypass capacity, giving Saudi Arabia more export resilience than smaller Gulf states. Oil price surge benefits Saudi fiscal position in the near term if exports can be maintained. Vision 2030 mega-projects (NEOM, The Line) face financing and confidence headwinds.",
+  "investor_implications": "Saudi Aramco remains the key position; higher oil prices benefit but Hormuz disruption creates export uncertainty. Saudi sovereign bonds are investment grade (A/A1). Vision 2030-linked investments face increased execution risk from regional instability. Defense sector procurement is a clear beneficiary. TASI index likely volatile.",
+  "active_alerts": [
+    {
+      "severity": "critical",
+      "title": "Saudi Arabia critically exposed to Strait of Hormuz closure (52% chokepoint exposure)",
+      "description": "The Strait of Hormuz experienced a 70% traffic collapse following US-Israeli strikes on Iran. Iran's IRGC broadcast VHF warnings closing the strait, attacked 3 commercial ships, and threatened all vessels. Saudi Arabia has 52% supply chain chokepoint exposure. Oil and LNG exports are severely disrupted. This is the most severe global energy supply disruption in decades and directly threatens Saudi Arabia's fiscal position and economic stability."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 35300280,
+      "population_growth_pct": 4.63120232685885,
+      "life_expectancy": 78.732
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 1268535000000.0,
+      "gdp_real_growth_pct": 4,
+      "gdp_per_capita_usd": 35230.932,
+      "inflation_cpi_pct": 2.1,
+      "unemployment_rate_pct": 3.038,
+      "current_account_pct_gdp": -2.1,
+      "govt_debt_pct_gdp": 29.2,
+      "fx_reserves_usd": 463869589071.029,
+      "sovereign_credit_rating": "S&P: A+, Moody's: Aa3, Fitch: A+",
+      "central_bank_policy_rate_pct": 4.25
+    },
+    "military": {
+      "military_spending_usd": 75000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.388,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.52,
+      "composite_national_power_index": 44.1,
+      "political_risk_premium_bps": 80,
+      "market_accessibility_score": 0.645
+    }
   }
 }

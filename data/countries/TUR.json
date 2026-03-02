@@ -122,7 +122,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 20500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -194,5 +202,57 @@
     "outlook": "Turkey's economic stabilization under Finance Minister Simsek faces the dual challenge of still-elevated inflation and deepening political authoritarianism. The opposition crackdown and Erdogan succession dynamics create long-term governance uncertainty. Iran conflict on Turkey's eastern border adds security risk and potential refugee flows. Oil price surge complicates the inflation fight. Lira remains under structural depreciation pressure.",
     "investor_implications": "Turkish lira and BIST-100 face continued volatility. High real interest rates attract carry trade flows but political risk deters strategic allocation. B+/B3 sovereign rating constrains institutional participation. Monitor Simsek's ability to maintain orthodox monetary policy against political pressure. Defense sector may benefit from NATO spending commitments.",
     "data_quality_note": "Turkey macro data is from official sources with standard reliability caveats. Political assessment reflects consensus of governance indices and media reporting."
+  },
+  "code": "TUR",
+  "name": "Turkey",
+  "executive_summary": "Turkey's inflation remains severely elevated at 34.9% though on a decreasing trend. The deepening political crisis -- Istanbul mayor Imamoglu imprisoned since March 2025 with hundreds of opposition members jailed -- continues to erode the investment climate. Erdogan succession dynamics are emerging with son Bilal as AKP preferred successor. Democratic backsliding is accelerating. Political risk premium at 500 bps. Turkey's proximity to the Iran conflict adds regional security risk.",
+  "key_changes": [
+    "Iran conflict creates regional security risk on Turkey's eastern border",
+    "Opposition suppression continues with hundreds jailed; Imamoglu imprisonment entering second year",
+    "Erdogan succession dynamics emerging with Bilal Erdogan as AKP-preferred successor",
+    "Oil price +13% surge adds inflationary pressure to already-elevated 34.9% CPI"
+  ],
+  "outlook": "Turkey's economic stabilization under Finance Minister Simsek faces the dual challenge of still-elevated inflation and deepening political authoritarianism. The opposition crackdown and Erdogan succession dynamics create long-term governance uncertainty. Iran conflict on Turkey's eastern border adds security risk and potential refugee flows. Oil price surge complicates the inflation fight. Lira remains under structural depreciation pressure.",
+  "investor_implications": "Turkish lira and BIST-100 face continued volatility. High real interest rates attract carry trade flows but political risk deters strategic allocation. B+/B3 sovereign rating constrains institutional participation. Monitor Simsek's ability to maintain orthodox monetary policy against political pressure. Defense sector may benefit from NATO spending commitments.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Turkey inflation at 34.9% amid deepening political crisis and opposition suppression",
+      "description": "Turkey's CPI inflation remains severely elevated at 34.9% with a decrease trend (positive development), but political crisis is intensifying. Istanbul mayor Imamoglu imprisoned since March 2025. Opposition crackdown with hundreds jailed. Erdogan succession dynamics emerging with son Bilal as AKP preferred successor. Democratic backsliding erodes investment climate. Risk premium at 500 bps."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 85518661,
+      "population_growth_pct": 0.225580501096507,
+      "life_expectancy": 77.156
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 1565471000000.0,
+      "gdp_real_growth_pct": 3.5,
+      "gdp_per_capita_usd": 18197.575,
+      "inflation_cpi_pct": 34.9,
+      "unemployment_rate_pct": 8.52,
+      "current_account_pct_gdp": -1.4,
+      "govt_debt_pct_gdp": 24.3,
+      "fx_reserves_usd": 154773780178.169,
+      "sovereign_credit_rating": "S&P: BB-, Moody's: Ba3, Fitch: BB",
+      "central_bank_policy_rate_pct": 37.0
+    },
+    "military": {
+      "military_spending_usd": 20500000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.562,
+      "energy_independence_index": 0.25,
+      "supply_chain_chokepoint_exposure": 0.36,
+      "composite_national_power_index": 41.1,
+      "political_risk_premium_bps": 500,
+      "market_accessibility_score": 0.441
+    }
   }
 }

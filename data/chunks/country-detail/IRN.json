@@ -167,5 +167,66 @@
     "outlook": "Iran faces the most severe compound crisis in its modern history: regime decapitation, active military conflict with the world's foremost military power, infrastructure devastation, and economic collapse trajectory. The succession process under the Assembly of Experts has no precedent under wartime conditions. The 90-day constitutional timeline for selecting a new Supreme Leader will be tested against ongoing military operations and potential internal power struggles.",
     "investor_implications": "Iran is uninvestable for all practical purposes. Downstream exposure is the key concern: monitor any portfolio holdings with Iran trade links, Iranian diaspora banking flows, or sanctions compliance obligations. The primary transmission channel for global investors is through energy prices and Hormuz-dependent supply chains.",
     "data_quality_note": "Iran data quality was already constrained pre-conflict due to sanctions and limited reporting. Current situation renders most economic projections highly speculative. No rated sovereign credit. Inflation and exchange rate data likely understated given wartime conditions."
+  },
+  "code": "IRN",
+  "name": "Iran",
+  "executive_summary": "Iran faces an existential crisis following US-Israeli Operation Epic Fury on Feb 28, which struck 1,000+ targets across 24 provinces and killed Supreme Leader Khamenei. Iranian retaliation targeted 27 US bases and Gulf Arab states. The Strait of Hormuz experienced a 70% traffic collapse. With no clear succession mechanism, comprehensive sanctions, 42.4% inflation, and active military conflict, Iran is effectively uninvestable. Political risk premium stands at 2,200 bps.",
+  "key_changes": [
+    "US-Israeli joint strikes on Feb 28 killed Supreme Leader Khamenei and struck 1,000+ targets across Iran (transformative)",
+    "Iran retaliated with missiles/drones on 27 US bases and Gulf states including UAE, Qatar, Kuwait, Bahrain, Oman",
+    "Strait of Hormuz traffic collapsed 70%; IRGC attacked 3 commercial ships and broadcast closure warnings",
+    "40 days of mourning declared; Assembly of Experts must select new Supreme Leader amid active warfare",
+    "Oil surged 13% to $82/barrel with forecasts of $100/barrel if conflict persists"
+  ],
+  "outlook": "Iran faces the most severe compound crisis in its modern history: regime decapitation, active military conflict with the world's foremost military power, infrastructure devastation, and economic collapse trajectory. The succession process under the Assembly of Experts has no precedent under wartime conditions. The 90-day constitutional timeline for selecting a new Supreme Leader will be tested against ongoing military operations and potential internal power struggles.",
+  "investor_implications": "Iran is uninvestable for all practical purposes. Downstream exposure is the key concern: monitor any portfolio holdings with Iran trade links, Iranian diaspora banking flows, or sanctions compliance obligations. The primary transmission channel for global investors is through energy prices and Hormuz-dependent supply chains.",
+  "active_alerts": [
+    {
+      "severity": "critical",
+      "title": "Iran under massive US-Israeli military strikes; Supreme Leader Khamenei killed",
+      "description": "US and Israel launched joint Operation Epic Fury on Feb 28, striking 1,000+ targets in Iran including IRGC facilities, air defenses, missile sites, and nuclear infrastructure. Supreme Leader Khamenei was killed when his official residence was destroyed. Iran retaliated with strikes on 27 US bases and Gulf Arab states. The regime faces an existential crisis with 40 days of mourning declared. This represents a fundamental regime disruption with no clear succession mechanism, combined with active military conflict and comprehensive international sanctions."
+    },
+    {
+      "severity": "critical",
+      "title": "Iran economic collapse trajectory: strong_decrease across GDP, trade, FDI, current account",
+      "description": "Iran shows strong_decrease trends in 8 of 11 tracked factors: GDP growth, current account, political stability, trade openness, FDI inflows, exchange rate, investment risk score, and relationship health. The combination of military conflict, regime collapse, Hormuz closure, and intensified sanctions creates an unprecedented compound crisis. Political risk premium at 2,200 bps. Iran is effectively uninvestable for the foreseeable future."
+    },
+    {
+      "severity": "warning",
+      "title": "Iran inflation at 42.4% and rising sharply; approaching hyperinflation territory",
+      "description": "Iran's CPI inflation stands at 42.4% with a strong_growth trend driven by currency collapse, sanctions intensification, military conflict disruptions, and supply chain breakdown from Hormuz closure. The inflation trajectory is pointing toward the 50% threshold. Combined with regime collapse and war damage, this creates a severe cost-of-living crisis for 91.6 million people."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 91567738,
+      "population_growth_pct": 1.05286922170537,
+      "life_expectancy": 77.654
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 356513000000.0,
+      "gdp_real_growth_pct": 0.6,
+      "gdp_per_capita_usd": 4074.444,
+      "inflation_cpi_pct": 42.4,
+      "unemployment_rate_pct": 8.301,
+      "current_account_pct_gdp": 1.8,
+      "govt_debt_pct_gdp": 35.6,
+      "fx_reserves_usd": null,
+      "sovereign_credit_rating": "S&P: NR, Moody's: NR, Fitch: NR",
+      "central_bank_policy_rate_pct": null
+    },
+    "military": {},
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.8,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.48,
+      "composite_national_power_index": 28.7,
+      "political_risk_premium_bps": 2200,
+      "market_accessibility_score": 0.216
+    }
   }
 }

@@ -136,6 +136,13 @@
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W09"
+    },
+    "military_spending_usd": {
+      "value": 58000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
     }
   },
   "trade": {},
@@ -209,5 +216,63 @@
     "outlook": "Japan's near-term risk is dominated by energy import cost exposure to the Hormuz crisis. Extended Hormuz disruption could widen the current account deficit (-4.3% GDP) and reignite yen weakness. The BOJ's policy normalization path may be complicated by oil-driven inflation. Defense spending trajectory is structurally upward. Japan's strategic positioning on Taiwan represents a significant shift in post-WWII defense posture.",
     "investor_implications": "JPY likely weakens if oil stays elevated; yen-funded carry trades may unwind. Nikkei faces headwinds from energy costs but benefits from yen weakness for exporters. Defense-related equities (MHI, KHI, IHI) are structural beneficiaries. JGB yields may face upward pressure from inflation. Monitor BOJ March meeting closely.",
     "data_quality_note": "Japan macro data is high quality from BOJ and government sources. Defense spending confirmed in FY2026 budget. Energy independence index is a derived metric."
+  },
+  "code": "JPN",
+  "name": "Japan",
+  "executive_summary": "Japan faces significant exposure to the oil price surge given its 10% energy independence index -- the second-lowest among major economies after Taiwan. The LDP's supermajority (won Feb 8) provides stable governance under PM Ishiba. Defense spending reached a record $58B with Type-12 long-range missile deployment, and the government stated SDF could intervene if China acts militarily on Taiwan. BOJ policy normalization continues. Inflation at 3.6% remains above target.",
+  "key_changes": [
+    "Oil +13% surge creates acute import cost pressure (energy independence: 10%) (warning)",
+    "Record $58B defense budget with Type-12 missile deployment at Camp Kengun (moderate)",
+    "Government stated SDF could intervene if China acts militarily on Taiwan",
+    "LDP supermajority provides legislative stability for Ishiba government"
+  ],
+  "outlook": "Japan's near-term risk is dominated by energy import cost exposure to the Hormuz crisis. Extended Hormuz disruption could widen the current account deficit (-4.3% GDP) and reignite yen weakness. The BOJ's policy normalization path may be complicated by oil-driven inflation. Defense spending trajectory is structurally upward. Japan's strategic positioning on Taiwan represents a significant shift in post-WWII defense posture.",
+  "investor_implications": "JPY likely weakens if oil stays elevated; yen-funded carry trades may unwind. Nikkei faces headwinds from energy costs but benefits from yen weakness for exporters. Defense-related equities (MHI, KHI, IHI) are structural beneficiaries. JGB yields may face upward pressure from inflation. Monitor BOJ March meeting closely.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Japan highly exposed to oil price surge (energy independence: 10%)",
+      "description": "Oil prices surged 13% following the Iran conflict and Strait of Hormuz 70% traffic collapse. Japan has an energy independence index of only 0.1, making it highly vulnerable to sustained energy price increases. Brent crude forecast to spike to $100/barrel if conflict persists. This threatens inflation, trade balance, and GDP growth for energy-import-dependent economies."
+    },
+    {
+      "severity": "watch",
+      "title": "Japan LDP wins supermajority enabling constitutional revision; defense budget $58B",
+      "description": "Japan's LDP won a historic supermajority in Feb 8 snap election, enabling potential revision of the pacifist constitution. Defense budget rising to $58B with strong_growth trend in military expenditure. PM Takaichi's conservative agenda may affect trade relations with China. High chokepoint exposure (0.53) increases vulnerability to Hormuz disruption."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 123975371,
+      "population_growth_pct": -0.435651699326323,
+      "life_expectancy": 84.0412195121951
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 4279828000000.0005,
+      "gdp_real_growth_pct": 1.1,
+      "gdp_per_capita_usd": 34713.248,
+      "inflation_cpi_pct": 3.3,
+      "unemployment_rate_pct": 2.451,
+      "current_account_pct_gdp": 3.9,
+      "govt_debt_pct_gdp": 229.6,
+      "fx_reserves_usd": 1230666979042.45,
+      "sovereign_credit_rating": "S&P: A+, Moody's: A1, Fitch: A",
+      "central_bank_policy_rate_pct": 0.75
+    },
+    "military": {
+      "defense_budget_usd": 58000000000,
+      "military_spending_usd": 58000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.4,
+      "energy_independence_index": 0.1,
+      "supply_chain_chokepoint_exposure": 0.53,
+      "composite_national_power_index": 65.1,
+      "political_risk_premium_bps": 30,
+      "market_accessibility_score": 0.775
+    }
   }
 }

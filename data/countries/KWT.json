@@ -172,5 +172,54 @@
     "outlook": "Kuwait's fiscal position depends heavily on petroleum revenues transiting the Strait of Hormuz. Higher oil prices provide a partial offset only if exports can be maintained. Kuwait has no significant pipeline bypass options and limited economic diversification. US military presence both provides security and makes Kuwait a target. Vision 2035 economic diversification plans face setback from regional instability.",
     "investor_implications": "Kuwait sovereign bonds and KIA investments remain backed by one of the world's largest sovereign wealth funds ($900B+). Fiscal resilience is strong despite export disruption. However, Kuwait equities and real estate face near-term pressure from conflict proximity. Energy sector plays are the primary consideration.",
     "data_quality_note": "Kuwait macro data is current. Conflict impact on oil export volumes is estimated from Hormuz traffic data. US military casualty figures are officially confirmed."
+  },
+  "code": "KWT",
+  "name": "Kuwait",
+  "executive_summary": "Kuwait was directly targeted in Iranian retaliation, with strikes hitting areas hosting US military assets. Three US soldiers were killed and five seriously wounded at a base in Kuwait. Kuwait's 64% supply chain chokepoint exposure to the Strait of Hormuz threatens its petroleum-dependent economy. As an OPEC member with limited economic diversification, Kuwait faces acute vulnerability to extended Hormuz disruption.",
+  "key_changes": [
+    "Iranian retaliatory strikes hit Kuwait targeting US military bases; 3 US soldiers killed, 5 seriously wounded (major)",
+    "Strait of Hormuz 70% traffic collapse threatens Kuwait's oil exports (64% chokepoint exposure)",
+    "Kuwait's hosting of US military infrastructure makes it a direct target in US-Iran conflict"
+  ],
+  "outlook": "Kuwait's fiscal position depends heavily on petroleum revenues transiting the Strait of Hormuz. Higher oil prices provide a partial offset only if exports can be maintained. Kuwait has no significant pipeline bypass options and limited economic diversification. US military presence both provides security and makes Kuwait a target. Vision 2035 economic diversification plans face setback from regional instability.",
+  "investor_implications": "Kuwait sovereign bonds and KIA investments remain backed by one of the world's largest sovereign wealth funds ($900B+). Fiscal resilience is strong despite export disruption. However, Kuwait equities and real estate face near-term pressure from conflict proximity. Energy sector plays are the primary consideration.",
+  "active_alerts": [
+    {
+      "severity": "critical",
+      "title": "Kuwait critically exposed to Strait of Hormuz closure (64% chokepoint exposure)",
+      "description": "The Strait of Hormuz experienced a 70% traffic collapse following US-Israeli strikes on Iran. Iran's IRGC broadcast VHF warnings closing the strait, attacked 3 commercial ships, and threatened all vessels. Kuwait has 64% supply chain chokepoint exposure. Oil and LNG exports are severely disrupted. This is the most severe global energy supply disruption in decades and directly threatens Kuwait's fiscal position and economic stability."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 4897263,
+      "population_growth_pct": 0.899286654502241,
+      "life_expectancy": 83.1878048780488
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 157469000000.0,
+      "gdp_real_growth_pct": 2.6,
+      "gdp_per_capita_usd": 30805.156,
+      "inflation_cpi_pct": 2.2,
+      "unemployment_rate_pct": 2.181,
+      "current_account_pct_gdp": 26.5,
+      "govt_debt_pct_gdp": 7.3,
+      "fx_reserves_usd": 50727942998.1333,
+      "sovereign_credit_rating": "S&P: AA-, Moody's: A1, Fitch: AA-",
+      "central_bank_policy_rate_pct": null
+    },
+    "military": {},
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.29,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.64,
+      "composite_national_power_index": 25.0,
+      "political_risk_premium_bps": 70,
+      "market_accessibility_score": 0.493
+    }
   }
 }

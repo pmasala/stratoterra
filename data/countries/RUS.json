@@ -129,7 +129,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 109000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -203,5 +211,59 @@
     "outlook": "Russia's war economy is showing signs of strain with the rate cut to 15.5% reflecting a shift from inflation control to economic support. The loss of territory in the south and strike on Votkinsk represent strategic setbacks, though Russia maintains offensive pressure with massive drone/missile barrages. Spring offensive planned for April-May. State Duma elections in September will test domestic political support for the war. Iran conflict may provide Russia with diplomatic leverage but also disrupts global energy markets where Russia has adapted to sanctions-era trade flows.",
     "investor_implications": "Russia remains largely uninvestable for Western capital due to comprehensive sanctions. NR credit rating with estimated 1,850 bps risk premium. Ruble and MOEX are accessible only to non-sanctioned entities. Key transmission channel is through global energy prices and defense spending globally. Russia's military-industrial capacity constraints (Votkinsk strike) may affect future arms export competitiveness.",
     "data_quality_note": "Russia macro data quality has deteriorated significantly since the invasion. GDP and inflation figures are from IMF estimates. Military and territorial assessments rely on Western intelligence and ISW analysis."
+  },
+  "code": "RUS",
+  "name": "Russia",
+  "executive_summary": "Russia's war in Ukraine enters its fifth year with the economy showing strain: GDP growth at 0.6%, inflation at 9%, and the CBR cutting rates to 15.5% signaling economic stress. EU renewed sanctions for 6 months. Russia occupies approximately 20% of Ukraine but lost 300+ sq km in the southern counteroffensive. Ukraine's Flamingo missile struck the Votkinsk ICBM factory -- a blow to Russia's missile production. New START expired without extension. State Duma elections in September 2026.",
+  "key_changes": [
+    "CBR cut key rate to 15.5% -- signaling shift from tightening to supporting war economy (moderate)",
+    "Ukraine's Flamingo missiles struck Votkinsk ICBM factory 1,400 km inside Russia (major)",
+    "Southern counteroffensive cost Russia 300+ sq km in Zaporizhzhia Oblast (major)",
+    "Russia launched 1,500+ drones and 90+ missiles at Ukraine in one week",
+    "New START treaty expired -- last nuclear arms control framework with US collapsed",
+    "EU renewed Russia sanctions for 6 months"
+  ],
+  "outlook": "Russia's war economy is showing signs of strain with the rate cut to 15.5% reflecting a shift from inflation control to economic support. The loss of territory in the south and strike on Votkinsk represent strategic setbacks, though Russia maintains offensive pressure with massive drone/missile barrages. Spring offensive planned for April-May. State Duma elections in September will test domestic political support for the war. Iran conflict may provide Russia with diplomatic leverage but also disrupts global energy markets where Russia has adapted to sanctions-era trade flows.",
+  "investor_implications": "Russia remains largely uninvestable for Western capital due to comprehensive sanctions. NR credit rating with estimated 1,850 bps risk premium. Ruble and MOEX are accessible only to non-sanctioned entities. Key transmission channel is through global energy prices and defense spending globally. Russia's military-industrial capacity constraints (Votkinsk strike) may affect future arms export competitiveness.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Russia under comprehensive sanctions with GDP decrease trend; war economy under strain",
+      "description": "Russia's economy shows GDP decrease trend (0.6% growth) with 9% inflation. Comprehensive Western sanctions continue with EU renewal for 6 months. CBR cut rates to 15.5% signaling economic stress. NR credit rating with 1,850 bps estimated risk premium. New ICBM tests planned. War entering 5th year with Russia occupying ~20% of Ukraine. State Duma elections scheduled for September 2026 amid mounting economic pressure."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 143533851,
+      "population_growth_pct": -0.203423663777625,
+      "life_expectancy": 73.2546341463415
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 2540656000000.0,
+      "gdp_real_growth_pct": 0.6,
+      "gdp_per_capita_usd": 17445.75,
+      "inflation_cpi_pct": 9,
+      "unemployment_rate_pct": 2.133,
+      "current_account_pct_gdp": 1.7,
+      "govt_debt_pct_gdp": 23.1,
+      "fx_reserves_usd": 597217063819.197,
+      "sovereign_credit_rating": "S&P: NR, Moody's: NR, Fitch: NR",
+      "central_bank_policy_rate_pct": 15.5
+    },
+    "military": {
+      "military_spending_usd": 109000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 1.0,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.21,
+      "composite_national_power_index": 54.7,
+      "political_risk_premium_bps": 1850,
+      "market_accessibility_score": 0.338
+    }
   }
 }

@@ -123,7 +123,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 11500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -194,5 +202,50 @@
     "outlook": "Sweden's economy is recovering from the housing-led slowdown. Defense spending increase is structural given NATO membership and Russia proximity. Oil price surge creates moderate import cost pressure.",
     "investor_implications": "Saab is a key defense play benefiting from European spending consensus. SEK under modest pressure from risk-off. Swedish government bonds stable. Housing market recovery continuing.",
     "data_quality_note": "Sweden macro data is current. Central bank rate data flagged with source disagreement -- minor discrepancy."
+  },
+  "code": "SWE",
+  "name": "Sweden",
+  "executive_summary": "Sweden faces modest exposure to global events. Central bank rate source disagreement noted by validation agent. EU defense consensus supports Swedish defense sector (Saab). GDP growth at 1.9%. No significant country-specific events this week.",
+  "key_changes": [
+    "EU defense consensus emerging benefits Saab and Swedish defense sector",
+    "Central bank rate data source disagreement flagged by validation",
+    "No major domestic events"
+  ],
+  "outlook": "Sweden's economy is recovering from the housing-led slowdown. Defense spending increase is structural given NATO membership and Russia proximity. Oil price surge creates moderate import cost pressure.",
+  "investor_implications": "Saab is a key defense play benefiting from European spending consensus. SEK under modest pressure from risk-off. Swedish government bonds stable. Housing market recovery continuing.",
+  "active_alerts": [],
+  "layers": {
+    "endowments": {
+      "population": 10569709,
+      "population_growth_pct": 0.313432129983607,
+      "life_expectancy": 83.309756097561
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 662318000000.0,
+      "gdp_real_growth_pct": 0.7,
+      "gdp_per_capita_usd": 62036.06,
+      "inflation_cpi_pct": 2.3,
+      "unemployment_rate_pct": 8.694,
+      "current_account_pct_gdp": 5.8,
+      "govt_debt_pct_gdp": 34.2,
+      "fx_reserves_usd": 62569356006.7168,
+      "sovereign_credit_rating": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "central_bank_policy_rate_pct": 1.75
+    },
+    "military": {
+      "military_spending_usd": 11500000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.787,
+      "energy_independence_index": 0.65,
+      "supply_chain_chokepoint_exposure": 0.35,
+      "composite_national_power_index": 50.5,
+      "political_risk_premium_bps": 0,
+      "market_accessibility_score": 0.81
+    }
   }
 }

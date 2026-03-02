@@ -129,7 +129,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 27000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -201,5 +209,57 @@
     "outlook": "The March 4 tariff implementation represents the most severe stress test for the Canada-US economic relationship in the NAFTA/USMCA era. Energy tariffs at 10% rather than 25% provide some relief for Canada's largest export category. The broader deterioration in US-Canada relations -- extending to Arctic security -- suggests structural rather than tactical friction. Bank of Canada may need to respond if tariff impact materializes in economic data.",
     "investor_implications": "CAD under depreciation pressure from tariff implementation and flight to USD. TSX energy stocks face mixed signals (higher prices vs US market access uncertainty). Canadian banks with US exposure face elevated risk. Government bonds benefit from flight-to-quality within G7. Monitor retaliatory tariff measures from Ottawa.",
     "data_quality_note": "Canada macro data is high quality. Tariff details confirmed via official White House announcements. USMCA exemption is temporary and may be revoked."
+  },
+  "code": "CAN",
+  "name": "Canada",
+  "executive_summary": "Canada faces 25% US tariffs on general imports and 10% on energy effective March 4, fundamentally challenging the world's largest bilateral trade relationship. USMCA-covered imports received temporary exemption. Canada-US relationship deterioration extends beyond trade to Arctic security amid Trump's Greenland acquisition push. Energy sector faces mixed dynamics: higher oil prices benefit producers but tariffs reduce US market access. GDP growth at 1.5%.",
+  "key_changes": [
+    "25% US tariffs on Canada effective March 4 (10% on energy); USMCA exemption temporary (major)",
+    "Canada-US relationship deterioration extends to Arctic security issues (warning)",
+    "Higher oil prices partially offset tariff impact for energy sector",
+    "Denmark snap election on Greenland issue adds Arctic dimension to Canadian security calculus"
+  ],
+  "outlook": "The March 4 tariff implementation represents the most severe stress test for the Canada-US economic relationship in the NAFTA/USMCA era. Energy tariffs at 10% rather than 25% provide some relief for Canada's largest export category. The broader deterioration in US-Canada relations -- extending to Arctic security -- suggests structural rather than tactical friction. Bank of Canada may need to respond if tariff impact materializes in economic data.",
+  "investor_implications": "CAD under depreciation pressure from tariff implementation and flight to USD. TSX energy stocks face mixed signals (higher prices vs US market access uncertainty). Canadian banks with US exposure face elevated risk. Government bonds benefit from flight-to-quality within G7. Monitor retaliatory tariff measures from Ottawa.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Canada faces 25% US tariffs and severe deterioration in bilateral relationship",
+      "description": "Canada-US relationship health shows strong_decrease trend following 25% tariff imposition effective March 4. GDP growth trend is decrease (1.2% current). Current account, political stability, trade openness, FDI, and exchange rate all trending down. Canada's deep economic integration with the US (75%+ of exports) makes tariff disruption uniquely damaging."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 41288599,
+      "population_growth_pct": 2.96220294420494,
+      "life_expectancy": 81.6465853658537
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 2283599000000.0,
+      "gdp_real_growth_pct": 1.2,
+      "gdp_per_capita_usd": 54934.843,
+      "inflation_cpi_pct": 2,
+      "unemployment_rate_pct": 6.907,
+      "current_account_pct_gdp": -1.4,
+      "govt_debt_pct_gdp": 113.9,
+      "fx_reserves_usd": 119778473396.958,
+      "sovereign_credit_rating": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "central_bank_policy_rate_pct": 2.25
+    },
+    "military": {
+      "military_spending_usd": 27000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 1.0,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.22,
+      "composite_national_power_index": 56.7,
+      "political_risk_premium_bps": 0,
+      "market_accessibility_score": 0.792
+    }
   }
 }

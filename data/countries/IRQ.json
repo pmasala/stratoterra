@@ -172,5 +172,54 @@
     "outlook": "Iraq is caught between its security dependence on both the US and Iran-aligned militias. Extended Hormuz closure would devastate Iraq's budget, which depends on oil revenues for over 90% of government spending. Internal political dynamics may shift as Iran-aligned factions recalibrate. Iraq's non-oil economy is too small to compensate for export disruption.",
     "investor_implications": "Iraq oil sector investments face acute near-term risk from Hormuz disruption and potential militia activity near oil infrastructure. Sovereign bonds (B-/Caa1) already reflect high risk. Any dinar exposure should be hedged. Kurdistan region oil exports via Turkey pipeline offer partial insulation from Hormuz risk.",
     "data_quality_note": "Iraq's economic data is of medium quality. Oil export volume data is relatively current. Political and militia activity assessments carry higher uncertainty."
+  },
+  "code": "IRQ",
+  "name": "Iraq",
+  "executive_summary": "Iraq faces severe collateral exposure from the Iran conflict with 51% supply chain chokepoint exposure to the Strait of Hormuz. Iraq's economy is overwhelmingly dependent on oil revenues (>90% of budget) and its export infrastructure is partially exposed to Hormuz. Iran-aligned militias in Iraq add internal instability risk. The Basra oil terminal, Iraq's primary export route, is in the Persian Gulf. GDP growth of 2.2% faces significant downward revision.",
+  "key_changes": [
+    "Strait of Hormuz 70% traffic collapse directly threatens Iraq's oil exports (51% chokepoint exposure) (critical)",
+    "Iran-aligned Iraqi militias face potential activation amid US-Iran conflict",
+    "Iraq's Basra oil terminal in Persian Gulf exposed to conflict spillover"
+  ],
+  "outlook": "Iraq is caught between its security dependence on both the US and Iran-aligned militias. Extended Hormuz closure would devastate Iraq's budget, which depends on oil revenues for over 90% of government spending. Internal political dynamics may shift as Iran-aligned factions recalibrate. Iraq's non-oil economy is too small to compensate for export disruption.",
+  "investor_implications": "Iraq oil sector investments face acute near-term risk from Hormuz disruption and potential militia activity near oil infrastructure. Sovereign bonds (B-/Caa1) already reflect high risk. Any dinar exposure should be hedged. Kurdistan region oil exports via Turkey pipeline offer partial insulation from Hormuz risk.",
+  "active_alerts": [
+    {
+      "severity": "critical",
+      "title": "Iraq critically exposed to Strait of Hormuz closure (51% chokepoint exposure)",
+      "description": "The Strait of Hormuz experienced a 70% traffic collapse following US-Israeli strikes on Iran. Iran's IRGC broadcast VHF warnings closing the strait, attacked 3 commercial ships, and threatened all vessels. Iraq has 51% supply chain chokepoint exposure. Oil and LNG exports are severely disrupted. This is the most severe global energy supply disruption in decades and directly threatens Iraq's fiscal position and economic stability."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 46042015,
+      "population_growth_pct": 2.12476784890538,
+      "life_expectancy": 72.324
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 265454999999.99997,
+      "gdp_real_growth_pct": 0.5,
+      "gdp_per_capita_usd": 5831.552,
+      "inflation_cpi_pct": 1.5,
+      "unemployment_rate_pct": 15.485,
+      "current_account_pct_gdp": 0.4,
+      "govt_debt_pct_gdp": 53.1,
+      "fx_reserves_usd": 100690954781.588,
+      "sovereign_credit_rating": "S&P: B-, Moody's: Caa1, Fitch: B-",
+      "central_bank_policy_rate_pct": null
+    },
+    "military": {},
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.475,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.51,
+      "composite_national_power_index": 20.8,
+      "political_risk_premium_bps": 1300,
+      "market_accessibility_score": 0.164
+    }
   }
 }

@@ -136,6 +136,13 @@
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W09"
+    },
+    "military_spending_usd": {
+      "value": 88500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
     }
   },
   "trade": {},
@@ -210,5 +217,64 @@
     "outlook": "Germany's economic stagnation continues with 0.3% GDP growth, though the oil price surge may paradoxically accelerate the energy transition. The EU-Mercosur agreement benefits German automakers (reduced tariffs on car exports) while EU defense spending consensus creates demand for Rheinmetall and other defense manufacturers. The Iran conflict complicates ECB rate decisions as energy-driven inflation may delay cuts.",
     "investor_implications": "DAX faces mixed signals: energy costs negative, defense spending positive, Mercosur positive for automakers. German Bunds benefit from flight-to-quality. Rheinmetall is the standout defense play. Monitor ECB March communications for any shift in guidance due to oil prices. Real estate sector remains under pressure from higher rates.",
     "data_quality_note": "Germany macro data is high quality from Bundesbank and Eurostat. EU-Mercosur legal status has uncertainty from ECJ referral."
+  },
+  "code": "DEU",
+  "name": "Germany",
+  "executive_summary": "Germany faces energy import cost pressure from the oil surge (30% energy independence) while navigating significant structural challenges. Defense spending reached $88.5B reflecting EU defense consensus. EU-Mercosur trade agreement entered provisional application despite France's opposition. ECB held at 2% for the fifth consecutive meeting. GDP growth at 0.3% reflects continued sluggishness in Europe's largest economy. EU defense procurement consensus emerging amid US-Europe tensions.",
+  "key_changes": [
+    "Oil +13% surge creates energy cost pressure (energy independence: 30%) (warning)",
+    "EU-Mercosur trade agreement provisional application announced (major)",
+    "EU defense procurement consensus emerging; Germany defense at $88.5B",
+    "ECB held rates at 2% for fifth consecutive meeting; oil complicates rate path",
+    "EU Parliament referred EU-Mercosur to European Court of Justice for legality review"
+  ],
+  "outlook": "Germany's economic stagnation continues with 0.3% GDP growth, though the oil price surge may paradoxically accelerate the energy transition. The EU-Mercosur agreement benefits German automakers (reduced tariffs on car exports) while EU defense spending consensus creates demand for Rheinmetall and other defense manufacturers. The Iran conflict complicates ECB rate decisions as energy-driven inflation may delay cuts.",
+  "investor_implications": "DAX faces mixed signals: energy costs negative, defense spending positive, Mercosur positive for automakers. German Bunds benefit from flight-to-quality. Rheinmetall is the standout defense play. Monitor ECB March communications for any shift in guidance due to oil prices. Real estate sector remains under pressure from higher rates.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Germany highly exposed to oil price surge (energy independence: 30%)",
+      "description": "Oil prices surged 13% following the Iran conflict and Strait of Hormuz 70% traffic collapse. Germany has an energy independence index of only 0.3, making it highly vulnerable to sustained energy price increases. Brent crude forecast to spike to $100/barrel if conflict persists. This threatens inflation, trade balance, and GDP growth for energy-import-dependent economies."
+    },
+    {
+      "severity": "watch",
+      "title": "Germany launches EUR 500B infrastructure fund and record defense spending EUR 88.5B",
+      "description": "Germany amended Basic Law to establish EUR 500 billion Special Fund for Infrastructure and Climate Neutrality. Defense spending at EUR 88.5B with debt brake reformed. 2026 budget includes record EUR 126.7B in investments. Federal deficit projected at 3.6-3.8% of GDP. This is a historic fiscal paradigm shift for Europe's largest economy with massive investment implications."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 83516593,
+      "population_growth_pct": 0.274957829184881,
+      "life_expectancy": 80.5414634146342
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 5013574000000.0,
+      "gdp_real_growth_pct": 0.2,
+      "gdp_per_capita_usd": 59925.317,
+      "inflation_cpi_pct": 2.1,
+      "unemployment_rate_pct": 3.711,
+      "current_account_pct_gdp": 5.4,
+      "govt_debt_pct_gdp": 64.4,
+      "fx_reserves_usd": 377935574356.242,
+      "sovereign_credit_rating": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "central_bank_policy_rate_pct": 2.0
+    },
+    "military": {
+      "defense_spending_usd": 88500000000,
+      "military_spending_usd": 88500000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.575,
+      "energy_independence_index": 0.3,
+      "supply_chain_chokepoint_exposure": 0.41,
+      "composite_national_power_index": 69.3,
+      "political_risk_premium_bps": 0,
+      "market_accessibility_score": 0.682
+    }
   }
 }

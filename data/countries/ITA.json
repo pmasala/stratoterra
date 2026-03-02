@@ -122,7 +122,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 32000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -193,5 +201,50 @@
     "outlook": "Italy's fiscal position remains the key investor concern in the eurozone. Oil price surge adds to fiscal pressure through energy subsidies. EU defense spending benefits Leonardo and the broader defense industrial base.",
     "investor_implications": "BTP spreads may widen on oil-driven fiscal pressure. MIB faces mixed signals. Leonardo is a direct defense spending beneficiary. Italian banks face NPL concerns if recession materializes.",
     "data_quality_note": "Italy macro data is high quality from ISTAT and Banca d'Italia."
+  },
+  "code": "ITA",
+  "name": "Italy",
+  "executive_summary": "Italy faces moderate exposure to oil price surge and EU-Mercosur trade dynamics. ECB held at 2%. GDP growth at 0.7% reflects continued sluggishness. Defense spending increasing in line with EU consensus. BTP-Bund spread is a key market indicator.",
+  "key_changes": [
+    "EU-Mercosur provisional application affects Italian trade dynamics",
+    "ECB held at 2%; oil complicates rate path",
+    "EU defense spending consensus supports Italian defense sector (Leonardo)"
+  ],
+  "outlook": "Italy's fiscal position remains the key investor concern in the eurozone. Oil price surge adds to fiscal pressure through energy subsidies. EU defense spending benefits Leonardo and the broader defense industrial base.",
+  "investor_implications": "BTP spreads may widen on oil-driven fiscal pressure. MIB faces mixed signals. Leonardo is a direct defense spending beneficiary. Italian banks face NPL concerns if recession materializes.",
+  "active_alerts": [],
+  "layers": {
+    "endowments": {
+      "population": 58952704,
+      "population_growth_pct": -0.0534387378437725,
+      "life_expectancy": 83.7
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 2543677000000.0,
+      "gdp_real_growth_pct": 0.5,
+      "gdp_per_capita_usd": 43161.196,
+      "inflation_cpi_pct": 1.7,
+      "unemployment_rate_pct": 6.391,
+      "current_account_pct_gdp": 1,
+      "govt_debt_pct_gdp": 136.8,
+      "fx_reserves_usd": 290547246726.359,
+      "sovereign_credit_rating": "S&P: BBB+, Moody's: Baa2, Fitch: BBB",
+      "central_bank_policy_rate_pct": 2.0
+    },
+    "military": {
+      "military_spending_usd": 32000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.5,
+      "energy_independence_index": 0.2,
+      "supply_chain_chokepoint_exposure": 0.42,
+      "composite_national_power_index": 54.7,
+      "political_risk_premium_bps": 150,
+      "market_accessibility_score": 0.603
+    }
   }
 }

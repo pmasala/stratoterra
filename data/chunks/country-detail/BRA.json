@@ -129,7 +129,15 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 22000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
@@ -200,5 +208,56 @@
     "outlook": "Brazilian asset volatility will increase as the October election approaches. EU-Mercosur agreement is structurally positive for agricultural exporters. Commodity exposure provides mixed signals: agricultural exports benefit, oil price surge has mixed impact (Brazil is a net oil exporter).",
     "investor_implications": "Brazilian real and Ibovespa will face election volatility. Agricultural sector is a Mercosur beneficiary. Petrobras benefits from oil surge. Political risk premium likely to widen as election approaches. Fixed income carries high real yields.",
     "data_quality_note": "Brazil macro data is current. Polling data from single source (Atlas/Bloomberg)."
+  },
+  "code": "BRA",
+  "name": "Brazil",
+  "executive_summary": "Brazil's October 2026 presidential race is in a statistical dead heat (Bolsonaro 46.3% vs Lula 46.2%). The EU-Mercosur trade agreement entered provisional application -- Brazil's lower house approved and Senate expected soon. Agricultural exports to Europe will benefit from reduced tariffs. GDP growth at 2.4% is stable. Real at 5.81/USD.",
+  "key_changes": [
+    "Presidential polls show dead heat: Bolsonaro 46.3% vs Lula 46.2% (moderate)",
+    "EU-Mercosur provisional application benefits Brazilian agricultural exports (major)",
+    "Brazil's lower house approved Mercosur ratification; Senate vote pending"
+  ],
+  "outlook": "Brazilian asset volatility will increase as the October election approaches. EU-Mercosur agreement is structurally positive for agricultural exporters. Commodity exposure provides mixed signals: agricultural exports benefit, oil price surge has mixed impact (Brazil is a net oil exporter).",
+  "investor_implications": "Brazilian real and Ibovespa will face election volatility. Agricultural sector is a Mercosur beneficiary. Petrobras benefits from oil surge. Political risk premium likely to widen as election approaches. Fixed income carries high real yields.",
+  "active_alerts": [
+    {
+      "severity": "watch",
+      "title": "EU-Mercosur Partnership Agreement signed Jan 17, opening largest FTA ever negotiated",
+      "description": "EU-Mercosur Partnership Agreement (EMPA) signed January 17, 2026 covering EU and Mercosur nations (Brazil, Argentina, Uruguay, Paraguay). Interim Trade Agreement enables provisional application. This is the largest trade agreement ever negotiated, affecting 780 million people. Brazil stands to benefit significantly from improved market access to EU for agricultural exports."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 211998573,
+      "population_growth_pct": 0.405467027627251,
+      "life_expectancy": 75.848
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 2256910000000.0,
+      "gdp_real_growth_pct": 2.4,
+      "gdp_per_capita_usd": 10577.855,
+      "inflation_cpi_pct": 5.2,
+      "unemployment_rate_pct": 5.97,
+      "current_account_pct_gdp": -2.5,
+      "govt_debt_pct_gdp": 91.4,
+      "fx_reserves_usd": 329732443813.378,
+      "sovereign_credit_rating": "S&P: BB, Moody's: Ba1, Fitch: BB",
+      "central_bank_policy_rate_pct": 15.0
+    },
+    "military": {
+      "military_spending_usd": 22000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 1.0,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.18,
+      "composite_national_power_index": 44.0,
+      "political_risk_premium_bps": 400,
+      "market_accessibility_score": 0.479
+    }
   }
 }

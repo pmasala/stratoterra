@@ -1,31 +1,595 @@
 {
-  "generated_at": "2026-03-02T15:00:00Z",
-  "run_id": "2026-W09",
   "schema_version": "1.0.0",
-  "files": {
-    "all_countries_summary": {
-      "path": "data/chunks/country-summary/all_countries_summary.json",
-      "size_bytes": 40537,
-      "countries": 75,
-      "last_modified": "2026-03-02T15:00:00Z"
+  "generated_at": "2026-03-02T15:00:00Z",
+  "pipeline_run_date": "2026-03-02",
+  "total_files": 97,
+  "files": [
+    {
+      "path": "country-detail/AGO.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6063,
+      "content_type": "application/json"
     },
-    "country_detail": {
-      "path": "data/chunks/country-detail/",
-      "count": 75,
-      "last_modified": "2026-03-02T15:00:00Z"
+    {
+      "path": "country-detail/ARE.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 11211,
+      "content_type": "application/json"
     },
-    "relations": {
-      "path": "data/chunks/relations/",
-      "count": 5,
-      "last_modified": "2026-03-02T15:00:00Z"
+    {
+      "path": "country-detail/ARG.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 10900,
+      "content_type": "application/json"
     },
-    "weekly_briefing": {
-      "path": "data/chunks/global/weekly_briefing.json",
-      "last_modified": "2026-03-02T15:00:00Z"
+    {
+      "path": "country-detail/AUS.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8961,
+      "content_type": "application/json"
     },
-    "alert_index": {
-      "path": "data/chunks/global/alert_index.json",
-      "last_modified": "2026-03-02T15:00:00Z"
+    {
+      "path": "country-detail/AZE.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6067,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/BGD.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8355,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/BGR.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6087,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/BRA.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 9890,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/CAN.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 10895,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/CHE.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8465,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/CHL.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 7702,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/CHN.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 11697,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/CIV.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 5870,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/COD.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6484,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/COL.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8160,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/CZE.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 7506,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/DEU.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 11796,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/EGY.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8980,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/ESP.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8517,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/ETH.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6751,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/FIN.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 7741,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/FRA.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8736,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/GBR.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 10557,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/GEO.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6539,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/GHA.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6524,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/GRC.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 7844,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/HRV.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6068,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/HUN.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6086,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/IDN.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8574,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/IND.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 9827,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/IRL.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 7826,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/IRN.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 11822,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/IRQ.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 9823,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/ISR.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 11209,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/ITA.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8591,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/JOR.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6064,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/JPN.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 11615,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/KAZ.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 7679,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/KEN.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6054,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/KOR.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 11452,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/KWT.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 9965,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/LBY.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 7110,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/LKA.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6419,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/MAR.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 7527,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/MEX.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 10636,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/MMR.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6645,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/MOZ.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6495,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/MYS.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8208,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/NGA.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 10293,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/NLD.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8717,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/NOR.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8810,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/NZL.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 7436,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/OMN.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 9732,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/PAK.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 10454,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/PER.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8474,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/PHL.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 10288,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/POL.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 9571,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/PRT.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 7857,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/QAT.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 10180,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/ROU.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 7690,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/RUS.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 11797,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/SAU.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 10684,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/SEN.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 5837,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/SGP.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 9067,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/SRB.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6079,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/SWE.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8611,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/THA.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8328,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/TUR.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 10860,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/TWN.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 11073,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/TZA.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 5850,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/UKR.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 11671,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/USA.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 13705,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/UZB.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 6067,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/VNM.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8702,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-detail/ZAF.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 8844,
+      "content_type": "application/json"
+    },
+    {
+      "path": "timeseries/BRA_macro.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 1124,
+      "content_type": "application/json"
+    },
+    {
+      "path": "timeseries/CHN_macro.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 1125,
+      "content_type": "application/json"
+    },
+    {
+      "path": "timeseries/DEU_macro.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 1128,
+      "content_type": "application/json"
+    },
+    {
+      "path": "timeseries/NGA_macro.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 1140,
+      "content_type": "application/json"
+    },
+    {
+      "path": "timeseries/USA_macro.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 1124,
+      "content_type": "application/json"
+    },
+    {
+      "path": "supranational/ASEAN.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 3503,
+      "content_type": "application/json"
+    },
+    {
+      "path": "supranational/BRICS.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 3538,
+      "content_type": "application/json"
+    },
+    {
+      "path": "supranational/EU.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 3238,
+      "content_type": "application/json"
+    },
+    {
+      "path": "supranational/G20.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 4106,
+      "content_type": "application/json"
+    },
+    {
+      "path": "supranational/G7.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 3778,
+      "content_type": "application/json"
+    },
+    {
+      "path": "supranational/NATO.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 3452,
+      "content_type": "application/json"
+    },
+    {
+      "path": "supranational/OPEC.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 3854,
+      "content_type": "application/json"
+    },
+    {
+      "path": "relations/CHN_USA.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 2293,
+      "content_type": "application/json"
+    },
+    {
+      "path": "relations/DEU_FRA.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 2737,
+      "content_type": "application/json"
+    },
+    {
+      "path": "relations/GBR_USA.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 2186,
+      "content_type": "application/json"
+    },
+    {
+      "path": "relations/IRN_SAU.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 2473,
+      "content_type": "application/json"
+    },
+    {
+      "path": "relations/RUS_UKR.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 2412,
+      "content_type": "application/json"
+    },
+    {
+      "path": "relations/relation_index.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 2399,
+      "content_type": "application/json"
+    },
+    {
+      "path": "country-summary/all_countries_summary.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 63886,
+      "content_type": "application/json"
+    },
+    {
+      "path": "global/alert_index.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 92815,
+      "content_type": "application/json"
+    },
+    {
+      "path": "global/global_rankings.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 461,
+      "content_type": "application/json"
+    },
+    {
+      "path": "global/weekly_briefing.json",
+      "last_modified": "2026-03-02T15:00:00Z",
+      "size_bytes": 27968,
+      "content_type": "application/json"
     }
+  ],
+  "summary_chunk": {
+    "path": "country-summary/all_countries_summary.json",
+    "size_bytes": 63886,
+    "country_count": 75
   }
 }

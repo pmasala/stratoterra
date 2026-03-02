@@ -129,6 +129,13 @@
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W09"
+    },
+    "military_spending_usd": {
+      "value": 997000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
     }
   },
   "trade": {},
@@ -204,5 +211,75 @@
     "outlook": "The US faces a potential stagflation scenario: oil price shock from Hormuz disruption pushes inflation higher while recession probability rises on trade disruption and consumer confidence deterioration. The constitutional crisis over trade policy creates legal uncertainty for hundreds of billions in tariff collections. March FOMC (17-18) is a key decision point. Trump-Xi summit March 30 could either escalate or de-escalate China trade tensions.",
     "investor_implications": "Defensive positioning warranted: overweight Treasuries (10Y below 4%), gold ($5,278), energy, and defense. Underweight consumer discretionary, airlines, and trade-exposed manufacturers. Monitor VIX spike on Monday open. The $200B tariff refund question creates contingent liability for US fiscal position. Defense contractors (Lockheed, Raytheon, Northrop) are direct beneficiaries of Iran operations.",
     "data_quality_note": "US macro data is high quality. Recession probability estimates are analyst consensus, not official forecasts. Market futures data is pre-Monday-open and may shift significantly."
+  },
+  "code": "USA",
+  "name": "United States",
+  "executive_summary": "The US faces converging crises this week: the SCOTUS struck down IEEPA tariffs 6-3, prompting Trump to impose 15% global tariffs under Section 122. Additional 10% China tariffs (20% total) and 25% Canada/Mexico tariffs take effect March 4. US-Israeli Operation Epic Fury struck 1,000+ targets in Iran -- the largest US military operation since Iraq 2003 -- with 3 US soldiers killed in Iranian retaliation. Recession probability jumped from 25-30% to 40-50%. Dow futures dropped 517 points. Defense spending at $997B. Fed holds at 3.50-3.75%.",
+  "key_changes": [
+    "SCOTUS struck down IEEPA tariffs 6-3; Trump pivoted to Section 122 with 15% global tariff (transformative)",
+    "Additional 10% China tariff (20% total) and 25% Canada/Mexico tariffs effective March 4 (major)",
+    "US-Israeli strikes hit 1,000+ Iran targets; 3 US soldiers killed in Kuwait (transformative)",
+    "Recession probability surged from 25-30% to 40-50%; Dow futures -517 points",
+    "S&P 500 posted largest monthly decline in a year; safe-haven rotation to USD, gold, Treasuries",
+    "Fed holds at 3.50-3.75%; oil shock creates stagflation risk limiting future rate cuts"
+  ],
+  "outlook": "The US faces a potential stagflation scenario: oil price shock from Hormuz disruption pushes inflation higher while recession probability rises on trade disruption and consumer confidence deterioration. The constitutional crisis over trade policy creates legal uncertainty for hundreds of billions in tariff collections. March FOMC (17-18) is a key decision point. Trump-Xi summit March 30 could either escalate or de-escalate China trade tensions.",
+  "investor_implications": "Defensive positioning warranted: overweight Treasuries (10Y below 4%), gold ($5,278), energy, and defense. Underweight consumer discretionary, airlines, and trade-exposed manufacturers. Monitor VIX spike on Monday open. The $200B tariff refund question creates contingent liability for US fiscal position. Defense contractors (Lockheed, Raytheon, Northrop) are direct beneficiaries of Iran operations.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "US faces trade policy constitutional crisis: SCOTUS strikes down IEEPA tariffs, Section 122 imposed",
+      "description": "The Supreme Court struck down IEEPA tariffs 6-3, ruling the President lacks tariff authority under the statute. Trump immediately imposed 15% global tariffs under Section 122 of the Trade Act. This represents a fundamental restructuring of US trade policy legal framework. Combined with recession probability jumping to 40-50% on Iran conflict, US CPI corruption score at all-time low of 64, and political stability trend at decrease, this creates significant uncertainty for global markets."
+    },
+    {
+      "severity": "warning",
+      "title": "US recession probability surges to 40-50% on Iran conflict and trade disruption",
+      "description": "US GDP growth trend shifted to decrease with recession probability estimates jumping from 25-30% to 40-50%. Dow futures dropped 517 points, S&P 500 futures lost 1%. Oil price surge to $100/barrel forecast if Iran conflict persists. Combined with Section 122 global tariffs disrupting trade patterns and fiscal expansion adding $3.4-4.1 trillion to national debt, the US faces converging economic headwinds."
+    },
+    {
+      "severity": "warning",
+      "title": "Global nuclear arms control framework collapses: New START expired, NK tests, Iran nuclear targets struck",
+      "description": "The New START treaty -- the last nuclear arms control agreement between the US and Russia -- expired without extension. North Korea tested hypersonic missiles in its first 2026 ballistic test. Russia is planning new ICBM tests. Iran's nuclear infrastructure was targeted in US-Israeli strikes. The global nuclear order is in its most precarious state since the Cold War, with significant implications for defense spending, risk premiums, and geopolitical stability."
+    },
+    {
+      "severity": "watch",
+      "title": "US captures Venezuelan President Maduro; oil sanctions eased via OFAC general licenses",
+      "description": "US conducted special operation Jan 3 to capture President Maduro. OFAC issued multiple general licenses easing Venezuela oil sanctions (GL 46A, Feb 10). Trump declared US would run Venezuela until 'proper transition'. International condemnation from Brazil, China, France, Mexico, Russia, and others. Significant implications for Latin American sovereignty norms and oil markets."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 340110988,
+      "population_growth_pct": 0.976421684505429,
+      "life_expectancy": 78.3853658536585
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 30615743000000.0,
+      "gdp_real_growth_pct": 2,
+      "gdp_per_capita_usd": 89598.86,
+      "inflation_cpi_pct": 2.7,
+      "unemployment_rate_pct": 4.198,
+      "current_account_pct_gdp": -4,
+      "govt_debt_pct_gdp": 125,
+      "fx_reserves_usd": 910036546651.5,
+      "sovereign_credit_rating": "S&P: AA+, Moody's: Aa1, Fitch: AA+",
+      "central_bank_policy_rate_pct": 3.625
+    },
+    "military": {
+      "defense_spending_usd": 997000000000,
+      "military_spending_usd": 997000000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.925,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.2,
+      "composite_national_power_index": 95.7,
+      "political_risk_premium_bps": 0,
+      "market_accessibility_score": 0.915
+    }
   }
 }
