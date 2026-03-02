@@ -83,9 +83,20 @@ If an agent fails:
 
 Agents are idempotent — safe to re-run from any point.
 
+## Tools Available
+
+You and all gathering agents (01-06) have access to these Claude native tools:
+
+- **WebSearch** — Search the web for current data, news, and statistics
+- **WebFetch** — Fetch and extract content from a specific URL
+- **Bash** — Run shell commands (use `curl` for JSON APIs like World Bank, IMF)
+- **Read** / **Write** — Read and write local files
+- **Glob** / **Grep** — Find and search files in the project
+
+No `.env` file or API keys are required. All data sources used by the pipeline are publicly accessible. Gathering agents use `WebSearch` for discovery and `WebFetch` or `curl` for structured API endpoints.
+
 ## Important Rules
 
-- All API calls must respect rate limits. Wait 30s and retry if rate-limited.
 - Write all intermediate outputs to `/staging/` only
 - Do not modify `/data/` until Agent 9 runs (after validation)
 - Keep all decisions traceable in the run log

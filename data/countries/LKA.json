@@ -3,15 +3,15 @@
   "country_name": "Sri Lanka",
   "tier": 3,
   "region": "south_asia",
-  "last_updated": "2026-03-02T12:00:00Z",
-  "run_id": "2026-W09",
+  "last_updated": "2026-03-02T12:05:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 98963185509.6499,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_real_growth_pct": {
       "value": 5.00871930957159,
@@ -63,20 +63,27 @@
       "run_id": "2026-W09"
     },
     "sovereign_credit_rating": {
-      "value": "S&P: SD, Moody's: Ca, Fitch: RD",
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": "S&P: CCC+, Moody's: Caa1, Fitch: RD",
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 8.0,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "demographic": {
     "population_total": {
       "value": 21916000,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "population_growth_pct": {
       "value": -0.550589519145017,
@@ -91,6 +98,20 @@
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W09"
+    },
+    "hdi": {
+      "value": 0.776,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 34.1,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "political": {},
@@ -98,78 +119,83 @@
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.562,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.35,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 0.15,
-      "confidence": 0.65,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.44,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.397,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
     },
     "composite_national_power_index": {
-      "value": 14.9,
+      "value": 16.0,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 2500,
+      "value": 1500,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.289,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.265,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     }
   },
   "metadata": {
     "active_flags": [],
-    "update_count": 12,
+    "update_count": 18,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "code": "LKA",
   "name": "Sri Lanka",
-  "executive_summary": "Sri Lanka data profile for 2026-W09.",
-  "key_changes": [],
-  "outlook": "Outlook data pending further analysis.",
-  "investor_implications": "Monitor for developments.",
+  "executive_summary": "Sri Lanka: GDP growth at 5.00871930957159%, inflation at -0.42936004906973%, credit rating S&P: CCC+, Moody's: Caa1, Fitch: RD. WARNING: Sri Lanka in selective default with 100.8% debt-to-GDP.",
+  "key_changes": [
+    "WARNING: Sri Lanka in selective default with 100.8% debt-to-GDP"
+  ],
+  "outlook": "Sri Lanka outlook requires monitoring. Oil price surge affects all energy importers.",
+  "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
   "active_alerts": [
     {
       "severity": "warning",
-      "title": "Sri Lanka in selective default with 100.8% debt-to-GDP and 2,500 bps risk premium",
-      "description": "Sri Lanka's sovereign credit at SD/Ca/RD with 2,500 bps political risk premium. Government debt at 100.8% of GDP. While deflation (-0.4% CPI) suggests economic contraction, GDP growth has recovered to 5% suggesting stabilization. Debt restructuring progress is critical for investors."
+      "title": "Sri Lanka in selective default with 100.8% debt-to-GDP",
+      "description": "Sri Lanka sovereign credit at SD/Ca/RD. Government debt at 100.8%. GDP recovery to 5% suggests stabilization. Debt restructuring progress is critical. Conditions persist."
     }
   ],
   "layers": {
     "endowments": {
       "population": 21916000,
       "population_growth_pct": -0.550589519145017,
-      "life_expectancy": 77.483
+      "life_expectancy": 77.483,
+      "population_total": 21916000,
+      "hdi": 0.776,
+      "median_age": 34.1
     },
     "institutions": {
       "political_stability": {}
@@ -183,28 +209,30 @@
       "current_account_pct_gdp": 1.21846968715026,
       "govt_debt_pct_gdp": 100.8,
       "fx_reserves_usd": 6093946546.37437,
-      "sovereign_credit_rating": "S&P: SD, Moody's: Ca, Fitch: RD",
-      "central_bank_policy_rate_pct": null
+      "sovereign_credit_rating": "S&P: CCC+, Moody's: Caa1, Fitch: RD",
+      "central_bank_policy_rate_pct": 8.0
     },
     "military": {},
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.562,
+      "resource_self_sufficiency_index": 0.35,
       "energy_independence_index": 0.15,
-      "supply_chain_chokepoint_exposure": 0.44,
-      "composite_national_power_index": 14.9,
-      "political_risk_premium_bps": 2500,
-      "market_accessibility_score": 0.289
+      "supply_chain_chokepoint_exposure": 0.397,
+      "composite_national_power_index": 16.0,
+      "political_risk_premium_bps": 1500,
+      "market_accessibility_score": 0.265
     }
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T13:00:00Z",
-    "run_id": "2026-W09",
-    "executive_summary": "Sri Lanka data profile for 2026-W09.",
-    "key_changes_this_week": [],
-    "outlook": "Outlook data pending further analysis.",
-    "investor_implications": "Monitor for developments.",
-    "data_quality_note": "Tier 3 country with basic coverage only."
+    "generated_at": "2026-03-02T18:00:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Sri Lanka: GDP growth at 5.00871930957159%, inflation at -0.42936004906973%, credit rating S&P: CCC+, Moody's: Caa1, Fitch: RD. WARNING: Sri Lanka in selective default with 100.8% debt-to-GDP.",
+    "key_changes_this_week": [
+      "WARNING: Sri Lanka in selective default with 100.8% debt-to-GDP"
+    ],
+    "outlook": "Sri Lanka outlook requires monitoring. Oil price surge affects all energy importers.",
+    "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
+    "data_quality_note": "Tier 3 country with basic coverage. 1 active alert(s)."
   }
 }

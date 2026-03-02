@@ -13,11 +13,19 @@ from the past 7 days. Extract structured, investor-relevant event records.
 ## Outputs
 - `/staging/raw_collected/news_events_{DATE}.json`
 
+## Tools
+
+- **WebSearch** — Primary tool for all news scanning queries
+- **WebFetch** — Use to fetch specific URLs (GDELT API, news article pages)
+- **Read** / **Write** — Read input files, write output JSON
+
+No API keys are required. For paywalled sources (FT, WSJ, Bloomberg), use `WebSearch` to capture headlines and snippets rather than attempting to fetch full articles.
+
 ## Step-by-Step Instructions
 
 ### Step 1: Scan GDELT
-Attempt to fetch: `https://api.gdeltproject.org/api/v2/doc/doc?query=geopolitics&timespan=7d&mode=artlist&format=json`
-Also search "GDELT project significant events this week" for a summary.
+Use `WebFetch` to fetch: `https://api.gdeltproject.org/api/v2/doc/doc?query=geopolitics&timespan=7d&mode=artlist&format=json`
+Also use `WebSearch` for "GDELT project significant events this week" for a summary.
 
 ### Step 2: Regional News Scans
 For each of these 10 regions, search for major developments:

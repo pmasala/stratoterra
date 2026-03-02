@@ -3,22 +3,22 @@
   "country_name": "Ghana",
   "tier": 3,
   "region": "sub_saharan_africa",
-  "last_updated": "2026-03-02T12:00:00Z",
-  "run_id": "2026-W09",
+  "last_updated": "2026-03-02T12:05:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
-      "value": 111963000000.0,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 82308110386.4641,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_real_growth_pct": {
       "value": 4,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_per_capita_usd": {
       "value": 3193.071,
@@ -30,9 +30,9 @@
     "inflation_cpi_pct": {
       "value": 16.6,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "unemployment_rate_pct": {
       "value": 2.979,
@@ -57,10 +57,10 @@
     },
     "govt_debt_pct_gdp": {
       "value": 59.1,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4.8,
@@ -70,20 +70,27 @@
       "run_id": "2026-W09"
     },
     "sovereign_credit_rating": {
-      "value": "S&P: SD, Moody's: Caa3, Fitch: RD",
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": "S&P: RD, Moody's: NR, Fitch: RD",
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 27.0,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "demographic": {
     "population_total": {
       "value": 34427414,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "population_growth_pct": {
       "value": 1.87500010333119,
@@ -98,6 +105,20 @@
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W09"
+    },
+    "hdi": {
+      "value": 0.628,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 21.4,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "political": {},
@@ -105,84 +126,98 @@
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.763,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.45,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
-      "value": 0.45,
-      "confidence": 0.65,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.4,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.22,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.217,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
     },
     "composite_national_power_index": {
-      "value": 10.3,
+      "value": 11.8,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 2500,
+      "value": 3000,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.275,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.263,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     }
   },
   "metadata": {
-    "active_flags": [],
-    "update_count": 13,
+    "active_flags": [
+      {
+        "factor": "macroeconomic.gdp_nominal_usd",
+        "reason": "Large % change: 26.5% (threshold: 15%)",
+        "previous_value": 111963000000.0,
+        "new_value": 82308110386.4641,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      }
+    ],
+    "update_count": 22,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "code": "GHA",
   "name": "Ghana",
-  "executive_summary": "Ghana data profile for 2026-W09.",
-  "key_changes": [],
-  "outlook": "Outlook data pending further analysis.",
-  "investor_implications": "Monitor for developments.",
+  "executive_summary": "Ghana: GDP growth at 4%, inflation at 16.6%, credit rating S&P: RD, Moody's: NR, Fitch: RD. WARNING: Ghana in selective default with 2,500 bps risk premium.",
+  "key_changes": [
+    "WARNING: Ghana in selective default with 2,500 bps risk premium"
+  ],
+  "outlook": "Ghana outlook requires monitoring. Oil price surge affects all energy importers.",
+  "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
   "active_alerts": [
     {
       "severity": "warning",
       "title": "Ghana in selective default with 2,500 bps risk premium",
-      "description": "Ghana's sovereign credit rating at SD/Caa3/RD indicates selective default status. Political risk premium at 2,500 bps. Inflation at 16.6%. Government debt at 59.1% of GDP. While Ghana's debt restructuring is ongoing, the combination of default status and high risk premium makes it a high-risk environment for investors."
+      "description": "Ghana sovereign credit at SD/Caa3/RD. Political risk premium at 2,500 bps. Inflation at 16.6%. Debt restructuring ongoing. Conditions persist."
     }
   ],
   "layers": {
     "endowments": {
       "population": 34427414,
       "population_growth_pct": 1.87500010333119,
-      "life_expectancy": 65.498
+      "life_expectancy": 65.498,
+      "population_total": 34427414,
+      "hdi": 0.628,
+      "median_age": 21.4
     },
     "institutions": {
       "political_stability": {}
     },
     "economy": {
-      "gdp_nominal_usd": 111963000000.0,
+      "gdp_nominal_usd": 82308110386.4641,
       "gdp_real_growth_pct": 4,
       "gdp_per_capita_usd": 3193.071,
       "inflation_cpi_pct": 16.6,
@@ -190,28 +225,30 @@
       "current_account_pct_gdp": 1.8,
       "govt_debt_pct_gdp": 59.1,
       "fx_reserves_usd": 3623904994.58702,
-      "sovereign_credit_rating": "S&P: SD, Moody's: Caa3, Fitch: RD",
-      "central_bank_policy_rate_pct": null
+      "sovereign_credit_rating": "S&P: RD, Moody's: NR, Fitch: RD",
+      "central_bank_policy_rate_pct": 27.0
     },
     "military": {},
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.763,
-      "energy_independence_index": 0.45,
-      "supply_chain_chokepoint_exposure": 0.22,
-      "composite_national_power_index": 10.3,
-      "political_risk_premium_bps": 2500,
-      "market_accessibility_score": 0.275
+      "resource_self_sufficiency_index": 0.45,
+      "energy_independence_index": 0.4,
+      "supply_chain_chokepoint_exposure": 0.217,
+      "composite_national_power_index": 11.8,
+      "political_risk_premium_bps": 3000,
+      "market_accessibility_score": 0.263
     }
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T13:00:00Z",
-    "run_id": "2026-W09",
-    "executive_summary": "Ghana data profile for 2026-W09.",
-    "key_changes_this_week": [],
-    "outlook": "Outlook data pending further analysis.",
-    "investor_implications": "Monitor for developments.",
-    "data_quality_note": "Tier 3 country with basic coverage only."
+    "generated_at": "2026-03-02T18:00:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Ghana: GDP growth at 4%, inflation at 16.6%, credit rating S&P: RD, Moody's: NR, Fitch: RD. WARNING: Ghana in selective default with 2,500 bps risk premium.",
+    "key_changes_this_week": [
+      "WARNING: Ghana in selective default with 2,500 bps risk premium"
+    ],
+    "outlook": "Ghana outlook requires monitoring. Oil price surge affects all energy importers.",
+    "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
+    "data_quality_note": "Tier 3 country with basic coverage. 1 active alert(s)."
   }
 }

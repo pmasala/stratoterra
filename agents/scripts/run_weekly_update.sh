@@ -56,23 +56,18 @@ ISO_TIMESTAMP="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 export CURRENT_DATE YEAR WEEK_NUMBER RUN_ID ISO_TIMESTAMP
 
 # ---------------------------------------------------------------------------
-# Check for .env file and load it
+# Load optional .env overrides (pipeline settings only — no API keys needed)
 # ---------------------------------------------------------------------------
-check_env_file() {
+load_env_overrides() {
   local env_file="${PROJECT_ROOT}/.env"
-  if [[ ! -f "${env_file}" ]]; then
-    warn ".env file not found at ${env_file}"
-    warn "Copy .env.example to .env and fill in your API keys."
-    warn "Proceeding without API keys — some data collection may fail."
-    return
+  if [[ -f "${env_file}" ]]; then
+    info "Loading pipeline overrides from .env"
+    # shellcheck disable=SC1090
+    set -o allexport
+    source "${env_file}"
+    set +o allexport
+    success "Environment overrides loaded"
   fi
-
-  info "Loading environment from .env"
-  # shellcheck disable=SC1090
-  set -o allexport
-  source "${env_file}"
-  set +o allexport
-  success "Environment loaded"
 }
 
 # ---------------------------------------------------------------------------
@@ -82,7 +77,7 @@ check_prerequisites() {
   info "Checking prerequisites..."
   local missing=0
 
-  for cmd in python3 git jq curl; do
+  for cmd in python3 git jq; do
     if command -v "${cmd}" &>/dev/null; then
       success "${cmd} found"
     else
@@ -181,7 +176,7 @@ print_pipeline_summary() {
 # Main
 # ---------------------------------------------------------------------------
 main() {
-  check_env_file
+  load_env_overrides
   check_prerequisites
   create_staging_dirs
   initialize_run_log
@@ -190,8 +185,8 @@ main() {
 
   echo -e "${GREEN}${BOLD}Pipeline environment ready.${RESET}"
   echo ""
-  echo "Next step: Open a Claude Code MAX session and paste the orchestrator prompt:"
-  echo "  agents/prompts/orchestrator.md"
+  echo "Next step: Run the pipeline with Claude Code MAX:"
+  echo "  claude --dangerously-skip-permissions agents/prompts/orchestrator.md"
   echo ""
   echo "Run ID: ${RUN_ID}"
   echo "Started: ${ISO_TIMESTAMP}"

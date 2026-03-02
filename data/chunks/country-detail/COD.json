@@ -3,22 +3,22 @@
   "country_name": "DR Congo",
   "tier": 3,
   "region": "sub_saharan_africa",
-  "last_updated": "2026-03-02T12:00:00Z",
-  "run_id": "2026-W09",
+  "last_updated": "2026-03-02T12:05:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
-      "value": 82262000000.0,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 70962185790.7094,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_real_growth_pct": {
       "value": 5.3,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_per_capita_usd": {
       "value": 772.032,
@@ -43,10 +43,10 @@
     },
     "govt_debt_pct_gdp": {
       "value": 19.1,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "fx_reserves_usd": {
       "value": 5104181646.5526,
@@ -58,9 +58,9 @@
     "inflation_cpi_pct": {
       "value": 8.8,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 5.3,
@@ -70,20 +70,27 @@
       "run_id": "2026-W09"
     },
     "sovereign_credit_rating": {
-      "value": "S&P: B-, Moody's: B3, Fitch: B-",
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": "S&P: B-, Moody's: NR, Fitch: NR",
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 25.0,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "demographic": {
     "population_total": {
       "value": 109276265,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "population_growth_pct": {
       "value": 3.24257627586721,
@@ -98,6 +105,20 @@
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W09"
+    },
+    "hdi": {
+      "value": 0.522,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 16.9,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "political": {},
@@ -105,66 +126,68 @@
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.7,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.45,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
-      "value": 0.1,
-      "confidence": 0.65,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.35,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.14,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.127,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
     },
     "composite_national_power_index": {
-      "value": 6.8,
+      "value": 8.1,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 1300,
+      "value": 1250,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.133,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.16,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     }
   },
   "metadata": {
     "active_flags": [],
-    "update_count": 13,
+    "update_count": 22,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "code": "COD",
   "name": "DR Congo",
-  "executive_summary": "DR Congo data profile for 2026-W09.",
-  "key_changes": [],
-  "outlook": "Outlook data pending further analysis.",
-  "investor_implications": "Monitor for developments.",
+  "executive_summary": "DR Congo: GDP growth at 5.3%, inflation at 8.8%, credit rating S&P: B-, Moody's: NR, Fitch: NR.",
+  "key_changes": [
+    "No significant changes this week"
+  ],
+  "outlook": "DR Congo outlook requires monitoring. Oil price surge affects all energy importers.",
+  "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
   "active_alerts": [
     {
       "severity": "watch",
@@ -176,13 +199,16 @@
     "endowments": {
       "population": 109276265,
       "population_growth_pct": 3.24257627586721,
-      "life_expectancy": 61.895
+      "life_expectancy": 61.895,
+      "population_total": 109276265,
+      "hdi": 0.522,
+      "median_age": 16.9
     },
     "institutions": {
       "political_stability": {}
     },
     "economy": {
-      "gdp_nominal_usd": 82262000000.0,
+      "gdp_nominal_usd": 70962185790.7094,
       "gdp_real_growth_pct": 5.3,
       "gdp_per_capita_usd": 772.032,
       "inflation_cpi_pct": 8.8,
@@ -190,28 +216,30 @@
       "current_account_pct_gdp": -3.3,
       "govt_debt_pct_gdp": 19.1,
       "fx_reserves_usd": 5104181646.5526,
-      "sovereign_credit_rating": "S&P: B-, Moody's: B3, Fitch: B-",
-      "central_bank_policy_rate_pct": null
+      "sovereign_credit_rating": "S&P: B-, Moody's: NR, Fitch: NR",
+      "central_bank_policy_rate_pct": 25.0
     },
     "military": {},
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.7,
-      "energy_independence_index": 0.1,
-      "supply_chain_chokepoint_exposure": 0.14,
-      "composite_national_power_index": 6.8,
-      "political_risk_premium_bps": 1300,
-      "market_accessibility_score": 0.133
+      "resource_self_sufficiency_index": 0.45,
+      "energy_independence_index": 0.35,
+      "supply_chain_chokepoint_exposure": 0.127,
+      "composite_national_power_index": 8.1,
+      "political_risk_premium_bps": 1250,
+      "market_accessibility_score": 0.16
     }
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T13:00:00Z",
-    "run_id": "2026-W09",
-    "executive_summary": "DR Congo data profile for 2026-W09.",
-    "key_changes_this_week": [],
-    "outlook": "Outlook data pending further analysis.",
-    "investor_implications": "Monitor for developments.",
+    "generated_at": "2026-03-02T18:00:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "DR Congo: GDP growth at 5.3%, inflation at 8.8%, credit rating S&P: B-, Moody's: NR, Fitch: NR.",
+    "key_changes_this_week": [
+      "No significant changes this week"
+    ],
+    "outlook": "DR Congo outlook requires monitoring. Oil price surge affects all energy importers.",
+    "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
     "data_quality_note": "Tier 3 country with basic coverage only."
   }
 }

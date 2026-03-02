@@ -1,0 +1,455 @@
+{
+  "report_date": "2026-03-02",
+  "run_id": "2026-W10",
+  "generated_at": "2026-03-02T20:00:00Z",
+  "agent": "agent_15_quality_reporter",
+  "prior_run_id": "2026-W09",
+
+  "coverage": {
+    "tier_1_avg_pct": 99.2,
+    "tier_2_avg_pct": 83.8,
+    "tier_3_avg_pct": 58.4,
+    "tier_1_target_pct": 90,
+    "tier_2_target_pct": 70,
+    "tier_3_target_pct": 50,
+    "tier_1_meets_target": true,
+    "tier_2_meets_target": true,
+    "tier_3_meets_target": true,
+    "tier_1_countries": 30,
+    "tier_2_countries": 25,
+    "tier_3_countries": 20,
+    "total_expected_factors_per_country": 37,
+    "section_coverage_avg_pct": {
+      "macroeconomic": 100.0,
+      "demographic": 100.0,
+      "political": 0.0,
+      "military": 100.0,
+      "trade": 100.0,
+      "derived": 100.0
+    },
+    "section_note": "Political raw section remains 0% populated across all 75 countries. However, governance/institutional data IS present in the layers.institutions object (75/75 populated) from Agent 06 output. The raw 'political' section in country files is empty because the pipeline maps governance data directly to layers.institutions instead. This is a structural mismatch, not a data gap.",
+    "layer_population": {
+      "endowments": "75/75 (100%)",
+      "institutions": "75/75 (100%)",
+      "economy": "75/75 (100%)",
+      "military": "55/75 (73%)",
+      "relations": "3/75 (4%)",
+      "derived": "75/75 (100%)"
+    },
+    "critical_gaps": {
+      "relations_layer": "Only 3/75 countries have any data in the relations layer (trade section). Bilateral trade data, FTA counts, trade partners are missing for 72 countries.",
+      "military_layer_tier_3": "All 20 Tier 3 countries have 0 military factors. Data collection for smaller/frontier countries remains sparse.",
+      "political_raw_section": "Raw political section is empty for all 75 countries. Governance data flows to layers.institutions instead. Consider consolidating."
+    },
+    "flagged_countries": [
+      {
+        "code": "CHE",
+        "tier": 1,
+        "coverage_pct": 89.2,
+        "note": "Below Tier 1 average. Missing military depth and trade data."
+      },
+      {
+        "code": "MEX",
+        "tier": 1,
+        "coverage_pct": 89.2,
+        "note": "Below Tier 1 average. Missing military depth and trade data."
+      },
+      {
+        "code": "THA",
+        "tier": 1,
+        "coverage_pct": 89.2,
+        "note": "Below Tier 1 average."
+      },
+      {
+        "code": "TWN",
+        "tier": 1,
+        "coverage_pct": 89.2,
+        "note": "Below Tier 1 average. Also missing 1 demographic factor."
+      },
+      {
+        "code": "IRQ",
+        "tier": 2,
+        "coverage_pct": 75.7,
+        "note": "Lowest Tier 2 coverage. Missing 9 factors. Macro data gaps for conflict-affected country."
+      }
+    ],
+    "comparison_with_w09": {
+      "tier_1_change": "+41.6pp (57.6% -> 99.2%)",
+      "tier_2_change": "+32.5pp (51.3% -> 83.8%)",
+      "tier_3_change": "+7.7pp (50.7% -> 58.4%)",
+      "note": "Massive improvement driven by military data expansion (1% -> 100% of populated countries), trade data for major economies, exchange rate integration, and additional macroeconomic indicators. All tiers now meet targets."
+    }
+  },
+
+  "staleness": {
+    "total_factors": 2308,
+    "updated_this_run": 2081,
+    "freshness_pct": 90.2,
+    "stale_factors": 227,
+    "stale_note": "227 factors (9.8%) carry run_id 2026-W09 and were not updated in W10. These are primarily demographic factors (population, life expectancy, HDI) and some military base data that did not receive new values this week. This is expected for slowly-changing indicators.",
+    "by_tier": {
+      "tier_1": "All 30 countries have majority of factors updated in W10",
+      "tier_2": "All 25 countries have majority of factors updated in W10",
+      "tier_3": "20 countries have lower freshness due to limited source coverage"
+    }
+  },
+
+  "confidence": {
+    "overall_avg": 0.848,
+    "by_layer": {
+      "endowments": 0.904,
+      "institutions": null,
+      "economy": 0.885,
+      "military": 0.862,
+      "relations": 0.910,
+      "derived": 0.700
+    },
+    "layer_notes": {
+      "institutions": "Confidence not computable from raw section (empty). Institutions layer IS populated via layers.institutions but without per-factor confidence wrappers.",
+      "derived": "Derived metrics have uniform 0.70 confidence reflecting their computed nature and dependency on base data quality.",
+      "economy": "Strongest confidence at 0.885. Driven by authoritative sources (World Bank, IMF, central banks).",
+      "military": "Solid at 0.862. Mix of SIPRI data and agent estimates."
+    },
+    "low_confidence_countries": [],
+    "low_confidence_note": "No countries below 0.3 threshold. All countries have adequate data quality.",
+    "comparison_with_w09": {
+      "overall_change": "+0.045 (0.803 -> 0.848)",
+      "note": "Confidence improved as more data sources were integrated and cross-validated."
+    }
+  },
+
+  "validation": {
+    "total": 2737,
+    "accept": 2647,
+    "accept_with_note": 35,
+    "flag": 30,
+    "reject": 0,
+    "escalate": 25,
+    "accept_rate_pct": 96.7,
+    "avg_confidence": 0.902,
+    "min_confidence": 0.650,
+    "max_confidence": 0.990,
+    "rejected_details": [],
+    "flagged_summary": "30 flagged updates: primarily EUR/USD FX rate convention discrepancies (~28% changes from stored EUR/USD vs updated USD/EUR), emerging market GDP revisions, and central bank rate changes in BRA/TUR/MEX/RUS.",
+    "escalated_summary": "25 escalated items: all sovereign credit rating changes with 2+ notch moves or NR transitions. Includes multiple African country Moody's withdrawals (NR) and conflict-zone rating changes. All 25 accepted after human review.",
+    "comparison_with_w09": {
+      "total_change": "+1642 updates (1095 -> 2737)",
+      "accept_rate_change": "-3.1pp (99.8% -> 96.7%) due to more complex data requiring notes/flags",
+      "escalations_change": "+25 (0 -> 25) reflecting credit rating data complexity",
+      "note": "W10 processed 2.5x more data than W09 with zero rejections. The lower acceptance rate reflects the increased volume of flagged items (FX convention discrepancies, rating changes) rather than degraded quality."
+    }
+  },
+
+  "schema_conformance": {
+    "country_detail_schema": {
+      "status": "PASS",
+      "files_checked": 75,
+      "files_conforming": 75,
+      "issues": [],
+      "notes": "All 75 country files have required fields: code, name, region, tier, last_updated, executive_summary, key_changes, active_alerts, outlook, investor_implications, layers (with all 6 sublayers), narrative."
+    },
+    "alert_schema": {
+      "status": "PASS_WITH_WARNING",
+      "files_checked": 1,
+      "issues": [
+        {
+          "severity": "warning",
+          "issue": "Alert count mismatch: summary.total_active claims 61 but alerts array contains only 53 entries (52 active + 1 resolved). Run log also claims 61. Discrepancy of 8 alerts.",
+          "recommendation": "Investigate Agent 12 output pipeline. Possible truncation or filtering between generation and serialization."
+        }
+      ],
+      "individual_alerts": "All 53 alerts in the array conform to schema (severity, title, description, type, countries present)."
+    },
+    "briefing_schema": {
+      "status": "PASS",
+      "files_checked": 1,
+      "issues": [],
+      "notes": "Weekly briefing has all required fields: headline, date, market_context (object), top_stories (5 items, each with title+summary), regional_summaries (10 regions)."
+    },
+    "manifest_schema": {
+      "status": "PASS",
+      "files_checked": 1,
+      "issues": [],
+      "notes": "Manifest has schema_version (1.0.0), generated_at, and files array (97 entries). Files array is correctly typed as array."
+    },
+    "country_summary_chunk": {
+      "status": "PASS",
+      "files_checked": 1,
+      "issues": [],
+      "notes": "all_countries_summary.json is correctly an array with 75 items."
+    }
+  },
+
+  "source_diversity": {
+    "sources_in_country_files": [
+      "agent_pipeline",
+      "agent_11_derived",
+      "SIPRI/estimates"
+    ],
+    "sources_in_pipeline": [
+      "World Bank API",
+      "IMF WEO DataMapper",
+      "CountryEconomy.com (credit ratings)",
+      "CBRates.com / WorldPopulationReview (interest rates)",
+      "UNDP HDR 2025 (HDI)",
+      "WorldPopulationReview (median age)",
+      "WebSearch (major news outlets: CNBC, Al Jazeera, Bloomberg, Reuters, NPR, BBC, CNN)",
+      "GDELT Project (attempted - timed out)",
+      "Government/institutional sources (OFAC, USTR, ECB, OBR, Eurostat, UN News)"
+    ],
+    "data_sources_used_count": 9,
+    "source_diversity_assessment": "Moderate. 9 distinct source types across gathering agents. Financial market data primarily from WebSearch/WebFetch (no dedicated API). GDELT connection timed out but compensated with direct news scanning. Governance data collected but source attribution limited (generic 'agent_pipeline' label).",
+    "improvement_needed": "Source labels in country files are too generic ('agent_pipeline'). Consider propagating original source names through the pipeline for traceability."
+  },
+
+  "agent_performance": [
+    {
+      "agent_id": "agent_01",
+      "agent_name": "Official Statistics Gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "duration_minutes": 25,
+      "budget_minutes": "10-20",
+      "within_budget": false,
+      "records_processed": 1147,
+      "countries_covered": 75,
+      "notes": "5 min over budget upper bound. 1147 records across 19 indicator types. Strong performance."
+    },
+    {
+      "agent_id": "agent_02",
+      "agent_name": "Financial Data Gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "duration_minutes": 18,
+      "budget_minutes": "10-20",
+      "within_budget": true,
+      "records_processed": 94,
+      "notes": "Within budget. 94 records (37 FX, 25 bonds, 14 equities, 11 commodities, 5 CB, 2 ratings)."
+    },
+    {
+      "agent_id": "agent_03",
+      "agent_name": "News & Events Gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "duration_minutes": 35,
+      "budget_minutes": "10-20",
+      "within_budget": false,
+      "records_processed": 50,
+      "notes": "15 min over budget. GDELT timed out. Heavy week with 5 transformative events required extensive scanning."
+    },
+    {
+      "agent_id": "agent_04_05_06",
+      "agent_name": "Trade/Military/Political Gatherers",
+      "phase": "GATHER",
+      "status": "completed",
+      "notes": "Not individually timed in W10 run_log. Combined output: 192 trade, 402 military, 891 political records."
+    },
+    {
+      "agent_id": "agent_07",
+      "agent_name": "Fact Extractor & Structurer",
+      "phase": "PROCESS",
+      "status": "completed",
+      "duration_minutes": 3,
+      "budget_minutes": "20-30",
+      "within_budget": true,
+      "records_processed": 2828,
+      "notes": "Well under budget. Processed 2828 input records into 2737 factor updates + 94 event signals."
+    },
+    {
+      "agent_id": "agent_08",
+      "agent_name": "Cross-Validator & Anomaly Detector",
+      "phase": "VALIDATE",
+      "status": "completed",
+      "duration_minutes": 4,
+      "budget_minutes": "15-20",
+      "within_budget": true,
+      "records_processed": 2737,
+      "notes": "Well under budget. Validated all 2737 updates with 0 rejections."
+    },
+    {
+      "agent_id": "agent_09",
+      "agent_name": "Data Integrator",
+      "phase": "INTEGRATE",
+      "status": "completed",
+      "duration_minutes": 5,
+      "budget_minutes": "5-10",
+      "within_budget": true,
+      "records_processed": 2724,
+      "notes": "Within budget. Major improvement from W09 (168 min). 13 updates skipped for non-model countries (BWA, GLOBAL, HKG)."
+    },
+    {
+      "agent_id": "agent_10",
+      "agent_name": "Trend Estimator",
+      "phase": "ANALYZE",
+      "status": "completed",
+      "duration_minutes": 30,
+      "budget_minutes": "20-30",
+      "within_budget": true,
+      "records_processed": 605,
+      "notes": "At budget ceiling. 605 estimates across 55 countries (11 factors each)."
+    },
+    {
+      "agent_id": "agent_11",
+      "agent_name": "Derived Metrics Calculator",
+      "phase": "ANALYZE",
+      "status": "completed",
+      "duration_minutes": 8,
+      "budget_minutes": "5-10",
+      "within_budget": true,
+      "records_processed": 450,
+      "notes": "Within budget. 6 derived metrics for 75 countries."
+    },
+    {
+      "agent_id": "agent_12",
+      "agent_name": "Alert Generator",
+      "phase": "ANALYZE",
+      "status": "completed",
+      "duration_minutes": 15,
+      "budget_minutes": "15-20",
+      "within_budget": true,
+      "records_processed": 61,
+      "notes": "Within budget. 61 alerts claimed but only 53 serialized (see schema conformance warning)."
+    },
+    {
+      "agent_id": "agent_13",
+      "agent_name": "Country Profile Synthesizer",
+      "phase": "SYNTHESIZE",
+      "status": "completed",
+      "completed_at": "2026-03-02T18:00:00Z",
+      "countries_processed": 75,
+      "notes": "All 75 countries processed. Narratives generated for all tiers."
+    }
+  ],
+
+  "pipeline_timing": {
+    "pipeline_started_at": "2026-03-02T09:36:27Z",
+    "last_agent_completed_at": "2026-03-02T18:00:00Z",
+    "wall_clock_hours": 8.4,
+    "budget_hours_range": "3-5",
+    "within_budget": false,
+    "bottleneck": "Pipeline exceeded 5-hour budget by 3.4 hours. Primary cause: significant gaps between agent runs (scheduling/idle time). Agent execution times are mostly within budget. Agent 01 (+5 min) and Agent 03 (+15 min) slightly over.",
+    "comparison_with_w09": "W09 wall-clock was 14.3 hours (855 min). W10 is 8.4 hours -- a 41% improvement. Agent 09 reduced from 168 min to 5 min (incremental vs first-run)."
+  },
+
+  "critical_issues": [
+    {
+      "severity": "high",
+      "issue": "Alert count mismatch: summary claims 61, array has 53",
+      "details": "The alert_index.json summary.total_active field says 61 but the alerts array only contains 53 entries. Run log also claims 61 alerts. 8 alerts appear to have been lost between generation and serialization. Severity counts also differ: run_log says 20 warning / 28 watch but file has 21 warning / 19 watch.",
+      "action_required": "Investigate Agent 12 serialization. Verify all generated alerts are written to the output file."
+    },
+    {
+      "severity": "high",
+      "issue": "Relations layer severely under-populated (4% of countries)",
+      "details": "Only 3 of 75 countries have any data in the relations layer. No bilateral relation files were updated this run (0 relations_updated in Agent 09). The relation_index.json and relation files are not being populated by the pipeline.",
+      "action_required": "Add bilateral trade data collection. UN Comtrade free tier (100 req/hour) can provide key trade pairs."
+    },
+    {
+      "severity": "medium",
+      "issue": "Raw political section empty for all 75 countries",
+      "details": "The 'political' top-level section in country files is {} for all 75 countries. Governance data IS present in layers.institutions but not in the raw section. This creates a structural inconsistency.",
+      "action_required": "Either populate the raw political section from Agent 06 data or remove it from the schema and redirect all governance data through layers.institutions."
+    },
+    {
+      "severity": "medium",
+      "issue": "Tier 3 military data completely absent",
+      "details": "All 20 Tier 3 countries have 0 military factors. Defense spending, personnel, and capability data are not being collected for frontier countries.",
+      "action_required": "Extend military data gathering to include Tier 3. SIPRI and GlobalFirepower cover most of these countries."
+    },
+    {
+      "severity": "medium",
+      "issue": "Pipeline wall-clock 8.4 hours exceeds 5-hour budget",
+      "details": "While agent processing times are mostly within budget, total pipeline duration is 68% over the 5-hour maximum. Inter-agent idle time is the primary contributor.",
+      "action_required": "Reduce scheduling gaps between agents. Consider parallelizing independent agents (e.g., Agents 1-6 in GATHER phase)."
+    },
+    {
+      "severity": "low",
+      "issue": "Source attribution too generic in country files",
+      "details": "Most factors are labeled source='agent_pipeline'. Original source names (World Bank, IMF, SIPRI, etc.) are lost during integration.",
+      "action_required": "Propagate original source labels through Agent 07 and Agent 09."
+    }
+  ],
+
+  "recommendations": [
+    {
+      "priority": "critical",
+      "action": "Fix alert serialization to resolve 61 vs 53 count mismatch",
+      "reason": "8 alerts are being generated but not written to alert_index.json. This means the UI is missing active alerts.",
+      "impact": "Directly affects alert accuracy for end users."
+    },
+    {
+      "priority": "high",
+      "action": "Add bilateral relations data collection pipeline",
+      "reason": "Relations layer is at 4% (3/75 countries). No relation files updated this run. This is the largest remaining data gap after W10 improvements.",
+      "impact": "Would enable the relations visualization feature in the UI."
+    },
+    {
+      "priority": "high",
+      "action": "Extend military data gathering to Tier 3 countries",
+      "reason": "20 Tier 3 countries have zero military factors despite some being in active conflict zones (ETH, MMR, COD, LBY).",
+      "impact": "Critical for accurate risk assessment of frontier markets."
+    },
+    {
+      "priority": "high",
+      "action": "Resolve raw political section vs layers.institutions structural mismatch",
+      "reason": "Governance data exists in two different locations depending on the access path. This creates confusion for downstream consumers.",
+      "impact": "Improves data consistency and simplifies pipeline logic."
+    },
+    {
+      "priority": "medium",
+      "action": "Reduce pipeline scheduling gaps to bring wall-clock under 5 hours",
+      "reason": "8.4 hours wall-clock with most agents running within budget. The overhead is inter-agent dead time.",
+      "impact": "Would enable completion within the target budget window."
+    },
+    {
+      "priority": "medium",
+      "action": "Propagate source attribution through the pipeline",
+      "reason": "Generic 'agent_pipeline' labels make it impossible to trace individual data points to their original source.",
+      "impact": "Improves data provenance and enables per-source quality tracking."
+    },
+    {
+      "priority": "medium",
+      "action": "Add Tier 3 country narratives to Agent 13 scope",
+      "reason": "W09 noted 20 Tier 3 countries lacked narratives. Verify W10 state -- Agent 13 logged 75 countries processed but Tier 3 narrative depth may be minimal.",
+      "impact": "Improves user experience for frontier market researchers."
+    },
+    {
+      "priority": "low",
+      "action": "Investigate GDELT API timeout and add retry logic",
+      "reason": "GDELT timed out in Agent 03 for the second consecutive week. News scanning via WebSearch compensates but GDELT provides structured event data.",
+      "impact": "Would improve event detection reliability and reduce Agent 03 runtime."
+    }
+  ],
+
+  "summary": {
+    "headline": "W10 shows major improvements over W09 with all tier coverage targets met for the first time. Alert count mismatch is the primary issue requiring immediate attention.",
+    "data_quality": "HIGH -- 96.7% acceptance rate, 0 rejections, avg confidence 0.848",
+    "coverage_status": "ALL TARGETS MET -- Tier 1: 99.2% (target 90%), Tier 2: 83.8% (target 70%), Tier 3: 58.4% (target 50%)",
+    "schema_conformance": "PASS with 1 warning (alert count mismatch)",
+    "pipeline_status": "OVER BUDGET -- 8.4 hours wall-clock (target 3-5 hours). Improvement from W09 (14.3 hours).",
+    "week_over_week_improvements": [
+      "Tier 1 coverage: +41.6pp (57.6% -> 99.2%)",
+      "Tier 2 coverage: +32.5pp (51.3% -> 83.8%)",
+      "Tier 3 coverage: +7.7pp (50.7% -> 58.4%)",
+      "Overall confidence: +0.045 (0.803 -> 0.848)",
+      "Data volume: +1642 updates (1095 -> 2737), 2.5x increase",
+      "Military section: 1% -> 73% of countries populated",
+      "Agent 09 performance: 168 min -> 5 min (33x improvement)",
+      "Pipeline duration: 14.3 hrs -> 8.4 hrs (41% reduction)"
+    ],
+    "remaining_gaps": [
+      "Relations layer: 4% populated (3/75 countries)",
+      "Raw political section: 0% (structural issue, data exists in layers.institutions)",
+      "Military data: 0% for all 20 Tier 3 countries",
+      "Alert count discrepancy: 8 alerts missing from serialized output",
+      "Pipeline duration still 68% over budget"
+    ],
+    "next_week_priorities": [
+      "1. Fix alert serialization (8 missing alerts)",
+      "2. Add bilateral relations data collection",
+      "3. Extend military gathering to Tier 3",
+      "4. Resolve political section structural mismatch",
+      "5. Reduce inter-agent scheduling gaps"
+    ]
+  }
+}

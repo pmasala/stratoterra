@@ -3,36 +3,36 @@
   "country_name": "Iraq",
   "tier": 2,
   "region": "middle_east",
-  "last_updated": "2026-03-02T12:00:00Z",
-  "run_id": "2026-W09",
+  "last_updated": "2026-03-02T12:05:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
-      "value": 265454999999.99997,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 279641257615.385,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_real_growth_pct": {
       "value": 0.5,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_per_capita_usd": {
-      "value": 5831.552,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 6073.61032342708,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "inflation_cpi_pct": {
       "value": 1.5,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "unemployment_rate_pct": {
       "value": 15.485,
@@ -42,25 +42,25 @@
       "run_id": "2026-W09"
     },
     "current_account_pct_gdp": {
-      "value": 0.4,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 2.99,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "fx_reserves_usd": {
       "value": 100690954781.588,
       "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "govt_debt_pct_gdp": {
       "value": 53.1,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 3.6,
@@ -70,156 +70,482 @@
       "run_id": "2026-W09"
     },
     "sovereign_credit_rating": {
-      "value": "S&P: B-, Moody's: Caa1, Fitch: B-",
+      "value": "S&P: B-, Moody's: NR, Fitch: B-",
       "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
+    },
+    "total_exports_usd": {
+      "value": 111195200000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "total_imports_usd": {
+      "value": 104517100000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "demographic": {
     "population_total": {
       "value": 46042015,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "population_growth_pct": {
-      "value": 2.12476784890538,
+      "value": 2.125,
       "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "life_expectancy": {
       "value": 72.324,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
+    },
+    "hdi": {
+      "value": 0.695,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 22.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_expenditure_usd": {
+      "value": 8000000000,
+      "confidence": 0.75,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 193000,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 1188,
+        "confidence": 0.78,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 360,
+        "confidence": 0.78,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.475,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.65,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 1.0,
-      "confidence": 0.65,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.51,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.463,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
     },
     "composite_national_power_index": {
-      "value": 20.8,
+      "value": 28.9,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 1300,
+      "value": 1425,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.164,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.208,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     }
   },
   "metadata": {
     "active_flags": [],
-    "update_count": 13,
+    "update_count": 53,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T13:00:00Z",
-    "run_id": "2026-W09",
-    "executive_summary": "Iraq faces severe collateral exposure from the Iran conflict with 51% supply chain chokepoint exposure to the Strait of Hormuz. Iraq's economy is overwhelmingly dependent on oil revenues (>90% of budget) and its export infrastructure is partially exposed to Hormuz. Iran-aligned militias in Iraq add internal instability risk. The Basra oil terminal, Iraq's primary export route, is in the Persian Gulf. GDP growth of 2.2% faces significant downward revision.",
+    "generated_at": "2026-03-02T18:00:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Iraq is critically exposed to the Strait of Hormuz closure with 51% chokepoint exposure. Oil exports severely disrupted -- Iraq's fiscal position is highly dependent on oil revenue. The Iran conflict creates additional security concerns given Iran's influence over Iraqi politics and militias.",
     "key_changes_this_week": [
-      "Strait of Hormuz 70% traffic collapse directly threatens Iraq's oil exports (51% chokepoint exposure) (critical)",
-      "Iran-aligned Iraqi militias face potential activation amid US-Iran conflict",
-      "Iraq's Basra oil terminal in Persian Gulf exposed to conflict spillover"
+      "Hormuz closure at 70% traffic collapse -- 51% Iraq chokepoint exposure (Mar 1, critical)",
+      "Oil exports severely disrupted; fiscal position at risk",
+      "Iran conflict creates additional security concerns via militia proxy networks"
     ],
-    "outlook": "Iraq is caught between its security dependence on both the US and Iran-aligned militias. Extended Hormuz closure would devastate Iraq's budget, which depends on oil revenues for over 90% of government spending. Internal political dynamics may shift as Iran-aligned factions recalibrate. Iraq's non-oil economy is too small to compensate for export disruption.",
-    "investor_implications": "Iraq oil sector investments face acute near-term risk from Hormuz disruption and potential militia activity near oil infrastructure. Sovereign bonds (B-/Caa1) already reflect high risk. Any dinar exposure should be hedged. Kurdistan region oil exports via Turkey pipeline offer partial insulation from Hormuz risk.",
-    "data_quality_note": "Iraq's economic data is of medium quality. Oil export volume data is relatively current. Political and militia activity assessments carry higher uncertainty."
+    "outlook": "Iraq's economy is existentially dependent on oil export routes through Hormuz. Alternative pipelines to Turkey provide partial but insufficient offset. Political stability at risk from Iranian militia influence.",
+    "investor_implications": "Iraq sovereign bonds face severe repricing. Oil-dependent fiscal position under extreme stress. Avoid Iraqi exposure until Hormuz situation resolves.",
+    "data_quality_note": "Iraq macro data is low-to-moderate quality. Chokepoint exposure calculated from trade data. CRITICAL alert active."
   },
   "code": "IRQ",
   "name": "Iraq",
-  "executive_summary": "Iraq faces severe collateral exposure from the Iran conflict with 51% supply chain chokepoint exposure to the Strait of Hormuz. Iraq's economy is overwhelmingly dependent on oil revenues (>90% of budget) and its export infrastructure is partially exposed to Hormuz. Iran-aligned militias in Iraq add internal instability risk. The Basra oil terminal, Iraq's primary export route, is in the Persian Gulf. GDP growth of 2.2% faces significant downward revision.",
+  "executive_summary": "Iraq is critically exposed to the Strait of Hormuz closure with 51% chokepoint exposure. Oil exports severely disrupted -- Iraq's fiscal position is highly dependent on oil revenue. The Iran conflict creates additional security concerns given Iran's influence over Iraqi politics and militias.",
   "key_changes": [
-    "Strait of Hormuz 70% traffic collapse directly threatens Iraq's oil exports (51% chokepoint exposure) (critical)",
-    "Iran-aligned Iraqi militias face potential activation amid US-Iran conflict",
-    "Iraq's Basra oil terminal in Persian Gulf exposed to conflict spillover"
+    "Hormuz closure at 70% traffic collapse -- 51% Iraq chokepoint exposure (Mar 1, critical)",
+    "Oil exports severely disrupted; fiscal position at risk",
+    "Iran conflict creates additional security concerns via militia proxy networks"
   ],
-  "outlook": "Iraq is caught between its security dependence on both the US and Iran-aligned militias. Extended Hormuz closure would devastate Iraq's budget, which depends on oil revenues for over 90% of government spending. Internal political dynamics may shift as Iran-aligned factions recalibrate. Iraq's non-oil economy is too small to compensate for export disruption.",
-  "investor_implications": "Iraq oil sector investments face acute near-term risk from Hormuz disruption and potential militia activity near oil infrastructure. Sovereign bonds (B-/Caa1) already reflect high risk. Any dinar exposure should be hedged. Kurdistan region oil exports via Turkey pipeline offer partial insulation from Hormuz risk.",
+  "outlook": "Iraq's economy is existentially dependent on oil export routes through Hormuz. Alternative pipelines to Turkey provide partial but insufficient offset. Political stability at risk from Iranian militia influence.",
+  "investor_implications": "Iraq sovereign bonds face severe repricing. Oil-dependent fiscal position under extreme stress. Avoid Iraqi exposure until Hormuz situation resolves.",
   "active_alerts": [
     {
       "severity": "critical",
       "title": "Iraq critically exposed to Strait of Hormuz closure (51% chokepoint exposure)",
-      "description": "The Strait of Hormuz experienced a 70% traffic collapse following US-Israeli strikes on Iran. Iran's IRGC broadcast VHF warnings closing the strait, attacked 3 commercial ships, and threatened all vessels. Iraq has 51% supply chain chokepoint exposure. Oil and LNG exports are severely disrupted. This is the most severe global energy supply disruption in decades and directly threatens Iraq's fiscal position and economic stability."
+      "description": "Hormuz 70% traffic collapse continues with Iraq at 51% chokepoint exposure. Oil exports severely disrupted. Iraq's fiscal position highly dependent on oil revenue. Conditions persist with no resolution in sight."
     }
   ],
   "layers": {
     "endowments": {
       "population": 46042015,
-      "population_growth_pct": 2.12476784890538,
-      "life_expectancy": 72.324
+      "population_growth_pct": 2.125,
+      "life_expectancy": 72.324,
+      "population_total": 46042015,
+      "hdi": 0.695,
+      "median_age": 22.4
     },
     "institutions": {
-      "political_stability": {}
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 2.8,
+      "regime_type": "authoritarian",
+      "freedom_house_score": 31,
+      "freedom_house_status": "not_free",
+      "corruption_perception_index": 26,
+      "press_freedom_index_rank": 155,
+      "wgi_voice_accountability": -0.96,
+      "wgi_political_stability": -2.41,
+      "wgi_government_effectiveness": -1.39,
+      "wgi_regulatory_quality": -1.44,
+      "wgi_rule_of_law": -1.69,
+      "wgi_control_of_corruption": -1.32,
+      "fragile_states_index": 88.6,
+      "head_of_state_name": "Abdul Latif Rashid",
+      "head_of_state_title": "President",
+      "head_of_government_name": "Mohammed Shia al-Sudani",
+      "next_national_election_date": "2025-10"
     },
     "economy": {
-      "gdp_nominal_usd": 265454999999.99997,
+      "gdp_nominal_usd": 279641257615.385,
       "gdp_real_growth_pct": 0.5,
-      "gdp_per_capita_usd": 5831.552,
+      "gdp_per_capita_usd": 6073.61032342708,
       "inflation_cpi_pct": 1.5,
       "unemployment_rate_pct": 15.485,
-      "current_account_pct_gdp": 0.4,
+      "current_account_pct_gdp": 2.99,
       "govt_debt_pct_gdp": 53.1,
       "fx_reserves_usd": 100690954781.588,
-      "sovereign_credit_rating": "S&P: B-, Moody's: Caa1, Fitch: B-",
-      "central_bank_policy_rate_pct": null
+      "sovereign_credit_rating": "S&P: B-, Moody's: NR, Fitch: B-",
+      "central_bank_policy_rate_pct": null,
+      "total_exports_usd": 111195200000,
+      "total_imports_usd": 104517100000,
+      "top_export_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 28.0
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 22.0
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.2
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 5.0
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "TUR",
+          "pct_of_total": 22.0
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 20.5
+        },
+        {
+          "country": "IRN",
+          "pct_of_total": 12.0
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 4.0
+        }
+      ]
     },
-    "military": {},
+    "military": {
+      "military_expenditure_usd": 8000000000,
+      "active_military_personnel": 193000
+    },
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.475,
+      "resource_self_sufficiency_index": 0.65,
       "energy_independence_index": 1.0,
-      "supply_chain_chokepoint_exposure": 0.51,
-      "composite_national_power_index": 20.8,
-      "political_risk_premium_bps": 1300,
-      "market_accessibility_score": 0.164
+      "supply_chain_chokepoint_exposure": 0.463,
+      "composite_national_power_index": 28.9,
+      "political_risk_premium_bps": 1425,
+      "market_accessibility_score": 0.208
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 28.0
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 22.0
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.2
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 5.0
+        }
+      ],
+      "confidence": 0.72,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "TUR",
+          "pct_of_total": 22.0
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 20.5
+        },
+        {
+          "country": "IRN",
+          "pct_of_total": 12.0
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 4.0
+        }
+      ],
+      "confidence": 0.72,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "democracy_index": {
+      "value": 2.8,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "authoritarian",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 31,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "not_free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 26,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 155,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": -0.96,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_political_stability": {
+      "value": -2.41,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_government_effectiveness": {
+      "value": -1.39,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_regulatory_quality": {
+      "value": -1.44,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_rule_of_law": {
+      "value": -1.69,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_control_of_corruption": {
+      "value": -1.32,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "fragile_states_index": {
+      "value": 88.6,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Abdul Latif Rashid",
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Mohammed Shia al-Sudani",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "next_national_election_date": {
+      "value": "2025-10",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   }
 }

@@ -3,22 +3,22 @@
   "country_name": "Mozambique",
   "tier": 3,
   "region": "sub_saharan_africa",
-  "last_updated": "2026-03-02T12:00:00Z",
-  "run_id": "2026-W09",
+  "last_updated": "2026-03-02T12:05:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
-      "value": 24726000000.0,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 22745341305.0622,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_real_growth_pct": {
       "value": 2.5,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_per_capita_usd": {
       "value": 690.01,
@@ -30,9 +30,9 @@
     "inflation_cpi_pct": {
       "value": 4.9,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "unemployment_rate_pct": {
       "value": 6.628,
@@ -50,10 +50,10 @@
     },
     "govt_debt_pct_gdp": {
       "value": 97.2,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "fx_reserves_usd": {
       "value": 3842855300.7001,
@@ -70,20 +70,27 @@
       "run_id": "2026-W09"
     },
     "sovereign_credit_rating": {
-      "value": "S&P: CCC+, Moody's: Caa2, Fitch: CCC",
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": "S&P: CCC+, Moody's: Caa2, Fitch: CCC+",
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 12.75,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "demographic": {
     "population_total": {
       "value": 34631766,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "population_growth_pct": {
       "value": 2.91994049442347,
@@ -98,6 +105,20 @@
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W09"
+    },
+    "hdi": {
+      "value": 0.493,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 17.3,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "political": {},
@@ -105,66 +126,68 @@
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.75,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.4,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
-      "value": 0.8,
-      "confidence": 0.65,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.31,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.247,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
     },
     "composite_national_power_index": {
-      "value": 0.8,
+      "value": 2.8,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 1900,
+      "value": 1650,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.17,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.213,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     }
   },
   "metadata": {
     "active_flags": [],
-    "update_count": 13,
+    "update_count": 22,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "code": "MOZ",
   "name": "Mozambique",
-  "executive_summary": "Mozambique data profile for 2026-W09.",
-  "key_changes": [],
-  "outlook": "Outlook data pending further analysis.",
-  "investor_implications": "Monitor for developments.",
+  "executive_summary": "Mozambique: GDP growth at 2.5%, inflation at 4.9%, credit rating S&P: CCC+, Moody's: Caa2, Fitch: CCC+.",
+  "key_changes": [
+    "No significant changes this week"
+  ],
+  "outlook": "Mozambique outlook requires monitoring. Oil price surge affects all energy importers.",
+  "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
   "active_alerts": [
     {
       "severity": "watch",
@@ -176,13 +199,16 @@
     "endowments": {
       "population": 34631766,
       "population_growth_pct": 2.91994049442347,
-      "life_expectancy": 63.611
+      "life_expectancy": 63.611,
+      "population_total": 34631766,
+      "hdi": 0.493,
+      "median_age": 17.3
     },
     "institutions": {
       "political_stability": {}
     },
     "economy": {
-      "gdp_nominal_usd": 24726000000.0,
+      "gdp_nominal_usd": 22745341305.0622,
       "gdp_real_growth_pct": 2.5,
       "gdp_per_capita_usd": 690.01,
       "inflation_cpi_pct": 4.9,
@@ -190,28 +216,30 @@
       "current_account_pct_gdp": -39.9,
       "govt_debt_pct_gdp": 97.2,
       "fx_reserves_usd": 3842855300.7001,
-      "sovereign_credit_rating": "S&P: CCC+, Moody's: Caa2, Fitch: CCC",
-      "central_bank_policy_rate_pct": null
+      "sovereign_credit_rating": "S&P: CCC+, Moody's: Caa2, Fitch: CCC+",
+      "central_bank_policy_rate_pct": 12.75
     },
     "military": {},
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.75,
-      "energy_independence_index": 0.8,
-      "supply_chain_chokepoint_exposure": 0.31,
-      "composite_national_power_index": 0.8,
-      "political_risk_premium_bps": 1900,
-      "market_accessibility_score": 0.17
+      "resource_self_sufficiency_index": 0.4,
+      "energy_independence_index": 0.5,
+      "supply_chain_chokepoint_exposure": 0.247,
+      "composite_national_power_index": 2.8,
+      "political_risk_premium_bps": 1650,
+      "market_accessibility_score": 0.213
     }
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T13:00:00Z",
-    "run_id": "2026-W09",
-    "executive_summary": "Mozambique data profile for 2026-W09.",
-    "key_changes_this_week": [],
-    "outlook": "Outlook data pending further analysis.",
-    "investor_implications": "Monitor for developments.",
+    "generated_at": "2026-03-02T18:00:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Mozambique: GDP growth at 2.5%, inflation at 4.9%, credit rating S&P: CCC+, Moody's: Caa2, Fitch: CCC+.",
+    "key_changes_this_week": [
+      "No significant changes this week"
+    ],
+    "outlook": "Mozambique outlook requires monitoring. Oil price surge affects all energy importers.",
+    "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
     "data_quality_note": "Tier 3 country with basic coverage only."
   }
 }

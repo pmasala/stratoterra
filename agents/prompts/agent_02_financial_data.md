@@ -13,6 +13,14 @@ stock indices, commodity prices, and recent central bank decisions.
 ## Outputs
 - `/staging/raw_collected/financial_data_{DATE}.json`
 
+## Tools
+
+- **WebSearch** — Use for all market data queries (e.g., `WebSearch("10 year government bond yield Germany")`)
+- **WebFetch** — Use to extract data from financial data pages (e.g., Trading Economics, investing.com)
+- **Read** / **Write** — Read input files, write output JSON
+
+No API keys are required. All sources are publicly accessible.
+
 ## Step-by-Step Instructions
 
 ### Step 1: Exchange Rates

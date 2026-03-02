@@ -3,22 +3,22 @@
   "country_name": "Serbia",
   "tier": 3,
   "region": "europe",
-  "last_updated": "2026-03-02T12:00:00Z",
-  "run_id": "2026-W09",
+  "last_updated": "2026-03-02T12:05:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
-      "value": 100048000000.0,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 90097765959.1114,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_real_growth_pct": {
       "value": 2.4,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_per_capita_usd": {
       "value": 15322.201,
@@ -30,16 +30,16 @@
     "inflation_cpi_pct": {
       "value": 4.6,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "unemployment_rate_pct": {
-      "value": 7.123,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 8.6,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "current_account_pct_gdp": {
       "value": -5.3,
@@ -57,10 +57,10 @@
     },
     "govt_debt_pct_gdp": {
       "value": 43.9,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 3.6,
@@ -70,20 +70,27 @@
       "run_id": "2026-W09"
     },
     "sovereign_credit_rating": {
-      "value": "S&P: BBB-, Moody's: Ba2, Fitch: BBB-",
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": "S&P: NR, Moody's: NR, Fitch: BB+",
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 5.75,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "demographic": {
     "population_total": {
       "value": 6586476,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "population_growth_pct": {
       "value": -0.555761423984425,
@@ -98,6 +105,20 @@
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W09"
+    },
+    "hdi": {
+      "value": 0.833,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 43.9,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "political": {},
@@ -105,107 +126,123 @@
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.65,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
-      "value": 0.5,
-      "confidence": 0.65,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.55,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.29,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.097,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
     },
     "composite_national_power_index": {
-      "value": 18.6,
+      "value": 19.8,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 200,
+      "value": 300,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.41,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.405,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     }
   },
   "metadata": {
-    "active_flags": [],
-    "update_count": 13,
+    "active_flags": [
+      {
+        "factor": "macroeconomic.unemployment_rate_pct",
+        "reason": "Large absolute change: 1.48 (threshold: 0.8999999999999999)",
+        "previous_value": 7.123,
+        "new_value": 8.6,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      }
+    ],
+    "update_count": 23,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "code": "SRB",
   "name": "Serbia",
-  "executive_summary": "Serbia data profile for 2026-W09.",
-  "key_changes": [],
-  "outlook": "Outlook data pending further analysis.",
-  "investor_implications": "Monitor for developments.",
+  "executive_summary": "Serbia: GDP growth at 2.4%, inflation at 4.6%, credit rating S&P: NR, Moody's: NR, Fitch: BB+.",
+  "key_changes": [
+    "No significant changes this week"
+  ],
+  "outlook": "Serbia outlook requires monitoring. Oil price surge affects all energy importers.",
+  "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
   "active_alerts": [],
   "layers": {
     "endowments": {
       "population": 6586476,
       "population_growth_pct": -0.555761423984425,
-      "life_expectancy": 76.2209756097561
+      "life_expectancy": 76.2209756097561,
+      "population_total": 6586476,
+      "hdi": 0.833,
+      "median_age": 43.9
     },
     "institutions": {
       "political_stability": {}
     },
     "economy": {
-      "gdp_nominal_usd": 100048000000.0,
+      "gdp_nominal_usd": 90097765959.1114,
       "gdp_real_growth_pct": 2.4,
       "gdp_per_capita_usd": 15322.201,
       "inflation_cpi_pct": 4.6,
-      "unemployment_rate_pct": 7.123,
+      "unemployment_rate_pct": 8.6,
       "current_account_pct_gdp": -5.3,
       "govt_debt_pct_gdp": 43.9,
       "fx_reserves_usd": 30484164151.2486,
-      "sovereign_credit_rating": "S&P: BBB-, Moody's: Ba2, Fitch: BBB-",
-      "central_bank_policy_rate_pct": null
+      "sovereign_credit_rating": "S&P: NR, Moody's: NR, Fitch: BB+",
+      "central_bank_policy_rate_pct": 5.75
     },
     "military": {},
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.65,
-      "energy_independence_index": 0.5,
-      "supply_chain_chokepoint_exposure": 0.29,
-      "composite_national_power_index": 18.6,
-      "political_risk_premium_bps": 200,
-      "market_accessibility_score": 0.41
+      "resource_self_sufficiency_index": 0.5,
+      "energy_independence_index": 0.55,
+      "supply_chain_chokepoint_exposure": 0.097,
+      "composite_national_power_index": 19.8,
+      "political_risk_premium_bps": 300,
+      "market_accessibility_score": 0.405
     }
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T13:00:00Z",
-    "run_id": "2026-W09",
-    "executive_summary": "Serbia data profile for 2026-W09.",
-    "key_changes_this_week": [],
-    "outlook": "Outlook data pending further analysis.",
-    "investor_implications": "Monitor for developments.",
+    "generated_at": "2026-03-02T18:00:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Serbia: GDP growth at 2.4%, inflation at 4.6%, credit rating S&P: NR, Moody's: NR, Fitch: BB+.",
+    "key_changes_this_week": [
+      "No significant changes this week"
+    ],
+    "outlook": "Serbia outlook requires monitoring. Oil price surge affects all energy importers.",
+    "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
     "data_quality_note": "Tier 3 country with basic coverage only."
   }
 }

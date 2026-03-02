@@ -14,13 +14,24 @@ international sources for all 75 tracked countries.
 ## Outputs
 - `/staging/raw_collected/official_stats_{DATE}.json`
 
+## Tools
+
+- **WebSearch** — Use to discover current values (e.g., `WebSearch("World Bank GDP USA 2025")`)
+- **WebFetch** — Use to extract data from specific pages (e.g., Trading Economics country pages)
+- **Bash** with `curl` — Use for structured JSON APIs:
+  - World Bank: `curl "https://api.worldbank.org/v2/country/{ISO2}/indicator/{ID}?format=json&date=2024:2025"`
+  - IMF WEO: `curl "https://www.imf.org/external/datamapper/api/v1/{indicator}/{ISO3}"`
+- **Read** / **Write** — Read input files, write output JSON
+
+No API keys are required. All sources are public.
+
 ## Step-by-Step Instructions
 
 ### Step 1: Load Country List
 Read `country_list.json`. Organize countries into Tier 1 (30), Tier 2 (25), Tier 3 (20).
 
 ### Step 2: Collect Tier 1 & 2 Countries
-For each country, search for current values using `web_search` and `web_fetch`.
+For each country, search for current values using `WebSearch` and `WebFetch`.
 
 **Macroeconomic indicators:**
 - GDP nominal USD (search: "World Bank GDP {country} 2025" or IMF WEO)

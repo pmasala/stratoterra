@@ -95,10 +95,18 @@ stratoterra/
 
 The full pipeline is defined in `docs/05_AGENT_CONFIGS.md`. The master orchestrator prompt is at the top of that file.
 
+**Prerequisites:** Claude Code MAX subscription. No API keys or `.env` file needed — all data sources are accessed via Claude's native `WebSearch` and `WebFetch` tools, or through public APIs (World Bank, IMF) that require no authentication.
+
+**Quick start:**
+```bash
+./agents/scripts/run_weekly_update.sh   # validates environment, creates staging dirs
+claude --dangerously-skip-permissions agents/prompts/orchestrator.md
+```
+
 ### Pipeline Phases
 
 ```
-Phase 1: GATHER      (Agents 1-6)   60-120 min   Collect from APIs, news, databases
+Phase 1: GATHER      (Agents 1-6)   60-120 min   WebSearch/WebFetch + public APIs
 Phase 2: PROCESS     (Agent 7)      20-30 min    Map raw data to schema
 Phase 3: VALIDATE    (Agent 8)      15-20 min    Plausibility + consistency checks
   ⚠ HUMAN REVIEW: Escalated items presented here (~30 min)
@@ -140,7 +148,7 @@ Primary sources — see `docs/07_DATA_SOURCES.md` for full details:
 - **USGS** — Mineral resources
 - **Freedom House, EIU, Transparency International** — Governance indices
 
-All sources are free tier. Total API cost: $0/month.
+All sources are free tier. Total API cost: $0/month. Gathering agents access these via Claude's native `WebSearch` and `WebFetch` tools — no API keys required.
 
 ## Data Quality Rules
 
@@ -174,7 +182,7 @@ Tests run automatically as part of Agent 15 and post-pipeline validation. See `d
 ## Important Warnings
 
 - **Never modify /data/ directly** — always go through the pipeline
-- **Never commit API keys** — use .env file (in .gitignore)
+- **No API keys needed** — pipeline uses Claude's native tools for all data access
 - **Always validate before integrating** — Agent 8 must run before Agent 9
 - **Staging files are ephemeral** — raw_collected and processed are cleaned each run
 - **The /data/chunks/ directory is what the UI reads** — Agent 16 generates these

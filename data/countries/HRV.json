@@ -3,22 +3,22 @@
   "country_name": "Croatia",
   "tier": 3,
   "region": "europe",
-  "last_updated": "2026-03-02T12:00:00Z",
-  "run_id": "2026-W09",
+  "last_updated": "2026-03-02T12:05:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
-      "value": 103901000000.0,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 92983810328.9088,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_real_growth_pct": {
       "value": 3.1,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_per_capita_usd": {
       "value": 26957.85,
@@ -30,16 +30,16 @@
     "inflation_cpi_pct": {
       "value": 4.4,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "unemployment_rate_pct": {
-      "value": 5.002,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 5,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "current_account_pct_gdp": {
       "value": -1.6,
@@ -57,10 +57,10 @@
     },
     "govt_debt_pct_gdp": {
       "value": 57,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 2.7,
@@ -70,20 +70,27 @@
       "run_id": "2026-W09"
     },
     "sovereign_credit_rating": {
-      "value": "S&P: A-, Moody's: A3, Fitch: A-",
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": "S&P: A-, Moody's: A3, Fitch: BBB+",
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 3.0,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "demographic": {
     "population_total": {
       "value": 3866200,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "population_growth_pct": {
       "value": 0.168627948783285,
@@ -98,6 +105,20 @@
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W09"
+    },
+    "hdi": {
+      "value": 0.889,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 45.1,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "political": {},
@@ -105,107 +126,114 @@
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.613,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
-      "value": 0.45,
-      "confidence": 0.65,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.55,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.35,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.157,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
     },
     "composite_national_power_index": {
-      "value": 21.3,
+      "value": 22.0,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
       "value": 75,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.476,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.458,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     }
   },
   "metadata": {
     "active_flags": [],
-    "update_count": 13,
+    "update_count": 23,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "code": "HRV",
   "name": "Croatia",
-  "executive_summary": "Croatia data profile for 2026-W09.",
-  "key_changes": [],
-  "outlook": "Outlook data pending further analysis.",
-  "investor_implications": "Monitor for developments.",
+  "executive_summary": "Croatia: GDP growth at 3.1%, inflation at 4.4%, credit rating S&P: A-, Moody's: A3, Fitch: BBB+.",
+  "key_changes": [
+    "No significant changes this week"
+  ],
+  "outlook": "Croatia outlook requires monitoring. Oil price surge affects all energy importers.",
+  "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
   "active_alerts": [],
   "layers": {
     "endowments": {
       "population": 3866200,
       "population_growth_pct": 0.168627948783285,
-      "life_expectancy": 78.4731707317073
+      "life_expectancy": 78.4731707317073,
+      "population_total": 3866200,
+      "hdi": 0.889,
+      "median_age": 45.1
     },
     "institutions": {
       "political_stability": {}
     },
     "economy": {
-      "gdp_nominal_usd": 103901000000.0,
+      "gdp_nominal_usd": 92983810328.9088,
       "gdp_real_growth_pct": 3.1,
       "gdp_per_capita_usd": 26957.85,
       "inflation_cpi_pct": 4.4,
-      "unemployment_rate_pct": 5.002,
+      "unemployment_rate_pct": 5,
       "current_account_pct_gdp": -1.6,
       "govt_debt_pct_gdp": 57,
       "fx_reserves_usd": 3335632832.65449,
-      "sovereign_credit_rating": "S&P: A-, Moody's: A3, Fitch: A-",
-      "central_bank_policy_rate_pct": null
+      "sovereign_credit_rating": "S&P: A-, Moody's: A3, Fitch: BBB+",
+      "central_bank_policy_rate_pct": 3.0
     },
     "military": {},
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.613,
-      "energy_independence_index": 0.45,
-      "supply_chain_chokepoint_exposure": 0.35,
-      "composite_national_power_index": 21.3,
+      "resource_self_sufficiency_index": 0.5,
+      "energy_independence_index": 0.55,
+      "supply_chain_chokepoint_exposure": 0.157,
+      "composite_national_power_index": 22.0,
       "political_risk_premium_bps": 75,
-      "market_accessibility_score": 0.476
+      "market_accessibility_score": 0.458
     }
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T13:00:00Z",
-    "run_id": "2026-W09",
-    "executive_summary": "Croatia data profile for 2026-W09.",
-    "key_changes_this_week": [],
-    "outlook": "Outlook data pending further analysis.",
-    "investor_implications": "Monitor for developments.",
+    "generated_at": "2026-03-02T18:00:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Croatia: GDP growth at 3.1%, inflation at 4.4%, credit rating S&P: A-, Moody's: A3, Fitch: BBB+.",
+    "key_changes_this_week": [
+      "No significant changes this week"
+    ],
+    "outlook": "Croatia outlook requires monitoring. Oil price surge affects all energy importers.",
+    "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
     "data_quality_note": "Tier 3 country with basic coverage only."
   }
 }

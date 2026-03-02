@@ -32,8 +32,15 @@ Assign confidence based on source:
 - Web-scraped official page: 0.70-0.85
 - News-extracted value: 0.50-0.70
 
+### Step 2b: Process Structured Data Records (Agents 4-6)
+Agents 4, 5, and 6 produce two types of records:
+- **`type: "structured_data"`** — Pre-structured factor updates with explicit `factor_path` and `new_value`. Treat these exactly like Agent 1 & 2 records (Step 2). They already have the correct schema mapping — pass them through as `DIRECT_UPDATE` entries in `factor_updates`.
+- **Event records** (all other `type` values) — Process these in Step 3 below.
+
+To identify structured data records: check for `"type": "structured_data"` OR the presence of both `factor_path` and `new_value` fields.
+
 ### Step 3: Classify Event Records (Agents 3-6)
-Each event is one of:
+For records from Agents 3-6 that are NOT `structured_data` (i.e., event records without `factor_path`), classify each as one of:
 - **DIRECT_UPDATE**: certainty_level >= `officially_announced` AND maps to a specific factor. Example: "Central bank raises rate to 5%" → update `macroeconomic.central_bank_policy_rate_pct`.
 - **SIGNAL**: Suggests trend direction but no specific value. Goes to `event_signals` array.
 - **IRRELEVANT**: No model factor affected. Log and skip.

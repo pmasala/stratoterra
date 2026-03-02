@@ -3,64 +3,64 @@
   "country_name": "Czech Republic",
   "tier": 2,
   "region": "europe",
-  "last_updated": "2026-03-02T12:00:00Z",
-  "run_id": "2026-W09",
+  "last_updated": "2026-03-02T12:05:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
-      "value": 383384000000.0,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 347034062928.479,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_real_growth_pct": {
       "value": 2.3,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_per_capita_usd": {
-      "value": 35161.476,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 31823.3078290564,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "inflation_cpi_pct": {
       "value": 2.5,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "unemployment_rate_pct": {
-      "value": 2.825,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 2.5,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "current_account_pct_gdp": {
-      "value": 0.6,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 1.74,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "fx_reserves_usd": {
       "value": 146281239761.971,
       "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "govt_debt_pct_gdp": {
       "value": 44,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 2,
@@ -70,20 +70,48 @@
       "run_id": "2026-W09"
     },
     "sovereign_credit_rating": {
-      "value": "S&P: AA-, Moody's: Aa3, Fitch: AA",
+      "value": "S&P: AA-, Moody's: Aa3, Fitch: AA-",
       "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
+    },
+    "total_exports_usd": {
+      "value": 239259165133.23,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "total_imports_usd": {
+      "value": 216741016051.449,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 4.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 20.6541,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "demographic": {
     "population_total": {
       "value": 10905028,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "population_growth_pct": {
       "value": 0.376553049157494,
@@ -94,124 +122,454 @@
     },
     "life_expectancy": {
       "value": 79.8780487804878,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
+    },
+    "hdi": {
+      "value": 0.915,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 44.2,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_expenditure_usd": {
+      "value": 9200000000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 30334,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 20,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "alliance_memberships": {
+      "value": [
+        "NATO",
+        "EU CSDP"
+      ],
+      "confidence": 0.98,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    }
+  },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.662,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
-      "value": 0.55,
-      "confidence": 0.65,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.65,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.37,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.235,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
     },
     "composite_national_power_index": {
-      "value": 35.4,
+      "value": 50.5,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
       "value": 20,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.521,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.497,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     }
   },
   "metadata": {
     "active_flags": [],
-    "update_count": 13,
+    "update_count": 56,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T13:00:00Z",
-    "run_id": "2026-W09",
-    "executive_summary": "Czech Republic faces moderate exposure to European economic dynamics. GDP growth at 2.1%. EU defense consensus supports defense spending. Oil price surge creates import cost pressure. No significant country-specific events this week.",
+    "generated_at": "2026-03-02T18:00:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Czech Republic's export-oriented economy faces headwinds from trade fragmentation and oil price surge. GDP recovery continuing. Auto sector exposure to broader trade tensions. EU/NATO membership provides institutional stability.",
     "key_changes_this_week": [
-      "EU defense spending consensus emerging",
-      "No major domestic events"
+      "Trade fragmentation headwinds for export-oriented economy",
+      "Oil price surge adds energy costs",
+      "GDP recovery continuing",
+      "EU/NATO membership provides institutional stability"
     ],
-    "outlook": "Czech economy benefits from EU integration and automotive sector. Energy transition and defense spending provide structural support. Inflation management continues.",
-    "investor_implications": "CZK under modest pressure. PX index faces European-wide dynamics. Czech government bonds provide yield pickup over Germany.",
-    "data_quality_note": "Czech macro data is high quality from CNB and CZSO."
+    "outlook": "Czech economy depends on European auto sector and industrial demand. China-Japan sanctions signal broader supply chain fragmentation risk. CNB rate path provides flexibility.",
+    "investor_implications": "PX index sensitive to European industrial cycle. CZK relatively stable. Czech auto sector suppliers face broader trade uncertainty.",
+    "data_quality_note": "Czech macro data is high quality from CNB and CZSO sources."
   },
   "code": "CZE",
   "name": "Czech Republic",
-  "executive_summary": "Czech Republic faces moderate exposure to European economic dynamics. GDP growth at 2.1%. EU defense consensus supports defense spending. Oil price surge creates import cost pressure. No significant country-specific events this week.",
+  "executive_summary": "Czech Republic's export-oriented economy faces headwinds from trade fragmentation and oil price surge. GDP recovery continuing. Auto sector exposure to broader trade tensions. EU/NATO membership provides institutional stability.",
   "key_changes": [
-    "EU defense spending consensus emerging",
-    "No major domestic events"
+    "Trade fragmentation headwinds for export-oriented economy",
+    "Oil price surge adds energy costs",
+    "GDP recovery continuing",
+    "EU/NATO membership provides institutional stability"
   ],
-  "outlook": "Czech economy benefits from EU integration and automotive sector. Energy transition and defense spending provide structural support. Inflation management continues.",
-  "investor_implications": "CZK under modest pressure. PX index faces European-wide dynamics. Czech government bonds provide yield pickup over Germany.",
+  "outlook": "Czech economy depends on European auto sector and industrial demand. China-Japan sanctions signal broader supply chain fragmentation risk. CNB rate path provides flexibility.",
+  "investor_implications": "PX index sensitive to European industrial cycle. CZK relatively stable. Czech auto sector suppliers face broader trade uncertainty.",
   "active_alerts": [],
   "layers": {
     "endowments": {
       "population": 10905028,
       "population_growth_pct": 0.376553049157494,
-      "life_expectancy": 79.8780487804878
+      "life_expectancy": 79.8780487804878,
+      "population_total": 10905028,
+      "hdi": 0.915,
+      "median_age": 44.2
     },
     "institutions": {
-      "political_stability": {}
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 8.08,
+      "regime_type": "full_democracy",
+      "freedom_house_score": 95,
+      "freedom_house_status": "free",
+      "corruption_perception_index": 56,
+      "press_freedom_index_rank": 10,
+      "wgi_voice_accountability": 1.08,
+      "wgi_political_stability": 0.97,
+      "wgi_government_effectiveness": 1.11,
+      "wgi_regulatory_quality": 1.3,
+      "wgi_rule_of_law": 1.14,
+      "wgi_control_of_corruption": 0.77,
+      "fragile_states_index": 37.7,
+      "head_of_state_name": "Petr Pavel",
+      "head_of_state_title": "President",
+      "head_of_government_name": "Petr Fiala",
+      "next_national_election_date": "2025-10"
     },
     "economy": {
-      "gdp_nominal_usd": 383384000000.0,
+      "gdp_nominal_usd": 347034062928.479,
       "gdp_real_growth_pct": 2.3,
-      "gdp_per_capita_usd": 35161.476,
+      "gdp_per_capita_usd": 31823.3078290564,
       "inflation_cpi_pct": 2.5,
-      "unemployment_rate_pct": 2.825,
-      "current_account_pct_gdp": 0.6,
+      "unemployment_rate_pct": 2.5,
+      "current_account_pct_gdp": 1.74,
       "govt_debt_pct_gdp": 44,
       "fx_reserves_usd": 146281239761.971,
-      "sovereign_credit_rating": "S&P: AA-, Moody's: Aa3, Fitch: AA",
-      "central_bank_policy_rate_pct": null
+      "sovereign_credit_rating": "S&P: AA-, Moody's: Aa3, Fitch: AA-",
+      "central_bank_policy_rate_pct": 4.0,
+      "total_exports_usd": 239259165133.23,
+      "total_imports_usd": 216741016051.449,
+      "exchange_rate_vs_usd": 20.6541,
+      "top_export_partners": [
+        {
+          "country": "DEU",
+          "pct_of_total": 30.5
+        },
+        {
+          "country": "SVK",
+          "pct_of_total": 7.5
+        },
+        {
+          "country": "POL",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 5.0
+        },
+        {
+          "country": "GBR",
+          "pct_of_total": 4.5
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "DEU",
+          "pct_of_total": 22.0
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 12.5
+        },
+        {
+          "country": "POL",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "SVK",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 4.0
+        }
+      ],
+      "avg_applied_tariff_pct": 5.0
     },
-    "military": {},
+    "military": {
+      "military_expenditure_usd": 9200000000,
+      "active_military_personnel": 30334,
+      "alliance_memberships": [
+        "NATO",
+        "EU CSDP"
+      ]
+    },
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.662,
-      "energy_independence_index": 0.55,
-      "supply_chain_chokepoint_exposure": 0.37,
-      "composite_national_power_index": 35.4,
+      "resource_self_sufficiency_index": 0.5,
+      "energy_independence_index": 0.65,
+      "supply_chain_chokepoint_exposure": 0.235,
+      "composite_national_power_index": 50.5,
       "political_risk_premium_bps": 20,
-      "market_accessibility_score": 0.521
+      "market_accessibility_score": 0.497
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "DEU",
+          "pct_of_total": 30.5
+        },
+        {
+          "country": "SVK",
+          "pct_of_total": 7.5
+        },
+        {
+          "country": "POL",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 5.0
+        },
+        {
+          "country": "GBR",
+          "pct_of_total": 4.5
+        }
+      ],
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "DEU",
+          "pct_of_total": 22.0
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 12.5
+        },
+        {
+          "country": "POL",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "SVK",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 4.0
+        }
+      ],
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "avg_applied_tariff_pct": {
+      "value": 5.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.99,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "democracy_index": {
+      "value": 8.08,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "full_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 95,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 56,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 10,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": 1.08,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_political_stability": {
+      "value": 0.97,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_government_effectiveness": {
+      "value": 1.11,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_regulatory_quality": {
+      "value": 1.3,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_rule_of_law": {
+      "value": 1.14,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_control_of_corruption": {
+      "value": 0.77,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "fragile_states_index": {
+      "value": 37.7,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Petr Pavel",
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Petr Fiala",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "next_national_election_date": {
+      "value": "2025-10",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   }
 }

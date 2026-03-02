@@ -3,22 +3,22 @@
   "country_name": "Georgia",
   "tier": 3,
   "region": "europe",
-  "last_updated": "2026-03-02T12:00:00Z",
-  "run_id": "2026-W09",
+  "last_updated": "2026-03-02T12:05:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
-      "value": 37403000000.0,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 34189423544.9955,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_real_growth_pct": {
       "value": 7.2,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_per_capita_usd": {
       "value": 10125.977,
@@ -30,16 +30,16 @@
     "inflation_cpi_pct": {
       "value": 3.9,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "unemployment_rate_pct": {
-      "value": 12.097,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 13.9,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "current_account_pct_gdp": {
       "value": -4.5,
@@ -50,10 +50,10 @@
     },
     "govt_debt_pct_gdp": {
       "value": 34.2,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "fx_reserves_usd": {
       "value": 4447216641.42079,
@@ -71,19 +71,26 @@
     },
     "sovereign_credit_rating": {
       "value": "S&P: BB, Moody's: Ba2, Fitch: BB",
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 8.0,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "demographic": {
     "population_total": {
       "value": 3699557,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "population_growth_pct": {
       "value": -0.429560042538271,
@@ -98,6 +105,20 @@
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W09"
+    },
+    "hdi": {
+      "value": 0.844,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 38.3,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "political": {},
@@ -105,113 +126,129 @@
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.525,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.35,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 0.3,
-      "confidence": 0.65,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.29,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.157,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
     },
     "composite_national_power_index": {
-      "value": 10.8,
+      "value": 15.0,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
       "value": 400,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.414,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.42,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     }
   },
   "metadata": {
-    "active_flags": [],
-    "update_count": 13,
+    "active_flags": [
+      {
+        "factor": "macroeconomic.unemployment_rate_pct",
+        "reason": "Large absolute change: 1.80 (threshold: 0.8999999999999999)",
+        "previous_value": 12.097,
+        "new_value": 13.9,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      }
+    ],
+    "update_count": 23,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "code": "GEO",
   "name": "Georgia",
-  "executive_summary": "Georgia data profile for 2026-W09.",
-  "key_changes": [],
-  "outlook": "Outlook data pending further analysis.",
-  "investor_implications": "Monitor for developments.",
+  "executive_summary": "Georgia: GDP growth at 7.2%, inflation at 3.9%, credit rating S&P: BB, Moody's: Ba2, Fitch: BB. WATCH: Georgia political crisis with EU accession suspended.",
+  "key_changes": [
+    "WATCH: Georgia political crisis with EU accession suspended"
+  ],
+  "outlook": "Georgia outlook requires monitoring. Oil price surge affects all energy importers.",
+  "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
   "active_alerts": [
     {
       "severity": "watch",
-      "title": "Georgia political crisis enters second year with EU accession suspended",
-      "description": "Georgian political crisis continues from October 2024. Protests passed 300-day mark. Ruling Georgian Dream suspended EU accession until end of 2028. European Parliament did not recognize October 2024 election results. Police brutality documented. EU non-recognition creates diplomatic isolation risk. Risk premium at 400 bps."
+      "title": "Georgia political crisis with EU accession suspended",
+      "description": "Protests past 300-day mark. EU accession suspended until end of 2028. European Parliament did not recognize October 2024 election. Conditions persist."
     }
   ],
   "layers": {
     "endowments": {
       "population": 3699557,
       "population_growth_pct": -0.429560042538271,
-      "life_expectancy": 74.496
+      "life_expectancy": 74.496,
+      "population_total": 3699557,
+      "hdi": 0.844,
+      "median_age": 38.3
     },
     "institutions": {
       "political_stability": {}
     },
     "economy": {
-      "gdp_nominal_usd": 37403000000.0,
+      "gdp_nominal_usd": 34189423544.9955,
       "gdp_real_growth_pct": 7.2,
       "gdp_per_capita_usd": 10125.977,
       "inflation_cpi_pct": 3.9,
-      "unemployment_rate_pct": 12.097,
+      "unemployment_rate_pct": 13.9,
       "current_account_pct_gdp": -4.5,
       "govt_debt_pct_gdp": 34.2,
       "fx_reserves_usd": 4447216641.42079,
       "sovereign_credit_rating": "S&P: BB, Moody's: Ba2, Fitch: BB",
-      "central_bank_policy_rate_pct": null
+      "central_bank_policy_rate_pct": 8.0
     },
     "military": {},
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.525,
+      "resource_self_sufficiency_index": 0.35,
       "energy_independence_index": 0.3,
-      "supply_chain_chokepoint_exposure": 0.29,
-      "composite_national_power_index": 10.8,
+      "supply_chain_chokepoint_exposure": 0.157,
+      "composite_national_power_index": 15.0,
       "political_risk_premium_bps": 400,
-      "market_accessibility_score": 0.414
+      "market_accessibility_score": 0.42
     }
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T13:00:00Z",
-    "run_id": "2026-W09",
-    "executive_summary": "Georgia data profile for 2026-W09.",
-    "key_changes_this_week": [],
-    "outlook": "Outlook data pending further analysis.",
-    "investor_implications": "Monitor for developments.",
-    "data_quality_note": "Tier 3 country with basic coverage only."
+    "generated_at": "2026-03-02T18:00:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Georgia: GDP growth at 7.2%, inflation at 3.9%, credit rating S&P: BB, Moody's: Ba2, Fitch: BB. WATCH: Georgia political crisis with EU accession suspended.",
+    "key_changes_this_week": [
+      "WATCH: Georgia political crisis with EU accession suspended"
+    ],
+    "outlook": "Georgia outlook requires monitoring. Oil price surge affects all energy importers.",
+    "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
+    "data_quality_note": "Tier 3 country with basic coverage. 1 active alert(s)."
   }
 }

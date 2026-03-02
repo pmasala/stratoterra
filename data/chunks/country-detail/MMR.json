@@ -3,22 +3,22 @@
   "country_name": "Myanmar",
   "tier": 3,
   "region": "southeast_asia",
-  "last_updated": "2026-03-02T12:00:00Z",
-  "run_id": "2026-W09",
+  "last_updated": "2026-03-02T12:05:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
-      "value": 60561000000.0,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 74068349523.8095,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_real_growth_pct": {
       "value": -2.7,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_per_capita_usd": {
       "value": 1097.473,
@@ -44,9 +44,9 @@
     "inflation_cpi_pct": {
       "value": 31,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "current_account_pct_gdp": {
       "value": -2.3,
@@ -57,10 +57,10 @@
     },
     "govt_debt_pct_gdp": {
       "value": 63.5,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 3,
@@ -80,10 +80,10 @@
   "demographic": {
     "population_total": {
       "value": 54500091,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "population_growth_pct": {
       "value": 0.674364862610485,
@@ -98,6 +98,20 @@
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W09"
+    },
+    "hdi": {
+      "value": 0.609,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 30.8,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "political": {},
@@ -105,84 +119,91 @@
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.775,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
-      "value": 0.6,
-      "confidence": 0.65,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.32,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.307,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
     },
     "composite_national_power_index": {
-      "value": 9.9,
+      "value": 8.1,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
       "value": 2000,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.128,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.19,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     }
   },
   "metadata": {
     "active_flags": [],
-    "update_count": 13,
+    "update_count": 20,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "code": "MMR",
   "name": "Myanmar",
-  "executive_summary": "Myanmar data profile for 2026-W09.",
-  "key_changes": [],
-  "outlook": "Outlook data pending further analysis.",
-  "investor_implications": "Monitor for developments.",
+  "executive_summary": "Myanmar is effectively a failed state. The military junta controls only 21% of territory, five years after the coup. GDP growth at -2.7%. Inflation at 31%. Political risk premium at 2,000 bps. No legitimate government, no functioning economy.",
+  "key_changes": [
+    "Military controls only 21% of territory (ongoing civil war)",
+    "GDP contracting at -2.7%; inflation at 31%",
+    "Political risk premium at 2,000 bps"
+  ],
+  "outlook": "Myanmar has no visible path to stability. Resistance forces control majority of territory. Humanitarian crisis deepening. No international engagement pathway under junta.",
+  "investor_implications": "Myanmar is completely uninvestable. Total write-off for any existing exposure. No recovery pathway visible.",
   "active_alerts": [
     {
       "severity": "critical",
       "title": "Myanmar military government controls only 21% of territory; economy contracting at -2.7%",
-      "description": "Five years after the military coup, Myanmar's junta controls only 21% of the country. GDP growth is -2.7% -- the only negative growth in the dataset. Inflation at 31%. Sham elections completed Jan 2026 with extremely low turnout (13.1M vs 25.9M in 2020). Political risk premium at 2,000 bps. Not rated by any major credit agency. The country is effectively a failed state with no path to normalization visible."
+      "description": "Five years after the military coup, Myanmar's junta controls only 21% of the country. GDP growth is -2.7%. Inflation at 31%. Political risk premium at 2,000 bps. The country is effectively a failed state. Conditions persist."
     }
   ],
   "layers": {
     "endowments": {
       "population": 54500091,
       "population_growth_pct": 0.674364862610485,
-      "life_expectancy": 66.889
+      "life_expectancy": 66.889,
+      "population_total": 54500091,
+      "hdi": 0.609,
+      "median_age": 30.8
     },
     "institutions": {
       "political_stability": {}
     },
     "economy": {
-      "gdp_nominal_usd": 60561000000.0,
+      "gdp_nominal_usd": 74068349523.8095,
       "gdp_real_growth_pct": -2.7,
       "gdp_per_capita_usd": 1097.473,
       "inflation_cpi_pct": 31,
@@ -196,22 +217,26 @@
     "military": {},
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.775,
-      "energy_independence_index": 0.6,
-      "supply_chain_chokepoint_exposure": 0.32,
-      "composite_national_power_index": 9.9,
+      "resource_self_sufficiency_index": 0.5,
+      "energy_independence_index": 0.5,
+      "supply_chain_chokepoint_exposure": 0.307,
+      "composite_national_power_index": 8.1,
       "political_risk_premium_bps": 2000,
-      "market_accessibility_score": 0.128
+      "market_accessibility_score": 0.19
     }
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T13:00:00Z",
-    "run_id": "2026-W09",
-    "executive_summary": "Myanmar data profile for 2026-W09.",
-    "key_changes_this_week": [],
-    "outlook": "Outlook data pending further analysis.",
-    "investor_implications": "Monitor for developments.",
-    "data_quality_note": "Tier 3 country with basic coverage only."
+    "generated_at": "2026-03-02T18:00:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Myanmar is effectively a failed state. The military junta controls only 21% of territory, five years after the coup. GDP growth at -2.7%. Inflation at 31%. Political risk premium at 2,000 bps. No legitimate government, no functioning economy.",
+    "key_changes_this_week": [
+      "Military controls only 21% of territory (ongoing civil war)",
+      "GDP contracting at -2.7%; inflation at 31%",
+      "Political risk premium at 2,000 bps"
+    ],
+    "outlook": "Myanmar has no visible path to stability. Resistance forces control majority of territory. Humanitarian crisis deepening. No international engagement pathway under junta.",
+    "investor_implications": "Myanmar is completely uninvestable. Total write-off for any existing exposure. No recovery pathway visible.",
+    "data_quality_note": "Myanmar macro data is extremely low quality under civil war conditions. CRITICAL alert active."
   }
 }

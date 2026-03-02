@@ -3,22 +3,22 @@
   "country_name": "Ethiopia",
   "tier": 3,
   "region": "sub_saharan_africa",
-  "last_updated": "2026-03-02T12:00:00Z",
-  "run_id": "2026-W09",
+  "last_updated": "2026-03-02T12:05:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
-      "value": 109492000000.0,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": 149740297952.986,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_real_growth_pct": {
       "value": 7.2,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_per_capita_usd": {
       "value": 994.042,
@@ -30,9 +30,9 @@
     "inflation_cpi_pct": {
       "value": 13,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "unemployment_rate_pct": {
       "value": 3.323,
@@ -57,10 +57,10 @@
     },
     "govt_debt_pct_gdp": {
       "value": 46.7,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 7.1,
@@ -70,20 +70,20 @@
       "run_id": "2026-W09"
     },
     "sovereign_credit_rating": {
-      "value": "S&P: SD, Moody's: Ca, Fitch: RD",
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "value": "S&P: NR, Moody's: NR, Fitch: CCC-",
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     }
   },
   "demographic": {
     "population_total": {
       "value": 132059767,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W10"
     },
     "population_growth_pct": {
       "value": 2.58350411214521,
@@ -98,6 +98,20 @@
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W09"
+    },
+    "hdi": {
+      "value": 0.497,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 20.4,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
     }
   },
   "political": {},
@@ -106,83 +120,100 @@
   "derived": {
     "resource_self_sufficiency_index": {
       "value": 0.375,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 0.1,
-      "confidence": 0.65,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.11,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.127,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
     },
     "composite_national_power_index": {
-      "value": 14.0,
+      "value": 12.4,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 2700,
+      "value": 2500,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.145,
-      "confidence": 0.6,
-      "last_updated": "2026-03-02T12:00:00Z",
+      "value": 0.195,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W09",
+      "run_id": "2026-W10",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     }
   },
   "metadata": {
-    "active_flags": [],
-    "update_count": 13,
+    "active_flags": [
+      {
+        "factor": "macroeconomic.gdp_nominal_usd",
+        "reason": "Large % change: 36.8% (threshold: 15%)",
+        "previous_value": 109492000000.0,
+        "new_value": 149740297952.986,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      }
+    ],
+    "update_count": 21,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "code": "ETH",
   "name": "Ethiopia",
-  "executive_summary": "Ethiopia data profile for 2026-W09.",
-  "key_changes": [],
-  "outlook": "Outlook data pending further analysis.",
-  "investor_implications": "Monitor for developments.",
+  "executive_summary": "Ethiopia is in selective default (SD/Ca/RD) with a 2,700 bps political risk premium. TPLF-government clashes have resumed, threatening the Pretoria peace agreement. Elections scheduled June 1, 2026 in a fraught environment with TPLF legal status revoked. GDP growth at 7.2% appears strong but is distorted by low base effects and data quality concerns.",
+  "key_changes": [
+    "TPLF-government clashes resumed -- Tigray conflict risk (major)",
+    "Sovereign credit at selective default (SD/Ca/RD)",
+    "Elections scheduled June 1, 2026 -- TPLF legal status revoked",
+    "Political risk premium at 2,700 bps"
+  ],
+  "outlook": "Ethiopia faces rising conflict risk ahead of June elections. Debt restructuring remains incomplete. Telecom privatization (Safaricom entry) provides one positive structural story.",
+  "investor_implications": "Ethiopia is effectively uninvestable at selective default. Avoid all exposure. Monitor debt restructuring progress for eventual recovery opportunity.",
   "active_alerts": [
     {
       "severity": "critical",
       "title": "Ethiopia in selective default with Tigray conflict resumption threatening peace agreement",
-      "description": "Ethiopia's sovereign credit rating stands at SD/Ca/RD (selective default) with a political risk premium of 2,700 bps -- the highest in the dataset. TPLF-government clashes resumed on Jan 29, 2026 using drones and artillery, threatening the 2022 Pretoria peace agreement. Elections scheduled for June 1, 2026 in an extremely fraught environment with the TPLF's legal status revoked. The combination of sovereign default, renewed conflict, and upcoming contested elections creates an extreme risk environment."
+      "description": "Ethiopia's sovereign credit rating at SD/Ca/RD (selective default) with political risk premium of 2,700 bps. TPLF-government clashes resumed. Elections scheduled for June 1, 2026 in a fraught environment with TPLF legal status revoked. Conditions persist."
     }
   ],
   "layers": {
     "endowments": {
       "population": 132059767,
       "population_growth_pct": 2.58350411214521,
-      "life_expectancy": 67.315
+      "life_expectancy": 67.315,
+      "population_total": 132059767,
+      "hdi": 0.497,
+      "median_age": 20.4
     },
     "institutions": {
       "political_stability": {}
     },
     "economy": {
-      "gdp_nominal_usd": 109492000000.0,
+      "gdp_nominal_usd": 149740297952.986,
       "gdp_real_growth_pct": 7.2,
       "gdp_per_capita_usd": 994.042,
       "inflation_cpi_pct": 13,
@@ -190,7 +221,7 @@
       "current_account_pct_gdp": -2.9,
       "govt_debt_pct_gdp": 46.7,
       "fx_reserves_usd": 3784387425.19121,
-      "sovereign_credit_rating": "S&P: SD, Moody's: Ca, Fitch: RD",
+      "sovereign_credit_rating": "S&P: NR, Moody's: NR, Fitch: CCC-",
       "central_bank_policy_rate_pct": null
     },
     "military": {},
@@ -198,20 +229,25 @@
     "derived": {
       "resource_self_sufficiency_index": 0.375,
       "energy_independence_index": 0.1,
-      "supply_chain_chokepoint_exposure": 0.11,
-      "composite_national_power_index": 14.0,
-      "political_risk_premium_bps": 2700,
-      "market_accessibility_score": 0.145
+      "supply_chain_chokepoint_exposure": 0.127,
+      "composite_national_power_index": 12.4,
+      "political_risk_premium_bps": 2500,
+      "market_accessibility_score": 0.195
     }
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T13:00:00Z",
-    "run_id": "2026-W09",
-    "executive_summary": "Ethiopia data profile for 2026-W09.",
-    "key_changes_this_week": [],
-    "outlook": "Outlook data pending further analysis.",
-    "investor_implications": "Monitor for developments.",
-    "data_quality_note": "Tier 3 country with basic coverage only."
+    "generated_at": "2026-03-02T18:00:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Ethiopia is in selective default (SD/Ca/RD) with a 2,700 bps political risk premium. TPLF-government clashes have resumed, threatening the Pretoria peace agreement. Elections scheduled June 1, 2026 in a fraught environment with TPLF legal status revoked. GDP growth at 7.2% appears strong but is distorted by low base effects and data quality concerns.",
+    "key_changes_this_week": [
+      "TPLF-government clashes resumed -- Tigray conflict risk (major)",
+      "Sovereign credit at selective default (SD/Ca/RD)",
+      "Elections scheduled June 1, 2026 -- TPLF legal status revoked",
+      "Political risk premium at 2,700 bps"
+    ],
+    "outlook": "Ethiopia faces rising conflict risk ahead of June elections. Debt restructuring remains incomplete. Telecom privatization (Safaricom entry) provides one positive structural story.",
+    "investor_implications": "Ethiopia is effectively uninvestable at selective default. Avoid all exposure. Monitor debt restructuring progress for eventual recovery opportunity.",
+    "data_quality_note": "Ethiopia macro data is low quality. Selective default credit rating. CRITICAL alert active."
   }
 }
