@@ -1,0 +1,198 @@
+{
+  "country_code": "SWE",
+  "country_name": "Sweden",
+  "tier": 1,
+  "region": "europe",
+  "last_updated": "2026-03-02T12:00:00Z",
+  "run_id": "2026-W09",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 662318000000.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_real_growth_pct": {
+      "value": 0.7,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_per_capita_usd": {
+      "value": 62036.06,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "inflation_cpi_pct": {
+      "value": 2.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "unemployment_rate_pct": {
+      "value": 8.694,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "current_account_pct_gdp": {
+      "value": 5.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "fx_reserves_usd": {
+      "value": 62569356006.7168,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 34.2,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 1.9,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 1.75,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09",
+      "note": "Source disagreement >28.6% with Riksbank"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 9.0288,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 2.64,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 10569709,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "population_growth_pct": {
+      "value": 0.313432129983607,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "life_expectancy": {
+      "value": 83.309756097561,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    }
+  },
+  "political": {},
+  "military": {},
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.787,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
+    },
+    "energy_independence_index": {
+      "value": 0.65,
+      "confidence": 0.65,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.35,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+    },
+    "composite_national_power_index": {
+      "value": 50.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "market_accessibility_score": {
+      "value": 0.81,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    }
+  },
+  "metadata": {
+    "active_flags": [],
+    "update_count": 16,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-02T13:00:00Z",
+    "run_id": "2026-W09",
+    "executive_summary": "Sweden faces modest exposure to global events. Central bank rate source disagreement noted by validation agent. EU defense consensus supports Swedish defense sector (Saab). GDP growth at 1.9%. No significant country-specific events this week.",
+    "key_changes_this_week": [
+      "EU defense consensus emerging benefits Saab and Swedish defense sector",
+      "Central bank rate data source disagreement flagged by validation",
+      "No major domestic events"
+    ],
+    "outlook": "Sweden's economy is recovering from the housing-led slowdown. Defense spending increase is structural given NATO membership and Russia proximity. Oil price surge creates moderate import cost pressure.",
+    "investor_implications": "Saab is a key defense play benefiting from European spending consensus. SEK under modest pressure from risk-off. Swedish government bonds stable. Housing market recovery continuing.",
+    "data_quality_note": "Sweden macro data is current. Central bank rate data flagged with source disagreement -- minor discrepancy."
+  }
+}

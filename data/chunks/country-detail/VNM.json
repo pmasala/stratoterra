@@ -1,0 +1,175 @@
+{
+  "country_code": "VNM",
+  "country_name": "Vietnam",
+  "tier": 2,
+  "region": "southeast_asia",
+  "last_updated": "2026-03-02T12:00:00Z",
+  "run_id": "2026-W09",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 484726000000.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_real_growth_pct": {
+      "value": 6.5,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_per_capita_usd": {
+      "value": 4744.725,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "inflation_cpi_pct": {
+      "value": 3.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "unemployment_rate_pct": {
+      "value": 1.523,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "current_account_pct_gdp": {
+      "value": 4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "fx_reserves_usd": {
+      "value": 83081854928.1161,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 32,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 5.6,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: BB+, Moody's: Ba2, Fitch: BB+",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 100987686,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "population_growth_pct": {
+      "value": 0.631267006487247,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "life_expectancy": {
+      "value": 74.588,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    }
+  },
+  "political": {},
+  "military": {},
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.713,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
+    },
+    "energy_independence_index": {
+      "value": 0.65,
+      "confidence": 0.65,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.7,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+    },
+    "composite_national_power_index": {
+      "value": 27.1,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
+    },
+    "political_risk_premium_bps": {
+      "value": 350,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "market_accessibility_score": {
+      "value": 0.412,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    }
+  },
+  "metadata": {
+    "active_flags": [],
+    "update_count": 13,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-02T13:00:00Z",
+    "run_id": "2026-W09",
+    "executive_summary": "Vietnam's National Assembly election is scheduled for March 15, following the 14th Communist Party Congress. GDP growth at 7.1% is among the highest globally. Legislative election largely predetermined but new leadership lineup may affect FDI strategy. No significant country-specific events this week beyond the election.",
+    "key_changes_this_week": [
+      "National Assembly election March 15 -- largely predetermined but new leadership signals important (minor)",
+      "No major economic events"
+    ],
+    "outlook": "Vietnam's growth trajectory remains strong driven by FDI in manufacturing and electronics. Election outcome will signal leadership priorities for FDI attraction. US tariff escalation creates some export headwinds but Vietnam benefits from China+1 diversification.",
+    "investor_implications": "VN-Index stable. Vietnam dong under modest pressure. FDI-driven manufacturing stocks remain core positions. Samsung Vietnam operations are key indicator. Monitor post-election FDI policy signals.",
+    "data_quality_note": "Vietnam macro data is of medium quality from GSO and SBV."
+  }
+}

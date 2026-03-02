@@ -1,0 +1,204 @@
+{
+  "country_code": "AUS",
+  "country_name": "Australia",
+  "tier": 1,
+  "region": "oceania",
+  "last_updated": "2026-03-02T12:00:00Z",
+  "run_id": "2026-W09",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 1829508000000.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_real_growth_pct": {
+      "value": 1.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_per_capita_usd": {
+      "value": 65946.015,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "inflation_cpi_pct": {
+      "value": 2.6,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "unemployment_rate_pct": {
+      "value": 4.09,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "current_account_pct_gdp": {
+      "value": -1.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 51,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "fx_reserves_usd": {
+      "value": 60404058269.2777,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 2.1,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 3.85,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 0.655,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 4.73,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "equity_index_level": {
+      "value": 9199.0,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 27196812,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "population_growth_pct": {
+      "value": 1.99383715356028,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "life_expectancy": {
+      "value": 83.0512195121951,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    }
+  },
+  "political": {},
+  "military": {},
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.975,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
+    },
+    "energy_independence_index": {
+      "value": 1.0,
+      "confidence": 0.65,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.36,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+    },
+    "composite_national_power_index": {
+      "value": 56.8,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "market_accessibility_score": {
+      "value": 0.753,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    }
+  },
+  "metadata": {
+    "active_flags": [],
+    "update_count": 17,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-02T13:00:00Z",
+    "run_id": "2026-W09",
+    "executive_summary": "Australia benefits from commodity price surge as a major energy and minerals exporter. RBA hiked unexpectedly to 3.85% -- a hawkish signal. GDP growth at 1.8% is stable. AUKUS program advancing. Domestic economy faces rate headwind but energy exports provide external sector support. Political stability maintained.",
+    "key_changes_this_week": [
+      "RBA hiked to 3.85% -- unexpected hawkish move amid persistent inflation",
+      "Energy and commodity exports benefit from global price surge",
+      "AUKUS and Indo-Pacific defense cooperation advancing"
+    ],
+    "outlook": "Australia is a relative beneficiary of the global energy shock as a net exporter. The RBA rate hike signals continued inflation concern. AUKUS defense spending is a structural positive for the economy.",
+    "investor_implications": "ASX benefits from energy and mining sector weighting. AUD supported by commodity prices and higher rates. Australian government bonds face modest upward yield pressure. Housing market faces headwind from rate hike.",
+    "data_quality_note": "Australia macro data is high quality from ABS and RBA."
+  }
+}

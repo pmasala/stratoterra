@@ -1,0 +1,197 @@
+{
+  "country_code": "NOR",
+  "country_name": "Norway",
+  "tier": 1,
+  "region": "europe",
+  "last_updated": "2026-03-02T12:00:00Z",
+  "run_id": "2026-W09",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 517102000000.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_real_growth_pct": {
+      "value": 1.2,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_per_capita_usd": {
+      "value": 91883.687,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "inflation_cpi_pct": {
+      "value": 2.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "unemployment_rate_pct": {
+      "value": 4.637,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "current_account_pct_gdp": {
+      "value": 16.2,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "fx_reserves_usd": {
+      "value": 81241559661.5009,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 42.7,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 1.6,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 4.0,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 9.5432,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 4.18,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 5572279,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "population_growth_pct": {
+      "value": 0.949855138372357,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "life_expectancy": {
+      "value": 83.1121951219512,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    }
+  },
+  "political": {},
+  "military": {},
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.75,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
+    },
+    "energy_independence_index": {
+      "value": 1.0,
+      "confidence": 0.65,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.29,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+    },
+    "composite_national_power_index": {
+      "value": 50.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "market_accessibility_score": {
+      "value": 0.7,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    }
+  },
+  "metadata": {
+    "active_flags": [],
+    "update_count": 16,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-02T13:00:00Z",
+    "run_id": "2026-W09",
+    "executive_summary": "Norway is a direct beneficiary of the oil price surge as Europe's largest oil and gas producer. GDP growth at 2.1%. Norges Bank policy remains focused on inflation management. Arctic security dynamics elevated by Trump-Greenland situation and Denmark snap election. Norwegian sovereign wealth fund ($1.7T+) provides exceptional fiscal resilience.",
+    "key_changes_this_week": [
+      "Oil +13% surge directly benefits Norwegian energy sector and fiscal revenues",
+      "Arctic security dynamics elevated by Greenland situation",
+      "No major domestic events"
+    ],
+    "outlook": "Norway is among the clearest beneficiaries of the global energy shock. Higher oil revenues support the sovereign wealth fund and fiscal position. Arctic security concerns add defense spending pressure but also highlight Norway's strategic importance.",
+    "investor_implications": "Equinor and Norwegian energy sector are direct beneficiaries. NOK supported by oil revenues. Oslo Bors energy-weighted index benefits. Government bonds backed by sovereign wealth fund.",
+    "data_quality_note": "Norway macro data is high quality from SSB and Norges Bank."
+  }
+}

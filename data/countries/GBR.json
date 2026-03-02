@@ -1,0 +1,205 @@
+{
+  "country_code": "GBR",
+  "country_name": "United Kingdom",
+  "tier": 1,
+  "region": "europe",
+  "last_updated": "2026-03-02T12:00:00Z",
+  "run_id": "2026-W09",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 3958780000000.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_real_growth_pct": {
+      "value": 1.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_per_capita_usd": {
+      "value": 56660.868,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "inflation_cpi_pct": {
+      "value": 3.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "unemployment_rate_pct": {
+      "value": 4.746,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "current_account_pct_gdp": {
+      "value": -3.1,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 103.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "fx_reserves_usd": {
+      "value": 174597843325.182,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 1.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: AA, Moody's: Aa3, Fitch: AA",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 3.75,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 1.3483,
+      "confidence": 0.98,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 4.23,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "equity_index_level": {
+      "value": 10910.55,
+      "confidence": 0.98,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 69226000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "population_growth_pct": {
+      "value": 1.0659564474212,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "life_expectancy": {
+      "value": 81.2380975609756,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    }
+  },
+  "political": {},
+  "military": {},
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.637,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
+    },
+    "energy_independence_index": {
+      "value": 0.75,
+      "confidence": 0.65,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.39,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+    },
+    "composite_national_power_index": {
+      "value": 65.8,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
+    },
+    "political_risk_premium_bps": {
+      "value": 10,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "market_accessibility_score": {
+      "value": 0.782,
+      "confidence": 0.6,
+      "last_updated": "2026-03-02T12:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W09",
+      "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    }
+  },
+  "metadata": {
+    "active_flags": [],
+    "update_count": 17,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-02T13:00:00Z",
+    "run_id": "2026-W09",
+    "executive_summary": "The UK's political landscape fragmented further this week as the Green Party won the Gorton and Denton by-election with 40.7% -- a seat Labour held for nearly a century. Labour was pushed to third place. Deputy PM Rayner's resignation and cabinet reshuffle add to governance instability under PM Starmer. BOE held rates steady. UK faces moderate exposure to oil price surge. Growth at 0.6% reflects continued sluggishness.",
+    "key_changes_this_week": [
+      "Green Party won Gorton and Denton by-election; Labour pushed to third place (moderate)",
+      "Deputy PM Angela Rayner resigned; Starmer conducted cabinet reshuffle",
+      "BOE held rates steady amid economic uncertainty",
+      "Oil price surge adds modest inflationary pressure"
+    ],
+    "outlook": "The UK's two-party system continues to fragment with Reform UK and Greens challenging Labour from right and left. PM Starmer faces growing calls for resignation as Labour hemorrhages support. Policy uncertainty may delay economic reforms. The Iran conflict affects UK through energy prices, defense spending commitments, and financial sector risk premiums. Sterling faces mixed drivers.",
+    "investor_implications": "FTSE 100 benefits from its energy and defense sector weighting. Sterling faces political risk discount but UK government bonds benefit from relative safe-haven status. Political fragmentation risk may affect longer-term fiscal policy credibility. BP and Shell are direct beneficiaries of oil surge. Defense stocks (BAE Systems) benefit from spending consensus.",
+    "data_quality_note": "UK macro data is high quality from ONS and BOE. Political assessments based on confirmed by-election results and media reporting."
+  }
+}

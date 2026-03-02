@@ -1,0 +1,2825 @@
+{
+  "run_id": "2026-W09",
+  "date": "2026-03-02",
+  "generated_at": "2026-03-02T07:32:59Z",
+  "total_signals": 124,
+  "escalation_groups": 6,
+  "escalations": [
+    {
+      "escalation_id": "esc_001",
+      "category": "IRAN_CONFLICT_AND_REGIONAL_FALLOUT",
+      "signal_ids": [
+        "sig_0001",
+        "sig_0002",
+        "sig_0003",
+        "sig_0043",
+        "sig_0060",
+        "sig_0064",
+        "sig_0071",
+        "sig_0092",
+        "sig_0093",
+        "sig_0094",
+        "sig_0102"
+      ],
+      "affected_countries": [
+        "ARE",
+        "BHR",
+        "IRN",
+        "IRQ",
+        "ISR",
+        "JOR",
+        "KWT",
+        "QAT",
+        "SAU",
+        "USA",
+        "YEM"
+      ],
+      "severity": "transformative",
+      "confidence_range": "0.85-0.99",
+      "num_related_events": 11,
+      "description": "US and Israel launch joint strikes on Iran, killing Supreme Leader Khamenei [+10 related events]",
+      "investor_summary": "US-Israeli strikes killed Supreme Leader Khamenei, Iran retaliated against Gulf states and US bases, Strait of Hormuz collapsed 70%, oil surged 13%, nuclear infrastructure targeted. Houthi Red Sea attacks resumed. This is the most consequential geopolitical event since Feb 2022 and affects global energy supply, shipping, defense equities, and risk premiums across the entire Middle East.",
+      "recommended_action": "ACCEPT all related events. Confidence is high (0.85-0.99) across multiple corroborating sources. Flag for continued monitoring — situation is rapidly evolving.",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    },
+    {
+      "escalation_id": "esc_002",
+      "category": "PAKISTAN_AFGHANISTAN_WAR",
+      "signal_ids": [
+        "sig_0007",
+        "sig_0099"
+      ],
+      "affected_countries": [
+        "AFG",
+        "PAK"
+      ],
+      "severity": "transformative",
+      "confidence_range": "0.93-0.98",
+      "num_related_events": 2,
+      "description": "Pakistan declares 'open war' on Afghanistan with airstrikes on Kabul and Kandahar [+1 related events]",
+      "investor_summary": "Pakistan declared open war on Afghanistan with airstrikes on Kabul and Kandahar. Active conflict status change for both countries. Affects regional stability, Pakistan sovereign risk, and South Asian investment flows.",
+      "recommended_action": "ACCEPT. Confirmed by multiple sources with high confidence (0.93-0.98).",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    },
+    {
+      "escalation_id": "esc_003",
+      "category": "US_TARIFF_CONSTITUTIONAL_CRISIS",
+      "signal_ids": [
+        "sig_0008"
+      ],
+      "affected_countries": [
+        "USA"
+      ],
+      "severity": "transformative",
+      "confidence_range": "0.99-0.99",
+      "num_related_events": 1,
+      "description": "US Supreme Court strikes down IEEPA tariffs 6-3, ruling President lacks tariff authority",
+      "investor_summary": "SCOTUS struck down IEEPA tariffs 6-3; Trump immediately imposed 15% global tariff under Section 122. Fundamental restructuring of US trade policy legal framework. Affects all bilateral trade relationships and global supply chains.",
+      "recommended_action": "ACCEPT. Supreme Court ruling is definitive (conf=0.99). Section 122 tariff implementation confirmed.",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    },
+    {
+      "escalation_id": "esc_004",
+      "category": "NUCLEAR_PROLIFERATION_AND_ARMS_CONTROL",
+      "signal_ids": [
+        "sig_0106",
+        "sig_0107",
+        "sig_0124"
+      ],
+      "affected_countries": [
+        "PRK",
+        "RUS",
+        "USA"
+      ],
+      "severity": "transformative",
+      "confidence_range": "0.85-0.92",
+      "num_related_events": 3,
+      "description": "North Korea conducted its first ballistic missile test of 2026 on Jan 4, firing hypersonic missiles from Pyongyang striking a target 900km away. Believed to be Hwasong-16B solid-fueled IRBM capable of [+2 related events]",
+      "investor_summary": "New START treaty expired without extension (US-Russia). North Korea tested hypersonic missiles. Russia planning new ICBM tests. Iran nuclear infrastructure targeted in strikes. The global nuclear order is in its most precarious state since the Cold War.",
+      "recommended_action": "ACCEPT. New START expiry is confirmed. Missile tests reported by multiple defense sources.",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    },
+    {
+      "escalation_id": "esc_005",
+      "category": "SANCTIONS_REGIME_CHANGES",
+      "signal_ids": [
+        "sig_0067",
+        "sig_0068",
+        "sig_0072"
+      ],
+      "affected_countries": [
+        "DEU",
+        "FRA",
+        "GBR",
+        "SYR",
+        "USA",
+        "VEN"
+      ],
+      "severity": "major",
+      "confidence_range": "0.95-0.95",
+      "num_related_events": 3,
+      "description": "Following the capture of Venezuelan President Maduro in January 2026, OFAC issued multiple general licenses easing Venezuela oil sanctions: GL 46A (Feb 10) authorizes broad US company activities in Ve [+2 related events]",
+      "investor_summary": "Venezuela oil sanctions eased (OFAC general licenses post-Maduro capture). EU renewed Russia sanctions 6 months. Caesar Act for Syria repealed. Multiple comprehensive sanctions regime changes affecting energy markets and trade flows.",
+      "recommended_action": "ACCEPT. OFAC and EU Council actions are officially published.",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    },
+    {
+      "escalation_id": "esc_006",
+      "category": "ETHIOPIA_TIGRAY_CONFLICT_RESUMPTION",
+      "signal_ids": [
+        "sig_0100"
+      ],
+      "affected_countries": [
+        "ETH"
+      ],
+      "severity": "major",
+      "confidence_range": "0.88-0.88",
+      "num_related_events": 1,
+      "description": "Clashes erupted on Jan 29, 2026 between TPLF and Ethiopian government forces in the Tigray region. ENDF and Tigray Security Forces clashed near the Amhara border using drones, artillery, and heavy wea",
+      "investor_summary": "TPLF-government clashes resumed in Tigray using drones and artillery. Threatens the 2022 Pretoria peace agreement. Affects Horn of Africa stability and humanitarian aid flows.",
+      "recommended_action": "ACCEPT with monitoring. Confidence 0.88 — situation is fluid.",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal_id": "sig_0001",
+      "event_id": "evt_2026-02-28_001",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA",
+        "ISR",
+        "IRN"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.political_risk_premium_bps",
+        "derived.overall_stability_score",
+        "economy.energy_production",
+        "relations.bilateral_trade"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.95,
+      "severity": "transformative",
+      "event_type": "military_attack",
+      "description": "US and Israel launch joint strikes on Iran, killing Supreme Leader Khamenei",
+      "investor_impact": "This is a watershed geopolitical event that will fundamentally reshape Middle Eastern security architecture, energy markets, and global risk premiums for months to come.",
+      "confidence": 0.99,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0002",
+      "event_id": "evt_2026-02-28_002",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "IRN",
+        "ISR",
+        "ARE",
+        "QAT",
+        "KWT",
+        "BHR",
+        "JOR"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.political_risk_premium_bps",
+        "economy.infrastructure",
+        "relations.alliance_commitments"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.95,
+      "severity": "transformative",
+      "event_type": "military_attack",
+      "description": "Iran retaliates with missile and drone strikes on Israel and Gulf Arab states",
+      "investor_impact": "Gulf state infrastructure and tourism sectors face immediate damage; regional risk premiums will spike sharply for UAE, Qatar, Kuwait, and Bahrain sovereign debt and equities.",
+      "confidence": 0.98,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0003",
+      "event_id": "evt_2026-03-01_003",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA",
+        "IRN"
+      ],
+      "affected_factors": [
+        "military.naval_capability",
+        "economy.trade_routes",
+        "derived.trade_chokepoint_risk"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.95,
+      "severity": "transformative",
+      "event_type": "military_attack",
+      "description": "US destroys 9 Iranian warships as Strait of Hormuz traffic collapses 70%",
+      "investor_impact": "Strait of Hormuz disruption is the most severe global energy supply risk in decades; extended closure would trigger recession-level oil shocks and reignite inflation worldwide.",
+      "confidence": 0.97,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0004",
+      "event_id": "evt_2026-03-01_004",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA",
+        "IRN",
+        "ISR"
+      ],
+      "affected_factors": [
+        "economy.commodity_prices",
+        "economy.equity_markets",
+        "derived.investor_sentiment"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "market_shock",
+      "description": "Oil prices surge 13%, global stock futures drop, gold jumps on Iran conflict",
+      "investor_impact": "Massive risk-off rotation underway; energy, defense, and gold equities benefit while consumer discretionary, airlines, and emerging markets face sharp selloffs.",
+      "confidence": 0.96,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0005",
+      "event_id": "evt_2026-02-28_005",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "ARE",
+        "IRN"
+      ],
+      "affected_factors": [
+        "relations.diplomatic_status",
+        "economy.tourism",
+        "economy.aviation",
+        "derived.political_risk_premium_bps"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "diplomatic_rupture",
+      "description": "UAE closes Tehran embassy after Iranian missile strikes hit Dubai and Abu Dhabi",
+      "investor_impact": "Dubai's status as a global aviation and tourism hub faces severe disruption; UAE real estate and financial sectors face immediate confidence crisis.",
+      "confidence": 0.97,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0006",
+      "event_id": "evt_2026-03-01_006",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "ARE",
+        "QAT",
+        "KWT",
+        "BHR",
+        "JOR",
+        "OMN"
+      ],
+      "affected_factors": [
+        "economy.aviation",
+        "economy.trade_routes",
+        "economy.tourism"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "infrastructure_disruption",
+      "description": "Global flight disruptions: 7,700+ delays and 2,280 cancellations from Iran conflict",
+      "investor_impact": "Aviation sector faces significant revenue losses; global supply chains relying on Middle Eastern air cargo hubs will experience delays and rerouting costs.",
+      "confidence": 0.93,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0007",
+      "event_id": "evt_2026-02-26_007",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "PAK",
+        "AFG"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.political_risk_premium_bps",
+        "derived.overall_stability_score",
+        "relations.bilateral_relations"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.95,
+      "severity": "transformative",
+      "event_type": "war_declaration",
+      "description": "Pakistan declares 'open war' on Afghanistan with airstrikes on Kabul and Kandahar",
+      "investor_impact": "Pakistan sovereign risk increases significantly; border trade disruption and defense spending surge will pressure Pakistan's already strained fiscal position and foreign reserves.",
+      "confidence": 0.98,
+      "date": "2026-02-26"
+    },
+    {
+      "signal_id": "sig_0008",
+      "event_id": "evt_2026-02-20_008",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "political.trade_policy",
+        "economy.tariff_regime",
+        "derived.trade_openness"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.95,
+      "severity": "transformative",
+      "event_type": "court_ruling",
+      "description": "US Supreme Court strikes down IEEPA tariffs 6-3, ruling President lacks tariff authority",
+      "investor_impact": "Landmark ruling reshapes US trade policy authority; creates legal uncertainty for current and future tariff regimes while the administration pivots to alternative legal frameworks.",
+      "confidence": 0.99,
+      "date": "2026-02-20"
+    },
+    {
+      "signal_id": "sig_0009",
+      "event_id": "evt_2026-02-27_009",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA",
+        "CHN",
+        "CAN",
+        "MEX"
+      ],
+      "affected_factors": [
+        "economy.tariff_regime",
+        "relations.bilateral_trade",
+        "economy.inflation"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "tariff_change",
+      "description": "Trump increases China tariffs by 10% and imposes 25% on Canada/Mexico effective March 4",
+      "investor_impact": "Escalation of multi-front trade war will increase costs for US importers and consumers; Canadian energy and Mexican manufacturing exporters face margin compression.",
+      "confidence": 0.97,
+      "date": "2026-02-27"
+    },
+    {
+      "signal_id": "sig_0010",
+      "event_id": "evt_2026-02-27_010",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "FRA",
+        "DEU",
+        "ITA",
+        "ESP",
+        "NLD",
+        "BRA",
+        "ARG"
+      ],
+      "affected_factors": [
+        "economy.trade_agreements",
+        "relations.multilateral_memberships",
+        "derived.trade_openness"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "trade_agreement",
+      "description": "EU announces provisional application of EU-Mercosur trade agreement",
+      "investor_impact": "The most significant transatlantic trade realignment in a generation; creates strategic counterweight to US tariff offensive for Mercosur agricultural exporters and European manufacturers.",
+      "confidence": 0.95,
+      "date": "2026-02-27"
+    },
+    {
+      "signal_id": "sig_0011",
+      "event_id": "evt_2026-02-27_011",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "UKR",
+        "RUS"
+      ],
+      "affected_factors": [
+        "military.territorial_control",
+        "military.active_conflicts",
+        "derived.overall_stability_score"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "military_advance",
+      "description": "Ukraine's southern counteroffensive recaptures 300+ sq km in Zaporizhzhia Oblast",
+      "investor_impact": "Improved Ukrainian battlefield position strengthens Kyiv's negotiating leverage in ongoing peace talks; may affect European defense sector and energy security calculus.",
+      "confidence": 0.9,
+      "date": "2026-02-27"
+    },
+    {
+      "signal_id": "sig_0012",
+      "event_id": "evt_2026-02-21_012",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "UKR",
+        "RUS"
+      ],
+      "affected_factors": [
+        "military.weapons_capability",
+        "military.defense_industry",
+        "derived.escalation_risk"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "military_attack",
+      "description": "Ukraine's Flamingo cruise missiles strike Votkinsk ICBM factory 1,400 km inside Russia",
+      "investor_impact": "Disruption to Russia's missile production capability could affect battlefield dynamics and escalation calculations; demonstrates Ukraine's expanding deep-strike capacity.",
+      "confidence": 0.88,
+      "date": "2026-02-21"
+    },
+    {
+      "signal_id": "sig_0013",
+      "event_id": "evt_2026-02-27_013",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "UKR",
+        "RUS"
+      ],
+      "affected_factors": [
+        "economy.energy_infrastructure",
+        "derived.nuclear_risk"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "ceasefire",
+      "description": "IAEA brokers local ceasefire at Zaporizhzhia nuclear plant for power line repairs",
+      "investor_impact": "Reduces near-term nuclear safety risks at Europe's largest nuclear plant, though the underlying vulnerability of the facility remains an ongoing concern for European energy security.",
+      "confidence": 0.95,
+      "date": "2026-02-27"
+    },
+    {
+      "signal_id": "sig_0014",
+      "event_id": "evt_2026-02-26_014",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "UKR"
+      ],
+      "affected_factors": [
+        "economy.sovereign_debt",
+        "economy.fiscal_balance",
+        "derived.credit_rating"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "financial_aid",
+      "description": "IMF approves $8.1 billion 4-year loan for Ukraine, anchoring $136.5 billion support package",
+      "investor_impact": "Provides critical fiscal stabilization for Ukraine; anchors international donor confidence and sets conditions for post-war reconstruction financing.",
+      "confidence": 0.97,
+      "date": "2026-02-26"
+    },
+    {
+      "signal_id": "sig_0015",
+      "event_id": "evt_2026-02-26_015",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "DNK",
+        "USA"
+      ],
+      "affected_factors": [
+        "political.government_stability",
+        "relations.bilateral_relations",
+        "military.arctic_security"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "election_called",
+      "description": "Denmark calls snap election for March 24 amid Greenland-Trump standoff",
+      "investor_impact": "Danish election likely to reinforce sovereignty-defense policy; Arctic resource competition and NATO dynamics in play for defense and energy investors.",
+      "confidence": 0.97,
+      "date": "2026-02-26"
+    },
+    {
+      "signal_id": "sig_0016",
+      "event_id": "evt_2026-02-27_016",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "political.technology_policy",
+        "economy.defense_industry",
+        "derived.technology_competitiveness"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "technology_policy",
+      "description": "Trump bans Anthropic from government use; OpenAI secures Pentagon classified networks deal",
+      "investor_impact": "Reshapes the AI defense contracting landscape; creates significant regulatory risk for AI companies that resist military use cases while benefiting more government-aligned competitors.",
+      "confidence": 0.96,
+      "date": "2026-02-27"
+    },
+    {
+      "signal_id": "sig_0017",
+      "event_id": "evt_2026-02-22_017",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "PRK"
+      ],
+      "affected_factors": [
+        "political.leadership_stability",
+        "military.nuclear_capability",
+        "derived.overall_stability_score"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "political_consolidation",
+      "description": "North Korea's 9th Party Congress concludes: Kim re-elected, daughter promoted, nuclear expansion planned",
+      "investor_impact": "Signals continued militarization and nuclear program expansion by North Korea; succession signals may introduce long-term uncertainty about regime stability.",
+      "confidence": 0.93,
+      "date": "2026-02-22"
+    },
+    {
+      "signal_id": "sig_0018",
+      "event_id": "evt_2026-02-27_018",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "CHN"
+      ],
+      "affected_factors": [
+        "economy.monetary_policy",
+        "economy.exchange_rate",
+        "derived.currency_stability"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "monetary_policy",
+      "description": "PBOC cuts FX forward reserve ratio from 20% to 0% to slow yuan appreciation",
+      "investor_impact": "Significant shift in China's FX management signals tolerance for yuan weakening; benefits Chinese exporters facing US tariff headwinds while potentially increasing trade tension dynamics.",
+      "confidence": 0.95,
+      "date": "2026-02-27"
+    },
+    {
+      "signal_id": "sig_0019",
+      "event_id": "evt_2026-02-28_019",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "ARG"
+      ],
+      "affected_factors": [
+        "political.regulatory_environment",
+        "economy.labor_market",
+        "derived.investment_climate"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "legislation_passed",
+      "description": "Argentina Senate approves Milei's labor reform bill before state-of-nation address",
+      "investor_impact": "Landmark reform improves Argentina's labor market flexibility for investors; combined with EU-Mercosur ratification, strengthens Milei's pro-market reform narrative.",
+      "confidence": 0.96,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0020",
+      "event_id": "evt_2026-02-26_020",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "ARG",
+        "BRA"
+      ],
+      "affected_factors": [
+        "economy.trade_agreements",
+        "relations.multilateral_memberships"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "trade_agreement",
+      "description": "Argentina and Uruguay first to ratify EU-Mercosur trade agreement",
+      "investor_impact": "Ratification momentum strengthens the deal's viability; South American agricultural exporters and European industrial manufacturers stand to benefit from reduced tariffs.",
+      "confidence": 0.95,
+      "date": "2026-02-26"
+    },
+    {
+      "signal_id": "sig_0021",
+      "event_id": "evt_2026-02-27_021",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "GBR"
+      ],
+      "affected_factors": [
+        "political.government_stability",
+        "political.party_system"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "election_result",
+      "description": "UK Green Party wins Gorton and Denton by-election, pushing Labour to third place",
+      "investor_impact": "Signals increasing political fragmentation in the UK; weakened Labour government faces governance challenges that may delay economic reforms.",
+      "confidence": 0.97,
+      "date": "2026-02-27"
+    },
+    {
+      "signal_id": "sig_0022",
+      "event_id": "evt_2026-02-25_022",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "SDN"
+      ],
+      "affected_factors": [
+        "political.sanctions_regime",
+        "military.active_conflicts",
+        "derived.human_rights_index"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "sanctions_imposed",
+      "description": "UN Security Council sanctions four RSF commanders for El Fasher atrocities in Sudan",
+      "investor_impact": "Increases international pressure on RSF leadership but unlikely to alter conflict dynamics; Sudan remains uninvestable for most portfolio investors.",
+      "confidence": 0.95,
+      "date": "2026-02-25"
+    },
+    {
+      "signal_id": "sig_0023",
+      "event_id": "evt_2026-02-24_023",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "MMR"
+      ],
+      "affected_factors": [
+        "political.government_type",
+        "political.legitimacy",
+        "derived.overall_stability_score"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "political_transition",
+      "description": "Myanmar junta plans April government handover following widely condemned sham elections",
+      "investor_impact": "Cosmetic civilian transition does not change underlying conflict dynamics or sanctions risk; Myanmar remains largely isolated from global investment flows.",
+      "confidence": 0.93,
+      "date": "2026-02-24"
+    },
+    {
+      "signal_id": "sig_0024",
+      "event_id": "evt_2026-02-24_024",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "economy.tariff_regime",
+        "political.trade_policy",
+        "derived.trade_openness"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "tariff_change",
+      "description": "Trump imposes 15% global tariff under Section 122 after SCOTUS strikes down IEEPA tariffs",
+      "investor_impact": "Creates ongoing tariff uncertainty as legal battles continue; the 15% global baseline tariff adds inflationary pressure and reshapes global trade cost structures.",
+      "confidence": 0.96,
+      "date": "2026-02-24"
+    },
+    {
+      "signal_id": "sig_0025",
+      "event_id": "evt_2026-02-28_025",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "SAU",
+        "IRN",
+        "USA",
+        "ISR"
+      ],
+      "affected_factors": [
+        "relations.diplomatic_status",
+        "derived.regional_alignment"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "diplomatic_statement",
+      "description": "Saudi Arabia condemns both Iranian attacks on Gulf states and US-Israeli strikes on Iran",
+      "investor_impact": "Saudi Arabia's neutral stance signals it will not join the US-Israel military campaign, reducing risk of broader regional conflagration but introducing uncertainty about future US-Saudi alignment.",
+      "confidence": 0.9,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0026",
+      "event_id": "evt_2026-02-28_026",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "IND",
+        "IRN",
+        "USA",
+        "ISR"
+      ],
+      "affected_factors": [
+        "relations.diplomatic_status",
+        "economy.energy_imports"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "diplomatic_statement",
+      "description": "India urges restraint as Iran conflict threatens oil supplies and diaspora safety",
+      "investor_impact": "Indian economy vulnerable to oil price surge via current account deficit widening; rupee likely under pressure if Strait of Hormuz disruption persists.",
+      "confidence": 0.88,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0027",
+      "event_id": "evt_2026-02-28_027",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA",
+        "ISR",
+        "IRN"
+      ],
+      "affected_factors": [
+        "relations.multilateral_diplomacy",
+        "derived.global_governance"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "diplomatic_statement",
+      "description": "UN Secretary-General calls Iran strikes 'grave threat to international peace and security'",
+      "investor_impact": "UN condemnation signals potential multilateral backlash; diplomatic isolation risk for US and Israel may complicate broader foreign policy objectives.",
+      "confidence": 0.95,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0028",
+      "event_id": "evt_2026-03-01_028",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "IRN",
+        "QAT",
+        "OMN"
+      ],
+      "affected_factors": [
+        "military.defense_capability",
+        "economy.infrastructure",
+        "derived.political_risk_premium_bps"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "military_attack",
+      "description": "Qatar hit by 65 Iranian missiles; Oman's Duqm port struck by drones",
+      "investor_impact": "Qatar's LNG export infrastructure vulnerability exposed; Oman's port damage highlights supply chain risks for countries previously considered safe from regional conflict.",
+      "confidence": 0.92,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0029",
+      "event_id": "evt_2026-02-24_029",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "RUS",
+        "UKR"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "military.casualties",
+        "derived.overall_stability_score"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "conflict_update",
+      "description": "Russia-Ukraine war marks 4th anniversary: Russia occupies 20% of Ukraine, 1.27M Russian casualties",
+      "investor_impact": "War of attrition continues with no near-term resolution; European defense spending commitments remain elevated, benefiting defense sector equities.",
+      "confidence": 0.88,
+      "date": "2026-02-24"
+    },
+    {
+      "signal_id": "sig_0030",
+      "event_id": "evt_2026-02-28_030",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "RUS",
+        "UKR"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "economy.energy_infrastructure"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "military_attack",
+      "description": "Russia attacks Ukraine with 1,500+ drones and 90+ missiles in one week",
+      "investor_impact": "Sustained Russian air campaign keeps pressure on Ukraine's energy grid and economic output; air defense supply chains remain critical.",
+      "confidence": 0.87,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0031",
+      "event_id": "evt_2026-03-05_031",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "NPL"
+      ],
+      "affected_factors": [
+        "political.government_type",
+        "political.government_stability"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "election_scheduled",
+      "description": "Nepal holds general election on March 5 for 275-seat House of Representatives",
+      "investor_impact": "Nepal's political stability and investment climate hang in the balance; election outcome will affect hydropower development and India-China regional influence dynamics.",
+      "confidence": 0.95,
+      "date": "2026-03-05"
+    },
+    {
+      "signal_id": "sig_0032",
+      "event_id": "evt_2026-03-08_032",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "COL"
+      ],
+      "affected_factors": [
+        "political.government_stability",
+        "political.legislative_composition"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "election_scheduled",
+      "description": "Colombia parliamentary election scheduled for March 8",
+      "investor_impact": "Colombian equities under pressure from election uncertainty; outcome will determine Petro government's legislative support for remaining reform agenda.",
+      "confidence": 0.85,
+      "date": "2026-03-08"
+    },
+    {
+      "signal_id": "sig_0033",
+      "event_id": "evt_2026-03-15_033",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "VNM"
+      ],
+      "affected_factors": [
+        "political.government_stability",
+        "political.government_type"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.25,
+      "severity": "minor",
+      "event_type": "election_scheduled",
+      "description": "Vietnam legislative election scheduled for March 15",
+      "investor_impact": "Largely predetermined outcome unlikely to shift Vietnam's economic policy direction, but new leadership lineup may affect FDI attraction strategy.",
+      "confidence": 0.92,
+      "date": "2026-03-15"
+    },
+    {
+      "signal_id": "sig_0034",
+      "event_id": "evt_2026-03-03_034",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "political.legislative_composition"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.25,
+      "severity": "minor",
+      "event_type": "election_scheduled",
+      "description": "Texas primary election for US Senate race on March 3",
+      "investor_impact": "Texas Senate primary outcome may signal direction of Republican party policy preferences ahead of 2026 midterms; limited direct market impact.",
+      "confidence": 0.9,
+      "date": "2026-03-03"
+    },
+    {
+      "signal_id": "sig_0035",
+      "event_id": "evt_2026-02-24_035",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "JPN"
+      ],
+      "affected_factors": [
+        "military.weapons_capability",
+        "military.defense_spending",
+        "derived.regional_power_projection"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "military_deployment",
+      "description": "Japan deploys Type-12 long-range missile with record defense budget of $58B",
+      "investor_impact": "Japan's expanding defense industry creates opportunities for domestic defense contractors; signals deepening US-Japan security cooperation in Indo-Pacific.",
+      "confidence": 0.85,
+      "date": "2026-02-24"
+    },
+    {
+      "signal_id": "sig_0036",
+      "event_id": "evt_2026-02-23_036",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "BRA"
+      ],
+      "affected_factors": [
+        "political.government_stability",
+        "derived.political_risk_premium_bps"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "political_polling",
+      "description": "Brazil presidential race in statistical dead heat: Bolsonaro 46.3% vs Lula 46.2%",
+      "investor_impact": "Brazilian asset prices will face increasing volatility as the October election approaches; Bolsonaro candidacy signals potential return to more market-friendly policies.",
+      "confidence": 0.78,
+      "date": "2026-02-23"
+    },
+    {
+      "signal_id": "sig_0037",
+      "event_id": "evt_2026-02-28_037",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "PAK",
+        "AFG"
+      ],
+      "affected_factors": [
+        "relations.bilateral_relations",
+        "military.active_conflicts"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "diplomatic_breakdown",
+      "description": "Pakistan says 'no dialogue' with Afghanistan as cross-border attacks persist",
+      "investor_impact": "Regional instability creates risk for China's Belt and Road investments in Pakistan; refugee flows and border closures will disrupt trade in Central/South Asia.",
+      "confidence": 0.9,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0038",
+      "event_id": "evt_2026-02-24_038",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "UKR",
+        "USA",
+        "RUS"
+      ],
+      "affected_factors": [
+        "political.government_legitimacy",
+        "derived.peace_process"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "political_announcement",
+      "description": "Zelenskyy to announce wartime elections plan and peace deal referendum on war anniversary",
+      "investor_impact": "Any viable peace process would be transformative for Ukrainian reconstruction assets and European energy security; still early-stage with major obstacles.",
+      "confidence": 0.72,
+      "date": "2026-02-24"
+    },
+    {
+      "signal_id": "sig_0039",
+      "event_id": "evt_2026-02-26_039",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "NGA",
+        "ETH",
+        "KEN",
+        "ZAF"
+      ],
+      "affected_factors": [
+        "military.defense_spending",
+        "economy.fiscal_balance"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.25,
+      "severity": "minor",
+      "event_type": "defense_spending",
+      "description": "Defense spending in sub-Saharan Africa jumped 19% in 2025",
+      "investor_impact": "Rising defense budgets crowd out development spending across the region; creates opportunities for defense equipment exporters targeting African markets.",
+      "confidence": 0.75,
+      "date": "2026-02-26"
+    },
+    {
+      "signal_id": "sig_0040",
+      "event_id": "evt_2026-02-27_040",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "ETH"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.overall_stability_score"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "military_escalation",
+      "description": "Ethiopia military buildup near Tigray after TPLF captures disputed border towns",
+      "investor_impact": "Renewed Ethiopian internal conflict threatens the Pretoria peace accord and risks disrupting one of Africa's fastest-growing economies.",
+      "confidence": 0.78,
+      "date": "2026-02-27"
+    },
+    {
+      "signal_id": "sig_0041",
+      "event_id": "evt_2026-02-28_041",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "economy.commodity_prices",
+        "derived.investor_sentiment"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "commodity_price_move",
+      "description": "Gold hits $5,278/oz amid Iran conflict, up from $5,200 earlier in week",
+      "investor_impact": "Gold's safe-haven rally shows no signs of exhaustion; central bank buying and geopolitical risk premiums continue to support prices well above historical norms.",
+      "confidence": 0.88,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0042",
+      "event_id": "evt_2026-02-28_042",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "economy.financial_markets",
+        "derived.investor_sentiment"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "market_shock",
+      "description": "Bitcoin plunges to $63,000 as Iran war triggers $515M in crypto liquidations",
+      "investor_impact": "Crypto demonstrated correlation with risk assets during geopolitical stress rather than serving as a safe haven; investors rotating into gold and treasuries instead.",
+      "confidence": 0.9,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0043",
+      "event_id": "evt_2026-02-28_043",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "IRN"
+      ],
+      "affected_factors": [
+        "political.leadership_stability",
+        "political.government_type",
+        "derived.overall_stability_score",
+        "derived.political_risk_premium_bps"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.95,
+      "severity": "transformative",
+      "event_type": "leadership_succession",
+      "description": "Iran announces 40 days of mourning after Khamenei's death",
+      "investor_impact": "Iran faces its most severe leadership crisis since the 1979 revolution; succession uncertainty combined with active warfare creates extreme risk for any Iran-linked assets and regional stability.",
+      "confidence": 0.97,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0044",
+      "event_id": "evt_2026-02-28_044",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "economy.growth_forecast",
+        "derived.recession_probability"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "economic_forecast",
+      "description": "Recession probability estimates jump from 25-30% to 40-50% on Iran conflict",
+      "investor_impact": "Sharply elevated recession risk requires portfolio defensive positioning; bond yields may decline on flight-to-quality despite inflationary oil shock creating a policy dilemma for the Fed.",
+      "confidence": 0.8,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0045",
+      "event_id": "evt_2026-02-28_045",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "DEU",
+        "FRA",
+        "ITA",
+        "ESP"
+      ],
+      "affected_factors": [
+        "economy.monetary_policy",
+        "economy.interest_rates"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.25,
+      "severity": "minor",
+      "event_type": "monetary_policy",
+      "description": "ECB holds rates at 2% for fifth consecutive meeting",
+      "investor_impact": "ECB pause reflects balanced risk assessment; oil price shock from Iran conflict may delay any future rate cuts and push eurozone inflation higher.",
+      "confidence": 0.95,
+      "date": "2026-02-05"
+    },
+    {
+      "signal_id": "sig_0046",
+      "event_id": "evt_2026-01-28_046",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "economy.monetary_policy",
+        "economy.interest_rates"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.25,
+      "severity": "minor",
+      "event_type": "monetary_policy",
+      "description": "Federal Reserve holds rates at 3.50-3.75% in January; March meeting scheduled",
+      "investor_impact": "Higher-for-longer rate environment persists; Iran-driven oil shock creates stagflation risk that limits Fed's ability to cut rates even if growth slows.",
+      "confidence": 0.95,
+      "date": "2026-01-28"
+    },
+    {
+      "signal_id": "sig_0047",
+      "event_id": "evt_2026-02-24_047",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "political.legislative_composition"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.25,
+      "severity": "minor",
+      "event_type": "election_result",
+      "description": "Pennsylvania special election: Democrat wins comfortably in House District 42",
+      "investor_impact": "Limited direct market impact; result consistent with district's partisan lean and does not signal broader swing.",
+      "confidence": 0.95,
+      "date": "2026-02-24"
+    },
+    {
+      "signal_id": "sig_0048",
+      "event_id": "evt_2026-03-01_048",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "ISR",
+        "IRN"
+      ],
+      "affected_factors": [
+        "derived.human_rights_index",
+        "military.civilian_casualties"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "civilian_casualties",
+      "description": "Iran strikes Israeli school in Minab killing 108+, mostly children",
+      "investor_impact": "Civilian mass casualty events heighten pressure for international intervention or ceasefire; may accelerate diplomatic isolation of belligerents.",
+      "confidence": 0.82,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0049",
+      "event_id": "evt_2026-02-19_049",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "ARG"
+      ],
+      "affected_factors": [
+        "political.social_unrest",
+        "economy.labor_market"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.25,
+      "severity": "minor",
+      "event_type": "protest",
+      "description": "Argentina general strike brings Buenos Aires to standstill over labor reform",
+      "investor_impact": "Labor opposition to reforms remains strong but Milei's legislative victories demonstrate government's ability to push through market-oriented policies.",
+      "confidence": 0.9,
+      "date": "2026-02-19"
+    },
+    {
+      "signal_id": "sig_0050",
+      "event_id": "evt_2026-02-28_050",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "ISR",
+        "PSE"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "relations.bilateral_relations"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "conflict_update",
+      "description": "Gaza ceasefire remains fragile; Israel controls over half of Gaza territory",
+      "investor_impact": "Fragile ceasefire overshadowed by the larger Iran conflict; reconstruction investment remains on hold pending political resolution.",
+      "confidence": 0.85,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0051",
+      "event_id": "evt_2026-02-27_051",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA",
+        "CHN"
+      ],
+      "affected_factors": [
+        "relations.bilateral_relations",
+        "economy.trade_agreements"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "diplomatic_summit",
+      "description": "Trump-Xi summit planned for March 30 in Beijing amid tariff escalation",
+      "investor_impact": "High-stakes summit could either escalate or de-escalate US-China trade tensions; markets likely to price in uncertainty leading up to the meeting.",
+      "confidence": 0.75,
+      "date": "2026-02-27"
+    },
+    {
+      "signal_id": "sig_0052",
+      "event_id": "evt_2026-02-24_052",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "DNK"
+      ],
+      "affected_factors": [
+        "political.government_stability",
+        "military.defense_spending"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.25,
+      "severity": "minor",
+      "event_type": "election_called",
+      "description": "Denmark snap election called amid Greenland sovereignty defense platform",
+      "investor_impact": "Danish defense spending likely to increase regardless of outcome; Arctic resource competition intensifying as geopolitical factor.",
+      "confidence": 0.95,
+      "date": "2026-02-26"
+    },
+    {
+      "signal_id": "sig_0053",
+      "event_id": "evt_2026-02-28_053",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "IRN"
+      ],
+      "affected_factors": [
+        "economy.trade_routes",
+        "derived.trade_chokepoint_risk",
+        "economy.shipping_costs"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "maritime_attack",
+      "description": "Iran's IRGC attacks commercial ships in Strait of Hormuz; 3 vessels struck",
+      "investor_impact": "Shipping and insurance costs will spike dramatically; global supply chains face weeks to months of disruption if Hormuz remains contested.",
+      "confidence": 0.92,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0054",
+      "event_id": "evt_2026-02-20_054",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "PRK"
+      ],
+      "affected_factors": [
+        "political.leadership_stability"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.25,
+      "severity": "minor",
+      "event_type": "political_event",
+      "description": "North Korea 9th Party Congress opens; Kim pledges improved living standards",
+      "investor_impact": "North Korea's nuclear and ICBM modernization plans maintain elevated security risk premium for Northeast Asian assets, particularly South Korean equities.",
+      "confidence": 0.92,
+      "date": "2026-02-20"
+    },
+    {
+      "signal_id": "sig_0055",
+      "event_id": "evt_2026-02-24_055",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "IRN",
+        "USA",
+        "ISR"
+      ],
+      "affected_factors": [
+        "military.cyber_capability",
+        "derived.information_warfare"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.25,
+      "severity": "minor",
+      "event_type": "cyber_attack",
+      "description": "Iran state TV networks compromised with messages attributed to Trump and Netanyahu",
+      "investor_impact": "Cyber operations increasingly integrated with conventional military campaigns; highlights vulnerability of state media infrastructure in conflict scenarios.",
+      "confidence": 0.65,
+      "date": "2026-02-24"
+    },
+    {
+      "signal_id": "sig_0056",
+      "event_id": "evt_2026-02-27_056",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "DEU",
+        "FRA",
+        "ITA",
+        "ESP",
+        "POL"
+      ],
+      "affected_factors": [
+        "military.defense_spending",
+        "relations.alliance_commitments"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "policy_shift",
+      "description": "EU defense procurement consensus emerging amid US-Europe transatlantic tensions",
+      "investor_impact": "European defense stocks benefiting from structural spending increase; Rheinmetall, BAE Systems, and Leonardo among beneficiaries of multi-year procurement commitments.",
+      "confidence": 0.82,
+      "date": "2026-02-27"
+    },
+    {
+      "signal_id": "sig_0057",
+      "event_id": "evt_2026-02-03_057",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "NGA"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.overall_stability_score",
+        "derived.human_rights_index"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "terrorist_attack",
+      "description": "Boko Haram massacre kills 170+ in Nigeria's Kwara state",
+      "investor_impact": "Nigeria's security situation deteriorating in new geographic areas; US troop deployment signals deepening security partnership but also highlights governance challenges.",
+      "confidence": 0.8,
+      "date": "2026-02-03"
+    },
+    {
+      "signal_id": "sig_0058",
+      "event_id": "evt_2026-02-27_058",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "CHN",
+        "DEU",
+        "FRA"
+      ],
+      "affected_factors": [
+        "relations.multilateral_memberships",
+        "economy.trade_agreements"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.25,
+      "severity": "minor",
+      "event_type": "diplomatic_summit",
+      "description": "WTO Ministerial Conference to be held in Cameroon; China to push Global South reforms",
+      "investor_impact": "WTO ministerial outcome could signal direction of global trade governance reform; China's Global South coalition-building has implications for commodity and manufacturing trade flows.",
+      "confidence": 0.82,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0059",
+      "event_id": "evt_2026-03-01_059",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "economy.commodity_prices",
+        "economy.inflation",
+        "derived.energy_security"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "commodity_price_forecast",
+      "description": "Brent crude forecast to spike to $100/barrel if Iran conflict persists",
+      "investor_impact": "Triple-digit oil prices would be stagflationary, benefiting energy producers while devastating consumers, airlines, and energy-importing emerging markets.",
+      "confidence": 0.85,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0060",
+      "event_id": "evt_2026-02-28_060",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA",
+        "IRN"
+      ],
+      "affected_factors": [
+        "military.force_projection",
+        "military.defense_capability"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.95,
+      "severity": "transformative",
+      "event_type": "military_attack",
+      "description": "US Pentagon hits 1,000 targets in Iran including IRGC facilities, air defenses, and missile sites",
+      "investor_impact": "US defense spending will likely accelerate; munitions replenishment orders and sustainment contracts will benefit major defense contractors.",
+      "confidence": 0.95,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0061",
+      "event_id": "evt_2026-02-28_061",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "IRN",
+        "BHR",
+        "USA"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "relations.alliance_commitments"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "military_attack",
+      "description": "Iran fires missiles at Bahrain military facilities hosting US assets",
+      "investor_impact": "Bahrain's small economy and banking sector face acute vulnerability from its frontline position in the Iran conflict; naval base risks elevate insurance and operating costs.",
+      "confidence": 0.88,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0062",
+      "event_id": "evt_2026-02-26_062",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "RUS",
+        "UKR"
+      ],
+      "affected_factors": [
+        "military.foreign_fighters",
+        "relations.bilateral_relations"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.25,
+      "severity": "minor",
+      "event_type": "military_involvement",
+      "description": "1,700 Africans reported fighting for Russia in Ukraine",
+      "investor_impact": "Minor direct market impact, but underscores Russia's global recruitment challenges and the complex security relationships between Russia and African nations.",
+      "confidence": 0.65,
+      "date": "2026-02-26"
+    },
+    {
+      "signal_id": "sig_0063",
+      "event_id": "evt_2026-02-24_063",
+      "source_agent": "news_events_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "economy.equity_markets",
+        "derived.investor_sentiment"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "market_shock",
+      "description": "Dow futures drop 517 points; S&P 500 futures lose 1% on Iran strike fears",
+      "investor_impact": "Monday open expected to see further selling pressure; volatility indices likely to spike, creating opportunities for options strategies.",
+      "confidence": 0.95,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0064",
+      "event_id": "ts_2026-03-02_001",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA",
+        "IRN"
+      ],
+      "affected_factors": [
+        "political.sanctions_regime"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "sanction_change",
+      "description": "US imposed new sanctions on over 30 entities supporting Iranian oil and weapons sales ahead of third round of nuclear talks in Geneva. Targets included ships facilitating Iranian oil sales to fund bal",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0065",
+      "event_id": "ts_2026-03-02_002",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA",
+        "SDN"
+      ],
+      "affected_factors": [
+        "political.sanctions_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "sanction_change",
+      "description": "OFAC added eight individuals and 19 entities to the SDN List on February 19, 2026. Notable designations include Elfateh Abdullah Idris Adam (aka 'Abu Lulu'), a Rapid Support Forces Commander in Sudan,",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0066",
+      "event_id": "ts_2026-03-02_003",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA",
+        "RUS"
+      ],
+      "affected_factors": [
+        "political.sanctions_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "sanction_change",
+      "description": "OFAC issued Russia-related designation removals on February 27, 2026, removing certain individuals and entities from the SDN list in the context of ongoing diplomatic negotiations.",
+      "investor_impact": "",
+      "confidence": 0.85,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0067",
+      "event_id": "ts_2026-03-02_004",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA",
+        "VEN"
+      ],
+      "affected_factors": [
+        "political.sanctions_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "sanction_change",
+      "description": "Following the capture of Venezuelan President Maduro in January 2026, OFAC issued multiple general licenses easing Venezuela oil sanctions: GL 46A (Feb 10) authorizes broad US company activities in Ve",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0068",
+      "event_id": "ts_2026-03-02_005",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "GBR",
+        "FRA",
+        "DEU"
+      ],
+      "affected_factors": [
+        "political.sanctions_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "sanction_change",
+      "description": "EU Council voted to renew sanctions against Russia for a further six months until July 31, 2026. Proposed 20th sanctions package targeting Russian oil, gas, shadow fleet (42 more vessels for total of ",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0069",
+      "event_id": "ts_2026-03-02_007",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "GBR",
+        "FRA",
+        "DEU"
+      ],
+      "affected_factors": [
+        "political.sanctions_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "sanction_change",
+      "description": "EU Council strengthened the scope of the EU Terrorist List and maintained all existing listings on February 26, 2026, expanding the list to better address continued terrorism and violent extremism thr",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0070",
+      "event_id": "ts_2026-03-02_008",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "GBR",
+        "FRA",
+        "DEU",
+        "ZWE"
+      ],
+      "affected_factors": [
+        "political.sanctions_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "sanction_change",
+      "description": "EU Council amended its sanctions regime for Zimbabwe on February 18, 2026: extended arms embargo until February 20, 2027, while lifting individual measures (travel bans and asset freezes) previously i",
+      "investor_impact": "",
+      "confidence": 0.9,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0071",
+      "event_id": "ts_2026-03-02_009",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "IRN"
+      ],
+      "affected_factors": [
+        "political.sanctions_regime"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "sanction_change",
+      "description": "Six Iran-related UN Security Council resolutions reimposed in September 2025, triggered by E3 (UK, France, Germany) following Iran's continuing non-performance of nuclear commitments. Restored UN sanc",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0072",
+      "event_id": "ts_2026-03-02_010",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA",
+        "SYR"
+      ],
+      "affected_factors": [
+        "political.sanctions_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "sanction_change",
+      "description": "Caesar Act sanctions against Syria were formally repealed on December 18, 2025, as part of FY2026 NDAA. Repeal removes central US sanctions component but Syria remains designated as State Sponsor of T",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0073",
+      "event_id": "ts_2026-03-02_011",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA",
+        "IND"
+      ],
+      "affected_factors": [
+        "economy.trade_agreements",
+        "derived.trade_openness"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "trade_agreement",
+      "description": "US-India announced historic trade deal on February 6, 2026. US slashed effective tariffs on Indian goods from 50% to 18% and removed 25% penalty for India's Russian oil imports. India will eliminate/r",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0074",
+      "event_id": "ts_2026-03-02_012",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA",
+        "TWN"
+      ],
+      "affected_factors": [
+        "economy.trade_agreements",
+        "derived.trade_openness"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "trade_agreement",
+      "description": "US-Taiwan Agreement on Reciprocal Trade signed February 12, 2026. Taiwan will eliminate/reduce 99% of tariff barriers on US industrial exports including autos, chemicals, machinery. US will apply 15% ",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0075",
+      "event_id": "ts_2026-03-02_013",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA",
+        "ARG"
+      ],
+      "affected_factors": [
+        "economy.trade_agreements",
+        "derived.trade_openness"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "trade_agreement",
+      "description": "US-Argentina Agreement on Reciprocal Trade signed February 5, 2026. Covers tariff and non-tariff barriers, regulatory issues, and economic/national security measures.",
+      "investor_impact": "",
+      "confidence": 0.9,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0076",
+      "event_id": "ts_2026-03-02_014",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA",
+        "BGD"
+      ],
+      "affected_factors": [
+        "economy.trade_agreements",
+        "derived.trade_openness"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "trade_agreement",
+      "description": "US-Bangladesh Agreement on Reciprocal Trade framework announced in February 2026 to strengthen bilateral economic relationship.",
+      "investor_impact": "",
+      "confidence": 0.85,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0077",
+      "event_id": "ts_2026-03-02_015",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "FRA",
+        "DEU",
+        "ITA",
+        "ESP",
+        "NLD",
+        "POL",
+        "SWE",
+        "IRL",
+        "FIN",
+        "PRT",
+        "GRC",
+        "CZE",
+        "ROU",
+        "BGR",
+        "HRV",
+        "HUN",
+        "BRA",
+        "ARG"
+      ],
+      "affected_factors": [
+        "economy.trade_agreements",
+        "derived.trade_openness"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "trade_agreement",
+      "description": "EU-Mercosur Partnership Agreement (EMPA) and Interim Trade Agreement (iTA) signed January 17, 2026 in Asuncion, Paraguay. Creates the world's largest free trade zone covering 700+ million consumers. E",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0078",
+      "event_id": "ts_2026-03-02_016",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "FRA",
+        "DEU",
+        "ITA",
+        "ESP",
+        "NLD",
+        "POL",
+        "SWE",
+        "IRL",
+        "FIN",
+        "PRT",
+        "GRC",
+        "CZE",
+        "ROU",
+        "BGR",
+        "HRV",
+        "HUN",
+        "IND"
+      ],
+      "affected_factors": [
+        "economy.trade_agreements",
+        "derived.trade_openness"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "trade_agreement",
+      "description": "EU-India Free Trade Agreement concluded January 27, 2026 after nearly 20 years of negotiations. Largest FTA ever concluded by either side, creating free trade zone of 2 billion people covering 25% of ",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0079",
+      "event_id": "ts_2026-03-02_017",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "economy.tariff_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "tariff_change",
+      "description": "US Supreme Court struck down IEEPA tariffs on February 20, 2026 in Learning Resources, Inc. v. Trump (6-3 ruling). Court held IEEPA does not authorize president to impose tariffs, invalidating 'Recipr",
+      "investor_impact": "",
+      "confidence": 0.99,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0080",
+      "event_id": "ts_2026-03-02_018",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "economy.tariff_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "tariff_change",
+      "description": "Within hours of Supreme Court ruling, President Trump signed proclamation imposing new 15% global tariff under Section 122 of the Trade Act of 1974 (initially announced as 10%, raised to 15% on Feb 21",
+      "investor_impact": "",
+      "confidence": 0.99,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0081",
+      "event_id": "ts_2026-03-02_019",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA",
+        "CHN"
+      ],
+      "affected_factors": [
+        "economy.tariff_regime"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "tariff_change",
+      "description": "US tariffs on Chinese goods fell from low 30s to approximately 21% average following Supreme Court IEEPA ruling. USTR stated Trump wants tariffs on China at 35-50% range. Section 232 and Section 301 t",
+      "investor_impact": "",
+      "confidence": 0.9,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0082",
+      "event_id": "ts_2026-03-02_020",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA",
+        "IND"
+      ],
+      "affected_factors": [
+        "economy.tariff_regime"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "tariff_change",
+      "description": "US removed additional 25% duty on Indian imports effective February 7, 2026. This penalty had been imposed for India 'directly or indirectly importing Russian Federation oil.' India's reciprocal tarif",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0083",
+      "event_id": "ts_2026-03-02_021",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "economy.tariff_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "tariff_change",
+      "description": "Section 232 tariff of 25% imposed on advanced semiconductors and semiconductor manufacturing equipment effective January 15, 2026. Narrowly targets AI chips meeting specific performance thresholds (NV",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0084",
+      "event_id": "ts_2026-03-02_022",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "economy.tariff_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "tariff_change",
+      "description": "Section 232 proclamation on critical minerals issued January 14, 2026, directing trade negotiations on imports of processed critical minerals. US announced proposed critical mineral trading bloc on Fe",
+      "investor_impact": "",
+      "confidence": 0.9,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0085",
+      "event_id": "ts_2026-03-02_023",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "CHN"
+      ],
+      "affected_factors": [
+        "economy.tariff_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "tariff_change",
+      "description": "China suspended implementation of rare earth export controls (announced October 2025) for one year until November 10, 2026. Earlier controls from April 2025 still impact seven rare earth elements and ",
+      "investor_impact": "",
+      "confidence": 0.85,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0086",
+      "event_id": "ts_2026-03-02_025",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "IRN",
+        "USA",
+        "ISR",
+        "SAU",
+        "ARE",
+        "QAT",
+        "KWT",
+        "OMN",
+        "IRQ"
+      ],
+      "affected_factors": [
+        "derived.trade_chokepoint_risk"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "chokepoint_event",
+      "description": "STRAIT OF HORMUZ: Following US-Israeli strikes on Iran on February 28, 2026, Iran's IRGC broadcast VHF warnings declaring the waterway closed to all shipping. Maersk and Hapag-Lloyd suspended all vess",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0087",
+      "event_id": "ts_2026-03-02_026",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "YEM",
+        "EGY"
+      ],
+      "affected_factors": [
+        "derived.trade_chokepoint_risk"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "chokepoint_event",
+      "description": "BAB EL-MANDEB / RED SEA / SUEZ CANAL: Houthis resumed attacks on commercial shipping in response to US-Israeli strikes on Iran. CMA CGM suspended Suez Canal transits indefinitely, rerouting via Cape o",
+      "investor_impact": "",
+      "confidence": 0.9,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0088",
+      "event_id": "ts_2026-03-02_028",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "RUS"
+      ],
+      "affected_factors": [
+        "political.sanctions_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "sanction_change",
+      "description": "Russia sanctions evasion remains a critical concern for 2026. Russian-linked crypto exchanges (Bitpapa, ABCeX, Rapira, Aifory Pro) facilitating billions in transactions for sanctioned entities. Russia",
+      "investor_impact": "",
+      "confidence": 0.85,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0089",
+      "event_id": "ts_2026-03-02_029",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA",
+        "CHN"
+      ],
+      "affected_factors": [
+        "economy.trade_agreements",
+        "derived.trade_openness"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "trade_agreement",
+      "description": "US-China summit planned for March 31 - April 2, 2026 in Beijing. Agenda includes tariff relief negotiations, Chinese soybean import commitments, advanced AI chip export easing, and Taiwan arms sales. ",
+      "investor_impact": "",
+      "confidence": 0.85,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0090",
+      "event_id": "ts_2026-03-02_030",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "IRN"
+      ],
+      "affected_factors": [
+        "political.sanctions_regime"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "sanction_change",
+      "description": "UN Security Council Resolution 2816 (2026) unanimously adopted, extending Taliban sanctions monitoring team for 12 months. Resolution 2812 (2026) extended reporting on Houthi Red Sea attacks for six m",
+      "investor_impact": "",
+      "confidence": 0.9,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0091",
+      "event_id": "ts_2026-03-02_031",
+      "source_agent": "trade_sanctions_gatherer",
+      "affected_countries": [
+        "USA",
+        "CHN"
+      ],
+      "affected_factors": [
+        "economy.tariff_regime"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "tariff_change",
+      "description": "BIS revised export review policy for advanced AI chips destined for China/Macau effective January 13, 2026. Changed from 'presumption of denial' to 'case-by-case review' for commercially available NVI",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-02"
+    },
+    {
+      "signal_id": "sig_0092",
+      "event_id": "mc_2026-03-02_001",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "USA",
+        "ISR",
+        "IRN"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.political_risk_premium_bps"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.95,
+      "severity": "transformative",
+      "event_type": "conflict_escalation",
+      "description": "The United States and Israel launched massive joint military operations against Iran on Feb 28-Mar 1, 2026, striking over 1,000 targets across 24 of Iran's 31 provinces. B-2 stealth bombers, F-35s, A-",
+      "investor_impact": "",
+      "confidence": 0.97,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0093",
+      "event_id": "mc_2026-03-02_002",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "IRN",
+        "USA",
+        "ISR",
+        "BHR",
+        "KWT",
+        "QAT",
+        "IRQ",
+        "SAU"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.political_risk_premium_bps"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.95,
+      "severity": "transformative",
+      "event_type": "conflict_escalation",
+      "description": "Iran's IRGC launched retaliatory strikes on 27 US military bases across the Middle East and Israeli military facilities. Iranian missiles targeted the US Navy 5th Fleet HQ in Bahrain's Juffair area; B",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0094",
+      "event_id": "mc_2026-03-02_003",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "IRN",
+        "USA",
+        "ISR"
+      ],
+      "affected_factors": [
+        "derived.nuclear_risk"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.95,
+      "severity": "transformative",
+      "event_type": "nuclear_event",
+      "description": "The February 2026 US-Israel strikes targeted remnants of Iran's nuclear infrastructure, following the June 2025 strikes that delayed the nuclear program by several years. However, Iran retains approxi",
+      "investor_impact": "",
+      "confidence": 0.85,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0095",
+      "event_id": "mc_2026-03-02_004",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "RUS",
+        "UKR"
+      ],
+      "affected_factors": [
+        "military.active_conflicts"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "conflict_update",
+      "description": "War enters its 5th year with Russia occupying approximately 20% of Ukraine's territory. Russia has suffered approximately 1,266,770 casualties since Feb 2022, with ~870 soldiers killed/wounded per day",
+      "investor_impact": "",
+      "confidence": 0.92,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0096",
+      "event_id": "mc_2026-03-02_005",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "SDN"
+      ],
+      "affected_factors": [
+        "military.active_conflicts"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "conflict_update",
+      "description": "The SAF-aligned government announced its complete return to Khartoum, with the Central Bank resuming operations there for the first time since the war began. Fighting intensified in Kordofan region wi",
+      "investor_impact": "",
+      "confidence": 0.88,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0097",
+      "event_id": "mc_2026-03-02_006",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "MMR"
+      ],
+      "affected_factors": [
+        "military.active_conflicts"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "conflict_update",
+      "description": "Five years after the military coup, Myanmar's military government controls only 21% of the country's territory while rebel forces and ethnic armies hold 42%. The military held elections (Dec 2025-Jan ",
+      "investor_impact": "",
+      "confidence": 0.9,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0098",
+      "event_id": "mc_2026-03-02_007",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "ISR",
+        "PSE"
+      ],
+      "affected_factors": [
+        "military.active_conflicts"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "conflict_update",
+      "description": "An October 2025 US-brokered ceasefire is formally in place between Israel and Hamas, endorsed by UN Security Council in November 2025. Stage two negotiations announced by US envoy Steve Witkoff in Jan",
+      "investor_impact": "",
+      "confidence": 0.9,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0099",
+      "event_id": "mc_2026-03-02_008",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "PAK",
+        "AFG"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.political_risk_premium_bps"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.95,
+      "severity": "transformative",
+      "event_type": "conflict_escalation",
+      "description": "Pakistan declared 'open war' with Afghanistan on Feb 27, 2026 after escalating cross-border violence. Pakistan launched Operation Ghazab Lil Haq following terror attacks including a suicide bombing at",
+      "investor_impact": "",
+      "confidence": 0.93,
+      "date": "2026-02-27"
+    },
+    {
+      "signal_id": "sig_0100",
+      "event_id": "mc_2026-03-02_009",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "ETH"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.political_risk_premium_bps"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "conflict_escalation",
+      "description": "Clashes erupted on Jan 29, 2026 between TPLF and Ethiopian government forces in the Tigray region. ENDF and Tigray Security Forces clashed near the Amhara border using drones, artillery, and heavy wea",
+      "investor_impact": "",
+      "confidence": 0.88,
+      "date": "2026-01-29"
+    },
+    {
+      "signal_id": "sig_0101",
+      "event_id": "mc_2026-03-02_010",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "COD",
+        "RWA"
+      ],
+      "affected_factors": [
+        "military.active_conflicts"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "conflict_update",
+      "description": "The Congolese army launched a coordinated offensive against Rwandan-backed M23 rebels in North Kivu province, eliminating a senior M23 military leader in a significant drone strike. Rwanda may have re",
+      "investor_impact": "",
+      "confidence": 0.85,
+      "date": "2026-02-26"
+    },
+    {
+      "signal_id": "sig_0102",
+      "event_id": "mc_2026-03-02_011",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "YEM",
+        "IRN",
+        "USA",
+        "ISR"
+      ],
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.political_risk_premium_bps"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "conflict_escalation",
+      "description": "Yemen's Houthi rebels announced on Feb 28, 2026 the resumption of attacks on Israel and commercial ships in the Red Sea following US-Israeli airstrikes on Iran. No Red Sea incidents had been recorded ",
+      "investor_impact": "",
+      "confidence": 0.9,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0103",
+      "event_id": "mc_2026-03-02_012",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "COL"
+      ],
+      "affected_factors": [
+        "military.active_conflicts"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "conflict_update",
+      "description": "Illegal armed group membership in Colombia reached 27,000 in January 2026, a 23.4% increase over two years. The Gulf Clan grew ~30% to nearly 9,840 members; ELN rose from 6,200 to 6,800. At least 27 k",
+      "investor_impact": "",
+      "confidence": 0.85,
+      "date": "2026-02-23"
+    },
+    {
+      "signal_id": "sig_0104",
+      "event_id": "mc_2026-03-02_013",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "CHN",
+        "TWN",
+        "USA"
+      ],
+      "affected_factors": [
+        "military.force_projection"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "military_posturing",
+      "description": "China conducted one of the most intense single-day military exercises near Taiwan on Dec 29, 2025, with 100+ aircraft (90 crossing the median line), 13 warships, and 14 Coast Guard/MSA vessels. On Dec",
+      "investor_impact": "",
+      "confidence": 0.9,
+      "date": "2026-01-17"
+    },
+    {
+      "signal_id": "sig_0105",
+      "event_id": "mc_2026-03-02_014",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "CHN",
+        "PHL",
+        "USA",
+        "JPN"
+      ],
+      "affected_factors": [
+        "military.force_projection"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "military_posturing",
+      "description": "China stepped up land reclamation at Antelope Reef with new dredging activity. China Coast Guard doubled presence at Scarborough Shoal and nearly tripled patrols around Sabina Shoal, using water canno",
+      "investor_impact": "",
+      "confidence": 0.88,
+      "date": "2026-02-27"
+    },
+    {
+      "signal_id": "sig_0106",
+      "event_id": "mc_2026-03-02_015",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "PRK"
+      ],
+      "affected_factors": [
+        "derived.nuclear_risk"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "nuclear_event",
+      "description": "North Korea conducted its first ballistic missile test of 2026 on Jan 4, firing hypersonic missiles from Pyongyang striking a target 900km away. Believed to be Hwasong-16B solid-fueled IRBM capable of",
+      "investor_impact": "",
+      "confidence": 0.92,
+      "date": "2026-01-27"
+    },
+    {
+      "signal_id": "sig_0107",
+      "event_id": "mc_2026-03-02_016",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "RUS"
+      ],
+      "affected_factors": [
+        "derived.nuclear_risk"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "nuclear_event",
+      "description": "Russia plans test launches of new solid-fuel intercontinental ballistic missiles in 2026, in both silo-based and road-mobile variants, to replace the Topol-M. The missiles feature guided hypersonic wa",
+      "investor_impact": "",
+      "confidence": 0.85,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0108",
+      "event_id": "mc_2026-03-02_017",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "USA",
+        "ISR"
+      ],
+      "affected_factors": [
+        "military.arms_imports"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "arms_deal",
+      "description": "The Trump administration approved a new series of arms sales to Israel totaling $6.67 billion, including precision-guided munitions and other military equipment. This was approved on Jan 31, 2026, ahe",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-01-31"
+    },
+    {
+      "signal_id": "sig_0109",
+      "event_id": "mc_2026-03-02_018",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "USA",
+        "SAU"
+      ],
+      "affected_factors": [
+        "military.arms_imports"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "arms_deal",
+      "description": "The Trump administration approved a $9 billion arms sale to Saudi Arabia for 730 Patriot missiles and related equipment. This major deal aligns with the 'America First Arms Transfer Strategy' executiv",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-01-31"
+    },
+    {
+      "signal_id": "sig_0110",
+      "event_id": "mc_2026-03-02_019",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "IRN",
+        "RUS"
+      ],
+      "affected_factors": [
+        "military.arms_imports"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "arms_deal",
+      "description": "Iran and Russia concluded a secret arms deal worth EUR 500 million (US$589 million) for the purchase of modern portable anti-aircraft missiles, according to the Financial Times. This deal comes amid R",
+      "investor_impact": "",
+      "confidence": 0.75,
+      "date": "2026-02-23"
+    },
+    {
+      "signal_id": "sig_0111",
+      "event_id": "mc_2026-03-02_020",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "USA",
+        "TWN"
+      ],
+      "affected_factors": [
+        "military.arms_imports"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "arms_deal",
+      "description": "The Trump administration previously announced a massive $10 billion+ arms package to Taiwan including medium-range missiles, howitzers, and drones (announced late 2025). This sale further strains US-C",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2025-12-18"
+    },
+    {
+      "signal_id": "sig_0112",
+      "event_id": "mc_2026-03-02_023",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "DNK",
+        "FRA",
+        "DEU",
+        "SWE",
+        "GBR"
+      ],
+      "affected_factors": [
+        "military.force_readiness"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "military_exercise",
+      "description": "Denmark-led military exercise and presence operation in Greenland in response to the Greenland crisis following Trump's annexation rhetoric. Operation will last throughout 2026 (possibly 1-2 years). O",
+      "investor_impact": "",
+      "confidence": 0.9,
+      "date": "2026-01-15"
+    },
+    {
+      "signal_id": "sig_0113",
+      "event_id": "mc_2026-03-02_024",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "USA",
+        "KOR"
+      ],
+      "affected_factors": [
+        "military.force_readiness"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "military_exercise",
+      "description": "US and South Korean militaries announced annual springtime Freedom Shield exercises scheduled for March 9-19, 2026 to bolster combined defense capabilities amid deepening diplomatic freeze with nuclea",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-02-25"
+    },
+    {
+      "signal_id": "sig_0114",
+      "event_id": "mc_2026-03-02_025",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "CZE",
+        "POL",
+        "DEU",
+        "USA",
+        "FRA",
+        "GBR",
+        "ITA",
+        "ESP",
+        "NLD",
+        "CAN",
+        "NOR"
+      ],
+      "affected_factors": [
+        "military.force_readiness"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "military_exercise",
+      "description": "NATO's largest military exercise of 2026, conducted across Central Europe in two phases: deployment phase (January) and training phase (February onwards). Approximately 10,000 service personnel from 1",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-01-15"
+    },
+    {
+      "signal_id": "sig_0115",
+      "event_id": "mc_2026-03-02_026",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "USA",
+        "CHN",
+        "RUS",
+        "DEU",
+        "IND"
+      ],
+      "affected_factors": [
+        "military.defense_spending"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "defense_spending",
+      "description": "World military expenditure reached $2,718 billion in 2024, an increase of 9.4% in real terms from 2023 — the steepest year-on-year rise since the end of the Cold War. Top 5 spenders: USA ($997B, +5.7%",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0116",
+      "event_id": "mc_2026-03-02_027",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "DEU",
+        "FRA",
+        "GBR",
+        "POL",
+        "ITA",
+        "ESP",
+        "NLD",
+        "SWE",
+        "NOR",
+        "FIN"
+      ],
+      "affected_factors": [
+        "military.defense_spending"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "defense_spending",
+      "description": "European FY2025 rearmament budgets rising ~13% year-on-year, led by Germany, Poland, and UK. Defense budgets nearly doubled from EUR 218B (2021) to projected EUR 392B (2025). Germany plans 3.5% of GDP",
+      "investor_impact": "",
+      "confidence": 0.9,
+      "date": "2026-02-25"
+    },
+    {
+      "signal_id": "sig_0117",
+      "event_id": "mc_2026-03-02_028",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "USA"
+      ],
+      "affected_factors": [
+        "military.defense_spending"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "defense_spending",
+      "description": "Trump signed executive order 'Prioritizing the Warfighter in Defense Contracting' in January 2026. Large defense contractors now prohibited from paying dividends or buying back stock until they can pr",
+      "investor_impact": "",
+      "confidence": 0.92,
+      "date": "2026-01-15"
+    },
+    {
+      "signal_id": "sig_0118",
+      "event_id": "mc_2026-03-02_029",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "JPN",
+        "PHL"
+      ],
+      "affected_factors": [
+        "relations.alliance_commitments"
+      ],
+      "signal_direction": "positive",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "alliance_activity",
+      "description": "Japan and Philippines signed the Acquisition and Cross-Servicing Agreement (ACSA) on January 15, 2026, allowing tax-free provision of ammunition, fuel, food, and other necessities for joint training. ",
+      "investor_impact": "",
+      "confidence": 0.95,
+      "date": "2026-01-15"
+    },
+    {
+      "signal_id": "sig_0119",
+      "event_id": "mc_2026-03-02_030",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "AUS",
+        "GBR",
+        "USA"
+      ],
+      "affected_factors": [
+        "relations.alliance_commitments"
+      ],
+      "signal_direction": "mixed",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "alliance_activity",
+      "description": "AUKUS submarine deal faces major obstacles. Australia invested AUD $3.9B ($2.75B) in Osborne submarine yard and AUD $310M for UK nuclear propulsion long-lead items. HMS Anson (UK Astute-class) conduct",
+      "investor_impact": "",
+      "confidence": 0.85,
+      "date": "2026-02-24"
+    },
+    {
+      "signal_id": "sig_0120",
+      "event_id": "mc_2026-03-02_031",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "IRN",
+        "USA",
+        "ISR"
+      ],
+      "affected_factors": [
+        "military.cyber_capability"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "cyber_event",
+      "description": "In the wake of US-Israeli strikes on Iran, Iran-aligned hacktivists are conducting cyber attacks against US networks including website defacements and DDoS attacks. The 'Great Epic' / 'Cyber Islamic R",
+      "investor_impact": "",
+      "confidence": 0.78,
+      "date": "2026-03-01"
+    },
+    {
+      "signal_id": "sig_0121",
+      "event_id": "mc_2026-03-02_032",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "CHN",
+        "USA"
+      ],
+      "affected_factors": [
+        "military.cyber_capability"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.75,
+      "severity": "major",
+      "event_type": "cyber_event",
+      "description": "Two major Chinese state-sponsored cyber campaigns continue in 2026: Volt Typhoon infiltrated US critical infrastructure networks (water, energy, transportation) to prepare for potential disruptions du",
+      "investor_impact": "",
+      "confidence": 0.82,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0122",
+      "event_id": "mc_2026-03-02_033",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "LBY"
+      ],
+      "affected_factors": [
+        "military.active_conflicts"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "conflict_update",
+      "description": "Libya's political process remains at a 'deadlock' with competing constitutional authorities in Tripoli and Benghazi. Armed groups in and around Tripoli and the south are driving chaos and violence. Ce",
+      "investor_impact": "",
+      "confidence": 0.82,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0123",
+      "event_id": "mc_2026-03-02_034",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "IND",
+        "PAK"
+      ],
+      "affected_factors": [
+        "military.force_projection"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.5,
+      "severity": "moderate",
+      "event_type": "military_posturing",
+      "description": "India-Pakistan tensions remain elevated since the May 2025 four-day military confrontation following the Pahalgam terrorist attack (26 killed). CFR warns another military confrontation possible in 202",
+      "investor_impact": "",
+      "confidence": 0.82,
+      "date": "2026-02-28"
+    },
+    {
+      "signal_id": "sig_0124",
+      "event_id": "mc_2026-03-02_035",
+      "source_agent": "military_conflict_gatherer",
+      "affected_countries": [
+        "USA",
+        "RUS"
+      ],
+      "affected_factors": [
+        "derived.nuclear_risk"
+      ],
+      "signal_direction": "negative",
+      "signal_strength": 0.95,
+      "severity": "transformative",
+      "event_type": "nuclear_event",
+      "description": "The New START treaty, the last nuclear arms control agreement between the US and Russia, expired in February 2026 without extension. This removes all bilateral constraints on nuclear arsenals for the ",
+      "investor_impact": "",
+      "confidence": 0.92,
+      "date": "2026-02-05"
+    }
+  ]
+}

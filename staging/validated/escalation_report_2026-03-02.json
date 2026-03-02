@@ -1,0 +1,242 @@
+{
+  "escalation_date": "2026-03-02",
+  "run_id": "2026-W09",
+  "agent_id": "agent_08",
+  "is_first_run": true,
+  "executive_summary": "This is an extraordinary week requiring 6 escalation groups (21 individual signals). The dominant event is the US-Israeli military strikes on Iran killing Supreme Leader Khamenei, with cascading effects including Iranian retaliation on Gulf states, Strait of Hormuz closure (-70% traffic), oil surge (+13%), and Houthi attack resumption. Secondary escalations include Pakistan-Afghanistan open war, SCOTUS striking down IEEPA tariffs (constitutional crisis for trade policy), New START treaty expiry, North Korean missile tests, and multiple sanctions regime changes. All escalations are driven by genuine geopolitical events, not data quality issues. High confidence across all escalation groups (minimum 0.75). RECOMMENDATION: Accept all 6 escalation groups. Continue monitoring Iran situation for rapid developments.",
+  "escalations": [
+    {
+      "escalation_id": "esc_001",
+      "category": "IRAN_CONFLICT_AND_REGIONAL_FALLOUT",
+      "signal_ids": [
+        "sig_0001",
+        "sig_0002",
+        "sig_0003",
+        "sig_0043",
+        "sig_0060",
+        "sig_0064",
+        "sig_0071",
+        "sig_0092",
+        "sig_0093",
+        "sig_0094",
+        "sig_0102"
+      ],
+      "affected_countries": [
+        "ARE",
+        "BHR",
+        "IRN",
+        "IRQ",
+        "ISR",
+        "JOR",
+        "KWT",
+        "QAT",
+        "SAU",
+        "USA",
+        "YEM"
+      ],
+      "severity": "transformative",
+      "confidence_range": "0.85-0.99",
+      "num_related_events": 11,
+      "description": "US and Israel launch joint strikes on Iran, killing Supreme Leader Khamenei [+10 related events]",
+      "investor_summary": "US-Israeli strikes killed Supreme Leader Khamenei, Iran retaliated against Gulf states and US bases, Strait of Hormuz collapsed 70%, oil surged 13%, nuclear infrastructure targeted. Houthi Red Sea attacks resumed. This is the most consequential geopolitical event since Feb 2022 and affects global energy supply, shipping, defense equities, and risk premiums across the entire Middle East.",
+      "recommended_action": "ACCEPT all related events. Confidence is high (0.85-0.99) across multiple corroborating sources. Flag for continued monitoring \u2014 situation is rapidly evolving.",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    },
+    {
+      "escalation_id": "esc_002",
+      "category": "PAKISTAN_AFGHANISTAN_WAR",
+      "signal_ids": [
+        "sig_0007",
+        "sig_0099"
+      ],
+      "affected_countries": [
+        "AFG",
+        "PAK"
+      ],
+      "severity": "transformative",
+      "confidence_range": "0.93-0.98",
+      "num_related_events": 2,
+      "description": "Pakistan declares 'open war' on Afghanistan with airstrikes on Kabul and Kandahar [+1 related events]",
+      "investor_summary": "Pakistan declared open war on Afghanistan with airstrikes on Kabul and Kandahar. Active conflict status change for both countries. Affects regional stability, Pakistan sovereign risk, and South Asian investment flows.",
+      "recommended_action": "ACCEPT. Confirmed by multiple sources with high confidence (0.93-0.98).",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    },
+    {
+      "escalation_id": "esc_003",
+      "category": "US_TARIFF_CONSTITUTIONAL_CRISIS",
+      "signal_ids": [
+        "sig_0008"
+      ],
+      "affected_countries": [
+        "USA"
+      ],
+      "severity": "transformative",
+      "confidence_range": "0.99-0.99",
+      "num_related_events": 1,
+      "description": "US Supreme Court strikes down IEEPA tariffs 6-3, ruling President lacks tariff authority",
+      "investor_summary": "SCOTUS struck down IEEPA tariffs 6-3; Trump immediately imposed 15% global tariff under Section 122. Fundamental restructuring of US trade policy legal framework. Affects all bilateral trade relationships and global supply chains.",
+      "recommended_action": "ACCEPT. Supreme Court ruling is definitive (conf=0.99). Section 122 tariff implementation confirmed.",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    },
+    {
+      "escalation_id": "esc_004",
+      "category": "NUCLEAR_PROLIFERATION_AND_ARMS_CONTROL",
+      "signal_ids": [
+        "sig_0106",
+        "sig_0107",
+        "sig_0124"
+      ],
+      "affected_countries": [
+        "PRK",
+        "RUS",
+        "USA"
+      ],
+      "severity": "transformative",
+      "confidence_range": "0.85-0.92",
+      "num_related_events": 3,
+      "description": "North Korea conducted its first ballistic missile test of 2026 on Jan 4, firing hypersonic missiles from Pyongyang striking a target 900km away. Believed to be Hwasong-16B solid-fueled IRBM capable of [+2 related events]",
+      "investor_summary": "New START treaty expired without extension (US-Russia). North Korea tested hypersonic missiles. Russia planning new ICBM tests. Iran nuclear infrastructure targeted in strikes. The global nuclear order is in its most precarious state since the Cold War.",
+      "recommended_action": "ACCEPT. New START expiry is confirmed. Missile tests reported by multiple defense sources.",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    },
+    {
+      "escalation_id": "esc_005",
+      "category": "SANCTIONS_REGIME_CHANGES",
+      "signal_ids": [
+        "sig_0067",
+        "sig_0068",
+        "sig_0072"
+      ],
+      "affected_countries": [
+        "DEU",
+        "FRA",
+        "GBR",
+        "SYR",
+        "USA",
+        "VEN"
+      ],
+      "severity": "major",
+      "confidence_range": "0.95-0.95",
+      "num_related_events": 3,
+      "description": "Following the capture of Venezuelan President Maduro in January 2026, OFAC issued multiple general licenses easing Venezuela oil sanctions: GL 46A (Feb 10) authorizes broad US company activities in Ve [+2 related events]",
+      "investor_summary": "Venezuela oil sanctions eased (OFAC general licenses post-Maduro capture). EU renewed Russia sanctions 6 months. Caesar Act for Syria repealed. Multiple comprehensive sanctions regime changes affecting energy markets and trade flows.",
+      "recommended_action": "ACCEPT. OFAC and EU Council actions are officially published.",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    },
+    {
+      "escalation_id": "esc_006",
+      "category": "ETHIOPIA_TIGRAY_CONFLICT_RESUMPTION",
+      "signal_ids": [
+        "sig_0100"
+      ],
+      "affected_countries": [
+        "ETH"
+      ],
+      "severity": "major",
+      "confidence_range": "0.88-0.88",
+      "num_related_events": 1,
+      "description": "Clashes erupted on Jan 29, 2026 between TPLF and Ethiopian government forces in the Tigray region. ENDF and Tigray Security Forces clashed near the Amhara border using drones, artillery, and heavy wea",
+      "investor_summary": "TPLF-government clashes resumed in Tigray using drones and artillery. Threatens the 2022 Pretoria peace agreement. Affects Horn of Africa stability and humanitarian aid flows.",
+      "recommended_action": "ACCEPT with monitoring. Confidence 0.88 \u2014 situation is fluid.",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    }
+  ],
+  "factor_escalations": [],
+  "summary": {
+    "total_escalation_groups": 6,
+    "total_escalated_signals": 21,
+    "total_escalated_factors": 0,
+    "by_category": {
+      "IRAN_CONFLICT_AND_REGIONAL_FALLOUT": {
+        "num_events": 11,
+        "severity": "transformative",
+        "countries": [
+          "ARE",
+          "BHR",
+          "IRN",
+          "IRQ",
+          "ISR",
+          "JOR",
+          "KWT",
+          "QAT",
+          "SAU",
+          "USA",
+          "YEM"
+        ],
+        "confidence_range": "0.85-0.99"
+      },
+      "PAKISTAN_AFGHANISTAN_WAR": {
+        "num_events": 2,
+        "severity": "transformative",
+        "countries": [
+          "AFG",
+          "PAK"
+        ],
+        "confidence_range": "0.93-0.98"
+      },
+      "US_TARIFF_CONSTITUTIONAL_CRISIS": {
+        "num_events": 1,
+        "severity": "transformative",
+        "countries": [
+          "USA"
+        ],
+        "confidence_range": "0.99-0.99"
+      },
+      "NUCLEAR_PROLIFERATION_AND_ARMS_CONTROL": {
+        "num_events": 3,
+        "severity": "transformative",
+        "countries": [
+          "PRK",
+          "RUS",
+          "USA"
+        ],
+        "confidence_range": "0.85-0.92"
+      },
+      "SANCTIONS_REGIME_CHANGES": {
+        "num_events": 3,
+        "severity": "major",
+        "countries": [
+          "DEU",
+          "FRA",
+          "GBR",
+          "SYR",
+          "USA",
+          "VEN"
+        ],
+        "confidence_range": "0.95-0.95"
+      },
+      "ETHIOPIA_TIGRAY_CONFLICT_RESUMPTION": {
+        "num_events": 1,
+        "severity": "major",
+        "countries": [
+          "ETH"
+        ],
+        "confidence_range": "0.88-0.88"
+      }
+    }
+  }
+}

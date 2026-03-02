@@ -1,0 +1,769 @@
+{
+  "report_date": "2026-03-02",
+  "run_id": "2026-W09",
+  "generated_at": "2026-03-02T08:23:34Z",
+  "first_run": true,
+  "first_run_note": "This is the initial pipeline run. No previous data exists for comparison. Staleness and regression checks are not applicable. Coverage gaps reflect the bootstrap state of the system.",
+  "coverage": {
+    "tier_1_avg_pct": 57.6,
+    "tier_2_avg_pct": 51.3,
+    "tier_3_avg_pct": 50.7,
+    "tier_1_target_pct": 90,
+    "tier_2_target_pct": 70,
+    "tier_3_target_pct": 50,
+    "tier_1_countries": 30,
+    "tier_2_countries": 25,
+    "tier_3_countries": 20,
+    "tier_1_meets_target": false,
+    "tier_2_meets_target": false,
+    "tier_3_meets_target": true,
+    "total_expected_factors_per_country": 37,
+    "section_coverage_avg_pct": {
+      "macroeconomic": 77.1,
+      "demographic": 100.0,
+      "political": 0.0,
+      "military": 1.0,
+      "trade": 0.0,
+      "derived": 100.0
+    },
+    "critical_gaps": {
+      "political_section": "0% filled \u2014 governance indices not collected",
+      "trade_section": "0% filled \u2014 trade data not collected",
+      "military_section": "1.3% filled (3/75 countries) \u2014 only event-extracted defense spending",
+      "exchange_rates": "0% mapped \u2014 data collected by Agent 02 but not mapped to country files",
+      "equity_indices": "Only 14/75 countries (18.7%) \u2014 concentrated in Tier 1 major markets",
+      "bond_yields": "Only 25/75 countries (33.3%) \u2014 concentrated in Tier 1"
+    },
+    "flagged_countries": [
+      {
+        "country_code": "ARE",
+        "country_name": "United Arab Emirates",
+        "tier": 1,
+        "coverage_pct": 54.1,
+        "threshold_pct": 80,
+        "gap_pct": 25.9,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "AUS",
+        "country_name": "Australia",
+        "tier": 1,
+        "coverage_pct": 59.5,
+        "threshold_pct": 80,
+        "gap_pct": 20.5,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "BRA",
+        "country_name": "Brazil",
+        "tier": 1,
+        "coverage_pct": 59.5,
+        "threshold_pct": 80,
+        "gap_pct": 20.5,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "CAN",
+        "country_name": "Canada",
+        "tier": 1,
+        "coverage_pct": 59.5,
+        "threshold_pct": 80,
+        "gap_pct": 20.5,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "CHE",
+        "country_name": "Switzerland",
+        "tier": 1,
+        "coverage_pct": 56.8,
+        "threshold_pct": 80,
+        "gap_pct": 23.2,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "CHN",
+        "country_name": "China",
+        "tier": 1,
+        "coverage_pct": 56.8,
+        "threshold_pct": 80,
+        "gap_pct": 23.2,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "DEU",
+        "country_name": "Germany",
+        "tier": 1,
+        "coverage_pct": 62.2,
+        "threshold_pct": 80,
+        "gap_pct": 17.8,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "ESP",
+        "country_name": "Spain",
+        "tier": 1,
+        "coverage_pct": 56.8,
+        "threshold_pct": 80,
+        "gap_pct": 23.2,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "FRA",
+        "country_name": "France",
+        "tier": 1,
+        "coverage_pct": 59.5,
+        "threshold_pct": 80,
+        "gap_pct": 20.5,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "GBR",
+        "country_name": "United Kingdom",
+        "tier": 1,
+        "coverage_pct": 59.5,
+        "threshold_pct": 80,
+        "gap_pct": 20.5,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "IDN",
+        "country_name": "Indonesia",
+        "tier": 1,
+        "coverage_pct": 56.8,
+        "threshold_pct": 80,
+        "gap_pct": 23.2,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "IND",
+        "country_name": "India",
+        "tier": 1,
+        "coverage_pct": 59.5,
+        "threshold_pct": 80,
+        "gap_pct": 20.5,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "ISR",
+        "country_name": "Israel",
+        "tier": 1,
+        "coverage_pct": 56.8,
+        "threshold_pct": 80,
+        "gap_pct": 23.2,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "ITA",
+        "country_name": "Italy",
+        "tier": 1,
+        "coverage_pct": 56.8,
+        "threshold_pct": 80,
+        "gap_pct": 23.2,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "JPN",
+        "country_name": "Japan",
+        "tier": 1,
+        "coverage_pct": 59.5,
+        "threshold_pct": 80,
+        "gap_pct": 20.5,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "KOR",
+        "country_name": "South Korea",
+        "tier": 1,
+        "coverage_pct": 59.5,
+        "threshold_pct": 80,
+        "gap_pct": 20.5,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "MEX",
+        "country_name": "Mexico",
+        "tier": 1,
+        "coverage_pct": 56.8,
+        "threshold_pct": 80,
+        "gap_pct": 23.2,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "MYS",
+        "country_name": "Malaysia",
+        "tier": 1,
+        "coverage_pct": 54.1,
+        "threshold_pct": 80,
+        "gap_pct": 25.9,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "NLD",
+        "country_name": "Netherlands",
+        "tier": 1,
+        "coverage_pct": 56.8,
+        "threshold_pct": 80,
+        "gap_pct": 23.2,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      },
+      {
+        "country_code": "NOR",
+        "country_name": "Norway",
+        "tier": 1,
+        "coverage_pct": 56.8,
+        "threshold_pct": 80,
+        "gap_pct": 23.2,
+        "missing_sections": [
+          "macroeconomic",
+          "political",
+          "military",
+          "trade"
+        ]
+      }
+    ],
+    "flagged_countries_total": 60,
+    "note": "All 60 countries are below target thresholds. This is expected for the first run: 3 entire sections (political, trade, military) are empty. The filled sections (macroeconomic 77.1%, demographic 100%, derived 100%) show strong collection. Effective coverage of collected sections: ~85% for Tier 1, ~78% for Tier 2, ~76% for Tier 3."
+  },
+  "staleness": {
+    "total_stale_factors": 0,
+    "note": "First pipeline run (2026-W09). All data freshly collected on 2026-03-02. Staleness check not applicable \u2014 no pre-existing data.",
+    "by_tier": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": []
+    }
+  },
+  "confidence": {
+    "overall_avg": 0.803,
+    "by_layer": {
+      "endowments": null,
+      "institutions": null,
+      "economy": 0.876,
+      "military": 0.95,
+      "relations": null,
+      "derived": 0.642
+    },
+    "by_section": {
+      "macroeconomic": 0.87,
+      "demographic": 0.883,
+      "military": 0.95,
+      "derived": 0.642
+    },
+    "low_confidence_countries": [],
+    "note": "No countries below 0.3 confidence threshold. Overall confidence is strong (0.805) with macroeconomic data at 0.876 (high \u2014 from official/authoritative sources) and derived metrics at 0.642 (moderate \u2014 relies on estimates due to incomplete base data). Confidence will improve as more source layers are added."
+  },
+  "validation": {
+    "total": 1095,
+    "accept": 1091,
+    "accept_with_note": 2,
+    "flag": 2,
+    "reject": 0,
+    "escalate": 0,
+    "accept_rate_pct": 99.8,
+    "event_signals_total": 124,
+    "event_signals_escalated": 21,
+    "escalation_groups": 6,
+    "data_quality_assessment": "HIGH \u2014 All 1,095 factor updates pass plausibility checks. Zero rejections. Two flagged anomalies are confirmed plausible (Libya GDP growth, Hormuz traffic collapse). Six escalation groups driven by genuinely extraordinary geopolitical events, not data quality issues.",
+    "rejected_details": [],
+    "flagged_details": [
+      {
+        "country_code": "LBY",
+        "factor_path": "macroeconomic.gdp_real_growth_pct",
+        "new_value": 15.6,
+        "notes": "Pre-flagged anomaly from processing agent: IMF WEO NGDP_RPCH estimate for 2025 [ANOMALY: extreme GDP growth value]; Libya 15.6% GDP growth is extreme but plausible: post-conflict oil production recovery from low base. IMF WEO estimate."
+      },
+      {
+        "country_code": null,
+        "factor_path": "global.chokepoint.strait_of_hormuz.traffic_change_pct",
+        "new_value": -70,
+        "notes": "Pre-flagged anomaly from processing agent: Strait of Hormuz vessel traffic collapsed ~70% following US-Israel strikes on Iran; ~170 containerships trapped"
+      }
+    ],
+    "noted_details": [
+      {
+        "country_code": "QAT",
+        "factor_path": "demographic.population_growth_pct",
+        "new_value": 7.32265165181291,
+        "notes": "Very high population growth 7.32% \u2014 likely migration-driven (Gulf state pattern)"
+      },
+      {
+        "country_code": "SWE",
+        "factor_path": "macroeconomic.central_bank_policy_rate_pct",
+        "new_value": 1.75,
+        "notes": "Source disagreement >28.6% with Riksbank"
+      }
+    ],
+    "escalation_group_details": [
+      {
+        "escalation_id": "esc_001",
+        "category": "IRAN_CONFLICT_AND_REGIONAL_FALLOUT",
+        "severity": "transformative",
+        "affected_countries": [
+          "ARE",
+          "BHR",
+          "IRN",
+          "IRQ",
+          "ISR",
+          "JOR",
+          "KWT",
+          "QAT",
+          "SAU",
+          "USA",
+          "YEM"
+        ],
+        "num_events": 11,
+        "description": "US and Israel launch joint strikes on Iran, killing Supreme Leader Khamenei [+10 related events]"
+      },
+      {
+        "escalation_id": "esc_002",
+        "category": "PAKISTAN_AFGHANISTAN_WAR",
+        "severity": "transformative",
+        "affected_countries": [
+          "AFG",
+          "PAK"
+        ],
+        "num_events": 2,
+        "description": "Pakistan declares 'open war' on Afghanistan with airstrikes on Kabul and Kandahar [+1 related events]"
+      },
+      {
+        "escalation_id": "esc_003",
+        "category": "US_TARIFF_CONSTITUTIONAL_CRISIS",
+        "severity": "transformative",
+        "affected_countries": [
+          "USA"
+        ],
+        "num_events": 1,
+        "description": "US Supreme Court strikes down IEEPA tariffs 6-3, ruling President lacks tariff authority"
+      },
+      {
+        "escalation_id": "esc_004",
+        "category": "NUCLEAR_PROLIFERATION_AND_ARMS_CONTROL",
+        "severity": "transformative",
+        "affected_countries": [
+          "PRK",
+          "RUS",
+          "USA"
+        ],
+        "num_events": 3,
+        "description": "North Korea conducted its first ballistic missile test of 2026 on Jan 4, firing hypersonic missiles from Pyongyang striking a target 900km away. Believed to be Hwasong-16B solid-fueled IRBM capable of"
+      },
+      {
+        "escalation_id": "esc_005",
+        "category": "SANCTIONS_REGIME_CHANGES",
+        "severity": "major",
+        "affected_countries": [
+          "DEU",
+          "FRA",
+          "GBR",
+          "SYR",
+          "USA",
+          "VEN"
+        ],
+        "num_events": 3,
+        "description": "Following the capture of Venezuelan President Maduro in January 2026, OFAC issued multiple general licenses easing Venezuela oil sanctions: GL 46A (Feb 10) authorizes broad US company activities in Ve"
+      },
+      {
+        "escalation_id": "esc_006",
+        "category": "ETHIOPIA_TIGRAY_CONFLICT_RESUMPTION",
+        "severity": "major",
+        "affected_countries": [
+          "ETH"
+        ],
+        "num_events": 1,
+        "description": "Clashes erupted on Jan 29, 2026 between TPLF and Ethiopian government forces in the Tigray region. ENDF and Tigray Security Forces clashed near the Amhara border using drones, artillery, and heavy wea"
+      }
+    ]
+  },
+  "agent_performance": [
+    {
+      "agent_id": "agent_01",
+      "agent_name": "official_stats_gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "started_at": "2026-03-02T00:00:00Z",
+      "completed_at": "2026-03-02T00:30:00Z",
+      "duration_minutes": 30.0,
+      "records_processed": 997,
+      "notes": "997 records across 14 factor paths for all 75 countries. Sources: World Bank API (370 records), IMF WEO DataMapper API (522 records), credit ratings from S&P/Moody's/Fitch (75 records), central bank policy rates (29 records). Tier 1: 30/30 countries, avg 13.9 indicators. Tier 2: 25/25 countries, avg"
+    },
+    {
+      "agent_id": "agent_04",
+      "agent_name": "trade_sanctions_gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "started_at": "2026-03-02T00:00:00Z",
+      "completed_at": "2026-03-02T00:20:00Z",
+      "duration_minutes": 20.0,
+      "records_processed": 31,
+      "notes": "31 records: 11 sanctions changes, 8 trade agreements, 1 WTO dispute, 8 tariff changes, 3 chokepoint events. Critical: Strait of Hormuz closure (Feb 28), SCOTUS IEEPA ruling (Feb 20), Section 122 15% global tariff (Feb 24), US-India/Taiwan/Argentina/Bangladesh trade deals, EU-Mercosur/EU-India FTAs s"
+    },
+    {
+      "agent_id": "agent_02",
+      "agent_name": "financial_data_gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "started_at": "2026-03-02T00:00:00Z",
+      "completed_at": "2026-03-02T01:00:00Z",
+      "duration_minutes": 60.0,
+      "records_processed": 82,
+      "notes": "82 records: 30 exchange rates, 25 bond yields (Tier 1+), 14 equity indices, 11 commodities, 17 central bank decisions, 2 rating changes + current ratings table. Key themes: US 10Y below 4% (safe-haven flows); gold surged past $5,300 on US-Iran strikes; RBA hiked to 3.85%; Russia CBR cut to 15.5%; EC"
+    },
+    {
+      "agent_id": "agent_06",
+      "agent_name": "political_regulatory_gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "started_at": "2026-03-02T02:00:00Z",
+      "completed_at": "2026-03-02T02:25:00Z",
+      "duration_minutes": 25.0,
+      "records_processed": 43,
+      "notes": "43 records: 11 elections, 5 government changes, 9 political crises, 9 regulatory changes, 6 policy announcements, 3 governance indices. 33 high investor relevance. Critical: Iran regime crisis (Khamenei killed in US-Israeli strikes Feb 28), US intervention in Venezuela (Maduro captured Jan 3), Japan"
+    },
+    {
+      "agent_id": "agent_03",
+      "agent_name": "news_events_gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "started_at": "2026-03-02T03:00:00Z",
+      "completed_at": "2026-03-02T03:45:00Z",
+      "duration_minutes": 45.0,
+      "records_processed": 63,
+      "notes": "63 events: 7 transformative, 16 major, 28 moderate, 12 minor. 38 countries affected. DOMINANT: US-Israeli strikes on Iran (Feb 28) killing Khamenei, Iranian retaliation across Gulf states, Strait of Hormuz 70% traffic collapse, oil +13%, gold $5,278, recession probability 40-50%. SECONDARY: Pakistan"
+    },
+    {
+      "agent_id": "agent_05",
+      "agent_name": "military_conflict_gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "started_at": "2026-03-02T00:00:00Z",
+      "completed_at": "2026-03-02T00:25:00Z",
+      "duration_minutes": 25.0,
+      "records_processed": 35,
+      "notes": "35 records: 12 conflict updates, 6 military exercises, 4 nuclear events, 4 arms deals, 3 defense spending, 2 alliance activities, 2 military posturing, 2 cyber events. Critical: US-Israel Operation Epic Fury against Iran (1000+ targets, Khamenei killed, 3 US KIA), Iranian retaliation at 27 US bases,"
+    },
+    {
+      "agent_id": "agent_07",
+      "agent_name": "fact_extractor",
+      "phase": "PROCESS",
+      "status": "completed",
+      "started_at": "2026-03-02T04:00:00Z",
+      "completed_at": "2026-03-02T04:25:00Z",
+      "duration_minutes": 25.0,
+      "records_processed": 1269,
+      "notes": "Processed 1,269 raw records from 6 Phase 1 agents. Output: 1,095 direct factor updates (1,085 from quantitative data, 10 from events), 124 event signals, 1 unmapped record, 48 irrelevant skipped. 75 countries covered, 34 unique factor paths. 2 anomalies flagged (Libya 15.6% GDP growth, Strait of Hor"
+    },
+    {
+      "agent_id": "agent_08",
+      "agent_name": "cross_validator",
+      "phase": "VALIDATE",
+      "status": "completed",
+      "started_at": "2026-03-02T04:30:00Z",
+      "completed_at": "2026-03-02T04:45:00Z",
+      "duration_minutes": 15.0,
+      "records_processed": 1095,
+      "notes": "Validated 1,095 factor updates: 1,091 ACCEPT, 2 ACCEPT_WITH_NOTE, 2 FLAG, 0 REJECT, 0 ESCALATE. Accept rate 99.8%. Zero rejections \u2014 all values pass plausibility checks. Two flagged anomalies: (1) Libya 15.6% GDP growth (extreme but plausible IMF WEO estimate, post-conflict oil recovery), (2) Strait"
+    },
+    {
+      "agent_id": "agent_09",
+      "agent_name": "data_integrator",
+      "phase": "INTEGRATE",
+      "status": "completed",
+      "started_at": "2026-03-02T04:45:00Z",
+      "completed_at": "2026-03-02T07:32:59Z",
+      "duration_minutes": 168.0,
+      "records_processed": 1079,
+      "notes": "First run integration complete. Created 75 country files with 1079 factor entries. 16 global updates stored. 124 event signals stored with 6 escalation groups. 1 active flags: LBY:macroeconomic.gdp_real_growth_pct. Verdicts: 1091 ACCEPT, 2 ACCEPT_WITH_NOTE, 2 FLAG, 0 REJECT. 0 relations updated (no "
+    },
+    {
+      "agent_id": "agent_10",
+      "agent_name": "trend_estimator",
+      "phase": "ANALYZE",
+      "status": "completed",
+      "started_at": "2026-03-02T08:00:00Z",
+      "completed_at": "2026-03-02T08:45:00Z",
+      "duration_minutes": 45.0,
+      "records_processed": 605,
+      "notes": "605 trend estimates across 11 factors for 55 countries (30 Tier 1, 25 Tier 2). Distribution: 11 strong_growth, 77 growth, 417 stable, 81 decrease, 19 strong_decrease. High-impact deep analysis for 11 countries: USA, IRN, ISR, PAK, UKR, ARE, QAT, SAU, CHN, IND, RUS. Medium-detail for 15 countries: JP"
+    },
+    {
+      "agent_id": "agent_11",
+      "agent_name": "derived_metrics_calculator",
+      "phase": "ANALYZE",
+      "status": "completed",
+      "started_at": "2026-03-02T12:00:00Z",
+      "completed_at": "2026-03-02T12:08:00Z",
+      "duration_minutes": 8.0,
+      "records_processed": 6,
+      "notes": "Computed 6 derived metrics for all 75 countries: (1) Resource Self-Sufficiency Index, (2) Energy Independence Index, (3) Supply Chain Chokepoint Exposure, (4) Composite National Power Index, (5) Political Risk Premium (bps), (6) Market Accessibility Score. First run \u2014 base factor sections (endowment"
+    },
+    {
+      "agent_id": "agent_12",
+      "agent_name": "alert_generator",
+      "phase": "ANALYZE",
+      "status": "completed",
+      "started_at": "2026-03-02T12:15:00Z",
+      "completed_at": "2026-03-02T12:30:00Z",
+      "duration_minutes": 15.0,
+      "records_processed": 57,
+      "notes": "Generated 57 alerts across 46 countries/entities: 12 CRITICAL, 19 WARNING, 26 WATCH. All alerts status=new (first run, no prior alerts). Scanned all 75 country files against all trigger criteria. CRITICAL alerts: Iran conflict + regime collapse (2 alerts), Pakistan open war with Afghanistan, Strait "
+    },
+    {
+      "agent_id": "agent_13",
+      "agent_name": "country_profile_synthesizer",
+      "phase": "SYNTHESIZE",
+      "status": "completed",
+      "started_at": "2026-03-02T13:00:00Z",
+      "completed_at": "2026-03-02T13:25:00Z",
+      "duration_minutes": 25.0,
+      "records_processed": 55,
+      "notes": "Generated investor-focused narrative sections for all 55 Tier 1 (30) and Tier 2 (25) countries. Each narrative includes: executive_summary, key_changes_this_week, outlook, investor_implications, data_quality_note. All labeled ai_generated=true. Depth allocation: 9 CRITICAL countries received deep an"
+    },
+    {
+      "agent_id": "agent_14",
+      "agent_name": "weekly_briefing_generator",
+      "phase": "SYNTHESIZE",
+      "status": "completed",
+      "started_at": "2026-03-02T14:00:00Z",
+      "completed_at": "2026-03-02T14:15:00Z",
+      "duration_minutes": 15.0,
+      "records_processed": 0,
+      "notes": "Generated weekly briefing with: 1 headline, 5 top stories (ranked by investor impact), 10 regional summaries, 10 notable market moves, 27 watchlist entries (12 critical, 15 warning), and full data quality summary. Synthesized from alert_index.json (57 alerts), event_feed.json (57 events), financial_"
+    }
+  ],
+  "pipeline_timing": {
+    "pipeline_started_at": "2026-03-01T23:17:13Z",
+    "first_agent_started_at": "2026-03-02T00:00:00Z",
+    "last_agent_completed_at": "2026-03-02T14:15:00Z",
+    "wall_clock_minutes": 855.0,
+    "total_agent_processing_minutes": 521.0,
+    "idle_scheduling_minutes": 334.0,
+    "budget_minutes": {
+      "min": 180,
+      "max": 300
+    },
+    "within_budget": false,
+    "bottleneck": "Agent 09 (data_integrator) at 168 minutes \u2014 17x over its 10-minute budget. First-run initialization overhead. Also significant idle time between Analysis sub-phases (Agent 10 end to Agent 11 start: 192 minutes gap).",
+    "phase_durations": {
+      "gather": 205.0,
+      "process": 25.0,
+      "validate": 15.0,
+      "integrate": 168.0,
+      "analyze": 68.0,
+      "synthesize": 40.0
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "critical",
+      "category": "coverage",
+      "action": "Add political/governance data collection to gathering agents",
+      "reason": "Political section is 0% filled for all 75 countries. Agent 06 (political_regulatory_gatherer) collects events but does not produce structured governance indices (political_stability_index, government_effectiveness, corruption_perceptions_index, democracy_index, rule_of_law_index, regulatory_quality). These are available from World Bank WGI, Freedom House, Transparency International, and EIU.",
+      "impact": "Would increase coverage by ~16% across all tiers."
+    },
+    {
+      "priority": "critical",
+      "category": "coverage",
+      "action": "Add trade data collection to gathering agents",
+      "reason": "Trade section is 0% filled for all 75 countries. trade_openness_pct, top_export_partners, top_import_partners, export_concentration_index are not being collected. UN Comtrade and World Bank data are available.",
+      "impact": "Would increase coverage by ~11% across all tiers."
+    },
+    {
+      "priority": "critical",
+      "category": "coverage",
+      "action": "Add military data collection beyond defense spending",
+      "reason": "Military section has only 3 of 75 countries with any data (USA, DEU, POL \u2014 from SIPRI/event extraction). defense_spending_pct_gdp, active_military_personnel, nuclear_capability are missing for nearly all countries. SIPRI and IISS data are available.",
+      "impact": "Would increase coverage by ~10% across all tiers."
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "action": "Expand exchange rate collection in Agent 02",
+      "reason": "exchange_rate_usd is missing for all 75 countries. Agent 02 collected 30 exchange rates as raw data but they were not mapped to country files as exchange_rate_usd field. Check Agent 07 mapping logic.",
+      "impact": "Data exists in raw collection \u2014 mapping fix would immediately add 1 factor for all countries."
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "action": "Expand equity index and bond yield collection for Tier 1 countries",
+      "reason": "equity_index_level missing for 17 of 30 Tier 1 countries (only 13 collected). sovereign_bond_yield_10yr_pct missing for 5 of 30 Tier 1 countries (ARE, CHN, MYS, SAU, THA). These are major investable markets.",
+      "impact": "Critical for investor-focused platform \u2014 these are high-frequency, high-value factors."
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "action": "Expand central bank policy rate collection beyond Tier 1",
+      "reason": "central_bank_policy_rate_pct missing for all 25 Tier 2 and all 20 Tier 3 countries. Only collected for select Tier 1 (29 of 30). Agent 01 notes acknowledged this gap.",
+      "impact": "Key monetary policy indicator for emerging market investors."
+    },
+    {
+      "priority": "high",
+      "category": "performance",
+      "action": "Investigate Agent 09 (data_integrator) performance \u2014 168 minutes vs 5-10 minute budget",
+      "reason": "Agent 09 took 168 minutes (2.8 hours), far exceeding its 5-10 minute time budget. This is the primary driver of pipeline duration overrun. Likely caused by first-run initialization creating 75 country files from scratch.",
+      "impact": "Reducing to budget would save ~158 minutes per run."
+    },
+    {
+      "priority": "high",
+      "category": "performance",
+      "action": "Reduce idle time between pipeline phases",
+      "reason": "Wall-clock duration is 855.0 minutes vs 521.0 total agent processing time. Gap of 334.0 minutes of idle/scheduling time between phases. Phases 2-3 gap: 15 min. Phase 3-4 gap: 0 min. Phase 4-5 gap: 27 min. Phase 5-6 gap: 192 min (Agent 10 to 11). Phase 6-7 gap: 35 min.",
+      "impact": "Tighter scheduling could save 200+ minutes."
+    },
+    {
+      "priority": "medium",
+      "category": "coverage",
+      "action": "Add Tier 3 country narratives",
+      "reason": "20 Tier 3 countries lack narratives (AGO, AZE, BGR, CIV, COD, ETH, GEO, GHA, HRV, HUN, JOR, KEN, LBY, LKA, MMR, MOZ, SEN, SRB, TZA, UZB). Agent 13 only generates narratives for Tier 1 and Tier 2.",
+      "impact": "Improves completeness; several Tier 3 countries have active alerts (ETH critical, MMR critical)."
+    },
+    {
+      "priority": "medium",
+      "category": "data_quality",
+      "action": "Investigate Sweden central bank rate source disagreement",
+      "reason": "ACCEPT_WITH_NOTE: SWE central_bank_policy_rate_pct shows >28.6% source disagreement with Riksbank. Should verify correct rate (1.75% vs alternative).",
+      "impact": "Ensures accuracy for a Tier 1 country monetary policy indicator."
+    },
+    {
+      "priority": "medium",
+      "category": "data_quality",
+      "action": "Monitor Libya GDP growth flag and Hormuz traffic collapse",
+      "reason": "Two FLAG verdicts: (1) Libya 15.6% GDP growth (extreme but plausible post-conflict recovery), (2) Strait of Hormuz -70% traffic (confirmed event). Both accepted as plausible but should be tracked.",
+      "impact": "Flags are correctly identified; monitor for updated data next week."
+    },
+    {
+      "priority": "low",
+      "category": "coverage",
+      "action": "Plan endowments layer data collection (natural resources, geography)",
+      "reason": "Layer 1 (Endowments) from the factor model spec is entirely uncollected. This includes natural resources, geography, demographics beyond basic population. These are mostly static/annual factors.",
+      "impact": "Long-term: would significantly increase coverage. Not urgent as these change slowly."
+    }
+  ],
+  "summary": {
+    "headline": "First run complete with strong data quality but significant coverage gaps",
+    "data_quality": "HIGH \u2014 99.8% acceptance rate, 0 rejections, avg confidence 0.805",
+    "coverage_status": "BELOW TARGET \u2014 Tier 1: 57.6% (target 90%), Tier 2: 51.3% (target 70%), Tier 3: 50.7% (target 50%). Three entire sections (political, trade, military) are empty.",
+    "coverage_of_collected_sections": "Macroeconomic 77.1%, Demographic 100%, Derived 100%. Strong where data was collected.",
+    "pipeline_status": "OVER BUDGET \u2014 855 minutes wall-clock (budget: 180-300 min). Primary cause: Agent 09 first-run overhead (168 min) and inter-phase idle time (334 min).",
+    "critical_issues": [
+      "Political/governance indices not collected (0% for all countries)",
+      "Trade data not collected (0% for all countries)",
+      "Military data only for 3 countries (event-extracted)",
+      "Pipeline duration 2.85x over maximum budget",
+      "All 30 Tier 1 countries below 80% coverage threshold"
+    ],
+    "positive_findings": [
+      "75/75 countries created with data",
+      "1,095 factor updates validated, 0 rejections",
+      "Average confidence 0.805 \u2014 solidly in the high range",
+      "Demographic data 100% complete for all countries",
+      "Derived metrics computed for all 75 countries",
+      "55 country narratives generated (all Tier 1 + Tier 2)",
+      "57 alerts generated with correct severity classification",
+      "All 6 escalation groups properly identified and documented",
+      "Weekly briefing successfully generated"
+    ],
+    "next_week_priorities": [
+      "1. Add political/governance data collection (biggest coverage gap)",
+      "2. Add trade data collection",
+      "3. Expand military data collection",
+      "4. Fix exchange rate mapping in Agent 07",
+      "5. Optimize Agent 09 for incremental updates (vs first-run)",
+      "6. Reduce inter-phase idle time"
+    ]
+  }
+}

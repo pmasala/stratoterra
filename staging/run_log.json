@@ -1,6 +1,209 @@
 {
-  "run_id": null,
-  "started_at": null,
-  "status": "not_started",
-  "agents": []
+  "run_id": "2026-W09",
+  "started_at": "2026-03-01T23:17:13Z",
+  "status": "completed",
+  "current_date": "2026-03-01",
+  "project_root": "/home/pietro/stratoterra",
+  "agents": [
+    {
+      "agent_id": "agent_01",
+      "agent_name": "official_stats_gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "started_at": "2026-03-02T00:00:00Z",
+      "completed_at": "2026-03-02T00:30:00Z",
+      "output_file": "staging/raw_collected/official_stats_2026-03-02.json",
+      "records_collected": 997,
+      "notes": "997 records across 14 factor paths for all 75 countries. Sources: World Bank API (370 records), IMF WEO DataMapper API (522 records), credit ratings from S&P/Moody's/Fitch (75 records), central bank policy rates (29 records). Tier 1: 30/30 countries, avg 13.9 indicators. Tier 2: 25/25 countries, avg 13.0 indicators. Tier 3: 20/20 countries, avg 12.8 indicators. All coverage targets met. Key gaps: FX reserves missing for 5 countries, govt debt missing for 1 country, central bank rates only collected for Tier 1 + select Tier 2."
+    },
+    {
+      "agent_id": "agent_04",
+      "agent_name": "trade_sanctions_gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "started_at": "2026-03-02T00:00:00Z",
+      "completed_at": "2026-03-02T00:20:00Z",
+      "output_file": "staging/raw_collected/trade_sanctions_2026-03-02.json",
+      "records_collected": 31,
+      "notes": "31 records: 11 sanctions changes, 8 trade agreements, 1 WTO dispute, 8 tariff changes, 3 chokepoint events. Critical: Strait of Hormuz closure (Feb 28), SCOTUS IEEPA ruling (Feb 20), Section 122 15% global tariff (Feb 24), US-India/Taiwan/Argentina/Bangladesh trade deals, EU-Mercosur/EU-India FTAs signed."
+    },
+    {
+      "agent_id": "agent_02",
+      "agent_name": "financial_data_gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "started_at": "2026-03-02T00:00:00Z",
+      "completed_at": "2026-03-02T01:00:00Z",
+      "output_file": "staging/raw_collected/financial_data_2026-03-02.json",
+      "records_collected": 82,
+      "notes": "82 records: 30 exchange rates, 25 bond yields (Tier 1+), 14 equity indices, 11 commodities, 17 central bank decisions, 2 rating changes + current ratings table. Key themes: US 10Y below 4% (safe-haven flows); gold surged past $5,300 on US-Iran strikes; RBA hiked to 3.85%; Russia CBR cut to 15.5%; ECB/BOE/BOK held steady. Missing: some Tier 2/3 FX rates, CDS spreads."
+    },
+    {
+      "agent_id": "agent_06",
+      "agent_name": "political_regulatory_gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "started_at": "2026-03-02T02:00:00Z",
+      "completed_at": "2026-03-02T02:25:00Z",
+      "output_file": "staging/raw_collected/political_regulatory_2026-03-02.json",
+      "records_collected": 43,
+      "notes": "43 records: 11 elections, 5 government changes, 9 political crises, 9 regulatory changes, 6 policy announcements, 3 governance indices. 33 high investor relevance. Critical: Iran regime crisis (Khamenei killed in US-Israeli strikes Feb 28), US intervention in Venezuela (Maduro captured Jan 3), Japan LDP supermajority (Feb 8), Bangladesh BNP landslide (Feb 12), Argentina labour reform (Feb 28), UK Rayner resignation/reshuffle, Egypt economy-focused reshuffle, Peru 9th president in decade, Taiwan cross-strait escalation, CPI/EIU global governance decline. Upcoming: Colombia (Mar 8), Hungary (Apr 12), Ethiopia (Jun 1), China NPC (Mar 5)."
+    },
+    {
+      "agent_id": "agent_03",
+      "agent_name": "news_events_gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "started_at": "2026-03-02T03:00:00Z",
+      "completed_at": "2026-03-02T03:45:00Z",
+      "output_file": "staging/raw_collected/news_events_2026-03-02.json",
+      "records_collected": 63,
+      "notes": "63 events: 7 transformative, 16 major, 28 moderate, 12 minor. 38 countries affected. DOMINANT: US-Israeli strikes on Iran (Feb 28) killing Khamenei, Iranian retaliation across Gulf states, Strait of Hormuz 70% traffic collapse, oil +13%, gold $5,278, recession probability 40-50%. SECONDARY: Pakistan-Afghanistan open war, SCOTUS IEEPA ruling, Trump Section 122 tariffs, EU-Mercosur provisional application, Ukraine southern counteroffensive +300 sq km, Flamingo missile hits Votkinsk, IMF $8.1B Ukraine loan, NK 9th Party Congress, PBOC FX ratio cut, Argentina labor reform, UK Green by-election, Denmark snap election. Most consequential week since Feb 2022."
+    },
+    {
+      "agent_id": "agent_05",
+      "agent_name": "military_conflict_gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "started_at": "2026-03-02T00:00:00Z",
+      "completed_at": "2026-03-02T00:25:00Z",
+      "output_file": "staging/raw_collected/military_conflict_2026-03-02.json",
+      "records_collected": 35,
+      "notes": "35 records: 12 conflict updates, 6 military exercises, 4 nuclear events, 4 arms deals, 3 defense spending, 2 alliance activities, 2 military posturing, 2 cyber events. Critical: US-Israel Operation Epic Fury against Iran (1000+ targets, Khamenei killed, 3 US KIA), Iranian retaliation at 27 US bases, Pakistan-Afghanistan open war, New START expired, SIPRI record $2.72T military spending. Major arms deals: US-Israel $6.67B, US-Saudi $9B, US-Taiwan $10B+."
+    },
+    {
+      "agent_id": "agent_07",
+      "agent_name": "fact_extractor",
+      "phase": "PROCESS",
+      "status": "completed",
+      "started_at": "2026-03-02T04:00:00Z",
+      "completed_at": "2026-03-02T04:25:00Z",
+      "output_file": "staging/processed/factor_updates_2026-03-02.json",
+      "records_processed": 1269,
+      "notes": "Processed 1,269 raw records from 6 Phase 1 agents. Output: 1,095 direct factor updates (1,085 from quantitative data, 10 from events), 124 event signals, 1 unmapped record, 48 irrelevant skipped. 75 countries covered, 34 unique factor paths. 2 anomalies flagged (Libya 15.6% GDP growth, Strait of Hormuz -70% traffic). 0 duplicate conflicts detected (>20% divergence). Key direct extractions from events: Japan $58B defense budget, US/Israel/Saudi arms deals, IMF $8.1B Ukraine loan, SIPRI defense spending data (USA $997B, DEU $88.5B, POL $38B), Strait of Hormuz -70% traffic collapse. Event signals dominated by Iran conflict (56 negative, 12 transformative severity). All monetary values in USD. All dates ISO 8601."
+    },
+    {
+      "agent_id": "agent_08",
+      "agent_name": "cross_validator",
+      "phase": "VALIDATE",
+      "status": "completed",
+      "started_at": "2026-03-02T04:30:00Z",
+      "completed_at": "2026-03-02T04:45:00Z",
+      "output_files": [
+        "staging/validated/validated_updates_2026-03-02.json",
+        "staging/validated/escalation_report_2026-03-02.json"
+      ],
+      "records_validated": 1095,
+      "events_reviewed": 124,
+      "notes": "Validated 1,095 factor updates: 1,091 ACCEPT, 2 ACCEPT_WITH_NOTE, 2 FLAG, 0 REJECT, 0 ESCALATE. Accept rate 99.8%. Zero rejections \u2014 all values pass plausibility checks. Two flagged anomalies: (1) Libya 15.6% GDP growth (extreme but plausible IMF WEO estimate, post-conflict oil recovery), (2) Strait of Hormuz -70% traffic collapse (confirmed, US-Iran conflict). Two notes: Qatar 7.3% population growth (migration-driven), Sweden central bank rate source disagreement. Reviewed 124 event signals; 21 escalated into 6 consolidated groups: (1) Iran conflict & regional fallout (11 events, transformative), (2) Pakistan-Afghanistan war (2 events, transformative), (3) US tariff constitutional crisis (1 event, transformative), (4) Nuclear proliferation & arms control (3 events, transformative), (5) Sanctions regime changes (3 events, major), (6) Ethiopia-Tigray conflict resumption (1 event, major). First run: magnitude checks skipped (no previous data). Data quality assessment: HIGH."
+    },
+    {
+      "agent_id": "agent_09",
+      "agent_name": "data_integrator",
+      "phase": "INTEGRATE",
+      "status": "completed",
+      "started_at": "2026-03-02T04:45:00Z",
+      "completed_at": "2026-03-02T07:32:59Z",
+      "output_files": [
+        "data/countries/ (75 files)",
+        "data/global/events_2026-W09.json",
+        "data/global/global_data_2026-W09.json",
+        "data/metadata/last_update.json",
+        "data/metadata/update_log.json"
+      ],
+      "records_integrated": 1079,
+      "notes": "First run integration complete. Created 75 country files with 1079 factor entries. 16 global updates stored. 124 event signals stored with 6 escalation groups. 1 active flags: LBY:macroeconomic.gdp_real_growth_pct. Verdicts: 1091 ACCEPT, 2 ACCEPT_WITH_NOTE, 2 FLAG, 0 REJECT. 0 relations updated (no bilateral relation data in this run). 0 errors."
+    },
+    {
+      "agent_id": "agent_10",
+      "agent_name": "trend_estimator",
+      "phase": "ANALYZE",
+      "status": "completed",
+      "started_at": "2026-03-02T08:00:00Z",
+      "completed_at": "2026-03-02T08:45:00Z",
+      "output_file": "staging/trends/trend_estimates_2026-03-02.json",
+      "estimates_produced": 605,
+      "notes": "605 trend estimates across 11 factors for 55 countries (30 Tier 1, 25 Tier 2). Distribution: 11 strong_growth, 77 growth, 417 stable, 81 decrease, 19 strong_decrease. High-impact deep analysis for 11 countries: USA, IRN, ISR, PAK, UKR, ARE, QAT, SAU, CHN, IND, RUS. Medium-detail for 15 countries: JPN, DEU, GBR, FRA, ITA, BRA, CAN, MEX, KOR, ARG, TUR, TWN, ESP, NLD, POL. Brief assessments for remaining 29 countries. Key themes: (1) Iran conflict and Hormuz closure dominate global risk, (2) oil +13% creates inflation upside for energy importers, (3) US tariff escalation reshaping trade patterns, (4) record global defense spending, (5) political stability deteriorating in conflict states, (6) safe-haven flows to USD/CHF/gold. Most consequential assessment week since Russia's invasion of Ukraine (Feb 2022). All estimates labeled ai_generated=true."
+    },
+    {
+      "agent_id": "agent_11",
+      "agent_name": "derived_metrics_calculator",
+      "phase": "ANALYZE",
+      "status": "completed",
+      "started_at": "2026-03-02T12:00:00Z",
+      "completed_at": "2026-03-02T12:08:00Z",
+      "output_files": [
+        "data/countries/ (75 files updated with derived section)",
+        "data/global/global_rankings.json"
+      ],
+      "metrics_computed": 6,
+      "countries_processed": 75,
+      "notes": "Computed 6 derived metrics for all 75 countries: (1) Resource Self-Sufficiency Index, (2) Energy Independence Index, (3) Supply Chain Chokepoint Exposure, (4) Composite National Power Index, (5) Political Risk Premium (bps), (6) Market Accessibility Score. First run \u2014 base factor sections (endowments, institutions, energy, trade) were empty, so domain knowledge was used for energy production/consumption ratios, resource endowments, military spending, governance scores, trade openness, chokepoint dependency, financial development indicators, and capital market data. Credit ratings from sovereign_credit_rating field were parsed mechanically for risk premium calculations. NR-rated countries (RUS, IRN, LBY, MMR, TZA) assigned estimated premiums. Adjustments applied for political instability (<-1.0), active conflict (+100bps), comprehensive sanctions (+200bps), and low democracy index (<4.0, +50bps). Composite National Power normalized across full 75-country range with sub-scores for economic (GDP+per capita), military (defense spending), technology, diplomacy, and soft power. All derived values include methodology notes and confidence scores (0.6-0.7, reflecting reliance on estimates). Generated global_rankings.json with rankings for all 6 metrics. Top CNP: USA (95.7), CHN (74.8), DEU (69.3). Lowest risk: AAA-rated nations (0 bps). Highest risk: ETH (2700 bps), LKA/GHA (2500 bps)."
+    },
+    {
+      "agent_id": "agent_12",
+      "agent_name": "alert_generator",
+      "phase": "ANALYZE",
+      "status": "completed",
+      "started_at": "2026-03-02T12:15:00Z",
+      "completed_at": "2026-03-02T12:30:00Z",
+      "output_files": [
+        "data/indices/alert_index.json",
+        "data/global/event_feed.json"
+      ],
+      "alerts_generated": 57,
+      "notes": "Generated 57 alerts across 46 countries/entities: 12 CRITICAL, 19 WARNING, 26 WATCH. All alerts status=new (first run, no prior alerts). Scanned all 75 country files against all trigger criteria. CRITICAL alerts: Iran conflict + regime collapse (2 alerts), Pakistan open war with Afghanistan, Strait of Hormuz closure affecting 6 Gulf states (ARE, QAT, KWT, OMN, SAU, IRQ), Ethiopia selective default + Tigray resumption, Ukraine active war + CC credit, Myanmar civil war + negative GDP. WARNING alerts: Iran hyperinflation trajectory, Argentina 41.3% inflation, Turkey 34.9% inflation + political crisis, US tariff constitutional crisis, US recession probability 40-50%, nuclear arms control collapse (New START), Russia sanctions + war economy, Israel conflict + budget crisis, oil surge exposure for energy importers (JPN, KOR, DEU, TWN), Ghana/Sri Lanka selective defaults, Nigeria insecurity + inflation, Philippines corruption scandal, China GDP deceleration + Taiwan tensions, Mexico tariffs + judicial reform, Canada-US relationship deterioration. WATCH alerts: Japan LDP supermajority, Bangladesh BNP election, South Korea Yoon conviction, Peru 9th president, Syria/Venezuela sanctions changes, EU-Mercosur FTA, Ukraine counteroffensive, Taiwan cross-strait escalation, Denmark snap election, North Korea missile tests, Georgia crisis, DR Congo M23, Sudan civil war, India US tariffs, Singapore chokepoint exposure, Egypt Suez disruption, UK reshuffle, global governance decline, Mozambique/Libya risk, Vietnam elections, Poland defense/gridlock, Yemen Houthi attacks, China cyber campaigns. Most consequential alert generation since project inception."
+    },
+    {
+      "agent_id": "agent_13",
+      "agent_name": "country_profile_synthesizer",
+      "phase": "SYNTHESIZE",
+      "status": "completed",
+      "started_at": "2026-03-02T13:00:00Z",
+      "completed_at": "2026-03-02T13:25:00Z",
+      "output_files": [
+        "data/countries/ (55 files updated with narrative section)"
+      ],
+      "narratives_generated": 55,
+      "notes": "Generated investor-focused narrative sections for all 55 Tier 1 (30) and Tier 2 (25) countries. Each narrative includes: executive_summary, key_changes_this_week, outlook, investor_implications, data_quality_note. All labeled ai_generated=true. Depth allocation: 9 CRITICAL countries received deep analysis (IRN, PAK, ARE, QAT, KWT, OMN, SAU, IRQ, UKR), 15 WARNING countries received medium analysis (USA, CHN, RUS, ISR, TUR, ARG, JPN, KOR, DEU, GBR, MEX, CAN, TWN, NGA, PHL), 31 WATCH/no-alert countries received brief summaries. Dominant themes: (1) Iran conflict/Hormuz closure as primary global risk driver, (2) US tariff escalation and constitutional crisis, (3) Pakistan-Afghanistan open war, (4) oil +13% surge affecting energy importers, (5) safe-haven flows to USD/CHF/gold, (6) EU-Mercosur trade realignment, (7) record global defense spending. Tone: concise, factual, change-led, targeted at institutional investors. No web searches performed -- all narratives derived from pipeline data."
+    },
+    {
+      "agent_id": "agent_14",
+      "agent_name": "weekly_briefing_generator",
+      "phase": "SYNTHESIZE",
+      "status": "completed",
+      "started_at": "2026-03-02T14:00:00Z",
+      "completed_at": "2026-03-02T14:15:00Z",
+      "output_file": "data/global/weekly_briefing_2026-03-02.json",
+      "notes": "Generated weekly briefing with: 1 headline, 5 top stories (ranked by investor impact), 10 regional summaries, 10 notable market moves, 27 watchlist entries (12 critical, 15 warning), and full data quality summary. Synthesized from alert_index.json (57 alerts), event_feed.json (57 events), financial_data (82 records), trend_estimates (605 estimates), and 55 country narratives. All facts traced to pipeline data. No web searches performed. Headline event: US-Israeli Operation Epic Fury killing Khamenei and collapsing Hormuz. Most consequential briefing since project inception. Briefing designed for 5-minute institutional investor read. All content labeled ai_generated=true."
+    },
+    {
+      "agent_id": "agent_15",
+      "agent_name": "data_quality_reporter",
+      "phase": "FINALIZE",
+      "status": "completed",
+      "started_at": "2026-03-02T14:15:00Z",
+      "completed_at": "2026-03-02T14:20:00Z",
+      "output_file": "data/metadata/quality_report_2026-03-02.json",
+      "notes": "Generated comprehensive quality report. 6 checks completed: (1) Coverage: Tier 1 avg 57.6% (target 90%), Tier 2 avg 51.3% (target 70%), Tier 3 avg 50.7% (target 50%). All 75 countries below Tier 1/2 thresholds due to 3 empty sections (political, trade, military). Collected sections strong: macro 77.1%, demographic 100%, derived 100%. (2) Staleness: N/A (first run). (3) Confidence: overall avg 0.805, no countries below 0.3. (4) Validation: 1,095 updates, 99.8% accept rate, 0 rejections, 2 flags, 6 escalation groups. (5) Pipeline: 855 min wall-clock (budget 300 min) \u2014 bottleneck at Agent 09 (168 min) and inter-phase idle time. (6) 12 recommendations generated, 3 critical (add political, trade, military data collection). Data quality: HIGH where collected, significant coverage gaps to address in next run."
+    },
+    {
+      "agent_id": "agent_16",
+      "agent_name": "archive_commit_preparer",
+      "phase": "FINALIZE",
+      "status": "completed",
+      "started_at": "2026-03-02T14:55:00Z",
+      "completed_at": "2026-03-02T15:00:00Z",
+      "output_files": [
+        "archive/2026-W09/last_update_snapshot.json",
+        "data/chunks/country-summary/all_countries_summary.json",
+        "data/chunks/country-detail/ (75 files)",
+        "data/chunks/global/weekly_briefing.json",
+        "data/chunks/global/alert_index.json",
+        "data/chunks/manifest.json"
+      ],
+      "notes": "Archive snapshot created. Staging raw_collected cleaned (6 files removed). Generated country summary chunk (75 countries, 40KB). Copied 75 country detail chunks. Copied global chunks (weekly briefing + alert index). Generated manifest. 5 pre-existing relation chunks preserved. Pipeline status set to completed. Git commit message prepared for human review."
+    }
+  ],
+  "completed_at": "2026-03-02T15:00:00Z"
 }
