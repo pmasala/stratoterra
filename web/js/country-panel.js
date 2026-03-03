@@ -7,6 +7,8 @@ var CountryPanel = (function() {
   var currentCode = null;
   var _isOpen = false;
   var activeTab = 'economy';
+  var _currentRelationPairs = [];
+  var _networkDrawn = false;
 
   var TAB_DEFS = [
     { id: 'endowments',   label: 'Endowments' },
@@ -510,36 +512,226 @@ var CountryPanel = (function() {
 
   function renderRelations(data) {
     var html = '';
+
+    // Network graph container (D3 fills this when tab is activated)
+    html += '<div class="relations-network-wrap">';
+    html += '<div class="panel-section__title">Relation Network</div>';
+    html += '<div id="relations-network-graph" class="relations-network"></div>';
+    html += '</div>';
+
+    // Partner table
     if (data.top_partners && data.top_partners.length) {
-      html += '<div class="panel-section__title">Top Partners</div>';
+      html += '<div class="relations-table-wrap">';
+      html += '<div class="panel-section__title" style="margin-top:12px">Partners <span style="font-size:10px;color:var(--text-muted);font-weight:400">(click row for detail)</span></div>';
+      html += '<table class="relations-table"><thead><tr><th>Partner</th><th>Type</th><th>Score</th></tr></thead><tbody>';
       data.top_partners.forEach(function(p) {
         var qualColor = getRelationColor(p.quality);
-        html += '<div class="factor-card" style="display:flex;justify-content:space-between;align-items:center">';
-        html += '<div>';
-        html += '<span style="font-weight:600">' + escH(p.code) + '</span>';
-        html += '<span style="font-size:11px;color:var(--text-muted);margin-left:8px">' + escH(p.type || '') + '</span>';
-        html += '</div>';
-        html += '<div style="display:flex;align-items:center;gap:8px">';
-        html += '<div style="width:40px;height:6px;background:rgba(100,100,180,0.2);border-radius:3px;overflow:hidden"><div style="height:100%;width:' + Math.round(p.quality * 100) + '%;background:' + qualColor + ';border-radius:3px"></div></div>';
-        html += '<span class="data-value" style="font-size:13px">' + Utils.formatScore(p.quality) + '</span>';
-        html += '</div></div>';
+        var pairKey = [currentCode, p.code].sort().join('_');
+        html += '<tr class="relations-table__row" data-pair="' + pairKey + '">';
+        html += '<td><span class="relations-table__code">' + escH(p.code) + '</span></td>';
+        html += '<td><span class="relations-table__type">' + escH(p.type || '—') + '</span></td>';
+        html += '<td><div class="relations-quality-bar"><div class="relations-quality-fill" style="width:' + Math.round(p.quality * 100) + '%;background:' + qualColor + '"></div></div>';
+        html += '<span class="relations-table__score">' + Utils.formatScore(p.quality) + '</span></td>';
+        html += '</tr>';
       });
+      html += '</tbody></table>';
+      html += '</div>';
     }
-    if (data.alliance_memberships) {
-      html += '<div class="panel-section__title" style="margin-top:16px">Alliance Memberships</div>';
+
+    // Alliance memberships
+    if (data.alliance_memberships && data.alliance_memberships.length) {
+      html += '<div class="panel-section__title" style="margin-top:12px">Alliance Memberships</div>';
       html += '<div style="display:flex;flex-wrap:wrap;gap:4px">';
       data.alliance_memberships.forEach(function(a) {
         html += '<span class="panel-sources__tag" style="font-size:12px">' + escH(a) + '</span>';
       });
       html += '</div>';
     }
-    if (data.diplomatic_reach_score != null) {
-      html += '<div class="factor-grid" style="margin-top:12px">';
-      html += miniFactorCard('Diplomatic Reach', Utils.formatScore(data.diplomatic_reach_score));
-      html += miniFactorCard('UN Alignment (West)', Utils.formatScore(data.un_voting_alignment_west));
+
+    return html;
+  }
+
+  function drawRelationsNetwork() {
+    var graphEl = document.getElementById('relations-network-graph');
+    if (!graphEl || !currentCode) return;
+    if (_networkDrawn) return;
+    _networkDrawn = true;
+
+    if (typeof d3 === 'undefined') {
+      graphEl.innerHTML = '<div class="panel-no-data"><p>D3.js not loaded.</p></div>';
+      return;
+    }
+
+    var pairs = _currentRelationPairs;
+    if (!pairs || pairs.length === 0) {
+      graphEl.innerHTML = '<div class="panel-no-data" style="padding:20px 0"><p>No relation data available.</p></div>';
+      return;
+    }
+
+    var nodeSet = new Set([currentCode]);
+    var links = [];
+    pairs.forEach(function(p) {
+      var a = p.country_a;
+      var b = p.country_b;
+      nodeSet.add(a);
+      nodeSet.add(b);
+      links.push({
+        source: a,
+        target: b,
+        quality: p.composite_score || 0.5,
+        trade_volume: p.trade_volume_usd || 0,
+        pair: [a, b].sort().join('_')
+      });
+    });
+
+    var summaryMap = {};
+    DataLoader.getSummary().forEach(function(c) { summaryMap[c.code] = c; });
+
+    var nodes = Array.from(nodeSet).map(function(code) {
+      var s = summaryMap[code];
+      return { id: code, isCenter: code === currentCode };
+    });
+
+    var width = graphEl.offsetWidth || 280;
+    var height = 240;
+
+    d3.select(graphEl).selectAll('*').remove();
+
+    var svg = d3.select(graphEl).append('svg').attr('width', width).attr('height', height);
+
+    var maxTrade = Math.max.apply(null, links.map(function(l) { return l.trade_volume || 1; }));
+
+    var simulation = d3.forceSimulation(nodes)
+      .force('link', d3.forceLink(links).id(function(d) { return d.id; }).distance(75))
+      .force('charge', d3.forceManyBody().strength(-180))
+      .force('center', d3.forceCenter(width / 2, height / 2))
+      .force('collision', d3.forceCollide(20));
+
+    var link = svg.append('g').selectAll('line')
+      .data(links).join('line')
+      .attr('stroke', function(d) {
+        if (d.quality >= 0.7) return '#22C55E';
+        if (d.quality >= 0.4) return '#E8C547';
+        return '#EF4444';
+      })
+      .attr('stroke-width', function(d) {
+        return Math.max(1.5, (d.trade_volume / maxTrade) * 5);
+      })
+      .attr('stroke-opacity', 0.7)
+      .style('cursor', 'pointer');
+
+    var node = svg.append('g').selectAll('g')
+      .data(nodes).join('g')
+      .call(d3.drag()
+        .on('start', function(event, d) { if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+        .on('drag', function(event, d) { d.fx = event.x; d.fy = event.y; })
+        .on('end', function(event, d) { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; })
+      );
+
+    node.append('circle')
+      .attr('r', function(d) { return d.isCenter ? 12 : 8; })
+      .attr('fill', function(d) { return d.isCenter ? '#E8C547' : '#1E293B'; })
+      .attr('stroke', function(d) { return d.isCenter ? '#fff' : '#334155'; })
+      .attr('stroke-width', 1.5);
+
+    node.append('text')
+      .text(function(d) { return d.id; })
+      .attr('dy', function(d) { return d.isCenter ? -17 : -13; })
+      .attr('text-anchor', 'middle')
+      .attr('fill', '#F1F5F9')
+      .attr('font-size', function(d) { return d.isCenter ? '11px' : '9px'; })
+      .attr('font-weight', function(d) { return d.isCenter ? '600' : '400'; });
+
+    simulation.on('tick', function() {
+      link.attr('x1', function(d) { return d.source.x; }).attr('y1', function(d) { return d.source.y; })
+          .attr('x2', function(d) { return d.target.x; }).attr('y2', function(d) { return d.target.y; });
+      node.attr('transform', function(d) { return 'translate(' + d.x + ',' + d.y + ')'; });
+    });
+
+    // Click a link line → open bilateral overlay
+    link.on('click', function(event, d) {
+      event.stopPropagation();
+      openBilateralOverlay(d.pair);
+    });
+  }
+
+  function openBilateralOverlay(pairKey) {
+    var existing = document.getElementById('bilateral-overlay');
+    if (existing) existing.remove();
+
+    var overlay = document.createElement('div');
+    overlay.id = 'bilateral-overlay';
+    overlay.className = 'bilateral-overlay';
+    overlay.innerHTML =
+      '<div class="bilateral-overlay__card">' +
+        '<button class="bilateral-overlay__close" id="bilateral-close">✕</button>' +
+        '<div id="bilateral-content"><p style="color:var(--text-muted);padding:8px 0">Loading...</p></div>' +
+      '</div>';
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) overlay.remove();
+    });
+    document.getElementById('bilateral-close').addEventListener('click', function() {
+      overlay.remove();
+    });
+
+    var parts = pairKey.split('_');
+    var contentEl = document.getElementById('bilateral-content');
+    DataLoader.getRelation(parts[0], parts[1]).then(function(data) {
+      contentEl.innerHTML = renderBilateralDetail(data);
+    }).catch(function() {
+      contentEl.innerHTML = '<p style="color:var(--text-muted)">Detail not available for ' + escH(pairKey.replace('_', ' ↔ ')) + '.</p>';
+    });
+  }
+
+  function renderBilateralDetail(data) {
+    var html = '<h3 style="margin-bottom:16px;font-size:16px;font-weight:600">' +
+      escH(data.country_a_name || data.country_a) + ' ↔ ' +
+      escH(data.country_b_name || data.country_b) + '</h3>';
+
+    var dimensions = ['trade', 'diplomatic', 'military', 'financial', 'energy', 'scientific'];
+    dimensions.forEach(function(dim) {
+      var d = data[dim];
+      if (!d) return;
+      html += '<div class="factor-card" style="margin-bottom:8px">';
+      html += '<div class="factor-card__header"><span class="factor-card__label" style="text-transform:capitalize">' + dim + '</span>';
+      if (d.score != null) {
+        var color = d.score >= 0.7 ? 'var(--relation-allied)' : d.score >= 0.4 ? 'var(--relation-neutral)' : 'var(--relation-hostile)';
+        html += '<span class="data-value" style="color:' + color + '">' + d.score.toFixed(2) + '</span>';
+      }
+      html += '</div>';
+      if (dim === 'trade' && d.volume_usd) {
+        html += '<p style="font-size:12px;color:var(--text-secondary)">Volume: ' + Utils.formatCurrency(d.volume_usd) + '</p>';
+      }
+      if (d.summary || d.description) {
+        html += '<p style="font-size:12px;color:var(--text-secondary)">' + escH(d.summary || d.description) + '</p>';
+      }
+      html += '</div>';
+    });
+
+    if (data.composite_score != null) {
+      var compColor = data.composite_score >= 0.7 ? 'var(--relation-allied)' : data.composite_score >= 0.4 ? 'var(--relation-neutral)' : 'var(--relation-hostile)';
+      html += '<div class="factor-card" style="background:var(--bg-secondary)">';
+      html += '<div class="factor-card__header"><span class="factor-card__label">Composite Score</span></div>';
+      html += '<div class="factor-card__value" style="color:' + compColor + '">' + data.composite_score.toFixed(2) + '</div>';
+      if (data.relationship_type) {
+        html += '<p style="font-size:12px;color:var(--text-secondary);margin-top:4px;text-transform:capitalize">' + escH(data.relationship_type) + '</p>';
+      }
       html += '</div>';
     }
     return html;
+  }
+
+  function bindRelationTableRows() {
+    var tab = document.getElementById('tab-relations');
+    if (!tab) return;
+    tab.addEventListener('click', function(e) {
+      var row = e.target.closest('.relations-table__row');
+      if (!row) return;
+      var pair = row.getAttribute('data-pair');
+      if (pair) openBilateralOverlay(pair);
+    });
   }
 
   function renderDerived(data) {
@@ -737,7 +929,16 @@ var CountryPanel = (function() {
       panelEl.querySelectorAll('.layer-content').forEach(function(c) { c.classList.remove('active'); });
       var content = document.getElementById('tab-' + tabId);
       if (content) content.classList.add('active');
+      // Draw D3 network when Relations tab is first activated
+      if (tabId === 'relations' && !_networkDrawn) {
+        requestAnimationFrame(function() { drawRelationsNetwork(); });
+      }
     });
+    bindRelationTableRows();
+    // If relations tab is active on initial render, draw immediately
+    if (activeTab === 'relations') {
+      requestAnimationFrame(function() { drawRelationsNetwork(); });
+    }
   }
 
   function bindExpandables() {
@@ -765,6 +966,8 @@ var CountryPanel = (function() {
       currentCode = code;
       _isOpen = true;
       activeTab = 'economy';
+      _currentRelationPairs = [];
+      _networkDrawn = false;
 
       // Show panel
       panelEl.classList.remove('hidden');
@@ -796,6 +999,7 @@ var CountryPanel = (function() {
       } catch (err) {
         // Relation index unavailable — Relations tab will show alliances only
       }
+      _currentRelationPairs = relationPairs;
       if (detail) {
         detail._relationPairs = relationPairs;
       }

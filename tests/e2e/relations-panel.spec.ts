@@ -1,193 +1,159 @@
 import { test, expect } from '@playwright/test';
-import { waitForAppInit, openCountryViaSearch, navigateToView } from './fixtures/test-helpers';
+import { waitForAppInit, openCountryViaSearch, clickLayerTab } from './fixtures/test-helpers';
 
-// Helper: open the relations panel via the toggle button
-async function openRelationsPanel(page: Parameters<typeof waitForAppInit>[0]) {
-  await page.locator('#relations-toggle').click();
-  await page.waitForSelector('#relations-panel.open', { timeout: 5_000 });
-}
-
-// Helper: close the relations panel via the toggle button
-async function closeRelationsPanel(page: Parameters<typeof waitForAppInit>[0]) {
-  await page.locator('#relations-toggle').click();
-  await page.waitForFunction(
-    () => !document.getElementById('relations-panel')?.classList.contains('open'),
-    { timeout: 3_000 },
-  );
-}
-
-test.describe('Relations Panel (map)', () => {
+test.describe('Country Panel — Relations Tab', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('./');
     await waitForAppInit(page);
+    // Open a country with known bilateral data
+    await openCountryViaSearch(page, 'United States', 'USA');
   });
 
-  // --- Toggle button ---
+  // ── Relations tab structure ────────────────────────────────────────────────
 
-  test('relations-toggle button is visible in the bottom bar on map view', async ({ page }) => {
-    await expect(page.locator('#relations-toggle')).toBeVisible();
-    await expect(page.locator('#relations-toggle')).toHaveText('↔ Relations');
+  test('Relations tab button is present in the layer tabs', async ({ page }) => {
+    await expect(page.locator('.layer-tab[data-tab="relations"]')).toBeAttached();
   });
 
-  test('relations-toggle is hidden on non-map views (bottom bar hides)', async ({ page }) => {
-    await navigateToView(page, 'briefing');
-    // Bottom bar is display:none on non-map views
-    await expect(page.locator('#bottom-bar')).toBeHidden();
+  test('clicking Relations tab makes it active', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    await expect(page.locator('.layer-tab[data-tab="relations"]')).toHaveClass(/active/);
+    await expect(page.locator('#tab-relations')).toHaveClass(/active/);
   });
 
-  // --- Open / close ---
+  // ── Network graph ──────────────────────────────────────────────────────────
 
-  test('clicking toggle opens the relations panel', async ({ page }) => {
-    await openRelationsPanel(page);
-    await expect(page.locator('#relations-panel')).toHaveClass(/open/);
-    await expect(page.locator('#relations-panel')).not.toHaveClass(/hidden/);
+  test('Relations tab shows #relations-network-graph container', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    await expect(page.locator('#relations-network-graph')).toBeAttached();
   });
 
-  test('relations panel contains the Relation Explorer heading', async ({ page }) => {
-    await openRelationsPanel(page);
-    await expect(page.locator('#relations-panel .relation-explorer h2')).toHaveText('Relation Explorer');
+  test('D3 network graph renders SVG for a country with relation data', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    // Wait for D3 to draw (it uses requestAnimationFrame)
+    await page.waitForSelector('#relations-network-graph svg', { timeout: 10_000 });
+    await expect(page.locator('#relations-network-graph svg')).toBeVisible();
   });
 
-  test('clicking toggle again closes the panel', async ({ page }) => {
-    await openRelationsPanel(page);
-    await closeRelationsPanel(page);
-    await expect(page.locator('#relations-panel')).not.toHaveClass(/open/);
-  });
-
-  test('toggle button gets .active class when panel is open', async ({ page }) => {
-    await openRelationsPanel(page);
-    await expect(page.locator('#relations-toggle')).toHaveClass(/active/);
-  });
-
-  test('toggle button loses .active class when panel is closed', async ({ page }) => {
-    await openRelationsPanel(page);
-    await closeRelationsPanel(page);
-    await expect(page.locator('#relations-toggle')).not.toHaveClass(/active/);
-  });
-
-  test('#main-content gets panel-open class when relations panel is open', async ({ page }) => {
-    await openRelationsPanel(page);
-    await expect(page.locator('#main-content')).toHaveClass(/panel-open/);
-  });
-
-  test('#main-content loses panel-open class when relations panel is closed', async ({ page }) => {
-    await openRelationsPanel(page);
-    await closeRelationsPanel(page);
-    await expect(page.locator('#main-content')).not.toHaveClass(/panel-open/);
-  });
-
-  // --- Panel mode: no mode-toggle tabs ---
-
-  test('mode-toggle buttons (Network/Bilateral) are NOT shown in panel mode', async ({ page }) => {
-    await openRelationsPanel(page);
-    await expect(page.locator('#relations-panel .compare-mode-toggle')).toHaveCount(0);
-  });
-
-  test('country selector is shown in panel mode (network mode default)', async ({ page }) => {
-    await openRelationsPanel(page);
-    await expect(page.locator('#relations-panel #relation-country-select')).toBeVisible();
-  });
-
-  // --- D3 network graph ---
-
-  test('selecting USA loads network graph in panel', async ({ page }) => {
-    await openRelationsPanel(page);
-    await page.selectOption('#relations-panel #relation-country-select', 'USA');
-    await page.waitForSelector('#relations-panel #network-graph', { timeout: 10_000 });
-    await expect(page.locator('#relations-panel #network-graph')).toBeVisible();
-  });
-
-  test('network graph renders SVG nodes for USA', async ({ page }) => {
-    await openRelationsPanel(page);
-    await page.selectOption('#relations-panel #relation-country-select', 'USA');
-    await page.waitForSelector('#relations-panel #network-graph svg', { timeout: 10_000 });
-    const circles = page.locator('#relations-panel #network-graph svg circle');
+  test('network graph renders at least 2 circle nodes', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    await page.waitForSelector('#relations-network-graph svg circle', { timeout: 10_000 });
+    const circles = page.locator('#relations-network-graph svg circle');
     const count = await circles.count();
-    expect(count, 'Should render at least 2 nodes (USA + partners)').toBeGreaterThanOrEqual(2);
+    expect(count, 'Should render center node + at least one partner').toBeGreaterThanOrEqual(2);
   });
 
-  // --- Bilateral drill-down in panel mode ---
-
-  test('clicking a network link switches to bilateral mode with back button', async ({ page }) => {
-    await openRelationsPanel(page);
-    await page.selectOption('#relations-panel #relation-country-select', 'USA');
-    await page.waitForSelector('#relations-panel #network-graph svg line', { timeout: 10_000 });
-
-    // Click the first link line
-    await page.locator('#relations-panel #network-graph svg line').first().click();
-
-    // Back button should appear (panel mode bilateral)
-    await page.waitForSelector('#relations-panel #rel-back-btn', { timeout: 5_000 });
-    await expect(page.locator('#relations-panel #rel-back-btn')).toBeVisible();
-    await expect(page.locator('#relations-panel #rel-back-btn')).toHaveText('← Network');
+  test('network graph renders at least 1 line (link)', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    await page.waitForSelector('#relations-network-graph svg line', { timeout: 10_000 });
+    const lines = page.locator('#relations-network-graph svg line');
+    const count = await lines.count();
+    expect(count, 'Should have at least 1 relation link').toBeGreaterThanOrEqual(1);
   });
 
-  test('← Network back button returns to network mode', async ({ page }) => {
-    await openRelationsPanel(page);
-    await page.selectOption('#relations-panel #relation-country-select', 'USA');
-    await page.waitForSelector('#relations-panel #network-graph svg line', { timeout: 10_000 });
-    await page.locator('#relations-panel #network-graph svg line').first().click();
-    await page.waitForSelector('#relations-panel #rel-back-btn', { timeout: 5_000 });
+  // ── Partner table ──────────────────────────────────────────────────────────
 
-    await page.locator('#relations-panel #rel-back-btn').click();
-
-    // Back button should be gone, country selector should reappear
-    await expect(page.locator('#relations-panel #rel-back-btn')).toHaveCount(0);
-    await expect(page.locator('#relations-panel #relation-country-select')).toBeVisible();
+  test('Relations tab shows .relations-table', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    await expect(page.locator('#tab-relations .relations-table')).toBeVisible();
   });
 
-  // --- Mutual exclusion ---
-
-  test('opening relations panel closes country panel', async ({ page }) => {
-    await openCountryViaSearch(page, 'Germany', 'DEU');
-    await expect(page.locator('#country-panel')).toHaveClass(/open/);
-
-    await openRelationsPanel(page);
-    // Country panel should no longer be open
-    await expect(page.locator('#country-panel')).not.toHaveClass(/open/);
-    await expect(page.locator('#relations-panel')).toHaveClass(/open/);
+  test('relations table has at least one data row', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    const rows = page.locator('#tab-relations .relations-table__row');
+    const count = await rows.count();
+    expect(count, 'Should have at least one partner row').toBeGreaterThanOrEqual(1);
   });
 
-  test('opening country panel closes relations panel', async ({ page }) => {
-    await openRelationsPanel(page);
-    await expect(page.locator('#relations-panel')).toHaveClass(/open/);
-
-    await openCountryViaSearch(page, 'France', 'FRA');
-    // Relations panel should be closed
-    await expect(page.locator('#relations-panel')).not.toHaveClass(/open/);
-    await expect(page.locator('#country-panel')).toHaveClass(/open/);
+  test('table rows have data-pair attribute', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    const firstRow = page.locator('#tab-relations .relations-table__row').first();
+    const pair = await firstRow.getAttribute('data-pair');
+    expect(pair, 'Row should have data-pair').not.toBeNull();
+    expect(pair).toMatch(/^[A-Z]{3}_[A-Z]{3}$/);
   });
 
-  // --- Navigation closes panel ---
-
-  test('navigating to Briefing closes the relations panel', async ({ page }) => {
-    await openRelationsPanel(page);
-    await navigateToView(page, 'briefing');
-    await expect(page.locator('#relations-panel')).not.toHaveClass(/open/);
+  test('table rows show country code in JetBrains Mono', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    const firstCode = page.locator('#tab-relations .relations-table__code').first();
+    await expect(firstCode).toBeVisible();
+    const text = await firstCode.textContent();
+    expect(text?.trim().length, 'Country code should be non-empty').toBeGreaterThan(0);
   });
 
-  test('navigating to Rankings closes the relations panel', async ({ page }) => {
-    await openRelationsPanel(page);
-    await navigateToView(page, 'rankings');
-    await expect(page.locator('#relations-panel')).not.toHaveClass(/open/);
+  // ── Bilateral overlay — network line click ─────────────────────────────────
+
+  test('clicking a network link opens the bilateral overlay', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    await page.waitForSelector('#relations-network-graph svg line', { timeout: 10_000 });
+
+    // Use dispatchEvent to bypass Playwright animation stability issues
+    await page.evaluate(() => {
+      const line = document.querySelector<SVGLineElement>('#relations-network-graph svg line');
+      line?.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    });
+
+    await page.waitForSelector('#bilateral-overlay', { timeout: 5_000 });
+    await expect(page.locator('#bilateral-overlay')).toBeVisible();
   });
 
-  // --- Keyboard ---
-
-  test('Escape key closes the relations panel', async ({ page }) => {
-    await openRelationsPanel(page);
-    await page.keyboard.press('Escape');
-    await page.waitForFunction(
-      () => !document.getElementById('relations-panel')?.classList.contains('open'),
-      { timeout: 3_000 },
-    );
-    await expect(page.locator('#relations-panel')).not.toHaveClass(/open/);
+  test('bilateral overlay has a close button', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    await page.waitForSelector('#relations-network-graph svg line', { timeout: 10_000 });
+    await page.evaluate(() => {
+      const line = document.querySelector<SVGLineElement>('#relations-network-graph svg line');
+      line?.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    });
+    await page.waitForSelector('#bilateral-overlay', { timeout: 5_000 });
+    await expect(page.locator('#bilateral-overlay .bilateral-overlay__close')).toBeVisible();
   });
 
-  // --- Both panels coexist structurally ---
+  test('clicking close button dismisses the bilateral overlay', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    await page.waitForSelector('#relations-network-graph svg line', { timeout: 10_000 });
+    await page.evaluate(() => {
+      const line = document.querySelector<SVGLineElement>('#relations-network-graph svg line');
+      line?.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    });
+    await page.waitForSelector('#bilateral-overlay', { timeout: 5_000 });
+    await page.locator('#bilateral-close').click();
+    await expect(page.locator('#bilateral-overlay')).toHaveCount(0);
+  });
 
-  test('#relations-panel and #country-panel exist in DOM simultaneously', async ({ page }) => {
-    await expect(page.locator('#relations-panel')).toBeAttached();
-    await expect(page.locator('#country-panel')).toBeAttached();
+  test('clicking overlay backdrop dismisses the bilateral overlay', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    await page.waitForSelector('#relations-network-graph svg line', { timeout: 10_000 });
+    await page.evaluate(() => {
+      const line = document.querySelector<SVGLineElement>('#relations-network-graph svg line');
+      line?.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    });
+    await page.waitForSelector('#bilateral-overlay', { timeout: 5_000 });
+    // Click the overlay backdrop (the element itself, not the card)
+    await page.locator('#bilateral-overlay').click({ position: { x: 10, y: 10 } });
+    await expect(page.locator('#bilateral-overlay')).toHaveCount(0);
+  });
+
+  // ── Bilateral overlay — table row click ───────────────────────────────────
+
+  test('clicking a table row opens the bilateral overlay', async ({ page }) => {
+    await clickLayerTab(page, 'relations');
+    const firstRow = page.locator('#tab-relations .relations-table__row').first();
+    await firstRow.click();
+    await page.waitForSelector('#bilateral-overlay', { timeout: 5_000 });
+    await expect(page.locator('#bilateral-overlay')).toBeVisible();
+  });
+
+  // ── DOM: old Relations nav/panel removed ──────────────────────────────────
+
+  test('#relations-panel does not exist in DOM', async ({ page }) => {
+    await expect(page.locator('#relations-panel')).toHaveCount(0);
+  });
+
+  test('Relations nav link does not exist in header nav', async ({ page }) => {
+    await expect(page.locator('.nav-link[data-view="relations"]')).toHaveCount(0);
+  });
+
+  test('#relations-toggle button does not exist', async ({ page }) => {
+    await expect(page.locator('#relations-toggle')).toHaveCount(0);
   });
 });

@@ -27,7 +27,7 @@ test.describe('Navigation', () => {
     await expect(page).toHaveURL(/#map/);
   });
 
-  test('keyboard shortcuts 1-6 navigate views', async ({ page }) => {
+  test('keyboard shortcuts 1-5 navigate views', async ({ page }) => {
     await page.keyboard.press('2');
     await expect(page.locator('#briefing-view')).toHaveClass(/active/);
 
@@ -38,9 +38,6 @@ test.describe('Navigation', () => {
     await expect(page.locator('#rankings-view')).toHaveClass(/active/);
 
     await page.keyboard.press('5');
-    await expect(page.locator('#relations-view')).toHaveClass(/active/);
-
-    await page.keyboard.press('6');
     await expect(page.locator('#compare-view')).toHaveClass(/active/);
 
     await page.keyboard.press('1');

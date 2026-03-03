@@ -76,7 +76,6 @@ export async function navigateToView(page: Page, view: string) {
     briefing: '#briefing-view.active',
     alerts: '#alerts-view.active',
     rankings: '#rankings-view.active',
-    relations: '#relations-view.active',
     compare: '#compare-view.active',
   };
   await page.evaluate((v) => { window.location.hash = '#' + v; }, view);

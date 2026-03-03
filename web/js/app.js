@@ -165,44 +165,11 @@
     };
   })();
 
-  /* --- Relations Panel --- */
-  var RelationsPanel = (function() {
-    var panelEl = null;
-    var _isOpen = false;
-
-    return {
-      open: function() {
-        if (!panelEl) panelEl = document.getElementById('relations-panel');
-        if (CountryPanel.isOpen()) CountryPanel.close();
-        _isOpen = true;
-        panelEl.classList.remove('hidden');
-        panelEl.offsetHeight; // force reflow
-        panelEl.classList.add('open');
-        document.getElementById('main-content').classList.add('panel-open');
-        MapView.invalidateSize();
-        RelationExplorer.show(panelEl, {}, { panelMode: true });
-        document.getElementById('relations-toggle').classList.add('active');
-      },
-      close: function() {
-        if (!panelEl || !_isOpen) return;
-        _isOpen = false;
-        panelEl.classList.remove('open');
-        document.getElementById('main-content').classList.remove('panel-open');
-        MapView.invalidateSize();
-        var toggleBtn = document.getElementById('relations-toggle');
-        if (toggleBtn) toggleBtn.classList.remove('active');
-        setTimeout(function() { if (!_isOpen) panelEl.classList.add('hidden'); }, 400);
-      },
-      isOpen: function() { return _isOpen; }
-    };
-  })();
-
   var views = {
     map: { containerId: 'map-container', init: false },
     briefing: { containerId: 'briefing-view', init: false },
     alerts: { containerId: 'alerts-view', init: false },
     rankings: { containerId: 'rankings-view', init: false },
-    relations: { containerId: 'relations-view', init: false },
     compare: { containerId: 'compare-view', init: false }
   };
 
@@ -241,7 +208,6 @@
       bottomBar.style.display = 'none';
       // Close panels when leaving map
       if (CountryPanel.isOpen()) CountryPanel.close();
-      RelationsPanel.close();
     }
 
     // Show target view
@@ -280,9 +246,6 @@
       case 'rankings':
         RankingsView.show(el);
         break;
-      case 'relations':
-        RelationExplorer.show(el, params);
-        break;
       case 'compare':
         ComparisonTool.show(el);
         break;
@@ -302,7 +265,6 @@
     // Initialize map
     await MapView.init('map-container', {
       onCountryClick: function(code) {
-        if (RelationsPanel.isOpen()) RelationsPanel.close();
         CountryPanel.open(code);
       }
     });
@@ -317,19 +279,10 @@
           window.location.hash = '#map';
         }
         setTimeout(function() {
-          if (RelationsPanel.isOpen()) RelationsPanel.close();
           CountryPanel.open(code);
         }, currentView !== 'map' ? 200 : 0);
       }
     );
-
-    // Wire relations toggle button
-    var relationsToggle = document.getElementById('relations-toggle');
-    if (relationsToggle) {
-      relationsToggle.addEventListener('click', function() {
-        RelationsPanel.isOpen() ? RelationsPanel.close() : RelationsPanel.open();
-      });
-    }
 
     // Wire metric selector
     var metricSelect = document.getElementById('metric-select');
@@ -352,7 +305,6 @@
       // Escape closes panels
       if (e.key === 'Escape') {
         if (CountryPanel.isOpen()) { CountryPanel.close(); return; }
-        if (RelationsPanel.isOpen()) { RelationsPanel.close(); return; }
       }
 
       // Don't handle shortcuts when typing in inputs
@@ -363,8 +315,7 @@
       if (e.key === '2') window.location.hash = '#briefing';
       if (e.key === '3') window.location.hash = '#alerts';
       if (e.key === '4') window.location.hash = '#rankings';
-      if (e.key === '5') window.location.hash = '#relations';
-      if (e.key === '6') window.location.hash = '#compare';
+      if (e.key === '5') window.location.hash = '#compare';
 
       // / to focus search
       if (e.key === '/') {

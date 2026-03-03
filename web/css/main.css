@@ -254,52 +254,6 @@ a:hover { text-decoration: underline; }
   display: none;
 }
 
-/* --- Relations Panel (panel-mode) --- */
-#relations-panel {
-  display: flex;
-  flex-direction: column;
-}
-
-#relations-panel.hidden {
-  display: none;
-}
-
-#relations-panel .relation-explorer {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  overflow: hidden;
-  padding: 0;
-}
-
-#relations-panel #network-graph {
-  flex: 1;
-  min-height: 0;
-}
-
-/* --- Bottom Bar Button --- */
-.bottom-bar__btn {
-  padding: 0 12px;
-  height: 28px;
-  background: var(--bg-card);
-  border: var(--border-card);
-  border-radius: var(--radius-sm);
-  color: var(--text-accent);
-  font-family: 'Outfit', sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  transition: background var(--transition-fast);
-}
-
-.bottom-bar__btn:hover { background: var(--bg-hover); }
-
-.bottom-bar__btn.active {
-  background: rgba(232, 197, 71, 0.1);
-  border-color: var(--text-accent);
-}
-
 /* --- Bottom Bar / Footer --- */
 #bottom-bar {
   display: flex;
@@ -1351,35 +1305,126 @@ a:hover { text-decoration: underline; }
 
 .radar-legend__item { font-size: 12px; color: var(--text-secondary); }
 
-/* --- Relation Explorer --- */
-.relation-explorer { max-width: 1000px; margin: 0 auto; }
-
-.relation-explorer h2 {
-  margin-bottom: 16px;
-  font-weight: 300;
-  letter-spacing: 1px;
+/* --- Relations Tab (country panel split layout) --- */
+.relations-network {
+  width: 100%;
+  height: 240px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 4px;
 }
 
-.relation-selector {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.relation-selector label {
-  color: var(--text-muted);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-#network-graph svg {
+.relations-network svg {
   background: var(--bg-primary);
   border-radius: var(--radius-md);
 }
 
-#network-graph text { font-family: 'Outfit', sans-serif; }
+.relations-network text { font-family: 'Outfit', sans-serif; }
+
+.relations-table-wrap {
+  overflow-x: hidden;
+}
+
+.relations-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.relations-table th {
+  color: var(--text-muted);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  padding: 6px 4px;
+  border-bottom: var(--border-subtle);
+  text-align: left;
+}
+
+.relations-table__row {
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: background var(--transition-fast);
+}
+
+.relations-table__row:hover { background: var(--bg-hover); }
+
+.relations-table td { padding: 6px 4px; vertical-align: middle; }
+
+.relations-table__code {
+  font-weight: 600;
+  font-size: 12px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.relations-table__type {
+  color: var(--text-muted);
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+.relations-quality-bar {
+  width: 36px;
+  height: 4px;
+  background: rgba(100, 100, 180, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.relations-quality-fill {
+  height: 100%;
+  border-radius: 2px;
+}
+
+.relations-table__score {
+  font-size: 11px;
+  color: var(--text-secondary);
+  vertical-align: middle;
+}
+
+/* --- Bilateral Overlay --- */
+.bilateral-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bilateral-overlay__card {
+  position: relative;
+  width: 480px;
+  max-width: 90vw;
+  max-height: 80vh;
+  background: var(--bg-secondary);
+  border: var(--border-card);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.bilateral-overlay__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast);
+}
+
+.bilateral-overlay__close:hover { color: var(--text-primary); }
 
 /* --- Responsive fallback --- */
 .view-container { padding: 24px; }

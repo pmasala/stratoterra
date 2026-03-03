@@ -84,9 +84,12 @@ test.describe('Data Integrity', () => {
     await page.goto('./');
     await waitForAppInit(page);
 
-    await page.evaluate(() => { window.location.hash = '#relations'; });
-    await page.waitForSelector('#relations-view.active', { timeout: 5_000 });
-    await page.waitForSelector('.relation-explorer', { timeout: 10_000 });
+    // Relation index is fetched when a country panel opens
+    const searchInput = page.locator('#search');
+    await searchInput.fill('Germany');
+    await page.waitForSelector('.search-dropdown__item[data-code="DEU"]', { timeout: 5_000 });
+    await page.locator('.search-dropdown__item[data-code="DEU"]').click();
+    await page.waitForSelector('#country-panel.open .panel-header__title', { timeout: 10_000 });
 
     expect(failed, `Failed requests: ${failed.join(', ')}`).toEqual([]);
   });
