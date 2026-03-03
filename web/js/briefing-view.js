@@ -6,6 +6,10 @@ var BriefingView = (function() {
   var containerEl = null;
   var loaded = false;
 
+  function slugify(str) {
+    return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  }
+
   function render(data) {
     var html = '<div class="briefing">';
 
@@ -64,13 +68,13 @@ var BriefingView = (function() {
       regions.forEach(function(r, i) {
         var label = REGIONS[r] ? REGIONS[r].label : r;
         var cls = i === 0 ? 'region-tab active' : 'region-tab';
-        html += '<button class="' + cls + '" data-region="' + r + '">' + esc(label) + '</button>';
+        html += '<button class="' + cls + '" data-region="' + slugify(r) + '">' + esc(label) + '</button>';
       });
       html += '</div>';
       regions.forEach(function(r, i) {
         var cls = i === 0 ? 'region-content active' : 'region-content';
         var summary = data.regional_summaries[r];
-        html += '<div class="' + cls + '" id="region-' + r + '">';
+        html += '<div class="' + cls + '" id="region-' + slugify(r) + '">';
         html += '<p>' + esc(typeof summary === 'string' ? summary : summary.summary || JSON.stringify(summary)) + '</p>';
         html += '</div>';
       });

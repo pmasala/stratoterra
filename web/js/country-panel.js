@@ -116,10 +116,156 @@ var CountryPanel = (function() {
     bindExpandables();
   }
 
+  // Restructure flat pipeline data into the nested format expected by render functions
+  function normalizeLayer(tabId, raw, detail) {
+    if (!raw) return null;
+
+    switch(tabId) {
+      case 'endowments': return {
+        demographics: {
+          population: raw.population || raw.population_total,
+          population_growth_pct: raw.population_growth_pct,
+          median_age: raw.median_age,
+          life_expectancy: raw.life_expectancy,
+          human_development_index: raw.hdi
+        }
+      };
+
+      case 'institutions': return {
+        political_system: {
+          regime_type: raw.regime_type,
+          head_of_state: raw.head_of_state_name,
+          next_election: raw.next_national_election_date
+        },
+        governance: {
+          democracy_index: raw.democracy_index,
+          freedom_score: raw.freedom_house_score,
+          press_freedom_rank: raw.press_freedom_index_rank,
+          corruption_perceptions_index: raw.corruption_perception_index,
+          rule_of_law_score: raw.wgi_rule_of_law,
+          government_effectiveness: raw.wgi_government_effectiveness,
+          regulatory_quality: raw.wgi_regulatory_quality,
+          political_stability_index: raw.wgi_political_stability
+        }
+      };
+
+      case 'economy': {
+        // Parse composite credit rating string
+        var creditSP = null, creditMoodys = null;
+        var cr = raw.sovereign_credit_rating;
+        if (typeof cr === 'string') {
+          var spMatch = cr.match(/S&P:\s*([^,]+)/);
+          var mMatch = cr.match(/Moody's:\s*([^,]+)/);
+          if (spMatch) creditSP = spMatch[1].trim();
+          if (mMatch) creditMoodys = mMatch[1].trim();
+        }
+
+        var exportsUsd = raw.total_exports_usd;
+        var importsUsd = raw.total_imports_usd;
+
+        // Extract partner country codes from top_export_partners array
+        var topPartners = null;
+        if (raw.top_export_partners && Array.isArray(raw.top_export_partners)) {
+          topPartners = raw.top_export_partners.map(function(p) { return p.country; });
+        }
+
+        return {
+          macro: {
+            gdp_nominal_usd: raw.gdp_nominal_usd,
+            gdp_real_growth_pct: raw.gdp_real_growth_pct,
+            gdp_per_capita_usd: raw.gdp_per_capita_usd,
+            inflation_rate_pct: raw.inflation_cpi_pct,
+            unemployment_rate_pct: raw.unemployment_rate_pct,
+            debt_to_gdp_pct: raw.govt_debt_pct_gdp,
+            current_account_gdp_pct: raw.current_account_pct_gdp,
+            foreign_reserves_usd: raw.fx_reserves_usd
+          },
+          financial: {
+            policy_rate_pct: raw.central_bank_policy_rate_pct,
+            ten_year_yield_pct: raw.sovereign_bond_yield_10yr_pct,
+            credit_rating_sp: creditSP,
+            credit_rating_moodys: creditMoodys
+          },
+          trade: {
+            exports_usd: exportsUsd,
+            imports_usd: importsUsd,
+            trade_balance_usd: (exportsUsd != null && importsUsd != null) ? exportsUsd - importsUsd : null,
+            trade_openness_pct: raw.trade_openness_pct,
+            top_trade_partners: topPartners
+          }
+        };
+      }
+
+      case 'military': {
+        // Pull alliance_memberships from raw (may be an array directly)
+        var alliances = raw.alliance_memberships;
+        if (Array.isArray(alliances)) { /* already an array */ }
+        else { alliances = null; }
+
+        // Capabilities from nested sub-objects
+        var tanks = raw.army && raw.army.main_battle_tanks;
+        if (tanks && typeof tanks === 'object') tanks = tanks.value || tanks;
+        var aircraft = raw.air_force && raw.air_force.total_aircraft;
+        if (aircraft && typeof aircraft === 'object') aircraft = aircraft.value || aircraft;
+        var subs = raw.navy && raw.navy.submarines_total;
+        if (subs && typeof subs === 'object') subs = subs.value || subs;
+        var nukes = raw.nuclear && raw.nuclear.warheads_estimated;
+        if (nukes && typeof nukes === 'object') nukes = nukes.value || nukes;
+
+        return {
+          personnel: {
+            active_military: raw.active_military_personnel,
+            reserve_military: raw.reserve_military_personnel
+          },
+          spending: {
+            defense_budget_usd: raw.defense_spending_usd || raw.military_expenditure_usd,
+            defense_pct_gdp: raw.military_expenditure_pct_gdp,
+            spending_trend: raw.military_expenditure_trend
+          },
+          capabilities: {
+            tanks: tanks,
+            aircraft: aircraft,
+            naval_vessels: subs,
+            nuclear_warheads: nukes
+          },
+          alliance_memberships: alliances
+        };
+      }
+
+      case 'relations': {
+        // Pull alliance_memberships from military layer
+        var milLayer = detail && detail.layers ? detail.layers.military : null;
+        var alliancesRel = milLayer ? milLayer.alliance_memberships : null;
+        if (Array.isArray(alliancesRel)) { /* ok */ }
+        else { alliancesRel = null; }
+
+        return {
+          alliance_memberships: alliancesRel,
+          fta_count: raw.fta_count
+        };
+      }
+
+      case 'derived': return {
+        composite_power_index: raw.composite_national_power_index,
+        energy_independence: raw.energy_independence_index,
+        supply_chain_exposure: raw.supply_chain_chokepoint_exposure,
+        vulnerability_index: raw.vulnerability_index,
+        investment_risk_score: raw.investment_risk_score,
+        resource_self_sufficiency_index: raw.resource_self_sufficiency_index,
+        market_accessibility_score: raw.market_accessibility_score,
+        political_risk_premium_bps: raw.political_risk_premium_bps
+      };
+
+      default: return raw;
+    }
+  }
+
   function renderLayerTab(tabId, detail) {
     var layers = detail.layers || {};
-    var data = layers[tabId];
-    if (!data) return '<div class="panel-no-data"><p>Data not available for this layer.</p></div>';
+    var raw = layers[tabId];
+    if (!raw) return '<div class="panel-no-data"><p>Data not available for this layer.</p></div>';
+
+    var data = normalizeLayer(tabId, raw, detail);
 
     switch(tabId) {
       case 'endowments': return renderEndowments(data);
