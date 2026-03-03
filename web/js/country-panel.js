@@ -252,9 +252,21 @@ var CountryPanel = (function() {
         if (Array.isArray(alliancesRel)) { /* ok */ }
         else { alliancesRel = null; }
 
+        // Build top_partners from relation index pairs attached in open()
+        var relPairs = (detail && detail._relationPairs) || [];
+        var topPartners = relPairs.map(function(p) {
+          var partnerCode = p.country_a === currentCode ? p.country_b : p.country_a;
+          return {
+            code: partnerCode,
+            quality: p.composite_score != null ? p.composite_score : 0.5,
+            type: p.relationship_type || 'neutral'
+          };
+        });
+
         return {
           alliance_memberships: alliancesRel,
-          fta_count: raw.fta_count
+          fta_count: raw.fta_count,
+          top_partners: topPartners
         };
       }
 
@@ -767,13 +779,25 @@ var CountryPanel = (function() {
         '<div class="panel-loading"><div class="skeleton" style="width:80%;height:16px;margin:8px auto"></div><div class="skeleton" style="width:60%;height:16px;margin:8px auto"></div><div class="skeleton" style="width:70%;height:16px;margin:8px auto"></div></div>';
       document.getElementById('panel-close-x').addEventListener('click', function() { CountryPanel.close(); });
 
-      // Load detail data
+      // Load detail data and relation index in parallel
       var summary = DataLoader.getSummaryByCode(code);
       var detail = null;
+      var relationPairs = [];
       try {
         detail = await DataLoader.getCountryDetail(code);
       } catch (err) {
         // Detail not available — show summary fallback
+      }
+      try {
+        var relIdx = await DataLoader.getRelationIndex();
+        relationPairs = (relIdx.pairs || [])
+          .filter(function(p) { return p.country_a === code || p.country_b === code; })
+          .sort(function(a, b) { return (b.composite_score || 0) - (a.composite_score || 0); });
+      } catch (err) {
+        // Relation index unavailable — Relations tab will show alliances only
+      }
+      if (detail) {
+        detail._relationPairs = relationPairs;
       }
 
       // Only render if still showing same country

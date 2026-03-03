@@ -118,6 +118,57 @@ test.describe('Data Integrity', () => {
     }
   });
 
+  test('all 435 Tier 1 bilateral relation files are accessible (full coverage)', async ({ page }) => {
+    // The 30 Tier 1 countries, sorted alphabetically — matches the project spec
+    const T1_COUNTRIES = [
+      'ARE', 'AUS', 'BRA', 'CAN', 'CHE', 'CHN', 'DEU', 'ESP', 'FRA', 'GBR',
+      'IDN', 'IND', 'ISR', 'ITA', 'JPN', 'KOR', 'MEX', 'MYS', 'NLD', 'NOR',
+      'POL', 'RUS', 'SAU', 'SGP', 'SWE', 'THA', 'TUR', 'TWN', 'USA', 'ZAF',
+    ];
+
+    // Generate all C(30,2) = 435 alphabetically-ordered pairs
+    const pairs: string[] = [];
+    for (let i = 0; i < T1_COUNTRIES.length; i++) {
+      for (let j = i + 1; j < T1_COUNTRIES.length; j++) {
+        pairs.push(`${T1_COUNTRIES[i]}_${T1_COUNTRIES[j]}`);
+      }
+    }
+    expect(pairs.length, 'Should have exactly 435 Tier 1 pairs').toBe(435);
+
+    const BASE = 'http://localhost:8089/data/chunks/relations';
+    const missing: string[] = [];
+    const invalidJson: string[] = [];
+
+    // Fetch in batches of 30 to avoid overwhelming the single-threaded Python server
+    const BATCH = 30;
+    for (let i = 0; i < pairs.length; i += BATCH) {
+      const batch = pairs.slice(i, i + BATCH);
+      const results = await Promise.all(
+        batch.map(async (pair) => {
+          const resp = await page.request.get(`${BASE}/${pair}.json`);
+          const body = resp.status() === 200 ? await resp.text() : null;
+          return { pair, status: resp.status(), body };
+        }),
+      );
+      for (const { pair, status, body } of results) {
+        if (status !== 200) {
+          missing.push(`${pair} (HTTP ${status})`);
+        } else if (body) {
+          try { JSON.parse(body); } catch { invalidJson.push(pair); }
+        }
+      }
+    }
+
+    expect(
+      missing,
+      `${missing.length} relation file(s) missing or not served:\n${missing.join('\n')}`,
+    ).toEqual([]);
+    expect(
+      invalidJson,
+      `${invalidJson.length} file(s) contain invalid JSON: ${invalidJson.join(', ')}`,
+    ).toEqual([]);
+  });
+
   test('country detail files exist for Tier 1 countries', async ({ page }) => {
     await page.goto('./');
     await waitForAppInit(page);
