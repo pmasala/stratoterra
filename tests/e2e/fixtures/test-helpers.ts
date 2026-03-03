@@ -96,3 +96,37 @@ export function collectPageErrors(page: Page): string[] {
   page.on('pageerror', (err) => errors.push(err.message));
   return errors;
 }
+
+/**
+ * Click a layer tab in the country panel and wait for it to become active.
+ */
+export async function clickLayerTab(page: Page, tabId: string) {
+  await page.locator(`.layer-tab[data-tab="${tabId}"]`).click();
+  await expect(page.locator(`.layer-tab[data-tab="${tabId}"]`)).toHaveClass(/active/);
+  await expect(page.locator(`#tab-${tabId}`)).toHaveClass(/active/);
+}
+
+/**
+ * Assert that a factor card with the given label shows a real value (not "—", "null", or empty).
+ * Searches within `container` selector if provided, otherwise within `#country-panel`.
+ */
+export async function expectFactorCardPopulated(page: Page, label: string, container?: string) {
+  const scope = container ? page.locator(container) : page.locator('#country-panel');
+  // Find the factor-card that contains this label
+  const cards = scope.locator('.factor-card');
+  const count = await cards.count();
+  let found = false;
+  for (let i = 0; i < count; i++) {
+    const card = cards.nth(i);
+    const cardLabel = await card.locator('.factor-card__label').textContent();
+    if (cardLabel?.trim() === label) {
+      const value = await card.locator('.factor-card__value').textContent();
+      expect(value?.trim(), `"${label}" should have a real value, got "${value}"`).not.toBe('—');
+      expect(value?.trim(), `"${label}" should not be null`).not.toBe('null');
+      expect(value?.trim(), `"${label}" should not be empty`).toBeTruthy();
+      found = true;
+      break;
+    }
+  }
+  expect(found, `Factor card with label "${label}" not found`).toBe(true);
+}

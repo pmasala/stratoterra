@@ -116,6 +116,12 @@ var CountryPanel = (function() {
     bindExpandables();
   }
 
+  // Unwrap {value, confidence, ...} objects to plain values
+  function unwrapValue(obj) {
+    if (obj && typeof obj === 'object' && 'value' in obj) return obj.value;
+    return obj;
+  }
+
   // Restructure flat pipeline data into the nested format expected by render functions
   function normalizeLayer(tabId, raw, detail) {
     if (!raw) return null;
@@ -135,17 +141,23 @@ var CountryPanel = (function() {
         political_system: {
           regime_type: raw.regime_type,
           head_of_state: raw.head_of_state_name,
+          head_of_state_title: raw.head_of_state_title,
+          head_of_government: raw.head_of_government_name,
           next_election: raw.next_national_election_date
         },
         governance: {
           democracy_index: raw.democracy_index,
           freedom_score: raw.freedom_house_score,
+          freedom_status: raw.freedom_house_status,
           press_freedom_rank: raw.press_freedom_index_rank,
           corruption_perceptions_index: raw.corruption_perception_index,
           rule_of_law_score: raw.wgi_rule_of_law,
           government_effectiveness: raw.wgi_government_effectiveness,
           regulatory_quality: raw.wgi_regulatory_quality,
-          political_stability_index: raw.wgi_political_stability
+          political_stability_index: raw.wgi_political_stability,
+          voice_accountability: raw.wgi_voice_accountability,
+          control_of_corruption: raw.wgi_control_of_corruption,
+          fragile_states_index: raw.fragile_states_index
         }
       };
 
@@ -184,14 +196,18 @@ var CountryPanel = (function() {
             policy_rate_pct: raw.central_bank_policy_rate_pct,
             ten_year_yield_pct: raw.sovereign_bond_yield_10yr_pct,
             credit_rating_sp: creditSP,
-            credit_rating_moodys: creditMoodys
+            credit_rating_moodys: creditMoodys,
+            fx_rate_per_usd: raw.exchange_rate_vs_usd
           },
           trade: {
             exports_usd: exportsUsd,
             imports_usd: importsUsd,
             trade_balance_usd: (exportsUsd != null && importsUsd != null) ? exportsUsd - importsUsd : null,
             trade_openness_pct: raw.trade_openness_pct,
-            top_trade_partners: topPartners
+            top_trade_partners: topPartners,
+            avg_applied_tariff_pct: raw.avg_applied_tariff_pct,
+            fta_count: detail && detail.layers && detail.layers.relations ? detail.layers.relations.fta_count : null,
+            sanctions_status: detail && detail.layers && detail.layers.institutions ? detail.layers.institutions.under_international_sanctions : null
           }
         };
       }
@@ -202,15 +218,12 @@ var CountryPanel = (function() {
         if (Array.isArray(alliances)) { /* already an array */ }
         else { alliances = null; }
 
-        // Capabilities from nested sub-objects
-        var tanks = raw.army && raw.army.main_battle_tanks;
-        if (tanks && typeof tanks === 'object') tanks = tanks.value || tanks;
-        var aircraft = raw.air_force && raw.air_force.total_aircraft;
-        if (aircraft && typeof aircraft === 'object') aircraft = aircraft.value || aircraft;
-        var subs = raw.navy && raw.navy.submarines_total;
-        if (subs && typeof subs === 'object') subs = subs.value || subs;
-        var nukes = raw.nuclear && raw.nuclear.warheads_estimated;
-        if (nukes && typeof nukes === 'object') nukes = nukes.value || nukes;
+        // Capabilities from top-level detail.military nested sub-objects (not in layers.military)
+        var milDetail = detail ? detail.military : null;
+        var tanks = unwrapValue(milDetail && milDetail.army && milDetail.army.main_battle_tanks);
+        var aircraft = unwrapValue(milDetail && milDetail.air_force && milDetail.air_force.total_aircraft);
+        var subs = unwrapValue(milDetail && milDetail.navy && milDetail.navy.submarines_total);
+        var nukes = unwrapValue(milDetail && milDetail.nuclear && milDetail.nuclear.warheads_estimated);
 
         return {
           personnel: {
@@ -335,6 +348,7 @@ var CountryPanel = (function() {
       html += factorCard('Regime Type', ps.regime_type, null, null, ps.source, ps.confidence);
       html += '<div class="factor-grid">';
       html += miniFactorCard('Head of State', ps.head_of_state || '—');
+      html += miniFactorCard('Head of Gov\'t', ps.head_of_government || '—');
       html += miniFactorCard('Legislature', ps.legislative_type || '—');
       html += miniFactorCard('Next Election', ps.next_election || '—');
       html += miniFactorCard('Years Since Change', ps.years_since_transition || '—');
@@ -346,12 +360,16 @@ var CountryPanel = (function() {
       html += '<div class="factor-grid">';
       html += miniFactorCard('Democracy Index', Utils.formatScore(g.democracy_index));
       html += miniFactorCard('Freedom Score', g.freedom_score);
+      html += miniFactorCard('Freedom Status', g.freedom_status || '—');
       html += miniFactorCard('Press Freedom', '#' + g.press_freedom_rank);
       html += miniFactorCard('Corruption (CPI)', g.corruption_perceptions_index);
+      html += miniFactorCard('Voice & Account.', Utils.formatScore(g.voice_accountability));
+      html += miniFactorCard('Corruption Ctrl', Utils.formatScore(g.control_of_corruption));
       html += miniFactorCard('Rule of Law', Utils.formatScore(g.rule_of_law_score));
       html += miniFactorCard('Govt Effectiveness', Utils.formatScore(g.government_effectiveness));
       html += miniFactorCard('Regulatory Quality', Utils.formatScore(g.regulatory_quality));
       html += miniFactorCard('Political Stability', Utils.formatScore(g.political_stability_index));
+      html += miniFactorCard('Fragile States', g.fragile_states_index != null ? g.fragile_states_index.toFixed(1) : '—');
       html += '</div>';
     }
     if (data.cultural) {
@@ -413,8 +431,9 @@ var CountryPanel = (function() {
       html += miniFactorCard('Imports', Utils.formatCurrency(t.imports_usd));
       html += miniFactorCard('Balance', Utils.formatCurrency(t.trade_balance_usd));
       html += miniFactorCard('Openness', Utils.formatPercent(t.trade_openness_pct, 0));
-      html += miniFactorCard('FTAs', t.fta_count || '—');
-      html += miniFactorCard('Sanctions', t.sanctions_status || 'None');
+      html += miniFactorCard('FTAs', t.fta_count != null ? t.fta_count : '—');
+      html += miniFactorCard('Sanctions', t.sanctions_status === true ? 'Yes' : t.sanctions_status === false ? 'None' : (t.sanctions_status || '—'));
+      html += miniFactorCard('Avg Tariff', Utils.formatPercent(t.avg_applied_tariff_pct, 1));
       html += '</div>';
       if (t.top_export_products && t.top_export_products.length) {
         html += '<p style="font-size:11px;color:var(--text-muted);margin-top:8px">Top exports: ' + t.top_export_products.join(', ') + '</p>';
