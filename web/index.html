@@ -6,7 +6,7 @@
   <title>Stratoterra — Geopolitical Intelligence</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/panels.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -20,7 +20,19 @@
   <div id="app">
     <header id="header">
       <div class="header-left">
-        <h1 class="logo">Stratoterra</h1>
+        <a href="#map" class="logo" aria-label="Stratoterra — home">
+          <svg class="logo__icon" viewBox="0 0 48 48" width="28" height="28" aria-hidden="true">
+            <defs><clipPath id="st-logo-clip"><circle cx="24" cy="24" r="19"/></clipPath></defs>
+            <circle cx="24" cy="24" r="19" fill="none" stroke="#E8C547" stroke-width="1.5"/>
+            <g clip-path="url(#st-logo-clip)" fill="none" stroke="#E8C547" stroke-width="1.3" stroke-linecap="round">
+              <path d="M6,16 Q16,12 24,16 Q32,20 42,16" opacity="0.4"/>
+              <path d="M6,22 Q14,18 24,22 Q34,26 42,22" opacity="0.6"/>
+              <path d="M6,28 Q16,24 24,28 Q32,32 42,28" opacity="0.85"/>
+              <path d="M6,34 Q14,30 24,34 Q34,38 42,34" opacity="0.55"/>
+            </g>
+          </svg>
+          <span class="logo__wordmark">Stratoterra</span>
+        </a>
       </div>
       <div class="header-center">
         <div style="position:relative">
@@ -43,6 +55,7 @@
     <main id="main-content">
       <div id="map-container"></div>
       <div id="country-panel" class="panel hidden"></div>
+      <div id="relations-panel" class="panel hidden"></div>
 
       <!-- Additional view containers -->
       <div id="briefing-view" class="view-container"></div>
@@ -79,10 +92,32 @@
           <option value="G20">G20</option>
         </select>
       </div>
+      <button id="relations-toggle" class="bottom-bar__btn" title="Relation Explorer">↔ Relations</button>
       <div class="last-updated">
         Last updated: <span id="last-updated-date">—</span>
       </div>
     </footer>
+  </div>
+
+  <div id="alert-ticker" class="alert-ticker hidden">
+    <!-- Primary bar: critical / warning alerts, rotates every 30s -->
+    <div id="ticker-primary" class="ticker-primary">
+      <div class="ticker-tag" id="ticker-tag">
+        <span class="ticker-tag__dot" id="ticker-tag-dot"></span>
+        <span class="ticker-tag__label" id="ticker-tag-label">CRITICAL</span>
+      </div>
+      <div class="ticker-content" id="ticker-content">
+        <span class="ticker-headline" id="ticker-headline"></span>
+        <span class="ticker-timestamp" id="ticker-timestamp"></span>
+      </div>
+    </div>
+    <!-- Secondary bar: watch alerts, continuous marquee -->
+    <div id="ticker-secondary" class="ticker-secondary">
+      <div class="ticker-tag-sm">WATCH</div>
+      <div class="ticker-scroll-wrap">
+        <div class="ticker-scroll-track" id="ticker-scroll-track"></div>
+      </div>
+    </div>
   </div>
 
   <div id="disclaimer">

@@ -9,6 +9,7 @@ var RelationExplorer = (function() {
   var currentPair = null;
   var relationIndex = null;
   var loaded = false;
+  var panelMode = false;
 
   async function loadIndex() {
     if (relationIndex) return;
@@ -23,11 +24,15 @@ var RelationExplorer = (function() {
     var html = '<div class="relation-explorer">';
     html += '<h2>Relation Explorer</h2>';
 
-    // Mode selector
-    html += '<div class="compare-mode-toggle">';
-    html += '<button class="layer-tab' + (currentMode === 'network' ? ' active' : '') + '" data-mode="network">Network Graph</button>';
-    html += '<button class="layer-tab' + (currentMode === 'bilateral' ? ' active' : '') + '" data-mode="bilateral">Bilateral Detail</button>';
-    html += '</div>';
+    // Mode selector — hidden in panel mode; replaced by back button when in bilateral mode
+    if (!panelMode) {
+      html += '<div class="compare-mode-toggle">';
+      html += '<button class="layer-tab' + (currentMode === 'network' ? ' active' : '') + '" data-mode="network">Network Graph</button>';
+      html += '<button class="layer-tab' + (currentMode === 'bilateral' ? ' active' : '') + '" data-mode="bilateral">Bilateral Detail</button>';
+      html += '</div>';
+    } else if (panelMode && currentMode === 'bilateral') {
+      html += '<button id="rel-back-btn" class="layer-tab" style="margin-bottom:12px">← Network</button>';
+    }
 
     // Country/Pair selector
     html += '<div class="relation-selector">';
@@ -120,7 +125,7 @@ var RelationExplorer = (function() {
     }
 
     var width = graphEl.offsetWidth;
-    var height = 500;
+    var height = Math.max(400, graphEl.parentElement.clientHeight - 60);
 
     // Clear any existing SVG
     d3.select(graphEl).selectAll('*').remove();
@@ -159,15 +164,15 @@ var RelationExplorer = (function() {
 
     node.append('circle')
       .attr('r', function(d) { return d.isCenter ? 16 : 10; })
-      .attr('fill', function(d) { return d.isCenter ? '#6ca6ff' : '#2a2a5a'; })
-      .attr('stroke', function(d) { return d.isCenter ? '#fff' : '#444488'; })
+      .attr('fill', function(d) { return d.isCenter ? '#E8C547' : '#1E293B'; })
+      .attr('stroke', function(d) { return d.isCenter ? '#fff' : '#334155'; })
       .attr('stroke-width', function(d) { return d.isCenter ? 2 : 1; });
 
     node.append('text')
       .text(function(d) { return d.id; })
       .attr('dy', function(d) { return d.isCenter ? -22 : -16; })
       .attr('text-anchor', 'middle')
-      .attr('fill', '#e8e8f0')
+      .attr('fill', '#F1F5F9')
       .attr('font-size', function(d) { return d.isCenter ? '13px' : '11px'; })
       .attr('font-weight', function(d) { return d.isCenter ? '600' : '400'; });
 
@@ -238,6 +243,9 @@ var RelationExplorer = (function() {
       btn.addEventListener('click', function() { currentMode = btn.getAttribute('data-mode'); render(); });
     });
 
+    var backBtn = document.getElementById('rel-back-btn');
+    if (backBtn) backBtn.addEventListener('click', function() { currentMode = 'network'; render(); });
+
     var countrySelect = document.getElementById('relation-country-select');
     if (countrySelect) countrySelect.addEventListener('change', function() { currentCountry = this.value || null; render(); });
 
@@ -253,8 +261,9 @@ var RelationExplorer = (function() {
   }
 
   return {
-    show: async function(el, params) {
+    show: async function(el, params, options) {
       containerEl = el;
+      panelMode = !!(options && options.panelMode);
       await loadIndex();
 
       // Parse URL params

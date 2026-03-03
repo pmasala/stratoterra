@@ -8,6 +8,7 @@ var AlertDashboard = (function() {
   var allAlerts = [];
   var filterRegion = 'all';
   var filterType = 'all';
+  var globalIdx = 0;
 
   function render() {
     var filtered = allAlerts.filter(function(a) {
@@ -48,7 +49,8 @@ var AlertDashboard = (function() {
     html += '</select>';
     html += '</div>';
 
-    // Alert sections
+    // Alert sections — reset global index before rendering
+    globalIdx = 0;
     if (critical.length) html += renderAlertSection('Critical', critical, 'critical');
     if (warning.length) html += renderAlertSection('Warning', warning, 'warning');
     if (watch.length) html += renderAlertSection('Watch', watch, 'watch');
@@ -70,7 +72,7 @@ var AlertDashboard = (function() {
     var html = '<div class="alert-section">';
     html += '<h3 class="alert-section__title" style="color:var(--alert-' + severity + ')">' + title + ' (' + alerts.length + ')</h3>';
     alerts.forEach(function(a) {
-      html += '<div class="alert-card alert-card--' + severity + '">';
+      html += '<div class="alert-card alert-card--' + severity + '" data-alert-index="' + (globalIdx++) + '">';
       html += '<div class="alert-card__header">';
       html += '<span class="alert-badge alert-badge--' + severity + '">' + severity + '</span>';
       if (a.type) html += '<span class="alert-card__type">' + esc(a.type) + '</span>';
@@ -101,9 +103,15 @@ var AlertDashboard = (function() {
   }
 
   return {
-    show: async function(el) {
+    show: async function(el, params) {
       containerEl = el;
-      if (loaded) { render(); return; }
+      if (loaded) {
+        render();
+        if (params && params.alertIndex != null) {
+          setTimeout(function() { AlertDashboard.scrollToAlert(params.alertIndex); }, 200);
+        }
+        return;
+      }
 
       containerEl.innerHTML = '<div class="panel-loading"><div class="skeleton" style="width:60%;height:24px;margin:16px auto"></div></div>';
 
@@ -112,9 +120,17 @@ var AlertDashboard = (function() {
         allAlerts = data.alerts || data || [];
         loaded = true;
         render();
+        if (params && params.alertIndex != null) {
+          setTimeout(function() { AlertDashboard.scrollToAlert(params.alertIndex); }, 200);
+        }
       } catch (err) {
         containerEl.innerHTML = '<div class="error-card"><h3 class="error-card__title">Alerts unavailable</h3><p>Alert data has not been generated yet.</p></div>';
       }
+    },
+
+    scrollToAlert: function(index) {
+      var card = containerEl && containerEl.querySelector('[data-alert-index="' + index + '"]');
+      if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
     },
 
     reset: function() {

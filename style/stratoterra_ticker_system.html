@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stratoterra — Ticker System</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #070C18;
+  --surface: #0D1526;
+  --card: #111D35;
+  --border: #1A2744;
+  --border-hi: #253557;
+  --gold: #E8C547;
+  --gold-dim: rgba(232,197,71,0.12);
+  --text: #CBD5E1;
+  --muted: #5A6B85;
+  --white: #F1F5F9;
+
+  --critical-bg: #DC2626;
+  --critical-glow: rgba(220,38,38,0.35);
+  --critical-text: #FFFFFF;
+  --critical-pulse: rgba(220,38,38,0.6);
+
+  --warning-bg: #D97706;
+  --warning-glow: rgba(217,119,6,0.3);
+  --warning-text: #FFFFFF;
+
+  --watch-bg: #1E3A5F;
+  --watch-accent: #3B82F6;
+  --watch-text: #94A3B8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── PAGE HEADER ── */
+.page-header {
+  padding: 48px 48px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page-header h1 {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: .65;
+  margin-bottom: 8px;
+}
+.page-header h2 {
+  font-size: 28px;
+  font-weight: 300;
+  color: var(--white);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.page-header p {
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+/* ── SECTIONS ── */
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px 56px;
+}
+.section-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-label::before {
+  content: '';
+  width: 3px;
+  height: 14px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+/* ── TIER CARDS ── */
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+.tier-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.tier-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+}
+.tier-card.critical::before { background: var(--critical-bg); box-shadow: 0 0 20px var(--critical-glow); }
+.tier-card.warning::before { background: var(--warning-bg); box-shadow: 0 0 20px var(--warning-glow); }
+.tier-card.watch::before { background: var(--watch-accent); box-shadow: 0 0 12px rgba(59,130,246,0.2); }
+
+.tier-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.critical .tier-badge { background: var(--critical-bg); color: #FFF; }
+.warning .tier-badge { background: var(--warning-bg); color: #FFF; }
+.watch .tier-badge { background: var(--watch-accent); color: #FFF; }
+
+.tier-badge .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #FFF;
+}
+.critical .tier-badge .dot { animation: pulse-dot 1.2s ease-in-out infinite; }
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.7); }
+}
+
+.tier-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.tier-specs {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.tier-specs strong {
+  color: var(--text);
+  font-weight: 500;
+}
+.spec-val {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--gold);
+  background: var(--gold-dim);
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+/* ── LIVE DEMO ── */
+.demo-container {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+.demo-label {
+  padding: 14px 20px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.demo-label .live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22C55E;
+  animation: pulse-dot 2s ease-in-out infinite;
+  margin-right: 6px;
+  display: inline-block;
+}
+.demo-map {
+  height: 300px;
+  background:
+    radial-gradient(ellipse at 50% 40%, rgba(30,58,95,0.4) 0%, transparent 70%),
+    linear-gradient(180deg, #0A1628 0%, #060C18 100%);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* ── TICKER BAR (bottom of map) ── */
+.ticker-bar {
+  width: 100%;
+  position: relative;
+}
+
+/* PRIMARY TICKER — Critical / Warning */
+.ticker-primary {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  height: 44px;
+  position: relative;
+}
+
+.ticker-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFF;
+  white-space: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+.ticker-tag.critical-tag {
+  background: var(--critical-bg);
+}
+.ticker-tag.warning-tag {
+  background: var(--warning-bg);
+}
+.ticker-tag .tag-icon {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #FFF;
+}
+.critical-tag .tag-icon {
+  animation: pulse-dot 1s ease-in-out infinite;
+}
+
+.ticker-tag::after {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  z-index: 1;
+}
+.critical-tag::after {
+  background: linear-gradient(90deg, var(--critical-bg), rgba(220,38,38,0));
+}
+.warning-tag::after {
+  background: linear-gradient(90deg, var(--warning-bg), rgba(217,119,6,0));
+}
+
+.ticker-content-primary {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ticker-content-primary.critical-content {
+  background: rgba(220,38,38,0.12);
+  color: #FCA5A5;
+  border-top: 1px solid rgba(220,38,38,0.25);
+}
+.ticker-content-primary.warning-content {
+  background: rgba(217,119,6,0.1);
+  color: #FCD34D;
+  border-top: 1px solid rgba(217,119,6,0.2);
+}
+
+.ticker-timestamp {
+  flex-shrink: 0;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+.critical-content .ticker-timestamp { color: rgba(252,165,165,0.5); }
+.warning-content .ticker-timestamp { color: rgba(252,211,77,0.4); }
+
+/* SECONDARY TICKER — Watch */
+.ticker-secondary {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  height: 30px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.ticker-tag-sm {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--watch-accent);
+  background: rgba(59,130,246,0.08);
+  white-space: nowrap;
+  flex-shrink: 0;
+  border-right: 1px solid var(--border);
+}
+
+.ticker-scroll {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+.ticker-scroll-inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  white-space: nowrap;
+  animation: scroll-ticker 45s linear infinite;
+  padding-left: 100%;
+}
+@keyframes scroll-ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+.ticker-scroll-inner span {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--watch-text);
+  padding: 0 32px;
+}
+.ticker-scroll-inner .sep {
+  color: var(--border-hi);
+  padding: 0;
+  font-size: 8px;
+}
+
+/* ── ANATOMY DIAGRAM ── */
+.anatomy {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+.anatomy-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.anatomy-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.anatomy-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--gold);
+  background: var(--gold-dim);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.anatomy-desc {
+  font-size: 12px;
+  color: var(--text);
+  line-height: 1.5;
+}
+.anatomy-desc strong {
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* ── BEHAVIOR TABLE ── */
+.behavior-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 32px;
+}
+.behavior-table th {
+  text-align: left;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.behavior-table td {
+  padding: 14px 16px;
+  font-size: 12px;
+  color: var(--text);
+  border-bottom: 1px solid rgba(26,39,68,0.5);
+  vertical-align: top;
+}
+.behavior-table tr:last-child td { border-bottom: none; }
+.behavior-table .mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--gold);
+}
+
+/* ── COLOR SWATCHES ── */
+.swatch-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.swatch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.swatch-color {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.swatch-info {
+  font-size: 11px;
+  line-height: 1.5;
+}
+.swatch-info strong {
+  display: block;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 12px;
+}
+.swatch-info span {
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+}
+
+/* ── STATE DEMOS ── */
+.state-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.state-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.state-card-label {
+  padding: 12px 16px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── ANIMATION: Critical flash ── */
+.critical-flash {
+  animation: critical-bg-pulse 2s ease-in-out infinite;
+}
+@keyframes critical-bg-pulse {
+  0%, 100% { background-color: rgba(220,38,38,0.12); }
+  50% { background-color: rgba(220,38,38,0.2); }
+}
+
+/* ── TRANSITION DEMO ── */
+.transition-strip {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 24px 0;
+}
+.trans-step {
+  flex: 1;
+  text-align: center;
+  padding: 16px 8px;
+  position: relative;
+}
+.trans-step::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 25%;
+  bottom: 25%;
+  width: 1px;
+  background: var(--border);
+}
+.trans-step:last-child::after { display: none; }
+.trans-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.trans-label {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+.trans-time {
+  font-size: 10px;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+.trans-arrow {
+  flex-shrink: 0;
+  color: var(--muted);
+  font-size: 14px;
+  padding: 0 4px;
+}
+
+/* ── MAP DOT PATTERN ── */
+.map-dots {
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+  background-image: radial-gradient(circle, var(--muted) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.map-landmass {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 70%;
+  height: 50%;
+  border-radius: 40%;
+  background: rgba(30,58,95,0.25);
+  filter: blur(20px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tier-grid { grid-template-columns: 1fr; }
+  .state-grid { grid-template-columns: 1fr; }
+  .page-header, .section { padding-left: 24px; padding-right: 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <h1>Stratoterra Design System</h1>
+  <h2>Ticker &amp; Alert Bar</h2>
+  <p>Specification for the persistent news ticker component. Three severity tiers control visual weight, display duration, and position — ensuring critical geopolitical events demand attention while routine monitoring flows continuously.</p>
+</div>
+
+<!-- TIER DEFINITIONS -->
+<div class="section">
+  <div class="section-label">Alert Tiers</div>
+  <div class="tier-grid">
+
+    <div class="tier-card critical">
+      <div class="tier-badge"><span class="dot"></span> CRITICAL</div>
+      <div class="tier-title">Breaking / Imminent Threat</div>
+      <div class="tier-specs">
+        <strong>Display:</strong> <span class="spec-val">PRIMARY BAR</span> (44px)<br>
+        <strong>Duration:</strong> <span class="spec-val">30s</span> per alert<br>
+        <strong>Animation:</strong> Pulsing background + dot<br>
+        <strong>Sound:</strong> Optional alert tone<br>
+        <strong>Priority:</strong> Overrides warning tier<br>
+        <strong>Examples:</strong> Active military strikes, coups, nuclear tests, major sanctions announced
+      </div>
+    </div>
+
+    <div class="tier-card warning">
+      <div class="tier-badge"><span class="dot"></span> WARNING</div>
+      <div class="tier-title">Escalation / High Impact</div>
+      <div class="tier-specs">
+        <strong>Display:</strong> <span class="spec-val">PRIMARY BAR</span> (44px)<br>
+        <strong>Duration:</strong> <span class="spec-val">30s</span> per alert<br>
+        <strong>Animation:</strong> Static background<br>
+        <strong>Sound:</strong> None<br>
+        <strong>Priority:</strong> Yields to critical<br>
+        <strong>Examples:</strong> Troop deployments, trade deal collapses, political instability spikes, energy supply disruptions
+      </div>
+    </div>
+
+    <div class="tier-card watch">
+      <div class="tier-badge"><span class="dot"></span> WATCH</div>
+      <div class="tier-title">Monitoring / Developments</div>
+      <div class="tier-specs">
+        <strong>Display:</strong> <span class="spec-val">SCROLL BAR</span> (30px)<br>
+        <strong>Duration:</strong> <span class="spec-val">CONTINUOUS</span> scroll<br>
+        <strong>Animation:</strong> Horizontal marquee<br>
+        <strong>Sound:</strong> None<br>
+        <strong>Priority:</strong> Always visible below primary<br>
+        <strong>Examples:</strong> GDP updates, election polls, diplomatic meetings, policy changes, market movements
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- LIVE DEMO: CRITICAL -->
+<div class="section">
+  <div class="section-label">Live Demo — Critical State</div>
+  <div class="demo-container">
+    <div class="demo-label">
+      <span><span class="live-dot"></span> INTERACTIVE PREVIEW</span>
+      <span style="font-family: JetBrains Mono; font-size: 9px; color: var(--muted);">CRITICAL + WATCH</span>
+    </div>
+    <div class="demo-map">
+      <div class="map-dots"></div>
+      <div class="map-landmass"></div>
+      <div class="ticker-bar">
+        <div class="ticker-primary">
+          <div class="ticker-tag critical-tag">
+            <span class="tag-icon"></span>
+            CRITICAL
+          </div>
+          <div class="ticker-content-primary critical-content critical-flash">
+            ISRAEL LAUNCHES STRIKES ON IRANIAN MILITARY SITES — IDF CONFIRMS MULTI-WAVE OPERATION TARGETING AIR DEFENSE SYSTEMS
+            <div class="ticker-timestamp">14:32 UTC</div>
+          </div>
+        </div>
+        <div class="ticker-secondary">
+          <div class="ticker-tag-sm">WATCH</div>
+          <div class="ticker-scroll">
+            <div class="ticker-scroll-inner">
+              <span>GERMANY GDP GROWTH REVISED DOWN TO 0.2% FOR Q4</span>
+              <span class="sep">&#9670;</span>
+              <span>EU-MERCOSUR PARTNERSHIP AGREEMENT RATIFICATION VOTE SCHEDULED FOR MARCH 15</span>
+              <span class="sep">&#9670;</span>
+              <span>CHINA-JAPAN SANCTIONS ESCALATION: TOKYO RECALLS AMBASSADOR FOR CONSULTATIONS</span>
+              <span class="sep">&#9670;</span>
+              <span>BRENT CRUDE AT $94.20 — HORMUZ CLOSURE FEARS PERSIST</span>
+              <span class="sep">&#9670;</span>
+              <span>US-EU TRADE DEAL POSTPONED AMID SCOTUS TARIFF RULING UNCERTAINTY</span>
+              <span class="sep">&#9670;</span>
+              <span>NATO BALTIC DEPLOYMENT: ADDITIONAL 4,000 TROOPS CONFIRMED</span>
+              <span class="sep">&#9670;</span>
+              <span>INDIA ELECTION COMMISSION ANNOUNCES PHASE 2 DATES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LIVE DEMO: WARNING -->
+<div class="section">
+  <div class="section-label">Live Demo — Warning State</div>
+  <div class="demo-container">
+    <div class="demo-label">
+      <span><span class="live-dot"></span> INTERACTIVE PREVIEW</span>
+      <span style="font-family: JetBrains Mono; font-size: 9px; color: var(--muted);">WARNING + WATCH</span>
+    </div>
+    <div class="demo-map" style="height: 200px;">
+      <div class="map-dots"></div>
+      <div class="map-landmass"></div>
+      <div class="ticker-bar">
+        <div class="ticker-primary">
+          <div class="ticker-tag warning-tag">
+            <span class="tag-icon"></span>
+            WARNING
+          </div>
+          <div class="ticker-content-primary warning-content">
+            HORMUZ STRAIT CLOSURE DRIVES OIL PRICE SURGE — GERMANY ENERGY INDEPENDENCE AT 30%, CONTINGENCY RESERVES ACTIVATED
+            <div class="ticker-timestamp">09:15 UTC</div>
+          </div>
+        </div>
+        <div class="ticker-secondary">
+          <div class="ticker-tag-sm">WATCH</div>
+          <div class="ticker-scroll">
+            <div class="ticker-scroll-inner" style="animation-duration: 50s;">
+              <span>CANADA POLITICAL STABILITY INDEX HOLDS AT 0.58 — MINORITY GOVERNMENT FACES CONFIDENCE VOTE</span>
+              <span class="sep">&#9670;</span>
+              <span>SLOVENIA GDP AT $222.7B — INFLATION STEADY AT 3.1%</span>
+              <span class="sep">&#9670;</span>
+              <span>AFRICAN UNION SUMMIT: CONTINENTAL FREE TRADE AREA EXPANSION DISCUSSED</span>
+              <span class="sep">&#9670;</span>
+              <span>SOUTH CHINA SEA: PHILIPPINES REPORTS NEW MARITIME INCIDENT NEAR SCARBOROUGH SHOAL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LIVE DEMO: WATCH ONLY -->
+<div class="section">
+  <div class="section-label">Live Demo — Watch Only (No Active Alerts)</div>
+  <div class="demo-container">
+    <div class="demo-label">
+      <span><span class="live-dot"></span> INTERACTIVE PREVIEW</span>
+      <span style="font-family: JetBrains Mono; font-size: 9px; color: var(--muted);">WATCH ONLY — IDLE STATE</span>
+    </div>
+    <div class="demo-map" style="height: 160px;">
+      <div class="map-dots"></div>
+      <div class="map-landmass"></div>
+      <div class="ticker-bar">
+        <div class="ticker-secondary">
+          <div class="ticker-tag-sm">WATCH</div>
+          <div class="ticker-scroll">
+            <div class="ticker-scroll-inner" style="animation-duration: 55s;">
+              <span>GERMANY GDP GROWTH REVISED DOWN TO 0.2% FOR Q4</span>
+              <span class="sep">&#9670;</span>
+              <span>EU-MERCOSUR PARTNERSHIP AGREEMENT RATIFICATION VOTE SCHEDULED</span>
+              <span class="sep">&#9670;</span>
+              <span>CHINA-JAPAN SANCTIONS ESCALATION SIGNALS BROADER TRADE FRAGMENTATION</span>
+              <span class="sep">&#9670;</span>
+              <span>US FEDERAL RESERVE HOLDS RATES — NEXT MEETING APRIL 29</span>
+              <span class="sep">&#9670;</span>
+              <span>UKRAINE RECONSTRUCTION FUND REACHES $12.4B IN PLEDGES</span>
+              <span class="sep">&#9670;</span>
+              <span>ARCTIC COUNCIL MEETING: CLIMATE SECURITY FRAMEWORK PROPOSED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ANATOMY -->
+<div class="section">
+  <div class="section-label">Component Anatomy</div>
+  <div class="anatomy">
+    <div class="anatomy-title">Ticker Bar Structure</div>
+    <div class="anatomy-row">
+      <div class="anatomy-num">1</div>
+      <div class="anatomy-desc"><strong>Severity Tag</strong> — Left-aligned label with severity color. Contains pulsing dot (critical only) + tier name. Fixed width, never truncated. Font: Outfit 700, 11px, 2px tracking.</div>
+    </div>
+    <div class="anatomy-row">
+      <div class="anatomy-num">2</div>
+      <div class="anatomy-desc"><strong>Primary Content Area</strong> — Alert headline in uppercase. Background uses severity color at 12% opacity with matching top border. Font: Outfit 500, 13px, 0.8px tracking. Single line, truncated with ellipsis if overflow.</div>
+    </div>
+    <div class="anatomy-row">
+      <div class="anatomy-num">3</div>
+      <div class="anatomy-desc"><strong>Timestamp</strong> — Right-aligned UTC time in monospace. Updates in real-time. Font: JetBrains Mono 400, 10px. Inherits tier color at 50% opacity.</div>
+    </div>
+    <div class="anatomy-row">
+      <div class="anatomy-num">4</div>
+      <div class="anatomy-desc"><strong>Watch Scroll Bar</strong> — Continuous horizontal marquee. Multiple items separated by diamond glyphs. Always visible beneath primary bar. Speed: ~45s full cycle. Font: Outfit 400, 11px, 0.6px tracking.</div>
+    </div>
+    <div class="anatomy-row">
+      <div class="anatomy-num">5</div>
+      <div class="anatomy-desc"><strong>Watch Tag</strong> — Small label on left of scroll bar. Blue accent color at 8% opacity background. Font: Outfit 600, 9px, 2px tracking.</div>
+    </div>
+  </div>
+</div>
+
+<!-- BEHAVIOR SPEC -->
+<div class="section">
+  <div class="section-label">Behavior Specification</div>
+  <table class="behavior-table">
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Critical</th>
+        <th>Warning</th>
+        <th>Watch</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bar height</td>
+        <td class="mono">44px</td>
+        <td class="mono">44px</td>
+        <td class="mono">30px</td>
+      </tr>
+      <tr>
+        <td>Display duration</td>
+        <td class="mono">30s</td>
+        <td class="mono">30s</td>
+        <td class="mono">continuous</td>
+      </tr>
+      <tr>
+        <td>Entry animation</td>
+        <td>Slide up 300ms ease-out</td>
+        <td>Slide up 300ms ease-out</td>
+        <td>Marquee scroll 45s linear</td>
+      </tr>
+      <tr>
+        <td>Background</td>
+        <td>Pulsing 12%–20% opacity</td>
+        <td>Static 10% opacity</td>
+        <td>Surface color</td>
+      </tr>
+      <tr>
+        <td>Queue behavior</td>
+        <td>FIFO, overrides warning</td>
+        <td>FIFO, yields to critical</td>
+        <td>Appended to scroll</td>
+      </tr>
+      <tr>
+        <td>Multiple alerts</td>
+        <td>Rotate every 30s</td>
+        <td>Rotate every 30s</td>
+        <td>Concatenated in marquee</td>
+      </tr>
+      <tr>
+        <td>Dismissible</td>
+        <td>No (auto-expires)</td>
+        <td>No (auto-expires)</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Click action</td>
+        <td>Open alert detail panel</td>
+        <td>Open alert detail panel</td>
+        <td>Open related country</td>
+      </tr>
+      <tr>
+        <td>Text transform</td>
+        <td class="mono">UPPERCASE</td>
+        <td class="mono">UPPERCASE</td>
+        <td class="mono">UPPERCASE</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TRANSITION FLOW -->
+<div class="section">
+  <div class="section-label">State Transition Flow</div>
+  <div class="anatomy">
+    <div class="anatomy-title">Alert Lifecycle</div>
+    <div class="transition-strip">
+      <div class="trans-step">
+        <div class="trans-num">01</div>
+        <div class="trans-label">Idle</div>
+        <div class="trans-time">Watch only</div>
+      </div>
+      <div class="trans-step">
+        <div class="trans-num">02</div>
+        <div class="trans-label">Alert In</div>
+        <div class="trans-time">slide-up 300ms</div>
+      </div>
+      <div class="trans-step">
+        <div class="trans-num">03</div>
+        <div class="trans-label">Display</div>
+        <div class="trans-time">30s hold</div>
+      </div>
+      <div class="trans-step">
+        <div class="trans-num">04</div>
+        <div class="trans-label">Next / Expire</div>
+        <div class="trans-time">crossfade 400ms</div>
+      </div>
+      <div class="trans-step">
+        <div class="trans-num">05</div>
+        <div class="trans-label">Return Idle</div>
+        <div class="trans-time">slide-down 300ms</div>
+      </div>
+    </div>
+    <div class="anatomy-row">
+      <div class="anatomy-num">!</div>
+      <div class="anatomy-desc"><strong>Priority override:</strong> If a CRITICAL alert arrives while a WARNING is displayed, the warning is immediately replaced with a 200ms crossfade. The displaced warning re-enters the queue behind any remaining critical alerts.</div>
+    </div>
+  </div>
+</div>
+
+<!-- COLORS -->
+<div class="section">
+  <div class="section-label">Color Tokens</div>
+  <div class="swatch-row">
+    <div class="swatch">
+      <div class="swatch-color" style="background:#DC2626"></div>
+      <div class="swatch-info"><strong>Critical</strong><span>#DC2626</span></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:rgba(220,38,38,0.12)"></div>
+      <div class="swatch-info"><strong>Critical BG</strong><span>rgba(220,38,38,0.12)</span></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#FCA5A5"></div>
+      <div class="swatch-info"><strong>Critical Text</strong><span>#FCA5A5</span></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#D97706"></div>
+      <div class="swatch-info"><strong>Warning</strong><span>#D97706</span></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:rgba(217,119,6,0.1)"></div>
+      <div class="swatch-info"><strong>Warning BG</strong><span>rgba(217,119,6,0.1)</span></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#FCD34D"></div>
+      <div class="swatch-info"><strong>Warning Text</strong><span>#FCD34D</span></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#3B82F6"></div>
+      <div class="swatch-info"><strong>Watch Accent</strong><span>#3B82F6</span></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#94A3B8"></div>
+      <div class="swatch-info"><strong>Watch Text</strong><span>#94A3B8</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPOGRAPHY -->
+<div class="section">
+  <div class="section-label">Typography Tokens</div>
+  <table class="behavior-table">
+    <thead>
+      <tr><th>Element</th><th>Font</th><th>Weight</th><th>Size</th><th>Tracking</th><th>Transform</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Severity Tag</td><td class="mono">Outfit</td><td class="mono">700</td><td class="mono">11px</td><td class="mono">2px</td><td class="mono">UPPERCASE</td></tr>
+      <tr><td>Primary Content</td><td class="mono">Outfit</td><td class="mono">500</td><td class="mono">13px</td><td class="mono">0.8px</td><td class="mono">UPPERCASE</td></tr>
+      <tr><td>Timestamp</td><td class="mono">JetBrains Mono</td><td class="mono">400</td><td class="mono">10px</td><td class="mono">1px</td><td class="mono">UPPERCASE</td></tr>
+      <tr><td>Watch Tag</td><td class="mono">Outfit</td><td class="mono">600</td><td class="mono">9px</td><td class="mono">2px</td><td class="mono">UPPERCASE</td></tr>
+      <tr><td>Watch Content</td><td class="mono">Outfit</td><td class="mono">400</td><td class="mono">11px</td><td class="mono">0.6px</td><td class="mono">UPPERCASE</td></tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
