@@ -19,14 +19,14 @@ var RankingsView = (function() {
         { field: 'gdp_per_capita_usd', label: 'GDP/Cap', format: 'currency' },
         { field: 'inflation_rate_pct', label: 'Inflation %', format: 'percent' },
         { field: 'trade_openness_pct', label: 'Trade Open %', format: 'percent' },
-        { field: 'economic_complexity_index', label: 'ECI', format: 'decimal' }
+        { field: 'political_risk_premium_bps', label: 'Risk Prem (bps)', format: 'number' }
       ]
     },
     power: {
       label: 'Power',
       columns: [
-        { field: 'overall_score', label: 'Overall', format: 'score' },
-        { field: 'military_spending_usd', label: 'Mil Spend', format: 'currency' },
+        { field: 'composite_national_power_index', label: 'Overall', format: 'score' },
+        { field: 'military_expenditure_usd', label: 'Mil Spend', format: 'currency' },
         { field: 'population', label: 'Population', format: 'number' },
         { field: 'energy_independence', label: 'Energy Ind.', format: 'score' }
       ]
@@ -36,6 +36,7 @@ var RankingsView = (function() {
       columns: [
         { field: 'investment_risk_score', label: 'Inv. Risk', format: 'score' },
         { field: 'political_stability', label: 'Pol. Stability', format: 'score' },
+        { field: 'political_risk_premium_bps', label: 'Risk Prem (bps)', format: 'number' },
         { field: 'alert_count', label: 'Alerts', format: 'number' }
       ]
     },
@@ -43,7 +44,7 @@ var RankingsView = (function() {
       label: 'Development',
       columns: [
         { field: 'gdp_per_capita_usd', label: 'GDP/Cap', format: 'currency' },
-        { field: 'economic_complexity_index', label: 'ECI', format: 'decimal' },
+        { field: 'composite_national_power_index', label: 'Power Index', format: 'score' },
         { field: 'energy_independence', label: 'Energy', format: 'score' },
         { field: 'trade_openness_pct', label: 'Trade %', format: 'percent' }
       ]

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Stratoterra — UI Data Contract Tests
-Tests E2E-UI-001 through E2E-UI-009
+Tests E2E-UI-001 through E2E-UI-010
 
 Verifies that chunk files served to the frontend are present, loadable,
 within size limits, and contain the fields the UI depends on.
@@ -796,6 +796,171 @@ class TestE2E_UI_008_BriefingRenderability(unittest.TestCase):
             else:
                 errors.append(f"Region '{region}': unexpected type {type(val).__name__}")
         self.assertEqual(errors, [], "Regional summary issues:\n" + "\n".join(errors))
+
+
+# ---------------------------------------------------------------------------
+# E2E-UI-010: Rankings page factor value completeness
+# ---------------------------------------------------------------------------
+
+# Fields referenced by each METRIC_GROUPS tab in rankings-view.js.
+# Must match the actual field names used in the JS.
+RANKINGS_FIELDS = {
+    "economic": [
+        "gdp_nominal_usd", "gdp_real_growth_pct", "gdp_per_capita_usd",
+        "inflation_rate_pct", "trade_openness_pct", "political_risk_premium_bps",
+    ],
+    "power": [
+        "composite_national_power_index", "military_expenditure_usd",
+        "population", "energy_independence",
+    ],
+    "risk": [
+        "investment_risk_score", "political_stability",
+        "political_risk_premium_bps", "alert_count",
+    ],
+    "development": [
+        "gdp_per_capita_usd", "composite_national_power_index",
+        "energy_independence", "trade_openness_pct",
+    ],
+}
+
+# Minimum fraction of countries that must have a value for each ranking field.
+# 0.70 = at least 70% of countries must have a non-null value.
+RANKINGS_FIELD_COVERAGE_MIN = 0.70
+RANKINGS_FIELD_COVERAGE_TIER1_MIN = 0.90
+
+
+class TestE2E_UI_010_RankingsCompleteness(unittest.TestCase):
+    """E2E-UI-010: Every ranking factor referenced by rankings-view.js must
+    have sufficient data coverage in the summary. Missing values render as '—'
+    in the table, degrading the rankings page experience."""
+
+    def setUp(self):
+        self.summary_path = find_summary_path()
+        if not self.summary_path:
+            self.skipTest("Summary file not found")
+        data = load_json(self.summary_path)
+        countries = data.get("countries", data) if isinstance(data, dict) else data
+        if not isinstance(countries, list):
+            self.skipTest("Summary countries is not a list")
+        self.countries = countries
+        self.tier1 = [c for c in countries if c.get("tier") == 1]
+
+    def test_every_ranking_field_exists_in_summary(self):
+        """Every field referenced by rankings-view.js METRIC_GROUPS must appear
+        in at least one country's summary entry (i.e., the field is not completely
+        phantom/undefined)."""
+        all_fields = set()
+        for fields in RANKINGS_FIELDS.values():
+            all_fields.update(fields)
+
+        phantom = []
+        for field in sorted(all_fields):
+            count = sum(1 for c in self.countries if c.get(field) is not None)
+            if count == 0:
+                phantom.append(field)
+        self.assertEqual(
+            phantom, [],
+            f"Ranking fields with ZERO data (completely missing from summary): {phantom}",
+        )
+
+    def test_ranking_field_coverage_overall(self):
+        """Each ranking field must have >= {RANKINGS_FIELD_COVERAGE_MIN:.0%} coverage
+        across all 75 countries."""
+        total = len(self.countries)
+        if total == 0:
+            self.skipTest("No countries")
+        errors = []
+        all_fields = set()
+        for fields in RANKINGS_FIELDS.values():
+            all_fields.update(fields)
+        for field in sorted(all_fields):
+            count = sum(1 for c in self.countries if c.get(field) is not None)
+            coverage = count / total
+            if coverage < RANKINGS_FIELD_COVERAGE_MIN:
+                errors.append(
+                    f"{field}: {count}/{total} ({coverage:.0%}) < "
+                    f"{RANKINGS_FIELD_COVERAGE_MIN:.0%} minimum"
+                )
+        self.assertEqual(
+            errors, [],
+            "Ranking fields with insufficient coverage:\n" + "\n".join(errors),
+        )
+
+    def test_ranking_field_coverage_tier1(self):
+        """Tier 1 countries (major economies) must have >= {RANKINGS_FIELD_COVERAGE_TIER1_MIN:.0%}
+        coverage for each ranking field."""
+        if not self.tier1:
+            self.skipTest("No Tier 1 countries")
+        total = len(self.tier1)
+        errors = []
+        all_fields = set()
+        for fields in RANKINGS_FIELDS.values():
+            all_fields.update(fields)
+        for field in sorted(all_fields):
+            count = sum(1 for c in self.tier1 if c.get(field) is not None)
+            coverage = count / total
+            if coverage < RANKINGS_FIELD_COVERAGE_TIER1_MIN:
+                errors.append(
+                    f"{field}: {count}/{total} Tier 1 ({coverage:.0%}) < "
+                    f"{RANKINGS_FIELD_COVERAGE_TIER1_MIN:.0%} minimum"
+                )
+        self.assertEqual(
+            errors, [],
+            "Tier 1 ranking field coverage gaps:\n" + "\n".join(errors),
+        )
+
+    def test_ranking_values_are_numeric(self):
+        """All ranking field values must be numeric (int or float), not strings
+        or wrapper objects. The formatVal() function in rankings-view.js expects
+        numbers for currency/percent/score/number formats."""
+        errors = []
+        all_fields = set()
+        for fields in RANKINGS_FIELDS.values():
+            all_fields.update(fields)
+        for c in self.countries:
+            code = c.get("code", "?")
+            for field in all_fields:
+                val = c.get(field)
+                if val is not None and not isinstance(val, (int, float)):
+                    errors.append(
+                        f"{code}.{field}: expected number, got {type(val).__name__} = {val!r}"
+                    )
+        self.assertEqual(
+            errors, [],
+            "Non-numeric ranking values:\n" + "\n".join(errors[:20]),
+        )
+
+    def test_ranking_fields_match_js_metric_groups(self):
+        """Cross-check: parse rankings-view.js to verify RANKINGS_FIELDS in this
+        test matches the actual field references in the JS source."""
+        js_path = os.path.join(REPO_ROOT, "web", "js", "rankings-view.js")
+        if not os.path.isfile(js_path):
+            self.skipTest("rankings-view.js not found")
+
+        with open(js_path, "r", encoding="utf-8") as f:
+            js_src = f.read()
+
+        # Extract field names from "field: 'xxx'" patterns
+        import re
+        js_fields = set(re.findall(r"field:\s*'([^']+)'", js_src))
+
+        test_fields = set()
+        for fields in RANKINGS_FIELDS.values():
+            test_fields.update(fields)
+
+        missing_in_test = js_fields - test_fields
+        extra_in_test = test_fields - js_fields
+
+        errors = []
+        if missing_in_test:
+            errors.append(
+                f"Fields in rankings-view.js but NOT in test: {sorted(missing_in_test)}"
+            )
+        if extra_in_test:
+            errors.append(
+                f"Fields in test but NOT in rankings-view.js: {sorted(extra_in_test)}"
+            )
+        self.assertEqual(errors, [], "\n".join(errors))
 
 
 # ---------------------------------------------------------------------------
