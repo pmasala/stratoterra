@@ -528,6 +528,118 @@ class TestE2E_UI_005_AlertIndexLoadable(unittest.TestCase):
 
 
 # ---------------------------------------------------------------------------
+# E2E-UI-006: Summary contains metric fields required by "Color by" selector
+# ---------------------------------------------------------------------------
+
+# These are the summary field names referenced by METRIC_CONFIG in constants.js.
+# Each entry in the summary must have these fields for the map coloring to work.
+METRIC_FIELDS = {
+    "gdp_real_growth_pct",
+    "political_stability",
+    "investment_risk_score",
+    "military_spending_trend",
+    "military_expenditure_pct_gdp",
+    "max_alert_severity",
+    "composite_national_power_index",
+    "energy_independence",
+    "trade_openness_pct",
+}
+
+# Minimum coverage thresholds (fraction of countries that must have the field)
+# Tier 1 countries (major economies) should have near-complete data.
+METRIC_COVERAGE_TIER1_MIN = 0.80
+METRIC_COVERAGE_OVERALL_MIN = 0.25
+
+
+class TestE2E_UI_006_SummaryMetricFields(unittest.TestCase):
+    """E2E-UI-006: Summary entries contain the fields needed by the map's
+    'Color by' selector. Without these, map coloring silently falls back
+    to default color for all countries."""
+
+    def setUp(self):
+        self.summary_path = find_summary_path()
+        if not self.summary_path:
+            self.skipTest("Summary file not found")
+        data = load_json(self.summary_path)
+        countries = data.get("countries", data) if isinstance(data, dict) else data
+        if not isinstance(countries, list):
+            self.skipTest("Summary countries is not a list")
+        self.countries = countries
+        self.tier1 = [c for c in countries if c.get("tier") == 1]
+
+    def test_metric_fields_present_overall(self):
+        """At least METRIC_COVERAGE_OVERALL_MIN of countries have each metric field."""
+        total = len(self.countries)
+        if total == 0:
+            self.skipTest("No countries in summary")
+        errors = []
+        for field in sorted(METRIC_FIELDS):
+            count = sum(1 for c in self.countries if c.get(field) is not None)
+            coverage = count / total
+            if coverage < METRIC_COVERAGE_OVERALL_MIN:
+                errors.append(
+                    f"{field}: {count}/{total} ({coverage:.0%}) < "
+                    f"{METRIC_COVERAGE_OVERALL_MIN:.0%} minimum"
+                )
+        self.assertEqual(errors, [], "Metric fields with insufficient coverage:\n" + "\n".join(errors))
+
+    def test_metric_fields_present_tier1(self):
+        """At least METRIC_COVERAGE_TIER1_MIN of Tier 1 countries have each metric field."""
+        if not self.tier1:
+            self.skipTest("No Tier 1 countries in summary")
+        total = len(self.tier1)
+        errors = []
+        for field in sorted(METRIC_FIELDS):
+            count = sum(1 for c in self.tier1 if c.get(field) is not None)
+            coverage = count / total
+            if coverage < METRIC_COVERAGE_TIER1_MIN:
+                errors.append(
+                    f"{field}: {count}/{total} Tier 1 ({coverage:.0%}) < "
+                    f"{METRIC_COVERAGE_TIER1_MIN:.0%} minimum"
+                )
+        self.assertEqual(errors, [], "Tier 1 metric coverage gaps:\n" + "\n".join(errors))
+
+    def test_metric_values_are_valid_types(self):
+        """Metric field values must be numeric or valid enum strings, not objects/lists."""
+        NUMERIC_FIELDS = {
+            "gdp_real_growth_pct", "political_stability", "investment_risk_score",
+            "military_expenditure_pct_gdp", "composite_national_power_index",
+            "energy_independence", "trade_openness_pct",
+        }
+        ENUM_FIELDS = {
+            "military_spending_trend": {"strong_growth", "growth", "stable", "decrease", "strong_decrease"},
+            "max_alert_severity": {"critical", "warning", "watch", "none"},
+        }
+        errors = []
+        for c in self.countries:
+            code = c.get("code", "?")
+            for field in NUMERIC_FIELDS:
+                val = c.get(field)
+                if val is not None and not isinstance(val, (int, float)):
+                    errors.append(f"{code}.{field}: expected number, got {type(val).__name__} = {val!r}")
+            for field, valid_values in ENUM_FIELDS.items():
+                val = c.get(field)
+                if val is not None and val not in valid_values:
+                    errors.append(f"{code}.{field}: '{val}' not in {sorted(valid_values)}")
+        self.assertEqual(errors, [], "Invalid metric values:\n" + "\n".join(errors[:20]))
+
+    def test_no_wrapper_objects_in_metric_fields(self):
+        """Metric fields must be flat values, not {value: ..., confidence: ...} wrappers.
+        These wrappers exist in full country files but must be unwrapped for the summary."""
+        errors = []
+        for c in self.countries:
+            code = c.get("code", "?")
+            for field in METRIC_FIELDS:
+                val = c.get(field)
+                if isinstance(val, dict):
+                    errors.append(
+                        f"{code}.{field}: is a dict (probably a value wrapper). "
+                        f"Summary must have flat values, not {{value: ..., confidence: ...}}"
+                    )
+        self.assertEqual(errors, [], "Unwrapped value objects found:\n" + "\n".join(errors[:20]))
+
+
+# ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
 
