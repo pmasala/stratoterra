@@ -53,15 +53,9 @@ var RankingsView = (function() {
 
   function render() {
     var summary = DataLoader.getSummary();
-    var group = METRIC_GROUPS[currentGroup];
-    var cols = group.columns;
-
     var filtered = summary.filter(function(c) {
       if (filterRegion !== 'all' && c.region !== filterRegion) return false;
       if (filterTier !== 'all' && c.tier !== parseInt(filterTier)) return false;
-      // Exclude countries that have no data for any column in this group
-      var hasAny = cols.some(function(col) { return c[col.field] != null; });
-      if (!hasAny) return false;
       return true;
     });
 
@@ -72,6 +66,9 @@ var RankingsView = (function() {
       if (typeof va === 'string') return sortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
       return sortAsc ? va - vb : vb - va;
     });
+
+    var group = METRIC_GROUPS[currentGroup];
+    var cols = group.columns;
 
     var html = '<div class="rankings">';
     html += '<h2>Global Rankings</h2>';
