@@ -171,6 +171,8 @@ All sources are free tier. Total API cost: $0/month. Gathering agents access the
 
 ## Testing
 
+**MANDATORY POLICY: After every pipeline run or any agent-driven data update, the full test suite (`python3 -m pytest tests/scripts/ -v`) MUST be executed and ALL tests MUST PASS (zero failures). No data commit is allowed until this gate passes. If any test fails, fix the root cause (in data, agents, or tests if the schema legitimately changed) before committing.**
+
 Tests run automatically as part of Agent 15 and post-pipeline validation. See `docs/04_TEST_PLAN.md`. Key test groups:
 
 - Schema validation (every file conforms to schema)
@@ -178,6 +180,8 @@ Tests run automatically as part of Agent 15 and post-pipeline validation. See `d
 - Consistency checks (cross-file, bilateral symmetry, sums)
 - Regression checks (no data loss week-over-week)
 - Coverage checks (Tier 1 ≥90%, Tier 2 ≥70%, Tier 3 ≥50%)
+
+Test command: `python3 -m pytest tests/scripts/ -v --tb=short`
 
 ## Important Warnings
 
