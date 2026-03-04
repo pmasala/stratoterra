@@ -640,6 +640,163 @@ class TestE2E_UI_006_SummaryMetricFields(unittest.TestCase):
 
 
 # ---------------------------------------------------------------------------
+# E2E-UI-007: Alert data renderable by ticker + dashboard
+# ---------------------------------------------------------------------------
+
+class TestE2E_UI_007_AlertRenderability(unittest.TestCase):
+    """E2E-UI-007: Every alert has the fields the ticker and alert dashboard
+    need to render without crashing.
+
+    The ticker calls alert.title.toUpperCase() — if title is missing and
+    there is no headline fallback, the ticker crashes silently.
+    The dashboard renders title, body, country tags, and type badge."""
+
+    def setUp(self):
+        self.alert_path = find_alert_index()
+        if not self.alert_path:
+            self.skipTest("alert_index.json not found")
+        data = load_json(self.alert_path)
+        self.alerts = data.get("alerts", [])
+
+    def test_every_alert_has_displayable_title(self):
+        """Ticker and dashboard both need a text title. Must have title or headline."""
+        errors = []
+        for i, a in enumerate(self.alerts):
+            if not isinstance(a, dict):
+                continue
+            title = a.get("title") or a.get("headline")
+            if not title or not title.strip():
+                errors.append(
+                    f"Alert [{i}] {a.get('alert_id', '?')}: no title or headline"
+                )
+        self.assertEqual(errors, [], "Alerts without displayable title:\n" + "\n".join(errors))
+
+    def test_every_alert_has_displayable_body(self):
+        """Dashboard renders description/details/summary as body text."""
+        errors = []
+        for i, a in enumerate(self.alerts):
+            if not isinstance(a, dict):
+                continue
+            body = a.get("description") or a.get("details") or a.get("summary")
+            if not body or not body.strip():
+                errors.append(
+                    f"Alert [{i}] {a.get('alert_id', '?')}: no description, details, or summary"
+                )
+        self.assertEqual(errors, [], "Alerts without displayable body:\n" + "\n".join(errors))
+
+    def test_every_alert_has_country_info(self):
+        """Dashboard shows country tags. Must have countries array or country_code."""
+        errors = []
+        for i, a in enumerate(self.alerts):
+            if not isinstance(a, dict):
+                continue
+            countries = a.get("countries") or (
+                [a["country_code"]] if a.get("country_code") else []
+            )
+            if not countries:
+                errors.append(
+                    f"Alert [{i}] {a.get('alert_id', '?')}: no countries or country_code"
+                )
+        self.assertEqual(errors, [], "Alerts without country info:\n" + "\n".join(errors))
+
+    def test_every_alert_has_severity(self):
+        """Ticker routes alerts by severity. Missing severity breaks routing."""
+        errors = []
+        valid = {"critical", "warning", "watch"}
+        for i, a in enumerate(self.alerts):
+            if not isinstance(a, dict):
+                continue
+            sev = a.get("severity")
+            if not sev:
+                errors.append(f"Alert [{i}] {a.get('alert_id', '?')}: missing severity")
+            elif sev not in valid:
+                errors.append(f"Alert [{i}] {a.get('alert_id', '?')}: severity '{sev}' not in {sorted(valid)}")
+        self.assertEqual(errors, [], "Alert severity issues:\n" + "\n".join(errors))
+
+
+# ---------------------------------------------------------------------------
+# E2E-UI-008: Briefing data renderable by briefing view
+# ---------------------------------------------------------------------------
+
+class TestE2E_UI_008_BriefingRenderability(unittest.TestCase):
+    """E2E-UI-008: Weekly briefing data has the fields the briefing view
+    needs to render stories, market context, and regional summaries."""
+
+    def setUp(self):
+        self.briefing_path = find_briefing()
+        if not self.briefing_path:
+            self.skipTest("Briefing not found")
+        self.data = load_json(self.briefing_path)
+
+    def test_every_story_has_title_and_summary(self):
+        """Story cards render title and summary/description."""
+        stories = self.data.get("top_stories", [])
+        errors = []
+        for i, s in enumerate(stories):
+            if not isinstance(s, dict):
+                continue
+            if not s.get("title"):
+                errors.append(f"Story [{i}]: missing title")
+            body = s.get("summary") or s.get("description")
+            if not body:
+                errors.append(f"Story [{i}]: missing summary or description")
+        self.assertEqual(errors, [], "Story rendering issues:\n" + "\n".join(errors))
+
+    def test_every_story_has_country_tags(self):
+        """Story cards show country tags from countries, countries_affected, or countries_involved."""
+        stories = self.data.get("top_stories", [])
+        errors = []
+        for i, s in enumerate(stories):
+            if not isinstance(s, dict):
+                continue
+            countries = (
+                s.get("countries")
+                or s.get("countries_affected")
+                or s.get("countries_involved")
+                or []
+            )
+            if not countries:
+                errors.append(f"Story [{i}] '{s.get('title', '?')[:40]}': no country tags")
+        self.assertEqual(errors, [], "Stories without country tags:\n" + "\n".join(errors))
+
+    def test_market_context_is_renderable(self):
+        """Market context must be a string, numeric chip data, or summary+moves dict."""
+        mc = self.data.get("market_context")
+        if mc is None:
+            self.skipTest("No market_context in briefing")
+        if isinstance(mc, str):
+            self.assertTrue(len(mc) > 0, "market_context string is empty")
+            return
+        self.assertIsInstance(mc, dict, "market_context must be string or dict")
+        # Must have either numeric chip fields or summary/notable_moves
+        has_chips = any(
+            mc.get(f)
+            for f in ["oil_brent_usd", "gold_usd", "eur_usd", "us_10y_yield", "dxy_index"]
+        )
+        has_summary = bool(mc.get("summary") or mc.get("notable_moves"))
+        self.assertTrue(
+            has_chips or has_summary,
+            f"market_context dict has neither chip data nor summary. Keys: {sorted(mc.keys())}",
+        )
+
+    def test_regional_summaries_are_renderable(self):
+        """Each regional summary must be a non-empty string or dict with summary key."""
+        rs = self.data.get("regional_summaries", {})
+        self.assertGreater(len(rs), 0, "regional_summaries is empty")
+        errors = []
+        for region, val in rs.items():
+            if isinstance(val, str):
+                if not val.strip():
+                    errors.append(f"Region '{region}': empty string")
+            elif isinstance(val, dict):
+                if not val.get("summary"):
+                    errors.append(f"Region '{region}': dict without 'summary' key")
+            else:
+                errors.append(f"Region '{region}': unexpected type {type(val).__name__}")
+        self.assertEqual(errors, [], "Regional summary issues:\n" + "\n".join(errors))
+
+
+# ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
 
