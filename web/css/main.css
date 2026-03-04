@@ -215,6 +215,7 @@ a:hover { text-decoration: underline; }
   position: relative;
   overflow: hidden;
   min-height: 0;
+  z-index: 0;  /* Create stacking context — contain Leaflet z-indices within map area */
 }
 
 #map-container {

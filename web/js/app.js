@@ -142,7 +142,10 @@
           }, 60000);
 
           initialized = true;
-        } catch(e) {}
+          console.log('[AlertTicker] Initialized:', criticalQueue.length, 'critical,', warningQueue.length, 'warning,', watchItems.length, 'watch');
+        } catch(e) {
+          console.error('[AlertTicker] Init failed:', e);
+        }
       },
 
       hide: function() {
@@ -256,18 +259,21 @@
     // Initialize data loader
     await DataLoader.init();
 
-    // Initialize alert ticker (fire-and-forget)
-    AlertTicker.init();
+    // Initialize alert ticker (parallel with map)
+    var tickerReady = AlertTicker.init();
 
     // Initialize country panel
     CountryPanel.init(document.getElementById('country-panel'));
 
-    // Initialize map
+    // Initialize map (parallel with ticker)
     await MapView.init('map-container', {
       onCountryClick: function(code) {
         CountryPanel.open(code);
       }
     });
+
+    // Ensure ticker is ready before route navigation
+    await tickerReady;
 
     // Initialize search
     Search.init(

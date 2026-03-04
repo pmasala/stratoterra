@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
 Stratoterra — UI Data Contract Tests
-Tests E2E-UI-001 through E2E-UI-005
+Tests E2E-UI-001 through E2E-UI-009
 
 Verifies that chunk files served to the frontend are present, loadable,
 within size limits, and contain the fields the UI depends on.
+Also includes frontend code quality checks (E2E-UI-009) to catch
+silent-failure anti-patterns like empty catch blocks and z-index conflicts.
 No third-party libraries required.
 """
 
@@ -794,6 +796,158 @@ class TestE2E_UI_008_BriefingRenderability(unittest.TestCase):
             else:
                 errors.append(f"Region '{region}': unexpected type {type(val).__name__}")
         self.assertEqual(errors, [], "Regional summary issues:\n" + "\n".join(errors))
+
+
+# ---------------------------------------------------------------------------
+# E2E-UI-009: Frontend code quality — catch silent-failure anti-patterns
+# ---------------------------------------------------------------------------
+
+WEB_DIR = os.path.join(REPO_ROOT, "web")
+JS_DIR = os.path.join(WEB_DIR, "js")
+CSS_DIR = os.path.join(WEB_DIR, "css")
+
+import re
+import glob as globmod
+
+
+class TestE2E_UI_009_FrontendCodeQuality(unittest.TestCase):
+    """E2E-UI-009: Static analysis of frontend JS/CSS for anti-patterns that
+    cause silent failures (empty catch blocks, z-index conflicts, missing
+    DOM element references)."""
+
+    def test_no_empty_catch_blocks(self):
+        """Empty catch blocks silently swallow errors, hiding runtime bugs.
+        Every catch must at least log the error."""
+        if not os.path.isdir(JS_DIR):
+            self.skipTest("web/js/ not found")
+        # Match catch(...) { } with only whitespace inside braces
+        empty_catch = re.compile(r'catch\s*\([^)]*\)\s*\{\s*\}')
+        errors = []
+        for js_file in sorted(globmod.glob(os.path.join(JS_DIR, "*.js"))):
+            with open(js_file, "r", encoding="utf-8") as f:
+                content = f.read()
+            for m in empty_catch.finditer(content):
+                # Find line number
+                line_num = content[:m.start()].count("\n") + 1
+                errors.append(
+                    f"{os.path.basename(js_file)}:{line_num}: "
+                    f"empty catch block swallows errors silently"
+                )
+        self.assertEqual(
+            errors, [],
+            "Empty catch blocks found (must log errors):\n" + "\n".join(errors),
+        )
+
+    def test_ticker_dom_ids_exist_in_html(self):
+        """Every DOM ID referenced by AlertTicker.init() must exist in index.html.
+        Missing IDs cause null references that crash silently inside try/catch."""
+        index_path = os.path.join(WEB_DIR, "index.html")
+        app_path = os.path.join(JS_DIR, "app.js")
+        if not os.path.isfile(index_path) or not os.path.isfile(app_path):
+            self.skipTest("index.html or app.js not found")
+
+        with open(index_path, "r", encoding="utf-8") as f:
+            html = f.read()
+        with open(app_path, "r", encoding="utf-8") as f:
+            js = f.read()
+
+        # Extract all getElementById('...') calls from ticker init section
+        id_refs = re.findall(r"document\.getElementById\(['\"]([^'\"]+)['\"]\)", js)
+        # Extract all id="..." from HTML
+        html_ids = set(re.findall(r'id="([^"]+)"', html))
+
+        missing = []
+        for dom_id in id_refs:
+            if dom_id not in html_ids:
+                missing.append(dom_id)
+        self.assertEqual(
+            missing, [],
+            f"JS references DOM IDs not found in HTML: {missing}",
+        )
+
+    def test_ticker_zindex_above_map_content(self):
+        """The alert ticker must have higher z-index than any map/content layer,
+        otherwise Leaflet panes or other positioned elements can cover it."""
+        main_css = os.path.join(CSS_DIR, "main.css")
+        if not os.path.isfile(main_css):
+            self.skipTest("main.css not found")
+
+        with open(main_css, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        # Extract z-index for .alert-ticker
+        ticker_match = re.search(
+            r'\.alert-ticker\s*\{[^}]*z-index:\s*(\d+)', content, re.DOTALL
+        )
+        if not ticker_match:
+            self.skipTest("Could not find .alert-ticker z-index in CSS")
+        ticker_z = int(ticker_match.group(1))
+
+        # #main-content must create a stacking context (z-index != auto)
+        # to contain Leaflet's internal z-indices within the map area
+        main_content_match = re.search(
+            r'#main-content\s*\{([^}]*)\}', content, re.DOTALL
+        )
+        if main_content_match:
+            mc_block = main_content_match.group(1)
+            has_zindex = re.search(r'z-index:\s*(\d+)', mc_block)
+            has_isolation = 'isolation' in mc_block
+            self.assertTrue(
+                has_zindex or has_isolation,
+                "#main-content must create a stacking context (z-index or isolation: isolate) "
+                "to contain Leaflet z-indices. Without this, map panes can render above the ticker."
+            )
+
+        # Ticker z-index must be well above typical content z-indices
+        self.assertGreaterEqual(
+            ticker_z, 900,
+            f".alert-ticker z-index is {ticker_z}, should be >= 900 to stay above all content",
+        )
+
+    def test_no_fire_and_forget_async_init(self):
+        """Critical async initializers (ticker, map, data) should be awaited,
+        not fire-and-forget. Unawaited init causes race conditions where
+        show()/hide() run before initialization completes."""
+        app_path = os.path.join(JS_DIR, "app.js")
+        if not os.path.isfile(app_path):
+            self.skipTest("app.js not found")
+
+        with open(app_path, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        # Build set of modules whose init is async by scanning their source files
+        async_modules = set()
+        for js_file in sorted(globmod.glob(os.path.join(JS_DIR, "*.js"))):
+            with open(js_file, "r", encoding="utf-8") as f:
+                src = f.read()
+            # Detect "init: async function" or "async init(" patterns
+            if re.search(r'init\s*:\s*async\s+function|async\s+init\s*\(', src):
+                # Extract module name from "var ModuleName = (function" or similar
+                mod_match = re.search(r'var\s+(\w+)\s*=\s*\(?\s*function', src)
+                if mod_match:
+                    async_modules.add(mod_match.group(1))
+
+        # Look for bare async init calls that are NOT awaited and NOT assigned
+        errors = []
+        lines = content.split("\n")
+        for i, line in enumerate(lines, 1):
+            stripped = line.strip()
+            if stripped.startswith("//") or stripped.startswith("/*"):
+                continue
+            match = re.match(r'^([A-Z]\w+)\.(init|load|fetch)\s*\(', stripped)
+            if match:
+                module_name = match.group(1)
+                # Only flag if this module's init is actually async
+                if module_name in async_modules:
+                    if not stripped.startswith("await") and "= " not in line:
+                        errors.append(
+                            f"app.js:{i}: '{stripped[:60]}' — async init not awaited or captured. "
+                            f"This causes race conditions."
+                        )
+        self.assertEqual(
+            errors, [],
+            "Fire-and-forget async calls found:\n" + "\n".join(errors),
+        )
 
 
 # ---------------------------------------------------------------------------
