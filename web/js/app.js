@@ -31,7 +31,7 @@
       tagLabelEl.textContent  = severity.toUpperCase();
       tagDotEl.className      = 'ticker-tag__dot' + (isCritical ? '' : ' hidden');
       contentEl.className     = 'ticker-content ticker-content--' + severity;
-      headlineEl.textContent  = alert.title.toUpperCase();
+      headlineEl.textContent  = (alert.title || alert.headline || '').toUpperCase();
       timestampEl.textContent = utcTime();
       currentAlert = alert;
     }
@@ -81,7 +81,7 @@
     function buildWatchScroll() {
       var html = watchItems.map(function(a) {
         return '<span class="ticker-scroll-item" data-alert-index="' + a._globalIndex + '">' +
-               esc(a.title.toUpperCase()) + '</span>' +
+               esc((a.title || a.headline || '').toUpperCase()) + '</span>' +
                '<span class="ticker-scroll-sep" aria-hidden="true">&#9670;</span>';
       }).join('');
       scrollTrackEl.innerHTML = html + html; // doubled for seamless loop

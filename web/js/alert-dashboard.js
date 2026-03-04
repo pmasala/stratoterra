@@ -72,16 +72,20 @@ var AlertDashboard = (function() {
     var html = '<div class="alert-section">';
     html += '<h3 class="alert-section__title" style="color:var(--alert-' + severity + ')">' + title + ' (' + alerts.length + ')</h3>';
     alerts.forEach(function(a) {
+      var alertTitle = a.title || a.headline || '';
+      var alertBody = a.description || a.details || a.summary || '';
+      var alertType = a.type || a.trigger || '';
+      var alertCountries = a.countries || (a.country_code ? [a.country_code] : []);
       html += '<div class="alert-card alert-card--' + severity + '" data-alert-index="' + (globalIdx++) + '">';
       html += '<div class="alert-card__header">';
       html += '<span class="alert-badge alert-badge--' + severity + '">' + severity + '</span>';
-      if (a.type) html += '<span class="alert-card__type">' + esc(a.type) + '</span>';
+      if (alertType) html += '<span class="alert-card__type">' + esc(alertType) + '</span>';
       html += '</div>';
-      html += '<h4 class="alert-card__title">' + esc(a.title) + '</h4>';
-      html += '<p class="alert-card__body">' + esc(a.description || a.summary) + '</p>';
-      if (a.countries && a.countries.length) {
+      html += '<h4 class="alert-card__title">' + esc(alertTitle) + '</h4>';
+      html += '<p class="alert-card__body">' + esc(alertBody) + '</p>';
+      if (alertCountries.length) {
         html += '<div class="alert-card__countries">';
-        a.countries.forEach(function(c) {
+        alertCountries.forEach(function(c) {
           html += '<span class="panel-sources__tag">' + esc(c) + '</span>';
         });
         html += '</div>';

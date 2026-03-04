@@ -21,14 +21,30 @@ var BriefingView = (function() {
 
     // Market Context Strip
     if (data.market_context) {
-      html += '<div class="market-strip">';
       var mc = data.market_context;
-      if (mc.oil_brent_usd) html += marketChip('Brent', '$' + mc.oil_brent_usd, mc.oil_change_pct);
-      if (mc.gold_usd) html += marketChip('Gold', '$' + mc.gold_usd, mc.gold_change_pct);
-      if (mc.eur_usd) html += marketChip('EUR/USD', mc.eur_usd.toFixed(4), mc.eur_usd_change_pct);
-      if (mc.us_10y_yield) html += marketChip('US 10Y', mc.us_10y_yield.toFixed(2) + '%', mc.us_10y_change_bps);
-      if (mc.dxy_index) html += marketChip('DXY', mc.dxy_index.toFixed(1), mc.dxy_change_pct);
-      html += '</div>';
+      if (typeof mc === 'string') {
+        // Plain text market context
+        html += '<div class="briefing-section"><h3>Market Context</h3><p>' + esc(mc) + '</p></div>';
+      } else if (mc.oil_brent_usd || mc.gold_usd || mc.eur_usd || mc.us_10y_yield || mc.dxy_index) {
+        // Structured numeric market data
+        html += '<div class="market-strip">';
+        if (mc.oil_brent_usd) html += marketChip('Brent', '$' + mc.oil_brent_usd, mc.oil_change_pct);
+        if (mc.gold_usd) html += marketChip('Gold', '$' + mc.gold_usd, mc.gold_change_pct);
+        if (mc.eur_usd) html += marketChip('EUR/USD', mc.eur_usd.toFixed(4), mc.eur_usd_change_pct);
+        if (mc.us_10y_yield) html += marketChip('US 10Y', mc.us_10y_yield.toFixed(2) + '%', mc.us_10y_change_bps);
+        if (mc.dxy_index) html += marketChip('DXY', mc.dxy_index.toFixed(1), mc.dxy_change_pct);
+        html += '</div>';
+      } else if (mc.summary || mc.notable_moves) {
+        // Summary + notable moves format
+        html += '<div class="briefing-section"><h3>Market Context</h3>';
+        if (mc.summary) html += '<p>' + esc(mc.summary) + '</p>';
+        if (mc.notable_moves && mc.notable_moves.length) {
+          html += '<ul>';
+          mc.notable_moves.forEach(function(m) { html += '<li>' + esc(typeof m === 'string' ? m : m.description || JSON.stringify(m)) + '</li>'; });
+          html += '</ul>';
+        }
+        html += '</div>';
+      }
     }
 
     // Top Stories
@@ -44,15 +60,17 @@ var BriefingView = (function() {
         html += '</div>';
         html += '<h4 class="story-card__title">' + esc(story.title) + '</h4>';
         html += '<p class="story-card__body">' + esc(story.summary || story.description) + '</p>';
-        if (story.countries && story.countries.length) {
+        var storyCountries = story.countries || story.countries_affected || story.countries_involved || [];
+        if (storyCountries.length) {
           html += '<div class="story-card__countries">';
-          story.countries.forEach(function(c) {
+          storyCountries.forEach(function(c) {
             html += '<span class="panel-sources__tag">' + esc(c) + '</span>';
           });
           html += '</div>';
         }
-        if (story.investor_action) {
-          html += '<div class="story-card__action"><strong>Investor action:</strong> ' + esc(story.investor_action) + '</div>';
+        var investorNote = story.investor_action || story.investor_impact;
+        if (investorNote) {
+          html += '<div class="story-card__action"><strong>Investor action:</strong> ' + esc(investorNote) + '</div>';
         }
         html += '</div>';
       });
