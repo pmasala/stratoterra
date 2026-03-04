@@ -93,22 +93,24 @@ const Utils = {
   getMetricValue(summary, metricId) {
     if (!summary || !METRIC_CONFIG[metricId]) return null;
     var field = METRIC_CONFIG[metricId].field;
+    var val = summary[field];
     // Handle trend fields that map to numeric values
     if (metricId === 'military_spending_trend') {
       var trendMap = { strong_growth: 12, growth: 6, stable: 0, decrease: -5, strong_decrease: -10 };
-      return trendMap[summary[field]] != null ? trendMap[summary[field]] : 0;
+      if (typeof val === 'number') return val;
+      return val != null && trendMap[val] != null ? trendMap[val] : null;
     }
     if (metricId === 'alert_severity') {
       var sevMap = { critical: 3, warning: 2, watch: 1, none: 0 };
-      return sevMap[summary[field]] != null ? sevMap[summary[field]] : 0;
+      return val != null && sevMap[val] != null ? sevMap[val] : 0;
     }
     if (metricId === 'gdp_growth_trend') {
-      // This can be a numeric value or a trend label
-      if (typeof summary[field] === 'number') return summary[field];
+      if (typeof val === 'number') return val;
       var growthMap = { strong_growth: 7, growth: 3, stable: 1, decrease: -1, strong_decrease: -4 };
-      return growthMap[summary[field]] != null ? growthMap[summary[field]] : summary.gdp_real_growth_pct || 0;
+      if (val != null && growthMap[val] != null) return growthMap[val];
+      return summary.gdp_real_growth_pct != null ? summary.gdp_real_growth_pct : null;
     }
-    return summary[field] != null ? summary[field] : null;
+    return val != null ? val : null;
   },
 
   formatMetricValue(value, metricId) {

@@ -62,6 +62,11 @@ const COLOR_SCALES = {
     const norm = Math.max(0, Math.min(1, (value + 10) / 25));
     return interpolateColor('#448aff', '#ffd54f', '#ff1744', norm);
   },
+  military_spending_pct_gdp: function(value) {
+    // 0 to 6% → blue→yellow→red
+    const norm = Math.max(0, Math.min(1, value / 6));
+    return interpolateColor('#448aff', '#ffd54f', '#ff1744', norm);
+  },
   alert_severity: function(value) {
     // 0=none, 1=watch, 2=warning, 3=critical
     if (value <= 0) return '#2a2a5a';
@@ -69,9 +74,9 @@ const COLOR_SCALES = {
     if (value <= 2) return '#ffab40';
     return '#ff1744';
   },
-  economic_complexity: function(value) {
-    // -2 to +2.5 → blue gradient
-    const norm = Math.max(0, Math.min(1, (value + 2) / 4.5));
+  composite_power: function(value) {
+    // 0 to 100 → blue gradient
+    const norm = Math.max(0, Math.min(1, value / 100));
     return interpolateColor('#1a1a3a', '#448aff', '#e8e8f0', norm);
   },
   energy_independence: function(value) {
@@ -92,8 +97,9 @@ const METRIC_CONFIG = {
   political_stability:   { label: 'Political Stability',   field: 'political_stability',    format: 'score',     legendMin: '0', legendMax: '1.0' },
   investment_risk:       { label: 'Investment Risk',        field: 'investment_risk_score',  format: 'score',     legendMin: 'Low', legendMax: 'High' },
   military_spending_trend:{ label: 'Military Spend Trend',  field: 'military_spending_trend',format: 'trend',     legendMin: 'Decline', legendMax: 'Growth' },
+  military_spending_pct_gdp:{ label: 'Military Spend (% GDP)', field: 'military_expenditure_pct_gdp', format: 'percent1', legendMin: '0%', legendMax: '6%' },
   alert_severity:        { label: 'Alert Severity',         field: 'max_alert_severity',     format: 'severity',  legendMin: 'None', legendMax: 'Critical' },
-  economic_complexity:   { label: 'Economic Complexity',    field: 'economic_complexity_index', format: 'decimal2', legendMin: '-2', legendMax: '+2.5' },
+  composite_power:       { label: 'National Power Index',   field: 'composite_national_power_index', format: 'decimal2', legendMin: '0', legendMax: '100' },
   energy_independence:   { label: 'Energy Independence',    field: 'energy_independence',    format: 'score',     legendMin: '0', legendMax: '1.0' },
   trade_openness:        { label: 'Trade Openness (%)',     field: 'trade_openness_pct',     format: 'percent0',  legendMin: '0%', legendMax: '200%' }
 };
