@@ -340,8 +340,10 @@
     var dateEl = document.getElementById('last-updated-date');
     if (dateEl) {
       var summary = DataLoader.getSummary();
-      if (summary.length > 0 && summary[0].last_updated) {
-        dateEl.textContent = Utils.formatDate(summary[0].last_updated);
+      var meta = DataLoader.getSummaryMeta();
+      var lastDate = meta.generated_at || (summary.length > 0 && summary[0].last_updated);
+      if (lastDate) {
+        dateEl.textContent = Utils.formatDate(lastDate);
       } else {
         dateEl.textContent = 'Not yet available';
       }

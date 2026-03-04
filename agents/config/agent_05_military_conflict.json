@@ -36,6 +36,27 @@
     "base_closed"
   ],
   "active_conflict_countries": "read from data/countries/",
+  "frequency_tiers": {
+    "annual": {
+      "ttl_days": 365,
+      "part": "A",
+      "description": "Structured military data: expenditure, personnel, equipment, nuclear, arms transfers, alliances",
+      "sources": ["sipri.milex", "sipri.arms_transfers", "sipri.nuclear", "global_firepower"]
+    },
+    "weekly": {
+      "ttl_days": 7,
+      "part": "B",
+      "description": "Conflict updates, military exercises, arms deals, nuclear/missile activity, cyber operations",
+      "sources": ["acled", "news", "iiss"]
+    }
+  },
+  "cache_config": {
+    "registry_file": "agents/config/cache_registry.json",
+    "frequency_file": "agents/config/factor_frequency_registry.json",
+    "calendar_file": "agents/config/release_calendar.json",
+    "skill_file": "agents/skills/cache_check.md",
+    "event_triggers_file": "staging/raw_collected/news_events_{DATE}.json"
+  },
   "retry_on_failure": true,
   "idempotent": true,
   "prompt_file": "agents/prompts/agent_05_military_conflict.md"

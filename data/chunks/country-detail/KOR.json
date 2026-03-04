@@ -3,8 +3,8 @@
   "country_name": "South Korea",
   "tier": 1,
   "region": "east_asia",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 1875388209406.8,
@@ -84,25 +84,25 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 1455.35,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1439.82,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 3.6,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 3.65,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "equity_index_level": {
-      "value": 6244.13,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 4197,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 835148800000,
@@ -124,6 +124,13 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -7.24,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
     }
   },
   "demographic": {
@@ -265,12 +272,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.593,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 0.82,
+      "confidence": 0.82,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W10b",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
+      "change_note": "Korea imports ~70% of oil via Hormuz-adjacent routes. Dual shock from Hormuz and Suez.",
+      "previous_value": 0.593
     },
     "composite_national_power_index": {
       "value": 65.5,
@@ -281,12 +290,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 10,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 60,
+      "confidence": 0.75,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "run_id": "2026-W10b",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "KOSPI -7.24% crash; market circuit breakers triggered; oil shock exposure. +50bps from 10.",
+      "previous_value": 10
     },
     "market_accessibility_score": {
       "value": 0.714,
@@ -298,26 +309,40 @@
     }
   },
   "metadata": {
-    "active_flags": [],
+    "active_flags": [
+      {
+        "factor_path": "economy.macroeconomic.equity_index_level",
+        "value": 4197,
+        "flagged_at": "2026-03-03T22:30:00Z",
+        "run_id": "2026-W10b"
+      },
+      {
+        "factor_path": "economy.macroeconomic.equity_index_daily_change_pct",
+        "value": -7.24,
+        "flagged_at": "2026-03-03T22:30:00Z",
+        "run_id": "2026-W10b"
+      }
+    ],
     "update_count": 66,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "South Korea navigates post-Yoon political stabilization alongside external energy and security headwinds. Ex-President Yoon was sentenced to life for insurrection on Feb 19, closing a turbulent political chapter. The Lee government is stabilizing institutions. Energy independence at 15% makes Korea highly exposed to the Hormuz closure. Semiconductor cycle recovery provides a growth offset. North Korea's hypersonic missile test adds regional security concerns.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "South Korea suffered its worst single-day equity market crash since April 2024, with KOSPI falling 7.24% and circuit breakers triggered. The dual shock of Iran crisis risk-off sentiment and North Korea's deployment of KN-25 600mm multiple rocket systems to frontline positions drove both financial and geopolitical risk repricing. South Korea imports approximately 88% of its oil, with a substantial share transiting Hormuz, creating severe energy cost exposure. Bond yields rose and the KRW weakened as foreign capital fled.",
     "key_changes_this_week": [
-      "Ex-President Yoon sentenced to life for insurrection (Feb 19, major)",
-      "Lee government political stabilization trend positive",
-      "Energy independence at 15% -- highly exposed to Hormuz oil disruption (Mar 1)",
-      "Semiconductor recovery supports growth trajectory",
-      "North Korea tested hypersonic missiles; regional security deteriorated"
+      "KOSPI fell 7.24% — worst single-day decline since April 2024; circuit breakers triggered",
+      "North Korea deployed KN-25 600mm MRLs to frontline positions; military tension elevated",
+      "Freedom Shield 26 exercise scheduled March 9-19; US-ROK military posture review",
+      "Hormuz closure threatens South Korea's oil import supply chain (88% import dependency)",
+      "KRW under depreciation pressure; BOK intervention signals",
+      "Bond yields rose on risk repricing; Samsung/SK Hynix supply chains under monitoring"
     ],
-    "outlook": "Korea's political normalization is a structural positive, offsetting energy vulnerability in the near term. Semiconductor exports remain the key growth driver -- Samsung, SK Hynix benefit from AI demand cycle. If oil prices remain elevated, BOK may delay rate cuts to contain imported inflation. China-Japan sanctions signal broader East Asian trade fragmentation risk relevant to Korea's supply chains.",
-    "investor_implications": "Korean semiconductor names (Samsung, SK Hynix) remain conviction overweights on AI cycle. Energy cost pass-through pressures Korean industrial margins. KRW may weaken on terms-of-trade deterioration. KOSPI provides tactical entry on any Hormuz-driven selloff if semiconductor fundamentals hold.",
-    "data_quality_note": "South Korea macro data is high quality. Political events are officially confirmed. Energy independence figure from IEA data."
+    "outlook": "South Korea's heavy structural exposure to both Hormuz oil imports and global trade volumes makes it one of the most macro-vulnerable developed economies in this crisis. The Bank of Korea may intervene to stabilize KRW, but rate cuts are constrained by energy-driven inflation. If North Korea perceives US military attention as diverted to the Middle East, the risk of opportunistic provocation increases materially.",
+    "investor_implications": "Korean equities are oversold on panic selling but structural risks remain elevated — do not interpret the KOSPI crash as a pure buying opportunity. Samsung Electronics and SK Hynix supply chain exposure (Taiwan Strait + Hormuz) warrants monitoring. Korea sovereign CDS spreads are widening; KTBs (Korean Treasury Bonds) offer relative value on BOK support expectation but carry geopolitical tail risk.",
+    "data_quality_note": "Market data is intraday and may not fully reflect final settlement. North Korean military deployment data from ROK Joint Chiefs of Staff reporting. Moderate-high confidence."
   },
   "code": "KOR",
   "name": "South Korea",
@@ -386,9 +411,9 @@
       "total_imports_usd": 758723500000,
       "gdp_growth_forecast_2026_pct": 1.8,
       "inflation_forecast_2026_pct": 1.8,
-      "exchange_rate_vs_usd": 1455.35,
-      "sovereign_bond_yield_10yr_pct": 3.6,
-      "equity_index_level": 6244.13,
+      "exchange_rate_vs_usd": 1439.82,
+      "sovereign_bond_yield_10yr_pct": 3.65,
+      "equity_index_level": 4197,
       "top_export_partners": [
         {
           "country": "CHN",
@@ -432,7 +457,8 @@
           "country": "SAU",
           "pct_of_total": 5.2
         }
-      ]
+      ],
+      "equity_index_daily_change_pct": -7.24
     },
     "military": {
       "military_spending_usd": 48000000000,
@@ -448,9 +474,9 @@
     "derived": {
       "resource_self_sufficiency_index": 0.25,
       "energy_independence_index": 0.17,
-      "supply_chain_chokepoint_exposure": 0.593,
+      "supply_chain_chokepoint_exposure": 0.82,
       "composite_national_power_index": 65.5,
-      "political_risk_premium_bps": 10,
+      "political_risk_premium_bps": 60,
       "market_accessibility_score": 0.714
     }
   },

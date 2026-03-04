@@ -3,8 +3,8 @@
   "country_name": "India",
   "tier": 1,
   "region": "south_asia",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 3909891533858.08,
@@ -84,25 +84,25 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 91.4203,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 91.03,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 6.7,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "equity_index_level": {
-      "value": 81287.19,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 85063,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 822010899401.314,
@@ -124,6 +124,13 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -0.44,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
     }
   },
   "demographic": {
@@ -320,19 +327,19 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "India faces significant oil shock exposure as the largest economy most dependent on Gulf energy imports. Importing approximately 85% of its oil needs via Hormuz-affected routes, the closure threatens inflation (CPI trending from 2.8% to 4%) and the current account deficit. The rupee is under depreciation pressure at 91.42/USD. GDP trend is decreasing from 6.6% to 6.2% but India remains the fastest-growing major economy. Government faces a choice between fuel subsidies and fiscal consolidation.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "India's Sensex fell a modest 0.44%, outperforming most Asian peers, reflecting India's growing economic diversification and the positive near-term signal from a US-India trade deal implementation at an 18% tariff rate — significantly below the Section 122 global 15% floor after bilateral negotiations. The Pakistan-Afghanistan open war on India's western border creates security externalities that will require monitoring, particularly regarding CPEC disruption and border stability. India has committed to stop purchasing Russian oil as part of its US alignment, raising near-term import cost concerns.",
     "key_changes_this_week": [
-      "Hormuz closure critically threatens India's oil imports (85% import dependency) (Mar 1, major)",
-      "CPI inflation trending from 2.8% to 4% on energy pass-through",
-      "Rupee under depreciation pressure at 91.42/USD",
-      "GDP trend decreasing from 6.6% to 6.2% forecast",
-      "Current account deficit widening on higher oil import bill"
+      "Sensex fell only 0.44% — outperforming Asian peers; relative resilience",
+      "US-India trade deal implementation at 18% preferential tariff rate",
+      "Agreement to stop buying Russian oil; near-term import cost headwind",
+      "Pakistan-Afghanistan war on western border creates regional security externalities",
+      "Oil import costs surging from Hormuz closure; India heavily import-dependent",
+      "Rupee under modest pressure; RBI monitoring capital flows"
     ],
-    "outlook": "India's growth premium faces near-term compression from the oil shock. If Hormuz remains closed for more than 2-4 weeks, inflation could exceed 5% and force RBI to pause rate normalization. Fiscal impact of fuel subsidies could add 0.5-0.8% of GDP to the deficit. India's non-alignment diplomacy allows it to potentially source discounted Russian oil, providing partial offset. The medium-term structural growth story (demographics, digital infrastructure, manufacturing shift) remains intact.",
-    "investor_implications": "Overweight Indian IT services (USD earners, energy-agnostic) and underweight energy-intensive industrials. INR hedge recommended given depreciation pressure. Indian government bonds face yield pressure on inflation and fiscal concerns. Monitor RBI statements for any emergency rate action. India remains a structural overweight but tactical caution warranted.",
-    "data_quality_note": "India macro data is moderate-to-high quality. Oil import dependency is well-documented. GDP and inflation figures from RBI and IMF sources."
+    "outlook": "India's structural growth story remains intact but near-term headwinds from oil import costs and regional conflict proximity are real. The US trade deal is a significant long-term positive for export-oriented sectors. RBI will need to balance inflation (energy) against growth support.",
+    "investor_implications": "India remains one of the more attractive EM investment destinations despite near-term noise. IT services, pharmaceuticals, and domestic consumption names are preferred. Energy-importing sectors face margin pressure. INR moderate depreciation risk from oil import surge."
   },
   "code": "IND",
   "name": "India",
@@ -398,9 +405,9 @@
       "total_imports_usd": 923567747218.907,
       "gdp_growth_forecast_2026_pct": 6.2,
       "inflation_forecast_2026_pct": 4,
-      "exchange_rate_vs_usd": 91.4203,
+      "exchange_rate_vs_usd": 91.03,
       "sovereign_bond_yield_10yr_pct": 6.7,
-      "equity_index_level": 81287.19,
+      "equity_index_level": 85063,
       "top_export_partners": [
         {
           "country": "USA",
@@ -445,7 +452,8 @@
           "pct_of_total": 5.8
         }
       ],
-      "avg_applied_tariff_pct": 16.2
+      "avg_applied_tariff_pct": 16.2,
+      "equity_index_daily_change_pct": -0.44
     },
     "military": {
       "military_spending_usd": 83500000000,

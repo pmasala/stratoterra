@@ -1,0 +1,202 @@
+{
+  "version": "1.0",
+  "description": "Known publication dates for annual/quarterly data sources. Agents check this to determine if a new edition has been released since their last fetch.",
+  "year": 2026,
+  "sources": {
+    "worldbank.wdi": {
+      "name": "World Bank World Development Indicators",
+      "frequency": "annual",
+      "typical_release_month": 6,
+      "expected_release_date": "2026-06-15",
+      "last_known_release": "2025-06-15",
+      "covers_year": 2024,
+      "factors": ["endowments.demographics", "economy.macroeconomic.gdp_composition", "economy.macroeconomic.external_debt", "economy.macroeconomic.gini_coefficient", "economy.capability.infrastructure"]
+    },
+    "worldbank.wgi": {
+      "name": "World Bank Worldwide Governance Indicators",
+      "frequency": "annual",
+      "typical_release_month": 9,
+      "expected_release_date": "2026-09-15",
+      "last_known_release": "2025-09-15",
+      "covers_year": 2024,
+      "factors": ["institutions.political.wgi_voice_accountability", "institutions.political.wgi_political_stability", "institutions.political.wgi_government_effectiveness", "institutions.political.wgi_regulatory_quality", "institutions.political.wgi_rule_of_law", "institutions.political.wgi_control_of_corruption"]
+    },
+    "imf.weo": {
+      "name": "IMF World Economic Outlook",
+      "frequency": "biannual",
+      "release_dates": ["2026-04-15", "2026-10-15"],
+      "last_known_release": "2025-10-15",
+      "factors": ["economy.macroeconomic.gdp_nominal_usd", "economy.macroeconomic.gdp_real_growth_rate_pct", "economy.macroeconomic.inflation_rate_cpi_pct"]
+    },
+    "imf.ifs": {
+      "name": "IMF International Financial Statistics",
+      "frequency": "monthly",
+      "typical_release_day": 15,
+      "factors": ["economy.macroeconomic.foreign_exchange_reserves", "economy.macroeconomic.money_supply_m2_growth_pct"]
+    },
+    "un_comtrade": {
+      "name": "UN Comtrade Database",
+      "frequency": "quarterly",
+      "typical_lag_months": 3,
+      "factors": ["economy.macroeconomic.top_export_partners", "economy.macroeconomic.top_import_partners", "economy.macroeconomic.top_export_products", "economy.macroeconomic.top_import_products", "bilateral.trade"]
+    },
+    "undp.hdr": {
+      "name": "UNDP Human Development Report",
+      "frequency": "annual",
+      "typical_release_month": 9,
+      "expected_release_date": "2026-09-01",
+      "last_known_release": "2025-09-01",
+      "covers_year": 2024,
+      "factors": ["endowments.demographics.human_development_index"]
+    },
+    "eiu.democracy_index": {
+      "name": "EIU Democracy Index",
+      "frequency": "annual",
+      "typical_release_month": 2,
+      "expected_release_date": "2026-02-15",
+      "last_known_release": "2026-02-15",
+      "covers_year": 2025,
+      "factors": ["institutions.political.democracy_index", "institutions.political.democracy_index_trend"]
+    },
+    "freedom_house": {
+      "name": "Freedom House Freedom in the World",
+      "frequency": "annual",
+      "typical_release_month": 2,
+      "expected_release_date": "2026-02-28",
+      "last_known_release": "2026-02-28",
+      "covers_year": 2025,
+      "factors": ["institutions.political.freedom_house_status", "institutions.political.freedom_house_score"]
+    },
+    "transparency_intl.cpi": {
+      "name": "Transparency International Corruption Perceptions Index",
+      "frequency": "annual",
+      "typical_release_month": 1,
+      "expected_release_date": "2026-01-28",
+      "last_known_release": "2026-01-28",
+      "covers_year": 2025,
+      "factors": ["institutions.political.corruption_perception_index"]
+    },
+    "rsf.press_freedom": {
+      "name": "RSF World Press Freedom Index",
+      "frequency": "annual",
+      "typical_release_month": 5,
+      "expected_release_date": "2026-05-03",
+      "last_known_release": "2025-05-03",
+      "covers_year": 2024,
+      "factors": ["institutions.political.press_freedom_index_rank"]
+    },
+    "sipri.milex": {
+      "name": "SIPRI Military Expenditure Database",
+      "frequency": "annual",
+      "typical_release_month": 4,
+      "expected_release_date": "2026-04-20",
+      "last_known_release": "2025-04-20",
+      "covers_year": 2024,
+      "factors": ["military.expenditure"]
+    },
+    "sipri.arms_transfers": {
+      "name": "SIPRI Arms Transfers Database",
+      "frequency": "annual",
+      "typical_release_month": 3,
+      "expected_release_date": "2026-03-10",
+      "last_known_release": "2025-03-10",
+      "covers_year": 2024,
+      "factors": ["military.arms_transfers"]
+    },
+    "sipri.nuclear": {
+      "name": "SIPRI Yearbook (Nuclear Forces)",
+      "frequency": "annual",
+      "typical_release_month": 6,
+      "expected_release_date": "2026-06-15",
+      "last_known_release": "2025-06-15",
+      "covers_year": 2025,
+      "factors": ["military.nuclear"]
+    },
+    "global_firepower": {
+      "name": "Global Firepower Index",
+      "frequency": "annual",
+      "typical_release_month": 1,
+      "expected_release_date": "2026-01-15",
+      "last_known_release": "2026-01-15",
+      "covers_year": 2026,
+      "factors": ["military.personnel", "military.army_equipment", "military.navy_equipment", "military.air_force_equipment"]
+    },
+    "usgs.mineral_summaries": {
+      "name": "USGS Mineral Commodity Summaries",
+      "frequency": "annual",
+      "typical_release_month": 1,
+      "expected_release_date": "2026-01-31",
+      "last_known_release": "2026-01-31",
+      "covers_year": 2025,
+      "factors": ["endowments.natural_resources.proven_reserves", "endowments.natural_resources.annual_production", "endowments.natural_resources.global_share"]
+    },
+    "eia.annual": {
+      "name": "EIA International Energy Outlook",
+      "frequency": "annual",
+      "typical_release_month": 10,
+      "expected_release_date": "2026-10-01",
+      "last_known_release": "2025-10-01",
+      "covers_year": 2024,
+      "factors": ["economy.capability.energy_mix", "economy.capability.electricity"]
+    },
+    "eia.monthly": {
+      "name": "EIA Short-Term Energy Outlook",
+      "frequency": "monthly",
+      "typical_release_day": 10,
+      "factors": ["endowments.natural_resources.energy_current_production"]
+    },
+    "wipo.gii": {
+      "name": "WIPO Global Innovation Index",
+      "frequency": "annual",
+      "typical_release_month": 9,
+      "expected_release_date": "2026-09-15",
+      "last_known_release": "2025-09-15",
+      "covers_year": 2025,
+      "factors": ["economy.capability.global_innovation_index"]
+    },
+    "harvard.eci": {
+      "name": "Harvard Atlas of Economic Complexity",
+      "frequency": "annual",
+      "typical_release_month": 7,
+      "expected_release_date": "2026-07-01",
+      "last_known_release": "2025-07-01",
+      "covers_year": 2024,
+      "factors": ["economy.capability.economic_complexity"]
+    },
+    "ndgain": {
+      "name": "ND-GAIN Country Index",
+      "frequency": "annual",
+      "typical_release_month": 10,
+      "expected_release_date": "2026-10-15",
+      "last_known_release": "2025-10-15",
+      "covers_year": 2024,
+      "factors": ["endowments.climate.climate_change_vulnerability_index", "endowments.climate.climate_change_readiness_index"]
+    },
+    "fund_for_peace.fsi": {
+      "name": "Fund for Peace Fragile States Index",
+      "frequency": "annual",
+      "typical_release_month": 5,
+      "expected_release_date": "2026-05-15",
+      "last_known_release": "2025-05-15",
+      "covers_year": 2025,
+      "factors": ["institutions.political.fragile_states_index"]
+    },
+    "imf.cdis": {
+      "name": "IMF Coordinated Direct Investment Survey",
+      "frequency": "annual",
+      "typical_release_month": 12,
+      "expected_release_date": "2026-12-01",
+      "last_known_release": "2025-12-01",
+      "covers_year": 2024,
+      "factors": ["bilateral.financial"]
+    },
+    "worldbank.lpi": {
+      "name": "World Bank Logistics Performance Index",
+      "frequency": "biennial",
+      "expected_release_date": "2027-06-01",
+      "last_known_release": "2025-06-01",
+      "covers_year": 2024,
+      "factors": ["economy.capability.infrastructure.logistics_performance_index"]
+    }
+  }
+}

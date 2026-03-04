@@ -42,6 +42,65 @@
     "tier_2_min_indicators": 8,
     "tier_3_min_indicators": 4
   },
+  "frequency_tiers": {
+    "monthly": {
+      "ttl_days": 30,
+      "indicators": [
+        "inflation_rate_cpi_pct",
+        "core_inflation_pct",
+        "unemployment_rate_pct",
+        "youth_unemployment_rate_pct",
+        "central_bank_policy_rate_pct",
+        "money_supply_m2_growth_pct",
+        "real_interest_rate_pct"
+      ],
+      "sources": ["imf.ifs", "national_stats", "central_banks"]
+    },
+    "quarterly": {
+      "ttl_days": 90,
+      "indicators": [
+        "gdp_nominal_usd",
+        "gdp_ppp_usd",
+        "gdp_per_capita_usd",
+        "gdp_real_growth_rate_pct",
+        "fiscal_balance_pct_gdp",
+        "public_debt_pct_gdp",
+        "current_account_balance_pct_gdp",
+        "trade_balance_usd",
+        "total_exports_usd",
+        "total_imports_usd",
+        "fdi_inflow_usd",
+        "fdi_outflow_usd",
+        "foreign_exchange_reserves_usd",
+        "gold_reserves_tonnes"
+      ],
+      "sources": ["worldbank.wdi", "imf.weo", "imf.ifs"]
+    },
+    "annual": {
+      "ttl_days": 365,
+      "indicators": [
+        "population_total",
+        "population_growth_rate_pct",
+        "median_age",
+        "life_expectancy_years",
+        "hdi_score",
+        "gdp_composition",
+        "external_debt",
+        "gini_coefficient",
+        "economic_complexity",
+        "global_innovation_index",
+        "infrastructure",
+        "natural_resources"
+      ],
+      "sources": ["worldbank.wdi", "worldbank.wgi", "undp.hdr", "usgs.mineral_summaries", "eia.annual", "wipo.gii", "harvard.eci"]
+    }
+  },
+  "cache_config": {
+    "registry_file": "agents/config/cache_registry.json",
+    "frequency_file": "agents/config/factor_frequency_registry.json",
+    "calendar_file": "agents/config/release_calendar.json",
+    "skill_file": "agents/skills/cache_check.md"
+  },
   "retry_on_failure": true,
   "idempotent": true,
   "prompt_file": "agents/prompts/agent_01_official_stats.md"

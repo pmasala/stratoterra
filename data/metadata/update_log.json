@@ -28,5 +28,30 @@
     "skipped_non_model_updates": 13,
     "errors": 0,
     "fx_convention_note": "EUR-zone, GBP, AUD FX rates normalized to local/USD convention (previously stored as USD/local). All exchange_rate_vs_usd values now consistently represent units of local currency per 1 USD."
+  },
+  {
+    "run_id": "2026-W10b",
+    "completed_at": "2026-03-03T22:30:00Z",
+    "countries_updated": 48,
+    "relations_updated": 0,
+    "updates_accepted": 99,
+    "updates_accepted_with_note": 6,
+    "updates_flagged": 4,
+    "updates_escalated_accepted": 5,
+    "updates_rejected": 0,
+    "flags_applied": [
+      {
+        "country_code": "KOR",
+        "factor_path": "economy.macroeconomic.equity_index_level",
+        "value": 4197,
+        "reason": "KOSPI level at 4197 \u2014 anomaly flag set by source agent. Level consistent with -7.24% drop. Circuit breakers triggered (see upd_077). While the level itself is internally consistent, the extreme daily move context requires UI flagging. Accepted but flagged for display."
+      },
+      {
+        "country_code": "KOR",
+        "factor_path": "economy.macroeconomic.equity_index_daily_change_pct",
+        "value": -7.24,
+        "reason": "KOSPI daily change -7.24% \u2014 EXTREME. Circuit breakers triggered per source agent. Driven by dual shock: NK KN-25 MLRS deployment to DMZ (event sig_2026-03-03_018) plus global risk-off from Iran crisis. This is one of the largest single-day KOSPI declines since the 2020 COVID crash. Plausible given the event context but requires UI FLAG and human awareness. Integrating as-is with FLAG status."
+      }
+    ]
   }
 ]

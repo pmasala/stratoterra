@@ -10,6 +10,10 @@ Agent ID: `agent_04` | Phase: 1 (GATHER) | Run ID: {RUN_ID}
 ## Inputs
 - `/data/indices/country_list.json` — list of country codes and tiers
 - `/data/metadata/last_update.json` — what was last collected and when
+- `/agents/config/cache_registry.json` — cache state from previous runs
+- `/agents/config/factor_frequency_registry.json` — frequency classification
+- `/agents/config/release_calendar.json` — known source publication dates
+- `/staging/raw_collected/news_events_{DATE}.json` — for event_triggers (from Agent 3)
 
 ## Outputs
 - `/staging/raw_collected/trade_sanctions_{DATE}.json`
@@ -25,7 +29,40 @@ No API keys are required.
 
 ---
 
-## PART A: STRUCTURED DATA COLLECTION
+## CACHE-AWARE FETCHING
+
+**Before collecting any data, follow the cache-check skill in `/agents/skills/cache_check.md`.**
+
+### Frequency Tiers for This Agent
+
+#### QUARTERLY — Part A structured data (skip if <90 days since last fetch)
+- Top export/import partners with % shares → UN Comtrade
+- Top export/import products with % shares → UN Comtrade
+- Average applied tariff rate % → WTO
+- Trade openness (trade/GDP %) → World Bank
+- Active FTA list and count → WTO, bilateral sources
+
+#### WEEKLY — Part B event monitoring (always run)
+- Sanctions status (OFAC, EU, UN) → always scan
+- Sanctions changes, trade agreements, WTO disputes, tariff changes, chokepoint disruptions
+
+### Event Override
+Read `event_triggers` from Agent 3's output. If any trigger affects trade/sanctions factors (e.g., "new sanctions imposed on X", "major trade agreement signed"), **force-refresh** the relevant Part A data for affected countries even if quarterly cache is fresh.
+
+---
+
+## Step 0: Cache Check
+1. Read `cache_registry.json`, `factor_frequency_registry.json`, `release_calendar.json`.
+2. Read Agent 3's output for `event_triggers` affecting this agent.
+3. Determine if Part A (quarterly structured data) is due for refresh.
+4. Log all cache decisions in `cache_decisions` array.
+5. Part B (weekly events) always runs.
+
+---
+
+## PART A: STRUCTURED DATA COLLECTION (QUARTERLY — skip if cached)
+
+**Only run this section if quarterly data is due (≥90 days since last fetch) or event-triggered.**
 
 Collect per-country factor values. These become `DIRECT_UPDATE` records that populate the factor model.
 
@@ -89,6 +126,7 @@ Each structured data point as:
   "source_url": "https://...",
   "source_date": "2025",
   "confidence": 0.80,
+  "frequency_tier": "quarterly",
   "notes": ""
 }
 ```
@@ -97,7 +135,7 @@ Each structured data point as:
 
 ---
 
-## PART B: WEEKLY EVENT MONITORING
+## PART B: WEEKLY EVENT MONITORING (always run)
 
 Monitor changes in the past 7 days. These become `SIGNAL` records.
 
@@ -155,6 +193,7 @@ Full output file structure:
   "agent": "trade_sanctions_gatherer",
   "run_id": "{RUN_ID}",
   "collection_date": "{DATE}",
+  "cache_decisions": [...],
   "records": [...],
   "summary": {
     "total_records": 0,
@@ -165,7 +204,9 @@ Full output file structure:
     "trade_agreements": 0,
     "wto_disputes": 0,
     "tariff_changes": 0,
-    "chokepoint_events": 0
+    "chokepoint_events": 0,
+    "part_a_status": "fetched | skipped_cached | partial_event_override",
+    "part_b_status": "fetched"
   }
 }
 ```
@@ -176,4 +217,5 @@ Full output file structure:
 - Target: at least 6 structured indicators per Tier 1, 4 per Tier 2
 
 ## Time Budget
-Target: 25 minutes total. Part A: ~12 min. Part B: ~13 min.
+- **Typical week (Part A cached):** ~13 minutes (Part B only)
+- **Quarter boundary (Part A due):** ~25 minutes (Part A + Part B)

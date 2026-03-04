@@ -3,8 +3,8 @@
   "country_name": "Saudi Arabia",
   "tier": 1,
   "region": "middle_east",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 1239804533333.33,
@@ -84,11 +84,11 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 3.75,
+      "value": 3.7504,
       "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 368567152141.103,
@@ -235,12 +235,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.496,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 0.92,
+      "confidence": 0.82,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W10b",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
+      "change_note": "Hormuz closure blocks ~12mbpd Saudi oil exports. Direct Iranian strikes on Saudi territory.",
+      "previous_value": 0.496
     },
     "composite_national_power_index": {
       "value": 49.2,
@@ -251,12 +253,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 305,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 405,
+      "confidence": 0.75,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "run_id": "2026-W10b",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "Iranian drone strikes on US Embassy Riyadh; exposed to Hormuz closure. +100bps from 305.",
+      "previous_value": 305
     },
     "market_accessibility_score": {
       "value": 0.468,
@@ -275,19 +279,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "Saudi Arabia faces a paradoxical position: oil price surge benefits revenue but Hormuz closure (52% chokepoint exposure) physically blocks export routes. IRGC attacks on regional US bases include Saudi-proximate installations. Political stability trend is decreasing as the Kingdom navigates between US alliance obligations and Iranian retaliation risk. Vision 2030 diversification projects face disruption from regional instability. GDP trend is decreasing despite the oil price windfall.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "Saudi Arabia is caught directly in the Iran-US crossfire with severe economic consequences. Iranian drones struck the US Embassy in Riyadh in a retaliatory salvo targeting Gulf US partners. The Hormuz closure has idled Ras Tanura and Ju'aymah terminals, blocking the vast majority of Saudi crude exports and triggering a Fitch warning on sovereign rating risk. Saudi Aramco VLCC freight rates surged 94% as tankers scramble for alternative routing. The East-West Pipeline (5 mbpd capacity) provides partial relief via Yanbu on the Red Sea coast, but Red Sea Houthi activity constrains that exit too.",
     "key_changes_this_week": [
-      "Strait of Hormuz closure at 70% traffic collapse; 52% Saudi chokepoint exposure (Mar 1, critical)",
-      "IRGC attacks on regional US bases near Saudi territory (Mar 1)",
-      "Political stability trend decrease as Kingdom navigates US-Iran tensions",
-      "GDP trend decrease despite oil price surge due to export route disruption",
-      "Vision 2030 projects face regional instability headwinds"
+      "Iranian drones struck US Embassy in Riyadh; Saudi air defenses engaged",
+      "Hormuz closure blocked majority of Saudi crude exports; Ras Tanura and Ju'aymah terminals idled",
+      "VLCC freight rates surged 94% on rerouting demand",
+      "Fitch warned on Saudi sovereign rating; bond spreads widening",
+      "East-West Pipeline (5 mbpd) activated as partial export alternative via Yanbu",
+      "Oil price surge partially offsets volume loss; net revenue impact negative due to export blockage"
     ],
-    "outlook": "Saudi Arabia's near-term outlook hinges on Hormuz reopening timeline and Iranian retaliation scope. Alternative pipeline capacity (East-West Pipeline to Yanbu on Red Sea) can partially offset Hormuz closure but at reduced volume. If conflict extends beyond 4-6 weeks, Vision 2030 FDI commitments face cancellation risk. The Aramco IPO tranche that was being considered is likely shelved.",
-    "investor_implications": "Aramco: paradoxically negative as export routes are blocked despite higher prices. Saudi sovereign bonds face spread widening on regional risk. NEOM and entertainment giga-projects face timeline delays. Overweight Saudi pipeline/logistics infrastructure that can redirect flows to Red Sea.",
-    "data_quality_note": "Saudi macro data is moderate quality. Oil export route details from industry sources. Chokepoint exposure calculated from trade flow data. CRITICAL alert active."
+    "outlook": "Economic damage accumulates with each day Hormuz remains closed. The East-West Pipeline provides a partial lifeline but cannot fully compensate for blocked Gulf terminal exports. If Hormuz closure extends beyond two weeks, Saudi Arabia faces a meaningful sovereign fiscal shortfall despite its substantial sovereign wealth buffer ($940B+ ARAMCO + PIF). Vision 2030 diversification projects face delays as capital allocation priorities shift.",
+    "investor_implications": "Saudi Aramco investors face significant near-term downside as export volumes are constrained even while oil prices surge — a paradoxical outcome that compresses realized revenue. Saudi sovereign bond spreads are widening; Fitch's rating warning is a credible near-term risk. PIF-linked assets and Vision 2030 project bonds carry elevated execution risk. Monitor Hormuz reopening timeline as the primary catalyst for SAR-denominated asset recovery.",
+    "data_quality_note": "Saudi export volume estimates are based on terminal operational reports and shipping data. Fiscal impact calculations use pre-crisis oil revenue baselines. CRITICAL: Multiple active alerts."
   },
   "code": "SAU",
   "name": "Saudi Arabia",
@@ -352,7 +357,7 @@
       "total_imports_usd": 338830170131.16,
       "gdp_growth_forecast_2026_pct": 4,
       "inflation_forecast_2026_pct": 2,
-      "exchange_rate_vs_usd": 3.75,
+      "exchange_rate_vs_usd": 3.7504,
       "top_export_partners": [
         {
           "country": "CHN",
@@ -411,9 +416,9 @@
     "derived": {
       "resource_self_sufficiency_index": 0.65,
       "energy_independence_index": 1.0,
-      "supply_chain_chokepoint_exposure": 0.496,
+      "supply_chain_chokepoint_exposure": 0.92,
       "composite_national_power_index": 49.2,
-      "political_risk_premium_bps": 305,
+      "political_risk_premium_bps": 405,
       "market_accessibility_score": 0.468
     }
   },

@@ -3,8 +3,8 @@
   "country_name": "Iraq",
   "tier": 2,
   "region": "middle_east",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 279641257615.385,
@@ -191,12 +191,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.463,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 0.92,
+      "confidence": 0.82,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W10b",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
+      "change_note": "Basra crude (4mbpd) exits via Hormuz. Closure is existential for Iraqi oil revenues.",
+      "previous_value": 0.463
     },
     "composite_national_power_index": {
       "value": 28.9,
@@ -207,12 +209,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 1425,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 1525,
+      "confidence": 0.75,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "run_id": "2026-W10b",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "Basra oil exports completely blocked by Hormuz closure; Iranian militia threat. +100bps from 1425.",
+      "previous_value": 1425
     },
     "market_accessibility_score": {
       "value": 0.208,
@@ -231,17 +235,17 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "Iraq is critically exposed to the Strait of Hormuz closure with 51% chokepoint exposure. Oil exports severely disrupted -- Iraq's fiscal position is highly dependent on oil revenue. The Iran conflict creates additional security concerns given Iran's influence over Iraqi politics and militias.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "Iraq faces direct collateral exposure from the Iran conflict: as a country with close Iranian political and military ties, US strikes targeting Iran-linked assets create spillover risk. Iraq's oil export infrastructure — centered on Basra terminals — is adjacent to the Hormuz closure zone. Basra Heavy crude exports may face shipping disruption even if terminals remain operational. No specific domestic events this week beyond conflict adjacency monitoring.",
     "key_changes_this_week": [
-      "Hormuz closure at 70% traffic collapse -- 51% Iraq chokepoint exposure (Mar 1, critical)",
-      "Oil exports severely disrupted; fiscal position at risk",
-      "Iran conflict creates additional security concerns via militia proxy networks"
+      "Iran conflict creating spillover risk for Iraq given Iran-linked political/military ties",
+      "Basra terminal oil exports affected by Hormuz closure shipping disruption",
+      "PMF (Iran-linked militias) activity monitoring; potential for US strikes on Iraqi soil",
+      "IQD at 1,310/USD; CBi intervention maintaining stability"
     ],
-    "outlook": "Iraq's economy is existentially dependent on oil export routes through Hormuz. Alternative pipelines to Turkey provide partial but insufficient offset. Political stability at risk from Iranian militia influence.",
-    "investor_implications": "Iraq sovereign bonds face severe repricing. Oil-dependent fiscal position under extreme stress. Avoid Iraqi exposure until Hormuz situation resolves.",
-    "data_quality_note": "Iraq macro data is low-to-moderate quality. Chokepoint exposure calculated from trade data. CRITICAL alert active."
+    "outlook": "Iraq's political-military relationship with Iran creates significant tail risk from continued US military operations. Oil export disruption is an economic blow despite high prices.",
+    "investor_implications": "Iraq sovereign exposure is highly speculative. Oil sector investment requires geopolitical risk premium significantly above pre-crisis levels."
   },
   "code": "IRQ",
   "name": "Iraq",
@@ -356,9 +360,9 @@
     "derived": {
       "resource_self_sufficiency_index": 0.65,
       "energy_independence_index": 1.0,
-      "supply_chain_chokepoint_exposure": 0.463,
+      "supply_chain_chokepoint_exposure": 0.92,
       "composite_national_power_index": 28.9,
-      "political_risk_premium_bps": 1425,
+      "political_risk_premium_bps": 1525,
       "market_accessibility_score": 0.208
     }
   },

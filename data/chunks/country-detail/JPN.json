@@ -3,8 +3,8 @@
   "country_name": "Japan",
   "tier": 1,
   "region": "east_asia",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 4027597523550.58,
@@ -79,30 +79,30 @@
     "central_bank_policy_rate_pct": {
       "value": 0.75,
       "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "exchange_rate_vs_usd": {
-      "value": 156.8956,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 157.294,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 2.07,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "equity_index_level": {
-      "value": 57604.0,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 56279,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 922447048198.649,
@@ -124,6 +124,13 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -3.06,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
     }
   },
   "demographic": {
@@ -279,12 +286,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.542,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 0.78,
+      "confidence": 0.82,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W10b",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
+      "change_note": "Japan imports 88% of oil, much via Hormuz and Suez. Dual chokepoint exposure elevated.",
+      "previous_value": 0.542
     },
     "composite_national_power_index": {
       "value": 69.8,
@@ -319,20 +328,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "Japan faces a dual shock this week: energy vulnerability and a severe deterioration in China relations. China sanctioned 50 Japanese companies with rare earth export controls on Feb 25 following PM Takaichi's Taiwan defense comments -- the worst bilateral moment in decades. Japan's energy independence at only 10% makes it acutely exposed to the Hormuz closure and oil price surge. The LDP supermajority from the Feb 8 snap election enables constitutional revision and defense spending at a record $58B. GDP trend is decreasing as manufacturing faces supply chain disruption.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "Japan's Nikkei fell 3.06% as the country's 88% oil import dependency makes it structurally one of the most exposed developed economies to a Hormuz closure. The Bank of Japan held rates at 0.75% at its latest meeting, resisting pressure to tighten further as energy-driven inflation complicates the rate path. The yen is strengthening on safe-haven flows, providing partial import cost offset but compressing export sector earnings for Japan's critical manufacturing exporters.",
     "key_changes_this_week": [
-      "China sanctioned 50 Japanese companies with rare earth export controls (Feb 25, major)",
-      "Strait of Hormuz closure critically threatens energy imports (energy independence: 10%) (Mar 1)",
-      "LDP supermajority from Feb 8 snap election enables constitutional revision agenda",
-      "Defense spending at strong_growth trajectory reaching $58B",
-      "Japan-China relations at worst point in decades; Tokyo issued formal protest",
-      "GDP trend shifting to decrease amid supply chain disruption"
+      "Nikkei fell 3.06%; oil import vulnerability to Hormuz closure driving risk-off selling",
+      "BoJ held at 0.75%; energy inflation complicating rate normalization path",
+      "JPY strengthening on safe-haven flows; yen carry trade partially unwinding",
+      "88% oil import dependency creates severe energy cost exposure to Hormuz closure duration",
+      "Export sector earnings compressed by JPY appreciation"
     ],
-    "outlook": "Japan's near-term outlook is challenged by the convergence of energy vulnerability and China-Japan geopolitical deterioration. The rare earth export controls threaten high-tech manufacturing supply chains that could take 12-18 months to diversify. The defense spending increase and constitutional revision agenda signal a structural shift in Japan's security posture. BOJ policy normalization may slow if growth headwinds intensify. Resolution of China-Japan tensions depends on whether sanctions remain retaliatory or become structural.",
-    "investor_implications": "Japanese equities face headwinds from energy costs and China supply chain disruption. Defense and domestic rare earth substitution stocks are direct beneficiaries. Yen may weaken on terms-of-trade deterioration from oil prices. Avoid Japan-China exposed manufacturing (autos, electronics) until sanctions scope clarifies. JGB yields may be capped if BOJ delays tightening on growth concerns.",
-    "data_quality_note": "Japan macro data is high quality. Energy independence figure is well-established. China sanctions details confirmed by both governments. LDP election results are official."
+    "outlook": "Japan's energy import vulnerability is structural and cannot be quickly resolved. If Hormuz closure extends, Japan faces both energy cost shocks and potential supply shortfalls that could trigger government strategic reserve releases and emergency procurement at spot prices. BoJ is effectively trapped: cannot tighten into an energy shock, but inflation rising.",
+    "investor_implications": "Nikkei is under pressure; underweight energy-intensive Japanese manufacturers (steel, chemicals, autos). JGBs benefit from domestic safe-haven flows. JPY long positions are performing; watch for BoJ intervention signals if yen appreciation becomes disorderly."
   },
   "code": "JPN",
   "name": "Japan",
@@ -408,9 +415,9 @@
       "total_imports_usd": 965047346578.886,
       "gdp_growth_forecast_2026_pct": 0.6,
       "inflation_forecast_2026_pct": 2.1,
-      "exchange_rate_vs_usd": 156.8956,
+      "exchange_rate_vs_usd": 157.294,
       "sovereign_bond_yield_10yr_pct": 2.07,
-      "equity_index_level": 57604.0,
+      "equity_index_level": 56279,
       "top_export_partners": [
         {
           "country": "CHN",
@@ -455,7 +462,8 @@
           "pct_of_total": 4.2
         }
       ],
-      "avg_applied_tariff_pct": 4.2
+      "avg_applied_tariff_pct": 4.2,
+      "equity_index_daily_change_pct": -3.06
     },
     "military": {
       "defense_budget_usd": 58000000000,
@@ -473,7 +481,7 @@
     "derived": {
       "resource_self_sufficiency_index": 0.3,
       "energy_independence_index": 0.12,
-      "supply_chain_chokepoint_exposure": 0.542,
+      "supply_chain_chokepoint_exposure": 0.78,
       "composite_national_power_index": 69.8,
       "political_risk_premium_bps": 30,
       "market_accessibility_score": 0.764

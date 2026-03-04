@@ -40,6 +40,27 @@
     "Danish Straits",
     "Cape of Good Hope"
   ],
+  "frequency_tiers": {
+    "quarterly": {
+      "ttl_days": 90,
+      "part": "A",
+      "description": "Structured trade data: partners, products, tariffs, FTAs",
+      "sources": ["un_comtrade", "wto"]
+    },
+    "weekly": {
+      "ttl_days": 7,
+      "part": "B",
+      "description": "Sanctions monitoring, trade agreements, WTO disputes, tariff changes, chokepoints",
+      "sources": ["ofac", "eu_sanctions", "un_sanctions", "wto_disputes", "news"]
+    }
+  },
+  "cache_config": {
+    "registry_file": "agents/config/cache_registry.json",
+    "frequency_file": "agents/config/factor_frequency_registry.json",
+    "calendar_file": "agents/config/release_calendar.json",
+    "skill_file": "agents/skills/cache_check.md",
+    "event_triggers_file": "staging/raw_collected/news_events_{DATE}.json"
+  },
   "retry_on_failure": true,
   "idempotent": true,
   "prompt_file": "agents/prompts/agent_04_trade_sanctions.md"

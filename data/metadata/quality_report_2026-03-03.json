@@ -1,0 +1,185 @@
+{
+  "report_date": "2026-03-03",
+  "run_id": "2026-W10b",
+  "generated_at": "2026-03-03T23:10:00Z",
+  "coverage": {
+    "tier_1_avg_pct": 99.8,
+    "tier_2_avg_pct": 100.0,
+    "tier_3_avg_pct": 84.0,
+    "tier_1_count": 30,
+    "tier_2_count": 25,
+    "tier_3_count": 20,
+    "total_countries": 75,
+    "flagged_countries": []
+  },
+  "staleness": {
+    "note": "Weekly market data refreshed this run (2026-03-03). Monthly/quarterly/annual data cached from W10 run (2026-03-02). No stale data detected \u2014 all within TTL windows.",
+    "total_stale_factors": 0
+  },
+  "confidence": {
+    "overall_avg": 0.92,
+    "by_category": {
+      "exchange_rates": 0.92,
+      "bond_yields": 0.93,
+      "equity_indices": 0.91,
+      "central_bank_rates": 0.98,
+      "commodities": 0.89,
+      "political_events": 0.93
+    },
+    "low_confidence_items": [
+      {
+        "country": "IRN",
+        "factor": "economic data",
+        "confidence": 0.6,
+        "reason": "Active conflict degrades data reliability"
+      },
+      {
+        "country": "RUS",
+        "factor": "bond_yield",
+        "confidence": 0.82,
+        "reason": "Sanctions-era domestic market with limited price discovery"
+      },
+      {
+        "country": "IRN",
+        "factor": "school strike casualty reports",
+        "confidence": 0.6,
+        "reason": "Iranian state media claims not independently verified"
+      }
+    ]
+  },
+  "validation": {
+    "total": 114,
+    "accept": 99,
+    "accept_with_note": 6,
+    "flag": 4,
+    "reject": 0,
+    "escalate": 5,
+    "escalations_resolved": "all_accepted",
+    "rejected_details": []
+  },
+  "agent_performance": [
+    {
+      "agent_id": "agent_01",
+      "agent_name": "Official Statistics Gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "duration_seconds": 5
+    },
+    {
+      "agent_id": "agent_02",
+      "agent_name": "Financial Data Gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "duration_seconds": 240
+    },
+    {
+      "agent_id": "agent_03",
+      "agent_name": "News & Events Gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "duration_seconds": 480
+    },
+    {
+      "agent_id": "agent_04",
+      "agent_name": "Trade & Sanctions Gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "duration_seconds": 420
+    },
+    {
+      "agent_id": "agent_05",
+      "agent_name": "Military & Conflict Gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "duration_seconds": 480
+    },
+    {
+      "agent_id": "agent_06",
+      "agent_name": "Political & Regulatory Gatherer",
+      "phase": "GATHER",
+      "status": "completed",
+      "duration_seconds": 420
+    },
+    {
+      "agent_id": "agent_07",
+      "agent_name": "Fact Extractor & Structurer",
+      "phase": "PROCESS",
+      "status": "completed",
+      "duration_seconds": 300
+    },
+    {
+      "agent_id": "agent_08",
+      "agent_name": "Cross-Validator & Anomaly Detector",
+      "phase": "VALIDATE",
+      "status": "completed",
+      "duration_seconds": 300
+    },
+    {
+      "agent_id": "agent_09",
+      "agent_name": "Data Integrator",
+      "phase": "INTEGRATE",
+      "status": "completed",
+      "duration_seconds": 600
+    },
+    {
+      "agent_id": "agent_10",
+      "agent_name": "Trend Estimator",
+      "phase": "ANALYZE",
+      "status": "completed",
+      "duration_seconds": 900
+    },
+    {
+      "agent_id": "agent_11",
+      "agent_name": "Derived Metrics Calculator",
+      "phase": "ANALYZE",
+      "status": "completed",
+      "duration_seconds": 600
+    },
+    {
+      "agent_id": "agent_12",
+      "agent_name": "Alert Generator",
+      "phase": "ANALYZE",
+      "status": "completed",
+      "duration_seconds": 600
+    }
+  ],
+  "pipeline_summary": {
+    "total_agents_run": 12,
+    "total_duration_seconds": 5345,
+    "total_duration_minutes": 89.1,
+    "cache_hit_rate": "67%",
+    "time_saved_by_cache": "47-57 minutes",
+    "countries_updated": 48,
+    "factors_updated": 108,
+    "trend_estimates": 107,
+    "alerts_active": 69,
+    "narratives_generated": 55
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "action": "Monitor Hormuz status daily \u2014 if prolonged beyond 2 weeks, consider mid-week pipeline run for Gulf states",
+      "reason": "Unprecedented dual chokepoint crisis creating rapid data obsolescence for Gulf economies"
+    },
+    {
+      "priority": "high",
+      "action": "Add RWA (Rwanda) to Tier 3 country list",
+      "reason": "OFAC sanctions designation makes Rwanda investment-relevant; currently missing from 75-country list"
+    },
+    {
+      "priority": "medium",
+      "action": "Refresh Iran economic data when conflict stabilizes",
+      "reason": "Current macro data (GDP, inflation, reserves) pre-dates the war and is no longer reliable"
+    },
+    {
+      "priority": "medium",
+      "action": "Update IISS Military Balance data when SIPRI 2026 publishes in April",
+      "reason": "Event trigger trig_2026-03-03_004 noted IISS publication; SIPRI data due ~April 20"
+    },
+    {
+      "priority": "low",
+      "action": "Backfill Copper and Iron Ore commodity prices",
+      "reason": "Current values dated to January 2026 \u2014 stale by ~5 weeks"
+    }
+  ]
+}

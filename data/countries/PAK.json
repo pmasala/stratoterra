@@ -3,8 +3,8 @@
   "country_name": "Pakistan",
   "tier": 2,
   "region": "south_asia",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 371570000121.266,
@@ -98,11 +98,11 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 279.56,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 279.39,
+      "confidence": 0.93,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     }
   },
   "demographic": {
@@ -244,12 +244,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 1825,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 1925,
+      "confidence": 0.75,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "run_id": "2026-W10b",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "Open war with Afghanistan, domestic military deployment, sectarian violence. +100bps from 1825.",
+      "previous_value": 1825
     },
     "market_accessibility_score": {
       "value": 0.265,
@@ -277,19 +279,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "Pakistan is in crisis on multiple fronts: declared open war on Afghanistan on Feb 27 with airstrikes on Kabul and Kandahar, while 20 people were killed in domestic protests over US-Israeli strikes on Iran. Political stability at -1.93 -- among the worst in the dataset. GDP trend strong_decrease, inflation strong_growth, debt strong_growth. Sovereign credit at CCC+/Caa1. A nuclear-armed nation in active conflict with deteriorating fiscal position.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "Pakistan faces a dual existential crisis: open conventional war with Afghanistan following Operation Ghazab Lil Haq (strikes on 46 locations across the border), and severe domestic sectarian violence triggered by Khamenei's assassination. The military has been deployed under Article 245 across Gilgit-Baltistan and major urban centers. Curfews, communications blackouts, and at least 24-26 protest deaths mark the worst domestic instability in years, arriving simultaneously with a hot border conflict.",
     "key_changes_this_week": [
-      "Pakistan declared open war on Afghanistan with airstrikes on Kabul and Kandahar (Feb 27, transformative)",
-      "20 killed in domestic protests over Iran strikes (Mar 1)",
-      "Political stability at -1.93 (strong_decrease) -- near worst in dataset",
-      "GDP trend strong_decrease; inflation trend strong_growth; debt trend strong_growth",
-      "Sovereign credit at CCC+/Caa1; fiscal position deteriorating rapidly"
+      "Operation Ghazab Lil Haq: Pakistan struck 46 locations in Afghanistan, escalating to open war",
+      "Article 245 military deployment across Gilgit-Baltistan and major cities",
+      "Domestic sectarian violence following Khamenei assassination; 24-26 killed in protests",
+      "Communications blackout imposed in conflict-adjacent regions",
+      "Curfews declared in multiple urban centers",
+      "IMF program compliance at risk as fiscal discipline faces military spending surge"
     ],
-    "outlook": "Pakistan faces compounding crises: active war, domestic unrest, fiscal deterioration, and regional instability from the Iran conflict. IMF program compliance at severe risk if war spending expands. Nuclear dimension adds global escalation risk. No diplomatic resolution with Afghanistan visible. Political stability may deteriorate further if protests spread.",
-    "investor_implications": "Pakistan is effectively uninvestable at current risk levels. Sovereign bonds face distressed pricing. KSE-100 faces severe downside. Rupee under extreme pressure. Any existing exposure should be reduced to zero where possible.",
-    "data_quality_note": "Pakistan macro data is low-to-moderate quality under current crisis conditions. Political and military events from official statements and news sources. CRITICAL alert active."
+    "outlook": "The two-front crisis — external war and domestic instability — strains Pakistan's already fragile economy at a moment of IMF-mandated reform. If military spending surges beyond IMF program parameters, the $7B Extended Fund Facility could be suspended, triggering a sovereign liquidity crisis. Pakistan's nuclear posture vis-a-vis Afghanistan is a wildcard that markets will price with extreme caution.",
+    "investor_implications": "PKR faces severe depreciation pressure; sovereign bonds are in distressed territory. FDI inflows will freeze until military situation stabilizes. CPEC corridor security is at direct risk from Afghan border conflict. Eurobond holders should monitor IMF program status as the key sovereign solvency indicator.",
+    "data_quality_note": "Conflict data from OSINT; communications blackout limits ground-truth verification. Economic impact estimates are preliminary. CRITICAL: Multiple active alerts. High uncertainty."
   },
   "code": "PAK",
   "name": "Pakistan",
@@ -358,7 +361,7 @@
       "central_bank_policy_rate_pct": 13.0,
       "total_exports_usd": 40245783628.53,
       "total_imports_usd": 66847525077.8201,
-      "exchange_rate_vs_usd": 279.56,
+      "exchange_rate_vs_usd": 279.39,
       "top_export_partners": [
         {
           "country": "USA",
@@ -415,7 +418,7 @@
       "energy_independence_index": 0.5,
       "supply_chain_chokepoint_exposure": 0.308,
       "composite_national_power_index": 32.1,
-      "political_risk_premium_bps": 1825,
+      "political_risk_premium_bps": 1925,
       "market_accessibility_score": 0.265
     }
   },

@@ -3,8 +3,8 @@
   "country_name": "China",
   "tier": 1,
   "region": "east_asia",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 18743803170827.2,
@@ -77,25 +77,25 @@
       "run_id": "2026-W10"
     },
     "central_bank_policy_rate_pct": {
-      "value": 3.1,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 3.0,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "exchange_rate_vs_usd": {
-      "value": 6.9031,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 6.8813,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "equity_index_level": {
-      "value": 4162.09,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 4123,
+      "confidence": 0.96,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 3792950717268.08,
@@ -119,11 +119,18 @@
       "run_id": "2026-W10"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 1.78,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.79,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -1.43,
+      "confidence": 0.96,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
     }
   },
   "demographic": {
@@ -287,12 +294,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.38,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 0.62,
+      "confidence": 0.82,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W10b",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
+      "change_note": "China imports significant oil via Hormuz; Suez disruption affects manufacturing supply chains.",
+      "previous_value": 0.38
     },
     "composite_national_power_index": {
       "value": 75.3,
@@ -303,12 +312,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 80,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 180,
+      "confidence": 0.75,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "run_id": "2026-W10b",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "Unprecedented military purge undermines civil-military stability; trade war escalation. +100bps from 80.",
+      "previous_value": 80
     },
     "market_accessibility_score": {
       "value": 0.539,
@@ -327,20 +338,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "China faces mounting pressure on multiple fronts this week. GDP growth decelerating from 4.8% to 4.2% forecast amid US tariff escalation to 20% cumulative. In a sharp escalation, China sanctioned 50 Japanese companies and imposed rare earth export controls on Feb 25 in response to PM Takaichi's Taiwan defense comments -- the worst China-Japan bilateral moment in decades. CPI at 0% signals persistent deflation risk. NPC opens March 5 with economic targets and stimulus signals expected. China positioned as neutral on Iran conflict but called UNSC emergency session. PBOC cut FX forward reserve ratio from 20% to 0% to manage yuan.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "China's unprecedented military purge deepened this week with nine additional PLA lawmakers removed, bringing the total to 100+ officers purged since 2022. Top general Zhang Youxia (CMC Vice Chairman) and Joint Staff chief Liu Zhenli are under investigation — leaving only one general besides Xi on the CMC. An unverified coup attempt report circulated in intelligence channels. Externally, a $11.1B Taiwan arms sale remains stalled ahead of the planned Trump-Xi summit, while Chinese markets sold off on combined domestic political risk and Iran crisis risk-off.",
     "key_changes_this_week": [
-      "China sanctioned 50 Japanese companies with rare earth export controls and dual-use goods restrictions (Feb 25, major)",
-      "US imposed additional 10% tariff on China (20% total) effective March 4 (major)",
-      "PBOC cut FX forward reserve ratio from 20% to 0% to slow yuan appreciation (moderate)",
-      "NPC opens March 5 -- annual economic growth targets and stimulus measures expected",
-      "China called UNSC emergency session over Iran strikes; positioned as neutral mediator",
-      "CPI at 0% with deflation risk persisting; property sector weak"
+      "9 more PLA lawmakers removed; Zhang Youxia and Liu Zhenli under investigation (100+ total purged)",
+      "Unverified coup attempt report in intelligence channels — unconfirmed but market-moving",
+      "$11.1B Taiwan arms sale stalled ahead of Trump-Xi summit",
+      "CSI 300 under pressure; political risk underpriced by markets",
+      "Two Sessions (NPC/CPPCC) opening week: stimulus signals awaited",
+      "PLA institutional reliability uncertain; Taiwan Strait risk assessment requires revision"
     ],
-    "outlook": "China's growth trajectory is modestly decelerating but manageable through fiscal stimulus. The Japan sanctions escalation opens a new front in China's geopolitical confrontation that could fragment East Asian supply chains. NPC announcements March 5 will set policy tone -- expect a GDP target of 4.5-5.0% with fiscal expansion. The Hormuz crisis provides China leverage as an alternative energy partner for Iran but also raises import costs. Trump-Xi summit March 30 is the key bilateral event to watch.",
-    "investor_implications": "Chinese equities face cross-currents: tariff headwinds vs potential NPC stimulus announcements. CNY management signals tolerance for modest depreciation. Japan-China sanctions create winners (domestic rare earth substitution plays) and losers (Japan-dependent supply chains). Monitor semiconductor sector for tech decoupling escalation. Defensive positioning in stimulus-linked sectors (infrastructure, SOEs) over private consumer-facing firms.",
-    "data_quality_note": "China macro data carries standard reliability caveats. CPI and GDP figures from IMF/World Bank. PBOC actions officially confirmed. Japan sanctions details confirmed by both governments."
+    "outlook": "The PLA purge creates genuine uncertainty about Chinese military command coherence, which paradoxically both reduces and increases Taiwan Strait risk — reduced offensive capability but also reduced deterrent credibility. The Trump-Xi summit (planned late March) is a pivotal event; the $11.1B arms sale stall suggests both sides are managing pre-summit optics. Two Sessions economic stimulus signals will be the primary near-term market catalyst.",
+    "investor_implications": "CSI 300 and Hong Kong-listed China equities carry unpriced political risk. The purge's scale — eliminating nearly all independent military leadership — is historically unusual and warrants a political risk premium not yet reflected in valuations. Two Sessions stimulus packages could provide a near-term positive catalyst; monitor PBOC liquidity injections and fiscal deficit targets as sentiment anchors.",
+    "data_quality_note": "PLA purge data from official Chinese state media releases; coup attempt report unverified. Market data is high confidence. Taiwan arms sale status from US DoD and Congressional reporting."
   },
   "code": "CHN",
   "name": "China",
@@ -407,14 +418,14 @@
       "govt_debt_pct_gdp": 96.3,
       "fx_reserves_usd": 3456024808739.12,
       "sovereign_credit_rating": "S&P: A+, Moody's: A1, Fitch: A+",
-      "central_bank_policy_rate_pct": 3.1,
+      "central_bank_policy_rate_pct": 3.0,
       "total_exports_usd": 3792950717268.08,
       "total_imports_usd": 3253992699024.39,
       "gdp_growth_forecast_2026_pct": 4.2,
       "inflation_forecast_2026_pct": 0.7,
-      "exchange_rate_vs_usd": 6.9031,
-      "sovereign_bond_yield_10yr_pct": 1.78,
-      "equity_index_level": 4162.09,
+      "exchange_rate_vs_usd": 6.8813,
+      "sovereign_bond_yield_10yr_pct": 1.79,
+      "equity_index_level": 4123,
       "top_export_partners": [
         {
           "country": "USA",
@@ -461,7 +472,8 @@
         }
       ],
       "avg_applied_tariff_pct": 7.5,
-      "trade_openness_pct": 37.2
+      "trade_openness_pct": 37.2,
+      "equity_index_daily_change_pct": -1.43
     },
     "military": {
       "military_spending_usd": 296000000000,
@@ -480,9 +492,9 @@
     "derived": {
       "resource_self_sufficiency_index": 0.75,
       "energy_independence_index": 0.75,
-      "supply_chain_chokepoint_exposure": 0.38,
+      "supply_chain_chokepoint_exposure": 0.62,
       "composite_national_power_index": 75.3,
-      "political_risk_premium_bps": 80,
+      "political_risk_premium_bps": 180,
       "market_accessibility_score": 0.539
     }
   },

@@ -3,8 +3,8 @@
   "country_name": "South Africa",
   "tier": 1,
   "region": "sub_saharan_africa",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 401144998373.585,
@@ -84,25 +84,25 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 16.0414,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 15.92,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 7.92,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 8.16,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "equity_index_level": {
-      "value": 113647.0,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 120000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 127675629255.043,
@@ -124,6 +124,13 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": null,
+      "confidence": 0.8,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
     }
   },
   "demographic": {
@@ -298,18 +305,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "South Africa faces mixed signals: oil price surge adds import costs but commodity exports (gold, platinum, coal) benefit from price strength. Gold at $5,300+ is highly positive for South African mining revenue. GDP growth remains sluggish with structural load-shedding challenges. GNU coalition provides political stability.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "South Africa is a relative beneficiary of the global crisis environment: gold above $5,155 per ounce is a major positive for its mining sector, which contributes significantly to export revenues and JSE market cap. The JSE is near record highs, driven by gold and platinum group metals (PGMs) repricing. The rand sits at 15.92/USD — relatively stable — and improving electricity supply (reduced load-shedding) supports the domestic economic recovery narrative.",
     "key_changes_this_week": [
-      "Gold surge to $5,300+ benefits South African mining sector significantly",
-      "Oil price surge adds import cost pressure",
-      "Commodity export revenue boosted by global crisis dynamics",
-      "GNU coalition maintains political stability"
+      "Gold above $5,155/oz — major positive for mining sector and JSE",
+      "JSE near record highs; gold and PGM miners outperforming",
+      "ZAR at 15.92/USD — relatively stable despite global risk-off",
+      "Load-shedding improvement supporting domestic economic recovery",
+      "PGM prices also elevated on global supply chain disruption premium"
     ],
-    "outlook": "South Africa's gold and platinum mining sectors are direct beneficiaries of the crisis environment. Structural challenges (load-shedding, unemployment) persist. SARB rate path depends on inflation trajectory amid commodity price cross-currents. GNU coalition stability tested by policy implementation.",
-    "investor_implications": "South African gold miners (AngloGold, Gold Fields, Harmony) are conviction overweights at $5,300+ gold. Platinum group metals benefit from supply disruption dynamics. ZAR may strengthen on mining export earnings. JSE resources index outperforms broader market.",
-    "data_quality_note": "South Africa macro data is moderate quality from SARB and StatsSA sources."
+    "outlook": "South Africa's commodity exporter profile is well-suited to the current crisis environment. Sustained gold above $5,000 would be transformative for fiscal revenues and mining investment. Domestic political risks from GNU (Government of National Unity) stability remain but are manageable.",
+    "investor_implications": "JSE gold miners (Gold Fields, AngloGold Ashanti, Harmony) are strong buys in this environment. ZAR has rare upside potential from gold windfall improving current account. SA sovereign bonds offer attractive real yields; GNU political stability is the key risk variable."
   },
   "code": "ZAF",
   "name": "South Africa",
@@ -367,9 +374,9 @@
       "total_imports_usd": 119864127356.452,
       "gdp_growth_forecast_2026_pct": 1.2,
       "inflation_forecast_2026_pct": 3.7,
-      "exchange_rate_vs_usd": 16.0414,
-      "sovereign_bond_yield_10yr_pct": 7.92,
-      "equity_index_level": 113647.0,
+      "exchange_rate_vs_usd": 15.92,
+      "sovereign_bond_yield_10yr_pct": 8.16,
+      "equity_index_level": 120000,
       "top_export_partners": [
         {
           "country": "CHN",
@@ -414,7 +421,8 @@
           "country": "OMN",
           "pct_of_total": 3.3
         }
-      ]
+      ],
+      "equity_index_daily_change_pct": null
     },
     "military": {
       "military_spending_usd": 4000000000,

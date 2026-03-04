@@ -12,9 +12,11 @@ Human review of any escalations from Agent 8 must be complete before this agent 
 
 ## Inputs
 - `/staging/validated/validated_updates_{DATE}.json`
+- `/staging/processed/factor_updates_{DATE}.json` (for `event_triggers` passthrough)
 - `/data/countries/*.json`
 - `/data/relations/*.json`
 - `/data/timeseries/*.json`
+- `/agents/config/cache_registry.json` — current cache state
 
 ## Outputs
 - Updated `/data/countries/*.json`
@@ -22,6 +24,7 @@ Human review of any escalations from Agent 8 must be complete before this agent 
 - Updated `/data/timeseries/*.json`
 - `/data/metadata/last_update.json`
 - `/data/metadata/update_log.json`
+- Updated `/agents/config/cache_registry.json` — refreshed cache timestamps
 
 ## Step-by-Step Instructions
 
@@ -68,13 +71,45 @@ Append to `/data/metadata/update_log.json`:
 }
 ```
 
-### Step 5: Log Completion
-Log to `staging/run_log.json`: records integrated, any errors encountered.
+### Step 5: Update Cache Registry
+
+After successful integration, update `/agents/config/cache_registry.json` to reflect what was actually fetched and integrated this run.
+
+1. Read the current `cache_registry.json`.
+2. For each data source that was fetched this run (identified from `cache_decisions` arrays in the Phase 1 agent outputs and the `source_name` fields in validated updates):
+   - Create or update the entry with:
+     - `last_fetched`: current ISO timestamp
+     - `source_release_date`: from `release_calendar.json` if applicable
+     - `frequency`: the source's frequency tier
+     - `next_due`: computed based on frequency (last_fetched + ttl_days, or next release date)
+     - `countries_covered`: count of countries with data from this source
+     - `records`: count of records integrated from this source
+3. For event-triggered refreshes (from `event_triggers` in the processed updates), update the relevant entries even though they wouldn't normally be due.
+4. Set `cache_registry.last_updated` to current ISO timestamp.
+5. Write the updated `cache_registry.json`.
+
+Example entry after update:
+```json
+{
+  "worldbank.wgi": {
+    "last_fetched": "2026-03-01T10:00:00Z",
+    "source_release_date": "2025-09-15",
+    "frequency": "annual",
+    "next_due": "2026-09-15",
+    "countries_covered": 55,
+    "records": 330
+  }
+}
+```
+
+### Step 6: Log Completion
+Log to `staging/run_log.json`: records integrated, cache entries updated, any errors encountered.
 
 ## Important Rules
 - Never delete existing data — only update specific factor fields
 - Always preserve previous values in timeseries before overwriting
 - If a file read or write fails: stop, log the error, do not continue
+- Always update cache_registry.json — this is critical for downstream pipeline efficiency
 
 ## Time Budget
 Target: 5-10 minutes.

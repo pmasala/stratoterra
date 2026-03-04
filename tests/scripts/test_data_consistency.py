@@ -278,7 +278,7 @@ class TestIT_CON_004_RelationPairOrdering(unittest.TestCase):
             data = load_json(RELATION_INDEX_PATH)
         except (json.JSONDecodeError, OSError):
             self.skipTest("relation_index.json could not be parsed")
-        relations = data if isinstance(data, list) else data.get("relations", [])
+        relations = data if isinstance(data, list) else data.get("pairs", data.get("relations", []))
         errors = []
         for entry in relations:
             if not isinstance(entry, dict):
@@ -391,17 +391,22 @@ class TestIT_CON_007_RelationIndexAndFilesMatch(unittest.TestCase):
 
     def setUp(self):
         self.relation_files = glob_json_files(RELATIONS_DIR)
+        # Also check chunks/relations/ directory
+        chunks_relations = os.path.join(DATA_DIR, "chunks", "relations")
+        chunks_files = glob_json_files(chunks_relations) if os.path.isdir(chunks_relations) else []
+        all_files = set(self.relation_files) | set(chunks_files)
         self.pairs_from_files = {
-            os.path.basename(f).replace(".json", "") for f in self.relation_files
+            os.path.basename(f).replace(".json", "") for f in all_files
+            if os.path.basename(f) != "relation_index.json"
         }
 
     def test_index_entries_have_files(self):
         if not os.path.isfile(RELATION_INDEX_PATH):
             self.skipTest("relation_index.json not found")
-        if not self.relation_files:
+        if not self.pairs_from_files:
             self.skipTest("No relation files found")
         data = load_json(RELATION_INDEX_PATH)
-        relations = data if isinstance(data, list) else data.get("relations", [])
+        relations = data if isinstance(data, list) else data.get("pairs", data.get("relations", []))
         missing = []
         for entry in relations:
             if not isinstance(entry, dict):
@@ -421,7 +426,7 @@ class TestIT_CON_007_RelationIndexAndFilesMatch(unittest.TestCase):
         if not self.relation_files:
             self.skipTest("No relation files found")
         data = load_json(RELATION_INDEX_PATH)
-        relations = data if isinstance(data, list) else data.get("relations", [])
+        relations = data if isinstance(data, list) else data.get("pairs", data.get("relations", []))
         indexed_pairs = {
             e.get("pair") for e in relations if isinstance(e, dict) and e.get("pair")
         }

@@ -3,8 +3,8 @@
   "country_name": "Australia",
   "tier": 1,
   "region": "oceania",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 1757022451652.83,
@@ -84,25 +84,25 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 1.412,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.4042,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 4.64,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "equity_index_level": {
-      "value": 9198.6,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 9199,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 425212482436.938,
@@ -124,6 +124,13 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -0.5,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
     }
   },
   "demographic": {
@@ -317,18 +324,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "Australia benefits from commodity exposure and energy self-sufficiency in the current crisis environment. LNG exports benefit from Hormuz-driven price surge as alternative supply. GDP growth at 1.8% with stable trend. China slowdown is the primary growth risk given Australia's export concentration. AUKUS defense partnership strengthened by regional security deterioration.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "Australia's ASX 200 fell 0.5%, underperforming its net commodity exporter fundamentals as global risk-off sentiment dominated. Australia stands to benefit indirectly from the Gulf LNG supply disruption: Australian LNG producers (Woodside, Santos) are natural beneficiaries as Qatari and Gulf supplies are constrained by Hormuz closure. Iron ore prices remain stable, supporting the major mining sector.",
     "key_changes_this_week": [
-      "Hormuz closure benefits Australian LNG as alternative supply source (Mar 1)",
-      "China slowdown (4.8% to 4.2%) creates demand headwinds for commodities",
-      "AUKUS alliance relevance increases amid regional security deterioration",
-      "GDP at 1.8% with stable trend; RBA rate path unchanged"
+      "ASX 200 fell 0.5%; global risk-off overriding commodity export positive",
+      "LNG export opportunity from Gulf supply disruption; Woodside and Santos beneficiaries",
+      "Iron ore prices stable; mining sector broadly supported",
+      "AUD under modest pressure from risk-off flows despite commodity tailwind",
+      "RBA rate path unchanged; inflation trajectory moderating"
     ],
-    "outlook": "Australia benefits as an alternative energy supplier during the Hormuz disruption. LNG and coal exports command premium pricing. China demand deceleration is the key risk -- iron ore and base metals prices may diverge from energy. RBA likely holds rates steady amid mixed external signals.",
-    "investor_implications": "Australian LNG producers (Woodside, Santos) benefit from Hormuz supply disruption. Iron ore names (BHP, Rio Tinto) face China demand headwinds. AUD may strengthen on energy export earnings. ASX resources outperform broader market in this environment.",
-    "data_quality_note": "Australian macro data is high quality from ABS and RBA. Energy production figures from official sources."
+    "outlook": "Australia's commodity export profile positions it well for a sustained high-energy-price environment. LNG demand from Japan, Korea, and China as they seek Hormuz-alternative supplies could provide a significant near-term revenue uplift. Trade relationship management with China remains important.",
+    "investor_implications": "ASX LNG producers (Woodside, Santos) and gold miners are near-term outperformers. AUD may strengthen on terms-of-trade improvement as global oil and LNG prices rise. Australian government bonds (ACGBs) offer safe-haven characteristics with solid credit quality."
   },
   "code": "AUS",
   "name": "Australia",
@@ -386,9 +393,9 @@
       "total_imports_usd": 406080788709.18,
       "gdp_growth_forecast_2026_pct": 2.1,
       "inflation_forecast_2026_pct": 3,
-      "exchange_rate_vs_usd": 1.412,
+      "exchange_rate_vs_usd": 1.4042,
       "sovereign_bond_yield_10yr_pct": 4.64,
-      "equity_index_level": 9198.6,
+      "equity_index_level": 9199,
       "top_export_partners": [
         {
           "country": "CHN",
@@ -432,7 +439,8 @@
           "country": "THA",
           "pct_of_total": 4.2
         }
-      ]
+      ],
+      "equity_index_daily_change_pct": -0.5
     },
     "military": {
       "military_spending_usd": 32400000000,

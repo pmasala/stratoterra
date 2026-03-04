@@ -3,8 +3,8 @@
   "country_name": "Germany",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 4685592577804.69,
@@ -77,32 +77,32 @@
       "run_id": "2026-W10"
     },
     "central_bank_policy_rate_pct": {
-      "value": 2.15,
+      "value": 2.0,
       "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "exchange_rate_vs_usd": {
-      "value": 0.8518,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.8552,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 2.66,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 2.7,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "equity_index_level": {
-      "value": 25284.26,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 23766,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 1939702201602.97,
@@ -124,6 +124,13 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -3.54,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
     }
   },
   "demographic": {
@@ -280,12 +287,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.257,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 0.45,
+      "confidence": 0.82,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W10b",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
+      "change_note": "Germany exposed to Suez closure impact on Europe-Asia trade; oil import price shock.",
+      "previous_value": 0.257
     },
     "composite_national_power_index": {
       "value": 72.6,
@@ -329,19 +338,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "Germany's fragile recovery faces external headwinds from oil price surge and trade fragmentation risks. GDP at 0.2% with a growth trend to 0.9% forecast, but the Hormuz closure threatens energy costs (energy independence: 30%). China's sanctions on Japan and broader trade decoupling signals risk for Germany's export-dependent model. EU-US trade deal postponed amid tariff uncertainty. The EU-Mercosur Partnership Agreement provides a positive counterweight.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "Energy-importing Germany faces a significant oil and gas price shock from the dual Hormuz/Suez chokepoint crisis, arriving on top of ongoing supply chain disruption. The DAX fell 3.54% — among the worst European performances — reflecting Germany's acute manufacturing and export exposure to global trade disruption. Defense spending surged to $107 billion (+18%), the largest single-year increase in modern German history, representing a structural fiscal shift. Stagflation risk is elevated as energy costs rise while industrial output contracts.",
     "key_changes_this_week": [
-      "Hormuz closure drives oil price surge; Germany energy independence at 30% (Mar 1)",
-      "China-Japan sanctions escalation signals broader trade fragmentation risk for exporters",
-      "EU-US trade deal postponed amid SCOTUS tariff ruling uncertainty",
-      "EU-Mercosur Partnership Agreement signed -- largest FTA ever (Jan 17)",
-      "GDP trend growth (0.2% to 0.9%) but fragile amid external shocks"
+      "DAX fell 3.54%; equity market reflecting manufacturing and trade exposure",
+      "Defense spending surge to $107B (+18%) — historic structural fiscal shift",
+      "Oil price shock from dual Hormuz/Suez closure elevating energy cost for industry",
+      "Stagflation risk elevated: energy-driven inflation plus slowing growth",
+      "US Section 122 tariffs create additional export market headwind"
     ],
-    "outlook": "Germany's recovery trajectory depends on energy costs and trade stability. The oil price surge adds 0.2-0.4pp to inflation and compresses margins for energy-intensive manufacturers. China-Japan escalation is a warning signal for broader East Asian trade fragmentation that would hurt German auto and machinery exports. EU fiscal rules and defense spending requirements compete for fiscal space. The new Merz government's industrial policy will be tested by these cross-currents.",
-    "investor_implications": "German equities sensitive to energy costs and China trade flows. Overweight defense-exposed firms benefiting from EU rearmament. Underweight auto sector on China-Japan contagion risk and trade fragmentation. Bund yields may compress on flight-to-safety flows. EUR/USD could face pressure if ECB signals concern over growth.",
-    "data_quality_note": "German macro data is high quality. Energy independence and trade data from official EU sources. GDP forecast reflects IMF projections."
+    "outlook": "Germany's structural vulnerability to energy price shocks and trade disruption remains unresolved. Defense spending surge will provide a domestic demand offset but not immediately enough to compensate for manufacturing output contraction. ECB rate path will be critical.",
+    "investor_implications": "DAX exposure warrants caution; overweight defense (Rheinmetall, Hensoldt) and underweight automotive exporters and chemical sector. German Bunds remain a safe-haven asset with yield compression expected on risk-off flows."
   },
   "code": "DEU",
   "name": "Germany",
@@ -401,14 +409,14 @@
       "govt_debt_pct_gdp": 64.4,
       "fx_reserves_usd": 377935574356.242,
       "sovereign_credit_rating": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
-      "central_bank_policy_rate_pct": 2.15,
+      "central_bank_policy_rate_pct": 2.0,
       "total_exports_usd": 1939702201602.97,
       "total_imports_usd": 1760032612948.98,
       "gdp_growth_forecast_2026_pct": 0.9,
       "inflation_forecast_2026_pct": 1.8,
-      "exchange_rate_vs_usd": 0.8518,
-      "sovereign_bond_yield_10yr_pct": 2.66,
-      "equity_index_level": 25284.26,
+      "exchange_rate_vs_usd": 0.8552,
+      "sovereign_bond_yield_10yr_pct": 2.7,
+      "equity_index_level": 23766,
       "top_export_partners": [
         {
           "country": "USA",
@@ -459,7 +467,8 @@
         }
       ],
       "trade_openness_pct": 80.0,
-      "avg_applied_tariff_pct": 5.0
+      "avg_applied_tariff_pct": 5.0,
+      "equity_index_daily_change_pct": -3.54
     },
     "military": {
       "defense_spending_usd": 88500000000,
@@ -478,7 +487,7 @@
     "derived": {
       "resource_self_sufficiency_index": 0.45,
       "energy_independence_index": 0.35,
-      "supply_chain_chokepoint_exposure": 0.257,
+      "supply_chain_chokepoint_exposure": 0.45,
       "composite_national_power_index": 72.6,
       "political_risk_premium_bps": 0,
       "market_accessibility_score": 0.699

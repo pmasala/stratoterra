@@ -3,8 +3,8 @@
   "country_name": "Netherlands",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 1214927698572.66,
@@ -77,25 +77,25 @@
       "run_id": "2026-W10"
     },
     "central_bank_policy_rate_pct": {
-      "value": 2.15,
+      "value": 2.0,
       "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "exchange_rate_vs_usd": {
-      "value": 0.8518,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.8552,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 2.73,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 2.79,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 1001165679502.9,
@@ -285,18 +285,17 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "The Netherlands faces moderate headwinds from global trade disruption given its role as a major European logistics hub. Rotterdam port traffic may be affected by shipping rerouting. ASML remains systemically important in the semiconductor supply chain amid tech decoupling dynamics. GDP growth stable. Dutch fiscal position strong.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "The Netherlands faces significant indirect exposure through Rotterdam Port — Europe's largest — which will see disrupted inbound oil and LNG flows from the dual chokepoint crisis. ASML, the critical semiconductor lithography monopoly, is largely insulated from the Iran crisis directly but faces ongoing geopolitical pressure from US-China chip restrictions. No significant domestic political events this week.",
     "key_changes_this_week": [
-      "Global shipping rerouting may affect Rotterdam port traffic",
-      "ASML exposure to China-Japan-Taiwan semiconductor tensions",
-      "Trade disruption from Hormuz crisis affects European logistics flows",
-      "GDP stable with strong fiscal position"
+      "Rotterdam Port facing disrupted oil and LNG inbound flows from dual chokepoint crisis",
+      "ASML monitoring US-China chip restriction developments; no new restrictions this week",
+      "Global risk environment dominated by Iran conflict and dual chokepoint crisis",
+      "AEX index down in line with European peers"
     ],
-    "outlook": "The Netherlands faces second-order effects from trade disruption through its logistics hub function. ASML remains a key beneficiary of semiconductor investment but faces geopolitical exposure. Dutch gas transition from Groningen continues.",
-    "investor_implications": "ASML is the key Netherlands exposure -- beneficiary of semiconductor investment but geopolitical risk applies. Dutch logistics stocks face mixed signals from trade rerouting. AEX index sensitive to global trade flows.",
-    "data_quality_note": "Netherlands macro data is high quality from CBS and DNB sources."
+    "outlook": "Netherlands' port-dependent economy is more exposed than average to supply chain disruption. Energy cost shock feeds into Dutch industrial and residential costs.",
+    "investor_implications": "ASML remains the premier investment thesis in European tech; cyclical industrials face headwinds. Amsterdam-listed financials may see safe-haven demand."
   },
   "code": "NLD",
   "name": "Netherlands",
@@ -349,13 +348,13 @@
       "govt_debt_pct_gdp": 44,
       "fx_reserves_usd": 79129152086.1887,
       "sovereign_credit_rating": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
-      "central_bank_policy_rate_pct": 2.15,
+      "central_bank_policy_rate_pct": 2.0,
       "total_exports_usd": 1001165679502.9,
       "total_imports_usd": 867338796091.25,
       "gdp_growth_forecast_2026_pct": 1.2,
       "inflation_forecast_2026_pct": 2.4,
-      "exchange_rate_vs_usd": 0.8518,
-      "sovereign_bond_yield_10yr_pct": 2.73,
+      "exchange_rate_vs_usd": 0.8552,
+      "sovereign_bond_yield_10yr_pct": 2.79,
       "top_export_partners": [
         {
           "country": "DEU",

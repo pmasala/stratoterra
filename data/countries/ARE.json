@@ -3,8 +3,8 @@
   "country_name": "United Arab Emirates",
   "tier": 1,
   "region": "middle_east",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 552324846834.581,
@@ -86,9 +86,9 @@
     "exchange_rate_vs_usd": {
       "value": 3.6725,
       "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 647896528250.51,
@@ -235,12 +235,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.731,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 0.97,
+      "confidence": 0.82,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W10b",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
+      "change_note": "Jebel Ali port (worlds 9th largest) cut off from global shipping. Hormuz closure at maximum impact.",
+      "previous_value": 0.731
     },
     "composite_national_power_index": {
       "value": 48.7,
@@ -251,12 +253,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 285,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 385,
+      "confidence": 0.75,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "run_id": "2026-W10b",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "Al Minhad Air Base struck; Jebel Ali cut off from global trade. +100bps from 285.",
+      "previous_value": 285
     },
     "market_accessibility_score": {
       "value": 0.525,
@@ -275,19 +279,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "The UAE faces its worst security crisis in modern history. IRGC struck Al Dhafra Air Base and launched missiles at Dubai and Abu Dhabi on Mar 1. Aviation severely disrupted with 7,700+ delays and 2,280 cancellations. Strait of Hormuz closure blocks oil and LNG exports (76% chokepoint exposure -- highest among Gulf states). Tourism and financial services severely impacted. UAE closed its Tehran embassy. All major trend indicators show strong_decrease: current account, trade openness, FDI, while investment risk shows strong_growth.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "The UAE took direct military hits this week as the IRGC struck Al Minhad Air Base, a major US military facility on Emirati soil, in retaliatory strikes against Gulf US partners. Jebel Ali Port — the world's 9th largest container port handling 15.5 million TEUs — is effectively cut off from global ocean trade by the dual closure of the Strait of Hormuz and Red Sea Houthi interdiction. Over 7,700 flights were disrupted across UAE airspace. The Abu Dhabi-to-Fujairah pipeline (approximately 1.5 mbpd capacity) provides a partial crude export alternative bypassing Hormuz.",
     "key_changes_this_week": [
-      "IRGC struck Al Dhafra Air Base; missiles hit Dubai and Abu Dhabi (Mar 1, transformative/critical)",
-      "Aviation disrupted: 7,700+ delays, 2,280 cancellations (Mar 1)",
-      "Strait of Hormuz closure: 76% chokepoint exposure -- highest in Gulf (Mar 1, critical)",
-      "UAE closed Tehran embassy (Mar 1)",
-      "Strong_decrease across current account, trade, FDI; strong_growth in investment risk"
+      "Al Minhad Air Base struck by IRGC; US military facility on UAE soil hit directly",
+      "Jebel Ali Port (15.5M TEU) cut off by dual Hormuz/Red Sea closure",
+      "7,700+ flights disrupted across UAE airspace from military operations",
+      "Abu Dhabi-to-Fujairah pipeline (~1.5 mbpd) activated as Hormuz bypass",
+      "Dubai tourism and MICE sector severely impacted by regional conflict risk",
+      "UAE safe-haven status within Gulf undermined by direct strike on Emirati territory"
     ],
-    "outlook": "The UAE's hub economy model is acutely vulnerable to military conflict and Hormuz closure. Dubai's position as a global aviation, tourism, and financial hub faces existential stress if conflict persists beyond weeks. Abu Dhabi's oil wealth provides a fiscal buffer but cannot offset export route disruption. FDI and tourism recovery will lag security normalization by 6-12 months.",
-    "investor_implications": "UAE equities face severe re-rating risk. DFM and ADX likely gap down. Dubai real estate faces foreign buyer withdrawal. Abu Dhabi sovereign wealth fund (ADIA, Mubadala) portfolios provide ultimate backstop but near-term disruption is severe. Emirates and Etihad airline operations severely curtailed. Any exposure to UAE should be hedged or reduced.",
-    "data_quality_note": "UAE macro data is moderate quality. Aviation disruption data from FlightAware. Military events from official UAE statements and OSINT. CRITICAL alert active."
+    "outlook": "The UAE's economic model — built on being a regional trade, logistics, and financial hub — is directly challenged when Jebel Ali is isolated and regional conflict strikes Emirati territory. Abu Dhabi's oil revenues are partially protected by the Fujairah bypass pipeline, but the non-oil economy (tourism, re-exports, financial services) faces acute near-term disruption. Conflict duration is the primary driver of economic damage accumulation.",
+    "investor_implications": "Dubai real estate and tourism-linked REITs and equities face near-term headwinds as conference cancellations and tourist risk aversion materialize. ADNOC export revenues are partially insulated via Fujairah but not fully. UAE sovereign bonds (ADIB, Abu Dhabi sovereign) retain investment grade but spreads will widen. The UAE dirham peg to USD is secure given ADIA reserve levels, limiting FX risk.",
+    "data_quality_note": "Flight disruption data from Eurocontrol and airline reporting. Port data from DP World operational reports. Military strike assessment from OSINT. CRITICAL: Multiple active alerts."
   },
   "code": "ARE",
   "name": "United Arab Emirates",
@@ -409,9 +414,9 @@
     "derived": {
       "resource_self_sufficiency_index": 0.5,
       "energy_independence_index": 1.0,
-      "supply_chain_chokepoint_exposure": 0.731,
+      "supply_chain_chokepoint_exposure": 0.97,
       "composite_national_power_index": 48.7,
-      "political_risk_premium_bps": 285,
+      "political_risk_premium_bps": 385,
       "market_accessibility_score": 0.525
     }
   },

@@ -3,8 +3,8 @@
   "country_name": "France",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 3160442622465.08,
@@ -77,32 +77,32 @@
       "run_id": "2026-W10"
     },
     "central_bank_policy_rate_pct": {
-      "value": 2.15,
+      "value": 2.0,
       "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "exchange_rate_vs_usd": {
-      "value": 0.8518,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.8552,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 3.24,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 3.35,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "equity_index_level": {
-      "value": 8419.69,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 8231,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 1070899771966.57,
@@ -124,6 +124,13 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -1.95,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
     }
   },
   "demographic": {
@@ -322,18 +329,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "France navigates geopolitical turbulence with GDP growth at 0.8% and stable trend. France called for a UNSC emergency session over Iran strikes, positioning itself as a multilateral voice. Nuclear energy provides energy independence advantage (0.5) relative to peers. EU-Mercosur agreement provides trade diversification. Inflation at 2.3% remains contained.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "France's CAC 40 fell 1.95% as the oil price shock and Iran crisis risk-off sentiment hit European markets. Defense Minister Lecornu led a cabinet reshuffle that signals continued defense-forward posture from the Macron government. The EU-US trade deal framework is threatened by US Section 122 tariffs, creating export market uncertainty for French luxury goods, aerospace, and agriculture. European defense spending increase, with France as a leading contributor, provides a domestic demand offset.",
     "key_changes_this_week": [
-      "France co-led UNSC emergency session call over Iran strikes (Mar 1)",
-      "Hormuz closure adds energy cost pressure; nuclear advantage provides partial buffer",
-      "EU-Mercosur Partnership Agreement signed (Jan 17) -- trade diversification positive",
-      "GDP stable at 0.8% with contained inflation at 2.3%"
+      "CAC 40 fell 1.95% on Iran crisis risk-off and oil shock",
+      "Cabinet reshuffle led by Defense Minister Lecornu; defense posture reinforced",
+      "EU-US trade deal threatened by Section 122 tariff regime",
+      "Defense spending increasing as part of European 12.6% surge",
+      "Energy shock from dual chokepoint closure adding to inflation pressure"
     ],
-    "outlook": "France's nuclear energy base provides structural advantage in the current oil shock. Diplomatic activism on Iran may enhance France's multilateral standing. EU defense spending increase benefits French defense industry (Thales, Dassault, MBDA). Fiscal consolidation remains a challenge with elevated debt levels.",
-    "investor_implications": "French defense stocks benefit from EU rearmament and regional instability. Nuclear energy advantage limits inflation pass-through vs fossil-dependent peers. OAT-Bund spread stable; French fiscal trajectory under monitoring. CAC 40 resilient relative to energy-dependent indices.",
-    "data_quality_note": "French macro data is high quality from EU official sources."
+    "outlook": "France's economic outlook is mixed: defense spending provides a structural growth driver, but energy price shock and trade uncertainty weigh on consumer and business confidence. ECB decisions will be the primary macro policy anchor.",
+    "investor_implications": "CAC 40 exposure should be tilted toward defense (Thales, Dassault) and away from luxury goods exporters facing US tariff headwinds. OAT spreads over Bunds remain manageable."
   },
   "code": "FRA",
   "name": "France",
@@ -386,14 +393,14 @@
       "govt_debt_pct_gdp": 116.5,
       "fx_reserves_usd": 282857002813.825,
       "sovereign_credit_rating": "S&P: A+, Moody's: Aa3, Fitch: AA-",
-      "central_bank_policy_rate_pct": 2.15,
+      "central_bank_policy_rate_pct": 2.0,
       "total_exports_usd": 1070899771966.57,
       "total_imports_usd": 1074721184782.63,
       "gdp_growth_forecast_2026_pct": 0.9,
       "inflation_forecast_2026_pct": 1.5,
-      "exchange_rate_vs_usd": 0.8518,
-      "sovereign_bond_yield_10yr_pct": 3.24,
-      "equity_index_level": 8419.69,
+      "exchange_rate_vs_usd": 0.8552,
+      "sovereign_bond_yield_10yr_pct": 3.35,
+      "equity_index_level": 8231,
       "top_export_partners": [
         {
           "country": "DEU",
@@ -438,7 +445,8 @@
           "pct_of_total": 7.0
         }
       ],
-      "avg_applied_tariff_pct": 5.0
+      "avg_applied_tariff_pct": 5.0,
+      "equity_index_daily_change_pct": -1.95
     },
     "military": {
       "military_spending_usd": 61000000000,

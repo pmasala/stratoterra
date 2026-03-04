@@ -3,8 +3,8 @@
   "country_name": "Kuwait",
   "tier": 2,
   "region": "middle_east",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 160227273053.334,
@@ -205,12 +205,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.576,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 0.95,
+      "confidence": 0.82,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W10b",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
+      "change_note": "Hormuz closure maximum impact on Kuwait oil exports and trade.",
+      "previous_value": 0.576
     },
     "composite_national_power_index": {
       "value": 36.3,
@@ -221,12 +223,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 295,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 395,
+      "confidence": 0.75,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "run_id": "2026-W10b",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "Iranian strikes on Ali al-Salem, friendly fire incident. +100bps from 295.",
+      "previous_value": 295
     },
     "market_accessibility_score": {
       "value": 0.453,
@@ -245,18 +249,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "Kuwait is under direct Iranian attack. IRGC struck Ali Al Salem Air Base. Hormuz closure blocks oil exports (64% chokepoint exposure). Low debt (7.3%) provides fiscal buffer but oil revenue disruption threatens the budget. GDP outlook severely downgraded from pre-crisis 3.9% forecast.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "Kuwait is among the hardest-hit Gulf states in the Iran crisis. Ali al-Salem Air Base was struck by Iran in retaliatory salvos; in a separate incident, Kuwaiti air defenses accidentally shot down three US fighter jets, creating a significant diplomatic complication within the US-Gulf coalition. Kuwait's oil exports are completely blocked by the Hormuz closure, with no pipeline alternative unlike Saudi Arabia or the UAE. Revenue loss is estimated at approximately $2.5 billion per month.",
     "key_changes_this_week": [
-      "IRGC struck Ali Al Salem Air Base in Kuwait (Mar 1, critical/transformative)",
-      "Hormuz closure blocks oil exports -- 64% chokepoint exposure (Mar 1, critical)",
-      "GDP outlook severely downgraded from 3.9% forecast",
-      "Low debt (7.3%) provides fiscal buffer"
+      "Ali al-Salem Air Base struck by Iranian IRGC retaliatory salvos",
+      "Kuwaiti air defenses accidentally shot down 3 US fighter jets — significant diplomatic incident",
+      "Oil exports completely halted by Hormuz closure; no pipeline bypass available",
+      "Estimated $2.5B/month revenue loss from export blockage",
+      "Kuwait Investment Authority (KIA) drawdown accelerating to fund domestic fiscal gap",
+      "KWD peg to USD basket maintained but sovereign fiscal buffer under stress"
     ],
-    "outlook": "Kuwait's oil-dependent economy faces severe disruption from Hormuz closure. Fiscal reserves (Kuwait Investment Authority) provide significant buffer. Low debt position means Kuwait can weather the crisis longer than peers. Recovery depends on Hormuz reopening timeline.",
-    "investor_implications": "Kuwait equity market faces severe repricing. KIA sovereign wealth provides ultimate backstop. Kuwaiti sovereign bonds face spread widening but strong fiscal position limits credit risk. Oil export revenue loss is temporary if conflict resolves.",
-    "data_quality_note": "Kuwait macro data is moderate quality. Military events from official statements. CRITICAL alert active."
+    "outlook": "Kuwait's complete export dependence on Hormuz — with no bypass pipeline — means revenue loss scales linearly with closure duration. The KIA sovereign wealth fund ($900B+) provides a substantial buffer, but sustained drawdown accelerates if closure extends beyond weeks. The friendly-fire incident with US forces creates political strain within the coalition at a critical moment.",
+    "investor_implications": "Kuwait Investment Authority may accelerate liquidation of foreign equity and fixed income positions to fund domestic fiscal needs, creating potential selling pressure in global markets. Kuwaiti sovereign bonds retain investment-grade status but spreads are widening meaningfully. The KWD peg is secure given KIA reserves; no FX risk, but credit spread risk is real and growing.",
+    "data_quality_note": "Revenue loss estimates based on pre-crisis export volumes. Friendly-fire incident confirmed by US CENTCOM and Kuwaiti MoD. KIA drawdown figures are estimates; official disclosures are quarterly."
   },
   "code": "KWT",
   "name": "Kuwait",
@@ -375,9 +381,9 @@
     "derived": {
       "resource_self_sufficiency_index": 0.45,
       "energy_independence_index": 1.0,
-      "supply_chain_chokepoint_exposure": 0.576,
+      "supply_chain_chokepoint_exposure": 0.95,
       "composite_national_power_index": 36.3,
-      "political_risk_premium_bps": 295,
+      "political_risk_premium_bps": 395,
       "market_accessibility_score": 0.453
     }
   },

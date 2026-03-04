@@ -3,8 +3,8 @@
   "country_name": "Israel",
   "tier": 1,
   "region": "middle_east",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 540379921261.681,
@@ -84,11 +84,11 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 3.0724,
+      "value": 3.0948,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 3.8,
@@ -279,12 +279,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 600,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 800,
+      "confidence": 0.75,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "run_id": "2026-W10b",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "Multi-front war: Gaza, Lebanon (Hezbollah ceasefire collapse), Iranian retaliation. +200bps from 600.",
+      "previous_value": 600
     },
     "market_accessibility_score": {
       "value": 0.595,
@@ -303,20 +305,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "Israel faces a three-front war following the most significant military escalation in decades. Hezbollah broke the November 2024 ceasefire on Mar 1, reopening the northern front. IRGC launched retaliatory strikes including a missile hitting West Jerusalem. Military spending at 8.8% of GDP (2nd highest globally). Government debt trend strong_growth. Budget deadline March 31 could trigger government dissolution. Political stability at -1.46 with multiple critical alerts active.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "Israel is fighting simultaneous wars on two fronts for the first time since 1973. Operation Roaring Lion, the Israeli air component of the joint US-Israeli strikes on Iran, is ongoing. Hezbollah broke its ceasefire by launching rockets into northern Israel in solidarity with Iran; Israel responded with strikes on Beirut killing 52+ and has deployed ground forces into south Lebanon. IRGC retaliatory strikes have hit Israeli targets directly. The economy faces severe strain from defense mobilization, tourism collapse, and insurance repricing across all Israeli asset classes.",
     "key_changes_this_week": [
-      "Hezbollah broke ceasefire, fired rockets at northern Israel (Mar 1, major)",
-      "IRGC retaliatory strike hit road in West Jerusalem (Mar 1, transformative)",
-      "Israel now faces three-front war: Gaza, Lebanon, Iran",
-      "Military spending at 8.8% of GDP; debt trend strong_growth",
-      "Budget deadline March 31 could trigger government dissolution",
-      "Political stability at -1.46 with critical alert upgraded"
+      "Operation Roaring Lion: Israeli air strikes on Iran as part of joint US-Israeli operation (Feb 28)",
+      "Hezbollah broke ceasefire; rockets launched at northern Israel; Israeli strikes killed 52+ in Beirut",
+      "Israeli ground forces deployed into south Lebanon; second front opened",
+      "IRGC retaliatory strikes hit Israeli targets directly",
+      "ILS under depreciation pressure; Tel Aviv Stock Exchange in high volatility",
+      "Defense spending surge; reservist mobilization at scale impacting labor supply"
     ],
-    "outlook": "Israel's security and fiscal situation has deteriorated critically. A three-front war (Gaza, Lebanon, Iran) strains military capacity and fiscal resources simultaneously. Budget deadline March 31 creates political crisis risk on top of security crisis. Tech sector resilience is being tested by reservist call-ups and investor risk aversion. US support is assured but the scope of conflict is unprecedented for Israel since 1973.",
-    "investor_implications": "Israeli equities face severe downside risk. TA-35 likely gap down Monday. Shekel depreciation accelerating under multi-front conflict stress. Israeli government bonds face sell-off on fiscal deterioration and credit rating downgrade risk. Tech sector (TASE-listed and US-listed Israeli firms) face talent retention challenges from reservist mobilization. Defense stocks are the only sector with positive positioning.",
-    "data_quality_note": "Israel macro data is moderate quality under wartime conditions. Military spending and conflict data from official and OSINT sources. CRITICAL: Multiple critical/warning alerts active."
+    "outlook": "Extended multi-front conflict strains the Israeli economy and military simultaneously. Defense spending will surge further, adding to fiscal pressure already elevated from Gaza operations. The diplomatic path to ceasefire on either front is unclear, with Hezbollah's political future in Lebanon complicated by the Lebanese cabinet's historic vote to ban Hezbollah military activities.",
+    "investor_implications": "A meaningful war premium is now priced into all Israeli assets. The ILS will face continued depreciation pressure as defense outlays surge and foreign investor risk appetite falls. The Tel Aviv Stock Exchange is volatile; defense sector names are the sole beneficiaries. TA-35 and TA-125 exposure should be reduced until a credible de-escalation pathway emerges.",
+    "data_quality_note": "Military situation data from OSINT and open-source news. Economic impact estimates are preliminary. Casualty figures may understate actual toll. CRITICAL: Multiple active alerts."
   },
   "code": "ISR",
   "name": "Israel",
@@ -392,7 +394,7 @@
       "total_imports_usd": 140748500000,
       "gdp_growth_forecast_2026_pct": 3.9,
       "inflation_forecast_2026_pct": 2.2,
-      "exchange_rate_vs_usd": 3.0724,
+      "exchange_rate_vs_usd": 3.0948,
       "top_export_partners": [
         {
           "country": "USA",
@@ -458,7 +460,7 @@
       "energy_independence_index": 0.6,
       "supply_chain_chokepoint_exposure": 0.403,
       "composite_national_power_index": 61.3,
-      "political_risk_premium_bps": 600,
+      "political_risk_premium_bps": 800,
       "market_accessibility_score": 0.595
     }
   },

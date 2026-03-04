@@ -3,8 +3,8 @@
   "country_name": "United States",
   "tier": 1,
   "region": "north_america",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 28750956130731.2,
@@ -79,23 +79,23 @@
     "central_bank_policy_rate_pct": {
       "value": 3.625,
       "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 3.96,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 4.11,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "equity_index_level": {
-      "value": 6878.88,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 5825,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 3232522000000,
@@ -117,6 +117,13 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -0.78,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
     }
   },
   "demographic": {
@@ -308,12 +315,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 0,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 50,
+      "confidence": 0.75,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "run_id": "2026-W10b",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "Section 122 tariff imposed (150-day clock); growing domestic unrest; SCOTUS IEEPA ruling. +50bps from 0.",
+      "previous_value": 0
     },
     "market_accessibility_score": {
       "value": 0.902,
@@ -332,20 +341,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "The US faces a convergence of military, trade, and constitutional crises this week. Operation Epic Fury struck 1,000+ targets in Iran, killing Supreme Leader Khamenei -- the largest US military operation since Iraq 2003. Three US soldiers were killed in IRGC retaliation at Kuwait. The Strait of Hormuz closure sent oil prices surging and Dow futures dropped 517 points. Simultaneously, the SCOTUS struck down IEEPA tariffs 6-3, forcing a pivot to Section 122 with 10-15% global tariffs for 150 days. Additional tariffs on China (20% cumulative) and Canada/Mexico (25%) take effect March 4. Recession probability jumped from 25-30% to 40-50%. The Fed holds at 3.50-3.75% with stagflation risk constraining future rate cuts.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "The United States simultaneously launched the largest military operation since Iraq 2003 and navigated a domestic constitutional rupture. Operation Epic Fury struck 1,039 targets in Iran with US-Israeli forces; three US soldiers were killed in IRGC retaliatory strikes. The Supreme Court struck down IEEPA tariff authority 6-3, forcing a pivot to Section 122 with a 15% global tariff capped at 150 days. Markets sold off sharply (S&P -0.78%, Dow -2.1%), and recession probability rose to 40-50%. Nationwide 'No Kings' protests are planned for March 28, adding a domestic political dimension.",
     "key_changes_this_week": [
-      "US-Israeli strikes hit 1,000+ Iran targets; 3 US soldiers killed in Kuwait; IRGC retaliates against 27 US bases (Feb 28-Mar 1, transformative)",
-      "SCOTUS struck down IEEPA tariffs 6-3; Trump pivoted to Section 122 with 15% global tariff (Feb 20, transformative)",
-      "Strait of Hormuz effectively closed; oil prices surge to $80-90+ range; gold past $5,300/oz (Mar 1)",
-      "Additional 10% China tariff (20% total) and 25% Canada/Mexico tariffs effective March 4",
-      "Recession probability surged from 25-30% to 40-50%; S&P 500 posted largest monthly decline in a year",
-      "New START treaty expired without extension; global nuclear arms control framework collapsed"
+      "Operation Epic Fury launched against Iran; 3 US soldiers KIA in IRGC retaliation (Feb 28-Mar 1, transformative)",
+      "SCOTUS struck down IEEPA tariff authority 6-3; Section 122 15% global tariff enacted for 150 days",
+      "Additional 20% cumulative China tariffs and 25% Canada/Mexico tariffs effective March 4",
+      "Recession probability surged from 25-30% to 40-50%; S&P posted largest monthly decline in a year",
+      "No Kings protests planned nationwide March 28; midterm primary season begun",
+      "Strait of Hormuz closure driving oil surge; stagflation risk elevated"
     ],
-    "outlook": "The US faces a potential stagflation scenario: oil price shock from Hormuz disruption pushes inflation higher while recession probability rises on trade disruption and consumer confidence deterioration. The constitutional crisis over trade policy creates legal uncertainty for hundreds of billions in tariff collections, with companies suing for $134B+ in refunds. March FOMC (17-18) is a key decision point -- the Fed faces a dilemma between supporting growth and containing inflation. Trump-Xi summit planned for March 30 could either escalate or de-escalate China trade tensions. Iran military operations continue with no ceasefire in sight, adding persistent defense spending and oil supply risk.",
-    "investor_implications": "Defensive positioning warranted: overweight Treasuries (10Y at 3.96%), gold ($5,300+), energy, and defense contractors (Lockheed, Raytheon, Northrop). Underweight consumer discretionary, airlines, and trade-exposed manufacturers. The $200B+ tariff refund question creates contingent fiscal liability. Monitor VIX at Monday open and March FOMC for rate path signals. Section 122 tariffs limited to 150 days create a policy cliff in July that will require resolution.",
-    "data_quality_note": "US macro data is high quality (confidence 0.85-0.95). Recession probability estimates are analyst consensus, not official forecasts. Market data is pre-Monday-open and may shift significantly."
+    "outlook": "The US faces a potential stagflation scenario: the Hormuz oil shock pushes inflation higher while trade disruption and consumer confidence deterioration raise recession risk. The 150-day Section 122 tariff clock creates a policy cliff in July requiring legislative resolution. The March FOMC (17-18) is a critical inflection point; the Fed is trapped between containing energy-driven inflation and supporting a slowing economy.",
+    "investor_implications": "Defensive positioning is warranted: overweight Treasuries (10Y at 3.96% on flight-to-safety), gold ($5,155+), energy sector, and defense contractors (Lockheed, Raytheon, Northrop). Underweight consumer discretionary, airlines, and trade-exposed manufacturers. Monitor VIX at market open and March FOMC for rate path signals; the 150-day tariff cliff in July is the next major policy discontinuity.",
+    "data_quality_note": "US macro data is high confidence (0.85-0.95). Recession probability estimates are analyst consensus, not official forecasts. Market data reflects pre-week-open conditions and may shift materially."
   },
   "code": "USA",
   "name": "United States",
@@ -435,8 +444,8 @@
       "total_imports_usd": 4136061000000,
       "gdp_growth_forecast_2026_pct": 2.1,
       "inflation_forecast_2026_pct": 2.4,
-      "sovereign_bond_yield_10yr_pct": 3.96,
-      "equity_index_level": 6878.88,
+      "sovereign_bond_yield_10yr_pct": 4.11,
+      "equity_index_level": 5825,
       "top_export_partners": [
         {
           "country": "CAN",
@@ -481,8 +490,9 @@
           "pct_of_total": 4.5
         }
       ],
-      "avg_applied_tariff_pct": 9.8,
-      "trade_openness_pct": 30.0
+      "avg_applied_tariff_pct": 15.0,
+      "trade_openness_pct": 30.0,
+      "equity_index_daily_change_pct": -0.78
     },
     "military": {
       "defense_spending_usd": 997000000000,
@@ -509,7 +519,7 @@
       "energy_independence_index": 1.0,
       "supply_chain_chokepoint_exposure": 0.13,
       "composite_national_power_index": 98.3,
-      "political_risk_premium_bps": 0,
+      "political_risk_premium_bps": 50,
       "market_accessibility_score": 0.902
     }
   },
@@ -571,11 +581,11 @@
       "run_id": "2026-W10"
     },
     "avg_applied_tariff_pct": {
-      "value": 9.8,
-      "confidence": 0.88,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 15.0,
+      "confidence": 0.9,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "trade_openness_pct": {
       "value": 30.0,

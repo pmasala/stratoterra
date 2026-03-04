@@ -7,6 +7,9 @@ Agent ID: `agent_02` | Phase: 1 (GATHER) | Run ID: {RUN_ID}
 Collect current financial market data: exchange rates, sovereign bond yields,
 stock indices, commodity prices, and recent central bank decisions.
 
+**Cache policy:** All data collected by this agent is WEEKLY frequency — no caching
+or skip logic applies. Every data point is refreshed every pipeline run.
+
 ## Inputs
 - `/data/indices/country_list.json`
 

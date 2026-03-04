@@ -28,15 +28,20 @@ The model targets **~50 core countries** (representing 95%+ of global investable
 
 ```
 update_frequency: enum {
-  realtime,      // Updated within hours of change
-  daily,         // Updated daily
-  weekly,        // Updated weekly (standard agent cycle)
-  monthly,       // Updated monthly
-  quarterly,     // Updated quarterly
-  annual,        // Updated annually
-  static         // Rarely changes, updated on detection of change
+  realtime,      // Updated within hours of change (not used in current pipeline)
+  daily,         // Updated daily (not used in current pipeline)
+  weekly,        // Updated every pipeline run (~7 days). Market data, events, leadership.
+  monthly,       // Updated every ~30 days. Monetary/inflation, unemployment.
+  quarterly,     // Updated every ~90 days. GDP, trade flows, FDI, fiscal data.
+  annual,        // Updated when source publishes new edition. Governance indices, military baselines.
+  static,        // Seed once, refresh only on rare trigger events. Geography, cultural factors.
+  derived        // Recomputed each run from base factors. No external fetching.
 }
 ```
+
+The authoritative factor→frequency mapping is in `/agents/config/factor_frequency_registry.json`.
+Agents use `/agents/config/release_calendar.json` for annual source publication dates
+and `/agents/config/cache_registry.json` for runtime cache state.
 
 ### Confidence Scoring
 
@@ -359,7 +364,7 @@ ClimateFactor:
   source: string
   confidence: float
   last_updated: timestamp
-  update_frequency: annual
+  update_frequency: static                   # Climate classification rarely changes; vulnerability indices are annual
 ```
 
 ### 1F. Demographics
@@ -483,7 +488,7 @@ EndemicCulturalFactor:
   methodology_url: string
   confidence: float
   last_updated: timestamp
-  update_frequency: annual    # These change very slowly
+  update_frequency: static    # Hofstede/WVS/historical factors are static; indices like gender_equality are annual
   notes: string
 ```
 
@@ -701,7 +706,7 @@ MacroeconomicFactor:
   source: string
   confidence: float
   last_updated: timestamp
-  update_frequency: quarterly                # Some sub-fields updated more frequently
+  update_frequency: annual                   # Inequality data is annual; wage data may lag 1-2 years
 ```
 
 ### 3B. Productive Capability & Value-Add Capacity
@@ -809,7 +814,7 @@ CapabilityFactor:
   source: string
   confidence: float
   last_updated: timestamp
-  update_frequency: quarterly
+  update_frequency: annual                   # Capability/infrastructure data is annual
 ```
 
 ---
@@ -961,7 +966,7 @@ MilitaryFactor:
   source: string
   confidence: float
   last_updated: timestamp
-  update_frequency: quarterly
+  update_frequency: annual                   # Structural military data is annual; active_conflicts and events are weekly
 ```
 
 ---

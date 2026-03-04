@@ -65,18 +65,68 @@ Also search globally: "sanctions news this week", "elections results this week",
 - A sample of `minor` events for completeness (target 50-100)
 - Total target: 80-150 events per week
 
-### Step 5: Write Output
+### Step 5: Generate Event Triggers for Cache Overrides
+
+After collecting all events, scan for any that should **force-refresh** normally-cached factors in downstream agents. These are events that invalidate data that would otherwise be skipped due to caching (annual/quarterly/static factors).
+
+For each such event, add an entry to the `event_triggers` array:
+
+```json
+{
+  "trigger_id": "trig_{DATE}_{SEQUENCE}",
+  "event_id": "evt_{DATE}_{SEQUENCE}",
+  "trigger_type": "leadership_change | source_release | military_buildup | sanctions_change | territorial_change | rating_change | crisis | other",
+  "description": "Brief description of what changed",
+  "affected_countries": ["XXX"],
+  "affected_factor_categories": ["institutions.political.head_of_state", "institutions.political.regime_type"],
+  "force_refresh_agents": ["agent_06"],
+  "confidence": 0.90
+}
+```
+
+**Common trigger patterns:**
+
+| Event | Affected Factor Categories | Target Agent |
+|-------|---------------------------|-------------|
+| Coup / leadership change | `institutions.political.head_of_state`, `institutions.political.regime_type` | Agent 6 |
+| New SIPRI report released | `military.expenditure`, `military.arms_transfers` | Agent 5 |
+| USGS Mineral Summaries published | `endowments.natural_resources.*` | Agent 1 |
+| Credit rating downgrade | `economy.macroeconomic.sovereign_credit_rating` | Agent 2 |
+| Major military buildup | `military.personnel`, `military.army_equipment` | Agent 5 |
+| New sanctions imposed | `institutions.political.sanctions`, `bilateral.trade_sanctions` | Agent 4 |
+| New EIU Democracy Index | `institutions.political.democracy_index` | Agent 6 |
+| New Freedom House report | `institutions.political.freedom_house_*` | Agent 6 |
+| Border conflict / territorial change | `endowments.geography.*`, `endowments.borders.*` | Agent 1 |
+| New WGI release | `institutions.political.wgi_*` | Agent 6 |
+| Major trade agreement signed | `economy.trade.*`, `bilateral.trade` | Agent 4 |
+
+Only generate triggers for events with certainty_level >= `multi_source` and severity >= `moderate`.
+
+### Step 6: Write Output
 ```json
 {
   "agent": "news_events_gatherer",
   "run_id": "{RUN_ID}",
   "collection_date": "{DATE}",
   "events": [...],
+  "event_triggers": [
+    {
+      "trigger_id": "trig_{DATE}_001",
+      "event_id": "evt_{DATE}_005",
+      "trigger_type": "source_release",
+      "description": "SIPRI Military Expenditure Database 2026 edition published",
+      "affected_countries": ["ALL"],
+      "affected_factor_categories": ["military.expenditure", "military.arms_transfers"],
+      "force_refresh_agents": ["agent_05"],
+      "confidence": 0.95
+    }
+  ],
   "summary": {
     "total_events": 0,
     "by_severity": {"transformative": 0, "major": 0, "moderate": 0, "minor": 0},
     "by_region": {},
-    "countries_affected": []
+    "countries_affected": [],
+    "event_triggers_count": 0
   }
 }
 ```
@@ -86,6 +136,7 @@ Also search globally: "sanctions news this week", "elections results this week",
 - Separate facts from speculation; use `certainty_level` honestly
 - Do not editorialize — report what happened, not opinions about it
 - For ongoing situations, record the latest development this week, not historical context
+- **Event triggers are critical** — downstream agents rely on them to override caching for stale data
 
 ## Time Budget
 Target: 30-45 minutes. This is the most LLM-intensive gathering agent.

@@ -3,8 +3,8 @@
   "country_name": "Canada",
   "tier": 1,
   "region": "north_america",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 2243636826633.76,
@@ -84,25 +84,25 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 1.3648,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.3632,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 3.13,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 3.16,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "equity_index_level": {
-      "value": 32219.95,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 33004,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 727830689096.389,
@@ -124,6 +124,13 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": null,
+      "confidence": 0.8,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
     }
   },
   "demographic": {
@@ -307,18 +314,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "Canada faces a dual dynamic: 25% US tariffs effective March 4 threaten trade flows while higher oil prices benefit the energy sector. GDP trend growth from 1.2% to 1.5% shows resilience. USMCA exemptions provide partial tariff shield. The Canada-US bilateral relationship is under significant strain amid broader US trade policy disruption.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "Canada is navigating a bilateral trade war with the United States while benefiting from the global oil price surge as a major exporter. Ottawa announced 25% retaliatory tariffs on $30B in US goods effective March 4 — the most significant trade retaliation since CUSMA renegotiation. Prime Minister Carney's government commands 61% approval, providing political capital for the trade standoff. Canadian oil sands producers benefit directly from WTI price surge driven by Hormuz closure.",
     "key_changes_this_week": [
-      "25% US tariffs effective March 4; USMCA exemptions until April (major)",
-      "Oil price surge benefits Canadian energy sector (Western Canada Select)",
-      "Canada-US bilateral relationship under strain from tariff escalation",
-      "GDP trend growth (1.2% to 1.5%) showing resilience"
+      "25% retaliatory tariffs on $30B US goods announced effective March 4",
+      "PM Carney government at 61% approval; strong political mandate for trade standoff",
+      "Oil exports benefit from WTI price surge from Hormuz closure",
+      "CAD under modest pressure from US trade uncertainty",
+      "Energy sector (Suncor, Canadian Natural Resources) outperforming"
     ],
-    "outlook": "Canada's near-term outlook depends on tariff duration and oil price trajectory. Energy sector windfall partially offsets tariff drag. USMCA exemption period until April provides a negotiation window. BOC may cut rates if tariff impact materializes on growth. Political pressure to diversify trade beyond US dependency intensifies.",
-    "investor_implications": "Canadian energy producers (Suncor, CNRL) benefit from oil surge. Tariff-exposed manufacturers (autos, lumber) face margin compression. CAD supported by oil prices but pressured by trade uncertainty. Canadian government bonds may rally on BOC easing expectations.",
-    "data_quality_note": "Canadian macro data is high quality. Tariff details from official US/Canadian government sources."
+    "outlook": "Canada's trade war with the US is a significant headwind for integrated supply chains, but the energy sector windfall partially offsets economic impact. CUSMA/USMCA renegotiation pressure will define the medium-term trade relationship.",
+    "investor_implications": "Canadian energy producers are strong buys on oil price surge; trade-exposed manufacturing and auto sector names warrant caution. CAD modest depreciation risk from trade uncertainty but energy terms-of-trade provide floor. CanGovt bonds offer safe-haven quality; spreads over UST remain tight."
   },
   "code": "CAN",
   "name": "Canada",
@@ -382,9 +389,9 @@
       "total_imports_usd": 733777721186.23,
       "gdp_growth_forecast_2026_pct": 1.5,
       "inflation_forecast_2026_pct": 2,
-      "exchange_rate_vs_usd": 1.3648,
-      "sovereign_bond_yield_10yr_pct": 3.13,
-      "equity_index_level": 32219.95,
+      "exchange_rate_vs_usd": 1.3632,
+      "sovereign_bond_yield_10yr_pct": 3.16,
+      "equity_index_level": 33004,
       "top_export_partners": [
         {
           "country": "USA",
@@ -428,7 +435,8 @@
           "country": "JPN",
           "pct_of_total": 2.5
         }
-      ]
+      ],
+      "equity_index_daily_change_pct": null
     },
     "military": {
       "military_spending_usd": 27000000000,

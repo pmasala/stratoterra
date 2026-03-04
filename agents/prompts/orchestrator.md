@@ -9,6 +9,33 @@ Run ID: {YEAR}-W{WEEK_NUMBER}
 ## Your Task
 
 Execute the weekly update pipeline by running each agent in sequence.
+
+### Pre-Pipeline: Load Cache Context
+Before running any agent, load the cache context:
+1. Read `/agents/config/cache_registry.json` — last fetch timestamps per source
+2. Read `/agents/config/factor_frequency_registry.json` — frequency classification per factor
+3. Read `/agents/config/release_calendar.json` — known source publication dates
+4. Determine which frequency tiers are due this run:
+   - **WEEKLY:** Always due
+   - **MONTHLY:** Check if any monthly source was last fetched >=30 days ago
+   - **QUARTERLY:** Check if any quarterly source was last fetched >=90 days ago
+   - **ANNUAL:** Check release_calendar for any source with a new release since last fetch
+   - **STATIC:** Never due (unless event-triggered)
+5. Log the frequency tier status to `run_log.json`:
+   ```json
+   {
+     "cache_context": {
+       "weekly_due": true,
+       "monthly_due": false,
+       "quarterly_due": true,
+       "annual_sources_due": ["sipri.milex", "freedom_house"],
+       "static_triggers": []
+     }
+   }
+   ```
+6. Pass this context to each gathering agent (Agents 1-6)
+
+### Per-Agent Execution
 For each agent:
 1. Read the agent's configuration from `/agents/config/`
 2. Execute the agent's task using the agent's prompt from `/agents/prompts/`
@@ -18,14 +45,14 @@ For each agent:
 
 ## Pipeline Sequence
 
-| Phase | Agent | Name | Est. Time |
-|-------|-------|------|-----------|
-| 1 | 01 | Official Statistics Gatherer | 15-30 min |
-| 1 | 02 | Financial Data Gatherer | 10-20 min |
-| 1 | 03 | News & Events Gatherer | 30-45 min |
-| 1 | 04 | Trade & Sanctions Gatherer | 15 min |
-| 1 | 05 | Military & Conflict Gatherer | 15 min |
-| 1 | 06 | Political & Regulatory Gatherer | 15 min |
+| Phase | Agent | Name | Est. Time (typical week) | Est. Time (full fetch) |
+|-------|-------|------|--------------------------|------------------------|
+| 1 | 01 | Official Statistics Gatherer | 2-5 min (cached) | 20-30 min |
+| 1 | 02 | Financial Data Gatherer | 10-20 min (all weekly) | 10-20 min |
+| 1 | 03 | News & Events Gatherer | 30-45 min (all weekly) | 30-45 min |
+| 1 | 04 | Trade & Sanctions Gatherer | ~13 min (Part B only) | ~25 min |
+| 1 | 05 | Military & Conflict Gatherer | ~13 min (Part B only) | ~25 min |
+| 1 | 06 | Political & Regulatory Gatherer | ~12 min (Part B only) | ~25 min |
 | 2 | 07 | Fact Extractor & Structurer | 20-30 min |
 | 3 | 08 | Cross-Validator & Anomaly Detector | 15-20 min |
 | 4 | 09 | Data Integrator | 5-10 min |
@@ -101,7 +128,10 @@ No `.env` file or API keys are required. All data sources used by the pipeline a
 - Do not modify `/data/` until Agent 9 runs (after validation)
 - Keep all decisions traceable in the run log
 - Never skip the human review points
+- **Cache-aware:** Gathering agents (01-06) follow `/agents/skills/cache_check.md` to skip data that isn't due for refresh. Verify each agent's `cache_decisions` array in its output.
+- **Agent 9 updates cache:** After integration, Agent 9 must update `/agents/config/cache_registry.json`. Verify this was done.
+- **Agent 16 commits cache:** Ensure `cache_registry.json` is included in the final commit alongside `/data/` changes.
 
 ## Begin
 
-Start with Agent 1. Execute its prompt from `agents/prompts/agent_01_official_stats.md`.
+Load cache context (see Pre-Pipeline above), then start with Agent 1. Execute its prompt from `agents/prompts/agent_01_official_stats.md`.

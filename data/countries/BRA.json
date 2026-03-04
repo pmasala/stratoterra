@@ -3,8 +3,8 @@
   "country_name": "Brazil",
   "tier": 1,
   "region": "latin_america",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 2185821648943.86,
@@ -84,25 +84,25 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 5.1303,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 5.1369,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 13.63,
-      "confidence": 0.8,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 13.53,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "equity_index_level": {
-      "value": 188786.98,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 161870,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "total_exports_usd": {
       "value": 387912477699.81,
@@ -124,6 +124,13 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": 0.83,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
     }
   },
   "demographic": {
@@ -313,18 +320,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "Brazil benefits from several positive developments: the EU-Mercosur Partnership Agreement signed January 17 is the largest FTA ever, covering 780 million people. GDP growth at 2.4% with stable trend. The Selic rate at 13.25% remains elevated but inflation is contained. Brazil's agricultural commodity exports benefit from trade rerouting dynamics. Energy self-sufficiency provides buffer against Hormuz disruption.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "Brazil's Bovespa rose 0.83% — one of the few major equity markets to post gains this week — reflecting Brazil's position as a net oil exporter that benefits directly from oil price surges. Brazilian real (BRL) showed relative stability as commodity terms-of-trade improved. The central bank's credibility has been maintained through consistent inflation-targeting communication, anchoring fixed income despite global volatility.",
     "key_changes_this_week": [
-      "EU-Mercosur Partnership Agreement signed -- largest FTA in history (Jan 17, major)",
-      "Oil price surge benefits Petrobras and pre-salt production",
-      "GDP at 2.4% with stable trend; inflation contained",
-      "Brazil positioned diplomatically as neutral on Iran conflict"
+      "Bovespa +0.83% — rare positive in global risk-off; net oil exporter beneficiary",
+      "BRL relatively stable on improved commodity terms-of-trade",
+      "Oil price surge benefits Petrobras and Brazilian E&P sector",
+      "Central bank credibility intact; SELIC rate path unchanged",
+      "Agri-commodity prices also elevated; broad commodity exporter benefit"
     ],
-    "outlook": "Brazil is among the best-positioned emerging markets for the current global environment. Energy self-sufficiency, agricultural export strength, and EU-Mercosur trade opening provide structural tailwinds. The BCB Selic rate trajectory is key -- rate cuts depend on continued inflation deceleration. Political stability under Lula II is adequate for investor confidence.",
-    "investor_implications": "Brazilian equities attractive on relative valuation vs EM peers. Petrobras benefits from oil surge. Agricultural exporters benefit from trade diversification. BRL may strengthen on commodity tailwinds. Brazilian government bonds offer attractive real yields at current Selic levels.",
-    "data_quality_note": "Brazil macro data is high quality from BCB and IBGE. EU-Mercosur details from official EU sources."
+    "outlook": "Brazil's commodity exporter status provides genuine insulation in an oil-shock environment. Political risk from Lula government fiscal policy remains a medium-term concern, but near-term macro tailwinds are supportive. Monitor fiscal deficit trajectory.",
+    "investor_implications": "Brazilian equities are relatively attractive in a commodity-surge environment. Petrobras and agri-exporters (JBS, BRF) are beneficiaries. BRL may appreciate modestly on commodity flows; Treasuries (NTN-B) offer inflation-linked protection."
   },
   "code": "BRA",
   "name": "Brazil",
@@ -388,9 +395,9 @@
       "total_imports_usd": 377252765435.66,
       "gdp_growth_forecast_2026_pct": 1.9,
       "inflation_forecast_2026_pct": 4,
-      "exchange_rate_vs_usd": 5.1303,
-      "sovereign_bond_yield_10yr_pct": 13.63,
-      "equity_index_level": 188786.98,
+      "exchange_rate_vs_usd": 5.1369,
+      "sovereign_bond_yield_10yr_pct": 13.53,
+      "equity_index_level": 161870,
       "top_export_partners": [
         {
           "country": "CHN",
@@ -435,7 +442,8 @@
           "pct_of_total": 3.2
         }
       ],
-      "avg_applied_tariff_pct": 11.2
+      "avg_applied_tariff_pct": 11.2,
+      "equity_index_daily_change_pct": 0.83
     },
     "military": {
       "military_spending_usd": 22000000000,

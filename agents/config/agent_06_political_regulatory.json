@@ -39,6 +39,27 @@
     "medium": "Affects operating environment or political risk premium",
     "low": "Background context, no immediate investor impact"
   },
+  "frequency_tiers": {
+    "annual": {
+      "ttl_days": 365,
+      "part": "A (governance indices)",
+      "description": "Democracy index, Freedom House, CPI, press freedom, WGI, FSI, election integrity",
+      "sources": ["eiu.democracy_index", "freedom_house", "transparency_intl.cpi", "rsf.press_freedom", "worldbank.wgi", "fund_for_peace.fsi"]
+    },
+    "weekly": {
+      "ttl_days": 7,
+      "part": "A (leadership) + B (events)",
+      "description": "Head of state/government, elections, government changes, crises, regulation changes",
+      "sources": ["news", "election_guide"]
+    }
+  },
+  "cache_config": {
+    "registry_file": "agents/config/cache_registry.json",
+    "frequency_file": "agents/config/factor_frequency_registry.json",
+    "calendar_file": "agents/config/release_calendar.json",
+    "skill_file": "agents/skills/cache_check.md",
+    "event_triggers_file": "staging/raw_collected/news_events_{DATE}.json"
+  },
   "retry_on_failure": true,
   "idempotent": true,
   "prompt_file": "agents/prompts/agent_06_political_regulatory.md"

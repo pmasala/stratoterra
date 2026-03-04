@@ -3,8 +3,8 @@
   "country_name": "Iran",
   "tier": 2,
   "region": "middle_east",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 475252089215.416,
@@ -214,12 +214,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.373,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 1.0,
+      "confidence": 0.82,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W10b",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
+      "change_note": "Iran controls the Strait of Hormuz which it has now closed. Maximum chokepoint exposure.",
+      "previous_value": 0.373
     },
     "composite_national_power_index": {
       "value": 35.0,
@@ -230,12 +232,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 2300,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 3800,
+      "confidence": 0.75,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "run_id": "2026-W10b",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "Active conflict (Operation Epic Fury), leadership killed, comprehensive sanctions + conflict escalation. +1500bps from 2300.",
+      "previous_value": 2300
     },
     "market_accessibility_score": {
       "value": 0.111,
@@ -263,20 +267,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "Iran is in the most severe crisis since the 1979 revolution. US-Israeli Operation Epic Fury struck 1,000+ targets on Feb 28, killing Supreme Leader Khamenei. IRGC retaliated against 27 US bases and Gulf states on Mar 1, closing the Strait of Hormuz. The economy faces collapse: GDP strong_decrease, inflation at 42.4% approaching hyperinflation, currency in freefall, trade completely disrupted. Political succession crisis with no clear heir during 40-day mourning. Iran is effectively uninvestable across all asset classes.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "Iran faces an existential crisis unlike any since the 1979 revolution. US-Israeli Operation Epic Fury struck 504 sites across 1,039 sorties on Feb 28, killing Supreme Leader Khamenei and destroying nuclear facilities including Natanz. The IRGC has closed the Strait of Hormuz in direct retaliation, severing roughly 20% of global oil supply. An interim three-person governing council is attempting to manage succession under active military pressure, with no historical precedent for this scenario. Political risk premium on all Iran-linked assets is at maximum.",
     "key_changes_this_week": [
-      "US-Israeli strikes hit 1,000+ targets; Supreme Leader Khamenei killed (Feb 28, transformative)",
-      "IRGC retaliated against 27 US bases and Gulf states; Strait of Hormuz closed (Mar 1, transformative)",
-      "Succession crisis with no clear heir; IRGC consolidating control during mourning period",
-      "Inflation at 42.4% approaching hyperinflation threshold; currency collapse accelerating",
-      "Strong_decrease trends across GDP, trade, FDI, current account, political stability",
-      "Nuclear infrastructure targeted in strikes"
+      "Supreme Leader Khamenei killed in Operation Epic Fury strikes (Feb 28, transformative)",
+      "Strait of Hormuz closed by IRGC in retaliation, blocking ~20% of global oil supply",
+      "Nuclear facilities including Natanz struck and severely damaged across 504 target sites",
+      "787+ casualties reported; 27 US military bases in region hit by IRGC counter-strikes",
+      "Interim three-person governing council formed; Assembly of Experts convened under emergency",
+      "Iranian currency in freefall; inflation trajectory toward hyperinflation (42.4% pre-crisis)"
     ],
-    "outlook": "Iran faces state collapse risk in the near-to-medium term. IRGC control may stabilize security apparatus but cannot address economic collapse. Succession outcome (hardliner vs pragmatist) will determine whether Iran escalates further or seeks negotiated de-escalation. Hormuz closure duration is the key variable for global energy markets. No diplomatic resolution visible in the near term.",
-    "investor_implications": "Iran is completely uninvestable. All existing exposures face total loss risk. Secondary sanctions apply to any entity transacting with Iran. The primary investment implication is the Hormuz closure's impact on global energy prices and Gulf state sovereigns. Iran crisis duration is the single most important variable for global commodity markets in Q1-Q2 2026.",
-    "data_quality_note": "Iran economic data is very low confidence under current conditions. Pre-crisis figures from IMF may no longer reflect reality. Military situation assessment from OSINT and news sources. CRITICAL: 2 active critical alerts."
+    "outlook": "The near-term trajectory is catastrophic. Succession via the Assembly of Experts has no precedent under active military bombardment, and IRGC institutional control may fracture across factional lines. Hormuz closure duration — days, weeks, or months — is the single most consequential variable for global energy markets in Q1-Q2 2026. No diplomatic pathway is visible; military escalation risk remains high.",
+    "investor_implications": "Iran assets are completely uninvestable; all remaining exposures should be written off as total losses. Secondary sanctions apply to any entity transacting with Iranian counterparties. The primary investor implication is indirect: the Hormuz closure's cascading effect on Gulf sovereign creditworthiness, global energy prices, and supply-chain disruption across Asia.",
+    "data_quality_note": "Iran economic and military data is very low confidence under active conflict. Pre-crisis IMF figures no longer reflect ground conditions. Military situation assessed from OSINT and open-source news. CRITICAL: Maximum political risk premium active."
   },
   "code": "IRN",
   "name": "Iran",
@@ -442,9 +446,9 @@
     "derived": {
       "resource_self_sufficiency_index": 0.8,
       "energy_independence_index": 1.0,
-      "supply_chain_chokepoint_exposure": 0.373,
+      "supply_chain_chokepoint_exposure": 1.0,
       "composite_national_power_index": 35.0,
-      "political_risk_premium_bps": 2300,
+      "political_risk_premium_bps": 3800,
       "market_accessibility_score": 0.111
     }
   },
@@ -567,11 +571,11 @@
       "run_id": "2026-W10"
     },
     "regime_type": {
-      "value": "authoritarian",
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": "theocratic republic under interim emergency governance",
+      "confidence": 0.82,
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     },
     "freedom_house_score": {
       "value": 11,
@@ -650,19 +654,14 @@
       "source": "agent_pipeline",
       "run_id": "2026-W10"
     },
-    "head_of_state_name": {
-      "value": "Masoud Pezeshkian",
-      "confidence": 0.92,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
-    },
-    "head_of_state_title": {
-      "value": "President",
+    "head_of_state_name": "Interim Council: Pezeshkian, Mohseni-Eje'i, Arafi",
+    "head_of_state_title": "Interim Leadership Council (Supreme Leader vacancy)",
+    "leadership_transition_risk": {
+      "value": "critical",
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10b"
     }
   }
 }

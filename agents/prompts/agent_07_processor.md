@@ -24,6 +24,12 @@ mapped to the canonical schema in `docs/01_FACTOR_MODEL_SPEC.md`.
 ### Step 1: Load and Count All Raw Data
 Read all six Phase 1 output files. Count total records.
 
+### Step 1b: Load Event Triggers
+Read the `event_triggers` array from Agent 3's output (`news_events_{DATE}.json`).
+For any factor category listed in an event trigger:
+- If the triggering agent (e.g., Agent 5) produced updated data for that factor, classify it as `DIRECT_UPDATE` even if the source is normally cached at annual/quarterly frequency.
+- Pass the `event_triggers` array through to the output so Agent 9 can use it to determine which cache entries to update.
+
 ### Step 2: Classify Direct Factor Updates (Agents 1 & 2 records)
 For quantitative records, map to the exact `factor_path` from the spec.
 Assign confidence based on source:
@@ -91,11 +97,13 @@ For records from Agents 3-6 that are NOT `structured_data` (i.e., event records 
       "description": "Escalation in trade rhetoric"
     }
   ],
+  "event_triggers": [],
   "unmapped_records": [],
   "summary": {
     "total_input_records": 0,
     "direct_updates": 0,
     "event_signals": 0,
+    "event_triggered_updates": 0,
     "unmapped": 0,
     "conflicts_detected": 0
   }

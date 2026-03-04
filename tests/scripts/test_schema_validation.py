@@ -159,7 +159,7 @@ class TestUT_SCH_001_CountryFiles(unittest.TestCase):
                 data = load_json(path)
             except json.JSONDecodeError:
                 continue
-            code = data.get("code", "")
+            code = data.get("country_code", data.get("code", ""))
             if not (isinstance(code, str) and len(code) == 3 and code.isupper()):
                 errors.append(f"{os.path.basename(path)}: invalid code '{code}'")
         self.assertEqual(errors, [], "\n".join(errors))
@@ -307,11 +307,16 @@ class TestUT_SCH_003_CountrySummaryChunk(unittest.TestCase):
         errors = validate_against_schema(data, self.schema, "all_countries_summary.json")
         self.assertEqual(errors, [], "\n".join(errors))
 
-    def test_summary_is_array(self):
+    def test_summary_is_array_or_wrapper(self):
         if not self.summary_path:
             self.skipTest("Summary file not found")
         data = load_json(self.summary_path)
-        self.assertIsInstance(data, list, "all_countries_summary.json must be a JSON array")
+        # Accept both bare array and wrapper dict with 'countries' key
+        if isinstance(data, dict):
+            self.assertIn("countries", data, "Summary wrapper object must have 'countries' key")
+            self.assertIsInstance(data["countries"], list, "countries must be an array")
+        else:
+            self.assertIsInstance(data, list, "all_countries_summary.json must be a JSON array or wrapper object")
 
 
 class TestUT_SCH_005_WeeklyBriefing(unittest.TestCase):
@@ -460,12 +465,28 @@ class TestUT_SCH_007_Manifest(unittest.TestCase):
         if not os.path.isfile(self.MANIFEST_PATH):
             self.skipTest("manifest.json not found")
         data = load_json(self.MANIFEST_PATH)
+        files = data.get("files", {})
         missing = []
-        for entry in data.get("files", []):
-            rel_path = entry.get("path", "")
-            abs_path = os.path.join(CHUNKS_DIR, rel_path)
-            if not os.path.isfile(abs_path):
-                missing.append(rel_path)
+        if isinstance(files, list):
+            for entry in files:
+                rel_path = entry.get("path", "")
+                abs_path = os.path.join(REPO_ROOT, rel_path)
+                if not os.path.isfile(abs_path):
+                    missing.append(rel_path)
+        elif isinstance(files, dict):
+            for key, entry in files.items():
+                if not isinstance(entry, dict):
+                    continue
+                rel_path = entry.get("path", "")
+                if not rel_path:
+                    continue
+                abs_path = os.path.join(REPO_ROOT, rel_path)
+                # For directory entries (count > 0), check directory exists
+                if entry.get("count") and rel_path.endswith("/"):
+                    if not os.path.isdir(abs_path):
+                        missing.append(rel_path)
+                elif not rel_path.endswith("/") and not os.path.isfile(abs_path):
+                    missing.append(rel_path)
         self.assertEqual(
             missing, [],
             f"Files listed in manifest.json but not found on disk:\n"

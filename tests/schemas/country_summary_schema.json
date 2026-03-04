@@ -1,203 +1,86 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://stratoterra.io/schemas/country_summary_schema.json",
-  "title": "CountrySummaryArray",
-  "description": "Schema for all_countries_summary.json — the array of country summary objects loaded on map init.",
-  "type": "array",
-  "items": {
-    "type": "object",
-    "title": "CountrySummaryItem",
-    "required": [
-      "code",
-      "name",
-      "region",
-      "tier",
-      "latitude",
-      "longitude",
-      "population",
-      "gdp_nominal_usd",
-      "gdp_per_capita_usd",
-      "gdp_real_growth_pct",
-      "gdp_growth_trend",
-      "inflation_rate_pct",
-      "political_stability",
-      "investment_risk_score",
-      "military_spending_usd",
-      "military_spending_trend",
-      "alert_count",
-      "max_alert_severity",
-      "economic_complexity_index",
-      "energy_independence",
-      "trade_openness_pct",
-      "currency_code",
-      "trend_headline",
-      "overall_score",
-      "last_updated"
-    ],
-    "additionalProperties": true,
-    "properties": {
-      "code": {
-        "type": "string",
-        "description": "ISO 3166-1 alpha-3 country code",
-        "minLength": 3,
-        "maxLength": 3,
-        "pattern": "^[A-Z]{3}$"
-      },
-      "name": {
-        "type": "string",
-        "description": "Country display name",
-        "minLength": 1
-      },
-      "region": {
-        "type": "string",
-        "description": "Geopolitical region classification",
-        "enum": [
-          "north_america",
-          "latin_america",
-          "europe",
-          "middle_east",
-          "sub_saharan_africa",
-          "south_asia",
-          "east_asia",
-          "southeast_asia",
-          "central_asia",
-          "oceania"
-        ]
-      },
-      "tier": {
-        "type": "integer",
-        "description": "Country tier: 1=major economy, 2=regional player, 3=frontier/watchlist",
-        "minimum": 1,
-        "maximum": 3
-      },
-      "latitude": {
-        "type": "number",
-        "description": "Country centroid latitude in decimal degrees",
-        "minimum": -90,
-        "maximum": 90
-      },
-      "longitude": {
-        "type": "number",
-        "description": "Country centroid longitude in decimal degrees",
-        "minimum": -180,
-        "maximum": 180
-      },
-      "population": {
-        "type": "integer",
-        "description": "Total population",
-        "minimum": 1
-      },
-      "gdp_nominal_usd": {
-        "type": "number",
-        "description": "Nominal GDP in current USD",
-        "minimum": 0
-      },
-      "gdp_per_capita_usd": {
-        "type": "number",
-        "description": "GDP per capita in current USD",
-        "minimum": 0
-      },
-      "gdp_real_growth_pct": {
-        "type": "number",
-        "description": "Real GDP growth rate as percentage (e.g. 3.5 = 3.5%)"
-      },
-      "gdp_growth_trend": {
-        "type": "string",
-        "description": "Directional trend label for GDP growth",
-        "enum": [
-          "strong_growth",
-          "growth",
-          "stable",
-          "decrease",
-          "strong_decrease"
-        ]
-      },
-      "inflation_rate_pct": {
-        "type": "number",
-        "description": "Consumer price inflation rate as percentage"
-      },
-      "political_stability": {
-        "type": "number",
-        "description": "Political stability index, normalized 0 (least stable) to 1 (most stable)",
-        "minimum": 0,
-        "maximum": 1
-      },
-      "investment_risk_score": {
-        "type": "number",
-        "description": "Composite investment risk score, 0 (lowest risk) to 1 (highest risk)",
-        "minimum": 0,
-        "maximum": 1
-      },
-      "military_spending_usd": {
-        "type": "number",
-        "description": "Military expenditure in current USD",
-        "minimum": 0
-      },
-      "military_spending_trend": {
-        "type": "string",
-        "description": "Directional trend label for military spending",
-        "enum": [
-          "strong_growth",
-          "growth",
-          "stable",
-          "decrease",
-          "strong_decrease"
-        ]
-      },
-      "alert_count": {
-        "type": "integer",
-        "description": "Number of active alerts for this country",
-        "minimum": 0
-      },
-      "max_alert_severity": {
-        "type": "string",
-        "description": "Highest severity level among active alerts, or 'none' if no alerts",
-        "enum": [
-          "critical",
-          "warning",
-          "watch",
-          "none"
-        ]
-      },
-      "economic_complexity_index": {
-        "type": "number",
-        "description": "Harvard/MIT Economic Complexity Index (ECI), typically -3 to +3",
-        "minimum": -3,
-        "maximum": 3
-      },
-      "energy_independence": {
-        "type": "number",
-        "description": "Energy self-sufficiency ratio: domestic production / domestic consumption. >1 = net exporter.",
-        "minimum": 0
-      },
-      "trade_openness_pct": {
-        "type": "number",
-        "description": "Trade openness as (exports + imports) / GDP × 100",
-        "minimum": 0
-      },
-      "currency_code": {
-        "type": "string",
-        "description": "ISO 4217 currency code",
-        "minLength": 3,
-        "maxLength": 3
-      },
-      "trend_headline": {
-        "type": "string",
-        "description": "One-sentence human-readable trend headline for the country",
-        "minLength": 1
-      },
-      "overall_score": {
-        "type": "number",
-        "description": "Composite overall country score, normalized 0 to 1",
-        "minimum": 0,
-        "maximum": 1
-      },
-      "last_updated": {
-        "type": "string",
-        "description": "ISO 8601 UTC timestamp of last data update",
-        "format": "date-time"
+  "title": "CountrySummary",
+  "description": "Schema for all_countries_summary.json — accepts both a bare array and a wrapper object with a 'countries' array.",
+  "oneOf": [
+    {
+      "type": "array",
+      "items": { "$ref": "#/definitions/CountrySummaryItem" },
+      "minItems": 1
+    },
+    {
+      "type": "object",
+      "required": ["countries"],
+      "additionalProperties": true,
+      "properties": {
+        "generated_at": { "type": "string" },
+        "run_id": { "type": "string" },
+        "countries": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/CountrySummaryItem" },
+          "minItems": 1
+        }
       }
     }
-  },
-  "minItems": 1
+  ],
+  "definitions": {
+    "CountrySummaryItem": {
+      "type": "object",
+      "title": "CountrySummaryItem",
+      "required": [
+        "code",
+        "name",
+        "region",
+        "tier",
+        "last_updated"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "ISO 3166-1 alpha-3 country code",
+          "minLength": 3,
+          "maxLength": 3,
+          "pattern": "^[A-Z]{3}$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Country display name",
+          "minLength": 1
+        },
+        "region": {
+          "type": "string",
+          "description": "Geopolitical region classification",
+          "enum": [
+            "north_america",
+            "latin_america",
+            "europe",
+            "middle_east",
+            "sub_saharan_africa",
+            "south_asia",
+            "east_asia",
+            "southeast_asia",
+            "central_asia",
+            "oceania"
+          ]
+        },
+        "tier": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "gdp_nominal_usd": {
+          "type": "number",
+          "minimum": 0
+        },
+        "gdp_real_growth_pct": {
+          "type": "number"
+        },
+        "last_updated": {
+          "type": "string"
+        }
+      }
+    }
+  }
 }

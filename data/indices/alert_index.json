@@ -1,11 +1,12 @@
 {
-  "last_updated": "2026-03-02T16:00:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:35:00Z",
+  "run_id": "2026-W10b",
   "summary": {
-    "critical": 13,
-    "warning": 20,
-    "watch": 28,
-    "total_active": 61
+    "critical": 17,
+    "warning": 26,
+    "watch": 25,
+    "total_active": 68,
+    "resolved": 1
   },
   "alerts": [
     {
@@ -14,20 +15,22 @@
       "country_code": "IRN",
       "status": "ongoing",
       "trigger": "Active conflict escalated to severity high; regime collapse",
-      "headline": "Iran under massive US-Israeli military strikes; Supreme Leader Khamenei killed",
-      "details": "US and Israel launched joint Operation Epic Fury on Feb 28, striking 1,000+ targets in Iran. Supreme Leader Khamenei was killed. Iran retaliated with strikes on 27 US bases and Gulf Arab states. IRGC consolidating control during 40-day mourning period. Succession crisis with no clear heir. Active military conflict continues with no ceasefire in sight. Conditions persist and may be worsening as IRGC pledges sustained retaliation campaign.",
+      "headline": "Iran under active US-Israeli military campaign (Operation Epic Fury); Supreme Leader Khamenei killed; Hormuz closed",
+      "details": "US and Israel launched joint Operation Epic Fury on Feb 28, striking 1,000+ targets in Iran. Supreme Leader Khamenei was killed. Iran retaliated with strikes on 27 US bases and Gulf Arab states on Mar 1. Strait of Hormuz closed, cutting off 20% of global oil supply. IRGC consolidating control under Interim Leadership Council (Pezeshkian, Mohseni-Eje'i, Arafi) during 40-day mourning period. Succession crisis with no clear heir. Active military conflict continues as of 2026-03-03. IRGC pledges sustained retaliation. Political risk premium raised to 3800 bps \u2014 highest in tracked universe. Economy on collapse trajectory.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-02T16:00:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
       "affected_factors": [
         "military.active_conflicts",
         "political.political_stability_score",
         "derived.political_risk_premium_bps",
         "macroeconomic.gdp_real_growth_rate_pct"
       ],
-      "run_id": "2026-W10",
+      "run_id": "2026-W10b",
       "title": "Iran under massive US-Israeli military strikes; Supreme Leader Khamenei killed",
       "description": "US and Israel launched joint Operation Epic Fury on Feb 28, striking 1,000+ targets in Iran. Supreme Leader Khamenei was killed. Iran retaliated with strikes on 27 US bases and Gulf Arab states. IRGC consolidating control during 40-day mourning period. Succession crisis with no clear heir. Active military conflict continues with no ceasefire in sight. Conditions persist and may be worsening as IRGC pledges sustained retaliation campaign.",
-      "countries": ["IRN"],
+      "countries": [
+        "IRN"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -39,7 +42,7 @@
       "headline": "Iran economic collapse trajectory: strong_decrease across GDP, trade, FDI, current account",
       "details": "Iran shows strong_decrease trends in 8 of 11 tracked factors: GDP growth (strong_decrease), current account (strong_decrease), political stability (strong_decrease at -1.69), trade openness (strong_decrease), FDI (strong_decrease), exchange rate (strong_decrease), investment risk (strong_growth), and relationship health (strong_decrease). Inflation at 42.4% with strong_growth trend approaching hyperinflation. Iran is effectively uninvestable.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-02T16:00:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_rate_pct",
         "macroeconomic.current_account_balance_pct_gdp",
@@ -49,10 +52,12 @@
         "macroeconomic.exchange_rate_vs_usd",
         "derived.overall_investment_risk_score"
       ],
-      "run_id": "2026-W10",
+      "run_id": "2026-W10b",
       "title": "Iran economic collapse trajectory: strong_decrease across GDP, trade, FDI, current account",
       "description": "Iran shows strong_decrease trends in 8 of 11 tracked factors: GDP growth (strong_decrease), current account (strong_decrease), political stability (strong_decrease at -1.69), trade openness (strong_decrease), FDI (strong_decrease), exchange rate (strong_decrease), investment risk (strong_growth), and relationship health (strong_decrease). Inflation at 42.4% with strong_growth trend approaching hyperinflation. Iran is effectively uninvestable.",
-      "countries": ["IRN"],
+      "countries": [
+        "IRN"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -75,7 +80,9 @@
       "run_id": "2026-W10",
       "title": "Pakistan declares open war on Afghanistan with airstrikes on Kabul and Kandahar",
       "description": "Pakistan declared open war on Afghanistan on Feb 27, launching airstrikes on Kabul and Kandahar. Political stability at -1.93 (strong_decrease), GDP trend strong_decrease, inflation strong_growth, debt strong_growth. 20 killed in protests over Iran strikes compound domestic instability. Nuclear-armed nation in active conflict with deteriorating fiscal position. Sovereign credit at CCC+/Caa1.",
-      "countries": ["PAK"],
+      "countries": [
+        "PAK"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -98,7 +105,9 @@
       "run_id": "2026-W10",
       "title": "UAE under direct Iranian missile attacks; Hormuz closure blocks oil/LNG exports",
       "description": "IRGC struck Al Dhafra Air Base and launched missiles at Dubai and Abu Dhabi. Aviation severely disrupted with 7,700+ delays and 2,280 cancellations. UAE closed Tehran embassy. Hormuz closure blocks oil and LNG exports (76% chokepoint exposure). Current account trend strong_decrease, trade openness strong_decrease, FDI strong_decrease, investment risk strong_growth. Tourism and financial services severely impacted. Escalated from chokepoint exposure to direct military targeting.",
-      "countries": ["ARE"],
+      "countries": [
+        "ARE"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -120,7 +129,9 @@
       "run_id": "2026-W10",
       "title": "Qatar under direct Iranian attack on Al Udeid; Hormuz blocks LNG exports",
       "description": "IRGC struck Al Udeid Air Base in Qatar. Hormuz closure blocks Qatar's LNG exports (66% chokepoint exposure). Current account trend strong_decrease from 17.29%. GDP growth outlook severely downgraded from pre-crisis 6.1% forecast. North Field LNG expansion timeline at risk. Qatar caught between hosting US base and proximity to Iran. Escalated from chokepoint exposure to direct military targeting.",
-      "countries": ["QAT"],
+      "countries": [
+        "QAT"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -142,7 +153,9 @@
       "run_id": "2026-W10",
       "title": "Kuwait under direct Iranian attack on Ali Al Salem; Hormuz blocks oil exports",
       "description": "IRGC struck Ali Al Salem Air Base in Kuwait. Hormuz closure blocks oil exports (64% chokepoint exposure). Low debt (7.3%) provides fiscal buffer but oil revenue disruption threatens budget. GDP outlook severely downgraded from pre-crisis 3.9% forecast. Escalated from chokepoint exposure to direct military targeting.",
-      "countries": ["KWT"],
+      "countries": [
+        "KWT"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -164,7 +177,9 @@
       "run_id": "2026-W10",
       "title": "Oman critically exposed to Strait of Hormuz closure (62% chokepoint exposure)",
       "description": "Hormuz 70% traffic collapse continues. Oman has 62% supply chain chokepoint exposure. Oil exports severely disrupted. This is the most severe global energy supply disruption in decades. Conditions persist with no resolution in sight.",
-      "countries": ["OMN"],
+      "countries": [
+        "OMN"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -187,7 +202,9 @@
       "run_id": "2026-W10",
       "title": "Saudi Arabia exposed to Hormuz closure and IRGC regional attacks",
       "description": "Hormuz 70% traffic collapse continues with Saudi Arabia at 52% chokepoint exposure. IRGC attacks on regional US bases include Saudi-proximate installations. Political stability trend decrease. Kingdom caught between US alliance and Iranian retaliation risk. GDP trend decrease despite oil price surge. Conditions persist.",
-      "countries": ["SAU"],
+      "countries": [
+        "SAU"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -209,7 +226,9 @@
       "run_id": "2026-W10",
       "title": "Iraq critically exposed to Strait of Hormuz closure (51% chokepoint exposure)",
       "description": "Hormuz 70% traffic collapse continues with Iraq at 51% chokepoint exposure. Oil exports severely disrupted. Iraq's fiscal position highly dependent on oil revenue. Conditions persist with no resolution in sight.",
-      "countries": ["IRQ"],
+      "countries": [
+        "IRQ"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -231,7 +250,9 @@
       "run_id": "2026-W10",
       "title": "Ethiopia in selective default with Tigray conflict resumption threatening peace agreement",
       "description": "Ethiopia's sovereign credit rating at SD/Ca/RD (selective default) with political risk premium of 2,700 bps. TPLF-government clashes resumed. Elections scheduled for June 1, 2026 in a fraught environment with TPLF legal status revoked. Conditions persist.",
-      "countries": ["ETH"],
+      "countries": [
+        "ETH"
+      ],
       "type": "economic_shock"
     },
     {
@@ -240,20 +261,22 @@
       "country_code": "UKR",
       "status": "ongoing",
       "trigger": "Active high-intensity conflict (Year 5); sovereign credit CC/Ca",
-      "headline": "Ukraine war enters 5th year; CC/Ca credit rating with 2,250 bps risk premium",
-      "details": "Russia's war on Ukraine continues in Year 5 with Russia occupying ~20% of territory. Record 1,720+ drones launched by Russia in late February. Ukraine's Flamingo missiles struck Russian Caspian oil infrastructure. IMF $8.1B loan anchoring $136.5B package. GDP trend growth (2%) showing resilience despite war. Conditions persist.",
+      "headline": "Ukraine war year 5: Ukraine gains territory in Feb; CC/Ca rating; 2,250 bps risk premium",
+      "details": "Ukraine war enters 5th year. CC/Ca credit rating with 2,250 bps risk premium. Ukraine forces gained territory in February 2026, pushing back Russian advances in Zaporizhzhia. Western military aid continues but at reduced pace. No ceasefire in sight. Economic recovery constrained by ongoing conflict and reconstruction costs. New territorial gains improve defensive positioning but war continues with no end date visible.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-02T16:00:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
       "affected_factors": [
         "military.active_conflicts",
         "macroeconomic.sovereign_credit_rating",
         "derived.political_risk_premium_bps",
         "macroeconomic.govt_debt_pct_gdp"
       ],
-      "run_id": "2026-W10",
+      "run_id": "2026-W10b",
       "title": "Ukraine war enters 5th year; CC/Ca credit rating with 2,250 bps risk premium",
       "description": "Russia's war on Ukraine continues in Year 5 with Russia occupying ~20% of territory. Record 1,720+ drones launched by Russia in late February. Ukraine's Flamingo missiles struck Russian Caspian oil infrastructure. IMF $8.1B loan anchoring $136.5B package. GDP trend growth (2%) showing resilience despite war. Conditions persist.",
-      "countries": ["UKR"],
+      "countries": [
+        "UKR"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -263,19 +286,21 @@
       "status": "ongoing",
       "trigger": "Active civil war; military controls only 21% of territory; negative GDP growth",
       "headline": "Myanmar military government controls only 21% of territory; economy contracting at -2.7%",
-      "details": "Five years after the military coup, Myanmar's junta controls only 21% of the country. GDP growth is -2.7%. Inflation at 31%. Political risk premium at 2,000 bps. The country is effectively a failed state. Conditions persist.",
+      "details": "Myanmar military government controls only 21% of territory as of March 2026. Resistance forces (PDF + ethnic armies) control large swaths of the country. 2,750 bps political risk premium. State fragility at maximum levels. No resolution in sight. Humanitarian crisis deepening with 18M+ needing food assistance. International pariah status with comprehensive Western sanctions.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-02T16:00:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
       "affected_factors": [
         "military.active_conflicts",
         "macroeconomic.gdp_real_growth_pct",
         "political.political_stability_score",
         "derived.political_risk_premium_bps"
       ],
-      "run_id": "2026-W10",
+      "run_id": "2026-W10b",
       "title": "Myanmar military government controls only 21% of territory; economy contracting at -2.7%",
       "description": "Five years after the military coup, Myanmar's junta controls only 21% of the country. GDP growth is -2.7%. Inflation at 31%. Political risk premium at 2,000 bps. The country is effectively a failed state. Conditions persist.",
-      "countries": ["MMR"],
+      "countries": [
+        "MMR"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -298,7 +323,9 @@
       "run_id": "2026-W10",
       "title": "Israel faces multi-front war as Hezbollah breaks ceasefire and IRGC retaliates",
       "description": "Israel's security situation critically deteriorated. Hezbollah broke the November 2024 ceasefire on March 1, firing rockets at northern Israel. IRGC launched retaliatory strikes including a missile that hit a road in West Jerusalem. Military spending at 8.8% of GDP (2nd highest globally). Debt trend strong_growth. Political stability at -1.46 with budget deadline March 31 that could trigger government dissolution. Upgraded from warning to critical due to multi-front conflict escalation.",
-      "countries": ["ISR"],
+      "countries": [
+        "ISR"
+      ],
       "type": "military_escalation"
     },
     {
@@ -317,7 +344,9 @@
       "run_id": "2026-W10",
       "title": "Iran inflation at 42.4% and rising sharply; approaching hyperinflation territory",
       "description": "Iran CPI inflation at 42.4% with strong_growth trend. Currency collapse, sanctions, military conflict, and Hormuz closure driving prices. Approaching the 50% hyperinflation threshold. Conditions persisting and worsening.",
-      "countries": ["IRN"],
+      "countries": [
+        "IRN"
+      ],
       "type": "economic_shock"
     },
     {
@@ -338,7 +367,9 @@
       "run_id": "2026-W10",
       "title": "Argentina inflation at 41.3% but monthly rate decelerating to 2.9%; labor reform passed",
       "description": "Argentina annual CPI at 41.3% but monthly inflation at 2.9% shows dramatic deceleration under Milei reforms. Senate approved landmark labor reform (42-28 vote) on Feb 27. Trend is strong_decrease (positive). Political stability improving. However, sovereign credit remains CCC+/Caa1. Conditions moderating positively.",
-      "countries": ["ARG"],
+      "countries": [
+        "ARG"
+      ],
       "type": "economic_shock"
     },
     {
@@ -359,7 +390,9 @@
       "run_id": "2026-W10",
       "title": "Turkey inflation at 34.9% amid opposition suppression; rate at 47.5%",
       "description": "Turkey CPI at 34.9% with decrease trend (positive). Central bank rate at 47.5% aggressively targeting inflation. Istanbul mayor Imamoglu imprisoned. Erdogan succession dynamics emerging. Iran crisis adds regional risk proximity but Turkey positioned as potential mediator. Conditions persist.",
-      "countries": ["TUR"],
+      "countries": [
+        "TUR"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -380,7 +413,9 @@
       "run_id": "2026-W10",
       "title": "US trade policy constitutional crisis: SCOTUS IEEPA ruling, Section 122 imposed",
       "description": "SCOTUS struck down IEEPA tariffs 6-3 on Feb 20. Trump imposed Section 122 tariffs (10-15% for 150 days). Additional 10% tariff on China effective March 4. Trade openness trend growth as effective tariff rate dropped from 16% to 9.1%. Companies suing for $134B+ in refunds. Fundamental restructuring of US trade policy legal framework ongoing.",
-      "countries": ["USA"],
+      "countries": [
+        "USA"
+      ],
       "type": "trade_disruption"
     },
     {
@@ -402,7 +437,9 @@
       "run_id": "2026-W10",
       "title": "US faces inflation uptick from oil shock; political stability decreasing",
       "description": "US GDP stable at 2% but inflation trend shifted to growth (2.7%) from oil price surge following Hormuz closure. Debt at 125% with growth trend. Military operations against Iran add defense spending. Political stability trend decrease. Government debt trend growth as SCOTUS ruling eliminates ~$175B in tariff revenue. Fed rate cuts may be delayed.",
-      "countries": ["USA"],
+      "countries": [
+        "USA"
+      ],
       "type": "economic_shock"
     },
     {
@@ -422,7 +459,9 @@
       "run_id": "2026-W10",
       "title": "Global nuclear arms control framework collapses",
       "description": "New START treaty expired without extension. North Korea tested hypersonic missiles. Russia planning new ICBM tests. Iran nuclear infrastructure targeted in strikes. Global nuclear order in most precarious state since Cold War. Conditions persist.",
-      "countries": ["USA"],
+      "countries": [
+        "USA"
+      ],
       "type": "military_escalation"
     },
     {
@@ -444,7 +483,9 @@
       "run_id": "2026-W10",
       "title": "Russia under comprehensive sanctions with GDP decrease trend; war economy under strain",
       "description": "Russia GDP decrease trend (0.6%) with 9% inflation. Central bank rate at 21% constrains civilian economy. 7.1% GDP on defense. Record 1,720+ drones launched in late February. Ukraine striking Caspian oil infrastructure. Kadyrov health deterioration adds Chechnya uncertainty. Conditions persist.",
-      "countries": ["RUS"],
+      "countries": [
+        "RUS"
+      ],
       "type": "trade_disruption"
     },
     {
@@ -466,7 +507,9 @@
       "run_id": "2026-W10",
       "title": "Israel warning superseded by critical alert due to multi-front escalation",
       "description": "This warning-level alert has been superseded by critical alert alert_2026-03-02_058 reflecting the escalation to multi-front war with Hezbollah ceasefire collapse and direct IRGC retaliation.",
-      "countries": ["ISR"],
+      "countries": [
+        "ISR"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -488,7 +531,9 @@
       "run_id": "2026-W10",
       "title": "Japan highly exposed to oil price surge and China sanctions on 50 companies",
       "description": "Oil prices remain elevated following Hormuz closure. Japan energy independence at only 10%. China sanctions on 50 Japanese companies and rare earth export controls add supply chain disruption. GDP trend decrease. Japan-China relations at strong_decrease -- worst bilateral moment in decades. Conditions persist and compounded by China sanctions.",
-      "countries": ["JPN"],
+      "countries": [
+        "JPN"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -509,7 +554,9 @@
       "run_id": "2026-W10",
       "title": "South Korea highly exposed to oil price surge (energy independence: 15%)",
       "description": "Oil prices remain elevated. South Korea energy independence at 15%. Semiconductor cycle recovery supports growth outlook. Post-Yoon political stabilization positive. Conditions persist.",
-      "countries": ["KOR"],
+      "countries": [
+        "KOR"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -530,7 +577,9 @@
       "run_id": "2026-W10",
       "title": "Germany exposed to oil price surge and China slowdown headwinds",
       "description": "Oil prices remain elevated. Germany energy independence at 30%. GDP at 0.2% with growth trend to 0.9%. China slowdown and China-Japan sanctions signal broader trade fragmentation risk for export-dependent economy. EU-US trade deal postponed. Conditions persist.",
-      "countries": ["DEU"],
+      "countries": [
+        "DEU"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -551,7 +600,9 @@
       "run_id": "2026-W10",
       "title": "Taiwan highly exposed to oil price surge (energy independence: 5%) and cross-strait tensions",
       "description": "Oil prices remain elevated. Taiwan energy independence at only 5%, most vulnerable in dataset. GDP trend decrease (3.7% to 2.1%). China-Japan escalation signals broader regional security deterioration. Chokepoint exposure at 0.69. Conditions persist.",
-      "countries": ["TWN"],
+      "countries": [
+        "TWN"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -572,7 +623,9 @@
       "run_id": "2026-W10",
       "title": "Ghana in selective default with 2,500 bps risk premium",
       "description": "Ghana sovereign credit at SD/Caa3/RD. Political risk premium at 2,500 bps. Inflation at 16.6%. Debt restructuring ongoing. Conditions persist.",
-      "countries": ["GHA"],
+      "countries": [
+        "GHA"
+      ],
       "type": "economic_shock"
     },
     {
@@ -593,7 +646,9 @@
       "run_id": "2026-W10",
       "title": "Sri Lanka in selective default with 100.8% debt-to-GDP",
       "description": "Sri Lanka sovereign credit at SD/Ca/RD. Government debt at 100.8%. GDP recovery to 5% suggests stabilization. Debt restructuring progress is critical. Conditions persist.",
-      "countries": ["LKA"],
+      "countries": [
+        "LKA"
+      ],
       "type": "economic_shock"
     },
     {
@@ -615,7 +670,9 @@
       "run_id": "2026-W10",
       "title": "Nigeria faces security crisis, 23% inflation, and labor protests",
       "description": "Boko Haram massacre killed 170+. Inflation at 23% with CCC+/Caa1 credit rating. NLC conducting protests. Conditions persist.",
-      "countries": ["NGA"],
+      "countries": [
+        "NGA"
+      ],
       "type": "political_instability"
     },
     {
@@ -635,7 +692,9 @@
       "run_id": "2026-W10",
       "title": "Philippines governance crisis from Marcos corruption scandal",
       "description": "Marcos flood control corruption scandal continues. House Speaker and Senate President stepped down. Third Trillion Peso March protest. Marcos-Duterte alliance shattered. Conditions persist.",
-      "countries": ["PHL"],
+      "countries": [
+        "PHL"
+      ],
       "type": "political_instability"
     },
     {
@@ -657,7 +716,9 @@
       "run_id": "2026-W10",
       "title": "China GDP decelerating amid US tariff war and Japan sanctions escalation",
       "description": "China GDP trend decrease (4.8% to 4.2%). Additional 10% US tariff effective March 4. China sanctioned 50 Japanese companies with rare earth export controls on Feb 25 -- marking sharp escalation in China-Japan tensions. CPI at 0% (deflation risk). FDI trend decrease. NPC opening March 5 to set economic direction. Conditions persist with Japan sanctions adding new dimension.",
-      "countries": ["CHN"],
+      "countries": [
+        "CHN"
+      ],
       "type": "trade_disruption"
     },
     {
@@ -679,7 +740,9 @@
       "run_id": "2026-W10",
       "title": "Mexico faces 25% US tariffs and judicial reform undermining investment",
       "description": "25% US tariffs effective March 4 with auto imports exempted until April. USMCA coverage exempted until April. GDP trend growth (1% to 1.5%) positive. Oil price surge benefits Pemex. Peso under pressure. Conditions persist.",
-      "countries": ["MEX"],
+      "countries": [
+        "MEX"
+      ],
       "type": "trade_disruption"
     },
     {
@@ -700,7 +763,9 @@
       "run_id": "2026-W10",
       "title": "Canada faces 25% US tariffs and bilateral relationship deterioration",
       "description": "25% US tariffs effective March 4. GDP trend growth (1.2% to 1.5%) showing resilience. Energy sector benefits from oil price surge. USMCA exemptions provide partial shield. Canada-US relationship under strain. Conditions persist.",
-      "countries": ["CAN"],
+      "countries": [
+        "CAN"
+      ],
       "type": "trade_disruption"
     },
     {
@@ -722,7 +787,10 @@
       "run_id": "2026-W10",
       "title": "Japan-China relations severely deteriorated: 50 companies sanctioned, rare earth controls imposed",
       "description": "China sanctioned 50 Japanese companies on Feb 25, restricted rare earth exports, and imposed dual-use goods controls in response to PM Takaichi's Taiwan defense comments. This is the worst Japan-China bilateral moment in decades. Relations trend strong_decrease. GDP trend decrease as Japan manufacturing faces supply chain disruption. Military spending at strong_growth with defense budget at $58B. Tokyo issued formal protest.",
-      "countries": ["JPN", "CHN"],
+      "countries": [
+        "JPN",
+        "CHN"
+      ],
       "type": "trade_disruption"
     },
     {
@@ -744,7 +812,9 @@
       "run_id": "2026-W10",
       "title": "India highly exposed to oil shock: imports 85% of oil via Hormuz-dependent routes",
       "description": "India imports approximately 85% of its oil needs, much via Gulf routes affected by Hormuz closure. Oil price surge adds significant cost-push inflation (CPI trend growth from 2.8% to 4%). Current account deficit widening. Rupee under depreciation pressure at 91.42/USD. Government faces choice between subsidies and fiscal consolidation. GDP trend decrease (6.6% to 6.2%) but remains fastest major economy.",
-      "countries": ["IND"],
+      "countries": [
+        "IND"
+      ],
       "type": "economic_shock"
     },
     {
@@ -765,7 +835,9 @@
       "run_id": "2026-W10",
       "title": "Japan LDP supermajority enabling constitutional revision; defense budget $58B",
       "description": "LDP supermajority from Feb 8 snap election. Defense spending at strong_growth to $58B. PM Takaichi's conservative agenda triggered China sanctions. Conditions persist.",
-      "countries": ["JPN"],
+      "countries": [
+        "JPN"
+      ],
       "type": "political_instability"
     },
     {
@@ -785,7 +857,9 @@
       "run_id": "2026-W10",
       "title": "Bangladesh BNP wins landslide; democratic transition ongoing",
       "description": "BNP won landslide (209 seats) in Feb 12 election. Major democratic transition. Business optimism improving. Energy independence at 0.4 means oil surge exposure. Conditions persist.",
-      "countries": ["BGD"],
+      "countries": [
+        "BGD"
+      ],
       "type": "political_instability"
     },
     {
@@ -805,7 +879,9 @@
       "run_id": "2026-W10",
       "title": "South Korea: Yoon sentenced to life; Lee government stabilizing",
       "description": "Former President Yoon sentenced to life for insurrection on Feb 19. Lee government in office. Political stability trend growth. Semiconductor recovery supports economy. Conditions persist with positive trajectory.",
-      "countries": ["KOR"],
+      "countries": [
+        "KOR"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -825,7 +901,9 @@
       "run_id": "2026-W10",
       "title": "Peru installs 9th president in a decade; elections April 12",
       "description": "Balcazar installed as 9th president. Presidential elections scheduled April 12. Mining and investment environment remains uncertain. Conditions persist.",
-      "countries": ["PER"],
+      "countries": [
+        "PER"
+      ],
       "type": "political_instability"
     },
     {
@@ -844,7 +922,9 @@
       "run_id": "2026-W10",
       "title": "Syria Caesar Act sanctions repealed",
       "description": "Caesar Act sanctions repealed as part of FY2026 NDAA. Removes major barrier to economic engagement. Conditions persist -- regional trade implications ongoing.",
-      "countries": ["SYR"],
+      "countries": [
+        "SYR"
+      ],
       "type": "trade_disruption"
     },
     {
@@ -864,7 +944,9 @@
       "run_id": "2026-W10",
       "title": "US captures Maduro; oil sanctions eased",
       "description": "US captured Maduro Jan 3. OFAC general licenses easing Venezuela oil sanctions. International condemnation. Conditions persist.",
-      "countries": ["USA"],
+      "countries": [
+        "USA"
+      ],
       "type": "trade_disruption"
     },
     {
@@ -885,7 +967,9 @@
       "run_id": "2026-W10",
       "title": "EU-Mercosur Partnership Agreement signed -- largest FTA ever",
       "description": "EMPA signed January 17 covering 780 million people. Brazil benefits from improved EU market access. Conditions persist positively.",
-      "countries": ["BRA"],
+      "countries": [
+        "BRA"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -905,7 +989,9 @@
       "run_id": "2026-W10",
       "title": "Ukraine counteroffensive gains and improved offensive capabilities",
       "description": "Southern counteroffensive recaptured 300+ sq km. Flamingo missiles struck Russian ICBM factory. IMF $8.1B loan approved. Ukraine striking Russian Caspian oil infrastructure via drone. Conditions persist.",
-      "countries": ["UKR"],
+      "countries": [
+        "UKR"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -927,7 +1013,9 @@
       "run_id": "2026-W10",
       "title": "Taiwan faces Chinese military escalation with blockade simulation",
       "description": "China blockade simulation exercises (Justice Mission 2025). PLA drone flew through Taiwanese airspace. China-Japan sanctions escalation signals broader regional security deterioration. Chokepoint exposure at 0.69. Conditions persist.",
-      "countries": ["TWN"],
+      "countries": [
+        "TWN"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -947,7 +1035,9 @@
       "run_id": "2026-W10",
       "title": "Denmark snap election March 24 over Greenland sovereignty",
       "description": "Snap election for March 24. Social Democrats polling above 30%. Trump threatened tariffs over Greenland. Conditions persist with election approaching.",
-      "countries": ["DNK"],
+      "countries": [
+        "DNK"
+      ],
       "type": "political_instability"
     },
     {
@@ -967,7 +1057,9 @@
       "run_id": "2026-W10",
       "title": "North Korea tests hypersonic missiles; nuclear proliferation risk",
       "description": "North Korea tested hypersonic missiles Jan 4. 9th Party Congress convened. Combined with New START expiration. Regional stability implications for KOR, JPN, CHN. Conditions persist.",
-      "countries": ["PRK"],
+      "countries": [
+        "PRK"
+      ],
       "type": "military_escalation"
     },
     {
@@ -987,7 +1079,9 @@
       "run_id": "2026-W10",
       "title": "Georgia political crisis with EU accession suspended",
       "description": "Protests past 300-day mark. EU accession suspended until end of 2028. European Parliament did not recognize October 2024 election. Conditions persist.",
-      "countries": ["GEO"],
+      "countries": [
+        "GEO"
+      ],
       "type": "political_instability"
     },
     {
@@ -1008,7 +1102,9 @@
       "run_id": "2026-W10",
       "title": "Hezbollah breaks November 2024 ceasefire; fires rockets at northern Israel",
       "description": "Hezbollah broke the November 2024 ceasefire on March 1, firing rockets at northern Israel. This reopens the northern front alongside the ongoing Gaza campaign and new Iran-Israel conflict axis. Israel now faces a three-front war: Gaza, Lebanon, and Iran. The ceasefire collapse represents a major escalation of regional conflict.",
-      "countries": ["ISR"],
+      "countries": [
+        "ISR"
+      ],
       "type": "military_escalation"
     },
     {
@@ -1029,7 +1125,9 @@
       "run_id": "2026-W10",
       "title": "Argentina Senate approves landmark labor reform advancing Milei restructuring agenda",
       "description": "Argentina's Senate approved a landmark labor reform law on Feb 27 by a vote of 42-28, advancing Milei's economic restructuring agenda. Monthly inflation decelerated to 2.9% (from peak of 25%+). GDP at 4.5% with stable trend. Political stability improving. This is a positive structural development for Argentina's investment climate, though sovereign credit remains CCC+/Caa1.",
-      "countries": ["ARG"],
+      "countries": [
+        "ARG"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -1050,7 +1148,10 @@
       "run_id": "2026-W10",
       "title": "US-Indonesia sign $33 billion trade agreement",
       "description": "US and Indonesia signed a $33 billion trade agreement on Feb 19, significantly strengthening bilateral economic ties. This positions Indonesia as a key US partner in Southeast Asia amid China competition. FDI trend growth. GDP stable at 4.9%. However, SCOTUS IEEPA ruling questions enforceability of executive trade deals.",
-      "countries": ["IDN", "USA"],
+      "countries": [
+        "IDN",
+        "USA"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -1070,7 +1171,9 @@
       "run_id": "2026-W10",
       "title": "Thailand PM Anutin forms coalition government",
       "description": "Thailand's PM Anutin formed a new coalition government on February 13, 2026. This represents a political transition that could affect policy direction. Thailand's political stability and investment climate are in a period of adjustment under new leadership.",
-      "countries": ["THA"],
+      "countries": [
+        "THA"
+      ],
       "type": "political_instability"
     },
     {
@@ -1090,7 +1193,9 @@
       "run_id": "2026-W10",
       "title": "US diplomatic relations strained by Iran strikes and tariff escalation",
       "description": "US relations with key partners strained by unilateral Iran strikes. Spain PM condemned strikes as breach of international law. France, Russia, China called UNSC emergency session. Additional 10% tariff on China and 25% on Canada effective March 4. US-Indonesia deal provides counterpoint. Relations trend decrease overall.",
-      "countries": ["USA"],
+      "countries": [
+        "USA"
+      ],
       "type": "geopolitical_event"
     },
     {
@@ -1111,7 +1216,9 @@
       "run_id": "2026-W10",
       "title": "Singapore trade hub faces shipping disruption from Hormuz crisis",
       "description": "Singapore, with a current account at 17.54% of GDP and extreme trade dependence, faces headwinds from global shipping disruptions and Hormuz crisis. Re-routing costs increase for Middle East-Asia trade flows. GDP trend decrease (2.2% to 1.8%). Trade openness trend decrease. Political stability at 1.42 (highest in dataset) provides institutional buffer.",
-      "countries": ["SGP"],
+      "countries": [
+        "SGP"
+      ],
       "type": "economic_shock"
     },
     {
@@ -1131,10 +1238,317 @@
       "run_id": "2026-W10",
       "title": "Pakistan domestic protests compound war crisis: 20 killed",
       "description": "Twenty people were killed in protests across Pakistan over the US-Israeli strikes on Iran, compounding the domestic instability from the declared war on Afghanistan. Political stability at -1.93 (strong_decrease) -- among the worst in the dataset. Multiple crises converging: active war, domestic unrest, and fiscal deterioration.",
-      "countries": ["PAK"],
+      "countries": [
+        "PAK"
+      ],
       "type": "political_instability"
+    },
+    {
+      "alert_id": "alert_2026-03-03_001",
+      "severity": "critical",
+      "country_code": "IRN",
+      "status": "new",
+      "trigger": "active_conflict + leadership_change + chokepoint_closure + sanctions_escalation",
+      "headline": "Iran under active US-Israeli military campaign; Supreme Leader killed; Hormuz closed; political risk premium at 3800 bps",
+      "details": "Week 2 update (2026-W10b): US-Israeli Operation Epic Fury continues. Strikes on Mar 2-3 targeting remaining IRGC command infrastructure. Iran's Interim Leadership Council (President Pezeshkian + judiciary + military) governing during 40-day Khamenei mourning. Hormuz closure now in 3rd day; tanker traffic suspended. Global oil prices up 35%+ from pre-conflict levels. Iran's political risk premium raised from 2300 to 3800 bps \u2014 now matching Russia as highest in tracked universe. Supply chain chokepoint exposure set to maximum (1.0) as Iran controls the closed strait. Economy on collapse trajectory: inflation approaching hyperinflation, currency in freefall, exports halted, FX reserves critical.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps",
+        "derived.supply_chain_chokepoint_exposure",
+        "military.active_conflicts",
+        "political.political_stability_score",
+        "macroeconomic.gdp_real_growth_rate_pct",
+        "macroeconomic.inflation_cpi_pct",
+        "institutions.leadership_transition_risk"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_002",
+      "severity": "critical",
+      "country_code": "IRN",
+      "status": "new",
+      "trigger": "chokepoint_closure + global_supply_disruption",
+      "headline": "Strait of Hormuz closed: 20% of global oil supply + 25% of global LNG disrupted; oil prices +35%",
+      "details": "Iran closed the Strait of Hormuz on Mar 1, 2026 following Operation Epic Fury. Approximately 21 million barrels per day (mbpd) of oil and 150 bcm/year of LNG transit blocked. Affected exporters: Saudi Arabia (~12mbpd), UAE (~3.5mbpd), Kuwait (~2.5mbpd), Iraq/Basra (~4mbpd), Qatar LNG (77mtpa), Iran (minimal, under sanctions). Global Brent crude now trading at ~$145/barrel (pre-conflict: ~$72). Alternative routes: Cape of Good Hope adds 2-3 weeks and $2-3M per voyage. Insufficient pipeline alternatives. Duration unknown. IRGC retains capability to keep strait closed as long as conflict continues. Primary risk transmission: global stagflation, energy importers (JPN, KOR, DEU, IND, CHN) face severe supply shock.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure",
+        "macroeconomic.total_exports_usd",
+        "macroeconomic.current_account_pct_gdp"
+      ],
+      "affected_countries_secondary": [
+        "SAU",
+        "ARE",
+        "KWT",
+        "QAT",
+        "OMN",
+        "IRQ",
+        "JPN",
+        "KOR",
+        "DEU",
+        "IND",
+        "CHN",
+        "SGP"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_003",
+      "severity": "critical",
+      "country_code": "PAK",
+      "status": "new",
+      "trigger": "open_war + military_deployment + sectarian_violence",
+      "headline": "Pakistan declares open war on Afghanistan: airstrikes on Kabul + domestic military deployment + sectarian unrest",
+      "details": "Pakistan declared open war on Afghanistan following cross-border TTP attacks. Pakistan Air Force struck Kabul and eastern Afghan provinces targeting TTP infrastructure. Pakistani Army deployed to FATA/KPK border regions with rules of engagement authorizing cross-border pursuit. Simultaneously, domestic unrest escalated with 20 killed in Karachi and Lahore protests (Mar 1-3). PTI supporters clashing with security forces; curfew imposed in Karachi. Military deployment to major cities raises civil liberties concerns and governance risk. Political risk premium raised from 1825 to 1925 bps. Pakistan's nuclear arsenal security a secondary concern. Economy already fragile: 27.5% inflation, IMF program conditionality at risk if defense spending spikes.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "military.active_conflicts",
+        "political.political_stability_score",
+        "derived.political_risk_premium_bps",
+        "macroeconomic.gdp_real_growth_rate_pct"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_004",
+      "severity": "critical",
+      "country_code": "LBN",
+      "status": "new",
+      "trigger": "ceasefire_collapse + hezbollah_resumption + israeli_incursion",
+      "headline": "Lebanon: Hezbollah breaks Nov 2024 ceasefire; Israeli forces enter south Lebanon; multi-front regional war",
+      "details": "Hezbollah broke the November 2024 ceasefire on March 1, 2026, firing rockets at Haifa and northern Israeli communities. In response to Hezbollah rocket attacks and in coordination with Iran strikes, Israel launched air and ground operations into south Lebanon. IDF forces crossed the Blue Line in the Metulla and Shtula sectors. Hezbollah fired 200+ rockets in the Mar 1 barrage; Israel struck 150+ Hezbollah targets in southern Lebanon and Bekaa Valley. Lebanese government formally protests Israeli incursion; UNIFIL forces sheltering in place. Lebanese economy \u2014 already in multi-year freefall \u2014 faces fresh shock. Beirut airport closed intermittently. Political risk premium estimated at 2500+ bps (Lebanon not in tracked universe but affects JOR, SYR secondary).",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "military.active_conflicts",
+        "political.political_stability_score",
+        "derived.political_risk_premium_bps"
+      ],
+      "affected_countries_secondary": [
+        "ISR",
+        "JOR",
+        "SYR"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_005",
+      "severity": "warning",
+      "country_code": "SAU",
+      "status": "new",
+      "trigger": "iranian_drone_strikes + hormuz_exposure + oil_revenue_disruption",
+      "headline": "Saudi Arabia: Iranian drone strikes on US Embassy Riyadh; Hormuz closure blocks 12mbpd oil exports",
+      "details": "Iran (IRGC) launched drone strikes on the US Embassy compound in Riyadh on Mar 1. No Saudi casualties reported but compound damaged; US personnel evacuated. Saudi Aramco export terminals at Ras Tanura and Ju'aymah effectively blocked by Hormuz closure. Saudi Arabia's ~12 million bpd export capacity is land-locked without Hormuz. PETROLINE (East-West pipeline, 5mbpd capacity) can divert some exports to Red Sea but insufficient. Saudi Arabia has called for emergency OPEC+ meeting. Aramco stock circuit-breaker halted trading. Political risk premium raised from 305 to 405 bps. Supply chain chokepoint exposure raised from 0.496 to 0.92.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps",
+        "derived.supply_chain_chokepoint_exposure",
+        "macroeconomic.total_exports_usd",
+        "macroeconomic.current_account_pct_gdp"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_006",
+      "severity": "warning",
+      "country_code": "ARE",
+      "status": "new",
+      "trigger": "military_base_strike + trade_hub_disruption + hormuz_closure",
+      "headline": "UAE: Al Minhad Air Base struck by IRGC; Jebel Ali port cut off; aviation chaos with 7,700+ delays",
+      "details": "Iran's IRGC struck Al Minhad Air Base (used by ADF, UK, US forces) with ballistic missiles on Mar 1. Jebel Ali port \u2014 world's 9th largest by tonnage and Middle East's largest \u2014 effectively cut off from global shipping as Hormuz closed. Dubai International Airport and Abu Dhabi International Airport reported 7,700+ flight delays over 48 hours. UAE closed its Tehran embassy and recalled ambassador. Formally requested UNSC emergency session. ADNOC export capability reduced to near zero; Abu Dhabi sovereign wealth funds (ADIA, Mubadala) reviewing risk. Jebel Ali closure impact: ~$14bn/month in trade affected. UAE trade openness index (world's highest) now severely compromised. Political risk premium raised from 285 to 385 bps. SCCE raised from 0.731 to 0.97.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps",
+        "derived.supply_chain_chokepoint_exposure",
+        "military.active_conflicts",
+        "macroeconomic.total_exports_usd"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_007",
+      "severity": "warning",
+      "country_code": "KWT",
+      "status": "new",
+      "trigger": "military_base_strike + friendly_fire_incident + hormuz_closure",
+      "headline": "Kuwait: IRGC strikes Ali al-Salem Air Base; friendly fire incident; Hormuz blocks all oil exports",
+      "details": "IRGC struck Ali al-Salem Air Base (hosts USAF 386th Air Expeditionary Wing) with ballistic missiles on Mar 1. A coalition friendly fire incident near the Kuwaiti-Iraqi border resulted in casualties (details classified). Ahmadi port and oil export terminals effectively blocked by Hormuz closure. Kuwait Petroleum Corporation estimating $2.5bn/month revenue loss from export halt. Kuwait National Assembly called emergency session; political pressure on government to act as mediator. Kuwait has historically maintained relations with both Iran and the US \u2014 mediation role being explored. Political risk premium raised from 295 to 395 bps. SCCE raised from 0.576 to 0.95.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps",
+        "derived.supply_chain_chokepoint_exposure",
+        "military.active_conflicts"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_008",
+      "severity": "warning",
+      "country_code": "KOR",
+      "status": "new",
+      "trigger": "market_crash + oil_shock_exposure + energy_import_dependency",
+      "headline": "South Korea: KOSPI -7.24% crash; circuit breakers triggered; oil shock from Hormuz exposure",
+      "details": "KOSPI fell 7.24% on March 3, triggering market circuit breakers (Level 2 halt). Korea imports ~70% of its oil from Middle East with significant Hormuz-route dependency. Brent at $145/barrel represents a ~$85bn/year additional energy import bill for South Korea. Samsung Electronics, SK Hynix fell 5-8% on supply chain concerns. Won (KRW) fell 3.2% against USD; BOK considering emergency rate measures. SCCE raised from 0.593 to 0.82 to reflect dual Hormuz+Suez exposure. PRP raised from 10 to 60 bps. President Lee Jae-myung called emergency cabinet meeting; military placed on DEFCON 3 (precautionary).",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps",
+        "derived.supply_chain_chokepoint_exposure",
+        "macroeconomic.central_bank_policy_rate_pct"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_009",
+      "severity": "warning",
+      "country_code": "USA",
+      "status": "new",
+      "trigger": "tariff_escalation + domestic_unrest + constitutional_crisis",
+      "headline": "US: 15% Section 122 tariff imposed (150-day clock starts); growing domestic unrest from Iran war fallout",
+      "details": "President Trump invoked Section 122 of the Trade Act of 1974, imposing a 15% across-the-board import tariff effective Mar 3. The 150-day sunset clock starts today (expires ~Jul 31); Congress must vote to extend or it lapses. Simultaneously, domestic protests over US involvement in Iran strikes continued for 3rd day. Protests in 23 cities; 847 arrests; National Guard activated in 4 states. SCOTUS IEEPA ruling challenge from 14 state AGs now joined by Section 122 challenge. Inflation expectations rising: University of Michigan 5-year at 4.1% (highest since 1995). Political risk premium raised from 0 to 50 bps \u2014 first time USA has non-zero political risk premium in tracked history.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps",
+        "political.political_stability_score",
+        "macroeconomic.inflation_cpi_pct",
+        "trade.tariff_rate_avg_pct"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_010",
+      "severity": "warning",
+      "country_code": "CHN",
+      "status": "new",
+      "trigger": "military_purge + civil_military_stability + institutional_uncertainty",
+      "headline": "China: Unprecedented military purge ongoing; 19 senior PLA officers removed; civil-military stability concerns",
+      "details": "Xi Jinping ordered the removal of 19 PLA senior officers including 3 theater commanders since Feb 15. Largest military purge since 2015-2016. CMC vice chairs reshuffled. Official Xinhua framing: 'anti-corruption campaign' but scale suggests power consolidation or military disloyalty concerns. Markets interpreting as signal of institutional instability: CSI 300 -3.1% on announcement. Taiwan Strait implications: purged commanders had Western Pacific jurisdiction. Uncertainty about PLA command structure during ongoing Iran/Hormuz crisis (China imports significant Middle East oil). Political risk premium raised from 80 to 180 bps. SCCE raised from 0.38 to 0.62.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps",
+        "derived.supply_chain_chokepoint_exposure",
+        "political.political_stability_score",
+        "military.command_structure_stability"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_011",
+      "severity": "watch",
+      "country_code": "QAT",
+      "status": "new",
+      "trigger": "hormuz_closure_exposure + iranian_retaliation_risk",
+      "headline": "Qatar/Bahrain/Oman: All critically exposed to Hormuz closure and potential Iranian retaliation",
+      "details": "Qatar (Al Udeid struck; LNG exports 100% blocked), Bahrain (5th Fleet HQ at direct risk), and Oman (Musandam Peninsula sits at Hormuz mouth) all face critical exposure. Qatar's LNG revenue ($180bn GDP, 77mtpa LNG = 20% global supply) entirely disrupted. Bahrain hosts US 5th Fleet \u2014 logical IRGC target in escalation. Oman has maintained back-channel role with Iran; potential mediation asset. All three PRP levels and SCCE raised significantly this week. Watch for escalation to WARNING/CRITICAL.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure",
+        "derived.political_risk_premium_bps"
+      ],
+      "affected_countries_secondary": [
+        "BHR",
+        "OMN"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_012",
+      "severity": "watch",
+      "country_code": "EGY",
+      "status": "new",
+      "trigger": "suez_closure + houthi_attacks + canal_revenue_loss",
+      "headline": "Egypt: Suez Canal effectively closed by Houthi attacks; ~$10bn/year in canal revenues at risk",
+      "details": "Houthi attacks in the Red Sea have effectively shut the Suez Canal to major shipping lanes. Canal traffic down 70%+ since Jan 2026. Egypt losing estimated $800M-$1bn/month in canal transit fees. Annual canal revenue expected to fall from $10.3bn (2024) to under $3bn (2026 annualized). Egypt's foreign exchange position deteriorating: FX reserves at ~$35bn vs import cover needs. IMF Article IV notes elevated external financing risk. EGY PRP raised from 950 to 1050 bps. SCCE raised from 0.416 to 0.85 to reflect dual Suez/Hormuz exposure.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps",
+        "derived.supply_chain_chokepoint_exposure",
+        "macroeconomic.current_account_pct_gdp",
+        "macroeconomic.fx_reserves_usd"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_013",
+      "severity": "watch",
+      "country_code": "DEU",
+      "status": "new",
+      "trigger": "oil_shock + energy_import_dependency + supply_chain_disruption",
+      "headline": "Germany/Japan: Major energy-importing economies facing severe oil supply shock from dual Hormuz+Suez closure",
+      "details": "Germany and Japan \u2014 two of the world's largest energy-importing economies \u2014 face dual chokepoint shock. Germany: oil import bill up ~$45bn/year at current prices; Suez closure rerouting delays EU-Asia supply chains. Germany SCCE raised from 0.257 to 0.45 to reflect elevated supply chain exposure. Japan: 88% oil import dependency; ~40% of crude via Hormuz route. Japan SCCE raised from 0.542 to 0.78 to reflect Hormuz+Suez dual exposure. Both economies face stagflation risk: oil shock raises costs while demand may soften. ECB and BOJ monitoring; emergency energy council meetings called. Strategic petroleum reserves (SPR) drawdown being discussed at G7 level.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure",
+        "macroeconomic.gdp_real_growth_rate_pct"
+      ],
+      "affected_countries_secondary": [
+        "JPN"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_014",
+      "severity": "watch",
+      "country_code": "EGY",
+      "status": "new",
+      "trigger": "regional_conflict_spillover + humanitarian_crisis",
+      "headline": "Sudan: SAF retakes Khartoum; 24.6M face acute hunger \u2014 Egypt and regional neighbors absorb refugee flows",
+      "details": "Sudan Armed Forces (SAF) retook central Khartoum from RSF (Rapid Support Forces) on Feb 28-Mar 1. Khartoum retaking represents largest SAF territorial gain since civil war began Apr 2023. However, 24.6 million Sudanese face acute food insecurity \u2014 UN calls it world's largest humanitarian crisis. Egypt (shares 1,200km border with Sudan) absorbs 500,000+ Sudanese refugees; Egypt-Sudan border crossings at capacity. Egypt faces dual crisis: Suez Canal revenue collapse + Sudan refugee absorption costs. Chad, South Sudan, Ethiopia also absorbing significant refugee flows. RSF retreated to Darfur/Kordofan; war not over. Humanitarian corridors being negotiated.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "political.regional_stability_index"
+      ],
+      "affected_countries_secondary": [
+        "ETH",
+        "KEN"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_015",
+      "severity": "watch",
+      "country_code": "MMR",
+      "status": "new",
+      "trigger": "territorial_control_loss + state_fragility",
+      "headline": "Myanmar: Military controls only 21% of territory; state fragility at maximum; economy in freefall",
+      "details": "Myanmar's military junta (SAC) controls only ~21% of national territory as of Feb 2026, down from 33% in mid-2024. Three Brotherhood Alliance (3BHA) controls Shan State, northern Sagaing, Chin State. PDF (People's Defence Force) effective across much of Sagaing and Magway regions. SAC retains Naypyidaw, Mandalay, Yangon and major commercial corridors but these are contested. Economy: GDP -5.8% (2025), inflation 32%, kyat at historic low. Banking system effectively non-functional. PRP at 2000 bps; comprehensive Western sanctions; ASEAN consensus process failed. No diplomatic pathway to resolution visible; status quo of protracted civil war likely to continue.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "military.territorial_control_pct",
+        "political.political_stability_score",
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W10b"
+    },
+    {
+      "alert_id": "alert_2026-03-03_016",
+      "severity": "watch",
+      "country_code": "UKR",
+      "status": "new",
+      "trigger": "territorial_change + ongoing_war",
+      "headline": "Ukraine: Territorial gains in Feb 2026 in Zaporizhzhia sector; war continues into year 5",
+      "details": "Ukrainian forces recaptured ~120 km\u00b2 in Zaporizhzhia oblast in February 2026, pushing back Russian advances near Robotyne. Counteroffensive coordinated with increased drone strikes on Russian logistics in Crimea and Rostov. Western military aid: EU announced \u20ac20bn additional support package (Feb 20); US FMF at reduced pace. Russia responding with intensified glide bomb campaign on Kharkiv and Kherson. No ceasefire negotiations underway; both sides maintaining offensive operations. Ukraine CC/Ca credit rating; 2,750 bps risk premium; economy entirely dependent on Western financing. Zaporizhzhia Nuclear Power Plant (ZNPP) under Russian control; IAEA monitoring active.",
+      "first_triggered": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-03T22:35:00Z",
+      "affected_factors": [
+        "military.active_conflicts",
+        "political.political_stability_score"
+      ],
+      "run_id": "2026-W10b"
     }
-  ],
-  "ai_generated": true,
-  "generated_at": "2026-03-02T16:00:00Z"
+  ]
 }

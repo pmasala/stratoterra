@@ -50,11 +50,19 @@ var DataLoader = (function() {
     async init() {
       detectBasePath();
       try {
-        summaryData = await fetchJSON(chunkPath('country-summary/all_countries_summary.json'));
-        // Build lookup map
-        if (Array.isArray(summaryData)) {
-          summaryData.forEach(function(c) { summaryMap[c.code] = c; });
+        var raw = await fetchJSON(chunkPath('country-summary/all_countries_summary.json'));
+        // Handle both bare array and wrapper dict {countries: [...]}
+        if (Array.isArray(raw)) {
+          summaryData = raw;
+        } else if (raw && Array.isArray(raw.countries)) {
+          summaryData = raw.countries;
+          // Preserve metadata for getSummaryMeta()
+          summaryData._meta = { generated_at: raw.generated_at, run_id: raw.run_id };
+        } else {
+          summaryData = [];
         }
+        // Build lookup map
+        summaryData.forEach(function(c) { summaryMap[c.code] = c; });
         return summaryData;
       } catch (err) {
         console.warn('[DataLoader] Summary data not yet available:', err.message);
@@ -65,6 +73,10 @@ var DataLoader = (function() {
 
     getSummary() {
       return summaryData || [];
+    },
+
+    getSummaryMeta() {
+      return (summaryData && summaryData._meta) || {};
     },
 
     getSummaryByCode(code) {

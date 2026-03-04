@@ -11,11 +11,17 @@
   "properties": {
     "generated_at": {
       "type": "string",
-      "description": "ISO 8601 UTC timestamp when this index was generated",
-      "format": "date-time"
+      "description": "ISO 8601 UTC timestamp when this index was generated"
     },
-    "schema_version": {
+    "last_updated": {
       "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": true
     },
     "total_count": {
       "type": "integer",
@@ -27,67 +33,68 @@
       "items": {
         "type": "object",
         "required": [
-          "severity",
-          "title",
-          "description",
-          "type",
-          "countries"
+          "alert_id",
+          "severity"
         ],
         "additionalProperties": true,
         "properties": {
           "alert_id": {
             "type": "string",
-            "description": "Unique identifier for this alert",
             "minLength": 1
           },
           "severity": {
             "type": "string",
-            "description": "Alert severity level",
             "enum": ["critical", "warning", "watch"]
           },
           "title": {
-            "type": "string",
-            "description": "Short alert title",
-            "minLength": 1
+            "type": "string"
+          },
+          "headline": {
+            "type": "string"
           },
           "description": {
-            "type": "string",
-            "description": "Full alert description",
-            "minLength": 1
+            "type": "string"
+          },
+          "details": {
+            "type": "string"
           },
           "type": {
+            "type": "string"
+          },
+          "trigger": {
+            "type": "string"
+          },
+          "country_code": {
             "type": "string",
-            "description": "Category / type of alert (e.g. political_instability, economic_shock, military_escalation)",
-            "minLength": 1
+            "pattern": "^[A-Z]{3}$"
           },
           "countries": {
             "type": "array",
-            "description": "ISO 3166-1 alpha-3 codes of countries affected by this alert",
             "items": {
-              "type": "string",
-              "pattern": "^[A-Z]{3}$"
-            },
-            "minItems": 1
+              "type": "string"
+            }
           },
-          "factors_affected": {
+          "affected_factors": {
             "type": "array",
-            "description": "Factor paths that triggered or are relevant to this alert",
             "items": {
               "type": "string"
             }
           },
           "status": {
             "type": "string",
-            "description": "Alert lifecycle status",
-            "enum": ["new", "ongoing", "escalated", "deescalated", "resolved"]
+            "enum": ["new", "ongoing", "escalated", "deescalated", "resolved", "updated"]
+          },
+          "first_triggered": {
+            "type": "string"
           },
           "created_at": {
-            "type": "string",
-            "format": "date-time"
+            "type": "string"
+          },
+          "last_updated": {
+            "type": "string"
           },
           "updated_at": {
-            "type": "string",
-            "format": "date-time"
+            "type": "string"
           }
         }
       }

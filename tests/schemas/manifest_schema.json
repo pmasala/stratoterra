@@ -5,7 +5,6 @@
   "description": "Schema for data/chunks/manifest.json — the index of all UI-served chunk files.",
   "type": "object",
   "required": [
-    "schema_version",
     "generated_at",
     "files"
   ],
@@ -13,70 +12,37 @@
   "properties": {
     "schema_version": {
       "type": "string",
-      "description": "Schema version string, e.g. '1.0'",
-      "minLength": 1
+      "description": "Schema version string, e.g. '1.0'"
+    },
+    "run_id": {
+      "type": "string",
+      "description": "Pipeline run identifier"
     },
     "generated_at": {
       "type": "string",
-      "description": "ISO 8601 UTC timestamp when this manifest was generated",
-      "format": "date-time"
-    },
-    "pipeline_run_date": {
-      "type": "string",
-      "description": "ISO 8601 date of the pipeline run that produced these chunks"
-    },
-    "total_files": {
-      "type": "integer",
-      "description": "Total number of chunk files listed",
-      "minimum": 0
+      "description": "ISO 8601 UTC timestamp when this manifest was generated"
     },
     "files": {
-      "type": "array",
-      "description": "List of all chunk files available for the UI",
-      "items": {
-        "type": "object",
-        "required": [
-          "path",
-          "last_modified",
-          "size_bytes"
-        ],
-        "additionalProperties": true,
-        "properties": {
-          "path": {
-            "type": "string",
-            "description": "Relative path of the chunk file from the data/chunks/ root",
-            "minLength": 1
-          },
-          "last_modified": {
-            "type": "string",
-            "description": "ISO 8601 UTC timestamp of when the file was last modified",
-            "format": "date-time"
-          },
-          "size_bytes": {
-            "type": "integer",
-            "description": "File size in bytes",
-            "minimum": 0
-          },
-          "content_type": {
-            "type": "string",
-            "description": "MIME type, typically application/json"
-          },
-          "etag": {
-            "type": "string",
-            "description": "Optional content hash / ETag for cache busting"
+      "description": "Chunk files listed as an array of entries or a dict keyed by category",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["path"],
+            "additionalProperties": true,
+            "properties": {
+              "path": { "type": "string", "minLength": 1 },
+              "last_modified": { "type": "string" },
+              "size_bytes": { "type": "integer", "minimum": 0 }
+            }
           }
+        },
+        {
+          "type": "object",
+          "additionalProperties": true
         }
-      }
-    },
-    "summary_chunk": {
-      "type": "object",
-      "description": "Quick reference to the all_countries_summary chunk",
-      "additionalProperties": true,
-      "properties": {
-        "path": { "type": "string" },
-        "size_bytes": { "type": "integer", "minimum": 0 },
-        "country_count": { "type": "integer", "minimum": 0 }
-      }
+      ]
     }
   }
 }

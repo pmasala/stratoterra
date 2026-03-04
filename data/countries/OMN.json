@@ -3,8 +3,8 @@
   "country_name": "Oman",
   "tier": 2,
   "region": "middle_east",
-  "last_updated": "2026-03-02T12:05:00Z",
-  "run_id": "2026-W10",
+  "last_updated": "2026-03-03T22:50:00Z",
+  "run_id": "2026-W10b",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 107137198769.386,
@@ -207,12 +207,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.573,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 0.95,
+      "confidence": 0.82,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W10b",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
+      "change_note": "Oman sits at the mouth of the Strait of Hormuz. Maximum direct exposure.",
+      "previous_value": 0.573
     },
     "composite_national_power_index": {
       "value": 32.6,
@@ -223,12 +225,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 475,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 575,
+      "confidence": 0.75,
+      "last_updated": "2026-03-03T22:35:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "run_id": "2026-W10b",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "Directly adjacent to Strait of Hormuz; exposed to Iranian retaliation. +100bps from 475.",
+      "previous_value": 475
     },
     "market_accessibility_score": {
       "value": 0.455,
@@ -247,17 +251,17 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "Oman is critically exposed to the Strait of Hormuz closure with 62% chokepoint exposure. Oil exports severely disrupted in what is the most severe global energy supply disruption in decades. Unlike UAE/Qatar/Kuwait, Oman was not directly targeted by IRGC strikes but geographic proximity to Hormuz makes it the most physically affected.",
+    "generated_at": "2026-03-03T22:50:00Z",
+    "run_id": "2026-W10b",
+    "executive_summary": "Oman occupies a uniquely precarious position: as a Gulf state bordering Iran and flanking the Strait of Hormuz, Oman's Duqm port and LNG facilities are caught in the conflict zone. Oman has historically maintained better relations with Iran than other Gulf states, which may provide some protection but also creates complex diplomatic positioning with the US-led coalition. Oil export revenues are blocked by Hormuz closure like other Gulf producers.",
     "key_changes_this_week": [
-      "Strait of Hormuz 70% traffic collapse -- 62% Oman chokepoint exposure (Mar 1, critical)",
-      "Oil exports severely disrupted",
-      "No direct IRGC strikes on Oman but geographic proximity critical"
+      "Hormuz closure blocking Omani oil and LNG exports; direct revenue impact",
+      "Oman's Iran diplomatic ties create complex positioning within US-led coalition",
+      "Duqm port potentially affected by conflict adjacency",
+      "OMR peg to USD maintained; CBO reserves monitoring"
     ],
-    "outlook": "Oman's economy is directly tied to Hormuz passage for oil exports. Fiscal reserves are limited relative to wealthier Gulf peers. Oman's historically neutral diplomatic posture with Iran may provide some protection from direct targeting. Recovery tied directly to Hormuz reopening.",
-    "investor_implications": "Oman sovereign bonds face significant spread widening. Oil export revenue disruption is severe. Muscat Securities Market faces repricing. Oman's fiscal position more vulnerable than Kuwait/Qatar due to smaller reserves.",
-    "data_quality_note": "Oman macro data is moderate quality. Chokepoint exposure calculated from trade data. CRITICAL alert active."
+    "outlook": "Oman's Hormuz adjacency creates both revenue disruption and direct security exposure. Iran relationship is an unusual diplomatic card. Sovereign rating under pressure if closure extends.",
+    "investor_implications": "Omani sovereign bonds carry elevated risk from Hormuz exposure and Iran adjacency. Monitor for any diplomatic role Oman might play in Iran negotiations."
   },
   "code": "OMN",
   "name": "Oman",
@@ -373,9 +377,9 @@
     "derived": {
       "resource_self_sufficiency_index": 0.5,
       "energy_independence_index": 1.0,
-      "supply_chain_chokepoint_exposure": 0.573,
+      "supply_chain_chokepoint_exposure": 0.95,
       "composite_national_power_index": 32.6,
-      "political_risk_premium_bps": 475,
+      "political_risk_premium_bps": 575,
       "market_accessibility_score": 0.455
     }
   },

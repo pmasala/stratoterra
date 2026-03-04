@@ -10,6 +10,10 @@ Agent ID: `agent_05` | Phase: 1 (GATHER) | Run ID: {RUN_ID}
 ## Inputs
 - `/data/indices/country_list.json` — list of country codes and tiers
 - `/data/countries/*.json` — to identify currently active conflicts
+- `/agents/config/cache_registry.json` — cache state from previous runs
+- `/agents/config/factor_frequency_registry.json` — frequency classification
+- `/agents/config/release_calendar.json` — known source publication dates
+- `/staging/raw_collected/news_events_{DATE}.json` — for event_triggers (from Agent 3)
 
 ## Outputs
 - `/staging/raw_collected/military_conflict_{DATE}.json`
@@ -24,7 +28,51 @@ No API keys are required.
 
 ---
 
-## PART A: STRUCTURED DATA COLLECTION
+## CACHE-AWARE FETCHING
+
+**Before collecting any data, follow the cache-check skill in `/agents/skills/cache_check.md`.**
+
+### Frequency Tiers for This Agent
+
+#### ANNUAL — Part A structured data (skip unless new release detected)
+- Military expenditure (USD, % GDP, trend) → SIPRI (release: ~April)
+- Personnel counts (active, reserve, paramilitary) → Global Firepower (release: ~January)
+- Equipment counts (army, navy, air force) → Global Firepower, IISS
+- Nuclear status and warheads → SIPRI Yearbook (release: ~June)
+- Arms transfers (exports, imports, suppliers, customers) → SIPRI (release: ~March)
+- Alliance memberships, defense treaties → Various
+- Cyber capabilities, electronic warfare → IISS, various
+- Overseas bases, force projection → IISS
+- Conscription status → Various
+
+#### WEEKLY — Part B event monitoring (always run)
+- Active conflicts: escalation/deescalation, casualties, territorial changes → ACLED, news
+- Military exercises, troop deployments → News
+- Arms deals, defense procurement → News
+- Nuclear/missile activity → News
+- Cyber operations → News
+
+### Event Override
+Read `event_triggers` from Agent 3's output. If any trigger affects military factors (e.g., "major military buildup in X", "SIPRI 2026 released"), **force-refresh** the relevant Part A data for affected countries even if annual cache is fresh.
+
+---
+
+## Step 0: Cache Check
+1. Read `cache_registry.json`, `factor_frequency_registry.json`, `release_calendar.json`.
+2. Read Agent 3's output for `event_triggers` affecting this agent.
+3. Determine if Part A (annual structured data) is due for any source:
+   - Check `sipri.milex` — new release since last fetch?
+   - Check `sipri.arms_transfers` — new release since last fetch?
+   - Check `sipri.nuclear` — new release since last fetch?
+   - Check `global_firepower` — new release since last fetch?
+4. Log all cache decisions in `cache_decisions` array.
+5. Part B (weekly events) always runs.
+
+---
+
+## PART A: STRUCTURED DATA COLLECTION (ANNUAL — skip if cached)
+
+**Only run this section if annual data sources have new releases or an event trigger requires it.**
 
 Collect per-country military factor values. These become `DIRECT_UPDATE` records.
 
@@ -100,6 +148,7 @@ Each structured data point as:
   "source_url": "https://...",
   "source_date": "2025",
   "confidence": 0.90,
+  "frequency_tier": "annual",
   "notes": ""
 }
 ```
@@ -108,7 +157,7 @@ Each structured data point as:
 
 ---
 
-## PART B: WEEKLY EVENT MONITORING
+## PART B: WEEKLY EVENT MONITORING (always run)
 
 Monitor developments in the past 7 days. These become `SIGNAL` records.
 
@@ -163,6 +212,7 @@ Full output file structure:
   "agent": "military_conflict_gatherer",
   "run_id": "{RUN_ID}",
   "collection_date": "{DATE}",
+  "cache_decisions": [...],
   "records": [...],
   "summary": {
     "total_records": 0,
@@ -173,7 +223,9 @@ Full output file structure:
     "arms_deals": 0,
     "military_exercises": 0,
     "nuclear_events": 0,
-    "cyber_events": 0
+    "cyber_events": 0,
+    "part_a_status": "fetched | skipped_cached | partial_event_override",
+    "part_b_status": "fetched"
   }
 }
 ```
@@ -184,4 +236,6 @@ Full output file structure:
 - Target: at least 8 structured indicators per Tier 1, 5 per Tier 2
 
 ## Time Budget
-Target: 25 minutes total. Part A: ~12 min. Part B: ~13 min. Prioritize active conflicts and high-severity events.
+- **Typical week (Part A cached):** ~13 minutes (Part B only)
+- **Annual release week (e.g., SIPRI April):** ~25 minutes (Part A + Part B)
+- Prioritize active conflicts and high-severity events.
