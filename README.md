@@ -1,6 +1,6 @@
 # Geopolitical Intelligence Model
 
-**An AI-powered, interactive geopolitical intelligence platform for investors.**
+**An AI-powered, interactive geopolitical intelligence platform for my personal usage.**
 
 ---
 
@@ -73,7 +73,7 @@ Phase 4: Integrate into data store              (5-10 min)
 Phase 5: Analyze — trends + derived + alerts    (50-75 min)
 Phase 6: Synthesize — narratives + briefing     (30-45 min)
 Phase 7: Finalize — quality report + archive    (7-10 min)
-                                          Total: ~3-5 hours
+                                          Total: ~1-5 hours
 ```
 
 ## Getting Started
@@ -102,19 +102,17 @@ bash agents/scripts/setup_project.sh
 1. Open Claude Code MAX
 2. Navigate to the project directory
 3. Paste or invoke the orchestrator prompt
-4. Monitor progress (~3-5 hours)
-5. Review escalations when prompted (~30 min)
-6. Review quality report when prompted (~15 min)
-7. Approve and push: `git push origin main`
-8. GitHub Pages deploys automatically
+4. Take popocorn and Monitor progress (~2-5 hours)
+6. Approve and push: `git push origin main`
+7. GitHub Pages deploys automatically
 
 ## Cost
 
 - Claude Code MAX subscription: (your existing subscription)
 - Data sources: $0/month (all free tier)
-- Hosting: $0/month (GitHub Pages)
+- Hosting: $0/month (For me, GitHub pages is enough)
 - Domain (optional): ~$15/year
 
 ## Disclaimer
 
-This platform provides AI-generated geopolitical analysis for informational and educational purposes only. It does not constitute investment, financial, legal, or tax advice. Data is sourced from public databases and may be incomplete or delayed. Trend estimates are AI-generated assessments, not statistical forecasts.
+This platform provides AI-generated geopolitical analysis for informational and educational purposes only, mostly for me. It does not constitute investment, financial, legal, or tax advice. Data is sourced from public databases and may be incomplete or delayed. Trend estimates are AI-generated assessments, not statistical forecasts.
