@@ -39,9 +39,25 @@ var BriefingView = (function() {
         html += '<div class="briefing-section"><h3>Market Context</h3>';
         if (mc.summary) html += '<p>' + esc(mc.summary) + '</p>';
         if (mc.notable_moves && mc.notable_moves.length) {
-          html += '<ul>';
-          mc.notable_moves.forEach(function(m) { html += '<li>' + esc(typeof m === 'string' ? m : m.description || JSON.stringify(m)) + '</li>'; });
-          html += '</ul>';
+          html += '<div class="market-strip">';
+          mc.notable_moves.forEach(function(m) {
+            if (typeof m === 'string') {
+              html += '<div class="market-chip"><span class="market-chip__label">' + esc(m) + '</span></div>';
+              return;
+            }
+            var label = m.asset || m.name || '';
+            var val = m.value != null ? (m.unit ? m.value.toLocaleString() + ' ' + m.unit : String(m.value)) : '';
+            var changePct = m.change_pct;
+            var changeClass = changePct > 0 ? 'trend--growth' : changePct < 0 ? 'trend--decrease' : 'trend--stable';
+            var changeStr = changePct != null ? (changePct > 0 ? '+' : '') + Number(changePct).toFixed(1) + '%' : '';
+            var driver = m.driver || m.description || '';
+            html += '<div class="market-chip" title="' + esc(driver) + '">';
+            html += '<span class="market-chip__label">' + esc(label) + '</span>';
+            if (val) html += '<span class="market-chip__value data-value">' + esc(val) + '</span>';
+            if (changeStr) html += '<span class="market-chip__change ' + changeClass + '">' + esc(changeStr) + '</span>';
+            html += '</div>';
+          });
+          html += '</div>';
         }
         html += '</div>';
       }

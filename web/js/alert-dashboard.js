@@ -121,7 +121,11 @@ var AlertDashboard = (function() {
 
       try {
         var data = await DataLoader.getAlerts();
-        allAlerts = data.alerts || data || [];
+        var raw = data.alerts || data || [];
+        // Filter out resolved alerts and ensure required fields
+        allAlerts = raw.filter(function(a) {
+          return a.severity && a.status !== 'resolved';
+        });
         loaded = true;
         render();
         if (params && params.alertIndex != null) {

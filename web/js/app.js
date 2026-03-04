@@ -109,6 +109,7 @@
           var allAlerts = Array.isArray(data) ? data : (data.alerts || []);
 
           allAlerts.forEach(function(a, i) {
+            if (a.status === 'resolved') return;
             a._globalIndex = i;
             if      (a.severity === 'critical') criticalQueue.push(a);
             else if (a.severity === 'warning')  warningQueue.push(a);

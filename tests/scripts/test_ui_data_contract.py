@@ -964,6 +964,90 @@ class TestE2E_UI_010_RankingsCompleteness(unittest.TestCase):
 
 
 # ---------------------------------------------------------------------------
+# E2E-UI-011: Alert data quality — no resolved, no duplicates, type present
+# ---------------------------------------------------------------------------
+
+class TestE2E_UI_011_AlertDataQuality(unittest.TestCase):
+    """E2E-UI-011: Alert data quality checks to prevent empty/broken cards
+    in the alert dashboard. Resolved alerts, missing type fields, and
+    duplicates cause empty-looking items at the end of severity sections."""
+
+    def setUp(self):
+        self.alert_path = find_alert_index()
+        if not self.alert_path:
+            self.skipTest("alert_index.json not found")
+        data = load_json(self.alert_path)
+        self.alerts = data.get("alerts", [])
+        self.summary = data.get("summary", {})
+
+    def test_no_resolved_alerts_in_active_list(self):
+        """Resolved alerts should be filtered out. They render as stale cards."""
+        resolved = [
+            f"[{i}] {a.get('alert_id', '?')}: {(a.get('title') or a.get('headline', ''))[:50]}"
+            for i, a in enumerate(self.alerts)
+            if a.get("status") == "resolved"
+        ]
+        self.assertEqual(
+            resolved, [],
+            "Resolved alerts still in active list:\n" + "\n".join(resolved),
+        )
+
+    def test_every_alert_has_type_field(self):
+        """Alerts without type render with missing type badge in dashboard."""
+        missing = [
+            f"[{i}] {a.get('alert_id', '?')} ({a.get('country_code', '?')})"
+            for i, a in enumerate(self.alerts)
+            if not a.get("type")
+        ]
+        self.assertEqual(
+            missing, [],
+            "Alerts missing 'type' field:\n" + "\n".join(missing),
+        )
+
+    def test_summary_counts_match_alerts(self):
+        """Summary counts must match actual alert counts by severity."""
+        actual = {}
+        for a in self.alerts:
+            sev = a.get("severity", "unknown")
+            actual[sev] = actual.get(sev, 0) + 1
+
+        errors = []
+        for sev in ["critical", "warning", "watch"]:
+            expected = self.summary.get(sev, 0)
+            got = actual.get(sev, 0)
+            if expected != got:
+                errors.append(f"{sev}: summary says {expected}, actual is {got}")
+
+        total_expected = self.summary.get("total_active", 0)
+        total_actual = len(self.alerts)
+        if total_expected != total_actual:
+            errors.append(f"total_active: summary says {total_expected}, actual is {total_actual}")
+
+        self.assertEqual(errors, [], "Summary count mismatches:\n" + "\n".join(errors))
+
+    def test_no_exact_duplicate_alerts(self):
+        """No two alerts should have same country_code + severity + near-identical title."""
+        seen = {}
+        dupes = []
+        for i, a in enumerate(self.alerts):
+            country = a.get("country_code", "?")
+            sev = a.get("severity", "?")
+            title = (a.get("title") or a.get("headline") or "").strip().lower()
+            # Normalize: first 40 chars to catch near-duplicates
+            key = (country, sev, title[:40])
+            if key in seen:
+                dupes.append(
+                    f"[{i}] duplicates [{seen[key]}]: {country} {sev} '{title[:50]}'"
+                )
+            else:
+                seen[key] = i
+        self.assertEqual(
+            dupes, [],
+            "Duplicate alerts found:\n" + "\n".join(dupes),
+        )
+
+
+# ---------------------------------------------------------------------------
 # E2E-UI-009: Frontend code quality — catch silent-failure anti-patterns
 # ---------------------------------------------------------------------------
 
