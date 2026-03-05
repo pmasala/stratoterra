@@ -3,8 +3,8 @@
   "country_name": "Russia",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-04T14:00:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 2173835806671.66,
@@ -18,7 +18,11 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Ukraine war day 1467 grinding on. ~790 casualties/day. War economy hitting limits. Sanctions constraining but not collapsing economy.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 14889.0185546875,
@@ -32,7 +36,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "War spending and labor shortages driving inflation. Central bank at high rates. Ruble managed but real purchasing power declining.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 2.4,
@@ -84,11 +92,11 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 77.72,
-      "confidence": 0.85,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 77.6,
+      "confidence": 0.9,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 14.31,
@@ -98,11 +106,11 @@
       "run_id": "2026-W10b"
     },
     "equity_index_level": {
-      "value": 2223,
-      "confidence": 0.82,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 2815,
+      "confidence": 0.85,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "total_exports_usd": {
       "value": 476686490000,
@@ -308,7 +316,9 @@
       "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
       "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "trend": "stable",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "market_accessibility_score": {
       "value": 0.185,
@@ -336,20 +346,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "Russia-Ukraine war continues into its fourth year with Ukraine achieving its best territorial performance since the Kursk incursion — gaining more territory than it lost in February. The EU's 20th sanctions package has been delayed over a dispute on the maritime services ban, giving Russia a temporary reprieve on financial pressure. A general license issued for Lukoil divestiture may signal an emerging Western asset exit pathway for companies holding Russian energy interests. Russian military losses continue to mount (1.27M total per Ukrainian General Staff claims) while the MOEX holds roughly flat (-0.19%) and the ruble trades at 77.72.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Russia's war economy shows increasing strain in its fifth year. GDP growth has slowed to 0.6% with 9% inflation and a central bank rate at 21% that is crushing civilian economic activity. Defense spending consumes 7.1% of GDP. The military launched a record 1,720+ drones in late February while Ukraine's Flamingo missiles struck Russian Caspian oil infrastructure. Kadyrov's health deterioration adds Chechnya succession uncertainty. Comprehensive Western sanctions continue with no resolution in sight.",
     "key_changes_this_week": [
-      "Ukraine gained more territory than lost in February — best performance since Kursk incursion",
-      "EU 20th sanctions package delayed over maritime services ban dispute",
-      "General license issued for Lukoil divestiture; potential Western asset exit pathway",
-      "MOEX flat (-0.19%); ruble at 77.72/USD — relative stability amid global volatility",
-      "Russian military losses mounting (~1.27M total per Ukrainian General Staff claims)",
-      "Iran crisis creates indirect risk: Russia-Iran military cooperation axis under pressure from Khamenei death"
+      "Record 1,720+ drones launched in late February escalation",
+      "Ukraine struck Russian Caspian oil infrastructure with Flamingo missiles",
+      "GDP trend decrease (0.6%) with inflation at 9% and central bank rate at 21%",
+      "Defense spending at 7.1% of GDP straining civilian economy",
+      "Kadyrov health deterioration adds Chechnya succession risk",
+      "NR credit rating; comprehensive Western sanctions persist"
     ],
-    "outlook": "The Russian economy has demonstrated more resilience than many forecasters predicted, supported by high defense spending, import substitution, and energy revenues rerouted to Asia. However, sanctions are tightening incrementally with each EU package, and military attrition is accelerating at unsustainable rates. The Iran crisis may remove a key military supplier and diplomatic partner, potentially weakening Russia's strategic position over the medium term.",
-    "investor_implications": "Russian assets remain broadly sanctioned and inaccessible to Western investors. The Lukoil general license is a potential exit mechanism for trapped capital — monitor for additional licenses that could allow more orderly divestiture. MOEX stability and ruble resilience should not be interpreted as investment signals; they reflect capital controls, not genuine market equilibrium.",
-    "data_quality_note": "Ukrainian territorial gain data from ISW (Institute for the Study of War). Casualty figures are Ukrainian General Staff claims and are not independently verified. Russian economic data has a known reporting quality issue. Confidence: moderate."
+    "outlook": "War economy model is unsustainable at current intensity. 21% interest rates are destroying civilian investment. Ukraine's ability to strike oil infrastructure creates a new strategic vulnerability. Kadyrov succession could destabilize North Caucasus. No ceasefire negotiations visible. Oil price surge provides some revenue relief but export routes partially constrained by sanctions.",
+    "investor_implications": "Russia remains uninvestable for Western capital due to comprehensive sanctions and NR credit rating. Ruble stability depends on oil revenue and capital controls. Defense sector dominates economic activity. Civilian sector contracting under 21% rates. Secondary sanctions risk applies to any intermediary transactions. Long-term reconstruction opportunity exists post-conflict but timeline unknown.",
+    "data_quality_note": "Russian economic data increasingly unreliable. Defense spending likely understated. Casualty and military equipment data from OSINT with significant uncertainty."
   },
   "code": "RUS",
   "name": "Russia",
@@ -453,7 +463,7 @@
       "total_imports_usd": 383010520000,
       "gdp_growth_forecast_2026_pct": 1,
       "inflation_forecast_2026_pct": 5.2,
-      "equity_index_level": 2223,
+      "equity_index_level": 2815,
       "top_export_partners": [
         {
           "country": "CHN",
@@ -498,7 +508,7 @@
           "pct_of_total": 3.0
         }
       ],
-      "exchange_rate_vs_usd": 77.72,
+      "exchange_rate_vs_usd": 77.6,
       "sovereign_bond_yield_10yr_pct": 14.31,
       "equity_index_daily_change_pct": -0.19
     },

@@ -3,8 +3,8 @@
   "country_name": "China",
   "tier": 1,
   "region": "east_asia",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-04T14:00:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 18743803170827.2,
@@ -18,7 +18,11 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Shanghai -1.43%. Additional 10% US tariff (Mar 4). Rare earth ban on Japan shows escalation willingness. Hormuz disruption raises energy import costs.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 13303.1481543868,
@@ -32,7 +36,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "Deflationary pressure persists despite oil shock. Domestic demand weak. Property sector drag. Oil shock effect partially offset by RMB management.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 5.1,
@@ -46,7 +54,11 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Energy import costs rising from Hormuz disruption. US tariffs reducing export revenue. But massive trade surplus with rest of world provides buffer.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 3456024808739.12,
@@ -84,18 +96,18 @@
       "run_id": "2026-W10b"
     },
     "exchange_rate_vs_usd": {
-      "value": 6.8813,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 6.9006,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "equity_index_level": {
-      "value": 4123,
-      "confidence": 0.96,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 4122.68,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "total_exports_usd": {
       "value": 3792950717268.08,
@@ -294,14 +306,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.62,
-      "confidence": 0.82,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "value": 0.7,
+      "confidence": 0.78,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
-      "change_note": "China imports significant oil via Hormuz; Suez disruption affects manufacturing supply chains.",
-      "previous_value": 0.38
+      "run_id": "2026-W10",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz closure and trade war",
+      "change_note": "China ~40% crude via Hormuz. Active closure + US tariff escalation + retaliatory trade measures increase supply chain stress.",
+      "previous_value": 0.62
     },
     "composite_national_power_index": {
       "value": 75.3,
@@ -312,14 +324,16 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 180,
+      "value": 220,
       "confidence": 0.75,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
-      "change_note": "Unprecedented military purge undermines civil-military stability; trade war escalation. +100bps from 80.",
-      "previous_value": 80
+      "change_note": "Hormuz closure impacts ~40% of crude imports; 20% cumulative US tariffs effective Mar 4; rare earth export controls on Japan. +40bps from 180.",
+      "previous_value": 180,
+      "trend": "decrease",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "market_accessibility_score": {
       "value": 0.539,
@@ -338,20 +352,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "China's unprecedented military purge deepened this week with nine additional PLA lawmakers removed, bringing the total to 100+ officers purged since 2022. Top general Zhang Youxia (CMC Vice Chairman) and Joint Staff chief Liu Zhenli are under investigation — leaving only one general besides Xi on the CMC. An unverified coup attempt report circulated in intelligence channels. Externally, a $11.1B Taiwan arms sale remains stalled ahead of the planned Trump-Xi summit, while Chinese markets sold off on combined domestic political risk and Iran crisis risk-off.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "China faces a decelerating economy (GDP trend from 4.8% to 4.2%) compounded by escalating trade conflicts on two fronts. An additional 10% US tariff takes effect Mar 4, while China itself sanctioned 50 Japanese companies and imposed rare earth export controls in response to PM Takaichi's Taiwan remarks. CPI is at 0% signaling deflation risk. FDI inflows continue to decline. The NPC opens Mar 5 to set economic direction. Oil import costs are rising from Hormuz disruption but China is diversifying away from Gulf sources.",
     "key_changes_this_week": [
-      "9 more PLA lawmakers removed; Zhang Youxia and Liu Zhenli under investigation (100+ total purged)",
-      "Unverified coup attempt report in intelligence channels — unconfirmed but market-moving",
-      "$11.1B Taiwan arms sale stalled ahead of Trump-Xi summit",
-      "CSI 300 under pressure; political risk underpriced by markets",
-      "Two Sessions (NPC/CPPCC) opening week: stimulus signals awaited",
-      "PLA institutional reliability uncertain; Taiwan Strait risk assessment requires revision"
+      "Additional 10% US tariff on China effective Mar 4 on top of existing duties",
+      "China sanctioned 50 Japanese companies and imposed rare earth export ban",
+      "GDP growth decelerating from 4.8% to 4.2% trend with deflation risk (CPI 0%)",
+      "FDI trend decrease as foreign investment continues to withdraw",
+      "NPC opening Mar 5 -- key policy direction for economic stimulus expected",
+      "Oil import supply chain disrupted by Hormuz closure; diversifying away from Gulf"
     ],
-    "outlook": "The PLA purge creates genuine uncertainty about Chinese military command coherence, which paradoxically both reduces and increases Taiwan Strait risk — reduced offensive capability but also reduced deterrent credibility. The Trump-Xi summit (planned late March) is a pivotal event; the $11.1B arms sale stall suggests both sides are managing pre-summit optics. Two Sessions economic stimulus signals will be the primary near-term market catalyst.",
-    "investor_implications": "CSI 300 and Hong Kong-listed China equities carry unpriced political risk. The purge's scale — eliminating nearly all independent military leadership — is historically unusual and warrants a political risk premium not yet reflected in valuations. Two Sessions stimulus packages could provide a near-term positive catalyst; monitor PBOC liquidity injections and fiscal deficit targets as sentiment anchors.",
-    "data_quality_note": "PLA purge data from official Chinese state media releases; coup attempt report unverified. Market data is high confidence. Taiwan arms sale status from US DoD and Congressional reporting."
+    "outlook": "Growth deceleration continues as trade fragmentation intensifies on multiple fronts. The NPC will likely signal additional stimulus measures. Rare earth weaponization against Japan marks a significant escalation in China's willingness to use economic coercion, potentially inviting counter-measures. Deflation risk is the most underappreciated macro vulnerability. US tariff trajectory creates persistent headwind.",
+    "investor_implications": "China growth deceleration warrants caution on cyclical sectors. NPC stimulus measures may provide selective upside. Rare earth producers benefit from supply restriction premium. Onshore consumer plays are more insulated than export-dependent sectors. Yuan under modest pressure but PBOC has tools to manage depreciation. Bond market offers value given deflationary backdrop.",
+    "data_quality_note": "GDP data subject to revision. CPI methodology questions persist. Trade flow data increasingly fragmented by sanctions and controls."
   },
   "code": "CHN",
   "name": "China",
@@ -423,9 +437,9 @@
       "total_imports_usd": 3253992699024.39,
       "gdp_growth_forecast_2026_pct": 4.2,
       "inflation_forecast_2026_pct": 0.7,
-      "exchange_rate_vs_usd": 6.8813,
+      "exchange_rate_vs_usd": 6.9006,
       "sovereign_bond_yield_10yr_pct": 1.79,
-      "equity_index_level": 4123,
+      "equity_index_level": 4122.68,
       "top_export_partners": [
         {
           "country": "USA",

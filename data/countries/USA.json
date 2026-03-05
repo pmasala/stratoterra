@@ -3,8 +3,8 @@
   "country_name": "United States",
   "tier": 1,
   "region": "north_america",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-04T14:00:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 28750956130731.2,
@@ -18,7 +18,11 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Oil shock (+36% YTD Brent), 15% Section 122 tariff replacing struck-down IEEPA tariffs, war costs. Consumer confidence declining. But defense spending and energy sector partially offset.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 84534.0407841548,
@@ -32,7 +36,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.87,
+      "trend_reasoning": "Oil shock feeds CPI via energy, transport, goods. 15% tariff adds import price pressure. Gasoline up 12 cents/gallon in one day. Fed faces stagflation dilemma.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 4.2,
@@ -46,14 +54,22 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Competing forces: tariffs reduce imports but oil price rise increases energy import bill. Safe-haven capital inflows support dollar. Net effect roughly neutral.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 125,
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "War spending (Operation Epic Fury) adds to stretched fiscal position. Defense supplementals likely. Higher rates increase debt service. No fiscal consolidation visible.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 910036546651.5,
@@ -78,24 +94,24 @@
     },
     "central_bank_policy_rate_pct": {
       "value": 3.625,
-      "confidence": 0.99,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "confidence": 0.98,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 4.11,
-      "confidence": 0.98,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 4.08,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "equity_index_level": {
-      "value": 5825,
-      "confidence": 0.98,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 6873,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "total_exports_usd": {
       "value": 3232522000000,
@@ -315,14 +331,16 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 50,
+      "value": 75,
       "confidence": 0.75,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
-      "change_note": "Section 122 tariff imposed (150-day clock); growing domestic unrest; SCOTUS IEEPA ruling. +50bps from 0.",
-      "previous_value": 0
+      "change_note": "Active war with Iran; 3 KIA in Kuwait; recession probability 40-50%; oil shock from Hormuz; SCOTUS constitutional crisis. +25bps from 50.",
+      "previous_value": 50,
+      "trend": "decrease",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "market_accessibility_score": {
       "value": 0.902,
@@ -341,20 +359,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "The United States simultaneously launched the largest military operation since Iraq 2003 and navigated a domestic constitutional rupture. Operation Epic Fury struck 1,039 targets in Iran with US-Israeli forces; three US soldiers were killed in IRGC retaliatory strikes. The Supreme Court struck down IEEPA tariff authority 6-3, forcing a pivot to Section 122 with a 15% global tariff capped at 150 days. Markets sold off sharply (S&P -0.78%, Dow -2.1%), and recession probability rose to 40-50%. Nationwide 'No Kings' protests are planned for March 28, adding a domestic political dimension.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "The United States is prosecuting Operation Epic Fury against Iran while navigating a constitutional crisis over trade policy. SCOTUS struck down IEEPA tariffs 6-3 on Feb 20, forcing a shift to 15% Section 122 surcharges (effective immediately) plus 10% additional on China (Mar 4). The oil shock from Hormuz closure is pushing inflation higher (Brent +36% YTD, gasoline up 12 cents/gallon in one day). The Fed is on hold at 3.50-3.75% facing a stagflation dilemma. Texas and North Carolina primaries on Mar 3 showed anti-incumbent sentiment as midterm season begins.",
     "key_changes_this_week": [
-      "Operation Epic Fury launched against Iran; 3 US soldiers KIA in IRGC retaliation (Feb 28-Mar 1, transformative)",
-      "SCOTUS struck down IEEPA tariff authority 6-3; Section 122 15% global tariff enacted for 150 days",
-      "Additional 20% cumulative China tariffs and 25% Canada/Mexico tariffs effective March 4",
-      "Recession probability surged from 25-30% to 40-50%; S&P posted largest monthly decline in a year",
-      "No Kings protests planned nationwide March 28; midterm primary season begun",
-      "Strait of Hormuz closure driving oil surge; stagflation risk elevated"
+      "Launched Operation Epic Fury on Iran (Feb 28) -- strikes to continue for weeks per Trump",
+      "SCOTUS struck down IEEPA tariffs 6-3; 15% Section 122 surcharge imposed; 10% additional on China Mar 4",
+      "Brent crude +36% YTD; gasoline spiked 12 cents/gallon in one day -- largest in 4 years",
+      "Companies suing for $134B+ in tariff refunds following SCOTUS ruling",
+      "Texas and North Carolina primaries show anti-incumbent sentiment (Mar 3)",
+      "New START treaty expired without extension -- nuclear arms control framework collapsed"
     ],
-    "outlook": "The US faces a potential stagflation scenario: the Hormuz oil shock pushes inflation higher while trade disruption and consumer confidence deterioration raise recession risk. The 150-day Section 122 tariff clock creates a policy cliff in July requiring legislative resolution. The March FOMC (17-18) is a critical inflection point; the Fed is trapped between containing energy-driven inflation and supporting a slowing economy.",
-    "investor_implications": "Defensive positioning is warranted: overweight Treasuries (10Y at 3.96% on flight-to-safety), gold ($5,155+), energy sector, and defense contractors (Lockheed, Raytheon, Northrop). Underweight consumer discretionary, airlines, and trade-exposed manufacturers. Monitor VIX at market open and March FOMC for rate path signals; the 150-day tariff cliff in July is the next major policy discontinuity.",
-    "data_quality_note": "US macro data is high confidence (0.85-0.95). Recession probability estimates are analyst consensus, not official forecasts. Market data reflects pre-week-open conditions and may shift materially."
+    "outlook": "GDP growth faces mild headwinds from oil shock and tariff uncertainty, but recession is not the base case given labor market strength and domestic energy production. Inflation re-acceleration is the primary risk, likely keeping the Fed on hold through mid-2026. Political uncertainty elevated across trade policy, war, and midterms.",
+    "investor_implications": "US remains core portfolio allocation despite elevated risk. Short duration fixed income preferred given inflation risk. Defense sector (LMT, RTX, NOC) positioned for multi-year growth. Energy producers benefit from oil price surge. Dollar strength benefits importers but hurts EM borrowers and US exporters. $134B tariff refund litigation creates corporate uncertainty.",
+    "data_quality_note": "Economic data solid. Trade policy framework in flux following SCOTUS ruling. War cost estimates preliminary."
   },
   "code": "USA",
   "name": "United States",
@@ -444,8 +462,8 @@
       "total_imports_usd": 4136061000000,
       "gdp_growth_forecast_2026_pct": 2.1,
       "inflation_forecast_2026_pct": 2.4,
-      "sovereign_bond_yield_10yr_pct": 4.11,
-      "equity_index_level": 5825,
+      "sovereign_bond_yield_10yr_pct": 4.08,
+      "equity_index_level": 6873,
       "top_export_partners": [
         {
           "country": "CAN",

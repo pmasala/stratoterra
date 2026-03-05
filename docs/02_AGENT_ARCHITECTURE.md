@@ -148,6 +148,7 @@ Phase 2: PROCESSING
 
 Phase 3: VALIDATION
   8. Agent: Cross-Validation & Anomaly Detection
+  17a. Agent: Autonomous Auditor (Escalation Audit)
 
 Phase 4: INTEGRATION
   9. Agent: Data Integrator (merges validated data into /data)
@@ -163,6 +164,7 @@ Phase 6: SYNTHESIS
 
 Phase 7: FINALIZATION
   15. Agent: Data Quality Report Generator
+  17b. Agent: Autonomous Auditor (Quality Audit)
   16. Agent: Archive & Commit
 ```
 
@@ -893,8 +895,9 @@ escalation_protocol: |
   When an update is marked ESCALATE:
   1. Agent writes clear explanation of the concern
   2. Presents the data with sources
-  3. Asks you (the human) to decide: accept, reject, or investigate further
-  4. Your decision is logged for future learning
+  3. Agent 17 (Autonomous Auditor) resolves the escalation using rule-based
+     decision framework (source count, confidence, trend alignment)
+  4. Decision is logged in auditor_escalation_decisions_{DATE}.json
 
   Examples of ESCALATE scenarios:
   - Major leadership change reported by news but not official sources
@@ -1433,7 +1436,7 @@ actions: |
   3. Update /data/metadata/schema_version.json
   4. Generate git commit message summarizing changes
   5. Stage all changed files
-  6. Output commit message for human review before committing
+  6. Execute git commit autonomously after Agent 17 quality approval
 
 commit_message_template: |
   Weekly update {date}
@@ -1449,6 +1452,53 @@ commit_message_template: |
   - {top_change_3}
 
 estimated_duration: 2-5 minutes
+```
+
+---
+
+### Agent 17: Autonomous Auditor
+
+```yaml
+agent_id: autonomous_auditor
+phase: audit (invoked twice)
+priority: 17
+
+purpose: >
+  Replace human review checkpoints with autonomous rule-based auditing.
+  Invoked twice per pipeline run:
+  - Escalation Audit (after Agent 8): resolves ESCALATE verdicts
+  - Quality Audit (after Agent 15): decides GO/CONDITIONAL_GO/NO_GO for commit
+
+invocation_1_escalation_audit:
+  trigger: after_agent_08
+  input_files:
+    - /staging/validated/escalation_report_{date}.json
+    - /staging/validated/validated_updates_{date}.json
+    - /data/countries/*.json
+  output_files:
+    - /staging/validated/auditor_escalation_decisions_{date}.json
+    - /staging/validated/validated_updates_{date}.json (updated)
+  decision_rules: |
+    For each escalation, decide ACCEPT, ACCEPT_WITH_DOWNGRADE, or REJECT based on:
+    - Source count (1, 2, 3+)
+    - Confidence score (high >= 0.7, moderate 0.4-0.69, low < 0.4)
+    - Validator recommendation
+    - Trend alignment
+
+invocation_2_quality_audit:
+  trigger: after_agent_15
+  input_files:
+    - /data/metadata/quality_report_{date}.json
+    - /staging/run_log.json
+  output_files:
+    - /data/metadata/auditor_quality_decision_{date}.json
+  decision_rules: |
+    Evaluate quality metrics against thresholds:
+    - GO: all metrics healthy
+    - CONDITIONAL_GO: some metrics below ideal but above minimum
+    - NO_GO: any critical metric below minimum (blocks commit)
+
+estimated_duration: 2-5 minutes (escalation) + 1-2 minutes (quality)
 ```
 
 ---

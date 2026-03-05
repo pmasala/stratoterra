@@ -3,8 +3,8 @@
   "country_name": "Singapore",
   "tier": 1,
   "region": "southeast_asia",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-04T17:00:12Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 547386645891.847,
@@ -77,11 +77,11 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 1.2643,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 1.2769,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 2.85,
@@ -244,12 +244,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.97,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 0.98,
+      "confidence": 0.82,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
       "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to Hormuz+Suez dual disruption cascading through global shipping",
+      "change_note": "Singapore as global shipping hub faces cascading disruption from Hormuz closure + Suez stress. Near theoretical maximum.",
+      "previous_value": 0.97
     },
     "composite_national_power_index": {
       "value": 60.3,
@@ -284,17 +286,16 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "Singapore faces significant trade disruption risk as a global entrepot hub: the dual Hormuz/Suez closure and shipping route reorganization will affect transshipment volumes through its port (world's 2nd largest container port). Singapore's status as a financial center may attract capital flight from more conflict-exposed regional hubs including Dubai. SGD is well-supported by MAS intervention capacity.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Singapore faces moderate headwinds from Hormuz-driven trade disruption as a shipping hub but benefits from increased bunkering and trade rerouting activity. No significant domestic changes this week. Financial sector benefits from safe-haven capital flows into Asian financial centers.",
     "key_changes_this_week": [
-      "Port of Singapore faces shipping route reorganization from dual chokepoint closure",
-      "Financial hub capital inflows potentially accelerating from Dubai conflict disruption",
-      "STI (Straits Times Index) declining on regional risk-off sentiment",
-      "SGD well-supported by MAS; safe-haven within Southeast Asia"
+      "Trade rerouting from Hormuz adds bunkering and logistics activity",
+      "Financial sector benefits from safe-haven Asian capital flows"
     ],
-    "outlook": "Singapore's diversified financial and logistics model provides resilience. Capital inflows from regional instability are a structural positive for asset management and private banking.",
-    "investor_implications": "SGD is a safe-haven within Asia EM; SGS (Singapore Government Securities) offer quality fixed income. DBS, OCBC, UOB benefit from elevated interest margins."
+    "outlook": "Singapore's position as a trade and financial hub provides resilience. Shipping rerouting creates near-term disruption but also opportunity.",
+    "investor_implications": "Singapore REITs and financial sector relatively defensive. Shipping-related companies benefit from rerouting. SGD stable.",
+    "data_quality_note": "Data reliable."
   },
   "code": "SGP",
   "name": "Singapore",
@@ -358,7 +359,7 @@
       "total_imports_usd": 786020430563.524,
       "gdp_growth_forecast_2026_pct": 1.8,
       "inflation_forecast_2026_pct": 1.3,
-      "exchange_rate_vs_usd": 1.2643,
+      "exchange_rate_vs_usd": 1.2769,
       "top_export_partners": [
         {
           "country": "CHN",

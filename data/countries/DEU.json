@@ -3,8 +3,8 @@
   "country_name": "Germany",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-04T14:00:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 4685592577804.69,
@@ -18,7 +18,11 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "DAX -4.1%, oil shock raising energy costs for manufacturing-heavy economy. Defense spending surge (+12.6%) partially offsets. Ukraine war burden increasing as sole EU funder.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 56103.7323182554,
@@ -32,7 +36,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Oil price surge and potential gas price spike from Hormuz/LNG disruption. Energy-intensive industry costs rising. ECB on hold.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.7,
@@ -46,7 +54,11 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Energy import bill rising sharply. Manufacturing export demand uncertain. But automotive and machinery exports to non-conflict regions stable.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 377935574356.242,
@@ -60,7 +72,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Defense spending surge and Ukraine funding increasing fiscal pressure. Infrastructure fund adds to debt. But starting from relatively manageable level.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 0.9,
@@ -84,25 +100,25 @@
       "run_id": "2026-W10b"
     },
     "exchange_rate_vs_usd": {
-      "value": 0.8552,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 0.8608,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 2.7,
-      "confidence": 0.98,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 2.79,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "equity_index_level": {
-      "value": 23766,
-      "confidence": 0.98,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 23626.77,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "total_exports_usd": {
       "value": 1939702201602.97,
@@ -310,7 +326,9 @@
       "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
       "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "trend": "stable",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "market_accessibility_score": {
       "value": 0.699,
@@ -338,18 +356,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "Energy-importing Germany faces a significant oil and gas price shock from the dual Hormuz/Suez chokepoint crisis, arriving on top of ongoing supply chain disruption. The DAX fell 3.54% — among the worst European performances — reflecting Germany's acute manufacturing and export exposure to global trade disruption. Defense spending surged to $107 billion (+18%), the largest single-year increase in modern German history, representing a structural fiscal shift. Stagflation risk is elevated as energy costs rise while industrial output contracts.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Germany faces renewed energy cost pressure from the Hormuz oil shock (DAX -4.1%) while shouldering an increasing share of Ukraine defense funding as the sole European funder after US aid suspension. Defense spending has surged 12.6%, meeting NATO's 2% GDP target. GDP growth remains anemic at 0.5% with manufacturing under pressure from rising energy costs and global trade contraction. The ECB is on hold despite growth weakness, caught in the same stagflation dilemma as other central banks.",
     "key_changes_this_week": [
-      "DAX fell 3.54%; equity market reflecting manufacturing and trade exposure",
-      "Defense spending surge to $107B (+18%) — historic structural fiscal shift",
-      "Oil price shock from dual Hormuz/Suez closure elevating energy cost for industry",
-      "Stagflation risk elevated: energy-driven inflation plus slowing growth",
-      "US Section 122 tariffs create additional export market headwind"
+      "DAX fell 4.1% on Iran crisis and energy cost fears",
+      "Oil shock raising energy costs for manufacturing-heavy economy (30% energy independence)",
+      "Defense spending surged 12.6%, meeting NATO 2% GDP target for first time",
+      "Europe now sole funder of Ukraine defense after US aid suspension",
+      "ECB on hold despite growth weakness -- stagflation dilemma deepening",
+      "EU-US trade deal postponed amid tariff uncertainty"
     ],
-    "outlook": "Germany's structural vulnerability to energy price shocks and trade disruption remains unresolved. Defense spending surge will provide a domestic demand offset but not immediately enough to compensate for manufacturing output contraction. ECB rate path will be critical.",
-    "investor_implications": "DAX exposure warrants caution; overweight defense (Rheinmetall, Hensoldt) and underweight automotive exporters and chemical sector. German Bunds remain a safe-haven asset with yield compression expected on risk-off flows."
+    "outlook": "Germany navigates multiple structural challenges: energy transition costs, defense spending expansion, and Ukraine burden-sharing. The Merz government has political capital from its honeymoon period and cross-party defense consensus. Manufacturing recession risk is rising from energy costs. Defense industry (Rheinmetall) is a structural growth story. The 5% NATO spending target by 2035 signals a decade-long defense spending uptrend.",
+    "investor_implications": "Germany remains a core European allocation despite headwinds. Defense industrials are a structural overweight. Energy-intensive manufacturers face margin compression. Bunds may benefit from ECB hold and flight-to-quality within eurozone. Infrastructure investment fund provides medium-term fiscal stimulus. Export sector faces headwinds from US tariffs and China slowdown.",
+    "data_quality_note": "Economic data reliable. Defense spending projections based on NATO commitments. Ukraine funding burden estimates evolving."
   },
   "code": "DEU",
   "name": "Germany",
@@ -414,9 +434,9 @@
       "total_imports_usd": 1760032612948.98,
       "gdp_growth_forecast_2026_pct": 0.9,
       "inflation_forecast_2026_pct": 1.8,
-      "exchange_rate_vs_usd": 0.8552,
-      "sovereign_bond_yield_10yr_pct": 2.7,
-      "equity_index_level": 23766,
+      "exchange_rate_vs_usd": 0.8608,
+      "sovereign_bond_yield_10yr_pct": 2.79,
+      "equity_index_level": 23626.77,
       "top_export_partners": [
         {
           "country": "USA",

@@ -3,7 +3,7 @@
   "name": "Master Pipeline Orchestrator",
   "phase": 0,
   "phase_name": "ORCHESTRATION",
-  "description": "Controls the sequential execution of all 16 agents in the weekly update pipeline. Manages the run log, handles human review pauses, and coordinates error recovery.",
+  "description": "Controls the sequential execution of all 17 agents in the weekly update pipeline. Manages the run log, invokes the autonomous auditor at two checkpoints, and coordinates error recovery.",
   "inputs": [
     "data/indices/country_list.json",
     "data/metadata/last_update.json",
@@ -22,32 +22,37 @@
     "agents/config/agent_13_narratives.json",
     "agents/config/agent_14_briefing.json",
     "agents/config/agent_15_quality.json",
-    "agents/config/agent_16_archive.json"
+    "agents/config/agent_16_archive.json",
+    "agents/config/agent_17_auditor.json"
   ],
   "outputs": [
     "staging/run_log.json"
   ],
   "timeout_minutes": 300,
-  "human_review_points": [
+  "autonomous_audit_points": [
     {
       "after_agent": "agent_08",
-      "condition": "escalated_items > 0",
-      "action": "PAUSE and present escalation_report to operator"
+      "audit_mode": "escalation_audit",
+      "agent": "agent_17",
+      "action": "Resolve ESCALATE verdicts so Agent 09 can integrate them"
     },
     {
       "after_agent": "agent_15",
-      "condition": "always",
-      "action": "PAUSE and present quality_report to operator before archiving"
+      "audit_mode": "quality_audit",
+      "agent": "agent_17",
+      "action": "Review quality report and decide GO/CONDITIONAL_GO/NO_GO for commit"
     }
   ],
   "pipeline_sequence": [
     "agent_01", "agent_02", "agent_03", "agent_04", "agent_05", "agent_06",
     "agent_07",
     "agent_08",
+    "agent_17_escalation",
     "agent_09",
     "agent_10", "agent_11", "agent_12",
     "agent_13", "agent_14",
     "agent_15",
+    "agent_17_quality",
     "agent_16"
   ],
   "error_handling": "stop_on_failure",

@@ -244,14 +244,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 1925,
-      "confidence": 0.75,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "value": 2050,
+      "confidence": 0.7,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
-      "change_note": "Open war with Afghanistan, domestic military deployment, sectarian violence. +100bps from 1825.",
-      "previous_value": 1825
+      "change_note": "Iran war spillover; Pakistan-Iran border instability; energy price shock from Hormuz closure. +125bps from 1925.",
+      "previous_value": 1925
     },
     "market_accessibility_score": {
       "value": 0.265,
@@ -279,20 +279,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "Pakistan faces a dual existential crisis: open conventional war with Afghanistan following Operation Ghazab Lil Haq (strikes on 46 locations across the border), and severe domestic sectarian violence triggered by Khamenei's assassination. The military has been deployed under Article 245 across Gilgit-Baltistan and major urban centers. Curfews, communications blackouts, and at least 24-26 protest deaths mark the worst domestic instability in years, arriving simultaneously with a hot border conflict.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Pakistan declared open war on Afghanistan on Feb 27, launching airstrikes on Kabul and Kandahar. This nuclear-armed nation simultaneously faces protests over Iran strikes (20 killed), sovereign credit at CCC+/Caa1, and a deteriorating fiscal position. GDP trend is strong_decrease with inflation surging and debt growing rapidly. Political stability has collapsed to -1.93 with compounding domestic instability from the Afghanistan conflict and public unrest.",
     "key_changes_this_week": [
-      "Operation Ghazab Lil Haq: Pakistan struck 46 locations in Afghanistan, escalating to open war",
-      "Article 245 military deployment across Gilgit-Baltistan and major cities",
-      "Domestic sectarian violence following Khamenei assassination; 24-26 killed in protests",
-      "Communications blackout imposed in conflict-adjacent regions",
-      "Curfews declared in multiple urban centers",
-      "IMF program compliance at risk as fiscal discipline faces military spending surge"
+      "Declared open war on Afghanistan -- airstrikes on Kabul and Kandahar (Feb 27)",
+      "20 killed in domestic protests over Iran strikes compounding instability",
+      "Political stability collapsed to -1.93 (strong_decrease)",
+      "GDP trend strong_decrease; inflation strong_growth; debt strong_growth",
+      "Sovereign credit at CCC+/Caa1 -- fiscal position deteriorating rapidly",
+      "Nuclear-armed nation now in active conflict with deteriorating governance"
     ],
-    "outlook": "The two-front crisis — external war and domestic instability — strains Pakistan's already fragile economy at a moment of IMF-mandated reform. If military spending surges beyond IMF program parameters, the $7B Extended Fund Facility could be suspended, triggering a sovereign liquidity crisis. Pakistan's nuclear posture vis-a-vis Afghanistan is a wildcard that markets will price with extreme caution.",
-    "investor_implications": "PKR faces severe depreciation pressure; sovereign bonds are in distressed territory. FDI inflows will freeze until military situation stabilizes. CPEC corridor security is at direct risk from Afghan border conflict. Eurobond holders should monitor IMF program status as the key sovereign solvency indicator.",
-    "data_quality_note": "Conflict data from OSINT; communications blackout limits ground-truth verification. Economic impact estimates are preliminary. CRITICAL: Multiple active alerts. High uncertainty."
+    "outlook": "Pakistan faces a convergence of crises: active war on Afghanistan, domestic unrest, fiscal deterioration, and regional spillover from Iran conflict. The military-civilian governance dynamic is under extreme strain. IMF program compliance at risk. Nuclear status adds systemic geopolitical risk. No stabilization pathway is visible in the near term.",
+    "investor_implications": "Pakistan sovereign risk at extreme levels. CCC+/Caa1 rating reflects near-default fiscal trajectory. War spending will accelerate debt accumulation. FDI frozen. Rupee under significant pressure. Investors should minimize all Pakistan exposure. CPEC infrastructure investments under operational risk from conflict zones.",
+    "data_quality_note": "Economic data lagging rapidly evolving military and political situation. IMF program metrics may be outdated. Conflict casualty data uncertain."
   },
   "code": "PAK",
   "name": "Pakistan",

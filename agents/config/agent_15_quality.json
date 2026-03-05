@@ -3,7 +3,7 @@
   "name": "Data Quality Reporter",
   "phase": 7,
   "phase_name": "FINALIZE",
-  "description": "Generates a comprehensive quality report covering data coverage, staleness, confidence scores, validation outcomes, and agent performance. Presents the report to the human operator before archiving.",
+  "description": "Generates a comprehensive quality report covering data coverage, staleness, confidence scores, validation outcomes, and agent performance. Report is reviewed by Agent 17 (Autonomous Auditor) before archiving.",
   "inputs": [
     "data/countries/*.json",
     "data/metadata/last_update.json",
@@ -30,7 +30,7 @@
   },
   "confidence_flag_threshold": 0.3,
   "staleness_flag_priority": ["tier_1", "tier_2", "tier_3"],
-  "human_review_required": true,
+  "human_review_required": false,
   "retry_on_failure": false,
   "idempotent": true,
   "prompt_file": "agents/prompts/agent_15_quality.md"

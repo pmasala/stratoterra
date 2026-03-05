@@ -3,8 +3,8 @@
   "country_name": "United Kingdom",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-04T14:00:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 3686033044482.13,
@@ -18,7 +18,11 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "FTSE -3.44% on Iran selloff. Oil shock hitting consumer spending. Higher gilt yields (4.30%) tightening financial conditions. Brexit-related trade friction continues.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 53246.3676145108,
@@ -32,7 +36,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Oil price surge feeds through to CPI. Sterling under pressure adding import costs. BOE faces growth-inflation tradeoff.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 4.7,
@@ -84,25 +92,25 @@
       "run_id": "2026-W10b"
     },
     "exchange_rate_vs_usd": {
-      "value": 0.7465,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 0.7486,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 4.3,
-      "confidence": 0.98,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "equity_index_level": {
-      "value": 10235,
-      "confidence": 0.98,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 10408.86,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "total_exports_usd": {
       "value": 1142411938484.29,
@@ -303,7 +311,9 @@
       "last_updated": "2026-03-02T14:00:00Z",
       "source": "agent_11_derived",
       "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "trend": "stable",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "market_accessibility_score": {
       "value": 0.77,
@@ -323,6 +333,13 @@
         "new_value": 0.7477,
         "flagged_at": "2026-03-02T12:05:00Z",
         "run_id": "2026-W10"
+      },
+      {
+        "factor": "economy.macroeconomic.equity_index",
+        "reason": "FTSE 100 — previous stored value 23766 appears to be DAX not FTSE. Current FTSE value 10408 is plausible for that index. Data mapping correction needed.",
+        "new_value": 10408.86,
+        "flagged_at": "2026-03-04T17:00:12Z",
+        "run_id": "2026-W10"
       }
     ],
     "update_count": 69,
@@ -331,18 +348,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "The FTSE 100 showed notable resilience, falling only 0.04%, reflecting its large-cap energy and mining weighting which benefits from commodity price surges. The Bank of England voted 5-4 to hold rates — the slimmest majority, signaling a dovish tilt that could accelerate rate cuts if energy-driven inflation moderates. Energy costs are rising from the oil shock. The FCA regulatory easing package (April 2026) provides a positive structural backdrop for UK financial services.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "The UK equity market sold off with FTSE -3.44% as the Iran crisis drives oil-related inflation fears. Gilt yields rose to 4.30%, tightening financial conditions. The Starmer government faces mounting economic challenges including the oil shock, higher gilt yields, and divided public opinion on the US-Israel operations. Military spending exceeds NATO's 2% target with Royal Navy assets deployed in the Gulf. The Bank of England faces a difficult growth-inflation tradeoff with CPI at 2.8% trending higher.",
     "key_changes_this_week": [
-      "FTSE 100 fell only 0.04% — outperforming European peers on energy/mining weighting",
-      "BoE voted 5-4 to hold rates; dovish tilt signal with potential early rate cut",
-      "Energy costs rising from Hormuz/Suez closure oil shock",
-      "FCA regulatory easing package effective April 2026 — positive for financial services",
-      "Defense spending growth continuing; UK contributing to European surge"
+      "FTSE 100 fell 3.44% on Iran crisis selloff",
+      "Gilt yields rose to 4.30% tightening financial conditions",
+      "Oil shock driving inflation re-acceleration risk (CPI 2.8% trending higher)",
+      "Military spending exceeds NATO 2% with Royal Navy Gulf deployment",
+      "BOE faces stagflation dilemma -- rate cuts likely delayed",
+      "Anti-war sentiment growing domestically over Iran operations"
     ],
-    "outlook": "UK is relatively better-positioned than continental European peers in this crisis, with North Sea energy production providing partial domestic insulation and FTSE energy sector providing portfolio offset. BoE rate cuts are the key near-term macro catalyst.",
-    "investor_implications": "FTSE 100 energy and mining names (Shell, BP, Rio Tinto, BHP) are beneficiaries of commodity surge. Gilts offer moderate safe-haven appeal. GBP at modest risk from growth slowdown but supported by North Sea energy terms-of-trade improvement."
+    "outlook": "UK faces stagflation risk as oil-driven inflation meets slowing growth. BOE will likely hold rates, prolonging tight financial conditions. Defense spending growth is secured as a structural theme. Brexit-related trade friction continues to limit upside. Political stability is adequate but under pressure from multiple crises.",
+    "investor_implications": "UK equities offer value after selloff for long-horizon investors. Gilt yields at 4.30% attractive for income but inflation risk persists. Sterling under modest pressure vs dollar. Defense sector benefits from NATO commitment. Financial sector faces headwinds from higher-for-longer rates and economic uncertainty.",
+    "data_quality_note": "Economic data reliable. BOE policy guidance evolving with oil shock. Defense deployment costs not fully disclosed."
   },
   "code": "GBR",
   "name": "United Kingdom",
@@ -406,9 +425,9 @@
       "total_imports_usd": 1174457550940.39,
       "gdp_growth_forecast_2026_pct": 1.3,
       "inflation_forecast_2026_pct": 2.5,
-      "exchange_rate_vs_usd": 0.7465,
+      "exchange_rate_vs_usd": 0.7486,
       "sovereign_bond_yield_10yr_pct": 4.3,
-      "equity_index_level": 10235,
+      "equity_index_level": 10408.86,
       "top_export_partners": [
         {
           "country": "USA",

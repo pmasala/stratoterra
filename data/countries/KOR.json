@@ -3,8 +3,8 @@
   "country_name": "South Korea",
   "tier": 1,
   "region": "east_asia",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-04T14:00:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 1875388209406.8,
@@ -18,7 +18,11 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "strong_decrease",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "KOSPI -12.1% worst day ever signals economic crisis. Korea 70% dependent on ME oil via Hormuz. Energy shock + semiconductor demand uncertainty = severe GDP headwind.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 36238.639908315,
@@ -32,7 +36,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Oil price surge feeding through to transport, industrial costs. Won depreciation adds import price pressure. BOK faces growth-inflation tradeoff.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3,
@@ -46,14 +54,22 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "strong_decrease",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Oil import bill surging. Semiconductor export slowdown. Won depreciation partially helps competitiveness but energy import cost dominates.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 53.4,
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Fiscal stimulus likely to support economy through oil shock. Government has fiscal space but heading in wrong direction.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 418218648901.669,
@@ -84,25 +100,25 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 1439.82,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 1483.12,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 3.65,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "equity_index_level": {
-      "value": 4197,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 5093.54,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "total_exports_usd": {
       "value": 835148800000,
@@ -272,14 +288,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.82,
+      "value": 0.88,
       "confidence": 0.82,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
-      "change_note": "Korea imports ~70% of oil via Hormuz-adjacent routes. Dual shock from Hormuz and Suez.",
-      "previous_value": 0.593
+      "run_id": "2026-W10",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz closure",
+      "change_note": "Korea imports ~88% of oil with ~70% via Hormuz-adjacent routes. Active Hormuz closure creates acute energy supply risk.",
+      "previous_value": 0.82
     },
     "composite_national_power_index": {
       "value": 65.5,
@@ -290,14 +306,16 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 60,
+      "value": 120,
       "confidence": 0.75,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
-      "change_note": "KOSPI -7.24% crash; market circuit breakers triggered; oil shock exposure. +50bps from 10.",
-      "previous_value": 10
+      "change_note": "KOSPI -12.1% single-day crash with circuit breakers; 88% oil import dependency via Hormuz-adjacent routes; North Korea KN-25 deployment to frontline. +60bps from 60.",
+      "previous_value": 60,
+      "trend": "decrease",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "market_accessibility_score": {
       "value": 0.714,
@@ -321,6 +339,13 @@
         "value": -7.24,
         "flagged_at": "2026-03-03T22:30:00Z",
         "run_id": "2026-W10b"
+      },
+      {
+        "factor": "economy.macroeconomic.equity_index",
+        "reason": "KOSPI shows +21% from stored value but FELL 12.1% on the day. Previous stored value likely stale (from before recent rally). Intraday -12.1% is a real crash. ACCEPT current value with anomaly flag.",
+        "new_value": 5093.54,
+        "flagged_at": "2026-03-04T17:00:12Z",
+        "run_id": "2026-W10"
       }
     ],
     "update_count": 66,
@@ -329,20 +354,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "South Korea suffered its worst single-day equity market crash since April 2024, with KOSPI falling 7.24% and circuit breakers triggered. The dual shock of Iran crisis risk-off sentiment and North Korea's deployment of KN-25 600mm multiple rocket systems to frontline positions drove both financial and geopolitical risk repricing. South Korea imports approximately 88% of its oil, with a substantial share transiting Hormuz, creating severe energy cost exposure. Bond yields rose and the KRW weakened as foreign capital fled.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "South Korea suffered its worst equity market day in history on Mar 4, with KOSPI plunging 12.1%. Samsung fell 12% and SK Hynix 10%. The crash exposed Korea's critical vulnerability: 70% of oil imports transit the now-closed Strait of Hormuz. The political risk premium doubled from 60 to 120 bps. The won is under heavy depreciation pressure. Supply chain chokepoint exposure has been raised to 0.88, among the highest for any developed economy. BOK emergency measures are under review.",
     "key_changes_this_week": [
-      "KOSPI fell 7.24% — worst single-day decline since April 2024; circuit breakers triggered",
-      "North Korea deployed KN-25 600mm MRLs to frontline positions; military tension elevated",
-      "Freedom Shield 26 exercise scheduled March 9-19; US-ROK military posture review",
-      "Hormuz closure threatens South Korea's oil import supply chain (88% import dependency)",
-      "KRW under depreciation pressure; BOK intervention signals",
-      "Bond yields rose on risk repricing; Samsung/SK Hynix supply chains under monitoring"
+      "KOSPI crashed 12.1% on Mar 4 -- worst single-day decline in history",
+      "Samsung Electronics -12%, SK Hynix -10% in single session",
+      "Political risk premium doubled from 60 to 120 bps",
+      "Supply chain chokepoint exposure raised to 0.88 reflecting Hormuz dependency",
+      "Won under heavy depreciation pressure; BOK emergency measures under review",
+      "70% oil import dependency via Hormuz exposed as critical structural vulnerability"
     ],
-    "outlook": "South Korea's heavy structural exposure to both Hormuz oil imports and global trade volumes makes it one of the most macro-vulnerable developed economies in this crisis. The Bank of Korea may intervene to stabilize KRW, but rate cuts are constrained by energy-driven inflation. If North Korea perceives US military attention as diverted to the Middle East, the risk of opportunistic provocation increases materially.",
-    "investor_implications": "Korean equities are oversold on panic selling but structural risks remain elevated — do not interpret the KOSPI crash as a pure buying opportunity. Samsung Electronics and SK Hynix supply chain exposure (Taiwan Strait + Hormuz) warrants monitoring. Korea sovereign CDS spreads are widening; KTBs (Korean Treasury Bonds) offer relative value on BOK support expectation but carry geopolitical tail risk.",
-    "data_quality_note": "Market data is intraday and may not fully reflect final settlement. North Korean military deployment data from ROK Joint Chiefs of Staff reporting. Moderate-high confidence."
+    "outlook": "Recession risk has risen sharply. Korea's structural energy dependency on Middle East oil creates an acute near-term vulnerability that strategic petroleum reserves can only partially mitigate. Semiconductor export demand adds additional uncertainty. The government will likely deploy fiscal stimulus but constrained by already elevated bond yields (10yr at 3.65%).",
+    "investor_implications": "Korean assets face significant near-term headwinds. KOSPI recovery depends on Hormuz resolution timeline. Semiconductor sector fundamentals intact but sentiment-driven selling may continue. Won depreciation creates opportunities for USD-based investors if Hormuz reopens. Energy security reform will be a structural investment theme. Current account deterioration acute due to surging oil import bill.",
+    "data_quality_note": "Market data real-time. Energy dependency calculations based on trade flow data. Strategic petroleum reserve drawdown timeline uncertain."
   },
   "code": "KOR",
   "name": "South Korea",
@@ -411,9 +436,9 @@
       "total_imports_usd": 758723500000,
       "gdp_growth_forecast_2026_pct": 1.8,
       "inflation_forecast_2026_pct": 1.8,
-      "exchange_rate_vs_usd": 1439.82,
+      "exchange_rate_vs_usd": 1483.12,
       "sovereign_bond_yield_10yr_pct": 3.65,
-      "equity_index_level": 4197,
+      "equity_index_level": 5093.54,
       "top_export_partners": [
         {
           "country": "CHN",

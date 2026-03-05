@@ -3,8 +3,8 @@
   "country_name": "Japan",
   "tier": 1,
   "region": "east_asia",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-04T14:00:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 4027597523550.58,
@@ -18,7 +18,11 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Nikkei -3.6%, China rare earth ban disrupting defense/tech supply chains, oil price surge hitting energy-import-dependent economy. Takaichi supermajority provides policy stability but fiscal challenges.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 32487.0778047567,
@@ -32,7 +36,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Oil price surge and yen weakness driving import inflation. BOJ normalization complicated by energy shock. Core inflation may re-accelerate.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 2.6,
@@ -46,7 +54,11 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Oil import bill surging on Hormuz disruption. Japan imports ~90% of energy. Rare earth ban adds supply chain costs. Income account surplus provides buffer.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 1230666979042.45,
@@ -60,7 +72,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "Already at ~260% — highest in G7. Defense spending increase to 2% GDP adds pressure. But BOJ yield curve control keeps debt service manageable.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 0.6,
@@ -84,25 +100,25 @@
       "run_id": "2026-W10b"
     },
     "exchange_rate_vs_usd": {
-      "value": 157.294,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 157.64,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 2.07,
-      "confidence": 0.98,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 2.13,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "equity_index_level": {
-      "value": 56279,
-      "confidence": 0.98,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 54245.54,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "total_exports_usd": {
       "value": 922447048198.649,
@@ -177,7 +193,10 @@
       "confidence": 0.8,
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W09",
+      "trend": "strong_growth",
+      "trend_confidence": 0.88,
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "military_spending_usd": {
       "value": 58000000000,
@@ -286,14 +305,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.78,
+      "value": 0.85,
       "confidence": 0.82,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
-      "change_note": "Japan imports 88% of oil, much via Hormuz and Suez. Dual chokepoint exposure elevated.",
-      "previous_value": 0.542
+      "run_id": "2026-W10",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz closure",
+      "change_note": "Japan ~80% crude via Hormuz. Active closure + China rare earth export ban. Near-maximum chokepoint exposure.",
+      "previous_value": 0.78
     },
     "composite_national_power_index": {
       "value": 69.8,
@@ -304,12 +323,16 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 30,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 55,
+      "confidence": 0.75,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
       "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "Japan imports ~80% of crude oil via Hormuz. Active closure creates acute energy security risk. China rare earth ban adds supply chain stress. +25bps from 30.",
+      "previous_value": 30,
+      "trend": "decrease",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "market_accessibility_score": {
       "value": 0.764,
@@ -328,18 +351,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "Japan's Nikkei fell 3.06% as the country's 88% oil import dependency makes it structurally one of the most exposed developed economies to a Hormuz closure. The Bank of Japan held rates at 0.75% at its latest meeting, resisting pressure to tighten further as energy-driven inflation complicates the rate path. The yen is strengthening on safe-haven flows, providing partial import cost offset but compressing export sector earnings for Japan's critical manufacturing exporters.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Japan faces a dual shock: oil prices surging from Hormuz closure (Japan imports ~90% of energy) and China's rare earth export ban targeting 50 Japanese companies. The Nikkei fell 3.6%. PM Takaichi's LDP secured a supermajority (352/465 seats), providing the strongest political mandate in decades for defense expansion toward 2% GDP. Japan-China relations are at their worst point in decades following Takaichi's Taiwan defense comments. The yen weakened to 157.64 amid safe-haven dollar flows.",
     "key_changes_this_week": [
-      "Nikkei fell 3.06%; oil import vulnerability to Hormuz closure driving risk-off selling",
-      "BoJ held at 0.75%; energy inflation complicating rate normalization path",
-      "JPY strengthening on safe-haven flows; yen carry trade partially unwinding",
-      "88% oil import dependency creates severe energy cost exposure to Hormuz closure duration",
-      "Export sector earnings compressed by JPY appreciation"
+      "Nikkei 225 fell 3.6% on Iran crisis and China sanctions spillover",
+      "China banned rare earth and dual-use exports to Japan -- 50 companies sanctioned (effective Jan 6)",
+      "PM Takaichi LDP won supermajority with 352/465 lower house seats (Feb 9 election)",
+      "Defense spending trajectory to 2% GDP accelerated with strong mandate",
+      "Japan-China relations at worst point in decades -- Tokyo issued formal protest",
+      "Yen weakened to 157.64; energy import bill surging on oil shock"
     ],
-    "outlook": "Japan's energy import vulnerability is structural and cannot be quickly resolved. If Hormuz closure extends, Japan faces both energy cost shocks and potential supply shortfalls that could trigger government strategic reserve releases and emergency procurement at spot prices. BoJ is effectively trapped: cannot tighten into an energy shock, but inflation rising.",
-    "investor_implications": "Nikkei is under pressure; underweight energy-intensive Japanese manufacturers (steel, chemicals, autos). JGBs benefit from domestic safe-haven flows. JPY long positions are performing; watch for BoJ intervention signals if yen appreciation becomes disorderly."
+    "outlook": "Political stability has improved significantly with the Takaichi supermajority, but economic headwinds are intensifying. Energy shock and rare earth supply disruption will pressure manufacturing margins and GDP growth. Defense spending growth is now a structural multi-year trend. BOJ rate normalization path is complicated by the energy shock. Watch for BOJ intervention near 160 yen.",
+    "investor_implications": "Japan remains a core developed-market allocation. Defense industrials are a strong overweight given supermajority mandate. Rare earth diversification companies benefit from China ban. Energy-intensive manufacturers face margin pressure. Yen weakness creates hedging considerations for foreign investors. Semiconductor investment (TSMC fabs) continues as structural positive.",
+    "data_quality_note": "Economic data solid. Rare earth supply chain impact still being quantified. Defense budget details pending Diet approval."
   },
   "code": "JPN",
   "name": "Japan",
@@ -415,9 +440,9 @@
       "total_imports_usd": 965047346578.886,
       "gdp_growth_forecast_2026_pct": 0.6,
       "inflation_forecast_2026_pct": 2.1,
-      "exchange_rate_vs_usd": 157.294,
-      "sovereign_bond_yield_10yr_pct": 2.07,
-      "equity_index_level": 56279,
+      "exchange_rate_vs_usd": 157.64,
+      "sovereign_bond_yield_10yr_pct": 2.13,
+      "equity_index_level": 54245.54,
       "top_export_partners": [
         {
           "country": "CHN",

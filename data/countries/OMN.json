@@ -225,14 +225,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 575,
-      "confidence": 0.75,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "value": 700,
+      "confidence": 0.72,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
-      "change_note": "Directly adjacent to Strait of Hormuz; exposed to Iranian retaliation. +100bps from 475.",
-      "previous_value": 475
+      "change_note": "Oman controls southern Hormuz approach; oil exports blocked; IRGC threat proximity. +125bps from 575.",
+      "previous_value": 575
     },
     "market_accessibility_score": {
       "value": 0.455,
@@ -251,17 +251,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "Oman occupies a uniquely precarious position: as a Gulf state bordering Iran and flanking the Strait of Hormuz, Oman's Duqm port and LNG facilities are caught in the conflict zone. Oman has historically maintained better relations with Iran than other Gulf states, which may provide some protection but also creates complex diplomatic positioning with the US-led coalition. Oil export revenues are blocked by Hormuz closure like other Gulf producers.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Oman is critically exposed to the Hormuz closure with 62% supply chain chokepoint exposure. Oil exports are severely disrupted in what is the most severe global energy supply disruption in decades. Oman's fiscal position is more precarious than wealthier Gulf peers given smaller sovereign reserves.",
     "key_changes_this_week": [
-      "Hormuz closure blocking Omani oil and LNG exports; direct revenue impact",
-      "Oman's Iran diplomatic ties create complex positioning within US-led coalition",
-      "Duqm port potentially affected by conflict adjacency",
-      "OMR peg to USD maintained; CBO reserves monitoring"
+      "Hormuz closure with 62% chokepoint exposure severely disrupts oil exports",
+      "Oil revenue disrupted despite price surge -- volume collapse dominates",
+      "Smaller fiscal reserves than Gulf peers reduce buffer capacity",
+      "Most severe global energy supply disruption in decades affecting Omani economy"
     ],
-    "outlook": "Oman's Hormuz adjacency creates both revenue disruption and direct security exposure. Iran relationship is an unusual diplomatic card. Sovereign rating under pressure if closure extends.",
-    "investor_implications": "Omani sovereign bonds carry elevated risk from Hormuz exposure and Iran adjacency. Monitor for any diplomatic role Oman might play in Iran negotiations."
+    "outlook": "Oman is highly vulnerable to prolonged Hormuz closure given smaller reserves relative to Saudi Arabia and UAE. Fiscal consolidation progress of recent years at risk. Diversification efforts remain early-stage.",
+    "investor_implications": "Omani sovereign risk elevated. Bond spreads likely widening. Revenue disruption threatens fiscal trajectory improvements. Investors should reduce Oman fixed income exposure pending Hormuz resolution.",
+    "data_quality_note": "Oil export data uncertain during Hormuz closure."
   },
   "code": "OMN",
   "name": "Oman",

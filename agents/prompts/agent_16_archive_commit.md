@@ -4,11 +4,11 @@
 Agent ID: `agent_16` | Phase: 7 (FINALIZE) | Run ID: {RUN_ID}
 
 ## Prerequisite
-Human operator must have acknowledged the quality report from Agent 15.
+Agent 17 (Autonomous Auditor) must have issued a GO or CONDITIONAL_GO quality decision.
 
 ## Purpose
 Create an archive snapshot, generate UI-optimized chunk files, clean staging
-directories, and prepare the git commit message for human review and execution.
+directories, and execute the git commit autonomously after auditor approval.
 
 ## Inputs
 - `/data/countries/*.json`
@@ -16,6 +16,7 @@ directories, and prepare the git commit message for human review and execution.
 - `/data/indices/*.json`
 - `/data/global/*.json`
 - `/data/metadata/quality_report_{DATE}.json`
+- `/data/metadata/auditor_quality_decision_{DATE}.json`
 - `/staging/run_log.json`
 
 ## Outputs
@@ -109,7 +110,10 @@ Top changes:
 git push origin main
 ```
 
-**Do NOT execute the git commands.** Present them to the human for review.
+**Before committing:** Read `/data/metadata/auditor_quality_decision_{DATE}.json`.
+- If `decision` is `GO` or `CONDITIONAL_GO`: execute the git commands autonomously.
+- If `decision` is `NO_GO`: **skip the git commit entirely**. Log the NO_GO reason to the run log and stop.
+- If `CONDITIONAL_GO`: include the auditor's concerns in the commit message body.
 
 ## Time Budget
 Target: 5 minutes.

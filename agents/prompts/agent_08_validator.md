@@ -114,7 +114,7 @@ If escalations exist, write `/staging/validated/escalation_report_{DATE}.json`:
 }
 ```
 
-**PAUSE HERE** and present escalations to the human operator. Wait for decisions.
+Agent 17 (Autonomous Auditor) will resolve all escalations before Agent 09 runs. Do not pause.
 
 ## Time Budget
 Target: 15-20 minutes.

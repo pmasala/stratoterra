@@ -1,0 +1,3396 @@
+{
+  "schema_version": "1.0",
+  "document_type": "trend_estimates",
+  "summary": {
+    "run_id": "2026-W10",
+    "generated_at": "2026-03-04T14:00:00Z",
+    "pipeline_agent": "Agent 10 (Trend Estimator)",
+    "reference_date": "2026-03-04",
+    "total_estimates": 168,
+    "countries_covered": 45,
+    "trend_distribution": {
+      "strong_decrease": 24,
+      "decrease": 56,
+      "growth": 31,
+      "strong_growth": 4,
+      "stable": 53
+    },
+    "impact_groups": {
+      "high_impact": {
+        "countries": [
+          "IRN",
+          "ISR",
+          "USA",
+          "KOR",
+          "JPN",
+          "SAU",
+          "ARE",
+          "CHN"
+        ],
+        "count": 8,
+        "factors_per_country": 11
+      },
+      "moderate_impact": {
+        "countries": [
+          "DEU",
+          "GBR",
+          "RUS",
+          "FRA",
+          "IND",
+          "BRA",
+          "TUR",
+          "EGY",
+          "NGA",
+          "IDN",
+          "ZAF",
+          "POL",
+          "AUS",
+          "CAN",
+          "MEX",
+          "UKR",
+          "LBN",
+          "KWT",
+          "QAT",
+          "PAK",
+          "NOR"
+        ],
+        "count": 21,
+        "factors_per_country": "2-6"
+      },
+      "low_impact": {
+        "countries": [
+          "CHE",
+          "SGP",
+          "TWN",
+          "THA",
+          "ITA",
+          "ESP",
+          "SWE",
+          "GRC",
+          "KAZ",
+          "AZE",
+          "ARG",
+          "CHL",
+          "COL",
+          "PER",
+          "PHL",
+          "VNM"
+        ],
+        "count": 16,
+        "factors_per_country": "1-2"
+      }
+    },
+    "key_themes": [
+      "Iran war Day 5 \u2014 infrastructure destruction accelerating, leadership vacuum persists, economy in freefall",
+      "Strait of Hormuz remains effectively closed \u2014 20-30% global oil supply disrupted, VLCC rates at all-time highs",
+      "KOSPI -12.1% worst day ever \u2014 Korean energy dependency on Hormuz exposed as critical vulnerability",
+      "Brent $80 (+36% YTD), Gold $5413 record \u2014 safe-haven rotation and energy shock dominating markets",
+      "SCOTUS struck down IEEPA tariffs; 15% Section 122 surcharge + 10% additional on China (Mar 4 effective)",
+      "China rare earth ban on Japan \u2014 supply chain weaponization escalating bilateral tensions",
+      "Japan Takaichi LDP supermajority \u2014 strongest political mandate in decades for defense expansion",
+      "NATO all 32 members at 2% GDP defense for first time \u2014 European defense spending structural uptrend",
+      "Oil exporters with non-Hormuz routes (NOR, BRA, KAZ, AZE) are primary beneficiaries",
+      "Central banks globally facing stagflation dilemma \u2014 oil shock vs growth concerns freezing policy"
+    ],
+    "top_risk_deteriorations": [
+      {
+        "country": "IRN",
+        "reason": "Active war Day 5 + Hormuz closed + Khamenei killed + economy collapse"
+      },
+      {
+        "country": "LBN",
+        "reason": "Hezbollah front reopened on existing economic collapse"
+      },
+      {
+        "country": "KOR",
+        "reason": "KOSPI -12.1% worst day ever, 70% oil via Hormuz"
+      },
+      {
+        "country": "KWT",
+        "reason": "No pipeline alternative to Hormuz; near-total oil dependency"
+      },
+      {
+        "country": "QAT",
+        "reason": "LNG exports blocked; world's largest LNG exporter offline"
+      },
+      {
+        "country": "SAU",
+        "reason": "Hormuz closure blocks ~90% of oil export route; IRGC attacks on territory"
+      }
+    ],
+    "top_beneficiaries": [
+      {
+        "country": "NOR",
+        "reason": "North Sea producer, non-Hormuz routes, energy windfall"
+      },
+      {
+        "country": "BRA",
+        "reason": "Net oil exporter, geographically insulated"
+      },
+      {
+        "country": "KAZ",
+        "reason": "CPC pipeline not Hormuz-dependent, oil price windfall"
+      },
+      {
+        "country": "AZE",
+        "reason": "BTC pipeline to Mediterranean secure"
+      },
+      {
+        "country": "GRC",
+        "reason": "Shipping fleet profits from longer rerouted tanker voyages"
+      },
+      {
+        "country": "AUS",
+        "reason": "LNG premium as Qatari supply disrupted; gold mining windfall"
+      }
+    ],
+    "ai_disclosure": "All trend estimates are AI-generated based on publicly available information as of 2026-03-04. These are probabilistic estimates subject to uncertainty and should be validated against primary sources. Confidence scores reflect estimated reliability.",
+    "next_agent": "Agent 11 (Derived Metrics Calculator)"
+  },
+  "estimates": [
+    {
+      "country_code": "IRN",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 0.6,
+      "trend": "strong_decrease",
+      "confidence": 0.93,
+      "reasoning": "War entering day 5. Infrastructure destruction accelerating. Hormuz closed halts oil exports (~70% of revenue). GDP trajectory: deep contraction, possibly -10% to -15% annualized.",
+      "supporting_evidence": [
+        "Operation Epic Fury/Roaring Lion destroying economic infrastructure",
+        "Strait of Hormuz closed eliminating primary export route",
+        "Supreme Leader killed Feb 28 \u2014 governance paralyzed"
+      ],
+      "counter_arguments": [
+        "Iran domestic oil consumption can partly sustain refining sector",
+        "War-era government spending could nominally boost GDP"
+      ],
+      "investor_implication": "Iran GDP in freefall. Uninvestable across all timeframes.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IRN",
+      "factor": "inflation_cpi_pct",
+      "current_value": 42.4,
+      "trend": "strong_decrease",
+      "confidence": 0.88,
+      "reasoning": "Inflation accelerating toward hyperinflation. Currency collapse, supply disruptions, and panic hoarding driving prices. CPI officially 42.4% but real rate likely higher.",
+      "supporting_evidence": [
+        "Rial collapsing on parallel market",
+        "Import channels severed by war and sanctions",
+        "Panic buying and hoarding reported"
+      ],
+      "counter_arguments": [
+        "Government price controls could suppress official CPI",
+        "Demand destruction from economic collapse partly offsets"
+      ],
+      "investor_implication": "Rial-denominated assets worthless. Hyperinflation trajectory.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IRN",
+      "factor": "current_account_pct_gdp",
+      "current_value": 1.2,
+      "trend": "strong_decrease",
+      "confidence": 0.94,
+      "reasoning": "Oil export revenue eliminated by Hormuz closure. Current account swings sharply negative. Military imports continue via overland routes but export capacity near zero.",
+      "supporting_evidence": [
+        "Hormuz closed to all commercial traffic",
+        "Oil constitutes ~70% of Iranian export revenue",
+        "Sanctions block alternative financial channels"
+      ],
+      "counter_arguments": [
+        "Some overland trade via Iraq/Turkey corridor persists"
+      ],
+      "investor_implication": "Foreign reserve depletion accelerating. Sovereign default risk extreme.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IRN",
+      "factor": "govt_debt_pct_gdp",
+      "current_value": 30.5,
+      "trend": "strong_decrease",
+      "confidence": 0.8,
+      "reasoning": "Debt-to-GDP ratio worsening rapidly as GDP collapses and emergency war spending escalates. Nominal debt misleading given currency collapse.",
+      "supporting_evidence": [
+        "War spending requires emergency fiscal expansion",
+        "GDP denominator collapsing",
+        "Rial depreciation inflating real debt burden"
+      ],
+      "counter_arguments": [
+        "Iran has relatively low formal debt; much financing off-balance-sheet"
+      ],
+      "investor_implication": "Fiscal sustainability broken. Metrics academic given active conflict.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IRN",
+      "factor": "political_stability",
+      "current_value": 22.0,
+      "trend": "strong_decrease",
+      "confidence": 0.96,
+      "reasoning": "Day 5 of war with Supreme Leader dead and no succession. IRGC assuming emergency control. Factional infighting likely. Protest movements may resurge under chaos.",
+      "supporting_evidence": [
+        "Supreme Leader Khamenei killed Feb 28",
+        "No constitutional succession mechanism activated",
+        "IRGC retaliating autonomously without central political direction"
+      ],
+      "counter_arguments": [
+        "External threat historically unifies Iranian population",
+        "IRGC hardliners may consolidate rapidly"
+      ],
+      "investor_implication": "Maximum political risk. State collapse scenario non-trivial.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IRN",
+      "factor": "military_expenditure_trend",
+      "current_value": 2.5,
+      "trend": "strong_decrease",
+      "confidence": 0.8,
+      "reasoning": "Military operations at maximum intensity but fiscal capacity to sustain them collapsing. IRGC assets being destroyed by strikes. Effective capability degrading daily.",
+      "supporting_evidence": [
+        "Revenue base destroyed by Hormuz closure",
+        "IRGC assets targeted \u2014 1,000+ targets hit",
+        "Supply chain for military materiel severed"
+      ],
+      "counter_arguments": [
+        "Iran has domestic arms production capability",
+        "Russia may provide emergency supplies"
+      ],
+      "investor_implication": "Iranian military capacity degrading rapidly under sustained strikes.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IRN",
+      "factor": "trade_openness",
+      "current_value": 28.0,
+      "trend": "strong_decrease",
+      "confidence": 0.96,
+      "reasoning": "Hormuz closed. Maximum sanctions. Port infrastructure damaged. Effective trade approaches zero for maritime; only overland border trade persists.",
+      "supporting_evidence": [
+        "Strait of Hormuz closed \u2014 no maritime trade",
+        "Maximum US/EU sanctions regime",
+        "Port infrastructure damaged by strikes"
+      ],
+      "counter_arguments": [
+        "Land border trade with Iraq, Turkey continues at reduced volumes"
+      ],
+      "investor_implication": "Trade effectively embargoed. No commercial engagement possible.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IRN",
+      "factor": "fdi_inflows",
+      "current_value": -0.5,
+      "trend": "strong_decrease",
+      "confidence": 0.97,
+      "reasoning": "FDI was already negligible under sanctions. Active war eliminates any residual interest. Capital flight from remaining foreign holdings.",
+      "supporting_evidence": [
+        "Active military conflict",
+        "No rule of law during leadership vacuum",
+        "Western and most Asian investors already excluded"
+      ],
+      "counter_arguments": [
+        "Chinese/Russian entities may see distressed opportunities post-conflict"
+      ],
+      "investor_implication": "Zero investable opportunity. Write down all exposure to zero.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IRN",
+      "factor": "exchange_rate_vs_usd",
+      "current_value": 42000.0,
+      "trend": "strong_decrease",
+      "confidence": 0.93,
+      "reasoning": "Rial collapsing on war news, leadership assassination, Hormuz closure. Parallel market diverging sharply from official rate. Hyperinflationary spiral underway.",
+      "supporting_evidence": [
+        "Khamenei assassination triggers panic selling",
+        "No reserves to defend rate",
+        "Hormuz closure eliminates USD inflows"
+      ],
+      "counter_arguments": [
+        "Government capital controls could temporarily stabilize official rate"
+      ],
+      "investor_implication": "Rial effectively worthless for international transactions.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IRN",
+      "factor": "overall_investment_risk",
+      "current_value": 95.0,
+      "trend": "strong_decrease",
+      "confidence": 0.98,
+      "reasoning": "Maximum risk: active war (day 5), leadership vacuum, Hormuz closed, economy collapsing, sanctions at maximum. Approaching theoretical maximum risk score.",
+      "supporting_evidence": [
+        "Active US-Israeli strikes continuing",
+        "Supreme Leader killed",
+        "Primary export route closed",
+        "Economy in collapse"
+      ],
+      "counter_arguments": [
+        "Post-conflict reconstruction could create long-term opportunity over 5+ year horizon"
+      ],
+      "investor_implication": "Do not invest. Write down all existing exposure.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IRN",
+      "factor": "key_relationship_health",
+      "current_value": 8.0,
+      "trend": "strong_decrease",
+      "confidence": 0.94,
+      "reasoning": "US-Iran: active war. Israel-Iran: active war. Gulf states: hostile or neutral. Russia/China: maintaining distance as Iran becomes liability.",
+      "supporting_evidence": [
+        "US-Israeli joint strikes ongoing",
+        "Gulf states quietly supporting or neutral",
+        "China distancing from liability"
+      ],
+      "counter_arguments": [
+        "Iran-Russia axis may deepen under shared Western pressure",
+        "Resistance axis (Hezbollah, Houthis) activated"
+      ],
+      "investor_implication": "Iran geopolitically isolated. No major power patron willing to absorb costs.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ISR",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 1.5,
+      "trend": "decrease",
+      "confidence": 0.82,
+      "reasoning": "Multi-front war (Iran, Hezbollah, ongoing Gaza) straining economy. Reserve mobilization reduces workforce. But US aid offsets some costs, defense sector booming.",
+      "supporting_evidence": [
+        "Multi-front military operations",
+        "Reserve mobilization pulling workers from economy",
+        "Tourism effectively zero"
+      ],
+      "counter_arguments": [
+        "US military aid substantial",
+        "Defense tech exports surging",
+        "Pre-war momentum was strong"
+      ],
+      "investor_implication": "GDP headwind from war but not collapse-level. Defense sector partially offsets.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ISR",
+      "factor": "inflation_cpi_pct",
+      "current_value": 3.2,
+      "trend": "growth",
+      "confidence": 0.75,
+      "reasoning": "War costs, disrupted supply chains, and labor shortages from mobilization pushing prices up. Shekel under pressure adds import cost inflation.",
+      "supporting_evidence": [
+        "Reserve mobilization tightens labor market",
+        "Supply chain disruption from multi-front conflict",
+        "Government deficit spending"
+      ],
+      "counter_arguments": [
+        "Bank of Israel managing expectations",
+        "Price controls on essentials"
+      ],
+      "investor_implication": "Moderate inflation pressure. BoI likely holds rates.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ISR",
+      "factor": "current_account_pct_gdp",
+      "current_value": 2.5,
+      "trend": "decrease",
+      "confidence": 0.75,
+      "reasoning": "Defense imports surging. Tourism revenue zero. Tech exports continuing but face disruption. US aid partially offsets military import costs.",
+      "supporting_evidence": [
+        "Military materiel imports spiking",
+        "Tourism collapsed",
+        "Insurance costs for shipping surging"
+      ],
+      "counter_arguments": [
+        "Tech sector exports resilient",
+        "US military aid flows substantial"
+      ],
+      "investor_implication": "Current account deteriorating but manageable given US support.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ISR",
+      "factor": "govt_debt_pct_gdp",
+      "current_value": 62.0,
+      "trend": "decrease",
+      "confidence": 0.8,
+      "reasoning": "War spending driving deficit higher. Emergency budget supplementals for multi-front conflict. But starting from manageable debt level.",
+      "supporting_evidence": [
+        "Emergency military supplementals",
+        "Revenue base partially disrupted by mobilization",
+        "Bond yields rising"
+      ],
+      "counter_arguments": [
+        "US aid reduces net cost",
+        "Pre-war fiscal position was solid"
+      ],
+      "investor_implication": "Fiscal deterioration accelerating but not crisis-level given US backstop.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ISR",
+      "factor": "political_stability",
+      "current_value": 45.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "War initially unified politics but prolonged multi-front engagement straining coalition. Judicial reform tensions paused but not resolved. Domestic criticism of Iran strategy emerging.",
+      "supporting_evidence": [
+        "Multi-front war unprecedented in decades",
+        "Coalition tensions paused by war but unresolved",
+        "Hostage situation continues"
+      ],
+      "counter_arguments": [
+        "Rally-around-flag effect still active",
+        "Military success bolsters government"
+      ],
+      "investor_implication": "Political stability strained but holding under wartime unity.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ISR",
+      "factor": "military_expenditure_trend",
+      "current_value": 5.5,
+      "trend": "strong_growth",
+      "confidence": 0.92,
+      "reasoning": "Massive defense spending surge. Multi-front operations (Iran, Lebanon, Gaza) requiring unprecedented resource commitment. US supplemental aid bolstering capacity.",
+      "supporting_evidence": [
+        "Operation Roaring Lion ongoing",
+        "Hezbollah front opened",
+        "Gaza operations continue",
+        "US military aid flowing"
+      ],
+      "counter_arguments": [
+        "Fiscal constraints may force prioritization among fronts"
+      ],
+      "investor_implication": "Defense spending at wartime peak. Defense sector benefiting enormously.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ISR",
+      "factor": "trade_openness",
+      "current_value": 55.0,
+      "trend": "decrease",
+      "confidence": 0.7,
+      "reasoning": "Shipping insurance costs surging. Regional trade routes disrupted. But key trade with US/EU continues via Mediterranean.",
+      "supporting_evidence": [
+        "Regional instability disrupting overland trade",
+        "Red Sea/Suez already disrupted",
+        "Insurance costs elevated"
+      ],
+      "counter_arguments": [
+        "Mediterranean trade routes functioning",
+        "US trade corridor secure"
+      ],
+      "investor_implication": "Trade reduced but not severed. Mediterranean routes remain viable.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ISR",
+      "factor": "fdi_inflows",
+      "current_value": 8.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "FDI slowing as investors pause on uncertainty. Tech FDI resilient but new commitments delayed. Defense FDI potentially increasing.",
+      "supporting_evidence": [
+        "Multi-front war deterring new investment decisions",
+        "Insurance costs rising",
+        "Uncertainty on conflict duration"
+      ],
+      "counter_arguments": [
+        "Israel tech sector track record of resilience",
+        "Defense tech investment accelerating"
+      ],
+      "investor_implication": "FDI pause likely temporary. Tech fundamentals intact for post-conflict recovery.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ISR",
+      "factor": "exchange_rate_vs_usd",
+      "current_value": 3.09,
+      "trend": "decrease",
+      "confidence": 0.8,
+      "reasoning": "Shekel weakening on multi-front war. Bank of Israel defending with reserves. Safe-haven outflows partially offset by US aid inflows.",
+      "supporting_evidence": [
+        "Multi-front conflict uncertainty",
+        "Reserve spending on defense imports",
+        "Global risk-off sentiment"
+      ],
+      "counter_arguments": [
+        "BoI has substantial reserves",
+        "US dollar aid inflows supporting"
+      ],
+      "investor_implication": "Shekel under pressure but orderly depreciation, not collapse.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ISR",
+      "factor": "overall_investment_risk",
+      "current_value": 68.0,
+      "trend": "decrease",
+      "confidence": 0.85,
+      "reasoning": "Significant risk elevation from multi-front war. But US backing, strong institutions, and tech sector resilience differentiate from IRN scenario.",
+      "supporting_evidence": [
+        "Active war with Iran and proxies",
+        "Regional conflagration risk",
+        "Economic disruption from mobilization"
+      ],
+      "counter_arguments": [
+        "Strong institutional framework",
+        "US military and financial backing",
+        "Track record of post-war recovery"
+      ],
+      "investor_implication": "Elevated risk but investable for risk-tolerant investors with 2+ year horizon.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ISR",
+      "factor": "key_relationship_health",
+      "current_value": 62.0,
+      "trend": "stable",
+      "confidence": 0.72,
+      "reasoning": "US-Israel alliance strengthened by joint Iran operations. European support mixed. Arab normalization paused but Abraham Accords framework intact. China neutral.",
+      "supporting_evidence": [
+        "US-Israel joint operations deepening alliance",
+        "NATO allies broadly supportive",
+        "Arab normalization paused not reversed"
+      ],
+      "counter_arguments": [
+        "International criticism of civilian casualties could strain Western support",
+        "UN condemnation increasing"
+      ],
+      "investor_implication": "US relationship cemented by joint operations. Regional relationships on hold.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "USA",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 2.3,
+      "trend": "decrease",
+      "confidence": 0.8,
+      "reasoning": "Oil shock (+36% YTD Brent), 15% Section 122 tariff replacing struck-down IEEPA tariffs, war costs. Consumer confidence declining. But defense spending and energy sector partially offset.",
+      "supporting_evidence": [
+        "Brent crude +36% YTD raising energy costs",
+        "15% global surcharge post-SCOTUS",
+        "War supplemental spending"
+      ],
+      "counter_arguments": [
+        "US is net energy producer \u2014 higher oil benefits domestic producers",
+        "Defense GDP contribution rising",
+        "Labor market still tight"
+      ],
+      "investor_implication": "Mild GDP headwind. Recession risk elevated but not base case.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "USA",
+      "factor": "inflation_cpi_pct",
+      "current_value": 2.9,
+      "trend": "growth",
+      "confidence": 0.87,
+      "reasoning": "Oil shock feeds CPI via energy, transport, goods. 15% tariff adds import price pressure. Gasoline up 12 cents/gallon in one day. Fed faces stagflation dilemma.",
+      "supporting_evidence": [
+        "Brent crude surge feeding through to gasoline/transport",
+        "15% Section 122 tariff on imports",
+        "Dual chokepoint disruption (Hormuz + Red Sea)"
+      ],
+      "counter_arguments": [
+        "Demand destruction from slowdown partly offsets",
+        "Dollar strength reduces import prices"
+      ],
+      "investor_implication": "Inflation re-acceleration likely. Fed on hold. Short duration, commodities as hedge.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "USA",
+      "factor": "current_account_pct_gdp",
+      "current_value": -3.1,
+      "trend": "stable",
+      "confidence": 0.65,
+      "reasoning": "Competing forces: tariffs reduce imports but oil price rise increases energy import bill. Safe-haven capital inflows support dollar. Net effect roughly neutral.",
+      "supporting_evidence": [
+        "15% tariff reducing import volumes",
+        "Higher oil prices increase energy costs"
+      ],
+      "counter_arguments": [
+        "Dollar strengthening reduces import volumes",
+        "Domestic energy production partly offsets"
+      ],
+      "investor_implication": "Current account trajectory uncertain. Dollar strength key variable.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "USA",
+      "factor": "govt_debt_pct_gdp",
+      "current_value": 122.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "War spending (Operation Epic Fury) adds to stretched fiscal position. Defense supplementals likely. Higher rates increase debt service. No fiscal consolidation visible.",
+      "supporting_evidence": [
+        "Military operations require supplemental appropriations",
+        "Interest rates elevated",
+        "No spending cuts in pipeline"
+      ],
+      "counter_arguments": [
+        "Tariff revenues partially offset",
+        "Nominal GDP growth reduces ratio mechanically"
+      ],
+      "investor_implication": "Fiscal trajectory deteriorating. Long-term treasury caution warranted.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "USA",
+      "factor": "political_stability",
+      "current_value": 55.0,
+      "trend": "decrease",
+      "confidence": 0.82,
+      "reasoning": "SCOTUS struck down IEEPA tariffs \u2014 major executive defeat. Iran war controversial domestically. Midterm primaries (Mar 3) show anti-incumbent sentiment. Polarization extreme.",
+      "supporting_evidence": [
+        "SCOTUS IEEPA ruling \u2014 constitutional confrontation",
+        "Anti-war protests growing",
+        "Midterm primary results showing volatility"
+      ],
+      "counter_arguments": [
+        "Rally-around-flag effect possible",
+        "Economic fundamentals still OK"
+      ],
+      "investor_implication": "Political risk elevated. Policy uncertainty high across trade, war, governance.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "USA",
+      "factor": "military_expenditure_trend",
+      "current_value": 3.5,
+      "trend": "growth",
+      "confidence": 0.92,
+      "reasoning": "Active military operations in Middle East. Congress likely to pass supplemental. NATO allies all at 2% removes pressure to reduce. Bipartisan defense support.",
+      "supporting_evidence": [
+        "Operation Epic Fury ongoing costs",
+        "Bipartisan defense support",
+        "NATO 2% achievement validates US posture"
+      ],
+      "counter_arguments": [
+        "Fiscal hawks may resist open-ended war spending"
+      ],
+      "investor_implication": "Defense sector strong. LMT, RTX, NOC positioned for multi-year growth.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "USA",
+      "factor": "trade_openness",
+      "current_value": 27.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "15% Section 122 global surcharge replacing IEEPA tariffs. Additional 10% on China (Mar 4 effective). Dual chokepoint crisis disrupting global trade flows.",
+      "supporting_evidence": [
+        "15% global surcharge enacted",
+        "Additional China tariffs",
+        "Hormuz/Red Sea disruptions"
+      ],
+      "counter_arguments": [
+        "US trade with USMCA partners relatively insulated",
+        "Dollar strength could moderate volume declines"
+      ],
+      "investor_implication": "Trade openness declining. Protectionist trajectory accelerating.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "USA",
+      "factor": "fdi_inflows",
+      "current_value": 180.0,
+      "trend": "stable",
+      "confidence": 0.7,
+      "reasoning": "Safe-haven FDI inflows partly offsetting war/tariff uncertainty. Dollar strength attracting capital. But policy uncertainty deterring some new commitments.",
+      "supporting_evidence": [
+        "Safe-haven capital inflows",
+        "Dollar at multi-year highs",
+        "US tech sector remains attractive"
+      ],
+      "counter_arguments": [
+        "Tariff uncertainty deterring manufacturing FDI",
+        "War costs raising fiscal risk"
+      ],
+      "investor_implication": "FDI mixed. Safe-haven inflows offset by policy uncertainty.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "USA",
+      "factor": "exchange_rate_vs_usd",
+      "current_value": 1.0,
+      "trend": "stable",
+      "confidence": 1.0,
+      "reasoning": "Reference currency. Dollar strengthening against most currencies on safe-haven demand, higher-for-longer rates, and geopolitical risk premium.",
+      "supporting_evidence": [
+        "Safe-haven demand surging",
+        "Fed on hold at 3.50-3.75%",
+        "Geopolitical risk premium"
+      ],
+      "counter_arguments": [],
+      "investor_implication": "Dollar strength benefits importers, hurts exporters and EM borrowers.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "USA",
+      "factor": "overall_investment_risk",
+      "current_value": 32.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "Risk modestly elevated: war involvement, tariff uncertainty, SCOTUS tensions. But institutional strength, reserve currency status, and deep markets maintain low base risk.",
+      "supporting_evidence": [
+        "Active war involvement",
+        "Trade policy uncertainty",
+        "Constitutional tensions"
+      ],
+      "counter_arguments": [
+        "World's deepest capital markets",
+        "Reserve currency",
+        "Strong institutions"
+      ],
+      "investor_implication": "Risk elevated from baseline but US remains core portfolio allocation.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "USA",
+      "factor": "key_relationship_health",
+      "current_value": 60.0,
+      "trend": "decrease",
+      "confidence": 0.75,
+      "reasoning": "US-Israel: strengthened by joint ops. US-China: deteriorating (tariffs + rare earth escalation). US-Europe: strains over Ukraine funding gap. US-Gulf: complex \u2014 allies but war disrupting their economies.",
+      "supporting_evidence": [
+        "US-China tariff escalation continuing",
+        "Europe frustrated over Ukraine burden shift",
+        "Gulf states caught between US alliance and Hormuz damage"
+      ],
+      "counter_arguments": [
+        "NATO cohesion at historic high on defense spending",
+        "Japan alliance deepening"
+      ],
+      "investor_implication": "Relationship health declining on net. Key ally relationships mixed.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KOR",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 1.8,
+      "trend": "strong_decrease",
+      "confidence": 0.85,
+      "reasoning": "KOSPI -12.1% worst day ever signals economic crisis. Korea 70% dependent on ME oil via Hormuz. Energy shock + semiconductor demand uncertainty = severe GDP headwind.",
+      "supporting_evidence": [
+        "KOSPI -12.1% record crash",
+        "70% of oil imports transit Hormuz",
+        "Samsung -12%, SK Hynix -10%"
+      ],
+      "counter_arguments": [
+        "Korean strategic petroleum reserves provide buffer",
+        "Non-ME oil sources (US, Russia) available at premium"
+      ],
+      "investor_implication": "Korean growth outlook severely deteriorated. Recession risk rising sharply.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KOR",
+      "factor": "inflation_cpi_pct",
+      "current_value": 2.5,
+      "trend": "growth",
+      "confidence": 0.82,
+      "reasoning": "Oil price surge feeding through to transport, industrial costs. Won depreciation adds import price pressure. BOK faces growth-inflation tradeoff.",
+      "supporting_evidence": [
+        "Oil imports via Hormuz disrupted \u2014 70% of supply",
+        "Won weakening on risk-off",
+        "Energy-intensive manufacturing sector"
+      ],
+      "counter_arguments": [
+        "Demand destruction from slowdown could partially offset",
+        "BOK may intervene"
+      ],
+      "investor_implication": "Inflation pressure rising. BOK rate cut expectations reversed.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KOR",
+      "factor": "current_account_pct_gdp",
+      "current_value": 3.5,
+      "trend": "strong_decrease",
+      "confidence": 0.85,
+      "reasoning": "Oil import bill surging. Semiconductor export slowdown. Won depreciation partially helps competitiveness but energy import cost dominates.",
+      "supporting_evidence": [
+        "Oil import costs spiking on Hormuz closure",
+        "Semiconductor cycle slowing",
+        "Won depreciation raises import costs"
+      ],
+      "counter_arguments": [
+        "Tech exports to US/EU continuing",
+        "Auto exports resilient"
+      ],
+      "investor_implication": "Current account deterioration acute. Energy import dependency exposed.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KOR",
+      "factor": "govt_debt_pct_gdp",
+      "current_value": 54.0,
+      "trend": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Fiscal stimulus likely to support economy through oil shock. Government has fiscal space but heading in wrong direction.",
+      "supporting_evidence": [
+        "Stimulus expected to counter oil shock",
+        "10yr bond yield at 2-year high (3.65%)"
+      ],
+      "counter_arguments": [
+        "Korea has relatively low debt starting point",
+        "Fiscal discipline tradition"
+      ],
+      "investor_implication": "Modest fiscal deterioration expected. Bond yields rising.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KOR",
+      "factor": "political_stability",
+      "current_value": 48.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "Economic shock from KOSPI crash and energy crisis straining political stability. Public anger at energy vulnerability. Recent constitutional crisis aftermath still lingering.",
+      "supporting_evidence": [
+        "KOSPI worst day ever \u2014 public confidence shaken",
+        "Energy dependency vulnerability exposed",
+        "Previous political crisis legacy"
+      ],
+      "counter_arguments": [
+        "Democratic institutions functioning",
+        "Strong civil society"
+      ],
+      "investor_implication": "Political pressure on government mounting from economic shock.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KOR",
+      "factor": "military_expenditure_trend",
+      "current_value": 2.8,
+      "trend": "growth",
+      "confidence": 0.75,
+      "reasoning": "North Korea threat persistent. ME crisis may accelerate defense self-sufficiency push. Korean defense industry (K9, KF-21) export demand rising.",
+      "supporting_evidence": [
+        "Regional security environment deteriorating",
+        "Defense export boom",
+        "NATO spending trend influences Korean debate"
+      ],
+      "counter_arguments": [
+        "Economic downturn may constrain budget growth"
+      ],
+      "investor_implication": "Defense spending growth trajectory intact despite economic headwinds.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KOR",
+      "factor": "trade_openness",
+      "current_value": 80.0,
+      "trend": "decrease",
+      "confidence": 0.82,
+      "reasoning": "Hormuz closure directly impacts key energy import route. Semiconductor export demand uncertain. Global trade contraction from dual chokepoint crisis.",
+      "supporting_evidence": [
+        "Hormuz closure blocks 70% of oil imports",
+        "Global trade contracting",
+        "Semiconductor demand cycle uncertain"
+      ],
+      "counter_arguments": [
+        "Trade diversification reducing single-route dependency over time",
+        "USMCA-adjacent positioning"
+      ],
+      "investor_implication": "Trade openness declining. Supply chain restructuring accelerating.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KOR",
+      "factor": "fdi_inflows",
+      "current_value": 12.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "KOSPI crash deterring new investment. Energy vulnerability exposed. But semiconductor manufacturing investment pipeline has long lead times.",
+      "supporting_evidence": [
+        "Record equity market crash",
+        "Energy dependency risk revealed",
+        "Currency volatility"
+      ],
+      "counter_arguments": [
+        "Samsung/SK Hynix fab investments committed",
+        "Chip subsidies attracting manufacturing"
+      ],
+      "investor_implication": "FDI pause likely. Semiconductor-specific investments may continue.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KOR",
+      "factor": "exchange_rate_vs_usd",
+      "current_value": 1483.12,
+      "trend": "decrease",
+      "confidence": 0.82,
+      "reasoning": "Won weakening on massive risk-off. KOSPI crash, oil shock, and safe-haven dollar flows all pressuring Won. BOK may intervene to prevent disorderly decline.",
+      "supporting_evidence": [
+        "Record equity outflows",
+        "Oil import bill surge",
+        "Safe-haven dollar demand"
+      ],
+      "counter_arguments": [
+        "BOK has substantial reserves for intervention",
+        "US Treasury may coordinate"
+      ],
+      "investor_implication": "Won under significant pressure. Orderly depreciation likely with BOK support.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KOR",
+      "factor": "overall_investment_risk",
+      "current_value": 55.0,
+      "trend": "decrease",
+      "confidence": 0.85,
+      "reasoning": "Risk sharply elevated from Hormuz dependency and KOSPI crash. Structural vulnerability to ME energy disruption exposed. Institutional strength provides floor.",
+      "supporting_evidence": [
+        "KOSPI worst day ever",
+        "70% oil via Hormuz",
+        "Currency weakening"
+      ],
+      "counter_arguments": [
+        "Strong institutions",
+        "Diversified economy",
+        "Strategic petroleum reserves"
+      ],
+      "investor_implication": "Risk elevated significantly. Energy dependency is structural vulnerability.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KOR",
+      "factor": "key_relationship_health",
+      "current_value": 55.0,
+      "trend": "stable",
+      "confidence": 0.68,
+      "reasoning": "US alliance stable but strained by Hormuz fallout. Japan relations improving under shared threat. China relationship complex amid tariff/chip tensions.",
+      "supporting_evidence": [
+        "US alliance fundamentals solid",
+        "Japan cooperation deepening",
+        "China trade tensions persistent"
+      ],
+      "counter_arguments": [
+        "Quadrilateral partnerships strengthening",
+        "ASEAN trade growing"
+      ],
+      "investor_implication": "Relationships holding but under stress from economic shock.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "JPN",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 1.2,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "Nikkei -3.6%, China rare earth ban disrupting defense/tech supply chains, oil price surge hitting energy-import-dependent economy. Takaichi supermajority provides policy stability but fiscal challenges.",
+      "supporting_evidence": [
+        "Nikkei 225 -3.6% on Iran crisis",
+        "China rare earth/dual-use export ban",
+        "Oil price surge hitting import bill"
+      ],
+      "counter_arguments": [
+        "Takaichi supermajority provides strong mandate",
+        "BOJ accommodative",
+        "Tourism revenue record"
+      ],
+      "investor_implication": "GDP growth slowing. Energy shock and supply chain disruption key headwinds.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "JPN",
+      "factor": "inflation_cpi_pct",
+      "current_value": 3.0,
+      "trend": "growth",
+      "confidence": 0.8,
+      "reasoning": "Oil price surge and yen weakness driving import inflation. BOJ normalization complicated by energy shock. Core inflation may re-accelerate.",
+      "supporting_evidence": [
+        "Oil import costs surging",
+        "Yen at 157.64 \u2014 import price pressure",
+        "Rare earth shortage raising input costs"
+      ],
+      "counter_arguments": [
+        "Demand weakness partly offsetting",
+        "Government energy subsidies possible"
+      ],
+      "investor_implication": "Inflation pressure from energy. BOJ rate normalization path uncertain.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "JPN",
+      "factor": "current_account_pct_gdp",
+      "current_value": 3.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "Oil import bill surging on Hormuz disruption. Japan imports ~90% of energy. Rare earth ban adds supply chain costs. Income account surplus provides buffer.",
+      "supporting_evidence": [
+        "Japan 90% energy-import dependent",
+        "Hormuz disruption hits LNG/oil imports",
+        "Rare earth import ban from China"
+      ],
+      "counter_arguments": [
+        "Income account surplus from overseas investments large",
+        "Yen weakness boosts export competitiveness"
+      ],
+      "investor_implication": "Current account surplus narrowing but income account provides resilience.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "JPN",
+      "factor": "govt_debt_pct_gdp",
+      "current_value": 260.0,
+      "trend": "stable",
+      "confidence": 0.7,
+      "reasoning": "Already at ~260% \u2014 highest in G7. Defense spending increase to 2% GDP adds pressure. But BOJ yield curve control keeps debt service manageable.",
+      "supporting_evidence": [
+        "Defense spending increasing to 2% GDP",
+        "Energy subsidies may be needed",
+        "Aging demographics raising social costs"
+      ],
+      "counter_arguments": [
+        "BOJ yield curve control caps financing costs",
+        "Domestic savings fund debt",
+        "JGB yield at 2.13% \u2014 still low"
+      ],
+      "investor_implication": "Debt trajectory concerning but domestically funded. BOJ backstop critical.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "JPN",
+      "factor": "political_stability",
+      "current_value": 68.0,
+      "trend": "growth",
+      "confidence": 0.82,
+      "reasoning": "Takaichi LDP supermajority (352/465 seats) provides strongest mandate in decades. Clear defense/security policy direction. Rare earth crisis validates hawkish China stance.",
+      "supporting_evidence": [
+        "LDP supermajority \u2014 strongest mandate in decades",
+        "Policy certainty on defense/security",
+        "Public supports rare earth diversification"
+      ],
+      "counter_arguments": [
+        "Opposition weakened but Taiwan policy could provoke China further",
+        "Aging demographics strain social compact"
+      ],
+      "investor_implication": "Political stability improved significantly. Strong mandate for reform agenda.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "JPN",
+      "factor": "military_expenditure_trend",
+      "current_value": 1.6,
+      "trend": "strong_growth",
+      "confidence": 0.88,
+      "reasoning": "Takaichi supermajority mandates defense expansion to 2% GDP. China rare earth ban validates security argument. Regional instability accelerating timeline.",
+      "supporting_evidence": [
+        "2% GDP defense target mandated",
+        "China export ban highlights threat",
+        "Iran crisis validates defense investment",
+        "NATO allies all at 2%"
+      ],
+      "counter_arguments": [
+        "Fiscal constraints at 260% debt-to-GDP",
+        "Public resistance to military expansion historically"
+      ],
+      "investor_implication": "Defense sector strong buy. Japanese defense industrials benefiting from structural shift.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "JPN",
+      "factor": "trade_openness",
+      "current_value": 35.0,
+      "trend": "decrease",
+      "confidence": 0.75,
+      "reasoning": "China rare earth ban directly hits trade. Hormuz disruption raises energy import costs. Global trade contraction adds headwind.",
+      "supporting_evidence": [
+        "China rare earth/dual-use export ban",
+        "Hormuz oil/LNG disruption",
+        "Global protectionism rising"
+      ],
+      "counter_arguments": [
+        "Japan-ASEAN trade corridor expanding",
+        "Trans-Pacific trade routes not disrupted"
+      ],
+      "investor_implication": "Trade openness declining. Supply chain diversification urgently needed.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "JPN",
+      "factor": "fdi_inflows",
+      "current_value": 5.0,
+      "trend": "stable",
+      "confidence": 0.65,
+      "reasoning": "Japan FDI inflows historically low. Takaichi reforms may help but war environment creates uncertainty. Semiconductor investment positive.",
+      "supporting_evidence": [
+        "Policy stability from supermajority",
+        "TSMC Japan fab investment continuing",
+        "Yen weakness makes Japan cheaper"
+      ],
+      "counter_arguments": [
+        "Regulatory barriers remain",
+        "Aging labor force",
+        "China tensions deter some Asian investors"
+      ],
+      "investor_implication": "FDI stable. Structural reform needed for sustained increase.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "JPN",
+      "factor": "exchange_rate_vs_usd",
+      "current_value": 157.64,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "Yen weakening on safe-haven dollar demand and energy import costs. BOJ may intervene if pace accelerates. Divergence with US rates widening.",
+      "supporting_evidence": [
+        "Dollar safe-haven demand",
+        "Energy import bill surging",
+        "BOJ-Fed rate differential"
+      ],
+      "counter_arguments": [
+        "BOJ intervention possible above 160",
+        "Income account surplus provides floor"
+      ],
+      "investor_implication": "Yen under pressure. Watch for BOJ intervention near 160.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "JPN",
+      "factor": "overall_investment_risk",
+      "current_value": 38.0,
+      "trend": "decrease",
+      "confidence": 0.75,
+      "reasoning": "Risk modestly elevated from energy shock and China tensions. But strong institutions, political stability improvement, and alliance strength provide floor.",
+      "supporting_evidence": [
+        "China rare earth ban \u2014 supply chain risk",
+        "Energy shock from Hormuz",
+        "Nikkei -3.6%"
+      ],
+      "counter_arguments": [
+        "Strongest political mandate in decades",
+        "US alliance deepening",
+        "Institutional strength"
+      ],
+      "investor_implication": "Risk elevated but Japan remains core developed-market allocation.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "JPN",
+      "factor": "key_relationship_health",
+      "current_value": 52.0,
+      "trend": "decrease",
+      "confidence": 0.75,
+      "reasoning": "China-Japan: sharply deteriorated (rare earth ban). US-Japan: strengthening. Korea-Japan: improving on shared threats. ASEAN ties stable.",
+      "supporting_evidence": [
+        "China rare earth ban is serious deterioration",
+        "US-Japan alliance deepening",
+        "Quad partnership strengthening"
+      ],
+      "counter_arguments": [
+        "Taiwan policy could trigger further China escalation",
+        "Trade tensions persistent"
+      ],
+      "investor_implication": "Net relationship health declining due to China deterioration despite US strengthening.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "SAU",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 3.0,
+      "trend": "strong_decrease",
+      "confidence": 0.88,
+      "reasoning": "Hormuz closure blocks ~90% of Saudi oil export route. Oil revenue collapses even as prices surge. Alternative pipeline (East-West) has limited capacity.",
+      "supporting_evidence": [
+        "Hormuz closure blocks primary export route",
+        "Oil constitutes 60%+ of government revenue",
+        "East-West pipeline only 5M bpd capacity"
+      ],
+      "counter_arguments": [
+        "High oil prices benefit volume that can ship via pipeline",
+        "Fiscal buffers from PIF/sovereign wealth"
+      ],
+      "investor_implication": "Saudi growth outlook severely impaired by Hormuz closure. Vision 2030 timelines disrupted.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "SAU",
+      "factor": "inflation_cpi_pct",
+      "current_value": 2.5,
+      "trend": "growth",
+      "confidence": 0.72,
+      "reasoning": "Supply chain disruption from Hormuz closure raising import costs. But domestic demand may weaken offsetting some price pressure.",
+      "supporting_evidence": [
+        "Import costs rising from shipping disruption",
+        "Currency peg maintains import stability"
+      ],
+      "counter_arguments": [
+        "Domestic demand weakening offsets",
+        "Government subsidies on essentials"
+      ],
+      "investor_implication": "Moderate inflation pressure. Peg constrains monetary policy response.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "SAU",
+      "factor": "current_account_pct_gdp",
+      "current_value": 8.0,
+      "trend": "strong_decrease",
+      "confidence": 0.9,
+      "reasoning": "Oil export volumes collapsed despite high prices. Hormuz closure blocks ~90% of export route. Only East-West pipeline provides partial alternative.",
+      "supporting_evidence": [
+        "Primary export route blocked",
+        "VLCC rates at all-time high for ships that can transit",
+        "Export volume collapse despite price surge"
+      ],
+      "counter_arguments": [
+        "East-West pipeline provides some export capacity",
+        "Sovereign wealth fund provides financial buffer"
+      ],
+      "investor_implication": "Current account swing sharply negative. Fiscal reserves being drawn down.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "SAU",
+      "factor": "govt_debt_pct_gdp",
+      "current_value": 26.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "Revenue collapse from Hormuz closure forces drawdown of reserves and potential new borrowing. Vision 2030 spending commitments difficult to sustain.",
+      "supporting_evidence": [
+        "Oil revenue drop despite high prices \u2014 volume collapse",
+        "Vision 2030 spending commitments",
+        "PIF investment drawdowns possible"
+      ],
+      "counter_arguments": [
+        "Low starting debt level",
+        "Substantial sovereign wealth reserves"
+      ],
+      "investor_implication": "Fiscal deterioration likely but manageable given low debt base and reserves.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "SAU",
+      "factor": "political_stability",
+      "current_value": 58.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "IRGC strikes on Saudi territory (27 US base attacks included Gulf states). Populace anxious about regional war. MBS authority not directly threatened but economic model at risk.",
+      "supporting_evidence": [
+        "IRGC attacked bases on Saudi soil",
+        "Hormuz closure threatens economic model",
+        "Regional war anxiety"
+      ],
+      "counter_arguments": [
+        "MBS has consolidated power effectively",
+        "Security services strong",
+        "US military partnership"
+      ],
+      "investor_implication": "Political stability strained by proximity to conflict. Not crisis-level given MBS control.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "SAU",
+      "factor": "military_expenditure_trend",
+      "current_value": 6.0,
+      "trend": "growth",
+      "confidence": 0.82,
+      "reasoning": "Regional conflict validates high defense spending. US partnership deepened by joint operations. Air defense systems activated against IRGC strikes.",
+      "supporting_evidence": [
+        "IRGC strikes on Saudi territory",
+        "US partnership deepening",
+        "Air defense proven in combat"
+      ],
+      "counter_arguments": [
+        "Fiscal constraints from oil revenue loss could constrain spending growth"
+      ],
+      "investor_implication": "Defense spending justified by regional threat. US equipment purchases likely to increase.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "SAU",
+      "factor": "trade_openness",
+      "current_value": 65.0,
+      "trend": "strong_decrease",
+      "confidence": 0.88,
+      "reasoning": "Hormuz closure devastates Saudi trade. Oil exports \u2014 the vast majority of trade \u2014 blocked. Import disruption as Hormuz also carries inbound cargo.",
+      "supporting_evidence": [
+        "Hormuz closure blocks primary trade route",
+        "VLCC rates at all-time highs",
+        "Insurance withdrawal from Gulf shipping"
+      ],
+      "counter_arguments": [
+        "East-West pipeline partially operational",
+        "Red Sea alternative exists but also disrupted by Houthis"
+      ],
+      "investor_implication": "Trade severely disrupted. Economic model under existential stress.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "SAU",
+      "factor": "fdi_inflows",
+      "current_value": 5.0,
+      "trend": "decrease",
+      "confidence": 0.82,
+      "reasoning": "Vision 2030 FDI targets at risk as investors pause amid regional war. Infrastructure projects may face delays. Risk premium elevated sharply.",
+      "supporting_evidence": [
+        "Regional war deterring investment decisions",
+        "Insurance costs rising",
+        "Construction delays likely"
+      ],
+      "counter_arguments": [
+        "Long-term Vision 2030 commitments may be honored",
+        "Oil price recovery potential post-crisis"
+      ],
+      "investor_implication": "FDI pipeline delayed. Investors waiting for conflict resolution.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "SAU",
+      "factor": "exchange_rate_vs_usd",
+      "current_value": 3.75,
+      "trend": "stable",
+      "confidence": 0.95,
+      "reasoning": "Riyal peg to USD maintained. Saudi monetary authority has reserves to defend peg. No immediate threat to peg but prolonged Hormuz closure could strain.",
+      "supporting_evidence": [
+        "Peg maintained at 3.75",
+        "Substantial reserves",
+        "US alliance supports peg credibility"
+      ],
+      "counter_arguments": [
+        "Prolonged revenue loss could eventually threaten peg if crisis extends 6+ months"
+      ],
+      "investor_implication": "Peg stable for now. Watch for stress signals if crisis persists past Q2.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "SAU",
+      "factor": "overall_investment_risk",
+      "current_value": 58.0,
+      "trend": "decrease",
+      "confidence": 0.85,
+      "reasoning": "Risk sharply elevated from Hormuz closure. Oil export model at risk. IRGC strikes on territory. But US backing, reserves, and institutional strength provide floor.",
+      "supporting_evidence": [
+        "Hormuz closure \u2014 primary export route blocked",
+        "IRGC attacks on Saudi soil",
+        "Economic model disrupted"
+      ],
+      "counter_arguments": [
+        "Substantial sovereign wealth reserves",
+        "US military backing",
+        "Low debt base"
+      ],
+      "investor_implication": "Risk elevated significantly. Core Saudi assets under stress but not collapse.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "SAU",
+      "factor": "key_relationship_health",
+      "current_value": 55.0,
+      "trend": "stable",
+      "confidence": 0.72,
+      "reasoning": "US-Saudi: strengthened by shared Iran threat. Iran-Saudi: war by proxy/direct attack. Israel-Saudi: normalization paused but alignment on Iran. China-Saudi: oil trade disrupted.",
+      "supporting_evidence": [
+        "US partnership deepened by shared threat",
+        "Iran attacks on Saudi territory",
+        "Normalization with Israel paused"
+      ],
+      "counter_arguments": [
+        "US war in Iran could eventually benefit Saudi position",
+        "China seeking alternative oil sources"
+      ],
+      "investor_implication": "US relationship stronger. Iran relationship at nadir. Net: mixed but US alignment dominant.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ARE",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 3.5,
+      "trend": "decrease",
+      "confidence": 0.8,
+      "reasoning": "Hormuz closure disrupts oil exports (Abu Dhabi) and shipping hub (Dubai). But UAE more diversified than other Gulf states. Fujairah terminal outside Hormuz provides some flexibility.",
+      "supporting_evidence": [
+        "Hormuz disrupts Abu Dhabi oil exports",
+        "Dubai shipping hub disrupted",
+        "IRGC strikes on UAE territory"
+      ],
+      "counter_arguments": [
+        "UAE economy most diversified in Gulf",
+        "Fujairah port outside Hormuz",
+        "Tourism sector may be resilient"
+      ],
+      "investor_implication": "Growth outlook reduced but UAE diversification provides resilience vs. peers.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ARE",
+      "factor": "inflation_cpi_pct",
+      "current_value": 2.0,
+      "trend": "growth",
+      "confidence": 0.68,
+      "reasoning": "Supply chain disruption from Hormuz raising costs. But dirham peg and government controls moderate impact.",
+      "supporting_evidence": [
+        "Import costs rising",
+        "Shipping disruption"
+      ],
+      "counter_arguments": [
+        "Government controls",
+        "Dirham peg stability"
+      ],
+      "investor_implication": "Moderate inflation. UAE well-positioned to manage price stability.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ARE",
+      "factor": "current_account_pct_gdp",
+      "current_value": 10.0,
+      "trend": "strong_decrease",
+      "confidence": 0.85,
+      "reasoning": "Oil exports via Hormuz severely impacted. Shipping/trade hub revenues declining. But Fujairah pipeline provides partial alternative for Abu Dhabi crude.",
+      "supporting_evidence": [
+        "Hormuz closure blocks majority of oil exports",
+        "Shipping hub revenues declining",
+        "Insurance withdrawal"
+      ],
+      "counter_arguments": [
+        "Fujairah provides export alternative",
+        "Diversified revenue base"
+      ],
+      "investor_implication": "Current account deteriorating sharply but less severe than SAU/KWT.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ARE",
+      "factor": "govt_debt_pct_gdp",
+      "current_value": 30.0,
+      "trend": "stable",
+      "confidence": 0.7,
+      "reasoning": "Fiscal buffers substantial. Abu Dhabi sovereign wealth (ADIA) provides backstop. Low debt starting point.",
+      "supporting_evidence": [
+        "Low debt base",
+        "Substantial sovereign wealth",
+        "Diversified revenue"
+      ],
+      "counter_arguments": [
+        "Revenue decline from Hormuz could force drawdowns"
+      ],
+      "investor_implication": "Fiscal position manageable given reserves. No sovereign credit concern near-term.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ARE",
+      "factor": "political_stability",
+      "current_value": 70.0,
+      "trend": "decrease",
+      "confidence": 0.72,
+      "reasoning": "IRGC strikes on UAE territory alarming. But UAE security apparatus strong and population largely expatriate (less political risk from domestic unrest).",
+      "supporting_evidence": [
+        "IRGC attacks on UAE soil",
+        "Proximity to conflict zone",
+        "Large expatriate population may flee"
+      ],
+      "counter_arguments": [
+        "Strong security apparatus",
+        "Diversified economy reduces oil dependency panic",
+        "US military presence"
+      ],
+      "investor_implication": "Stability slightly reduced. Expat flight risk is main domestic concern.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ARE",
+      "factor": "military_expenditure_trend",
+      "current_value": 5.5,
+      "trend": "growth",
+      "confidence": 0.78,
+      "reasoning": "Regional conflict validates defense spending. Joint defense with US strengthened. Air defense systems deployed.",
+      "supporting_evidence": [
+        "IRGC attacks on territory",
+        "US partnership deepening",
+        "Regional threat environment"
+      ],
+      "counter_arguments": [
+        "Fiscal constraints possible if revenue decline persists"
+      ],
+      "investor_implication": "Defense spending growth justified. UAE defense modernization accelerating.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ARE",
+      "factor": "trade_openness",
+      "current_value": 150.0,
+      "trend": "decrease",
+      "confidence": 0.82,
+      "reasoning": "Dubai as global trade hub impacted by Hormuz closure. Shipping rerouting adds costs. But Jebel Ali port accessible via alternative routes.",
+      "supporting_evidence": [
+        "Hormuz closure disrupts shipping lanes",
+        "Insurance costs surge",
+        "VLCC rates at all-time high"
+      ],
+      "counter_arguments": [
+        "Jebel Ali accessible from Indian Ocean side",
+        "Air cargo alternative for high-value goods"
+      ],
+      "investor_implication": "Trade hub model under stress but not broken. Dubai logistics pivoting.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ARE",
+      "factor": "fdi_inflows",
+      "current_value": 20.0,
+      "trend": "decrease",
+      "confidence": 0.75,
+      "reasoning": "Dubai FDI attractiveness reduced by regional war proximity. But fundamentals of business-friendly environment remain.",
+      "supporting_evidence": [
+        "Regional war deterring new commitments",
+        "Expat uncertainty",
+        "Insurance costs"
+      ],
+      "counter_arguments": [
+        "Long-term Dubai brand strong",
+        "Free zones still attractive",
+        "Expo 2025 momentum"
+      ],
+      "investor_implication": "FDI pause likely temporary. Dubai fundamentals intact for recovery.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ARE",
+      "factor": "exchange_rate_vs_usd",
+      "current_value": 3.6725,
+      "trend": "stable",
+      "confidence": 0.97,
+      "reasoning": "Dirham peg to USD firm. Massive reserves. No threat to peg.",
+      "supporting_evidence": [
+        "Peg at 3.6725 maintained",
+        "Substantial reserves",
+        "US alliance"
+      ],
+      "counter_arguments": [],
+      "investor_implication": "Peg stable. No concern.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ARE",
+      "factor": "overall_investment_risk",
+      "current_value": 45.0,
+      "trend": "decrease",
+      "confidence": 0.8,
+      "reasoning": "Risk elevated from Hormuz closure and IRGC attacks but UAE diversification and reserves provide significant buffer vs. Gulf peers.",
+      "supporting_evidence": [
+        "Hormuz closure",
+        "IRGC attacks",
+        "Regional war proximity"
+      ],
+      "counter_arguments": [
+        "Most diversified Gulf economy",
+        "Strong reserves",
+        "Fujairah alternative"
+      ],
+      "investor_implication": "Risk elevated but UAE remains most investable Gulf state. Diversification premium.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ARE",
+      "factor": "key_relationship_health",
+      "current_value": 62.0,
+      "trend": "stable",
+      "confidence": 0.7,
+      "reasoning": "US-UAE: strengthened. Iran-UAE: hostile. India-UAE: trade corridor important. China-UAE: trade disrupted by Hormuz.",
+      "supporting_evidence": [
+        "US partnership deepened",
+        "Iran hostility escalated",
+        "India trade corridor growing"
+      ],
+      "counter_arguments": [
+        "Balancing act between great powers becomes harder under conflict"
+      ],
+      "investor_implication": "Relationships holding. US alignment dominant in current environment.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "DEU",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 0.5,
+      "trend": "decrease",
+      "confidence": 0.8,
+      "reasoning": "DAX -4.1%, oil shock raising energy costs for manufacturing-heavy economy. Defense spending surge (+12.6%) partially offsets. Ukraine war burden increasing as sole EU funder.",
+      "supporting_evidence": [
+        "DAX -4.1% on Iran crisis",
+        "Energy costs rising (oil shock)",
+        "Manufacturing sector under pressure"
+      ],
+      "counter_arguments": [
+        "Defense spending boost to GDP",
+        "Infrastructure investment fund",
+        "Labor market resilient"
+      ],
+      "investor_implication": "German growth outlook worsening. Manufacturing recession risk rising.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "DEU",
+      "factor": "inflation_cpi_pct",
+      "current_value": 2.3,
+      "trend": "growth",
+      "confidence": 0.78,
+      "reasoning": "Oil price surge and potential gas price spike from Hormuz/LNG disruption. Energy-intensive industry costs rising. ECB on hold.",
+      "supporting_evidence": [
+        "Oil/gas price surge",
+        "Industrial energy costs rising",
+        "ECB on hold despite growth weakness"
+      ],
+      "counter_arguments": [
+        "Euro strength provides some import relief",
+        "Demand weakness limits pass-through"
+      ],
+      "investor_implication": "Inflation re-acceleration risk from energy. ECB faces difficult tradeoff.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "DEU",
+      "factor": "current_account_pct_gdp",
+      "current_value": 5.5,
+      "trend": "decrease",
+      "confidence": 0.75,
+      "reasoning": "Energy import bill rising sharply. Manufacturing export demand uncertain. But automotive and machinery exports to non-conflict regions stable.",
+      "supporting_evidence": [
+        "Energy import costs surging",
+        "Global trade disruption",
+        "Manufacturing export uncertainty"
+      ],
+      "counter_arguments": [
+        "Auto/machinery exports stable",
+        "Bund yield rise attracts capital"
+      ],
+      "investor_implication": "Current account surplus narrowing on energy costs. Structural surplus remains.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "DEU",
+      "factor": "govt_debt_pct_gdp",
+      "current_value": 63.0,
+      "trend": "decrease",
+      "confidence": 0.75,
+      "reasoning": "Defense spending surge and Ukraine funding increasing fiscal pressure. Infrastructure fund adds to debt. But starting from relatively manageable level.",
+      "supporting_evidence": [
+        "Defense spending +12.6%",
+        "Ukraine funding burden",
+        "Infrastructure investment fund"
+      ],
+      "counter_arguments": [
+        "Strong tax base",
+        "German fiscal discipline tradition",
+        "Growth supports revenue"
+      ],
+      "investor_implication": "Fiscal trajectory loosening. Debt brake reform allowing more spending.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "DEU",
+      "factor": "political_stability",
+      "current_value": 62.0,
+      "trend": "stable",
+      "confidence": 0.72,
+      "reasoning": "Coalition navigating multiple crises but functioning. Defense consensus strong. AfD pressure on immigration/economy. EU leadership role increasing.",
+      "supporting_evidence": [
+        "Defense consensus across parties",
+        "EU leadership on Ukraine",
+        "Economic anxiety fueling AfD"
+      ],
+      "counter_arguments": [
+        "Grand coalition stability",
+        "Institutional strength",
+        "Merz government honeymoon"
+      ],
+      "investor_implication": "Political stability adequate. Crisis management mode but institutional resilience.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "DEU",
+      "factor": "military_expenditure_trend",
+      "current_value": 2.0,
+      "trend": "strong_growth",
+      "confidence": 0.88,
+      "reasoning": "NATO 2% target met. European defense spending surge (+12.6%). Zeitenwende accelerating. Defense industry (Rheinmetall) booming.",
+      "supporting_evidence": [
+        "NATO 2% target met",
+        "Zeitenwende spending continuing",
+        "Ukraine burden demands more",
+        "5% target by 2035 discussed"
+      ],
+      "counter_arguments": [
+        "Fiscal constraints from debt brake (modified)",
+        "Public resistance to defense over social spending"
+      ],
+      "investor_implication": "German defense spending in structural uptrend. Rheinmetall and peers benefiting.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "DEU",
+      "factor": "trade_openness",
+      "current_value": 80.0,
+      "trend": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Global trade contraction from dual chokepoint crisis. China trade tensions rising. US tariffs adding pressure. But intra-EU trade insulated.",
+      "supporting_evidence": [
+        "US 15% global surcharge",
+        "Dual chokepoint disruption",
+        "China tensions"
+      ],
+      "counter_arguments": [
+        "Intra-EU trade large and insulated",
+        "New trade agreements (Mercosur-EU)"
+      ],
+      "investor_implication": "Trade openness under pressure from multiple directions.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "DEU",
+      "factor": "fdi_inflows",
+      "current_value": 15.0,
+      "trend": "stable",
+      "confidence": 0.65,
+      "reasoning": "Germany remains attractive for manufacturing FDI despite headwinds. Energy costs a concern but defense sector investment rising.",
+      "supporting_evidence": [
+        "Defense sector investment surge",
+        "Industrial base attractive",
+        "EU single market access"
+      ],
+      "counter_arguments": [
+        "Energy costs deterring some industrial FDI",
+        "Bureaucratic burden"
+      ],
+      "investor_implication": "FDI stable. Defense/green transition investment offsetting industrial headwinds.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "DEU",
+      "factor": "exchange_rate_vs_usd",
+      "current_value": 0.8608,
+      "trend": "stable",
+      "confidence": 0.78,
+      "reasoning": "Euro relatively stable despite Iran crisis. ECB on hold. Safe-haven flows primarily to USD, CHF, gold \u2014 some EUR pressure.",
+      "supporting_evidence": [
+        "ECB on hold",
+        "European energy vulnerability",
+        "Safe-haven dollar demand"
+      ],
+      "counter_arguments": [
+        "Euro is second reserve currency",
+        "ECB credibility intact"
+      ],
+      "investor_implication": "Euro under modest pressure vs dollar. No major move expected.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "DEU",
+      "factor": "overall_investment_risk",
+      "current_value": 28.0,
+      "trend": "stable",
+      "confidence": 0.75,
+      "reasoning": "Risk modestly elevated from energy shock and defense burden. But institutional strength, EU membership, and deep markets provide floor.",
+      "supporting_evidence": [
+        "Energy shock from oil/gas",
+        "Defense spending burden",
+        "Manufacturing headwinds"
+      ],
+      "counter_arguments": [
+        "Strong institutions",
+        "EU framework",
+        "Deep capital markets"
+      ],
+      "investor_implication": "Germany remains core European allocation despite headwinds.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "DEU",
+      "factor": "key_relationship_health",
+      "current_value": 62.0,
+      "trend": "stable",
+      "confidence": 0.72,
+      "reasoning": "US-DEU: strained by burden-sharing. France-DEU: EU cooperation strong. China-DEU: trade tensions rising. Russia-DEU: severed by Ukraine.",
+      "supporting_evidence": [
+        "NATO defense cooperation strengthened",
+        "EU integration deepening",
+        "China trade tensions"
+      ],
+      "counter_arguments": [
+        "US trade tensions over tariffs",
+        "Russia relationship severed"
+      ],
+      "investor_implication": "Relationship health stable. EU axis and NATO commitment dominant.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "GBR",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 1.0,
+      "trend": "decrease",
+      "confidence": 0.75,
+      "reasoning": "FTSE -3.44% on Iran selloff. Oil shock hitting consumer spending. Higher gilt yields (4.30%) tightening financial conditions. Brexit-related trade friction continues.",
+      "supporting_evidence": [
+        "FTSE 100 -3.44%",
+        "Oil shock raising energy costs",
+        "Gilt yields at 4.30%"
+      ],
+      "counter_arguments": [
+        "BOE rate path could ease",
+        "Services sector resilient"
+      ],
+      "investor_implication": "UK growth outlook weakened. Stagflation risk elevated.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "GBR",
+      "factor": "inflation_cpi_pct",
+      "current_value": 2.8,
+      "trend": "growth",
+      "confidence": 0.8,
+      "reasoning": "Oil price surge feeds through to CPI. Sterling under pressure adding import costs. BOE faces growth-inflation tradeoff.",
+      "supporting_evidence": [
+        "Oil price surge",
+        "Sterling weakness",
+        "Supply chain disruption from dual chokepoints"
+      ],
+      "counter_arguments": [
+        "Demand weakness offsetting",
+        "BOE credibility"
+      ],
+      "investor_implication": "Inflation re-acceleration risk. BOE likely on hold.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "GBR",
+      "factor": "political_stability",
+      "current_value": 58.0,
+      "trend": "stable",
+      "confidence": 0.7,
+      "reasoning": "Starmer government navigating crisis. Support for US-Israel operation divided. Economic challenges mounting.",
+      "supporting_evidence": [
+        "Government stable majority",
+        "Economic headwinds mounting",
+        "Anti-war sentiment growing"
+      ],
+      "counter_arguments": [
+        "Institutional strength",
+        "Strong civil service"
+      ],
+      "investor_implication": "Political stability adequate but under pressure from multiple crises.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "GBR",
+      "factor": "military_expenditure_trend",
+      "current_value": 2.3,
+      "trend": "growth",
+      "confidence": 0.82,
+      "reasoning": "NATO 2% exceeded. Iran crisis validates defense investment. Royal Navy assets deployed. UK one of few European countries with force projection capability.",
+      "supporting_evidence": [
+        "NATO 2% target exceeded",
+        "Iran crisis validates spending",
+        "Force projection capability maintained"
+      ],
+      "counter_arguments": [
+        "Fiscal pressure from NHS/social spending"
+      ],
+      "investor_implication": "Defense spending growth secured. UK defense industry benefiting.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "GBR",
+      "factor": "overall_investment_risk",
+      "current_value": 30.0,
+      "trend": "stable",
+      "confidence": 0.72,
+      "reasoning": "Risk stable despite FTSE correction. Institutional strength, rule of law, and deep markets provide resilience.",
+      "supporting_evidence": [
+        "FTSE correction -3.44%",
+        "Oil shock exposure",
+        "Gilt yield rise"
+      ],
+      "counter_arguments": [
+        "Strong institutions",
+        "Deep capital markets",
+        "Rule of law"
+      ],
+      "investor_implication": "UK remains core allocation. Correction a potential entry point.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "GBR",
+      "factor": "exchange_rate_vs_usd",
+      "current_value": 0.7486,
+      "trend": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Sterling under pressure from dollar safe-haven demand and energy import costs.",
+      "supporting_evidence": [
+        "Dollar safe-haven demand",
+        "Energy import costs",
+        "Gilt market pressure"
+      ],
+      "counter_arguments": [
+        "BOE rate differential",
+        "UK institutional credibility"
+      ],
+      "investor_implication": "Sterling weakening modestly. No disorderly decline expected.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "RUS",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 1.0,
+      "trend": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Ukraine war day 1467 grinding on. ~790 casualties/day. War economy hitting limits. Sanctions constraining but not collapsing economy.",
+      "supporting_evidence": [
+        "Ukraine war sustained attrition",
+        "Sanctions constraining growth",
+        "Labor shortages from mobilization"
+      ],
+      "counter_arguments": [
+        "Oil revenue benefits from price spike (non-Hormuz routes)",
+        "Defense spending boosting industrial output"
+      ],
+      "investor_implication": "Russian war economy sustaining but growth trajectory declining.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "RUS",
+      "factor": "inflation_cpi_pct",
+      "current_value": 8.5,
+      "trend": "growth",
+      "confidence": 0.75,
+      "reasoning": "War spending and labor shortages driving inflation. Central bank at high rates. Ruble managed but real purchasing power declining.",
+      "supporting_evidence": [
+        "War spending inflationary",
+        "Labor shortages from mobilization",
+        "Import substitution raising costs"
+      ],
+      "counter_arguments": [
+        "High interest rates constraining credit",
+        "Ruble relative stability"
+      ],
+      "investor_implication": "Inflation persistent. Central bank maintaining tight policy.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "RUS",
+      "factor": "political_stability",
+      "current_value": 55.0,
+      "trend": "stable",
+      "confidence": 0.68,
+      "reasoning": "Putin's control firm. War fatigue growing but suppressed. Iran alliance complicated by Khamenei death. Domestic repression effective.",
+      "supporting_evidence": [
+        "Putin regime stable",
+        "Repression apparatus effective",
+        "Iran ally weakened"
+      ],
+      "counter_arguments": [
+        "War fatigue accumulating",
+        "Elite discontent possible"
+      ],
+      "investor_implication": "Regime stability maintained by repression. No imminent threat to Putin.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "RUS",
+      "factor": "military_expenditure_trend",
+      "current_value": 6.0,
+      "trend": "growth",
+      "confidence": 0.82,
+      "reasoning": "War economy sustaining high military spending. Defense production ramped up. Iran crisis may provide diplomatic leverage.",
+      "supporting_evidence": [
+        "Ukraine war requiring sustained spending",
+        "Defense production surge",
+        "Iran crisis creates opportunity"
+      ],
+      "counter_arguments": [
+        "Fiscal sustainability questionable long-term",
+        "Quality vs quantity tradeoff"
+      ],
+      "investor_implication": "Defense spending at wartime levels. Sustainability questionable beyond 2027.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "RUS",
+      "factor": "overall_investment_risk",
+      "current_value": 82.0,
+      "trend": "stable",
+      "confidence": 0.78,
+      "reasoning": "Risk remains extreme from sanctions, war, and international isolation. But economy more resilient than initially expected.",
+      "supporting_evidence": [
+        "Comprehensive Western sanctions",
+        "Active war in Ukraine",
+        "International isolation"
+      ],
+      "counter_arguments": [
+        "Oil revenue from non-sanctioned buyers",
+        "Domestic demand resilient",
+        "Import substitution progressing"
+      ],
+      "investor_implication": "Russia remains uninvestable for Western investors. Sanctions compliance critical.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "RUS",
+      "factor": "exchange_rate_vs_usd",
+      "current_value": 77.6,
+      "trend": "stable",
+      "confidence": 0.7,
+      "reasoning": "Ruble managed within bands. Capital controls effective. Oil revenue (via India, China) providing inflows. Iran crisis net positive for Russian oil revenue.",
+      "supporting_evidence": [
+        "Capital controls effective",
+        "Oil revenue from alternative buyers",
+        "Higher oil prices benefit Russia"
+      ],
+      "counter_arguments": [
+        "Sanctions constraining financial flows",
+        "Import costs elevated"
+      ],
+      "investor_implication": "Ruble managed stability. Iran crisis net positive for Russian oil revenue.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CHN",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 4.5,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "Shanghai -1.43%. Additional 10% US tariff (Mar 4). Rare earth ban on Japan shows escalation willingness. Hormuz disruption raises energy import costs.",
+      "supporting_evidence": [
+        "US additional 10% tariff Mar 4",
+        "Shanghai Composite -1.43%",
+        "Hormuz disrupts energy imports"
+      ],
+      "counter_arguments": [
+        "Stimulus measures ongoing",
+        "Domestic consumption recovery",
+        "Non-Hormuz energy sources (Russia pipeline)"
+      ],
+      "investor_implication": "Growth headwinds mounting. Tariff escalation and energy costs key risks.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CHN",
+      "factor": "inflation_cpi_pct",
+      "current_value": 0.5,
+      "trend": "stable",
+      "confidence": 0.7,
+      "reasoning": "Deflationary pressure persists despite oil shock. Domestic demand weak. Property sector drag. Oil shock effect partially offset by RMB management.",
+      "supporting_evidence": [
+        "Deflation pressure from demand weakness",
+        "Property sector drag",
+        "Oil import costs rising"
+      ],
+      "counter_arguments": [
+        "Government stimulus measures",
+        "PBoC easing"
+      ],
+      "investor_implication": "Near-deflation persists. Oil shock insufficient to trigger meaningful inflation.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CHN",
+      "factor": "current_account_pct_gdp",
+      "current_value": 2.0,
+      "trend": "decrease",
+      "confidence": 0.75,
+      "reasoning": "Energy import costs rising from Hormuz disruption. US tariffs reducing export revenue. But massive trade surplus with rest of world provides buffer.",
+      "supporting_evidence": [
+        "US tariff escalation",
+        "Energy import costs rising",
+        "Hormuz disrupts oil supply"
+      ],
+      "counter_arguments": [
+        "Massive trade surplus base",
+        "Russia pipeline energy partially insulated",
+        "Export diversification to Global South"
+      ],
+      "investor_implication": "Current account surplus narrowing but remains positive. Trade war escalating.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CHN",
+      "factor": "political_stability",
+      "current_value": 65.0,
+      "trend": "stable",
+      "confidence": 0.68,
+      "reasoning": "Xi consolidation complete. PLA purge (100+ officers) shows internal discipline enforcement. Iran crisis creates opportunity for geopolitical positioning.",
+      "supporting_evidence": [
+        "Xi power consolidated",
+        "PLA purge demonstrates control",
+        "Iran crisis \u2014 potential diplomatic opportunity"
+      ],
+      "counter_arguments": [
+        "Economic slowdown creating social pressure",
+        "Youth unemployment high"
+      ],
+      "investor_implication": "Regime stability firm. Economic challenges managed through control apparatus.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CHN",
+      "factor": "military_expenditure_trend",
+      "current_value": 1.5,
+      "trend": "growth",
+      "confidence": 0.8,
+      "reasoning": "Defense spending growth trend continues at ~7% annual increase. PLA modernization ongoing. Iran crisis validates military capability investment.",
+      "supporting_evidence": [
+        "7% annual defense budget growth",
+        "PLA modernization program",
+        "Regional security environment deteriorating"
+      ],
+      "counter_arguments": [
+        "Economic slowdown may constrain budget growth",
+        "PLA purge may slow procurement"
+      ],
+      "investor_implication": "Defense spending growth structural. PLA modernization on track.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CHN",
+      "factor": "trade_openness",
+      "current_value": 35.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "US tariff escalation (now cumulative 10%+ additional). Rare earth export ban on Japan shows weaponization of trade. Dual chokepoint crisis disrupting global supply chains.",
+      "supporting_evidence": [
+        "US tariff escalation Mar 4",
+        "Rare earth ban on Japan",
+        "Dual chokepoint crisis"
+      ],
+      "counter_arguments": [
+        "Belt & Road trade networks expanding",
+        "RCEP framework",
+        "Trade diversification to Global South"
+      ],
+      "investor_implication": "Trade tensions escalating on multiple fronts. Decoupling accelerating.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CHN",
+      "factor": "fdi_inflows",
+      "current_value": -5.0,
+      "trend": "decrease",
+      "confidence": 0.8,
+      "reasoning": "FDI outflows continuing. Geopolitical tensions, property crisis, and tariff escalation deterring foreign investment. De-risking trend accelerating.",
+      "supporting_evidence": [
+        "US-China tariff escalation",
+        "Geopolitical tensions",
+        "Property sector crisis",
+        "De-risking trend"
+      ],
+      "counter_arguments": [
+        "China market size still attractive",
+        "Some sectors (EV, renewable) drawing investment"
+      ],
+      "investor_implication": "FDI outflow trend continuing. De-risking accelerating.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CHN",
+      "factor": "exchange_rate_vs_usd",
+      "current_value": 6.9006,
+      "trend": "stable",
+      "confidence": 0.75,
+      "reasoning": "RMB managed within narrow band. PBoC controlling pace of depreciation. Capital controls limiting outflows. No sharp move expected.",
+      "supporting_evidence": [
+        "PBoC managing RMB band",
+        "Capital controls effective",
+        "Trade surplus providing inflows"
+      ],
+      "counter_arguments": [
+        "US rate differential pressuring RMB lower",
+        "Tariff uncertainty"
+      ],
+      "investor_implication": "RMB managed depreciation. No sharp move. PBoC control firm.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CHN",
+      "factor": "overall_investment_risk",
+      "current_value": 52.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "Risk elevated from tariff escalation, geopolitical tensions, and property crisis. But government capacity to manage and market size provide floor.",
+      "supporting_evidence": [
+        "US tariff escalation",
+        "Rare earth weaponization",
+        "Property sector crisis"
+      ],
+      "counter_arguments": [
+        "Government intervention capacity",
+        "Massive domestic market",
+        "Stimulus measures"
+      ],
+      "investor_implication": "Risk elevated. Selective investment in policy-favored sectors only.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CHN",
+      "factor": "key_relationship_health",
+      "current_value": 38.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "US-China: tariff escalation continuing. China-Japan: rare earth ban \u2014 sharp deterioration. China-Iran: ally weakened by war. China-Russia: stable energy axis.",
+      "supporting_evidence": [
+        "US additional 10% tariff",
+        "Rare earth ban on Japan",
+        "Iran ally under attack"
+      ],
+      "counter_arguments": [
+        "China-Russia energy trade stable",
+        "Global South engagement expanding"
+      ],
+      "investor_implication": "Key relationships deteriorating. US and Japan fronts both worsening.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "FRA",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 0.8,
+      "trend": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Oil shock and defense spending burden. Energy costs rising. ECB on hold constrains monetary easing.",
+      "supporting_evidence": [
+        "Oil shock",
+        "Defense burden",
+        "ECB on hold"
+      ],
+      "counter_arguments": [
+        "Tourism resilient",
+        "Infrastructure investment"
+      ],
+      "investor_implication": "Growth slowing. Energy shock primary headwind.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "FRA",
+      "factor": "military_expenditure_trend",
+      "current_value": 2.0,
+      "trend": "growth",
+      "confidence": 0.8,
+      "reasoning": "NATO 2% met. France maintaining force projection. Ukraine burden increasing. Defense industry (Dassault, Thales) benefiting.",
+      "supporting_evidence": [
+        "NATO 2% target met",
+        "Force projection capability",
+        "Ukraine support"
+      ],
+      "counter_arguments": [
+        "Fiscal constraints from deficit"
+      ],
+      "investor_implication": "Defense spending sustained. French defense sector strong.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "FRA",
+      "factor": "overall_investment_risk",
+      "current_value": 30.0,
+      "trend": "stable",
+      "confidence": 0.72,
+      "reasoning": "Institutional strength and EU membership provide floor. Energy shock headwind. Political stability improving post-reform.",
+      "supporting_evidence": [
+        "Oil shock exposure",
+        "Defense burden"
+      ],
+      "counter_arguments": [
+        "Strong institutions",
+        "EU framework",
+        "Nuclear energy advantage"
+      ],
+      "investor_implication": "France remains core European allocation.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IND",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 6.5,
+      "trend": "decrease",
+      "confidence": 0.75,
+      "reasoning": "Oil shock significant for India \u2014 imports 85% of oil needs. Sensex -1.29%. But domestic demand resilient and not Hormuz-exclusive.",
+      "supporting_evidence": [
+        "85% oil import dependent",
+        "Sensex -1.29%",
+        "Global trade disruption"
+      ],
+      "counter_arguments": [
+        "Strong domestic demand",
+        "Multiple oil import routes",
+        "Services sector insulated"
+      ],
+      "investor_implication": "Growth moderately impacted. India more diversified in supply routes than Korea.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IND",
+      "factor": "inflation_cpi_pct",
+      "current_value": 5.0,
+      "trend": "growth",
+      "confidence": 0.78,
+      "reasoning": "Oil price surge feeds through to CPI directly. INR at 92/USD adding pressure. RBI faces growth-inflation tradeoff.",
+      "supporting_evidence": [
+        "Oil import costs surging",
+        "INR depreciation",
+        "Food inflation persistent"
+      ],
+      "counter_arguments": [
+        "Demand management by RBI",
+        "Fuel subsidies possible"
+      ],
+      "investor_implication": "Inflation pressure rising. RBI likely pauses easing cycle.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IND",
+      "factor": "current_account_pct_gdp",
+      "current_value": -1.5,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "Oil import bill surging. CAD widening. But IT/services exports and remittances provide buffer.",
+      "supporting_evidence": [
+        "Oil import costs rising sharply",
+        "INR under pressure"
+      ],
+      "counter_arguments": [
+        "IT services exports resilient",
+        "Remittances strong",
+        "Gold imports may drop on high prices"
+      ],
+      "investor_implication": "CAD widening on energy costs. Structural deficit to persist.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IND",
+      "factor": "overall_investment_risk",
+      "current_value": 35.0,
+      "trend": "stable",
+      "confidence": 0.72,
+      "reasoning": "Risk modestly elevated from oil shock but India's diversified economy and demographic advantage intact.",
+      "supporting_evidence": [
+        "Oil import dependency",
+        "Currency pressure"
+      ],
+      "counter_arguments": [
+        "Largest population",
+        "Strong growth trajectory",
+        "Domestic demand"
+      ],
+      "investor_implication": "India remains structural growth story. Oil shock manageable.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "BRA",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 2.5,
+      "trend": "growth",
+      "confidence": 0.72,
+      "reasoning": "Brazil benefits as net oil exporter. Bovespa -3.2% reflects global risk-off but fundamentals positive. Agri-export stable.",
+      "supporting_evidence": [
+        "Net oil exporter \u2014 price benefit",
+        "Agri-exports stable",
+        "Bovespa -3.2% global contagion"
+      ],
+      "counter_arguments": [
+        "Domestic fiscal concerns",
+        "High interest rates constraining"
+      ],
+      "investor_implication": "Brazil one of relative winners from oil price surge.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "BRA",
+      "factor": "current_account_pct_gdp",
+      "current_value": -2.0,
+      "trend": "growth",
+      "confidence": 0.7,
+      "reasoning": "Oil and commodity export revenue rising. Agricultural exports stable. Real depreciation improving competitiveness.",
+      "supporting_evidence": [
+        "Oil export revenue rising",
+        "Commodity prices elevated",
+        "Real depreciation"
+      ],
+      "counter_arguments": [
+        "Import costs also rising",
+        "Debt service costs"
+      ],
+      "investor_implication": "Current account improving on commodity windfall.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "BRA",
+      "factor": "overall_investment_risk",
+      "current_value": 42.0,
+      "trend": "stable",
+      "confidence": 0.7,
+      "reasoning": "Risk stable. Brazil geographically insulated from ME crisis. Net commodity exporter benefits. Fiscal concerns persistent.",
+      "supporting_evidence": [
+        "Geographic insulation",
+        "Net commodity exporter",
+        "Institutional framework improving"
+      ],
+      "counter_arguments": [
+        "Fiscal concerns",
+        "Political uncertainty",
+        "High rates"
+      ],
+      "investor_implication": "Brazil relatively well-positioned. Commodity tailwind.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "TUR",
+      "factor": "inflation_cpi_pct",
+      "current_value": 45.0,
+      "trend": "growth",
+      "confidence": 0.78,
+      "reasoning": "Lira at 43.96/USD. Oil shock adds to already severe inflation. CBRT maintaining tight policy but inflation entrenched.",
+      "supporting_evidence": [
+        "Lira depreciation persistent",
+        "Oil import costs surging",
+        "Structural inflation"
+      ],
+      "counter_arguments": [
+        "CBRT tight policy",
+        "Demand cooling from high rates"
+      ],
+      "investor_implication": "Inflation remains extreme. Oil shock compounds existing problem.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "TUR",
+      "factor": "overall_investment_risk",
+      "current_value": 58.0,
+      "trend": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Oil shock hits energy-importing Turkey hard. Lira weakness persistent. But geographic position near conflict could also provide transit/logistics opportunity.",
+      "supporting_evidence": [
+        "Oil shock",
+        "Lira weakness",
+        "Proximity to conflict"
+      ],
+      "counter_arguments": [
+        "Geographic transit opportunity",
+        "NATO membership",
+        "Manufacturing base"
+      ],
+      "investor_implication": "Risk elevated from energy costs and proximity to conflict.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "TUR",
+      "factor": "political_stability",
+      "current_value": 48.0,
+      "trend": "stable",
+      "confidence": 0.68,
+      "reasoning": "Erdogan navigating between NATO obligations and regional relationships. Iran conflict creates complex diplomatic position.",
+      "supporting_evidence": [
+        "NATO member but Iran neighbor",
+        "Complex diplomatic balancing"
+      ],
+      "counter_arguments": [
+        "Erdogan experienced crisis manager",
+        "Military strong"
+      ],
+      "investor_implication": "Stability maintained but regional crisis adds complexity.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "EGY",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 3.5,
+      "trend": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Suez Canal revenues already impacted by Houthi disruption. Oil import costs rising. Tourism at risk from regional instability. IMF program anchor.",
+      "supporting_evidence": [
+        "Suez revenues declining",
+        "Oil import costs rising",
+        "Regional instability deterring tourism"
+      ],
+      "counter_arguments": [
+        "IMF program providing anchor",
+        "Natural gas production helps",
+        "Remittances stable"
+      ],
+      "investor_implication": "Growth headwinds from dual chokepoint crisis and energy costs.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "EGY",
+      "factor": "overall_investment_risk",
+      "current_value": 60.0,
+      "trend": "decrease",
+      "confidence": 0.7,
+      "reasoning": "Risk elevated from regional war proximity, energy costs, and Suez revenue decline.",
+      "supporting_evidence": [
+        "Regional war proximity",
+        "Suez revenue decline",
+        "Energy import costs"
+      ],
+      "counter_arguments": [
+        "IMF program",
+        "Strategic location",
+        "Large domestic market"
+      ],
+      "investor_implication": "Risk elevated. IMF anchor provides some stability.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "NGA",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 3.0,
+      "trend": "growth",
+      "confidence": 0.7,
+      "reasoning": "Nigeria benefits from oil price surge as net exporter. Production capacity constraints limit upside but revenue windfall significant.",
+      "supporting_evidence": [
+        "Net oil exporter benefiting from price surge",
+        "Revenue windfall for government"
+      ],
+      "counter_arguments": [
+        "Production capacity constraints",
+        "Infrastructure limitations"
+      ],
+      "investor_implication": "Nigeria benefits from oil price surge. Execution on production growth key.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "NGA",
+      "factor": "overall_investment_risk",
+      "current_value": 62.0,
+      "trend": "stable",
+      "confidence": 0.65,
+      "reasoning": "Risk stable. Oil windfall positive but structural challenges persist.",
+      "supporting_evidence": [
+        "Oil windfall",
+        "Large market"
+      ],
+      "counter_arguments": [
+        "Security challenges",
+        "Infrastructure deficits",
+        "Currency management"
+      ],
+      "investor_implication": "Oil windfall provides fiscal relief but structural challenges remain.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IDN",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 5.0,
+      "trend": "stable",
+      "confidence": 0.7,
+      "reasoning": "Indonesia moderately exposed to oil price surge but domestic demand resilient. Palm oil exports benefit from commodity surge.",
+      "supporting_evidence": [
+        "Oil import exposure",
+        "Rupiah at 16907/USD"
+      ],
+      "counter_arguments": [
+        "Domestic demand resilient",
+        "Commodity exports benefit",
+        "Diversified economy"
+      ],
+      "investor_implication": "Growth outlook holding. Commodity mix partially hedges oil exposure.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "IDN",
+      "factor": "overall_investment_risk",
+      "current_value": 42.0,
+      "trend": "stable",
+      "confidence": 0.68,
+      "reasoning": "Risk stable. Indonesia geographically distant from conflict. Commodity exports benefit.",
+      "supporting_evidence": [
+        "Geographic insulation",
+        "Commodity exports"
+      ],
+      "counter_arguments": [
+        "Rupiah pressure",
+        "Oil import costs"
+      ],
+      "investor_implication": "Risk stable. Indonesia well-positioned regionally.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ZAF",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 1.5,
+      "trend": "growth",
+      "confidence": 0.68,
+      "reasoning": "R1 trillion infrastructure plan. Gold mining benefits from $5413/oz record. First debt stabilization in 17 years. Oil import exposure manageable.",
+      "supporting_evidence": [
+        "Infrastructure plan R1 trillion",
+        "Gold price record $5413",
+        "Debt stabilizing"
+      ],
+      "counter_arguments": [
+        "Load shedding continues",
+        "Oil import costs rising"
+      ],
+      "investor_implication": "Growth outlook improving. Gold windfall and infrastructure plan positive.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ZAF",
+      "factor": "overall_investment_risk",
+      "current_value": 52.0,
+      "trend": "growth",
+      "confidence": 0.65,
+      "reasoning": "Risk slightly improving on fiscal stabilization and gold windfall. Infrastructure plan shows policy commitment.",
+      "supporting_evidence": [
+        "Fiscal stabilization",
+        "Gold windfall",
+        "Infrastructure investment"
+      ],
+      "counter_arguments": [
+        "Structural challenges persist",
+        "Load shedding"
+      ],
+      "investor_implication": "Risk modestly improving. ZAR benefiting from gold/commodity prices.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "POL",
+      "factor": "military_expenditure_trend",
+      "current_value": 4.0,
+      "trend": "strong_growth",
+      "confidence": 0.85,
+      "reasoning": "Poland leading European defense spending at ~4% GDP. Proximity to Ukraine drives urgency. K2 tank and FA-50 procurement from Korea.",
+      "supporting_evidence": [
+        "~4% GDP defense spending",
+        "Ukraine proximity",
+        "Major procurement programs"
+      ],
+      "counter_arguments": [
+        "Fiscal sustainability long-term"
+      ],
+      "investor_implication": "Polish defense spending highest in NATO Europe. Defense sector boom.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "POL",
+      "factor": "overall_investment_risk",
+      "current_value": 32.0,
+      "trend": "stable",
+      "confidence": 0.72,
+      "reasoning": "Risk stable. Strong growth, EU membership, defense spending creates economic activity.",
+      "supporting_evidence": [
+        "EU membership",
+        "Strong growth",
+        "Defense investment"
+      ],
+      "counter_arguments": [
+        "Ukraine proximity risk",
+        "Energy transition costs"
+      ],
+      "investor_implication": "Poland attractive in European context. Defense anchor for growth.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "AUS",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 2.0,
+      "trend": "stable",
+      "confidence": 0.7,
+      "reasoning": "LNG exports at premium as Qatari supply disrupted. Gold mining benefiting from $5413. ASX -1.94% is modest. Coal exports stable.",
+      "supporting_evidence": [
+        "LNG export premium",
+        "Gold price windfall",
+        "ASX -1.94% modest"
+      ],
+      "counter_arguments": [
+        "China slowdown risk",
+        "Housing market concerns"
+      ],
+      "investor_implication": "Australia relative beneficiary of energy/commodity disruption.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "AUS",
+      "factor": "overall_investment_risk",
+      "current_value": 25.0,
+      "trend": "stable",
+      "confidence": 0.75,
+      "reasoning": "Risk low. Australia benefits from commodity disruption. Geographic insulation. Strong institutions.",
+      "supporting_evidence": [
+        "Commodity windfall",
+        "Geographic insulation",
+        "Strong institutions"
+      ],
+      "counter_arguments": [
+        "China trade dependency",
+        "Housing concerns"
+      ],
+      "investor_implication": "Australia core allocation. Commodity upside from Hormuz crisis.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CAN",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 1.5,
+      "trend": "growth",
+      "confidence": 0.7,
+      "reasoning": "Net oil exporter benefiting from price surge. US trade relationship primary \u2014 15% tariff adds friction but Canada partially exempt.",
+      "supporting_evidence": [
+        "Net oil exporter",
+        "US primary trade partner"
+      ],
+      "counter_arguments": [
+        "15% US tariff friction",
+        "Housing market concerns"
+      ],
+      "investor_implication": "Canada benefits from oil price surge. US trade relationship key.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CAN",
+      "factor": "overall_investment_risk",
+      "current_value": 25.0,
+      "trend": "stable",
+      "confidence": 0.75,
+      "reasoning": "Risk stable. Net energy exporter. Strong institutions. Geographic insulation.",
+      "supporting_evidence": [
+        "Net energy exporter",
+        "Strong institutions",
+        "Geographic safety"
+      ],
+      "counter_arguments": [
+        "US trade tensions",
+        "Housing concerns"
+      ],
+      "investor_implication": "Canada low-risk allocation benefiting from energy windfall.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "MEX",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 1.5,
+      "trend": "stable",
+      "confidence": 0.68,
+      "reasoning": "Peso at 17.67/USD stable. US tariff situation (15% Section 122) creates uncertainty but USMCA provides some protection.",
+      "supporting_evidence": [
+        "USMCA framework",
+        "Nearshoring trend"
+      ],
+      "counter_arguments": [
+        "US tariff uncertainty",
+        "Security concerns",
+        "Energy sector challenges"
+      ],
+      "investor_implication": "Growth outlook stable. Nearshoring trend continues as China+1 strategy.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "MEX",
+      "factor": "overall_investment_risk",
+      "current_value": 45.0,
+      "trend": "stable",
+      "confidence": 0.68,
+      "reasoning": "Risk stable. USMCA provides framework. Nearshoring investment flowing.",
+      "supporting_evidence": [
+        "USMCA protection",
+        "Nearshoring trend",
+        "Demographic dividend"
+      ],
+      "counter_arguments": [
+        "Security concerns",
+        "Energy policy uncertainty",
+        "Judicial reform concerns"
+      ],
+      "investor_implication": "Risk stable. Manufacturing investment from nearshoring trend positive.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "UKR",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 2.0,
+      "trend": "stable",
+      "confidence": 0.6,
+      "reasoning": "War continues day 1467. Growth surprisingly resilient on defense spending and reconstruction. Europe now sole funder \u2014 $60B requested for 2026.",
+      "supporting_evidence": [
+        "War economy sustained",
+        "European funding continuing"
+      ],
+      "counter_arguments": [
+        "Territorial losses",
+        "Infrastructure destruction",
+        "US aid suspended"
+      ],
+      "investor_implication": "Ukrainian economy resilient but dependent on European funding.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "UKR",
+      "factor": "overall_investment_risk",
+      "current_value": 88.0,
+      "trend": "stable",
+      "confidence": 0.75,
+      "reasoning": "Risk extreme from ongoing war. But reconstruction investment pipeline growing for post-war period.",
+      "supporting_evidence": [
+        "Active war",
+        "Infrastructure destruction"
+      ],
+      "counter_arguments": [
+        "European reconstruction commitment",
+        "Resilient economy"
+      ],
+      "investor_implication": "Uninvestable during active conflict. Post-war reconstruction opportunity long-term.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "LBN",
+      "factor": "gdp_real_growth_pct",
+      "current_value": -2.0,
+      "trend": "strong_decrease",
+      "confidence": 0.85,
+      "reasoning": "Hezbollah front reopened on existing economic collapse. Multi-year crisis compounded. GDP contracting further.",
+      "supporting_evidence": [
+        "Hezbollah missiles/drones into Israel reopens war front",
+        "Existing economic collapse",
+        "Banking crisis unresolved"
+      ],
+      "counter_arguments": [
+        "Diaspora remittances continue"
+      ],
+      "investor_implication": "Lebanon in compounded crisis. Economy in freefall.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "LBN",
+      "factor": "overall_investment_risk",
+      "current_value": 92.0,
+      "trend": "strong_decrease",
+      "confidence": 0.9,
+      "reasoning": "Maximum risk: active Hezbollah war front, economic collapse, banking crisis, governance failure.",
+      "supporting_evidence": [
+        "Active war",
+        "Economic collapse",
+        "Banking crisis"
+      ],
+      "counter_arguments": [],
+      "investor_implication": "Uninvestable. Write down all exposure.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KWT",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 2.0,
+      "trend": "strong_decrease",
+      "confidence": 0.85,
+      "reasoning": "No pipeline alternative to Hormuz. Near-total oil export dependency through Hormuz. Economy facing acute revenue crisis.",
+      "supporting_evidence": [
+        "No pipeline alternative",
+        "Near-total Hormuz dependency"
+      ],
+      "counter_arguments": [
+        "Substantial sovereign wealth reserves (KIA)"
+      ],
+      "investor_implication": "Kuwait facing acute economic crisis from Hormuz closure.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KWT",
+      "factor": "overall_investment_risk",
+      "current_value": 62.0,
+      "trend": "strong_decrease",
+      "confidence": 0.82,
+      "reasoning": "Risk sharply elevated. Most Hormuz-dependent Gulf state with no pipeline alternative.",
+      "supporting_evidence": [
+        "No Hormuz alternative",
+        "100% oil dependent economy"
+      ],
+      "counter_arguments": [
+        "Sovereign wealth reserves substantial",
+        "Small population"
+      ],
+      "investor_implication": "Kuwait most vulnerable Gulf state to Hormuz closure.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "QAT",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 3.0,
+      "trend": "strong_decrease",
+      "confidence": 0.85,
+      "reasoning": "World's largest LNG exporter effectively offline. Hormuz closure blocks virtually all LNG exports. Revenue collapse imminent.",
+      "supporting_evidence": [
+        "LNG exports blocked by Hormuz",
+        "Primary revenue source offline"
+      ],
+      "counter_arguments": [
+        "Sovereign wealth reserves",
+        "Small population"
+      ],
+      "investor_implication": "Qatar facing acute revenue crisis. LNG customers (Japan, Korea, Europe) scrambling.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "QAT",
+      "factor": "overall_investment_risk",
+      "current_value": 58.0,
+      "trend": "strong_decrease",
+      "confidence": 0.82,
+      "reasoning": "Risk sharply elevated. LNG export model disrupted. But sovereign wealth and small population provide buffer.",
+      "supporting_evidence": [
+        "LNG exports blocked",
+        "Revenue collapse"
+      ],
+      "counter_arguments": [
+        "Massive sovereign wealth",
+        "US military base provides security"
+      ],
+      "investor_implication": "Risk elevated but reserves provide multi-year buffer.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "PAK",
+      "factor": "political_stability",
+      "current_value": 25.0,
+      "trend": "strong_decrease",
+      "confidence": 0.8,
+      "reasoning": "Open conflict with Afghanistan. Domestic instability. PTI-military tensions. Economy fragile. IMF program anchor only lifeline.",
+      "supporting_evidence": [
+        "Afghanistan border war",
+        "Domestic political crisis",
+        "Economic fragility"
+      ],
+      "counter_arguments": [
+        "IMF program",
+        "Military institutional strength"
+      ],
+      "investor_implication": "Pakistan in multi-dimensional crisis. IMF anchor preventing fiscal collapse.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "PAK",
+      "factor": "overall_investment_risk",
+      "current_value": 78.0,
+      "trend": "decrease",
+      "confidence": 0.78,
+      "reasoning": "Risk extreme from Afghanistan conflict, political instability, and economic fragility.",
+      "supporting_evidence": [
+        "Afghanistan conflict",
+        "Political crisis",
+        "Economic fragility"
+      ],
+      "counter_arguments": [
+        "IMF program",
+        "Strategic location",
+        "Large population"
+      ],
+      "investor_implication": "High risk. IMF program provides floor but multiple crisis vectors.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "NOR",
+      "factor": "gdp_real_growth_pct",
+      "current_value": 2.5,
+      "trend": "growth",
+      "confidence": 0.75,
+      "reasoning": "North Sea oil/gas producer benefiting from price spike. Non-Hormuz routes secure. Energy revenue windfall.",
+      "supporting_evidence": [
+        "Net energy exporter",
+        "Non-Hormuz routes",
+        "Price surge benefit"
+      ],
+      "counter_arguments": [
+        "High cost base",
+        "Small domestic market"
+      ],
+      "investor_implication": "Norway primary beneficiary of Hormuz closure. Energy windfall significant.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "NOR",
+      "factor": "overall_investment_risk",
+      "current_value": 15.0,
+      "trend": "stable",
+      "confidence": 0.8,
+      "reasoning": "Lowest risk category. Energy windfall, strong institutions, geographic insulation.",
+      "supporting_evidence": [
+        "Energy windfall",
+        "Strong institutions",
+        "Sovereign wealth"
+      ],
+      "counter_arguments": [],
+      "investor_implication": "Norway safest energy-exposed investment. Outperforming peers.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CHE",
+      "factor": "exchange_rate_vs_usd",
+      "current_value": 0.7819,
+      "trend": "growth",
+      "confidence": 0.78,
+      "reasoning": "Swiss franc safe-haven demand surging on Iran crisis. CHF strengthening against most currencies.",
+      "supporting_evidence": [
+        "Safe-haven demand",
+        "SNB credibility",
+        "Low inflation"
+      ],
+      "counter_arguments": [
+        "SNB may intervene to prevent excessive appreciation"
+      ],
+      "investor_implication": "CHF strengthening. Safe-haven premium elevated.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CHE",
+      "factor": "overall_investment_risk",
+      "current_value": 12.0,
+      "trend": "stable",
+      "confidence": 0.85,
+      "reasoning": "Switzerland safest-haven status reinforced by crisis.",
+      "supporting_evidence": [
+        "Safe-haven status",
+        "Neutrality",
+        "Strong institutions"
+      ],
+      "counter_arguments": [],
+      "investor_implication": "Switzerland minimum risk allocation.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "SGP",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "stable",
+      "confidence": 0.6,
+      "reasoning": "Singapore financial hub insulated. MAS managing well.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "Singapore financial hub insulated. MAS managing well.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "TWN",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "decrease",
+      "confidence": 0.68,
+      "reasoning": "Cross-strait risk elevated. Semiconductor sector under geopolitical pressure.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "Cross-strait risk elevated. Semiconductor sector under geopolitical pressure.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "THA",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "stable",
+      "confidence": 0.6,
+      "reasoning": "Tourism resilient. Oil import exposure manageable.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "Tourism resilient. Oil import exposure manageable.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ITA",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "stable",
+      "confidence": 0.6,
+      "reasoning": "BTP yields 3.51% contained. ECB backstop. Defense spending rising.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "BTP yields 3.51% contained. ECB backstop. Defense spending rising.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ESP",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "stable",
+      "confidence": 0.6,
+      "reasoning": "Tourism resilient. Renewable energy advantage reduces oil exposure.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "Tourism resilient. Renewable energy advantage reduces oil exposure.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "SWE",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "stable",
+      "confidence": 0.6,
+      "reasoning": "NATO member. Defense spending rising. Krona stable.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "NATO member. Defense spending rising. Krona stable.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "GRC",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "growth",
+      "confidence": 0.68,
+      "reasoning": "Shipping fleet profits surge from longer rerouted voyages. GDP benefit.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "Shipping fleet profits surge from longer rerouted voyages. GDP benefit.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "KAZ",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "growth",
+      "confidence": 0.68,
+      "reasoning": "CPC pipeline not Hormuz-dependent. Oil price windfall significant.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "CPC pipeline not Hormuz-dependent. Oil price windfall significant.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "AZE",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "growth",
+      "confidence": 0.68,
+      "reasoning": "BTC pipeline to Mediterranean secure. Oil/gas windfall.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "BTC pipeline to Mediterranean secure. Oil/gas windfall.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "ARG",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "stable",
+      "confidence": 0.6,
+      "reasoning": "Vaca Muerta oil production insulated. Milei reforms continuing.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "Vaca Muerta oil production insulated. Milei reforms continuing.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "CHL",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "stable",
+      "confidence": 0.6,
+      "reasoning": "Copper prices elevated. Lithium exports stable. Geographic insulation.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "Copper prices elevated. Lithium exports stable. Geographic insulation.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "COL",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "stable",
+      "confidence": 0.6,
+      "reasoning": "Oil exports benefit from price surge. Security concerns persistent.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "Oil exports benefit from price surge. Security concerns persistent.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "PER",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "stable",
+      "confidence": 0.6,
+      "reasoning": "Mining (gold, copper) benefiting from price surge.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "Mining (gold, copper) benefiting from price surge.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "PHL",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "stable",
+      "confidence": 0.6,
+      "reasoning": "Remittances stable. Domestic consumption resilient.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "Remittances stable. Domestic consumption resilient.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    },
+    {
+      "country_code": "VNM",
+      "factor": "overall_investment_risk",
+      "current_value": null,
+      "trend": "stable",
+      "confidence": 0.6,
+      "reasoning": "Manufacturing exports continuing. Trade diversification beneficiary.",
+      "supporting_evidence": [],
+      "counter_arguments": [],
+      "investor_implication": "Manufacturing exports continuing. Trade diversification beneficiary.",
+      "ai_generated": true,
+      "generated_at": "2026-03-04T14:00:00Z"
+    }
+  ]
+}

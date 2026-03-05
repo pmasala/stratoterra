@@ -226,14 +226,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 385,
-      "confidence": 0.75,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "value": 500,
+      "confidence": 0.72,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
-      "change_note": "Al Udeid Air Base struck by IRGC; LNG exports blocked by Hormuz closure. +100bps from 285.",
-      "previous_value": 285
+      "change_note": "Qatar LNG exports transit Hormuz; active closure blocks majority of export revenue. IRGC strikes on Gulf states. +115bps from 385.",
+      "previous_value": 385
     },
     "market_accessibility_score": {
       "value": 0.47,
@@ -252,20 +252,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "Qatar faces a uniquely severe export crisis: its LNG terminal infrastructure at Ras Laffan is rendered economically inaccessible by the Hormuz closure, blocking approximately 20% of global LNG supply originating from Qatar. Al Udeid Air Base — the largest US military base in the Middle East — is directly threatened by IRGC retaliatory strike planning. Unlike crude oil producers with some pipeline alternatives, Qatar has no overland LNG export pathway, making the revenue loss immediate and complete while Hormuz remains closed.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Qatar faces direct military attack (IRGC struck Al Udeid Air Base) and Hormuz closure blocking LNG exports (66% chokepoint exposure). As the world's largest LNG exporter, Qatar's inability to ship gas has global implications for energy markets. The North Field LNG expansion timeline is at risk. Current account trend has shifted to strong_decrease from a pre-crisis 17.29% surplus. GDP growth outlook severely downgraded from 6.1%.",
     "key_changes_this_week": [
-      "Hormuz closure blocked Qatar LNG exports (~20% of global LNG supply); no pipeline alternative exists",
-      "Al Udeid Air Base (largest US base in Middle East) under direct threat from IRGC strike planning",
-      "QatarEnergy LNG contracts face potential force majeure claims from buyers",
-      "LNG spot prices surging globally as Qatari supply disrupted",
-      "QAR peg to USD maintained; sovereign fiscal buffer substantial but revenues in freefall",
-      "Diplomatic role as mediator (Hamas talks) potentially compromised by active conflict positioning"
+      "IRGC struck Al Udeid Air Base -- direct military attack on Qatari territory",
+      "Hormuz closure blocks LNG exports -- world's largest LNG exporter offline",
+      "Current account trending strong_decrease from 17.29% surplus",
+      "North Field LNG expansion timeline at risk from conflict"
     ],
-    "outlook": "Qatar's revenue collapse is immediate and total while Hormuz remains closed — a fundamentally different vulnerability profile from diversified economies. The force majeure legal exposure on long-term LNG contracts could result in contractual disputes with European and Asian buyers worth billions. Qatar's diplomatic positioning as a regional mediator may be strained by its hosting of Al Udeid, which is an active target in the current conflict.",
-    "investor_implications": "QatarEnergy bonds and equity (including listed affiliates) carry acute near-term risk from revenue disruption and force majeure litigation exposure. Qatar sovereign bonds are investment-grade and well-buffered by QIA's $475B+ in assets, but spreads will widen materially if closure extends. LNG spot price surge benefits Qatar structurally once Hormuz reopens, creating a potential strong recovery trade on any de-escalation signal.",
-    "data_quality_note": "LNG export volume data from Kpler shipping analytics. Al Udeid threat assessment from OSINT. Force majeure exposure is estimated; contract terms are confidential. CRITICAL: Multiple active alerts."
+    "outlook": "Qatar is caught between hosting a major US military base (Al Udeid) and geographic proximity to Iran. LNG export disruption has global energy implications. Fiscal reserves provide buffer but revenue collapse is severe. Resolution of Hormuz crisis critical.",
+    "investor_implications": "Qatari LNG assets face near-term disruption. Sovereign credit resilient given reserves but revenue pressure acute. European gas buyers seeking alternative supply sources. Post-crisis, Qatar's LNG position strengthens as supply security becomes premium.",
+    "data_quality_note": "LNG shipping data disrupted. Export volume estimates uncertain."
   },
   "code": "QAT",
   "name": "Qatar",

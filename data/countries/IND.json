@@ -3,8 +3,8 @@
   "country_name": "India",
   "tier": 1,
   "region": "south_asia",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-04T17:00:12Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 3909891533858.08,
@@ -84,25 +84,25 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 91.03,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 92.01,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 6.7,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "confidence": 0.9,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "equity_index_level": {
-      "value": 85063,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 80238.85,
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "total_exports_usd": {
       "value": 822010899401.314,
@@ -287,12 +287,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.36,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 0.5,
+      "confidence": 0.78,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
       "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz closure",
+      "change_note": "India ~60% crude via Hormuz. Active closure significantly elevates energy supply risk.",
+      "previous_value": 0.36
     },
     "composite_national_power_index": {
       "value": 61.2,
@@ -303,12 +305,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 200,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 250,
+      "confidence": 0.75,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
       "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "India imports ~60% of crude via Hormuz. Active closure raises energy costs and inflation pressure. +50bps from 200.",
+      "previous_value": 200
     },
     "market_accessibility_score": {
       "value": 0.564,
@@ -327,19 +331,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "India's Sensex fell a modest 0.44%, outperforming most Asian peers, reflecting India's growing economic diversification and the positive near-term signal from a US-India trade deal implementation at an 18% tariff rate — significantly below the Section 122 global 15% floor after bilateral negotiations. The Pakistan-Afghanistan open war on India's western border creates security externalities that will require monitoring, particularly regarding CPEC disruption and border stability. India has committed to stop purchasing Russian oil as part of its US alignment, raising near-term import cost concerns.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "India faces significant headwinds from the oil shock as a major energy importer dependent on Middle East supplies. The Hormuz closure directly impacts India's oil and LNG import routes. However, India's diversified economy, strong domestic demand, and willingness to purchase discounted Russian oil provide partial buffers. The rupee is under pressure from energy import costs and safe-haven dollar demand.",
     "key_changes_this_week": [
-      "Sensex fell only 0.44% — outperforming Asian peers; relative resilience",
-      "US-India trade deal implementation at 18% preferential tariff rate",
-      "Agreement to stop buying Russian oil; near-term import cost headwind",
-      "Pakistan-Afghanistan war on western border creates regional security externalities",
-      "Oil import costs surging from Hormuz closure; India heavily import-dependent",
-      "Rupee under modest pressure; RBI monitoring capital flows"
+      "Oil shock raising energy import costs significantly -- Hormuz dependency elevated",
+      "Rupee under pressure from energy costs and dollar strength",
+      "RBI faces inflation-growth tradeoff from oil price surge",
+      "Diversified supply sources (Russian oil discounts) provide partial buffer"
     ],
-    "outlook": "India's structural growth story remains intact but near-term headwinds from oil import costs and regional conflict proximity are real. The US trade deal is a significant long-term positive for export-oriented sectors. RBI will need to balance inflation (energy) against growth support.",
-    "investor_implications": "India remains one of the more attractive EM investment destinations despite near-term noise. IT services, pharmaceuticals, and domestic consumption names are preferred. Energy-importing sectors face margin pressure. INR moderate depreciation risk from oil import surge."
+    "outlook": "GDP growth trajectory moderating from energy cost headwinds but India remains among the fastest-growing large economies. Current account deficit will widen. RBI likely on hold. Domestic consumption story intact.",
+    "investor_implications": "India growth premium narrows on energy shock but structural story intact. IT services sector insulated from oil shock. Current account deficit widening warrants rupee hedging. Domestic consumption plays preferred over energy-intensive industry.",
+    "data_quality_note": "Data reliable. Oil import costs evolving rapidly."
   },
   "code": "IND",
   "name": "India",
@@ -405,9 +408,9 @@
       "total_imports_usd": 923567747218.907,
       "gdp_growth_forecast_2026_pct": 6.2,
       "inflation_forecast_2026_pct": 4,
-      "exchange_rate_vs_usd": 91.03,
+      "exchange_rate_vs_usd": 92.01,
       "sovereign_bond_yield_10yr_pct": 6.7,
-      "equity_index_level": 85063,
+      "equity_index_level": 80238.85,
       "top_export_partners": [
         {
           "country": "USA",

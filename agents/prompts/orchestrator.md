@@ -55,6 +55,7 @@ For each agent:
 | 1 | 06 | Political & Regulatory Gatherer | ~12 min (Part B only) | ~25 min |
 | 2 | 07 | Fact Extractor & Structurer | 20-30 min |
 | 3 | 08 | Cross-Validator & Anomaly Detector | 15-20 min |
+| 3b | 17a | Autonomous Auditor (Escalation Audit) | 2-5 min |
 | 4 | 09 | Data Integrator | 5-10 min |
 | 5 | 10 | Trend Estimator | 30-45 min |
 | 5 | 11 | Derived Metrics Calculator | 10-15 min |
@@ -62,7 +63,8 @@ For each agent:
 | 6 | 13 | Country Profile Synthesizer | 20-30 min |
 | 6 | 14 | Weekly Briefing Generator | 10-15 min |
 | 7 | 15 | Data Quality Reporter | 5 min |
-| 7 | 16 | Archive & Commit Preparer | 5 min |
+| 7b | 17b | Autonomous Auditor (Quality Audit) | 1-2 min |
+| 7c | 16 | Archive & Commit Preparer | 5 min |
 
 ## Run Log Format
 
@@ -91,13 +93,18 @@ After each agent, append to the `agents` array:
 }
 ```
 
-## Human Review Points
+## Automated Audit Points
 
-**After Agent 8 (Validator):** If `escalated_items > 0`, PAUSE. Present the
-escalation report clearly. Wait for operator decisions before proceeding to Agent 9.
+**After Agent 8 (Validator):** Run Agent 17 in **Escalation Audit** mode. Agent 17
+reads the escalation report, resolves each ESCALATE verdict to ACCEPT, ACCEPT_WITH_DOWNGRADE,
+or REJECT using its decision framework, and updates `validated_updates_{DATE}.json` so
+Agent 09 can process all resolved items. Verify `auditor_escalation_decisions_{DATE}.json`
+was written before proceeding to Agent 09.
 
-**After Agent 15 (Quality Reporter):** Always PAUSE. Present the quality summary
-and any critical issues. Wait for operator acknowledgment before Agent 16.
+**After Agent 15 (Quality Reporter):** Run Agent 17 in **Quality Audit** mode. Agent 17
+reads the quality report and run log, then decides GO, CONDITIONAL_GO, or NO_GO.
+Verify `auditor_quality_decision_{DATE}.json` was written before proceeding to Agent 16.
+If NO_GO, Agent 16 will skip the git commit.
 
 ## Error Handling
 
@@ -127,7 +134,7 @@ No `.env` file or API keys are required. All data sources used by the pipeline a
 - Write all intermediate outputs to `/staging/` only
 - Do not modify `/data/` until Agent 9 runs (after validation)
 - Keep all decisions traceable in the run log
-- Never skip the human review points
+- Never skip the Agent 17 audit steps
 - **Cache-aware:** Gathering agents (01-06) follow `/agents/skills/cache_check.md` to skip data that isn't due for refresh. Verify each agent's `cache_decisions` array in its output.
 - **Agent 9 updates cache:** After integration, Agent 9 must update `/agents/config/cache_registry.json`. Verify this was done.
 - **Agent 16 commits cache:** Ensure `cache_registry.json` is included in the final commit alongside `/data/` changes.

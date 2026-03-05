@@ -94,10 +94,17 @@ class TestAgent01OfficialStats(unittest.TestCase):
         )
 
     def test_records_is_list(self):
-        """UT-AGT-001c: records field is a non-empty list."""
+        """UT-AGT-001c: records field is a list (may be empty on cache-skip runs)."""
         records = self.actual.get("records", [])
         self.assertIsInstance(records, list, "records must be a list")
-        self.assertGreater(len(records), 0, "records must not be empty")
+        # On weekly-only runs, Agent 01 legitimately produces 0 records
+        # when all monthly/quarterly/annual sources are cached.
+        if len(records) == 0:
+            cache_decisions = self.actual.get("cache_decisions", [])
+            self.assertGreater(
+                len(cache_decisions), 0,
+                "records is empty but no cache_decisions found — unexpected"
+            )
 
     def test_record_required_fields(self):
         """UT-AGT-001d: Each record has required fields."""

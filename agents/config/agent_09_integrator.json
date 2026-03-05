@@ -23,7 +23,7 @@
   "flag_handling": "add_to_metadata.active_flags_array",
   "timeseries_policy": "append_previous_value_before_overwrite",
   "prerequisite_agent": "agent_08",
-  "prerequisite_condition": "human_review_of_escalations_complete",
+  "prerequisite_condition": "auditor_escalation_review_complete",
   "retry_on_failure": false,
   "idempotent": true,
   "prompt_file": "agents/prompts/agent_09_integrator.md"

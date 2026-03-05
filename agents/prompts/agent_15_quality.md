@@ -5,7 +5,7 @@ Agent ID: `agent_15` | Phase: 7 (FINALIZE) | Run ID: {RUN_ID}
 
 ## Purpose
 Generate a comprehensive data quality report for this pipeline run.
-Present the report to the human operator before archiving proceeds.
+The report is reviewed by Agent 17 (Autonomous Auditor) before archiving proceeds.
 
 ## Inputs
 - `/data/countries/*.json`
@@ -91,10 +91,9 @@ Based on the above, generate a list of actionable recommendations for next week:
 }
 ```
 
-## Human Review Required
-**PAUSE HERE.** Present the quality summary to the human operator.
-Highlight: any Tier 1 coverage below 80%, any critical validation failures,
-pipeline duration vs. budget. Wait for acknowledgment before proceeding to Agent 16.
+## Automated Quality Review
+Agent 17 (Autonomous Auditor) will review this quality report and decide GO/CONDITIONAL_GO/NO_GO
+before Agent 16 runs. Do not pause — proceed to output the report and complete.
 
 ## Time Budget
 Target: 5 minutes to generate the report.

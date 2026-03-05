@@ -1,0 +1,64 @@
+{
+  "id": "agent_17",
+  "name": "Autonomous Auditor",
+  "phase": "AUDIT",
+  "phase_name": "AUDIT",
+  "description": "Replaces human review checkpoints with autonomous rule-based auditing. Invoked twice: once after Agent 08 to resolve escalations, once after Agent 15 to approve or block the commit.",
+  "invocations": {
+    "escalation_audit": {
+      "trigger": "after_agent_08",
+      "inputs": [
+        "staging/validated/escalation_report_{DATE}.json",
+        "staging/validated/validated_updates_{DATE}.json",
+        "data/countries/*.json"
+      ],
+      "outputs": [
+        "staging/validated/auditor_escalation_decisions_{DATE}.json",
+        "staging/validated/validated_updates_{DATE}.json"
+      ],
+      "timeout_minutes": 5
+    },
+    "quality_audit": {
+      "trigger": "after_agent_15",
+      "inputs": [
+        "data/metadata/quality_report_{DATE}.json",
+        "staging/run_log.json"
+      ],
+      "outputs": [
+        "data/metadata/auditor_quality_decision_{DATE}.json"
+      ],
+      "timeout_minutes": 3
+    }
+  },
+  "escalation_decision_rules": {
+    "accept": "sources >= 3 AND confidence >= 0.6",
+    "accept_also": "sources >= 2 AND confidence >= 0.5 AND validator_recommends_accept",
+    "accept_with_downgrade_moderate": "sources >= 2 AND confidence >= 0.4 (confidence -= 0.15)",
+    "accept_with_downgrade_single": "sources == 1 AND confidence >= 0.7 AND trend_aligned (confidence -= 0.2)",
+    "reject_low_source": "sources == 1 AND confidence < 0.4",
+    "reject_low_confidence": "confidence < 0.3",
+    "default": "accept_with_downgrade (confidence -= 0.2)"
+  },
+  "quality_thresholds": {
+    "go": {
+      "tier_1_avg_coverage_pct": 80,
+      "tier_2_avg_coverage_pct": 60,
+      "overall_avg_confidence": 0.5,
+      "max_agent_failures": 0,
+      "max_reject_rate_pct": 10,
+      "max_tier_1_below_80_count": 2
+    },
+    "conditional_go": {
+      "tier_1_avg_coverage_pct": 65,
+      "tier_2_avg_coverage_pct": 45,
+      "overall_avg_confidence": 0.35,
+      "max_agent_failures": 2,
+      "max_reject_rate_pct": 20,
+      "max_tier_1_below_80_count": 5
+    },
+    "critical_agents": ["agent_07", "agent_08", "agent_09", "agent_11"]
+  },
+  "retry_on_failure": false,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_17_auditor.md"
+}

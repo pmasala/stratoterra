@@ -8,7 +8,7 @@ Merge all validated updates (ACCEPT, ACCEPT_WITH_NOTE, FLAG) into the main
 `/data/` store. Skip REJECT and unresolved ESCALATE items.
 
 ## Prerequisite
-Human review of any escalations from Agent 8 must be complete before this agent runs.
+Agent 17 (Autonomous Auditor) must have resolved all escalations from Agent 8 before this agent runs.
 
 ## Inputs
 - `/staging/validated/validated_updates_{DATE}.json`

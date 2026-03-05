@@ -3,13 +3,14 @@
   "name": "Archive & Commit Preparer",
   "phase": 7,
   "phase_name": "FINALIZE",
-  "description": "Creates an archive snapshot, cleans staging directories, generates UI-optimized chunk files, and prepares the git commit message for human review and execution.",
+  "description": "Creates an archive snapshot, cleans staging directories, generates UI-optimized chunk files, and executes the git commit autonomously after auditor approval.",
   "inputs": [
     "data/countries/*.json",
     "data/relations/*.json",
     "data/indices/*.json",
     "data/global/*.json",
     "data/metadata/quality_report_{DATE}.json",
+    "data/metadata/auditor_quality_decision_{DATE}.json",
     "staging/run_log.json"
   ],
   "outputs": [
@@ -47,12 +48,12 @@
     "relations": "bilateral pair summaries in data/chunks/relations/"
   },
   "git_commit": {
-    "action": "prepare_message_for_human_review",
-    "human_executes": true,
+    "action": "execute_autonomously",
+    "human_executes": false,
     "message_template": "Weekly update {RUN_ID}\n\nCountries updated: {N}\nRelations updated: {N}\nNew alerts: {N_critical} critical, {N_warning} warning, {N_watch} watch\nCoverage: {pct}% avg across Tier 1\nQuality: {confidence_avg} avg confidence\n\nTop changes:\n- {change_1}\n- {change_2}\n- {change_3}"
   },
-  "prerequisite_agent": "agent_15",
-  "prerequisite_condition": "human_acknowledged_quality_report",
+  "prerequisite_agent": "agent_17_quality",
+  "prerequisite_condition": "auditor_quality_decision_GO_or_CONDITIONAL_GO",
   "retry_on_failure": false,
   "idempotent": true,
   "prompt_file": "agents/prompts/agent_16_archive_commit.md"

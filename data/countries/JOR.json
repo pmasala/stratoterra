@@ -158,12 +158,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 500,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 600,
+      "confidence": 0.72,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
       "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "Iran war spillover; adjacent to Israel multi-front conflict; energy price shock; refugee flow risk. +100bps from 500.",
+      "previous_value": 500
     },
     "market_accessibility_score": {
       "value": 0.318,
@@ -226,14 +228,17 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-02T18:00:00Z",
+    "generated_at": "2026-03-04T18:30:00Z",
     "run_id": "2026-W10",
-    "executive_summary": "Jordan: GDP growth at 2.7%, inflation at 2.2%, credit rating S&P: BB-, Moody's: Ba3, Fitch: BB-.",
+    "executive_summary": "Jordan is caught in the crossfire of the Iran-Israel conflict with IRGC strikes hitting targets in the region. As a net energy importer, Jordan faces higher oil costs without the resource wealth of Gulf neighbors. US aid and IMF support provide fiscal anchors. Refugee burden from Syria continues. Political stability is strained by regional tensions and domestic sentiment over the conflict.",
     "key_changes_this_week": [
-      "No significant changes this week"
+      "Regional conflict proximity elevating risk premium",
+      "Oil shock raising energy import costs for resource-poor economy",
+      "IRGC strikes in region affecting security environment",
+      "US aid and IMF support provide fiscal stability anchors"
     ],
-    "outlook": "Jordan outlook requires monitoring. Oil price surge affects all energy importers.",
-    "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
-    "data_quality_note": "Tier 3 country with basic coverage only."
+    "outlook": "Jordan navigates a difficult position as a US ally in a region at war. Energy costs and refugee burden strain the budget. US aid dependency deepens. Stability depends on conflict not spilling over into Jordanian territory.",
+    "investor_implications": "Jordanian sovereign risk modestly elevated by proximity to conflict. US aid dependency is a credit positive given alliance strength. Eurobonds may face spread widening. Tourism revenue at risk from regional instability.",
+    "data_quality_note": "Data reliable. Security situation evolving."
   }
 }

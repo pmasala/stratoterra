@@ -8,7 +8,7 @@ Stratoterra is an AI-powered geopolitical intelligence platform for investors. I
 
 ```
 Weekly Pipeline (Claude Code MAX, 3-5 hours)
-  → 16 agents run sequentially
+  → 17 agents run sequentially (Agent 17 invoked twice)
   → Output: JSON data files in /data
   → git commit + push
 
@@ -106,24 +106,25 @@ claude --dangerously-skip-permissions agents/prompts/orchestrator.md
 ### Pipeline Phases
 
 ```
-Phase 1: GATHER      (Agents 1-6)   60-120 min   WebSearch/WebFetch + public APIs
-Phase 2: PROCESS     (Agent 7)      20-30 min    Map raw data to schema
-Phase 3: VALIDATE    (Agent 8)      15-20 min    Plausibility + consistency checks
-  ⚠ HUMAN REVIEW: Escalated items presented here (~30 min)
-Phase 4: INTEGRATE   (Agent 9)      5-10 min     Merge into /data
-Phase 5: ANALYZE     (Agents 10-12) 50-75 min    Trends, derived metrics, alerts
-Phase 6: SYNTHESIZE  (Agents 13-14) 30-45 min    Country narratives, weekly briefing
-Phase 7: FINALIZE    (Agents 15-16) 7-10 min     Quality report, archive, commit
-  ⚠ HUMAN REVIEW: Quality report presented here (~15 min)
+Phase 1:  GATHER      (Agents 1-6)    60-120 min   WebSearch/WebFetch + public APIs
+Phase 2:  PROCESS     (Agent 7)       20-30 min    Map raw data to schema
+Phase 3:  VALIDATE    (Agent 8)       15-20 min    Plausibility + consistency checks
+Phase 3b: AUDIT       (Agent 17a)      2-5 min     Autonomous escalation audit
+Phase 4:  INTEGRATE   (Agent 9)        5-10 min    Merge into /data
+Phase 5:  ANALYZE     (Agents 10-12)  50-75 min    Trends, derived metrics, alerts
+Phase 6:  SYNTHESIZE  (Agents 13-14)  30-45 min    Country narratives, weekly briefing
+Phase 7:  FINALIZE    (Agent 15)       5 min        Quality report
+Phase 7b: AUDIT       (Agent 17b)      1-2 min     Autonomous quality audit (GO/NO-GO)
+Phase 7c: COMMIT      (Agent 16)       5 min        Archive, chunks, git commit
 ```
 
-### Human Review Budget: ~2 hours
+### Autonomous Auditing
 
-- Reviewing ESCALATED items from Agent 8: ~30 min
-- Reading quality report from Agent 15: ~15 min
-- Spot-checking country narratives: ~30 min
-- Reviewing and approving git commit: ~5 min
-- Buffer for investigating issues: ~40 min
+Agent 17 (Autonomous Auditor) replaces all human review checkpoints:
+- **After Agent 8:** Resolves ESCALATE verdicts using rule-based decision framework (source count, confidence, trend alignment). Decisions: ACCEPT, ACCEPT_WITH_DOWNGRADE, REJECT.
+- **After Agent 15:** Reviews quality report metrics against GO/CONDITIONAL_GO/NO_GO thresholds. If NO_GO, Agent 16 skips the commit.
+
+No human intervention is required during the pipeline run.
 
 ## Agent Communication
 
@@ -155,7 +156,7 @@ All sources are free tier. Total API cost: $0/month. Gathering agents access the
 - Every data point has a confidence score (0.0 - 1.0)
 - Multi-source corroboration required for high confidence
 - Validation verdicts: ACCEPT, ACCEPT_WITH_NOTE, FLAG, REJECT, ESCALATE
-- ESCALATE triggers human review (target: ≤20 per run)
+- ESCALATE triggers Agent 17 autonomous audit (target: ≤20 per run)
 - Trend estimates always include reasoning, evidence, and counter-arguments
 
 ## Code Style & Conventions

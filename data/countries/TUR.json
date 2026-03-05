@@ -3,8 +3,8 @@
   "country_name": "Turkey",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-04T17:00:12Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 1359123768774.12,
@@ -84,11 +84,11 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 43.97,
+      "value": 43.96,
       "confidence": 0.95,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 28.58,
@@ -267,12 +267,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 550,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 600,
+      "confidence": 0.72,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
       "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "change_note": "Hormuz closure raises energy import costs; regional instability from Iran war; border tension. +50bps from 550.",
+      "previous_value": 550
     },
     "market_accessibility_score": {
       "value": 0.453,
@@ -300,18 +302,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "Turkey's lira sits at 43.97/USD as the country navigates its Middle East proximity with a characteristically multi-directional foreign policy stance. Elevated inflation remains the dominant domestic challenge, constraining the CBRT's policy flexibility. The dual chokepoint crisis may paradoxically benefit Turkey: Bosphorus transit volumes could rise as shipping seeks alternative routes, and Turkey's energy hub ambitions gain relevance as Hormuz supply chains reorganize.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Turkey faces dual pressures from 34.9% inflation amid an aggressive 47.5% central bank rate and proximity to the Iran conflict. Istanbul mayor Imamoglu's imprisonment signals deepening opposition suppression. However, Turkey is positioning as a potential mediator in the Iran crisis and Erdogan succession dynamics are emerging. Oil price surge adds import cost pressure but transit fees for alternative routes could benefit.",
     "key_changes_this_week": [
-      "TRY at 43.97/USD; inflation remains elevated, constraining CBRT",
-      "Middle East conflict proximity creates regional risk premium on Turkish assets",
-      "Bosphorus transit volumes may increase as shipping routes reorganize around closed straits",
-      "Turkey energy hub positioning gains relevance from Hormuz/Suez dual closure",
-      "Defense sector (Baykar, Aselsan) benefits from European and regional defense spending surge"
+      "Inflation at 34.9% with central bank rate at 47.5% aggressively targeting disinflation",
+      "Istanbul mayor Imamoglu imprisoned -- opposition suppression deepening",
+      "Regional proximity to Iran conflict elevating risk premium",
+      "Potential mediator role in Iran crisis could enhance diplomatic standing"
     ],
-    "outlook": "Turkey's structural inflation problem persists, but the geopolitical environment creates opportunities for Ankara's transactional foreign policy. Energy transit revenues and defense exports could provide economic positives. CBRT independence and rate decisions remain the key near-term risk variable.",
-    "investor_implications": "Turkish lira remains structurally at risk; avoid unhedged TRY exposure. Eurobond holders should monitor inflation and current account data. Defense and aerospace sector equity (Baykar unlisted, Aselsan listed) benefits from regional demand surge."
+    "outlook": "Disinflation trend is the key positive. Political risk from opposition crackdown is the key negative. Turkey's geographic position makes it both vulnerable to and potentially a beneficiary of the regional crisis. Erdogan succession dynamics will dominate medium-term political outlook.",
+    "investor_implications": "Lira carry trade attractive at 47.5% but political risk elevated. Disinflation momentum is positive if sustained. Equity valuations cheap but governance discount warranted. Sovereign credit under pressure from political risk.",
+    "data_quality_note": "Inflation methodology questions persist. Political risk assessment evolving."
   },
   "code": "TUR",
   "name": "Turkey",
@@ -376,7 +378,7 @@
       "total_imports_usd": 367115000000,
       "gdp_growth_forecast_2026_pct": 3.7,
       "inflation_forecast_2026_pct": 24.7,
-      "exchange_rate_vs_usd": 43.97,
+      "exchange_rate_vs_usd": 43.96,
       "top_export_partners": [
         {
           "country": "DEU",

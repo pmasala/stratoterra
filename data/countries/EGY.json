@@ -221,14 +221,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.85,
-      "confidence": 0.82,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "value": 0.9,
+      "confidence": 0.78,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
-      "change_note": "Suez Canal closed by Houthi attacks. Egypt loses critical revenue and faces trade disruption.",
-      "previous_value": 0.416
+      "run_id": "2026-W10",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to Suez disruption from regional war",
+      "change_note": "Regional war escalation threatens Suez transit; Houthi activity + Iran conflict spillover; canal revenue at risk.",
+      "previous_value": 0.85
     },
     "composite_national_power_index": {
       "value": 33.4,
@@ -265,18 +265,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "Egypt faces a dual crisis compounding its already fragile fiscal position: the Suez Canal remains effectively closed due to Houthi interdiction, putting approximately $800 million per month in canal transit revenues at risk; simultaneously, Egypt's status as an oil importer means the global price surge adds to its import cost burden. The Egyptian pound sits at 49.88/USD as IMF program implementation continues. Sudan refugee influx remains a significant fiscal and social pressure.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Egypt faces dual headwinds from oil price surge (as a net importer) and continued Red Sea/Suez Canal disruption reducing transit revenue. However, Egypt is geographically positioned to benefit from rerouted shipping that avoids Hormuz and uses Suez as an alternative. LNG import costs rising. The IMF program provides fiscal anchor. Domestic political situation stable under Sisi.",
     "key_changes_this_week": [
-      "Suez Canal effectively closed (Houthi interdiction); ~$800M/month transit revenue at risk",
-      "Oil import costs surging on global price shock",
-      "EGP at 49.88/USD; IMF program implementation ongoing",
-      "Sudan refugee influx continues; fiscal and social pressure",
-      "Tourism sector partially insulated from Suez closure but affected by regional conflict risk"
+      "Oil price surge raising energy import costs",
+      "Suez Canal may benefit from Hormuz avoidance rerouting",
+      "Red Sea disruption from Houthis persists affecting transit revenue",
+      "IMF program provides fiscal stability anchor"
     ],
-    "outlook": "Egypt's IMF program provides a fiscal anchor but cannot fully offset the dual shock of Suez revenue loss and oil import cost increase. Suez Canal reopening is the critical catalyst; every week of closure is approximately $200M in lost revenue.",
-    "investor_implications": "Egyptian Eurobonds carry elevated risk; spreads have widened materially. IMF program compliance is the key sovereign solvency signal. EGP further depreciation is possible if fiscal gap widens; monitor FX reserves monthly data."
+    "outlook": "Egypt's position is mixed: oil costs rise but Suez transit could benefit from Hormuz avoidance. IMF program discipline improves medium-term outlook. Pound stabilization continues. Tourism faces headwinds from regional instability.",
+    "investor_implications": "Egyptian pound-denominated assets offer high yields with IMF backstop. Suez transit revenue outlook depends on Hormuz vs Red Sea dynamics. Sovereign bonds offer carry but currency risk persists.",
+    "data_quality_note": "Data reliable. Suez transit revenue estimates evolving with routing changes."
   },
   "code": "EGY",
   "name": "Egypt",

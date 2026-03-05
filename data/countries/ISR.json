@@ -3,8 +3,8 @@
   "country_name": "Israel",
   "tier": 1,
   "region": "middle_east",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-04T14:00:00Z",
+  "run_id": "2026-W10",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 540379921261.681,
@@ -18,7 +18,11 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Multi-front war (Iran, Hezbollah, ongoing Gaza) straining economy. Reserve mobilization reduces workforce. But US aid offsets some costs, defense sector booming.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 54176.6844383302,
@@ -32,7 +36,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "War costs, disrupted supply chains, and labor shortages from mobilization pushing prices up. Shekel under pressure adds import cost inflation.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 2.9,
@@ -46,7 +54,11 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Defense imports surging. Tourism revenue zero. Tech exports continuing but face disruption. US aid partially offsets military import costs.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 214543676669.814,
@@ -60,7 +72,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "War spending driving deficit higher. Emergency budget supplementals for multi-front conflict. But starting from manageable debt level.",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 3.9,
@@ -84,11 +100,11 @@
       "run_id": "2026-W10"
     },
     "exchange_rate_vs_usd": {
-      "value": 3.0948,
+      "value": 3.0942,
       "confidence": 0.95,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 3.8,
@@ -263,12 +279,14 @@
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.403,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 0.55,
+      "confidence": 0.78,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
       "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz closure and Suez disruption",
+      "change_note": "Hormuz closure impacts oil imports; Suez/Mediterranean shipping disrupted by Houthi/Hezbollah activity. Active war increases insurance and shipping costs.",
+      "previous_value": 0.403
     },
     "composite_national_power_index": {
       "value": 61.3,
@@ -279,14 +297,16 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 800,
-      "confidence": 0.75,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "value": 1100,
+      "confidence": 0.7,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
-      "change_note": "Multi-front war: Gaza, Lebanon (Hezbollah ceasefire collapse), Iranian retaliation. +200bps from 600.",
-      "previous_value": 600
+      "change_note": "Three-front war: Gaza, Lebanon ground invasion, direct Iran confrontation. IRGC retaliatory strikes hitting Israeli targets. Reservist mobilization straining economy. +300bps from 800.",
+      "previous_value": 800,
+      "trend": "decrease",
+      "trend_updated": "2026-03-04T14:00:00Z"
     },
     "market_accessibility_score": {
       "value": 0.595,
@@ -305,20 +325,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "Israel is fighting simultaneous wars on two fronts for the first time since 1973. Operation Roaring Lion, the Israeli air component of the joint US-Israeli strikes on Iran, is ongoing. Hezbollah broke its ceasefire by launching rockets into northern Israel in solidarity with Iran; Israel responded with strikes on Beirut killing 52+ and has deployed ground forces into south Lebanon. IRGC retaliatory strikes have hit Israeli targets directly. The economy faces severe strain from defense mobilization, tourism collapse, and insurance repricing across all Israeli asset classes.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Israel is conducting multi-front military operations against Iran (Operation Roaring Lion), Hezbollah in Lebanon (ceasefire collapsed Mar 1), and ongoing Gaza operations. Military spending has surged to 8.8% of GDP, second-highest globally. The economy faces headwinds from reserve mobilization and tourism collapse, but US military aid and a resilient tech sector provide offsets. The shekel is weakening in orderly fashion with Bank of Israel defending using reserves. A March 31 budget deadline could trigger government dissolution if not met.",
     "key_changes_this_week": [
-      "Operation Roaring Lion: Israeli air strikes on Iran as part of joint US-Israeli operation (Feb 28)",
-      "Hezbollah broke ceasefire; rockets launched at northern Israel; Israeli strikes killed 52+ in Beirut",
-      "Israeli ground forces deployed into south Lebanon; second front opened",
-      "IRGC retaliatory strikes hit Israeli targets directly",
-      "ILS under depreciation pressure; Tel Aviv Stock Exchange in high volatility",
-      "Defense spending surge; reservist mobilization at scale impacting labor supply"
+      "Launched joint strikes on Iran with US -- Operation Roaring Lion ongoing since Feb 28",
+      "Hezbollah broke November 2024 ceasefire on Mar 1, opening northern front with rocket attacks",
+      "IRGC retaliatory missile hit road in West Jerusalem -- first direct Iranian strike on Israeli soil",
+      "Military spending surged to 8.8% of GDP; defense sector booming",
+      "US-Israel alliance deepened significantly through joint operations",
+      "Budget deadline Mar 31 could trigger government dissolution"
     ],
-    "outlook": "Extended multi-front conflict strains the Israeli economy and military simultaneously. Defense spending will surge further, adding to fiscal pressure already elevated from Gaza operations. The diplomatic path to ceasefire on either front is unclear, with Hezbollah's political future in Lebanon complicated by the Lebanese cabinet's historic vote to ban Hezbollah military activities.",
-    "investor_implications": "A meaningful war premium is now priced into all Israeli assets. The ILS will face continued depreciation pressure as defense outlays surge and foreign investor risk appetite falls. The Tel Aviv Stock Exchange is volatile; defense sector names are the sole beneficiaries. TA-35 and TA-125 exposure should be reduced until a credible de-escalation pathway emerges.",
-    "data_quality_note": "Military situation data from OSINT and open-source news. Economic impact estimates are preliminary. Casualty figures may understate actual toll. CRITICAL: Multiple active alerts."
+    "outlook": "Multi-front war will strain the economy but is unlikely to cause collapse given US financial and military backstop. Defense spending will remain elevated. Tech sector fundamentals are intact but FDI decisions are paused. Political stability depends on war outcomes and budget resolution by March 31.",
+    "investor_implications": "Elevated risk but investable for risk-tolerant investors with a 2+ year horizon. Defense sector is a strong overweight. Tech sector FDI pause likely temporary -- fundamentals intact for post-conflict recovery. Shekel depreciation orderly, not disorderly. Government bonds under pressure from fiscal expansion but not crisis-level given US backing.",
+    "data_quality_note": "Military situation rapidly evolving. Economic data lags conflict developments. Budget projections uncertain given wartime supplementals."
   },
   "code": "ISR",
   "name": "Israel",
@@ -394,7 +414,7 @@
       "total_imports_usd": 140748500000,
       "gdp_growth_forecast_2026_pct": 3.9,
       "inflation_forecast_2026_pct": 2.2,
-      "exchange_rate_vs_usd": 3.0948,
+      "exchange_rate_vs_usd": 3.0942,
       "top_export_partners": [
         {
           "country": "USA",

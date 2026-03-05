@@ -3,7 +3,7 @@
   "name": "Cross-Validator & Anomaly Detector",
   "phase": 3,
   "phase_name": "VALIDATE",
-  "description": "Validates every proposed factor update against plausibility ranges, historical change magnitudes, cross-source consistency, and internal consistency rules. Produces verdicts and escalates uncertain high-impact changes for human review.",
+  "description": "Validates every proposed factor update against plausibility ranges, historical change magnitudes, cross-source consistency, and internal consistency rules. Produces verdicts and escalates uncertain high-impact changes for autonomous auditor review.",
   "inputs": [
     "staging/processed/factor_updates_{DATE}.json",
     "data/countries/*.json",
@@ -34,7 +34,7 @@
     "confidence_lt_0.4_significant_change"
   ],
   "escalate_target_max": 20,
-  "human_review_required": true,
+  "human_review_required": false,
   "retry_on_failure": false,
   "idempotent": true,
   "prompt_file": "agents/prompts/agent_08_validator.md"

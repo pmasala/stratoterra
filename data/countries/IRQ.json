@@ -209,14 +209,14 @@
       "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
     },
     "political_risk_premium_bps": {
-      "value": 1525,
-      "confidence": 0.75,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "value": 1800,
+      "confidence": 0.7,
+      "last_updated": "2026-03-04T17:10:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
+      "run_id": "2026-W10",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
-      "change_note": "Basra oil exports completely blocked by Hormuz closure; Iranian militia threat. +100bps from 1425.",
-      "previous_value": 1425
+      "change_note": "Iran war spillover: IRGC-aligned militias active in Iraq; US bases targeted; border instability; oil export disruption risk. +275bps from 1525.",
+      "previous_value": 1525
     },
     "market_accessibility_score": {
       "value": 0.208,
@@ -235,17 +235,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "Iraq faces direct collateral exposure from the Iran conflict: as a country with close Iranian political and military ties, US strikes targeting Iran-linked assets create spillover risk. Iraq's oil export infrastructure — centered on Basra terminals — is adjacent to the Hormuz closure zone. Basra Heavy crude exports may face shipping disruption even if terminals remain operational. No specific domestic events this week beyond conflict adjacency monitoring.",
+    "generated_at": "2026-03-04T18:30:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Iraq faces critical Hormuz chokepoint exposure at 51%, with oil exports severely disrupted. Iraq's fiscal position is almost entirely dependent on oil revenue. The country's position between Iran and US-allied Gulf states creates additional political complexity. Oil export infrastructure through Turkey (Kirkuk-Ceyhan pipeline) provides a partial alternative but capacity is limited.",
     "key_changes_this_week": [
-      "Iran conflict creating spillover risk for Iraq given Iran-linked political/military ties",
-      "Basra terminal oil exports affected by Hormuz closure shipping disruption",
-      "PMF (Iran-linked militias) activity monitoring; potential for US strikes on Iraqi soil",
-      "IQD at 1,310/USD; CBi intervention maintaining stability"
+      "Hormuz closure blocks 51% of supply chain chokepoint exposure",
+      "Oil revenue severely disrupted -- fiscal position highly oil-dependent",
+      "Geographic position between warring parties creates political complexity",
+      "Kirkuk-Ceyhan pipeline provides limited export alternative"
     ],
-    "outlook": "Iraq's political-military relationship with Iran creates significant tail risk from continued US military operations. Oil export disruption is an economic blow despite high prices.",
-    "investor_implications": "Iraq sovereign exposure is highly speculative. Oil sector investment requires geopolitical risk premium significantly above pre-crisis levels."
+    "outlook": "Iraq's fiscal sustainability is directly tied to oil export volumes. Hormuz closure creates acute near-term fiscal pressure. Turkey pipeline provides partial alternative. Political positioning between Iran and US is increasingly difficult.",
+    "investor_implications": "Iraqi sovereign risk elevated from oil revenue disruption. Bond spreads likely widening. KRG oil exports via Turkey pipeline are the primary functioning revenue stream. Political risk premium elevated.",
+    "data_quality_note": "Oil export data fragmented. Fiscal data lagging."
   },
   "code": "IRQ",
   "name": "Iraq",
