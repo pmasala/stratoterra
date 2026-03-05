@@ -117,6 +117,14 @@ var DataLoader = (function() {
       return fetchJSON(chunkPath('relations/' + pair + '.json'));
     },
 
+    async getArticleIndex() {
+      return fetchJSON(chunkPath('global/article_index.json'));
+    },
+
+    async getArticle(articleId) {
+      return fetchJSON(chunkPath('global/articles/' + articleId + '.json'));
+    },
+
     async getChokepoints() {
       return fetchJSON(dataPath('global/chokepoints.json'));
     },

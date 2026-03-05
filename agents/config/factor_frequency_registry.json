@@ -234,6 +234,16 @@
         "supranational.recent_actions"
       ]
     },
+    "daily": {
+      "description": "Generated daily from latest weekly briefing. Articles and news content.",
+      "ttl_days": 1,
+      "factor_categories": [
+        "derived.articles"
+      ],
+      "computed_by": {
+        "derived.articles": "Agent 18"
+      }
+    },
     "derived": {
       "description": "Recomputed each run from base factors. No external fetching needed.",
       "ttl_days": null,

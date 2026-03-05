@@ -65,6 +65,14 @@ For each bilateral pair in `/data/relations/`, copy to:
 Copy `/data/global/weekly_briefing_{DATE}.json` → `/data/chunks/global/weekly_briefing.json`
 Copy `/data/indices/alert_index.json` → `/data/chunks/global/alert_index.json`
 
+### Step 6b: Generate Article Chunks
+If `/data/global/articles/` contains article files, run the article index builder:
+```bash
+python3 agents/scripts/build_article_index.py
+```
+This merges daily article indexes into `/data/chunks/global/article_index.json` (last 30 days),
+and copies individual article files to `/data/chunks/global/articles/`.
+
 ### Step 7: Update Manifest
 Write `/data/chunks/manifest.json`:
 ```json

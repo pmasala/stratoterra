@@ -182,8 +182,12 @@
   function parseHash() {
     var hash = window.location.hash.replace('#', '') || 'map';
     var parts = hash.split('?');
-    var view = parts[0];
+    var pathParts = parts[0].split('/');
+    var view = pathParts[0];
     var params = {};
+    if (view === 'briefing' && pathParts[1] === 'article' && pathParts[2]) {
+      params.articleId = pathParts[2];
+    }
     if (parts[1]) {
       parts[1].split('&').forEach(function(p) {
         var kv = p.split('=');
@@ -242,7 +246,7 @@
   function showView(viewName, el, params) {
     switch (viewName) {
       case 'briefing':
-        BriefingView.show(el);
+        BriefingView.show(el, params);
         break;
       case 'alerts':
         AlertDashboard.show(el, params);

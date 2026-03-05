@@ -62,6 +62,7 @@ For each agent:
 | 5 | 12 | Alert Generator | 10 min |
 | 6 | 13 | Country Profile Synthesizer | 20-30 min |
 | 6 | 14 | Weekly Briefing Generator | 10-15 min |
+| 6.5 | 18 | Article Writer | 20-30 min |
 | 7 | 15 | Data Quality Reporter | 5 min |
 | 7b | 17b | Autonomous Auditor (Quality Audit) | 1-2 min |
 | 7c | 16 | Archive & Commit Preparer | 5 min |
