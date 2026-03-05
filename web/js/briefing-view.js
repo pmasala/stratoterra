@@ -67,8 +67,7 @@ var BriefingView = (function() {
     if (articles && articles.length) {
       html += '<div class="article-grid">';
       articles.forEach(function(art, i) {
-        var featured = i === 0 ? ' article-card--featured' : '';
-        html += '<a class="article-card' + featured + '" href="#briefing/article/' + esc(art.article_id) + '">';
+        html += '<a class="article-card" href="#briefing/article/' + esc(art.article_id) + '">';
         if (art.hero_svg) {
           html += '<div class="article-card__image">' + sanitizeSVG(art.hero_svg) + '</div>';
         }
