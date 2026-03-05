@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/panels.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/overlays.css">
   <!-- Leaflet.js -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -54,6 +55,120 @@
     <main id="main-content">
       <div id="map-container"></div>
       <div id="country-panel" class="panel hidden"></div>
+
+      <!-- Intel Overlays -->
+      <div id="st-layers">
+        <div id="st-layers-head">
+          <span class="hl-title">Intel Overlays</span>
+          <span class="hl-toggle">&blacktriangle;</span>
+        </div>
+        <div id="st-layers-body">
+          <div class="st-group-head">Air &amp; Maritime</div>
+          <div class="st-row on" data-layer="flights">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-blue)"></div>
+            <span class="st-label">Flight Trajectories</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row on" data-layer="naval">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-teal)"></div>
+            <span class="st-label">Naval Routes</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row on" data-layer="airports">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-blue)"></div>
+            <span class="st-label">Major Airports</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row on" data-layer="ports">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-teal)"></div>
+            <span class="st-label">Strategic Ports</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row" data-layer="chokepoints">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-orange)"></div>
+            <span class="st-label">Sea Chokepoints</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row" data-layer="cables">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-purple)"></div>
+            <span class="st-label">Submarine Cables</span>
+            <span class="st-badge">0</span>
+          </div>
+
+          <div class="st-group-head">Military</div>
+          <div class="st-row on" data-layer="bases">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-amber)"></div>
+            <span class="st-label">Military Bases</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row on" data-layer="conflicts">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-red)"></div>
+            <span class="st-label">Conflict Zones</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row" data-layer="missiles">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-red)"></div>
+            <span class="st-label">Missile Coverage</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row" data-layer="nuclear">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-orange)"></div>
+            <span class="st-label">Nuclear Sites</span>
+            <span class="st-badge">0</span>
+          </div>
+
+          <div class="st-group-head">Infrastructure</div>
+          <div class="st-row on" data-layer="power">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-amber)"></div>
+            <span class="st-label">Power Stations</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row" data-layer="pipelines">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-orange)"></div>
+            <span class="st-label">Oil &amp; Gas Pipelines</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row" data-layer="cyber">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-purple)"></div>
+            <span class="st-label">Cyber Operations</span>
+            <span class="st-badge">0</span>
+          </div>
+
+          <div class="st-group-head">Humanitarian</div>
+          <div class="st-row" data-layer="migration">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-orange)"></div>
+            <span class="st-label">Migration Flows</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row" data-layer="sanctions">
+            <div class="st-pill"></div>
+            <div class="st-swatch" style="background:var(--st-red)"></div>
+            <span class="st-label">Active Sanctions</span>
+            <span class="st-badge">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="st-card">
+        <span id="st-card-close">&times;</span>
+        <div class="sc-type" id="sc-type"></div>
+        <div class="sc-name" id="sc-name"></div>
+        <div id="sc-rows"></div>
+      </div>
 
       <!-- Additional view containers -->
       <div id="briefing-view" class="view-container"></div>
@@ -133,6 +248,7 @@
   <script src="js/alert-dashboard.js"></script>
   <script src="js/rankings-view.js"></script>
   <script src="js/comparison-tool.js"></script>
+  <script src="js/overlays.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

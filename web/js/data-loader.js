@@ -125,6 +125,10 @@ var DataLoader = (function() {
       return fetchJSON(chunkPath('global/articles/' + articleId + '.json'));
     },
 
+    async getOverlayLayer(layerId) {
+      return fetchJSON(chunkPath('global/overlays/' + layerId + '.json'));
+    },
+
     async getChokepoints() {
       return fetchJSON(dataPath('global/chokepoints.json'));
     },

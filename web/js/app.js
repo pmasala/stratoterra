@@ -211,9 +211,11 @@
       mapContainer.style.display = '';
       bottomBar.style.display = '';
       if (MapView.getMap()) MapView.getMap().invalidateSize();
+      IntelOverlays.show();
     } else {
       mapContainer.style.display = 'none';
       bottomBar.style.display = 'none';
+      IntelOverlays.hide();
       // Close panels when leaving map
       if (CountryPanel.isOpen()) CountryPanel.close();
     }
@@ -279,6 +281,9 @@
 
     // Ensure ticker is ready before route navigation
     await tickerReady;
+
+    // Initialize intel overlays
+    await IntelOverlays.init();
 
     // Initialize search
     Search.init(

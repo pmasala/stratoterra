@@ -1,0 +1,259 @@
+/* ==========================================================================
+   Stratoterra — Intel Overlays
+   ========================================================================== */
+
+/* --- Overlay custom properties (namespaced to avoid conflicts) --- */
+:root {
+  --st-bg:         #0b0e14;
+  --st-panel:      rgba(11,14,20,0.97);
+  --st-border:     rgba(255,255,255,0.07);
+  --st-border-hi:  rgba(240,165,0,0.22);
+  --st-amber:      #f0a500;
+  --st-amber-dim:  rgba(240,165,0,0.12);
+  --st-red:        #d63031;
+  --st-green:      #00b894;
+  --st-blue:       #0984e3;
+  --st-teal:       #00cec9;
+  --st-purple:     #6c5ce7;
+  --st-orange:     #e17055;
+  --st-text:       #b8c8d8;
+  --st-dim:        #46505f;
+  --st-white:      #e8eef5;
+  --f-ui:          'Outfit', sans-serif;
+  --f-mono:        'JetBrains Mono', monospace;
+}
+
+/* ════════════════════════════════════════════════════
+   LAYER PANEL  (top-left, below Leaflet zoom controls)
+   ════════════════════════════════════════════════════ */
+#st-layers {
+  position: absolute;
+  top: 120px;
+  left: 10px;
+  width: 218px;
+  background: var(--st-panel);
+  border: 1px solid var(--st-border-hi);
+  z-index: 850;
+  font-family: var(--f-ui);
+  box-shadow: 0 4px 24px rgba(0,0,0,.6);
+  user-select: none;
+}
+
+/* Collapse toggle */
+#st-layers-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 10px;
+  background: var(--st-amber-dim);
+  border-bottom: 1px solid var(--st-border-hi);
+  cursor: pointer;
+}
+#st-layers-head .hl-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--st-amber);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+#st-layers-head .hl-title::before {
+  content: '';
+  display: block;
+  width: 6px; height: 6px;
+  background: var(--st-amber);
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--st-amber);
+  animation: st-live 2s ease-in-out infinite;
+}
+@keyframes st-live {
+  0%,100%{ opacity:1; transform:scale(1); }
+  50%{ opacity:.3; transform:scale(.6); }
+}
+#st-layers-head .hl-toggle {
+  font-size: 14px;
+  color: var(--st-dim);
+  transition: transform .2s;
+}
+#st-layers-head.collapsed .hl-toggle { transform: rotate(180deg); }
+
+#st-layers-body { overflow: hidden; }
+#st-layers-body.hidden { display: none; }
+
+/* Group header */
+.st-group-head {
+  padding: 5px 10px 2px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--st-dim);
+  border-top: 1px solid var(--st-border);
+  margin-top: 2px;
+}
+.st-group-head:first-child { border-top: none; margin-top: 0; }
+
+/* Layer row */
+.st-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: background .12s;
+}
+.st-row:hover { background: rgba(255,255,255,0.04); }
+
+/* Pill toggle */
+.st-pill {
+  flex-shrink: 0;
+  width: 26px; height: 13px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 7px;
+  position: relative;
+  transition: background .18s, border-color .18s;
+}
+.st-pill::after {
+  content: '';
+  position: absolute;
+  width: 9px; height: 9px;
+  top: 1px; left: 1px;
+  border-radius: 50%;
+  background: var(--st-dim);
+  transition: left .18s, background .18s;
+}
+.st-row.on .st-pill {
+  background: rgba(240,165,0,0.18);
+  border-color: rgba(240,165,0,0.4);
+}
+.st-row.on .st-pill::after {
+  left: 14px;
+  background: var(--st-amber);
+}
+
+/* Color swatch */
+.st-swatch {
+  flex-shrink: 0;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+}
+
+/* Label */
+.st-label {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--st-text);
+  letter-spacing: .3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.st-row.on .st-label { color: var(--st-white); }
+
+/* Count badge */
+.st-badge {
+  font-family: var(--f-mono);
+  font-size: 9px;
+  color: var(--st-dim);
+  background: rgba(255,255,255,0.05);
+  padding: 1px 4px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ════════════════════════════════════════════════════
+   DETAIL CARD  (bottom-left, above color legend)
+   ════════════════════════════════════════════════════ */
+#st-card {
+  position: absolute;
+  bottom: 100px;
+  left: 10px;
+  width: 240px;
+  background: var(--st-panel);
+  border: 1px solid var(--st-border-hi);
+  z-index: 850;
+  font-family: var(--f-ui);
+  display: none;
+  box-shadow: 0 4px 24px rgba(0,0,0,.6);
+}
+#st-card .sc-type {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--st-amber);
+  padding: 7px 10px 0;
+}
+#st-card .sc-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--st-white);
+  padding: 2px 10px 6px;
+  border-bottom: 1px solid var(--st-border);
+}
+.sc-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 10px;
+  border-bottom: 1px solid var(--st-border);
+}
+.sc-row:last-child { border-bottom: none; }
+.sc-key {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  color: var(--st-dim);
+  text-transform: uppercase;
+}
+.sc-val {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  color: var(--st-text);
+}
+.sc-val.hi { color: var(--st-white); font-weight: 500; }
+.sc-val.danger { color: var(--st-red); }
+.sc-val.warn   { color: var(--st-amber); }
+.sc-val.ok     { color: var(--st-green); }
+
+/* close button */
+#st-card-close {
+  position: absolute;
+  top: 5px; right: 8px;
+  color: var(--st-dim);
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1;
+}
+#st-card-close:hover { color: var(--st-white); }
+
+/* ════════════════════════════════════════════════════
+   LEAFLET POPUP override (tooltips on hover)
+   ════════════════════════════════════════════════════ */
+.st-tip .leaflet-popup-content-wrapper {
+  background: var(--st-panel);
+  border: 1px solid var(--st-border-hi);
+  border-radius: 0;
+  padding: 6px 10px;
+  color: var(--st-text);
+  font-family: var(--f-ui);
+  font-size: 12px;
+  font-weight: 500;
+  box-shadow: 0 4px 16px rgba(0,0,0,.7);
+}
+.st-tip .leaflet-popup-content { margin: 0; }
+.st-tip .leaflet-popup-tip-container { display: none; }
+
+/* animated dash for lines */
+@keyframes st-dash { to { stroke-dashoffset: -30; } }
+
+/* ════════════════════════════════════════════════════
+   RESPONSIVE — hide panel on mobile
+   ════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  #st-layers { display: none; }
+  #st-card { bottom: 60px; width: 200px; }
+}

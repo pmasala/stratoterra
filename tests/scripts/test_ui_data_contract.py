@@ -1200,6 +1200,76 @@ class TestE2E_UI_009_FrontendCodeQuality(unittest.TestCase):
 
 
 # ---------------------------------------------------------------------------
+# E2E-UI-012: Intel Overlays integration checks
+# ---------------------------------------------------------------------------
+
+class TestE2E_UI_012_IntelOverlaysIntegration(unittest.TestCase):
+    """E2E-UI-012: Verify that the intel overlays module is wired into the
+    index.html and that all referenced DOM IDs and scripts exist."""
+
+    def setUp(self):
+        self.index_path = os.path.join(WEB_DIR, "index.html")
+        if not os.path.isfile(self.index_path):
+            self.skipTest("index.html not found")
+        with open(self.index_path, "r", encoding="utf-8") as f:
+            self.html = f.read()
+
+    def test_overlays_css_linked(self):
+        """overlays.css must be linked in index.html."""
+        self.assertIn(
+            "css/overlays.css", self.html,
+            "overlays.css not linked in index.html",
+        )
+
+    def test_overlays_js_loaded(self):
+        """overlays.js must be loaded in index.html."""
+        self.assertIn(
+            "js/overlays.js", self.html,
+            "overlays.js not loaded in index.html",
+        )
+
+    def test_st_layers_panel_in_html(self):
+        """#st-layers panel must exist in index.html for the overlay toggles."""
+        self.assertIn(
+            'id="st-layers"', self.html,
+            "#st-layers panel not found in index.html",
+        )
+
+    def test_st_card_in_html(self):
+        """#st-card detail card must exist in index.html."""
+        self.assertIn(
+            'id="st-card"', self.html,
+            "#st-card detail card not found in index.html",
+        )
+
+    def test_all_15_layer_rows_in_html(self):
+        """All 15 layer data-layer attributes must be present in index.html."""
+        layers = [
+            "flights", "naval", "airports", "ports", "chokepoints", "cables",
+            "bases", "conflicts", "missiles", "nuclear",
+            "power", "pipelines", "cyber", "migration", "sanctions",
+        ]
+        missing = [
+            lid for lid in layers
+            if f'data-layer="{lid}"' not in self.html
+        ]
+        self.assertEqual(
+            missing, [],
+            f"Missing data-layer rows in index.html: {missing}",
+        )
+
+    def test_overlays_js_file_exists(self):
+        """overlays.js file must exist on disk."""
+        js_path = os.path.join(JS_DIR, "overlays.js")
+        self.assertTrue(os.path.isfile(js_path), "web/js/overlays.js not found")
+
+    def test_overlays_css_file_exists(self):
+        """overlays.css file must exist on disk."""
+        css_path = os.path.join(CSS_DIR, "overlays.css")
+        self.assertTrue(os.path.isfile(css_path), "web/css/overlays.css not found")
+
+
+# ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
 
