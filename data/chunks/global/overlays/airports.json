@@ -2,31 +2,574 @@
   "layer": "airports",
   "generated_at": "2026-03-05T12:00:00Z",
   "source": "seed",
-  "count": 24,
+  "count": 63,
   "features": [
-    {"ll": [51.47, -0.46], "name": "London Heathrow", "code": "LHR", "traffic": "80M pax/yr"},
-    {"ll": [48.86, 2.35], "name": "Paris CDG", "code": "CDG", "traffic": "67M pax/yr"},
-    {"ll": [40.64, -73.78], "name": "New York JFK", "code": "JFK", "traffic": "62M pax/yr"},
-    {"ll": [35.77, 140.39], "name": "Tokyo Narita", "code": "NRT", "traffic": "39M pax/yr"},
-    {"ll": [25.25, 55.36], "name": "Dubai International", "code": "DXB", "traffic": "87M pax/yr"},
-    {"ll": [55.97, 37.41], "name": "Moscow Sheremetyevo", "code": "SVO", "traffic": "45M pax/yr"},
-    {"ll": [40.08, 116.58], "name": "Beijing Capital", "code": "PEK", "traffic": "100M pax/yr"},
-    {"ll": [-23.43, -46.47], "name": "Sao Paulo Guarulhos", "code": "GRU", "traffic": "40M pax/yr"},
-    {"ll": [1.36, 103.99], "name": "Singapore Changi", "code": "SIN", "traffic": "68M pax/yr"},
-    {"ll": [33.26, 44.23], "name": "Baghdad International", "code": "BGW", "traffic": "4M pax/yr"},
-    {"ll": [31.99, 34.89], "name": "Tel Aviv Ben Gurion", "code": "TLV", "traffic": "24M pax/yr"},
-    {"ll": [36.69, 37.01], "name": "Incirlik (NATO)", "code": "UAB", "traffic": "Military"},
-    {"ll": [39.87, 116.58], "name": "Beijing Daxing", "code": "PKX", "traffic": "52M pax/yr"},
-    {"ll": [14.51, 46.49], "name": "Aden International", "code": "ADE", "traffic": "1M pax/yr"},
-    {"ll": [22.31, 113.91], "name": "Hong Kong Intl", "code": "HKG", "traffic": "71M pax/yr"},
-    {"ll": [12.52, 43.16], "name": "Djibouti Ambouli", "code": "JIB", "traffic": "Strategic"},
-    {"ll": [27.91, 68.33], "name": "Jacobabad Air Base", "code": "JAG", "traffic": "Military"},
-    {"ll": [-33.97, 18.60], "name": "Cape Town International", "code": "CPT", "traffic": "10M pax/yr"},
-    {"ll": [30.12, 31.40], "name": "Cairo International", "code": "CAI", "traffic": "16M pax/yr"},
-    {"ll": [59.43, 24.83], "name": "Tallinn (NATO-East)", "code": "TLL", "traffic": "Strategic"},
-    {"ll": [54.08, 28.03], "name": "Minsk National", "code": "MSQ", "traffic": "5M pax/yr"},
-    {"ll": [46.98, 28.93], "name": "Chisinau International", "code": "KIV", "traffic": "2M pax/yr"},
-    {"ll": [50.04, 22.19], "name": "Rzeszow-Jasionka (NATO)", "code": "RZE", "traffic": "Supply hub"},
-    {"ll": [48.36, 31.51], "name": "Kryvyi Rih Airport", "code": "KWG", "traffic": "Active zone"}
+    {
+      "ll": [
+        51.47,
+        -0.46
+      ],
+      "name": "London Heathrow",
+      "code": "LHR",
+      "traffic": "80M pax/yr"
+    },
+    {
+      "ll": [
+        48.86,
+        2.35
+      ],
+      "name": "Paris CDG",
+      "code": "CDG",
+      "traffic": "67M pax/yr"
+    },
+    {
+      "ll": [
+        40.64,
+        -73.78
+      ],
+      "name": "New York JFK",
+      "code": "JFK",
+      "traffic": "62M pax/yr"
+    },
+    {
+      "ll": [
+        35.77,
+        140.39
+      ],
+      "name": "Tokyo Narita",
+      "code": "NRT",
+      "traffic": "39M pax/yr"
+    },
+    {
+      "ll": [
+        25.25,
+        55.36
+      ],
+      "name": "Dubai International",
+      "code": "DXB",
+      "traffic": "87M pax/yr"
+    },
+    {
+      "ll": [
+        55.97,
+        37.41
+      ],
+      "name": "Moscow Sheremetyevo",
+      "code": "SVO",
+      "traffic": "45M pax/yr"
+    },
+    {
+      "ll": [
+        40.08,
+        116.58
+      ],
+      "name": "Beijing Capital",
+      "code": "PEK",
+      "traffic": "100M pax/yr"
+    },
+    {
+      "ll": [
+        -23.43,
+        -46.47
+      ],
+      "name": "Sao Paulo Guarulhos",
+      "code": "GRU",
+      "traffic": "40M pax/yr"
+    },
+    {
+      "ll": [
+        1.36,
+        103.99
+      ],
+      "name": "Singapore Changi",
+      "code": "SIN",
+      "traffic": "68M pax/yr"
+    },
+    {
+      "ll": [
+        33.26,
+        44.23
+      ],
+      "name": "Baghdad International",
+      "code": "BGW",
+      "traffic": "4M pax/yr"
+    },
+    {
+      "ll": [
+        31.99,
+        34.89
+      ],
+      "name": "Tel Aviv Ben Gurion",
+      "code": "TLV",
+      "traffic": "24M pax/yr"
+    },
+    {
+      "ll": [
+        36.69,
+        37.01
+      ],
+      "name": "Incirlik (NATO)",
+      "code": "UAB",
+      "traffic": "Military"
+    },
+    {
+      "ll": [
+        39.87,
+        116.58
+      ],
+      "name": "Beijing Daxing",
+      "code": "PKX",
+      "traffic": "52M pax/yr"
+    },
+    {
+      "ll": [
+        14.51,
+        46.49
+      ],
+      "name": "Aden International",
+      "code": "ADE",
+      "traffic": "1M pax/yr"
+    },
+    {
+      "ll": [
+        22.31,
+        113.91
+      ],
+      "name": "Hong Kong Intl",
+      "code": "HKG",
+      "traffic": "71M pax/yr"
+    },
+    {
+      "ll": [
+        12.52,
+        43.16
+      ],
+      "name": "Djibouti Ambouli",
+      "code": "JIB",
+      "traffic": "Strategic"
+    },
+    {
+      "ll": [
+        27.91,
+        68.33
+      ],
+      "name": "Jacobabad Air Base",
+      "code": "JAG",
+      "traffic": "Military"
+    },
+    {
+      "ll": [
+        -33.97,
+        18.6
+      ],
+      "name": "Cape Town International",
+      "code": "CPT",
+      "traffic": "10M pax/yr"
+    },
+    {
+      "ll": [
+        30.12,
+        31.4
+      ],
+      "name": "Cairo International",
+      "code": "CAI",
+      "traffic": "16M pax/yr"
+    },
+    {
+      "ll": [
+        59.43,
+        24.83
+      ],
+      "name": "Tallinn (NATO-East)",
+      "code": "TLL",
+      "traffic": "Strategic"
+    },
+    {
+      "ll": [
+        54.08,
+        28.03
+      ],
+      "name": "Minsk National",
+      "code": "MSQ",
+      "traffic": "5M pax/yr"
+    },
+    {
+      "ll": [
+        46.98,
+        28.93
+      ],
+      "name": "Chisinau International",
+      "code": "KIV",
+      "traffic": "2M pax/yr"
+    },
+    {
+      "ll": [
+        50.04,
+        22.19
+      ],
+      "name": "Rzeszow-Jasionka (NATO)",
+      "code": "RZE",
+      "traffic": "Supply hub"
+    },
+    {
+      "ll": [
+        48.36,
+        31.51
+      ],
+      "name": "Kryvyi Rih Airport",
+      "code": "KWG",
+      "traffic": "Active zone"
+    },
+    {
+      "ll": [
+        50.04,
+        8.56
+      ],
+      "name": "Frankfurt Airport",
+      "code": "FRA",
+      "traffic": "70M pax/yr"
+    },
+    {
+      "ll": [
+        41.8,
+        12.25
+      ],
+      "name": "Rome Fiumicino",
+      "code": "FCO",
+      "traffic": "43M pax/yr"
+    },
+    {
+      "ll": [
+        45.63,
+        8.73
+      ],
+      "name": "Milan Malpensa",
+      "code": "MXP",
+      "traffic": "29M pax/yr"
+    },
+    {
+      "ll": [
+        40.49,
+        -3.57
+      ],
+      "name": "Madrid Barajas",
+      "code": "MAD",
+      "traffic": "60M pax/yr"
+    },
+    {
+      "ll": [
+        37.46,
+        126.44
+      ],
+      "name": "Seoul Incheon",
+      "code": "ICN",
+      "traffic": "72M pax/yr"
+    },
+    {
+      "ll": [
+        -6.13,
+        106.66
+      ],
+      "name": "Jakarta Soekarno-Hatta",
+      "code": "CGK",
+      "traffic": "54M pax/yr"
+    },
+    {
+      "ll": [
+        24.96,
+        46.7
+      ],
+      "name": "Riyadh King Khalid",
+      "code": "RUH",
+      "traffic": "32M pax/yr"
+    },
+    {
+      "ll": [
+        21.68,
+        39.16
+      ],
+      "name": "Jeddah King Abdulaziz",
+      "code": "JED",
+      "traffic": "46M pax/yr"
+    },
+    {
+      "ll": [
+        47.45,
+        8.56
+      ],
+      "name": "Zurich Airport",
+      "code": "ZRH",
+      "traffic": "32M pax/yr"
+    },
+    {
+      "ll": [
+        59.65,
+        17.93
+      ],
+      "name": "Stockholm Arlanda",
+      "code": "ARN",
+      "traffic": "27M pax/yr"
+    },
+    {
+      "ll": [
+        60.19,
+        11.1
+      ],
+      "name": "Oslo Gardermoen",
+      "code": "OSL",
+      "traffic": "29M pax/yr"
+    },
+    {
+      "ll": [
+        -33.95,
+        151.18
+      ],
+      "name": "Sydney Kingsford Smith",
+      "code": "SYD",
+      "traffic": "44M pax/yr"
+    },
+    {
+      "ll": [
+        -37.66,
+        144.84
+      ],
+      "name": "Melbourne Tullamarine",
+      "code": "MEL",
+      "traffic": "37M pax/yr"
+    },
+    {
+      "ll": [
+        43.68,
+        -79.63
+      ],
+      "name": "Toronto Pearson",
+      "code": "YYZ",
+      "traffic": "50M pax/yr"
+    },
+    {
+      "ll": [
+        49.19,
+        -123.18
+      ],
+      "name": "Vancouver Intl",
+      "code": "YVR",
+      "traffic": "26M pax/yr"
+    },
+    {
+      "ll": [
+        19.44,
+        -99.07
+      ],
+      "name": "Mexico City Benito Juarez",
+      "code": "MEX",
+      "traffic": "50M pax/yr"
+    },
+    {
+      "ll": [
+        28.56,
+        77.1
+      ],
+      "name": "Delhi Indira Gandhi",
+      "code": "DEL",
+      "traffic": "73M pax/yr"
+    },
+    {
+      "ll": [
+        19.1,
+        72.87
+      ],
+      "name": "Mumbai Chhatrapati Shivaji",
+      "code": "BOM",
+      "traffic": "50M pax/yr"
+    },
+    {
+      "ll": [
+        6.58,
+        3.32
+      ],
+      "name": "Lagos Murtala Muhammed",
+      "code": "LOS",
+      "traffic": "9M pax/yr"
+    },
+    {
+      "ll": [
+        24.9,
+        67.17
+      ],
+      "name": "Karachi Jinnah Intl",
+      "code": "KHI",
+      "traffic": "8M pax/yr"
+    },
+    {
+      "ll": [
+        33.55,
+        72.83
+      ],
+      "name": "Islamabad Intl",
+      "code": "ISB",
+      "traffic": "7M pax/yr"
+    },
+    {
+      "ll": [
+        21.22,
+        105.81
+      ],
+      "name": "Hanoi Noi Bai",
+      "code": "HAN",
+      "traffic": "30M pax/yr"
+    },
+    {
+      "ll": [
+        10.82,
+        106.65
+      ],
+      "name": "Ho Chi Minh Tan Son Nhat",
+      "code": "SGN",
+      "traffic": "42M pax/yr"
+    },
+    {
+      "ll": [
+        14.51,
+        121.02
+      ],
+      "name": "Manila Ninoy Aquino",
+      "code": "MNL",
+      "traffic": "47M pax/yr"
+    },
+    {
+      "ll": [
+        4.7,
+        -74.14
+      ],
+      "name": "Bogota El Dorado",
+      "code": "BOG",
+      "traffic": "38M pax/yr"
+    },
+    {
+      "ll": [
+        -34.82,
+        -58.54
+      ],
+      "name": "Buenos Aires Ezeiza",
+      "code": "EZE",
+      "traffic": "14M pax/yr"
+    },
+    {
+      "ll": [
+        -33.39,
+        -70.79
+      ],
+      "name": "Santiago Arturo Merino",
+      "code": "SCL",
+      "traffic": "24M pax/yr"
+    },
+    {
+      "ll": [
+        -12.02,
+        -77.11
+      ],
+      "name": "Lima Jorge Chavez",
+      "code": "LIM",
+      "traffic": "24M pax/yr"
+    },
+    {
+      "ll": [
+        25.27,
+        51.6
+      ],
+      "name": "Doha Hamad Intl",
+      "code": "DOH",
+      "traffic": "46M pax/yr"
+    },
+    {
+      "ll": [
+        43.35,
+        77.04
+      ],
+      "name": "Almaty Intl",
+      "code": "ALA",
+      "traffic": "8M pax/yr"
+    },
+    {
+      "ll": [
+        44.57,
+        26.09
+      ],
+      "name": "Bucharest Henri Coanda",
+      "code": "OTP",
+      "traffic": "15M pax/yr"
+    },
+    {
+      "ll": [
+        60.32,
+        24.95
+      ],
+      "name": "Helsinki Vantaa",
+      "code": "HEL",
+      "traffic": "22M pax/yr"
+    },
+    {
+      "ll": [
+        53.43,
+        -6.25
+      ],
+      "name": "Dublin Airport",
+      "code": "DUB",
+      "traffic": "33M pax/yr"
+    },
+    {
+      "ll": [
+        -37.0,
+        174.79
+      ],
+      "name": "Auckland Intl",
+      "code": "AKL",
+      "traffic": "21M pax/yr"
+    },
+    {
+      "ll": [
+        33.37,
+        -7.59
+      ],
+      "name": "Casablanca Mohammed V",
+      "code": "CMN",
+      "traffic": "10M pax/yr"
+    },
+    {
+      "ll": [
+        8.98,
+        38.8
+      ],
+      "name": "Addis Ababa Bole",
+      "code": "ADD",
+      "traffic": "12M pax/yr"
+    },
+    {
+      "ll": [
+        -1.33,
+        36.93
+      ],
+      "name": "Nairobi Jomo Kenyatta",
+      "code": "NBO",
+      "traffic": "8M pax/yr"
+    },
+    {
+      "ll": [
+        5.61,
+        -0.17
+      ],
+      "name": "Accra Kotoka",
+      "code": "ACC",
+      "traffic": "3M pax/yr"
+    },
+    {
+      "ll": [
+        16.91,
+        96.13
+      ],
+      "name": "Yangon Intl",
+      "code": "RGN",
+      "traffic": "6M pax/yr"
+    }
   ]
 }

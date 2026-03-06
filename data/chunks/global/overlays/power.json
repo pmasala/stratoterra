@@ -2,27 +2,447 @@
   "layer": "power",
   "generated_at": "2026-03-05T12:00:00Z",
   "source": "seed",
-  "count": 20,
+  "count": 44,
   "features": [
-    {"ll": [48.82, 2.28], "name": "Flamanville NPP", "type": "Nuclear", "mw": 2600, "country": "France"},
-    {"ll": [51.33, 0.42], "name": "Sizewell B", "type": "Nuclear", "mw": 1198, "country": "UK"},
-    {"ll": [26.83, 50.10], "name": "Bushehr NPP", "type": "Nuclear", "mw": 1000, "country": "Iran"},
-    {"ll": [35.82, 128.39], "name": "Kori NPP", "type": "Nuclear", "mw": 5900, "country": "S.Korea"},
-    {"ll": [47.89, 33.08], "name": "Zaporizhzhia NPP", "type": "Nuclear", "mw": 5700, "country": "Ukraine"},
-    {"ll": [56.82, 34.58], "name": "Kalinin NPP", "type": "Nuclear", "mw": 4000, "country": "Russia"},
-    {"ll": [21.34, 39.12], "name": "Rabigh Power", "type": "Gas", "mw": 2400, "country": "Saudi Arabia"},
-    {"ll": [30.10, 31.35], "name": "Cairo West Gas", "type": "Gas", "mw": 4000, "country": "Egypt"},
-    {"ll": [28.51, 77.09], "name": "Dadri Thermal", "type": "Coal", "mw": 5400, "country": "India"},
-    {"ll": [22.52, 120.38], "name": "Da-Lin Power", "type": "Coal", "mw": 2000, "country": "Taiwan"},
-    {"ll": [-33.88, 151.18], "name": "Eraring Coal", "type": "Coal", "mw": 2880, "country": "Australia"},
-    {"ll": [60.09, 30.10], "name": "Leningrad NPP", "type": "Nuclear", "mw": 4000, "country": "Russia"},
-    {"ll": [51.64, 0.62], "name": "Bradwell (decom.)", "type": "Nuclear", "mw": 0, "country": "UK"},
-    {"ll": [55.55, 37.83], "name": "Moscow Ring Grid", "type": "Gas", "mw": 6000, "country": "Russia"},
-    {"ll": [33.92, 35.60], "name": "Deir Ammar Power", "type": "Gas", "mw": 700, "country": "Lebanon"},
-    {"ll": [24.09, 90.40], "name": "Haripur Gas", "type": "Gas", "mw": 412, "country": "Bangladesh"},
-    {"ll": [35.01, 33.62], "name": "Vasiliko Power", "type": "Gas", "mw": 870, "country": "Cyprus"},
-    {"ll": [41.00, 29.00], "name": "Bosphorus Grid", "type": "Gas", "mw": 2000, "country": "Turkey"},
-    {"ll": [39.76, 116.29], "name": "Shijingshan", "type": "Coal", "mw": 4000, "country": "China"},
-    {"ll": [-26.27, 27.86], "name": "Lethabo PS", "type": "Coal", "mw": 3558, "country": "S.Africa"}
+    {
+      "ll": [
+        48.82,
+        2.28
+      ],
+      "name": "Flamanville NPP",
+      "type": "Nuclear",
+      "mw": 2600,
+      "country": "France"
+    },
+    {
+      "ll": [
+        51.33,
+        0.42
+      ],
+      "name": "Sizewell B",
+      "type": "Nuclear",
+      "mw": 1198,
+      "country": "UK"
+    },
+    {
+      "ll": [
+        26.83,
+        50.1
+      ],
+      "name": "Bushehr NPP",
+      "type": "Nuclear",
+      "mw": 1000,
+      "country": "Iran"
+    },
+    {
+      "ll": [
+        35.82,
+        128.39
+      ],
+      "name": "Kori NPP",
+      "type": "Nuclear",
+      "mw": 5900,
+      "country": "S.Korea"
+    },
+    {
+      "ll": [
+        47.89,
+        33.08
+      ],
+      "name": "Zaporizhzhia NPP",
+      "type": "Nuclear",
+      "mw": 5700,
+      "country": "Ukraine"
+    },
+    {
+      "ll": [
+        56.82,
+        34.58
+      ],
+      "name": "Kalinin NPP",
+      "type": "Nuclear",
+      "mw": 4000,
+      "country": "Russia"
+    },
+    {
+      "ll": [
+        21.34,
+        39.12
+      ],
+      "name": "Rabigh Power",
+      "type": "Gas",
+      "mw": 2400,
+      "country": "Saudi Arabia"
+    },
+    {
+      "ll": [
+        30.1,
+        31.35
+      ],
+      "name": "Cairo West Gas",
+      "type": "Gas",
+      "mw": 4000,
+      "country": "Egypt"
+    },
+    {
+      "ll": [
+        28.51,
+        77.09
+      ],
+      "name": "Dadri Thermal",
+      "type": "Coal",
+      "mw": 5400,
+      "country": "India"
+    },
+    {
+      "ll": [
+        22.52,
+        120.38
+      ],
+      "name": "Da-Lin Power",
+      "type": "Coal",
+      "mw": 2000,
+      "country": "Taiwan"
+    },
+    {
+      "ll": [
+        -33.88,
+        151.18
+      ],
+      "name": "Eraring Coal",
+      "type": "Coal",
+      "mw": 2880,
+      "country": "Australia"
+    },
+    {
+      "ll": [
+        60.09,
+        30.1
+      ],
+      "name": "Leningrad NPP",
+      "type": "Nuclear",
+      "mw": 4000,
+      "country": "Russia"
+    },
+    {
+      "ll": [
+        51.64,
+        0.62
+      ],
+      "name": "Bradwell (decom.)",
+      "type": "Nuclear",
+      "mw": 0,
+      "country": "UK"
+    },
+    {
+      "ll": [
+        55.55,
+        37.83
+      ],
+      "name": "Moscow Ring Grid",
+      "type": "Gas",
+      "mw": 6000,
+      "country": "Russia"
+    },
+    {
+      "ll": [
+        33.92,
+        35.6
+      ],
+      "name": "Deir Ammar Power",
+      "type": "Gas",
+      "mw": 700,
+      "country": "Lebanon"
+    },
+    {
+      "ll": [
+        24.09,
+        90.4
+      ],
+      "name": "Haripur Gas",
+      "type": "Gas",
+      "mw": 412,
+      "country": "Bangladesh"
+    },
+    {
+      "ll": [
+        35.01,
+        33.62
+      ],
+      "name": "Vasiliko Power",
+      "type": "Gas",
+      "mw": 870,
+      "country": "Cyprus"
+    },
+    {
+      "ll": [
+        41.0,
+        29.0
+      ],
+      "name": "Bosphorus Grid",
+      "type": "Gas",
+      "mw": 2000,
+      "country": "Turkey"
+    },
+    {
+      "ll": [
+        39.76,
+        116.29
+      ],
+      "name": "Shijingshan",
+      "type": "Coal",
+      "mw": 4000,
+      "country": "China"
+    },
+    {
+      "ll": [
+        -26.27,
+        27.86
+      ],
+      "name": "Lethabo PS",
+      "type": "Coal",
+      "mw": 3558,
+      "country": "S.Africa"
+    },
+    {
+      "ll": [
+        33.39,
+        -112.86
+      ],
+      "name": "Palo Verde NGS",
+      "type": "Nuclear",
+      "mw": 3937,
+      "country": "USA"
+    },
+    {
+      "ll": [
+        47.95,
+        -118.99
+      ],
+      "name": "Grand Coulee Dam",
+      "type": "Hydro",
+      "mw": 6809,
+      "country": "USA"
+    },
+    {
+      "ll": [
+        37.43,
+        138.59
+      ],
+      "name": "Kashiwazaki-Kariwa",
+      "type": "Nuclear",
+      "mw": 7965,
+      "country": "Japan"
+    },
+    {
+      "ll": [
+        51.04,
+        6.61
+      ],
+      "name": "Neurath Power Station",
+      "type": "Coal",
+      "mw": 4400,
+      "country": "Germany"
+    },
+    {
+      "ll": [
+        42.13,
+        11.76
+      ],
+      "name": "Torrevaldaliga Nord",
+      "type": "Gas",
+      "mw": 3600,
+      "country": "Italy"
+    },
+    {
+      "ll": [
+        35.33,
+        129.3
+      ],
+      "name": "Shin-Kori NPP",
+      "type": "Nuclear",
+      "mw": 5600,
+      "country": "S.Korea"
+    },
+    {
+      "ll": [
+        39.21,
+        -1.05
+      ],
+      "name": "Cofrentes NPP",
+      "type": "Nuclear",
+      "mw": 1092,
+      "country": "Spain"
+    },
+    {
+      "ll": [
+        44.34,
+        -81.57
+      ],
+      "name": "Bruce Nuclear GS",
+      "type": "Nuclear",
+      "mw": 6232,
+      "country": "Canada"
+    },
+    {
+      "ll": [
+        22.82,
+        69.55
+      ],
+      "name": "Mundra Thermal PS",
+      "type": "Coal",
+      "mw": 4620,
+      "country": "India"
+    },
+    {
+      "ll": [
+        19.72,
+        -96.41
+      ],
+      "name": "Laguna Verde NPP",
+      "type": "Nuclear",
+      "mw": 1510,
+      "country": "Mexico"
+    },
+    {
+      "ll": [
+        -32.4,
+        150.95
+      ],
+      "name": "Bayswater PS",
+      "type": "Coal",
+      "mw": 2640,
+      "country": "Australia"
+    },
+    {
+      "ll": [
+        -5.89,
+        106.03
+      ],
+      "name": "Suralaya PS",
+      "type": "Coal",
+      "mw": 4025,
+      "country": "Indonesia"
+    },
+    {
+      "ll": [
+        20.68,
+        39.52
+      ],
+      "name": "Shoaiba Power",
+      "type": "Gas",
+      "mw": 5600,
+      "country": "Saudi Arabia"
+    },
+    {
+      "ll": [
+        23.97,
+        52.24
+      ],
+      "name": "Barakah NPP",
+      "type": "Nuclear",
+      "mw": 5380,
+      "country": "UAE"
+    },
+    {
+      "ll": [
+        34.09,
+        72.7
+      ],
+      "name": "Tarbela Dam",
+      "type": "Hydro",
+      "mw": 3478,
+      "country": "Pakistan"
+    },
+    {
+      "ll": [
+        10.61,
+        107.04
+      ],
+      "name": "Phu My Power Complex",
+      "type": "Gas",
+      "mw": 3900,
+      "country": "Vietnam"
+    },
+    {
+      "ll": [
+        6.56,
+        3.62
+      ],
+      "name": "Egbin Thermal PS",
+      "type": "Gas",
+      "mw": 1320,
+      "country": "Nigeria"
+    },
+    {
+      "ll": [
+        4.9,
+        -73.3
+      ],
+      "name": "Chivor Hydro",
+      "type": "Hydro",
+      "mw": 1000,
+      "country": "Colombia"
+    },
+    {
+      "ll": [
+        -33.97,
+        -59.21
+      ],
+      "name": "Atucha NPP",
+      "type": "Nuclear",
+      "mw": 745,
+      "country": "Argentina"
+    },
+    {
+      "ll": [
+        25.93,
+        51.52
+      ],
+      "name": "Ras Laffan Power",
+      "type": "Gas",
+      "mw": 2730,
+      "country": "Qatar"
+    },
+    {
+      "ll": [
+        11.1,
+        35.2
+      ],
+      "name": "GERD",
+      "type": "Hydro",
+      "mw": 5150,
+      "country": "Ethiopia"
+    },
+    {
+      "ll": [
+        -0.89,
+        36.29
+      ],
+      "name": "Olkaria Geothermal",
+      "type": "Geothermal",
+      "mw": 860,
+      "country": "Kenya"
+    },
+    {
+      "ll": [
+        6.29,
+        0.06
+      ],
+      "name": "Akosombo Dam",
+      "type": "Hydro",
+      "mw": 1020,
+      "country": "Ghana"
+    },
+    {
+      "ll": [
+        -15.59,
+        32.7
+      ],
+      "name": "Cahora Bassa Dam",
+      "type": "Hydro",
+      "mw": 2075,
+      "country": "Mozambique"
+    }
   ]
 }
