@@ -18,7 +18,7 @@ var IntelOverlays = (function() {
     'power','pipelines','cyber','migration','sanctions'
   ];
 
-  var DEFAULT_ON = ['flights','naval','airports','ports','bases','conflicts','power'];
+  var DEFAULT_ON = ['conflicts'];
 
   // Colour map
   var C = {

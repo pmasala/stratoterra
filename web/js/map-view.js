@@ -5,7 +5,7 @@
 var MapView = (function() {
   var map = null;
   var geoLayer = null;
-  var currentMetric = 'gdp_growth_trend';
+  var currentMetric = 'alert_severity';
   var currentOverlay = 'none';
   var selectedFeature = null;
   var summaryLookup = {};
