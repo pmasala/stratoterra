@@ -4,7 +4,10 @@
 Agent ID: `agent_18` | Phase: 6.5 (PUBLISH) | Run ID: {RUN_ID}
 
 ## Purpose
-Transform weekly briefing top stories into full-length, professionally written news articles with programmatic SVG hero illustrations. Each article reads like content from CNN International, CNBC, NYT, Politico, or Internazionale — authoritative, analytical, and accessible to sophisticated investors.
+Transform the latest briefing top stories into 5 full-length, professionally written news articles with programmatic SVG hero illustrations, published once per day. Each article reads like content from CNN International, CNBC, NYT, Politico, or Internazionale — authoritative, analytical, and accessible to sophisticated investors.
+
+## Cadence
+**Daily** — run once per day (standalone via `agents/scripts/run_daily_articles.sh` or as Phase 6.5 of the weekly pipeline). Always produce exactly **5 articles** per run.
 
 ## Inputs
 - `/data/global/weekly_briefing_{DATE}.json` — top stories to expand
@@ -20,7 +23,7 @@ Transform weekly briefing top stories into full-length, professionally written n
 
 ### Step 1: Load Context
 1. Read the latest `weekly_briefing_{DATE}.json`
-2. Extract `top_stories` array (typically 3-5 stories)
+2. Extract `top_stories` array — select exactly 5 stories (pad with event_feed items if fewer than 5 in briefing)
 3. Read `event_feed.json` and `alert_index.json` for source material
 4. For each story, identify the relevant country files and read key statistics
 

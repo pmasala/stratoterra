@@ -227,7 +227,7 @@ var BriefingView = (function() {
     var html = '<div class="article">';
 
     // Back link
-    html += '<a href="#briefing" class="article__back">&larr; Back to Briefing</a>';
+    html += '<a href="#briefing" class="article__back">&larr; Back to Stories</a>';
 
     // Meta badges
     html += '<div class="article__meta">';
@@ -344,7 +344,7 @@ var BriefingView = (function() {
           renderArticle(article);
           lastMode = params.articleId;
         } catch (err) {
-          containerEl.innerHTML = '<div class="error-card"><h3 class="error-card__title">Article not found</h3><p>This article could not be loaded.</p><a href="#briefing">&larr; Back to Briefing</a></div>';
+          containerEl.innerHTML = '<div class="error-card"><h3 class="error-card__title">Article not found</h3><p>This article could not be loaded.</p><a href="#briefing">&larr; Back to Stories</a></div>';
         }
       } else {
         // Listing mode
@@ -368,7 +368,7 @@ var BriefingView = (function() {
           if (briefingData) {
             renderListing(null, briefingData);
           } else {
-            containerEl.innerHTML = '<div class="error-card"><h3 class="error-card__title">Briefing unavailable</h3><p>Weekly briefing data has not been generated yet.</p></div>';
+            containerEl.innerHTML = '<div class="error-card"><h3 class="error-card__title">Stories unavailable</h3><p>Daily stories have not been generated yet.</p></div>';
           }
         }
         lastMode = 'listing';
