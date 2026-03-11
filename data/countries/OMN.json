@@ -3,64 +3,80 @@
   "country_name": "Oman",
   "tier": 2,
   "region": "middle_east",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-10T00:00:00Z",
+  "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 107137198769.386,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
-      "value": 2.9,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.63163221127449,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Oman GDP under severe pressure from Hormuz disruption. Limited Hormuz dependency but regional disruption severe. High energy prices cannot be monetized while export channels are blocked.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 20285.2272897377,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
-      "value": 0.9,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.593589236248469,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Oman facing import cost pressure from disrupted supply chains. Energy subsidies buffer consumers but fiscal cost rising. Food import costs increasing as Gulf shipping disrupted.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.251,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
-      "value": 2.86,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 2.86434019549987,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Oman current account deteriorating as Hormuz disruption blocks energy exports. High oil/gas prices cannot be monetized. Import costs rising. SWF drawdowns support consumption.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 18286526117.9972,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "govt_debt_pct_gdp": {
       "value": 35.1,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Oman debt ratio rising as revenue drops from export disruption while spending (defense, subsidies) increases. SWF drawdowns buffer but deplete reserves.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4,
@@ -77,18 +93,18 @@
       "run_id": "2026-W10"
     },
     "total_exports_usd": {
-      "value": 70788205043.5607,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 70788296488.9467,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "total_imports_usd": {
-      "value": 52261568961.3482,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 52261638491.5475,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "central_bank_policy_rate_pct": {
       "value": 5.0,
@@ -96,29 +112,65 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "fdi_inflows_usd": {
+      "value": 12465539661.8985,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Oman FDI declining as Gulf conflict creates uncertainty. International investors reassessing regional risk. Vision 2030-type diversification plans delayed.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 220452272078.928,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": 0.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 0.3845,
+      "confidence": 0.99,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Oman currency pegged to USD. Peg under pressure from fiscal strain but central bank defending. FX reserves adequate for now.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     }
   },
   "demographic": {
     "population_total": {
       "value": 5281538,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "population_growth_pct": {
-      "value": 4.497,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 4.49738628465102,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 80.031,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "hdi": {
       "value": 0.858,
@@ -133,6 +185,34 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 68.377,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 97.3399963378906,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 3.49047446,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 79.4440302814714,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
     }
   },
   "political": {},
@@ -186,83 +266,130 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": null,
+      "trend": "growth",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Oman increasing defense spending in response to Gulf conflict. Regional arms race accelerating. SIPRI data shows Middle East arms imports up despite recent decline.",
+      "trend_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.8,
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
     }
   },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.5,
+      "value": 0.4,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 1.0,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.95,
-      "confidence": 0.82,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "value": 0.85,
+      "confidence": 0.7,
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
-      "change_note": "Oman sits at the mouth of the Strait of Hormuz. Maximum direct exposure.",
-      "previous_value": 0.573
+      "run_id": "2026-W11",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
     "composite_national_power_index": {
-      "value": 32.6,
+      "value": 35.5,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 32.0
     },
     "political_risk_premium_bps": {
-      "value": 700,
-      "confidence": 0.72,
-      "last_updated": "2026-03-04T17:10:00Z",
+      "value": 321,
+      "confidence": 0.75,
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
-      "change_note": "Oman controls southern Hormuz approach; oil exports blocked; IRGC threat proximity. +125bps from 575.",
-      "previous_value": 575
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.455,
+      "value": 0.5,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.142,
+      "confidence": 0.7,
+      "last_updated": "2026-03-10T16:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Oman investment risk elevated significantly. Hormuz disruption blocks primary economic activity. SWF reserves buffer but not indefinitely. Conflict duration is key uncertainty.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
+    "trade_openness_trend": {
+      "value": "decrease",
+      "confidence": 0.82,
+      "reasoning": "Oman trade openness collapsing as Hormuz disruption blocks maritime trade. Both exports and imports severely disrupted. Overland routes insufficient to replace sea trade.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Oman relationship health with key partners declining as Gulf conflict strains alliances. US unable to provide Hormuz escorts. Regional cooperation tested.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "decrease",
+      "confidence": 0.78,
+      "reasoning": "Oman political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
     }
   },
   "metadata": {
     "active_flags": [],
-    "update_count": 53,
+    "update_count": 88,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-04T18:30:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "Oman is critically exposed to the Hormuz closure with 62% supply chain chokepoint exposure. Oil exports are severely disrupted in what is the most severe global energy supply disruption in decades. Oman's fiscal position is more precarious than wealthier Gulf peers given smaller sovereign reserves.",
+    "generated_at": "2026-03-10T06:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations. GDP growth at 1.6% (declining), inflation at 0.6% (rising). Supply chain chokepoint exposure is critically elevated at 0.850 amid the Strait of Hormuz crisis. Political risk premium stands at 321 bps, signaling elevated sovereign risk. Investment risk score at 0.142, trending declining.",
     "key_changes_this_week": [
-      "Hormuz closure with 62% chokepoint exposure severely disrupts oil exports",
-      "Oil revenue disrupted despite price surge -- volume collapse dominates",
-      "Smaller fiscal reserves than Gulf peers reduce buffer capacity",
-      "Most severe global energy supply disruption in decades affecting Omani economy"
+      "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations",
+      "Oman: Extreme chokepoint exposure at 0.850 amid Hormuz crisis",
+      "Oman: Hormuz crisis direct impact",
+      "Gdp Real Growth %: declining",
+      "Inflation Cpi %: rising",
+      "Political Stability: declining",
+      "Overall Investment Risk Score: declining"
     ],
-    "outlook": "Oman is highly vulnerable to prolonged Hormuz closure given smaller reserves relative to Saudi Arabia and UAE. Fiscal consolidation progress of recent years at risk. Diversification efforts remain early-stage.",
-    "investor_implications": "Omani sovereign risk elevated. Bond spreads likely widening. Revenue disruption threatens fiscal trajectory improvements. Investors should reduce Oman fixed income exposure pending Hormuz resolution.",
-    "data_quality_note": "Oil export data uncertain during Hormuz closure."
+    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Political stability is declining, adding to investor uncertainty.",
+    "investor_implications": "Extreme supply chain chokepoint exposure (0.850) creates acute risk for trade-dependent sectors. High energy independence (1.000) provides a buffer against the oil price shock. Oman investment risk elevated. Underweight until Hormuz reopens.",
+    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
   },
   "code": "OMN",
   "name": "Oman",
@@ -376,12 +503,13 @@
     },
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.5,
+      "resource_self_sufficiency_index": 0.4,
       "energy_independence_index": 1.0,
-      "supply_chain_chokepoint_exposure": 0.95,
-      "composite_national_power_index": 32.6,
-      "political_risk_premium_bps": 575,
-      "market_accessibility_score": 0.455
+      "supply_chain_chokepoint_exposure": 0.85,
+      "composite_national_power_index": 35.5,
+      "political_risk_premium_bps": 321,
+      "market_accessibility_score": 0.5,
+      "overall_investment_risk_score": 0.142
     }
   },
   "economy": {
@@ -440,7 +568,22 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
-    }
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 95.2517,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": 114.85
   },
   "institutions": {
     "under_international_sanctions": {
@@ -493,46 +636,46 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": -1.0,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": -1.004404,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": 0.59,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.586624,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_government_effectiveness": {
-      "value": 0.27,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.274613,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": 0.43,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.434537,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": 0.61,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.612812,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": 0.22,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.215158,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "fragile_states_index": {
       "value": 47.4,

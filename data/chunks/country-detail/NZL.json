@@ -3,64 +3,80 @@
   "country_name": "New Zealand",
   "tier": 2,
   "region": "oceania",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-10T00:00:00Z",
+  "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 260172385097.616,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
-      "value": 0.8,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.28862004711685,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "New Zealand faces bleak economic outlook. Health Minister retirement signals government instability. Air NZ viability questioned. Oil shock adds to import costs.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 49205.1792146792,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
-      "value": 2.7,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 2.92279782301957,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "New Zealand facing mild inflation pressure from global oil price surge to $116/bbl feeding through energy and transport costs.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "unemployment_rate_pct": {
-      "value": 5.2,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 5.076,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
-      "value": -4.65,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": -4.65310184058939,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "New Zealand current account deteriorating from higher oil import costs at $116/bbl.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "govt_debt_pct_gdp": {
-      "value": 53.2,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 54.0530599083664,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "New Zealand debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 22065156553.5373,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 2.2,
@@ -77,18 +93,18 @@
       "run_id": "2026-W10"
     },
     "total_exports_usd": {
-      "value": 62208504922.9869,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 64536380921.6401,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "total_imports_usd": {
-      "value": 66749969913.3697,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 68735355084.0492,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "central_bank_policy_rate_pct": {
       "value": 4.25,
@@ -103,29 +119,65 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "fdi_inflows_usd": {
+      "value": 1759833655.17085,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "New Zealand FDI broadly stable with mild downward pressure from global uncertainty. Gulf conflict creating risk-off sentiment across emerging markets.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 293726672095.043,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -4.1,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 1.6886,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "New Zealand currency broadly stable against USD. No direct conflict exposure. Global risk-off sentiment creates mild depreciation pressure against safe-haven dollar.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     }
   },
   "demographic": {
     "population_total": {
       "value": 5287500,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "population_growth_pct": {
-      "value": 1.669,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.66869187850147,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 83.0048780487805,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "hdi": {
       "value": 0.938,
@@ -140,6 +192,27 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 70.352,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 10.06186676,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 83.9370658833132,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
     }
   },
   "political": {},
@@ -190,71 +263,107 @@
     "resource_self_sufficiency_index": {
       "value": 0.8,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
-      "value": 0.8,
+      "value": 0.7,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.216,
+      "value": 0.252,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W11",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
     "composite_national_power_index": {
-      "value": 51.3,
+      "value": 35.8,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 32.3
     },
     "political_risk_premium_bps": {
       "value": 0,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "confidence": 0.75,
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.617,
+      "value": 0.85,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.123,
+      "confidence": 0.7,
+      "last_updated": "2026-03-10T16:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "New Zealand investment risk broadly unchanged. Global oil shock creates background pressure but no direct exposure to Gulf conflict. Fundamentals stable.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "New Zealand trade openness broadly stable. Global trade disruption from Hormuz primarily affects Gulf-dependent routes. Some trade rerouting benefits alternative routes.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "New Zealand key bilateral relationships broadly unchanged this week. Global focus on Gulf conflict reduces attention on other bilateral dynamics.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "New Zealand political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
     }
   },
   "metadata": {
     "active_flags": [],
-    "update_count": 56,
+    "update_count": 90,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "New Zealand has no significant country-specific events this week. Geographic distance from conflict zones provides insulation. As an agricultural exporter, NZ benefits modestly from elevated global commodity prices. Energy import dependency creates a modest headwind from oil price surge. NZD under modest risk-off depreciation pressure.",
+    "generated_at": "2026-03-10T06:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "GDP growth at 1.3% (declining), inflation at 2.9% (rising). Energy independence index at 0.700. The economy remains broadly stable with no major disruptions this week.",
     "key_changes_this_week": [
-      "No significant domestic events; monitoring global risk environment",
-      "Agricultural export prices elevated on global supply disruption",
-      "Energy import costs rising modestly",
-      "NZD under risk-off depreciation pressure"
+      "Gdp Real Growth %: declining",
+      "Inflation Cpi %: rising"
     ],
-    "outlook": "New Zealand's geographic insulation is a structural positive in this environment. RBNZ rate path is the primary domestic policy variable.",
-    "investor_implications": "NZGBs offer investment-grade fixed income. NZD has modest downside risk from risk-off flows. Agricultural sector equity provides commodity tailwind."
+    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
+    "investor_implications": "Market accessibility score of 0.850 supports capital flows. New Zealand investment risk stable. Monitor for second-order effects from global energy crisis.",
+    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
   },
   "code": "NZL",
   "name": "New Zealand",
@@ -368,11 +477,12 @@
     "relations": {},
     "derived": {
       "resource_self_sufficiency_index": 0.8,
-      "energy_independence_index": 0.8,
-      "supply_chain_chokepoint_exposure": 0.216,
-      "composite_national_power_index": 51.3,
+      "energy_independence_index": 0.7,
+      "supply_chain_chokepoint_exposure": 0.252,
+      "composite_national_power_index": 35.8,
       "political_risk_premium_bps": 0,
-      "market_accessibility_score": 0.617
+      "market_accessibility_score": 0.85,
+      "overall_investment_risk_score": 0.123
     }
   },
   "economy": {
@@ -431,7 +541,22 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
-    }
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 96.1638,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": 51.22
   },
   "institutions": {
     "under_international_sanctions": {
@@ -484,46 +609,46 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": 1.69,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.687783,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": 1.36,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.35857,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_government_effectiveness": {
-      "value": 1.53,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.529977,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": 1.91,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.910228,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": 1.71,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.705708,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": 2.08,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 2.084095,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "fragile_states_index": {
       "value": 15.9,

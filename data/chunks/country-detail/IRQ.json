@@ -3,64 +3,80 @@
   "country_name": "Iraq",
   "tier": 2,
   "region": "middle_east",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-10T00:00:00Z",
+  "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 279641257615.385,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
-      "value": 0.5,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": -1.54525198318304,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "strong_decrease",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Iraq caught between US operations and Iranian influence. Kurdish invasion of Iran from Iraqi Kurdistan threatens sovereignty. Oil exports via Hormuz disrupted. Internal security deteriorating.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 6073.61032342708,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
       "value": 1.5,
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Iraq facing import cost pressure from disrupted supply chains. Energy subsidies buffer consumers but fiscal cost rising. Food import costs increasing as Gulf shipping disrupted.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 15.485,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
-      "value": 2.99,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 2.99186896502489,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Iraq current account deteriorating as Hormuz disruption blocks energy exports. High oil/gas prices cannot be monetized. Import costs rising. SWF drawdowns support consumption.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 100690954781.588,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "govt_debt_pct_gdp": {
       "value": 53.1,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Iraq debt ratio rising as revenue drops from export disruption while spending (defense, subsidies) increases. SWF drawdowns buffer but deplete reserves.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 3.6,
@@ -77,41 +93,84 @@
       "run_id": "2026-W10"
     },
     "total_exports_usd": {
-      "value": 111195200000,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 104886427209.692,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "total_imports_usd": {
-      "value": 104517100000,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 92844392287.5385,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
+    },
+    "fdi_inflows_usd": {
+      "value": -7648900000,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Iraq FDI declining as Gulf conflict creates uncertainty. International investors reassessing regional risk. Vision 2030-type diversification plans delayed.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 665966378219.474,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 29.8,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -6.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 1309.309,
+      "confidence": 0.8,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Iraq currency pegged to USD. Peg under pressure from fiscal strain but central bank defending. FX reserves adequate for now.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     }
   },
   "demographic": {
     "population_total": {
       "value": 46042015,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "population_growth_pct": {
-      "value": 2.125,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 2.12476784890538,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 72.324,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "hdi": {
       "value": 0.695,
@@ -126,6 +185,34 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 41.533,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 84.0588635813164,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 5.53275251,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 69.8861494108913,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
     }
   },
   "political": {},
@@ -170,82 +257,139 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": null,
+      "trend": "growth",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Iraq increasing defense spending in response to Gulf conflict. Regional arms race accelerating. SIPRI data shows Middle East arms imports up despite recent decline.",
+      "trend_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.8,
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
     }
   },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.65,
+      "value": 0.55,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 1.0,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.92,
-      "confidence": 0.82,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "value": 0.791,
+      "confidence": 0.7,
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez closure",
-      "change_note": "Basra crude (4mbpd) exits via Hormuz. Closure is existential for Iraqi oil revenues.",
-      "previous_value": 0.463
+      "run_id": "2026-W11",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
     "composite_national_power_index": {
-      "value": 28.9,
+      "value": 33.6,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 30.4
     },
     "political_risk_premium_bps": {
-      "value": 1525,
+      "value": 1609,
       "confidence": 0.75,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
-      "change_note": "Basra oil exports completely blocked by Hormuz closure; Iranian militia threat. +100bps from 1425.",
-      "previous_value": 1425
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.208,
+      "value": 0.2,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.446,
+      "confidence": 0.7,
+      "last_updated": "2026-03-10T16:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Iraq investment risk elevated significantly. Hormuz disruption blocks primary economic activity. SWF reserves buffer but not indefinitely. Conflict duration is key uncertainty.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
+    "trade_openness_trend": {
+      "value": "decrease",
+      "confidence": 0.82,
+      "reasoning": "Iraq trade openness collapsing as Hormuz disruption blocks maritime trade. Both exports and imports severely disrupted. Overland routes insufficient to replace sea trade.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Iraq relationship health with key partners declining as Gulf conflict strains alliances. US unable to provide Hormuz escorts. Regional cooperation tested.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "decrease",
+      "confidence": 0.78,
+      "reasoning": "Iraq political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
     }
   },
   "metadata": {
-    "active_flags": [],
-    "update_count": 53,
+    "active_flags": [
+      {
+        "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
+        "value": -1.54525198318304,
+        "reason": "Absolute change 2.0453 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 0.5 vs primary -1.54525198318304 (409.1% diff); Event context: IRQ has active event triggers",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 88,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "Iraq faces direct collateral exposure from the Iran conflict: as a country with close Iranian political and military ties, US strikes targeting Iran-linked assets create spillover risk. Iraq's oil export infrastructure — centered on Basra terminals — is adjacent to the Hormuz closure zone. Basra Heavy crude exports may face shipping disruption even if terminals remain operational. No specific domestic events this week beyond conflict adjacency monitoring.",
+    "generated_at": "2026-03-10T06:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations. GDP growth at -1.5% (declining sharply), inflation at 1.5% (rising). Supply chain chokepoint exposure is critically elevated at 0.791 amid the Strait of Hormuz crisis. Political risk premium stands at 1609 bps, signaling elevated sovereign risk. Investment risk score at 0.446, trending declining.",
     "key_changes_this_week": [
-      "Iran conflict creating spillover risk for Iraq given Iran-linked political/military ties",
-      "Basra terminal oil exports affected by Hormuz closure shipping disruption",
-      "PMF (Iran-linked militias) activity monitoring; potential for US strikes on Iraqi soil",
-      "IQD at 1,310/USD; CBi intervention maintaining stability"
+      "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations",
+      "Iraq: Political risk premium at 1609 bps",
+      "Iraq: GDP growth in sharp decline",
+      "Iraq: Extreme chokepoint exposure at 0.791 amid Hormuz crisis",
+      "Gdp Real Growth %: declining sharply",
+      "Inflation Cpi %: rising",
+      "Political Stability: declining",
+      "Overall Investment Risk Score: declining"
     ],
-    "outlook": "Iraq's political-military relationship with Iran creates significant tail risk from continued US military operations. Oil export disruption is an economic blow despite high prices.",
-    "investor_implications": "Iraq sovereign exposure is highly speculative. Oil sector investment requires geopolitical risk premium significantly above pre-crisis levels."
+    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Political stability is declining, adding to investor uncertainty.",
+    "investor_implications": "Extreme supply chain chokepoint exposure (0.791) creates acute risk for trade-dependent sectors. High energy independence (1.000) provides a buffer against the oil price shock. Elevated political risk premium (1609 bps) suggests caution on sovereign exposure.",
+    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
   },
   "code": "IRQ",
   "name": "Iraq",
@@ -358,12 +502,13 @@
     },
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.65,
+      "resource_self_sufficiency_index": 0.55,
       "energy_independence_index": 1.0,
-      "supply_chain_chokepoint_exposure": 0.92,
-      "composite_national_power_index": 28.9,
-      "political_risk_premium_bps": 1525,
-      "market_accessibility_score": 0.208
+      "supply_chain_chokepoint_exposure": 0.791,
+      "composite_national_power_index": 33.6,
+      "political_risk_premium_bps": 1609,
+      "market_accessibility_score": 0.2,
+      "overall_investment_risk_score": 0.446
     }
   },
   "economy": {
@@ -422,7 +567,22 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
-    }
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 81.7291,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": 70.71
   },
   "institutions": {
     "under_international_sanctions": {
@@ -475,46 +635,46 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": -0.96,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": -0.958919,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": -2.41,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": -2.413098,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_government_effectiveness": {
-      "value": -1.39,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": -1.389606,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": -1.44,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": -1.438327,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": -1.69,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": -1.693167,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": -1.32,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": -1.321038,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "fragile_states_index": {
       "value": 88.6,

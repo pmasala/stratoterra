@@ -3,64 +3,80 @@
   "country_name": "Netherlands",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-10T00:00:00Z",
+  "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 1214927698572.66,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
-      "value": 1.4,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.08100584845663,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Netherlands facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 67520.4218956281,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
-      "value": 2.9,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 3.34754304219953,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Netherlands facing inflation uptick from oil shock feeding through energy, transport, and goods prices. EU admitted 'nuclear blunder' on energy policy. ECB faces stagflation dilemma ahead of March policy meeting.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "unemployment_rate_pct": {
-      "value": 3.8,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 3.874,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
-      "value": 9.13,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 9.12996820020418,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Netherlands current account deteriorating from higher oil import costs at $116/bbl.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 79129152086.1887,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "govt_debt_pct_gdp": {
-      "value": 44,
+      "value": 44.0,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Netherlands debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 1.2,
@@ -84,11 +100,15 @@
       "run_id": "2026-W10b"
     },
     "exchange_rate_vs_usd": {
-      "value": 0.8552,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 0.8633,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "EUR under mild pressure from European market crash and energy import costs. USD safe-haven demand dominant. ECB policy response key variable.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 2.79,
@@ -98,18 +118,18 @@
       "run_id": "2026-W10b"
     },
     "total_exports_usd": {
-      "value": 1001165679502.9,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1001469281569.53,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "total_imports_usd": {
-      "value": 867338796091.25,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 867461920494.531,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "inflation_forecast_2026_pct": {
       "value": 2.4,
@@ -117,29 +137,61 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "fdi_inflows_usd": {
+      "value": -17058018836.8683,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Netherlands FDI broadly stable with mild downward pressure from global uncertainty. Gulf conflict creating risk-off sentiment across emerging markets.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 1550563902321.65,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 25.7,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -2.1,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
     "population_total": {
       "value": 17993485,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "population_growth_pct": {
-      "value": 0.649,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.648823280021657,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 81.9146341463415,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "hdi": {
       "value": 0.955,
@@ -154,6 +206,27 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 67.248,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 10.00551128,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 95.6396517079336,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
     }
   },
   "political": {},
@@ -215,57 +288,105 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": null,
+      "trend": "growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Netherlands defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% \u2014 Europe now top recipient region.",
+      "trend_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.82,
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
     }
   },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.5,
+      "value": 0.35,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
-      "value": 0.6,
+      "value": 0.55,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.385,
+      "value": 0.458,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W11",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
     "composite_national_power_index": {
-      "value": 65.1,
+      "value": 49.2,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 43.9
     },
     "political_risk_premium_bps": {
       "value": 0,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "confidence": 0.75,
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.62,
+      "value": 0.9,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.082,
+      "confidence": 0.7,
+      "last_updated": "2026-03-10T16:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Netherlands investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Netherlands trade openness broadly stable. Global trade disruption from Hormuz primarily affects Gulf-dependent routes. Some trade rerouting benefits alternative routes.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Netherlands key bilateral relationships broadly unchanged this week. Global focus on Gulf conflict reduces attention on other bilateral dynamics.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.65,
+      "reasoning": "Netherlands political stability broadly maintained. European-wide stress from oil shock and market crash creates background pressure but institutions holding.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
     }
   },
   "metadata": {
@@ -279,23 +400,23 @@
         "run_id": "2026-W10"
       }
     ],
-    "update_count": 64,
+    "update_count": 99,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-04T18:30:00Z",
-    "run_id": "2026-W10",
-    "executive_summary": "The Netherlands faces moderate headwinds from the oil shock and global trade contraction given its open, trade-dependent economy. ASML and semiconductor supply chain implications from China-Japan rare earth tensions add uncertainty. NATO 2% defense spending met. No significant domestic changes this week.",
+    "generated_at": "2026-03-10T06:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "GDP growth at 1.1% (declining), inflation at 3.3% (rising). Investment risk score at 0.082, trending declining.",
     "key_changes_this_week": [
-      "Trade-dependent economy exposed to global trade contraction",
-      "ASML faces uncertainty from China-Japan rare earth tensions",
-      "NATO 2% defense spending target met"
+      "Gdp Real Growth %: declining",
+      "Inflation Cpi %: rising",
+      "Overall Investment Risk Score: declining"
     ],
-    "outlook": "Netherlands' open economy is sensitive to global trade dynamics. ASML strategic importance provides investment anchor. Defense spending growth structural.",
-    "investor_implications": "ASML remains strategic semiconductor holding. Trade-dependent sectors face headwinds. Dutch bonds offer quality within eurozone.",
-    "data_quality_note": "Data reliable."
+    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
+    "investor_implications": "Market accessibility score of 0.900 supports capital flows. Netherlands investment risk modestly elevated. European-wide energy and market stress weighing.",
+    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
   },
   "code": "NLD",
   "name": "Netherlands",
@@ -412,12 +533,13 @@
     },
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.5,
-      "energy_independence_index": 0.6,
-      "supply_chain_chokepoint_exposure": 0.385,
-      "composite_national_power_index": 65.1,
+      "resource_self_sufficiency_index": 0.35,
+      "energy_independence_index": 0.55,
+      "supply_chain_chokepoint_exposure": 0.458,
+      "composite_national_power_index": 49.2,
       "political_risk_premium_bps": 0,
-      "market_accessibility_score": 0.62
+      "market_accessibility_score": 0.9,
+      "overall_investment_risk_score": 0.082
     }
   },
   "economy": {
@@ -483,7 +605,22 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
-    }
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 97.0068,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": 153.83
   },
   "institutions": {
     "under_international_sanctions": {
@@ -536,46 +673,46 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": 1.56,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.556264,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": 0.66,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.658282,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_government_effectiveness": {
-      "value": 1.63,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.625532,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": 1.79,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.790966,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": 1.64,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.642504,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": 1.87,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.8671,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "head_of_state_name": {
       "value": "Willem-Alexander",

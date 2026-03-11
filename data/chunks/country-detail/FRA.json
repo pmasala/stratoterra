@@ -3,64 +3,80 @@
   "country_name": "France",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-10T00:00:00Z",
+  "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 3160442622465.08,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
-      "value": 0.7,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.19046798275883,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "France facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 46103.0840855884,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
-      "value": 1.1,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.99904942291463,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "France facing inflation uptick from oil shock feeding through energy, transport, and goods prices. EU admitted 'nuclear blunder' on energy policy. ECB faces stagflation dilemma ahead of March policy meeting.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "unemployment_rate_pct": {
-      "value": 7.6,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 7.542,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
-      "value": 0.09,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.0851279883251641,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "France current account deteriorating from higher oil import costs at $116/bbl.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 282857002813.825,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "govt_debt_pct_gdp": {
       "value": 116.5,
       "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "France debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 0.9,
@@ -84,18 +100,22 @@
       "run_id": "2026-W10b"
     },
     "exchange_rate_vs_usd": {
-      "value": 0.8552,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 0.8633,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "EUR under mild pressure from European market crash and energy import costs. USD safe-haven demand dominant. ECB policy response key variable.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 3.35,
-      "confidence": 0.98,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 3.6,
+      "confidence": 0.55,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W11"
     },
     "equity_index_level": {
       "value": 8231,
@@ -105,18 +125,18 @@
       "run_id": "2026-W10b"
     },
     "total_exports_usd": {
-      "value": 1070899771966.57,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1071066237472.11,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "total_imports_usd": {
-      "value": 1074721184782.63,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1081453951068.75,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "inflation_forecast_2026_pct": {
       "value": 1.5,
@@ -131,29 +151,61 @@
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10b"
+    },
+    "fdi_inflows_usd": {
+      "value": 52052548617.7634,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "France FDI broadly stable with mild downward pressure from global uncertainty. Gulf conflict creating risk-off sentiment across emerging markets.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 4288380142651.84,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 31.8,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -5.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
     "population_total": {
       "value": 68551653,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "population_growth_pct": {
       "value": 0.261995241898747,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T00:00:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 82.9292682926829,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "hdi": {
       "value": 0.92,
@@ -168,6 +220,27 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 55.346,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 11.53530598,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 78.7999750964116,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
     }
   },
   "political": {},
@@ -191,7 +264,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "France defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% \u2014 Europe now top recipient region.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "active_military_personnel": {
       "value": 264000,
@@ -259,57 +336,106 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "arms_exports_global_share": {
+      "value": {
+        "share_pct": 9.8,
+        "period": "2021-2025",
+        "volume_change": "+21%",
+        "rank": 2
+      },
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
     }
   },
   "trade": {},
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.65,
+      "value": 0.45,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 0.55,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.211,
+      "value": 0.286,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W11",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
     "composite_national_power_index": {
-      "value": 68.3,
+      "value": 58.3,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 51.8
     },
     "political_risk_premium_bps": {
-      "value": 20,
-      "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "value": 39,
+      "confidence": 0.75,
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.73,
+      "value": 0.85,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.181,
+      "confidence": 0.7,
+      "last_updated": "2026-03-10T16:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "France investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "France trade openness broadly stable. Global trade disruption from Hormuz primarily affects Gulf-dependent routes. Some trade rerouting benefits alternative routes.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "France key bilateral relationships broadly unchanged this week. Global focus on Gulf conflict reduces attention on other bilateral dynamics.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.65,
+      "reasoning": "France political stability broadly maintained. European-wide stress from oil shock and market crash creates background pressure but institutions holding.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
     }
   },
   "metadata": {
@@ -323,24 +449,25 @@
         "run_id": "2026-W10"
       }
     ],
-    "update_count": 69,
+    "update_count": 106,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "France's CAC 40 fell 1.95% as the oil price shock and Iran crisis risk-off sentiment hit European markets. Defense Minister Lecornu led a cabinet reshuffle that signals continued defense-forward posture from the Macron government. The EU-US trade deal framework is threatened by US Section 122 tariffs, creating export market uncertainty for French luxury goods, aerospace, and agriculture. European defense spending increase, with France as a leading contributor, provides a domestic demand offset.",
+    "generated_at": "2026-03-10T06:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "G7 finance ministers signal coordinated SPR release amid oil crisis. GDP growth at 1.2% (declining), inflation at 2.0% (rising). Investment risk score at 0.181, trending declining.",
     "key_changes_this_week": [
-      "CAC 40 fell 1.95% on Iran crisis risk-off and oil shock",
-      "Cabinet reshuffle led by Defense Minister Lecornu; defense posture reinforced",
-      "EU-US trade deal threatened by Section 122 tariff regime",
-      "Defense spending increasing as part of European 12.6% surge",
-      "Energy shock from dual chokepoint closure adding to inflation pressure"
+      "G7 finance ministers signal coordinated SPR release amid oil crisis",
+      "Hezbollah escalates war \u2014 Macron vows to protect Lebanon from conflict spillover",
+      "Gdp Real Growth %: declining",
+      "Inflation Cpi %: rising",
+      "Overall Investment Risk Score: declining"
     ],
-    "outlook": "France's economic outlook is mixed: defense spending provides a structural growth driver, but energy price shock and trade uncertainty weigh on consumer and business confidence. ECB decisions will be the primary macro policy anchor.",
-    "investor_implications": "CAC 40 exposure should be tilted toward defense (Thales, Dassault) and away from luxury goods exporters facing US tariff headwinds. OAT spreads over Bunds remain manageable."
+    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
+    "investor_implications": "Market accessibility score of 0.850 supports capital flows. France investment risk modestly elevated. European-wide energy and market stress weighing.",
+    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
   },
   "code": "FRA",
   "name": "France",
@@ -399,7 +526,7 @@
       "gdp_growth_forecast_2026_pct": 0.9,
       "inflation_forecast_2026_pct": 1.5,
       "exchange_rate_vs_usd": 0.8552,
-      "sovereign_bond_yield_10yr_pct": 3.35,
+      "sovereign_bond_yield_10yr_pct": 3.6,
       "equity_index_level": 8231,
       "top_export_partners": [
         {
@@ -461,12 +588,13 @@
     },
     "relations": {},
     "derived": {
-      "resource_self_sufficiency_index": 0.65,
+      "resource_self_sufficiency_index": 0.45,
       "energy_independence_index": 0.55,
-      "supply_chain_chokepoint_exposure": 0.211,
-      "composite_national_power_index": 68.3,
-      "political_risk_premium_bps": 20,
-      "market_accessibility_score": 0.73
+      "supply_chain_chokepoint_exposure": 0.286,
+      "composite_national_power_index": 58.3,
+      "political_risk_premium_bps": 39,
+      "market_accessibility_score": 0.85,
+      "overall_investment_risk_score": 0.181
     }
   },
   "economy": {
@@ -532,7 +660,22 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
-    }
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 88.6538,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": 68.11
   },
   "institutions": {
     "under_international_sanctions": {
@@ -585,46 +728,46 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": 1.15,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.154601,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": 0.34,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.343698,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_government_effectiveness": {
-      "value": 1.14,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.144626,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": 1.15,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.153505,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": 1.18,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.180571,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": 1.18,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.184822,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "head_of_state_name": {
       "value": "Emmanuel Macron",

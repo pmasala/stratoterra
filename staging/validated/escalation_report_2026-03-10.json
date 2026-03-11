@@ -1,0 +1,115 @@
+{
+  "report_date": "2026-03-10",
+  "run_id": "2026-W11",
+  "total_escalations": 6,
+  "escalations": [
+    {
+      "update_id": "upd_0700",
+      "country_code": "RUS",
+      "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
+      "new_value": 4.34437475491529,
+      "previous_value": 0.6,
+      "change_pct": 3.7444,
+      "confidence": 0.95,
+      "source_agent": "agent_01",
+      "checks_passed": [
+        "plausibility",
+        "magnitude_anomalous",
+        "consistency_alt_disagree"
+      ],
+      "checks_failed": [],
+      "notes": "Absolute change 3.7444 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 0.6 vs primary 4.34437475491529 (624.1% diff); GDP growth swing > 3pp: 0.6 \u2192 4.34437475491529",
+      "verdict": "ESCALATE"
+    },
+    {
+      "update_id": "upd_0796",
+      "country_code": "ARG",
+      "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
+      "new_value": -1.34293072157739,
+      "previous_value": 4.5,
+      "change_pct": -5.8429,
+      "confidence": 0.95,
+      "source_agent": "agent_01",
+      "checks_passed": [
+        "plausibility",
+        "magnitude_anomalous",
+        "consistency_alt_disagree"
+      ],
+      "checks_failed": [],
+      "notes": "Absolute change 5.8429 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 4.5 vs primary -1.34293072157739 (129.8% diff); GDP growth swing > 3pp: 4.5 \u2192 -1.34293072157739",
+      "verdict": "ESCALATE"
+    },
+    {
+      "update_id": "upd_0804",
+      "country_code": "IRL",
+      "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
+      "new_value": 2.59946721553708,
+      "previous_value": 9.1,
+      "change_pct": -6.5005,
+      "confidence": 0.95,
+      "source_agent": "agent_01",
+      "checks_passed": [
+        "plausibility",
+        "magnitude_anomalous",
+        "consistency_alt_disagree"
+      ],
+      "checks_failed": [],
+      "notes": "Absolute change 6.5005 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 9.1 vs primary 2.59946721553708 (71.4% diff); GDP growth swing > 3pp: 9.1 \u2192 2.59946721553708",
+      "verdict": "ESCALATE"
+    },
+    {
+      "update_id": "upd_0805",
+      "country_code": "IRN",
+      "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
+      "new_value": 3.66312056830718,
+      "previous_value": 0.6,
+      "change_pct": 3.0631,
+      "confidence": 0.95,
+      "source_agent": "agent_01",
+      "checks_passed": [
+        "plausibility",
+        "magnitude_anomalous",
+        "consistency_alt_disagree"
+      ],
+      "checks_failed": [],
+      "notes": "Absolute change 3.0631 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 0.6 vs primary 3.66312056830718 (510.5% diff); GDP growth swing > 3pp: 0.6 \u2192 3.66312056830718",
+      "verdict": "ESCALATE"
+    },
+    {
+      "update_id": "upd_0808",
+      "country_code": "KWT",
+      "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
+      "new_value": -2.56011099967517,
+      "previous_value": 2.6,
+      "change_pct": -5.1601,
+      "confidence": 0.95,
+      "source_agent": "agent_01",
+      "checks_passed": [
+        "plausibility",
+        "magnitude_anomalous",
+        "consistency_alt_disagree"
+      ],
+      "checks_failed": [],
+      "notes": "Absolute change 5.1601 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 2.6 vs primary -2.56011099967517 (198.5% diff); GDP growth swing > 3pp: 2.6 \u2192 -2.56011099967517",
+      "verdict": "ESCALATE"
+    },
+    {
+      "update_id": "upd_0898",
+      "country_code": "LBY",
+      "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
+      "new_value": 1.89995052025442,
+      "previous_value": 15.6,
+      "change_pct": -13.7,
+      "confidence": 0.95,
+      "source_agent": "agent_01",
+      "checks_passed": [
+        "plausibility",
+        "magnitude_anomalous",
+        "consistency_alt_disagree"
+      ],
+      "checks_failed": [],
+      "notes": "Absolute change 13.7000 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 15.6 vs primary 1.89995052025442 (87.8% diff); GDP growth swing > 3pp: 15.6 \u2192 1.89995052025442",
+      "verdict": "ESCALATE"
+    }
+  ]
+}

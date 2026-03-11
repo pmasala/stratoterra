@@ -1,232 +1,103 @@
 {
-  "run_id": "2026-W10",
-  "started_at": "2026-03-04T16:40:51Z",
-  "status": "completed_no_commit",
-  "current_date": "2026-03-04",
+  "run_id": "2026-W11",
+  "started_at": "2026-03-10T22:09:40Z",
+  "status": "completed",
+  "current_date": "2026-03-10",
   "project_root": "/home/pietro/stratoterra",
   "cache_context": {
     "weekly_due": true,
     "monthly_due": false,
     "quarterly_due": false,
-    "annual_sources_due": [],
+    "annual_sources_due": [
+      "sipri.arms_transfers"
+    ],
     "static_triggers": [],
-    "notes": "Weekly-only run. Event triggers from Iran crisis forced refresh of select factors in agents 04/05/06."
+    "notes": "SIPRI Arms Transfers 2026 released March 9. All other annual/quarterly/monthly sources not due."
   },
   "agents": [
     {
       "agent_id": "agent_01",
-      "name": "Official Statistics Gatherer",
+      "name": "official_stats_gatherer",
       "status": "completed",
-      "started_at": "2026-03-04T16:41:00Z",
-      "completed_at": "2026-03-04T16:42:00Z",
-      "records_processed": 0,
-      "errors": 0,
-      "warnings": 0,
-      "output_files": [
-        "staging/raw_collected/official_stats_2026-03-04.json"
-      ],
-      "cache_decisions": [
-        "all blocks skipped — monthly/quarterly/annual all cached"
-      ],
-      "notes": "No weekly-frequency data for this agent. Full cache skip."
+      "records_produced": 2963,
+      "notes": "Pre-fetched WB (1960) + IMF WEO (1003). 75 countries, ~28 indicators/country."
     },
     {
       "agent_id": "agent_02",
-      "name": "Financial Data Gatherer",
+      "name": "financial_data_gatherer",
       "status": "completed",
-      "started_at": "2026-03-04T16:42:00Z",
-      "completed_at": "2026-03-04T16:55:00Z",
-      "records_processed": 73,
-      "errors": 0,
-      "warnings": 7,
-      "output_files": [
-        "staging/raw_collected/financial_data_2026-03-04.json"
-      ],
-      "cache_decisions": [
-        "all weekly — always fetched"
-      ],
-      "notes": "41 exchange rates, 10 bond yields, 11 equity indices, 11 commodities. 7 volatility flags. Key: KOSPI -12.1%, Brent +36% YTD, Gold $5413. Missing: EGP, NGN, VNM, BDT, UAH exchange rates; JSE/TSX indices."
+      "records_produced": 108,
+      "notes": "74 FX rates (fresh), 10 bonds, 11 equities, 11 commodities, 2 CB decisions. Bond/equity/commodity data carried from W10."
     },
     {
       "agent_id": "agent_03",
-      "name": "News & Events Gatherer",
+      "name": "news_events_gatherer",
       "status": "completed",
-      "started_at": "2026-03-04T16:55:00Z",
-      "completed_at": "2026-03-04T17:15:00Z",
-      "records_processed": 20,
-      "errors": 0,
-      "warnings": 0,
-      "output_files": [
-        "staging/raw_collected/news_events_2026-03-04.json"
-      ],
-      "cache_decisions": [
-        "all weekly — always fetched"
-      ],
-      "notes": "20 events: 3 transformative, 10 major, 5 moderate, 2 minor. 5 event triggers generated. Dominated by US-Israeli war on Iran, Strait of Hormuz closure, SCOTUS tariff ruling."
+      "records_produced": 89,
+      "notes": "89 events, 11 event_triggers. Dominant: US-Iran war, Hormuz closure, G7 SPR release."
     },
     {
       "agent_id": "agent_04",
-      "name": "Trade & Sanctions Gatherer",
+      "name": "trade_sanctions_gatherer",
       "status": "completed",
-      "started_at": "2026-03-04T17:15:00Z",
-      "completed_at": "2026-03-04T17:22:00Z",
-      "records_processed": 6,
-      "errors": 0,
-      "warnings": 0,
-      "output_files": [
-        "staging/raw_collected/trade_sanctions_2026-03-04.json"
-      ],
-      "cache_decisions": [
-        "Part A skipped (quarterly cached)",
-        "Part B fetched",
-        "3 event overrides: IRN sanctions, RWA sanctions, CHN-JPN trade"
-      ],
-      "notes": "6 event records. Major: Hormuz closure, Iran sanctions, Rwanda sanctions, SCOTUS tariff ruling, US-China tariff escalation, China rare earth ban on Japan."
+      "records_produced": 23,
+      "notes": "Part A skipped (cached). 23 event records: 12 sanctions, 5 chokepoint, 3 tariff, 1 WTO, 1 trade agreement."
     },
     {
       "agent_id": "agent_05",
-      "name": "Military & Conflict Gatherer",
+      "name": "military_conflict_gatherer",
       "status": "completed",
-      "started_at": "2026-03-04T17:22:00Z",
-      "completed_at": "2026-03-04T17:30:00Z",
-      "records_processed": 7,
-      "errors": 0,
-      "warnings": 0,
-      "output_files": [
-        "staging/raw_collected/military_conflict_2026-03-04.json"
-      ],
-      "cache_decisions": [
-        "Part A skipped (annual cached)",
-        "Part B fetched",
-        "1 event override: IRN war crisis"
-      ],
-      "notes": "7 event records. Transformative: US-Israel-Iran war. Major: Hezbollah-Israel, Ukraine-Russia, DRC-Rwanda. Minuteman III test, NATO 2% milestone, defense contracts."
+      "records_produced": 32,
+      "notes": "SIPRI Arms Transfers 2026 extracted (12 structured). 20 events: 7 conflict, 2 arms deals, 5 exercises, 3 nuclear, 3 cyber."
     },
     {
       "agent_id": "agent_06",
-      "name": "Political & Regulatory Gatherer",
+      "name": "political_regulatory_gatherer",
       "status": "completed",
-      "started_at": "2026-03-04T17:30:00Z",
-      "completed_at": "2026-03-04T17:38:00Z",
-      "records_processed": 9,
-      "errors": 0,
-      "warnings": 0,
-      "output_files": [
-        "staging/raw_collected/political_regulatory_2026-03-04.json"
-      ],
-      "cache_decisions": [
-        "all annual indices skipped (cached)",
-        "weekly leadership fetched",
-        "1 event override: IRN leadership change"
-      ],
-      "notes": "9 records (4 structured, 5 events). Iran leadership vacuum is dominant. Japan Takaichi supermajority. US primaries. SCOTUS tariff ruling. South Africa budget."
+      "records_produced": 457,
+      "notes": "444 WGI structured from pre-fetched data (74 countries × 6 indicators). 13 weekly political events."
     },
     {
-      "agent_id": "agent_09",
-      "name": "Data Integrator",
+      "agent_id": "agent_07",
+      "name": "fact_extractor",
       "status": "completed",
-      "started_at": "2026-03-04T17:00:12Z",
-      "completed_at": "2026-03-04T17:00:12Z",
-      "countries_updated": 29,
-      "factors_integrated": 50,
-      "global_factors_integrated": 7,
-      "flags_added": 5,
-      "errors": 0,
-      "error_details": null,
-      "notes": "Integrated 50 country + 7 global updates across 29 countries. 5 flags."
+      "records_produced": 2812,
+      "notes": "2656 factor updates + 145 event signals + 11 event triggers mapped to schema."
     },
     {
-      "agent_id": "agent_11",
-      "name": "Derived Metrics Calculator",
+      "agent_id": "agent_08",
+      "name": "cross_validator",
       "status": "completed",
-      "started_at": "2026-03-04T17:10:00Z",
-      "completed_at": "2026-03-04T17:12:00Z",
-      "countries_updated": 18,
-      "metrics_recalculated": 28,
-      "rankings_regenerated": true,
-      "errors": 0,
-      "error_details": null,
-      "output_files": [
-        "data/global/global_rankings.json"
-      ],
-      "notes": "Incremental update focused on Iran crisis impact. Updated derived metrics for 18 countries: IRN (PRP 3800->5200, CNPI 35->33), ISR (PRP 800->1100, SCCE 0.40->0.55), KOR (PRP 60->120, SCCE 0.82->0.88), SAU (PRP 405->550, SCCE 0.92->0.95), ARE (PRP 385->500), KWT (PRP 395->600), QAT (PRP 385->500), OMN (PRP 575->700), IRQ (PRP 1525->1800), JPN (PRP 30->55, SCCE 0.78->0.85), IND (PRP 200->250, SCCE 0.36->0.50), CHN (PRP 180->220, SCCE 0.62->0.70), USA (PRP 50->75), EGY (SCCE 0.85->0.90), JOR (PRP 500->600), TUR (PRP 550->600), PAK (PRP 1925->2050), SGP (SCCE 0.97->0.98). Regenerated all 6 ranking categories across 75 countries."
+      "records_produced": 2656,
+      "notes": "2656 validated: 2328 ACCEPT, 244 ACCEPT_WITH_NOTE, 77 FLAG, 1 REJECT (IRQ inflation -12.3% vs IMF 1.5%), 6 ESCALATE (GDP swings >3pp: RUS, ARG, IRL, IRN, KWT, LBY). 145 event signals + 11 event triggers passed through."
     },
     {
-      "agent_id": "agent_12",
-      "name": "Alert Generator",
+      "agent_id": "agent_16",
+      "name": "archive_commit_preparer",
       "status": "completed",
-      "started_at": "2026-03-04T18:00:00Z",
-      "completed_at": "2026-03-04T18:05:00Z",
-      "alerts_updated": 68,
-      "alerts_escalated": 4,
-      "alerts_new": 7,
-      "total_active_alerts": 75,
-      "severity_breakdown": {
-        "critical": 19,
-        "warning": 28,
-        "watch": 28,
-        "resolved": 1
-      },
-      "events_added": 7,
-      "total_events": 23,
-      "errors": 0,
-      "error_details": null,
-      "output_files": [
-        "data/indices/alert_index.json",
-        "data/global/event_feed.json"
-      ],
-      "notes": "Incremental update. Escalated: IRN alert_001 (PRP 5200, head of state VACANT), IRN alert_002 (economic freefall), IRN alert_013 (inflation -> critical), KOR alert_022 (KOSPI -12.1% -> warning). New critical: IRN leadership vacancy. New warnings: KOR KOSPI crash, global commodity crisis, USA tariff/inflation. New watches: JPN rare earth ban, DEU market stress, CHN tariff escalation. All existing alerts updated with current timestamps."
-    },
-    {
-      "agent_id": "agent_13",
-      "name": "Country Profile Synthesizer",
-      "status": "completed",
-      "started_at": "2026-03-04T18:25:00Z",
-      "completed_at": "2026-03-04T18:35:00Z",
-      "countries_updated": 57,
-      "countries_skipped": 2,
-      "skipped_details": "LBN (no data file), BEL (no data file)",
-      "errors": 0,
-      "error_details": null,
-      "output_files": [],
-      "notes": "Generated investor-focused narratives for all 55 Tier 1+2 countries (57 files updated including additional Tier 2). HIGH priority (14 countries): full narratives with 5-6 key changes -- IRN, ISR, USA, KOR, JPN, SAU, ARE, CHN, DEU, GBR, RUS, UKR, PAK, LBN(skipped). MEDIUM priority (18 countries): 3-4 sentence summaries. LOW priority (22 countries): 2-3 sentence summaries. Key themes: Iran war Day 5 and Hormuz closure dominate all narratives; KOSPI -12.1% crash; SCOTUS tariff ruling; China rare earth ban on Japan; NATO 2% milestone; South Africa infrastructure plan. Beneficiaries highlighted: NOR, BRA, KAZ, AZE, AUS, GRC. All narratives tagged ai_generated=true with run_id 2026-W10."
-    },
-    {
-      "agent_id": "agent_14",
-      "name": "Weekly Briefing Generator",
-      "status": "completed",
-      "started_at": "2026-03-04T19:25:00Z",
-      "completed_at": "2026-03-04T19:30:00Z",
-      "errors": 0,
-      "error_details": null,
-      "output_files": [
-        "data/global/weekly_briefing_2026-03-04.json"
-      ],
-      "notes": "Generated weekly briefing 2026-W10. 5 top stories (2 transformative, 3 major). 10 regional summaries. 10 notable market moves. 8 watchlist updates (5 deteriorated, 3 improved). Headline: Iran war Day 5, Hormuz closure, KOSPI -12.1% record crash, Gold $5413 record. All content tagged ai_generated=true."
-    },
-    {
-      "agent_id": "agent_15",
-      "name": "Data Quality Reporter",
-      "status": "completed",
-      "started_at": "2026-03-04T19:40:00Z",
-      "completed_at": "2026-03-04T19:45:00Z",
-      "errors": 0,
-      "error_details": null,
-      "output_files": [
-        "data/metadata/quality_report_2026-03-04.json"
-      ],
-      "notes": "Quality report generated. 244 tests: 211 passed, 2 failed, 31 skipped. Failures: Agent 01 empty records (expected for weekly-only run), alert #71 null country_code (schema issue). Verdict: CONDITIONAL_GO. Coverage meets tier thresholds. Zero REJECT verdicts. Zero agent errors. 2 non-blocking issues identified."
-    },
-    {
-      "agent_id": "agent_17b",
-      "name": "Autonomous Auditor (Quality Audit)",
-      "status": "completed",
-      "started_at": "2026-03-04T20:00:00Z",
-      "completed_at": "2026-03-04T20:00:00Z",
-      "decision": "GO",
-      "notes": "All quality metrics meet GO thresholds. 213/213 tests pass. Zero agent failures. Pipeline output safe for commit."
+      "started_at": "2026-03-11T05:17:57Z",
+      "completed_at": "2026-03-11T05:17:57Z",
+      "notes": "Archive snapshot created. 75 country summaries, 75 country detail chunks, 556 total chunk files."
     }
   ],
-  "completed_at": "2026-03-04T20:00:00Z",
-  "notes": "Pipeline completed successfully. Commit/push skipped per user request."
+  "agent_09": {
+    "status": "SUCCESS",
+    "started_at": "2026-03-11T04:43:21Z",
+    "completed_at": "2026-03-11T04:43:21Z",
+    "countries_updated": 75,
+    "factors_updated": 2640,
+    "flags_added": 77,
+    "global_updates": 13,
+    "rejected": 1
+  },
+  "agent_16": {
+    "status": "SUCCESS",
+    "started_at": "2026-03-11T05:17:57Z",
+    "completed_at": "2026-03-11T05:17:57Z",
+    "archive_path": "archive/2026-W11/",
+    "summary_countries": 75,
+    "detail_countries": 75,
+    "total_chunk_files": 556
+  },
+  "completed_at": "2026-03-11T05:17:57Z"
 }

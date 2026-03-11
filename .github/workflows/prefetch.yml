@@ -1,0 +1,67 @@
+name: Weekly Data Pre-Fetch
+
+on:
+  schedule:
+    # Run every Sunday at 06:00 UTC (before the weekly pipeline)
+    - cron: '0 6 * * 0'
+  workflow_dispatch:
+    inputs:
+      sources:
+        description: 'Specific sources to fetch (comma-separated, or "all")'
+        required: false
+        default: 'all'
+
+permissions:
+  contents: write
+
+jobs:
+  prefetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r agents/prefetch/requirements.txt
+
+      - name: Run pre-fetch scripts
+        env:
+          ACLED_API_KEY: ${{ secrets.ACLED_API_KEY }}
+          ACLED_EMAIL: ${{ secrets.ACLED_EMAIL }}
+          EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+          EXCHANGERATE_API_KEY: ${{ secrets.EXCHANGERATE_API_KEY }}
+          COMTRADE_API_KEY: ${{ secrets.COMTRADE_API_KEY }}
+        run: |
+          if [ "${{ github.event.inputs.sources }}" = "all" ] || [ -z "${{ github.event.inputs.sources }}" ]; then
+            python -m agents.prefetch.run_all -v
+          else
+            IFS=',' read -ra SOURCES <<< "${{ github.event.inputs.sources }}"
+            python -m agents.prefetch.run_all -v "${SOURCES[@]}"
+          fi
+
+      - name: Commit prefetched data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add staging/prefetched/
+          git add staging/prefetch_cache/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: weekly data pre-fetch $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Upload summary as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prefetch-summary
+          path: staging/prefetched/_summary.json
+          retention-days: 30

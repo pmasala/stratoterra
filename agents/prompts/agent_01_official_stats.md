@@ -13,20 +13,57 @@ international sources for all 75 tracked countries.
 - `/agents/config/cache_registry.json` — cache state from previous runs
 - `/agents/config/factor_frequency_registry.json` — frequency classification
 - `/agents/config/release_calendar.json` — known source publication dates
+- `/staging/prefetched/worldbank.json` — **PRE-FETCHED** World Bank data (all indicators, all countries)
+- `/staging/prefetched/imf_weo.json` — **PRE-FETCHED** IMF WEO forecasts (all indicators, all countries)
+- `/staging/prefetched/eia.json` — **PRE-FETCHED** EIA energy data (if available)
 
 ## Outputs
 - `/staging/raw_collected/official_stats_{DATE}.json`
 
 ## Tools
 
-- **WebSearch** — Use to discover current values (e.g., `WebSearch("World Bank GDP USA 2025")`)
-- **WebFetch** — Use to extract data from specific pages (e.g., Trading Economics country pages)
-- **Bash** with `curl` — Use for structured JSON APIs:
-  - World Bank: `curl "https://api.worldbank.org/v2/country/{ISO2}/indicator/{ID}?format=json&date=2024:2025"`
-  - IMF WEO: `curl "https://www.imf.org/external/datamapper/api/v1/{indicator}/{ISO3}"`
-- **Read** / **Write** — Read input files, write output JSON
+- **Read** / **Write** — Read pre-fetched data and input files, write output JSON
+- **WebSearch** — Use ONLY for gap-filling data not found in pre-fetched files
+- **WebFetch** — Use ONLY when WebSearch points to a specific page for gap-fill data
 
-No API keys are required. All sources are public.
+**Do NOT call any APIs directly (no `curl`, no `WebFetch` to API endpoints).** All structured API data has been pre-fetched by Python scripts into `/staging/prefetched/`. Your job is to read, validate, map to factor paths, and gap-fill.
+
+---
+
+## PRE-FETCHED DATA (read these first)
+
+The following files contain structured data already fetched from APIs by deterministic Python scripts. **Read these files before doing anything else.**
+
+### `/staging/prefetched/worldbank.json`
+Contains ~1,900 records covering 74 countries across 27 indicators:
+- GDP group: `gdp_nominal_usd`, `gdp_per_capita_usd`, `gdp_growth_pct`, `gdp_ppp_usd`
+- Fiscal: `govt_debt_pct_gdp`, `current_account_pct_gdp`, `reserves_total_usd`, `fdi_net_inflows_usd`
+- Trade: `exports_usd`, `imports_usd`
+- Labor: `inflation_cpi_pct`, `unemployment_pct`, `labor_force_participation_pct`
+- Demographics: `population`, `population_growth_pct`, `life_expectancy`, `urban_population_pct`
+- Development: `gini_index`, `literacy_rate_pct`, `health_expenditure_pct_gdp`
+- Infrastructure: `electricity_access_pct`, `internet_users_pct`
+- WGI (6 indicators): `wgi_voice_accountability`, `wgi_political_stability`, `wgi_govt_effectiveness`, `wgi_regulatory_quality`, `wgi_rule_of_law`, `wgi_control_of_corruption`
+
+Each record has: `country_code`, `indicator_id`, `indicator_name`, `value`, `year`, `source`.
+
+### `/staging/prefetched/imf_weo.json`
+Contains ~1,000 records with IMF WEO forecasts:
+- `gdp_nominal_usd_bn`, `gdp_real_growth_pct`, `inflation_avg_pct`, `unemployment_rate_pct`
+- `fiscal_balance_pct_gdp`, `current_account_pct_gdp`, `govt_expenditure_pct_gdp`, `gross_debt_pct_gdp`
+
+Records include `is_forecast: true` for future years — use these for trend estimates.
+
+### `/staging/prefetched/eia.json` (if available)
+Contains energy production/consumption data: oil, gas, coal, electricity by country.
+
+### Gap-Fill Strategy
+
+After reading pre-fetched data, identify countries or indicators with missing values. Run `WebSearch` queries **only** for these gaps. Expect gaps mainly for:
+- Taiwan (TWN) — not in World Bank data
+- Recently revised indicators
+- Tier 3 countries with sparse coverage
+- Indicators not covered by the pre-fetch scripts (e.g., HDI, economic complexity, central bank policy rates)
 
 ---
 
@@ -80,36 +117,50 @@ This agent's data is split across multiple frequency tiers. On a typical week, y
 3. Log your cache decisions in a `cache_decisions` array (see cache_check.md for format).
 4. **Skip any block that is not due.** Proceed only with due blocks.
 
-### Step 1: Load Country List
-Read `country_list.json`. Organize countries into Tier 1 (30), Tier 2 (25), Tier 3 (20).
+### Step 1: Load Pre-Fetched Data + Country List
+1. Read `country_list.json`. Organize countries into Tier 1 (30), Tier 2 (25), Tier 3 (20).
+2. Read `/staging/prefetched/worldbank.json` — this contains ~1,900 records already fetched from the World Bank API.
+3. Read `/staging/prefetched/imf_weo.json` — this contains ~1,000 records already fetched from the IMF WEO API.
+4. Read `/staging/prefetched/eia.json` if it exists — contains energy production/consumption data.
+5. Index the pre-fetched data by `country_code` + `indicator_name` for fast lookup.
 
-### Step 2: Collect Due Data — Tier 1 & 2 Countries
-For each country, collect ONLY the indicators in frequency blocks that are due this run.
+### Step 2: Map Pre-Fetched Data to Factor Paths
+For each due frequency block, extract relevant records from the pre-fetched data and map them to the output format:
 
-**If MONTHLY block is due:**
-- Inflation rate CPI % (latest available)
-- Unemployment rate %
-- Central bank policy rate %
+**Mapping from pre-fetched `indicator_name` → `factor_path`:**
+- `gdp_nominal_usd` → `macroeconomic.gdp_nominal_usd`
+- `gdp_per_capita_usd` → `macroeconomic.gdp_per_capita_usd`
+- `gdp_growth_pct` → `macroeconomic.gdp_real_growth_rate_pct` (cross-check with IMF `gdp_real_growth_pct`)
+- `gdp_ppp_usd` → `macroeconomic.gdp_ppp_usd`
+- `inflation_cpi_pct` → `macroeconomic.inflation_rate_cpi_pct`
+- `unemployment_pct` → `macroeconomic.unemployment_rate_pct`
+- `govt_debt_pct_gdp` → `macroeconomic.public_debt_pct_gdp`
+- `current_account_pct_gdp` → `macroeconomic.current_account_balance_pct_gdp`
+- `reserves_total_usd` → `macroeconomic.foreign_exchange_reserves_usd`
+- `fdi_net_inflows_usd` → `macroeconomic.fdi_inflows_usd`
+- `exports_usd` → `macroeconomic.total_exports_usd`
+- `imports_usd` → `macroeconomic.total_imports_usd`
+- `population` → `demographics.population_total`
+- `population_growth_pct` → `demographics.population_growth_rate_pct`
+- `life_expectancy` → `demographics.life_expectancy_years`
+- `urban_population_pct` → `demographics.urban_population_pct`
+- `gini_index` → `demographics.gini_index`
+- `wgi_*` → `institutions.political.wgi_*` (6 WGI indicators)
 
-**If QUARTERLY block is due:**
-- GDP nominal USD (search: "World Bank GDP {country} 2025" or IMF WEO)
-- GDP real growth rate % (IMF forecast)
-- GDP per capita USD
-- Government debt % of GDP
-- Current account balance % of GDP
-- Total exports USD and total imports USD
-- Foreign exchange reserves USD
+For IMF WEO forecast data (`is_forecast: true`), include it with a note indicating it's a forecast.
 
-**If ANNUAL block is due (specific source has new release):**
-- Demographics: Population total, population growth rate %, median age, life expectancy, HDI
-- Governance: WGI indicators (6 scores)
-- Other annual indicators as listed above
+Set `confidence: 0.95` for World Bank data, `confidence: 0.90` for IMF WEO data.
 
-**If NO blocks are due:** Log that all data is cached and skip to Step 5.
-
-### Step 3: Collect Tier 3 Countries
-Collect only due-frequency indicators: GDP, population, inflation rate, political stability score.
-Minimal coverage is acceptable for Tier 3.
+### Step 3: Gap-Fill via WebSearch (only for missing data)
+After mapping pre-fetched data, identify gaps:
+1. **Taiwan (TWN)** — always missing from World Bank. Search: `WebSearch("Taiwan GDP population inflation 2025")`
+2. **Central bank policy rates** — not in pre-fetched data. Use a consolidated search:
+   ```
+   WebSearch("central bank interest rates by country 2026 complete table")
+   ```
+3. **HDI, economic complexity, innovation index** — not in pre-fetched data. Individual searches only if annual block is due.
+4. **Any Tier 1 or Tier 2 country with <4 indicators** from pre-fetched data — run targeted `WebSearch`.
+5. Minimal coverage gap-fill for Tier 3 countries.
 
 ### Step 4: Format Each Data Point
 ```json
@@ -165,7 +216,7 @@ Minimal coverage is acceptable for Tier 3.
 - Target: at least 12 indicators per Tier 1, 8 per Tier 2, 4 per Tier 3 (for due blocks only)
 
 ## Time Budget
-- **Typical week (no blocks due):** 2-5 minutes (cache check + logging only)
-- **Month boundary (monthly block due):** 8-12 minutes
-- **Quarter boundary (quarterly block due):** 15-20 minutes
-- **Annual release week:** 20-30 minutes (full fetch for that source)
+- **Typical week (no blocks due):** 1-2 minutes (cache check + read pre-fetched + logging)
+- **Month boundary (monthly block due):** 3-5 minutes (read pre-fetched + map + gap fill)
+- **Quarter boundary (quarterly block due):** 4-7 minutes (read pre-fetched + map + gap fill)
+- **Annual release week:** 5-10 minutes (read pre-fetched + map + additional WebSearch gap fill)

@@ -14,17 +14,49 @@ Agent ID: `agent_05` | Phase: 1 (GATHER) | Run ID: {RUN_ID}
 - `/agents/config/factor_frequency_registry.json` — frequency classification
 - `/agents/config/release_calendar.json` — known source publication dates
 - `/staging/raw_collected/news_events_{DATE}.json` — for event_triggers (from Agent 3)
+- `/staging/prefetched/acled.json` — **PRE-FETCHED** ACLED conflict event data (if available)
 
 ## Outputs
 - `/staging/raw_collected/military_conflict_{DATE}.json`
 
 ## Tools
 
-- **WebSearch** — Use for discovering current data and military/conflict news
-- **WebFetch** — Use for SIPRI, Global Firepower, ACLED, and other public data pages
-- **Read** / **Write** — Read input files, write output JSON
+- **Read** / **Write** — Read pre-fetched data and input files, write output JSON
+- **WebSearch** — Use for SIPRI, Global Firepower, military news, and gap-filling conflict data
+- **WebFetch** — Use for SIPRI and Global Firepower data pages
 
-No API keys are required.
+**Do NOT call the ACLED API directly (no `curl` to `api.acleddata.com`).** ACLED data has been pre-fetched into `/staging/prefetched/acled.json` if an API key was configured. Read that file first. SIPRI and Global Firepower still require WebSearch/WebFetch (no structured API).
+
+---
+
+## PRE-FETCHED DATA (read first)
+
+### `/staging/prefetched/acled.json` (if available)
+Contains conflict events from the past 10 days, filtered to tracked countries:
+Each record: `{event_id, event_date, event_type, sub_event_type, country_code, country, admin1, location, lat, lon, source, fatalities, actor1, actor2, notes}`
+
+The `summary` section contains:
+- `total_events`, `countries_with_events`, `total_fatalities`
+- `by_country` — event counts per country
+- `by_event_type` — event counts per type (Battles, Explosions/Remote violence, Violence against civilians, Protests, Riots, Strategic developments)
+
+### How to use ACLED pre-fetched data
+1. Read the file. If `records` is empty (no ACLED key configured), fall back to WebSearch.
+2. Group events by `country_code` to assess active conflict status.
+3. Use `fatalities` and `event_type` to gauge escalation/de-escalation trends.
+4. Cross-reference with country data to identify new or changed conflicts.
+
+### SIPRI, Global Firepower — NOT pre-fetched
+These require WebSearch/WebFetch because they don't offer structured JSON APIs:
+- SIPRI military expenditure: annual table via WebSearch
+- SIPRI arms transfers: annual table via WebSearch
+- Global Firepower: rankings page via WebSearch + WebFetch
+
+### Gap-Fill Strategy
+After reading pre-fetched ACLED data, run `WebSearch` only for:
+- Conflicts not well-covered by ACLED
+- Military news, arms deals, exercises (not in ACLED)
+- SIPRI and Global Firepower structured data (Part A, when due)
 
 ---
 
@@ -79,20 +111,29 @@ Collect per-country military factor values. These become `DIRECT_UPDATE` records
 ### Step A1: Load Country List
 Read `country_list.json`. Collect structured data for all Tier 1 (30) and Tier 2 (25) countries.
 
-### Step A2: Military Expenditure (SIPRI)
-For each Tier 1 & 2 country:
-- Search: `"SIPRI military expenditure {country} 2024 2025 billion"` or `"{country} defense budget 2025 USD"`
-- Search: `"{country} military spending percent GDP 2025"`
+### Step A2: Military Expenditure (SIPRI — Batch-First)
+1. **SIPRI full table fetch:**
+   ```
+   WebSearch("SIPRI military expenditure database 2025 all countries table")
+   ```
+   `WebFetch` the SIPRI MILEX results page to extract spending for all countries at once.
+2. Also try: `WebSearch("SIPRI military spending top 40 countries 2025 billion USD")`
+3. Parse the table to get USD values and % of GDP for all Tier 1+2 countries.
+4. **Gap-fill:** Individual searches only for countries missing from the SIPRI table.
 
 Collect:
 - **Military expenditure USD** → `factor_path: "military.military_expenditure_usd"`
 - **Military expenditure % of GDP** → `factor_path: "military.military_expenditure_pct_gdp"`
 - **Military expenditure trend** → `factor_path: "military.military_expenditure_trend"`
 
-### Step A3: Personnel & Equipment (Global Firepower)
-For each Tier 1 & 2 country:
-- Search: `"globalfirepower {country} military strength 2025"` or `"{country} active military personnel total"`
-- WebFetch the Global Firepower country page if available
+### Step A3: Personnel & Equipment (Global Firepower — Batch-First)
+1. **Global Firepower rankings page:**
+   ```
+   WebSearch("global firepower 2026 country rankings complete list")
+   ```
+   `WebFetch` the rankings page — it contains personnel counts, equipment totals, and overall power index for 140+ countries.
+2. Parse data for all Tier 1+2 countries from the single page.
+3. **Gap-fill:** `WebFetch` individual country pages only for missing data points.
 
 Collect:
 - **Active military personnel** → `factor_path: "military.active_military_personnel"`
@@ -125,9 +166,13 @@ Known nuclear states: USA, RUS, CHN, FRA, GBR, IND, PAK, ISR (undeclared), PRK.
 Nuclear sharing: DEU, BEL, ITA, NLD, TUR.
 All others: non_nuclear (unless changed).
 
-### Step A6: Arms Transfers
-For major arms-trading countries (top 20 exporters/importers):
-- Search: `"SIPRI arms transfers {country} 2024 2025"` or `"{country} arms exports imports billion"`
+### Step A6: Arms Transfers (Batch-First)
+1. **SIPRI arms transfers table:**
+   ```
+   WebSearch("SIPRI arms transfers database 2025 top exporters importers table")
+   ```
+   `WebFetch` the SIPRI arms transfers page to get top 20 exporters and importers in one table.
+2. **Gap-fill:** Individual searches only for specific bilateral flows not in the table.
 
 Collect:
 - **Arms exports annual USD** → `factor_path: "military.arms_exports_usd_annual"`
@@ -174,10 +219,15 @@ Search: "defense contract military equipment 2026"
 Search: "nuclear threat missile test ballistic 2026"
 Search: "nuclear program development update 2026"
 
-### Step B4: Active Conflict Updates
-For each country currently flagged with `active_conflicts` in `/data/countries/`:
-Search: "{country_name} conflict update this week"
-Record: escalation/deescalation status, casualty trend, territorial changes.
+### Step B4: Active Conflict Updates (Pre-Fetched ACLED + Gap-Fill)
+1. Read `/staging/prefetched/acled.json`. If the file has records:
+   - Filter to countries flagged with `active_conflicts` in `/data/countries/`.
+   - Group by country. Summarize: event count this week, fatalities, dominant event types.
+   - Compare to previous week's data to assess escalation/de-escalation.
+2. If the file is empty or missing, fall back to WebSearch:
+   `WebSearch("armed conflict update this week {MONTH} {YEAR}")`
+3. **Gap-fill:** For conflicts not well-covered by ACLED, search: `"{country_name} conflict update this week"`
+4. Record: escalation/deescalation status, casualty trend, territorial changes.
 
 ### Step B5: Cyber Operations
 Search: "state cyber attack attributed 2026 this week"
@@ -236,6 +286,6 @@ Full output file structure:
 - Target: at least 8 structured indicators per Tier 1, 5 per Tier 2
 
 ## Time Budget
-- **Typical week (Part A cached):** ~13 minutes (Part B only)
-- **Annual release week (e.g., SIPRI April):** ~25 minutes (Part A + Part B)
+- **Typical week (Part A cached):** ~5 minutes (read pre-fetched ACLED + Part B WebSearches)
+- **Annual release week (e.g., SIPRI April):** ~12 minutes (SIPRI/GFP WebSearch + read pre-fetched ACLED + Part B)
 - Prioritize active conflicts and high-severity events.

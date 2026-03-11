@@ -13,19 +13,53 @@ Agent ID: `agent_06` | Phase: 1 (GATHER) | Run ID: {RUN_ID}
 - `/agents/config/factor_frequency_registry.json` — frequency classification
 - `/agents/config/release_calendar.json` — known source publication dates
 - `/staging/raw_collected/news_events_{DATE}.json` — for event_triggers (from Agent 3)
+- `/staging/prefetched/worldbank.json` — **PRE-FETCHED** World Bank data (includes WGI indicators)
 
 ## Outputs
 - `/staging/raw_collected/political_regulatory_{DATE}.json`
 
 ## Tools
 
-- **WebSearch** — Use for discovering current governance data and political news
+- **Read** / **Write** — Read pre-fetched data and input files, write output JSON
+- **WebSearch** — Use for governance indices (Freedom House, EIU, CPI, RSF, FSI), leadership, and political news
 - **WebFetch** — Use for institutional pages (Freedom House, Transparency International, EIU, RSF, Election Guide)
-- **Bash** with `curl` — Use for World Bank WGI API:
-  `curl "https://api.worldbank.org/v2/country/{ISO2}/indicator/{WGI_ID}?format=json&date=2023:2025"`
-- **Read** / **Write** — Read input files, write output JSON
 
-No API keys are required.
+**Do NOT call the World Bank WGI API directly (no `curl` to `api.worldbank.org`).** WGI data has been pre-fetched into `/staging/prefetched/worldbank.json`. Read that file and filter for WGI indicators.
+
+Governance indices (Freedom House, EIU, CPI, RSF, FSI) still require WebSearch/WebFetch because they are published as HTML pages, not via structured APIs.
+
+---
+
+## PRE-FETCHED DATA (read first)
+
+### `/staging/prefetched/worldbank.json` — WGI subset
+The pre-fetched World Bank data includes all 6 WGI indicators for all tracked countries:
+- `wgi_voice_accountability` (indicator_id: VA.EST)
+- `wgi_political_stability` (indicator_id: PS.EST)
+- `wgi_govt_effectiveness` (indicator_id: GE.EST)
+- `wgi_regulatory_quality` (indicator_id: RQ.EST)
+- `wgi_rule_of_law` (indicator_id: RL.EST)
+- `wgi_control_of_corruption` (indicator_id: CC.EST)
+
+Filter the `records` array for records where `indicator_name` starts with `wgi_`.
+
+### Governance Index Tables — NOT pre-fetched (use WebSearch when due)
+These indices are published as HTML rankings pages, not structured APIs:
+1. **Freedom House** — `WebSearch` + `WebFetch` when due
+2. **EIU Democracy Index** — `WebSearch` + `WebFetch` when due
+3. **Transparency International CPI** — `WebSearch` + `WebFetch` when due
+4. **RSF Press Freedom** — `WebSearch` + `WebFetch` when due
+5. **Fragile States Index** — `WebSearch` + `WebFetch` when due
+
+### Leadership — NOT pre-fetched (use WebSearch weekly)
+```
+WebSearch("world leaders heads of state 2026 complete list")
+WebSearch("upcoming national elections 2026 2027 calendar")
+```
+`WebFetch` a world leaders directory page. Individual lookups only for countries with recent changes (flagged by Agent 3 event triggers).
+
+### Gap-Fill Strategy
+After reading pre-fetched WGI data and WebSearch table fetches, run individual `WebSearch` only for countries/indicators missing from results.
 
 ---
 
@@ -77,46 +111,66 @@ Read `event_triggers` from Agent 3's output. If any trigger affects governance f
 
 **Only fetch indices whose source has a new release or an event trigger requires it.**
 
-#### Step A2: Democracy Index (EIU) — if `eiu.democracy_index` is due
-For each Tier 1 & 2 country:
-- Search: `"EIU Democracy Index {country} 2025 score"` or `"Economist Intelligence Unit democracy index {country}"`
+#### Step A2: Democracy Index (EIU) — if `eiu.democracy_index` is due (Batch-First)
+1. **Full table fetch:**
+   ```
+   WebSearch("EIU democracy index 2026 full rankings all countries")
+   ```
+   `WebFetch` the EIU rankings page to extract scores for all countries at once.
+2. Parse scores for all Tier 1+2 countries from the table.
+3. **Gap-fill:** Individual searches only for countries missing from the table.
 
 Collect:
 - **Democracy Index score (0-10)** → `factor_path: "institutions.democracy_index"`
 - **Regime type** → `factor_path: "institutions.regime_type"`
   Derive from score: >=8.0 = `full_democracy`, 6.0-7.9 = `flawed_democracy`, 4.0-5.9 = `hybrid_regime`, <4.0 = `authoritarian`
 
-#### Step A3: Freedom House Scores — if `freedom_house` is due
-For each Tier 1 & 2 country:
-- Search: `"Freedom House {country} 2025 freedom score"` or `"Freedom in the World {country} 2025"`
+#### Step A3: Freedom House Scores — if `freedom_house` is due (Batch-First)
+1. **Full table fetch:**
+   ```
+   WebSearch("Freedom House freedom in the world 2026 scores all countries table")
+   ```
+   `WebFetch` the Freedom House data page for the complete score table.
+2. Parse status and scores for all Tier 1+2 countries.
+3. **Gap-fill:** Individual searches only for missing countries.
 
 Collect:
 - **Freedom House status** → `factor_path: "institutions.freedom_house_status"`
   Values: `free | partly_free | not_free`
 - **Freedom House aggregate score (0-100)** → `factor_path: "institutions.freedom_house_score"`
 
-#### Step A4: Corruption Perceptions Index — if `transparency_intl.cpi` is due
-For each Tier 1 & 2 country:
-- Search: `"Transparency International CPI {country} 2025 score"` or `"corruption perceptions index {country} 2025"`
+#### Step A4: Corruption Perceptions Index — if `transparency_intl.cpi` is due (Batch-First)
+1. **Full table fetch:**
+   ```
+   WebSearch("Transparency International CPI 2026 full table all countries")
+   ```
+   `WebFetch` the CPI results page for the complete country score table.
+2. Parse scores for all Tier 1+2 countries.
+3. **Gap-fill:** Individual searches only for missing countries.
 
 Collect:
 - **CPI score (0-100)** → `factor_path: "institutions.corruption_perception_index"`
 
-#### Step A5: Press Freedom — if `rsf.press_freedom` is due
-For each Tier 1 & 2 country:
-- Search: `"RSF press freedom index {country} 2025 rank"` or `"Reporters Without Borders {country} ranking"`
+#### Step A5: Press Freedom — if `rsf.press_freedom` is due (Batch-First)
+1. **Full table fetch:**
+   ```
+   WebSearch("RSF press freedom index 2026 full rankings")
+   ```
+   `WebFetch` the RSF rankings page.
+2. Parse ranks for all Tier 1+2 countries.
+3. **Gap-fill:** Individual searches only for missing countries.
 
 Collect:
 - **Press Freedom Index rank** → `factor_path: "institutions.press_freedom_index_rank"`
 
-#### Step A6: World Bank Governance Indicators — if `worldbank.wgi` is due
-For each Tier 1 & 2 country, use WebSearch or the World Bank API:
-- Search: `"World Bank governance indicators {country} 2024"` or `"WGI {country} political stability rule of law"`
-- API: `curl "https://api.worldbank.org/v2/country/{ISO2}/indicator/PV.EST?format=json&date=2022:2025"`
+#### Step A6: World Bank Governance Indicators — if `worldbank.wgi` is due (Pre-Fetched)
+1. Read `/staging/prefetched/worldbank.json`. Filter for records where `indicator_name` starts with `wgi_`.
+2. Map to tracked 75 countries. The pre-fetched data already contains the most recent year per country.
+3. **Gap-fill:** WebSearch only for countries with missing WGI data (expect very few — mainly TWN).
 
 WGI indicator IDs:
 - `VA.EST` → Voice and Accountability
-- `PS.EST` → Political Stability (also called `PV.EST`)
+- `PV.EST` → Political Stability and Absence of Violence
 - `GE.EST` → Government Effectiveness
 - `RQ.EST` → Regulatory Quality
 - `RL.EST` → Rule of Law
@@ -130,9 +184,14 @@ Collect (all scaled -2.5 to 2.5):
 - **Rule of Law** → `factor_path: "institutions.wgi_rule_of_law"`
 - **Control of Corruption** → `factor_path: "institutions.wgi_control_of_corruption"`
 
-#### Step A8: Fragile States Index — if `fund_for_peace.fsi` is due
-For Tier 2 & 3 countries (and any Tier 1 with FSI relevance):
-- Search: `"Fragile States Index {country} 2025 score"` or `"Fund for Peace fragile states {country}"`
+#### Step A8: Fragile States Index — if `fund_for_peace.fsi` is due (Batch-First)
+1. **Full table fetch:**
+   ```
+   WebSearch("fragile states index 2026 full rankings table")
+   ```
+   `WebFetch` the FSI rankings page.
+2. Parse scores for Tier 2 & 3 countries (and any Tier 1 with FSI relevance).
+3. **Gap-fill:** Individual searches only for missing countries.
 
 Collect:
 - **FSI score** → `factor_path: "institutions.fragile_states_index"`
@@ -142,10 +201,19 @@ Collect:
 #### Step A1: Load Country List
 Read `country_list.json`. Collect data for all Tier 1 (30) and Tier 2 (25) countries.
 
-#### Step A7: Current Leadership & Elections (WEEKLY — always run)
-For each Tier 1 & 2 country:
-- Search: `"{country} current head of state president prime minister 2026"`
-- Search: `"{country} next national election date"`
+#### Step A7: Current Leadership & Elections (WEEKLY — always run, Batch-First)
+1. **World leaders consolidated fetch:**
+   ```
+   WebSearch("world leaders heads of state 2026 complete list")
+   ```
+   `WebFetch` a world leaders directory page (e.g., CIA World Factbook leaders, Wikipedia list) to get all heads of state/government at once.
+2. **Elections calendar consolidated fetch:**
+   ```
+   WebSearch("upcoming national elections 2026 2027 calendar")
+   ```
+   `WebFetch` an election calendar page (e.g., Election Guide, IFES).
+3. Parse leadership and election data for all Tier 1+2 countries from the fetched pages.
+4. **Gap-fill:** Individual searches only for countries flagged by Agent 3 event triggers (leadership changes, coups) or missing from the consolidated lists.
 
 Collect:
 - **Head of state name** → `factor_path: "institutions.head_of_state_name"`
@@ -257,6 +325,6 @@ Full output file structure:
 - Target: at least 10 structured indicators per Tier 1, 6 per Tier 2
 
 ## Time Budget
-- **Typical week (annual indices cached):** ~12 minutes (weekly leadership + Part B only)
-- **Index release month (e.g., Feb for EIU + Freedom House):** ~25 minutes (due indices + Part B)
+- **Typical week (annual indices cached):** ~5 minutes (read pre-fetched WGI + leadership WebSearch + Part B)
+- **Index release month (e.g., Feb for EIU + Freedom House):** ~12 minutes (read pre-fetched WGI + governance index WebSearch + Part B)
 - Prioritize high investor_relevance items.

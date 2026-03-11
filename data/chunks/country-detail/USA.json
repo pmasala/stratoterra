@@ -3,64 +3,80 @@
   "country_name": "United States",
   "tier": 1,
   "region": "north_america",
-  "last_updated": "2026-03-03T22:50:00Z",
-  "run_id": "2026-W10b",
+  "last_updated": "2026-03-10T00:00:00Z",
+  "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 28750956130731.2,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
-      "value": 2,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 2.79300127716779,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "United States faces indirect headwinds from global oil shock but no direct exposure to Gulf conflict. GDP growth trajectory broadly unchanged from prior week.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 84534.0407841548,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
-      "value": 2.7,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 2.94952520485207,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "United States facing mild inflation pressure from global oil price surge to $116/bbl feeding through energy and transport costs.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "unemployment_rate_pct": {
-      "value": 4.2,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 4.198,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
-      "value": -4.12,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": -4.12262463415284,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "US current account roughly stable. Energy self-sufficiency buffers oil shock impact. Tariffs (15% Section 122) reduce imports. But war costs add to transfers. Safe-haven dollar inflows support.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "govt_debt_pct_gdp": {
-      "value": 125,
-      "confidence": 0.85,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 118.110809413059,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "US debt rising from war spending (Operation Epic Fury) plus potential $175B tariff refund liability from SCOTUS ruling. Defense supplementals likely. Higher rates increase debt service. No fiscal consolidation visible.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 910036546651.5,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 2.1,
@@ -78,38 +94,38 @@
     },
     "central_bank_policy_rate_pct": {
       "value": 3.625,
-      "confidence": 0.99,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "confidence": 0.8,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W11"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 4.11,
-      "confidence": 0.98,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 4.08,
+      "confidence": 0.6,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W11"
     },
     "equity_index_level": {
-      "value": 5825,
-      "confidence": 0.98,
-      "last_updated": "2026-03-03T22:30:00Z",
+      "value": 6873,
+      "confidence": 0.55,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W11"
     },
     "total_exports_usd": {
-      "value": 3232522000000,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 3193500000000,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "total_imports_usd": {
-      "value": 4136061000000,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 4103100000000,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "inflation_forecast_2026_pct": {
       "value": 2.4,
@@ -124,29 +140,61 @@
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10b"
+    },
+    "fdi_inflows_usd": {
+      "value": 297058000000,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "US FDI inflows broadly stable. War creating uncertainty but safe-haven status supports. SCOTUS tariff ruling creates trade policy uncertainty. Defense sector attracting investment.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 29184890000000.1,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 41.8,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -7.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
     "population_total": {
       "value": 340110988,
       "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "population_growth_pct": {
-      "value": 0.976,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.976421684505429,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 78.3853658536585,
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "hdi": {
       "value": 0.938,
@@ -161,6 +209,27 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 61.704,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 16.69414902,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 80.1247798047184,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
     }
   },
   "political": {},
@@ -191,7 +260,11 @@
       "confidence": 0.93,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "United States defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% \u2014 Europe now top recipient region.",
+      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "military_expenditure_trend": {
       "value": "growth",
@@ -270,6 +343,25 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "arms_exports_global_share": {
+      "value": {
+        "share_pct": 42,
+        "period": "2021-2025",
+        "previous_share_pct": 36,
+        "volume_change": "+27%",
+        "rank": 1,
+        "top_recipients_by_region": {
+          "europe": "38%",
+          "middle_east": "33%"
+        },
+        "total_recipient_states": 99,
+        "note": "First time European share exceeded Middle East. NATO European members: USA supplied 58% of their imports."
+      },
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
     }
   },
   "trade": {
@@ -283,78 +375,131 @@
   },
   "derived": {
     "resource_self_sufficiency_index": {
-      "value": 0.925,
+      "value": 0.92,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 1.0,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
-      "value": 0.13,
+      "value": 0.15,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness"
+      "run_id": "2026-W11",
+      "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
     "composite_national_power_index": {
-      "value": 98.3,
+      "value": 96.0,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 84.5
     },
     "political_risk_premium_bps": {
-      "value": 50,
+      "value": 42,
       "confidence": 0.75,
-      "last_updated": "2026-03-03T22:35:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10b",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
-      "change_note": "Section 122 tariff imposed (150-day clock); growing domestic unrest; SCOTUS IEEPA ruling. +50bps from 0.",
-      "previous_value": 0
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
-      "value": 0.902,
+      "value": 0.95,
       "confidence": 0.7,
-      "last_updated": "2026-03-02T14:00:00Z",
+      "last_updated": "2026-03-10T16:00:00Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W10",
+      "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.238,
+      "confidence": 0.7,
+      "last_updated": "2026-03-10T16:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "US investment risk rising but from a strong base. War costs, SCOTUS tariff crisis, recession warning signs, and bond market stress all add to risk. But US remains core allocation on institutional strength.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "United States trade openness broadly stable. Global trade disruption from Hormuz primarily affects Gulf-dependent routes. Some trade rerouting benefits alternative routes.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "exchange_rate_vs_usd": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "United States currency broadly stable against USD. No direct conflict exposure. Global risk-off sentiment creates mild depreciation pressure against safe-haven dollar.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.72,
+      "reasoning": "US bilateral relationships strained across multiple fronts. EU split on Iran war support. Trump trade tensions with Canada, China. Russia intelligence-sharing concerns. But G7 coordinating on SPR release shows cooperation.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "decrease",
+      "confidence": 0.8,
+      "reasoning": "US political stability declining. War with Iran has no clear endpoint. DHS Secretary fired. $175B tariff refund SCOTUS crisis. 5 recession warning signs identified. Midterm mood favoring Democrats. Rand Paul warns of 'disastrous' midterms.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
     }
   },
   "metadata": {
-    "active_flags": [],
-    "update_count": 71,
+    "active_flags": [
+      {
+        "factor_path": "economy.macroeconomic.public_debt_pct_gdp",
+        "value": 118.110809413059,
+        "reason": "Absolute change 6.8892 exceeds 3\u00d7 typical (2.0) = 6.0; Event context: USA has active event triggers",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 109,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-03T22:50:00Z",
-    "run_id": "2026-W10b",
-    "executive_summary": "The United States simultaneously launched the largest military operation since Iraq 2003 and navigated a domestic constitutional rupture. Operation Epic Fury struck 1,039 targets in Iran with US-Israeli forces; three US soldiers were killed in IRGC retaliatory strikes. The Supreme Court struck down IEEPA tariff authority 6-3, forcing a pivot to Section 122 with a 15% global tariff capped at 150 days. Markets sold off sharply (S&P -0.78%, Dow -2.1%), and recession probability rose to 40-50%. Nationwide 'No Kings' protests are planned for March 28, adding a domestic political dimension.",
+    "generated_at": "2026-03-10T06:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "US-Iran war enters second week \u2014 Pentagon reports 140 US troops injured in first 10 days. GDP growth at 2.8% (stable), inflation at 2.9% (rising). Investment risk score at 0.238, trending declining.",
     "key_changes_this_week": [
-      "Operation Epic Fury launched against Iran; 3 US soldiers KIA in IRGC retaliation (Feb 28-Mar 1, transformative)",
-      "SCOTUS struck down IEEPA tariff authority 6-3; Section 122 15% global tariff enacted for 150 days",
-      "Additional 20% cumulative China tariffs and 25% Canada/Mexico tariffs effective March 4",
-      "Recession probability surged from 25-30% to 40-50%; S&P posted largest monthly decline in a year",
-      "No Kings protests planned nationwide March 28; midterm primary season begun",
-      "Strait of Hormuz closure driving oil surge; stagflation risk elevated"
+      "US-Iran war enters second week \u2014 Pentagon reports 140 US troops injured in first 10 days",
+      "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations",
+      "Brent crude surges 25% to $116.50/bbl \u2014 gold hits $5,195.60 as markets roil",
+      "G7 finance ministers signal coordinated SPR release amid oil crisis",
+      "US Navy sinks IRIS Dena \u2014 Sri Lanka evacuates crew of second Iranian vessel",
+      "US steps up strikes as Trump offers mixed signals \u2014 boots on ground 'not ruled out'",
+      "Trump supports Kurdish invasion of Iran \u2014 US jets providing air cover",
+      "Companies sue for Trump tariff refunds after SCOTUS ruling \u2014 $175B windfall"
     ],
-    "outlook": "The US faces a potential stagflation scenario: the Hormuz oil shock pushes inflation higher while trade disruption and consumer confidence deterioration raise recession risk. The 150-day Section 122 tariff clock creates a policy cliff in July requiring legislative resolution. The March FOMC (17-18) is a critical inflection point; the Fed is trapped between containing energy-driven inflation and supporting a slowing economy.",
-    "investor_implications": "Defensive positioning is warranted: overweight Treasuries (10Y at 3.96% on flight-to-safety), gold ($5,155+), energy sector, and defense contractors (Lockheed, Raytheon, Northrop). Underweight consumer discretionary, airlines, and trade-exposed manufacturers. Monitor VIX at market open and March FOMC for rate path signals; the 150-day tariff cliff in July is the next major policy discontinuity.",
-    "data_quality_note": "US macro data is high confidence (0.85-0.95). Recession probability estimates are analyst consensus, not official forecasts. Market data reflects pre-week-open conditions and may shift materially."
+    "outlook": "GDP growth outlook is broadly stable. Inflation is rising, likely constraining monetary easing. Political stability is declining, adding to investor uncertainty.",
+    "investor_implications": "High energy independence (1.000) provides a buffer against the oil price shock. Market accessibility score of 0.950 supports capital flows. US investment risk rising but remains investable. Defensive positioning warranted: Treasuries, gold, defense, energy.",
+    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
   },
   "code": "USA",
   "name": "United States",
@@ -444,8 +589,8 @@
       "total_imports_usd": 4136061000000,
       "gdp_growth_forecast_2026_pct": 2.1,
       "inflation_forecast_2026_pct": 2.4,
-      "sovereign_bond_yield_10yr_pct": 4.11,
-      "equity_index_level": 5825,
+      "sovereign_bond_yield_10yr_pct": 4.08,
+      "equity_index_level": 6873,
       "top_export_partners": [
         {
           "country": "CAN",
@@ -515,12 +660,13 @@
       "fta_count": 14
     },
     "derived": {
-      "resource_self_sufficiency_index": 0.925,
+      "resource_self_sufficiency_index": 0.92,
       "energy_independence_index": 1.0,
-      "supply_chain_chokepoint_exposure": 0.13,
-      "composite_national_power_index": 98.3,
-      "political_risk_premium_bps": 50,
-      "market_accessibility_score": 0.902
+      "supply_chain_chokepoint_exposure": 0.15,
+      "composite_national_power_index": 96.0,
+      "political_risk_premium_bps": 42,
+      "market_accessibility_score": 0.95,
+      "overall_investment_risk_score": 0.238
     }
   },
   "economy": {
@@ -593,6 +739,20 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 93.1444,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
     }
   },
   "institutions": {
@@ -646,46 +806,46 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": 0.88,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.877519,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": 0.03,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 0.029425,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_government_effectiveness": {
-      "value": 1.22,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.217201,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": 1.39,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.393733,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": 1.33,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.327678,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": 1.12,
-      "confidence": 0.97,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": 1.123433,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "head_of_state_name": {
       "value": "Donald Trump",

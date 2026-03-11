@@ -1,0 +1,38 @@
+{
+  "run_timestamp": "2026-03-10T22:05:55.384104+00:00",
+  "total_elapsed_seconds": 51.5,
+  "fetchers_run": 4,
+  "total_records": 3595,
+  "total_errors": 2,
+  "fallbacks_used": 0,
+  "results": [
+    {
+      "source": "imf",
+      "records": 1003,
+      "errors": 0,
+      "fallback": false,
+      "elapsed": 2.4
+    },
+    {
+      "source": "fx_commodities",
+      "records": 25,
+      "errors": 1,
+      "fallback": false,
+      "elapsed": 3.6
+    },
+    {
+      "source": "worldbank",
+      "records": 1960,
+      "errors": 0,
+      "fallback": false,
+      "elapsed": 6.7
+    },
+    {
+      "source": "gdelt",
+      "records": 607,
+      "errors": 1,
+      "fallback": false,
+      "elapsed": 51.5
+    }
+  ]
+}

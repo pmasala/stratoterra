@@ -9,35 +9,73 @@ from the past 7 days. Extract structured, investor-relevant event records.
 
 ## Inputs
 - `/data/indices/country_list.json`
+- `/staging/prefetched/gdelt.json` — **PRE-FETCHED** GDELT event articles and geo data
 
 ## Outputs
 - `/staging/raw_collected/news_events_{DATE}.json`
 
 ## Tools
 
-- **WebSearch** — Primary tool for all news scanning queries
-- **WebFetch** — Use to fetch specific URLs (GDELT API, news article pages)
-- **Read** / **Write** — Read input files, write output JSON
+- **Read** / **Write** — Read pre-fetched GDELT data and input files, write output JSON
+- **WebSearch** — Use for thematic news searches and gap-filling regions not covered by GDELT
+- **WebFetch** — Use to fetch specific news article pages when deeper detail is needed
 
-No API keys are required. For paywalled sources (FT, WSJ, Bloomberg), use `WebSearch` to capture headlines and snippets rather than attempting to fetch full articles.
+**Do NOT call the GDELT API directly (no `WebFetch` to `api.gdeltproject.org`).** GDELT data has been pre-fetched into `/staging/prefetched/gdelt.json`. Read that file first.
+
+For paywalled sources (FT, WSJ, Bloomberg), use `WebSearch` to capture headlines and snippets rather than attempting to fetch full articles.
+
+---
+
+## PRE-FETCHED DATA (read first)
+
+### `/staging/prefetched/gdelt.json`
+Contains:
+- **~250 articles** from 5 thematic GDELT queries (top events, military/conflict, sanctions/trade, elections/governance, economic crises)
+  Each record: `{title, url, source, language, seendate, query_id}`
+- **Geo events** — geo-tagged conflict/cooperation events with coordinates
+  Each record: `{name, url, count, lat, lon}`
+
+The GDELT pre-fetch covers the past 7 days and is sorted by relevance.
+
+### How to use the pre-fetched GDELT data
+1. Read the `records` array — these are the top ~250 news articles.
+2. Categorize each article by country, region, and event type based on the `title` and `source` fields.
+3. The `query_id` tells you which thematic bucket each article came from: `top_events`, `military_conflict`, `sanctions_trade`, `elections_governance`, `economic_crisis`.
+4. Use the `geo_events` array for geographic context on conflict hotspots.
+
+### Gap-Fill Strategy
+After reading pre-fetched GDELT data, check regional coverage. Use WebSearch **only** for:
+- Regions with zero coverage in the GDELT data
+- Deeper detail on events classified as `major` or `transformative`
+- Very recent events (past 24-48h) that GDELT may not have indexed yet
+
+---
 
 ## Step-by-Step Instructions
 
-### Step 1: Scan GDELT
-Use `WebFetch` to fetch: `https://api.gdeltproject.org/api/v2/doc/doc?query=geopolitics&timespan=7d&mode=artlist&format=json`
-Also use `WebSearch` for "GDELT project significant events this week" for a summary.
+### Step 1: Read Pre-Fetched GDELT Data
+1. Read `/staging/prefetched/gdelt.json`.
+2. Parse the `records` array (~250 articles). For each article, classify:
+   - Countries involved (from headline/source analysis)
+   - Event type: `election`, `conflict`, `sanctions`, `trade_dispute`, `policy_change`, `protest`, `natural_disaster`, `diplomatic`, `economic_crisis`, `other`
+   - Severity: `minor`, `moderate`, `major`, `transformative`
+3. Parse the `geo_events` array for geographic conflict data.
+4. Build a coverage map: which regions/countries have events?
 
-### Step 2: Regional News Scans
-For each of these 10 regions, search for major developments:
-North America, Europe, East Asia, South Asia, Middle East, Africa,
-Latin America, Central Asia, Southeast Asia, Oceania
+### Step 2: Consolidated Thematic Searches (WebSearch gap-fill)
+Run 4 thematic searches to capture events not in the GDELT pre-fetch:
+1. `WebSearch("major geopolitical events this week {MONTH} {YEAR}")`
+2. `WebSearch("military conflicts developments this week {MONTH} {YEAR}")`
+3. `WebSearch("sanctions trade disputes this week {MONTH} {YEAR}")`
+4. `WebSearch("elections government changes this week {MONTH} {YEAR}")`
 
-Search queries per region:
-- "major geopolitical news this week {region}"
-- "economic policy change {region} this week"
-- "military development {region} this week"
-Also search globally: "sanctions news this week", "elections results this week",
-"trade disputes this week", "central bank decisions this week"
+Cross-reference with GDELT results. Add any events not already captured.
+
+### Step 2b: Regional Gap-Fill (only if needed)
+Check coverage by region: North America, Europe, East Asia, South Asia, Middle East, Africa, Latin America, Central Asia, Southeast Asia, Oceania.
+For any region with **zero events** from Steps 1-2, run a targeted search:
+- `WebSearch("major news this week {region} {MONTH} {YEAR}")`
+Expect most regions to be covered by the bulk queries — gap-fill should be rare.
 
 ### Step 3: For Each Significant Event, Extract a Structured Record
 ```json
@@ -139,4 +177,4 @@ Only generate triggers for events with certainty_level >= `multi_source` and sev
 - **Event triggers are critical** — downstream agents rely on them to override caching for stale data
 
 ## Time Budget
-Target: 30-45 minutes. This is the most LLM-intensive gathering agent.
+Target: 10-18 minutes (read pre-fetched GDELT + 4 thematic WebSearches + regional gap fill).
