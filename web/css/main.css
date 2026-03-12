@@ -1427,38 +1427,18 @@ a:hover { text-decoration: underline; }
   letter-spacing: 1px;
 }
 
-.alert-summary-bar {
-  display: flex;
-  gap: 12px;
+/* --- Alert Manga Hero --- */
+.alert-manga-hero {
   margin-bottom: 20px;
-}
-
-.alert-summary-count {
-  flex: 1;
-  padding: 16px;
-  background: var(--bg-card);
-  border: var(--border-card);
   border-radius: var(--radius-md);
-  text-align: center;
+  overflow: hidden;
 }
 
-.alert-summary-count__num {
+.alert-manga-hero svg {
+  width: 100%;
+  height: auto;
   display: block;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 28px;
-  font-weight: 700;
 }
-
-.alert-summary-count__label {
-  font-size: 10px;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.alert-summary-count--critical .alert-summary-count__num { color: var(--alert-critical); }
-.alert-summary-count--warning .alert-summary-count__num { color: var(--alert-warning); }
-.alert-summary-count--watch .alert-summary-count__num { color: var(--alert-watch); }
 
 .alert-filters {
   display: flex;

@@ -108,8 +108,17 @@
           var data = await DataLoader.getAlerts();
           var allAlerts = Array.isArray(data) ? data : (data.alerts || []);
 
+          // Keep only most recent day's alerts
+          var latest = '';
+          allAlerts.forEach(function(a) {
+            var d = (a.last_updated || a.first_triggered || '').slice(0, 10);
+            if (d > latest) latest = d;
+          });
+
           allAlerts.forEach(function(a, i) {
             if (a.status === 'resolved') return;
+            var d = (a.last_updated || a.first_triggered || '').slice(0, 10);
+            if (latest && d !== latest) return;
             a._globalIndex = i;
             if      (a.severity === 'critical') criticalQueue.push(a);
             else if (a.severity === 'warning')  warningQueue.push(a);

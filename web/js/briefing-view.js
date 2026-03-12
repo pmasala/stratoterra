@@ -358,11 +358,23 @@ var BriefingView = (function() {
           briefingData = null;
         }
 
-        // Try loading article index
+        // Try loading article index — show only the most recent day
         try {
           var index = await DataLoader.getArticleIndex();
           var articles = index.articles || index;
-          renderListing(Array.isArray(articles) ? articles : [], briefingData);
+          if (!Array.isArray(articles)) articles = [];
+          // Filter to most recent published date
+          var latestDay = '';
+          articles.forEach(function(a) {
+            var d = (a.published_at || '').slice(0, 10);
+            if (d > latestDay) latestDay = d;
+          });
+          if (latestDay) {
+            articles = articles.filter(function(a) {
+              return (a.published_at || '').slice(0, 10) === latestDay;
+            });
+          }
+          renderListing(articles, briefingData);
         } catch (e) {
           // No articles yet — fall back to briefing-only rendering
           if (briefingData) {
