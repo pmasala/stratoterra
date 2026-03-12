@@ -1,6 +1,6 @@
 /* ==========================================================================
    Stratoterra — Intel Overlays Module
-   Renders 15 toggleable geopolitical intel layers on the Leaflet map.
+   Renders 12 toggleable geopolitical intel layers on the Leaflet map.
    ========================================================================== */
 
 var IntelOverlays = (function() {
@@ -13,9 +13,9 @@ var IntelOverlays = (function() {
   var initialized = false;
 
   var LAYER_IDS = [
-    'flights','naval','airports','ports','chokepoints','cables',
+    'airports','ports','chokepoints','cables',
     'bases','conflicts','missiles','nuclear',
-    'power','pipelines','cyber','migration','sanctions'
+    'power','pipelines','cyber','sanctions'
   ];
 
   var DEFAULT_ON = ['conflicts'];
@@ -26,8 +26,6 @@ var IntelOverlays = (function() {
     blue:'#0984e3', teal:'#00cec9', purple:'#6c5ce7', orange:'#e17055'
   };
   var INTENSITY = { Critical:C.red, High:C.orange, Moderate:C.amber, Low:C.green };
-  var FLIGHT_C  = { civilian:C.blue, military:C.red, surveillance:C.amber, diplomatic:C.purple };
-  var NAVAL_C   = { carrier:C.teal, destroyer:C.blue, frigate:C.purple, submarine:C.red };
 
   /* ── Icon factories ──────────────────────────────────────── */
   function mkIcon(sym, bg, border, size) {
@@ -227,48 +225,6 @@ var IntelOverlays = (function() {
         pl.bindTooltip('<b>'+esc(p.name)+'</b><br>'+esc(p.prod)+': '+esc(p.from)+' \u2192 '+esc(p.to),
           {className:'st-tip',direction:'top'});
         LG.pipelines.addLayer(pl);
-      });
-    },
-
-    flights: function(features) {
-      features.forEach(function(f) {
-        var col = FLIGHT_C[f.type] || C.blue;
-        var pl = L.polyline(f.path, {color:col, weight:1.5, opacity:.65, dashArray:'7 5'});
-        var mid = [(f.path[0][0]+f.path[1][0])/2, (f.path[0][1]+f.path[1][1])/2];
-        var lbl = L.marker(mid, {icon: L.divIcon({
-          className:'',
-          html:'<div style="color:'+col+';font-family:\'JetBrains Mono\',monospace;font-size:9.5px;white-space:nowrap;text-shadow:0 1px 2px #000">\u2708 '+esc(f.label)+'</div>',
-          iconAnchor:[-4,5]
-        })});
-        pl.on('click', function() { showCard('FLIGHT TRAJECTORY', f.label, [['Type', f.type.toUpperCase()]]); });
-        LG.flights.addLayer(pl);
-        LG.flights.addLayer(lbl);
-      });
-    },
-
-    naval: function(features) {
-      features.forEach(function(n) {
-        var col = NAVAL_C[n.type] || C.teal;
-        var pl = L.polyline(n.path, {color:col, weight:2, opacity:.65, dashArray:'10 6'});
-        var mi = Math.floor(n.path.length / 2);
-        var mp = n.path[mi];
-        var lbl = L.marker(mp, {icon: L.divIcon({
-          className:'',
-          html:'<div style="color:'+col+';font-family:\'JetBrains Mono\',monospace;font-size:9.5px;white-space:nowrap;text-shadow:0 1px 2px #000">\u2693 '+esc(n.label)+'</div>',
-          iconAnchor:[-4,4]
-        })});
-        pl.on('click', function() { showCard('NAVAL ROUTE', n.label, [['Vessel class', n.type.toUpperCase(), 'hi'], ['Status', 'Active']]); });
-        LG.naval.addLayer(pl);
-        LG.naval.addLayer(lbl);
-      });
-    },
-
-    migration: function(features) {
-      features.forEach(function(m) {
-        var pl = L.polyline(m.path, {color:C.orange, weight:2.5, opacity:.5, dashArray:'5 8'});
-        pl.on('click', function() { showCard('MIGRATION CORRIDOR', m.label, [['Volume', m.vol, 'warn'], ['Status', 'Ongoing']]); });
-        pl.bindTooltip('<b>'+esc(m.label)+'</b><br>'+esc(m.vol), {className:'st-tip',direction:'top'});
-        LG.migration.addLayer(pl);
       });
     },
 

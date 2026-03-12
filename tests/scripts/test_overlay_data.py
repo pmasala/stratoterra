@@ -2,7 +2,7 @@
 """
 Stratoterra — Intel Overlay Data Tests
 
-Validates all 15 overlay JSON files in data/chunks/global/overlays/.
+Validates all 12 overlay JSON files in data/chunks/global/overlays/.
 Checks: existence, structure, count consistency, coordinate validity.
 """
 
@@ -15,8 +15,7 @@ OVERLAYS_DIR = os.path.join(REPO_ROOT, "data", "chunks", "global", "overlays")
 
 LAYER_IDS = [
     "airports", "ports", "bases", "conflicts", "power", "nuclear",
-    "missiles", "chokepoints", "cables", "pipelines", "flights",
-    "naval", "migration", "cyber", "sanctions",
+    "missiles", "chokepoints", "cables", "pipelines", "cyber", "sanctions",
 ]
 
 REQUIRED_FIELDS = {"layer", "generated_at", "count", "features"}
@@ -24,7 +23,7 @@ REQUIRED_FIELDS = {"layer", "generated_at", "count", "features"}
 # Layers that use 'll' (lat/lon point) vs 'path' (polyline)
 POINT_LAYERS = {"airports", "ports", "bases", "conflicts", "power", "nuclear",
                 "missiles", "chokepoints", "cyber", "sanctions"}
-PATH_LAYERS = {"cables", "pipelines", "flights", "naval", "migration"}
+PATH_LAYERS = {"cables", "pipelines"}
 
 
 def load_overlay(layer_id):
