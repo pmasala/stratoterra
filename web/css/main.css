@@ -55,6 +55,9 @@
   --transition-normal: 250ms ease;
   --transition-slow: 400ms ease-out;
 
+  /* Critical blink */
+  --critical-blink-color: #ff1744;
+
   /* Borders */
   --border-subtle: 1px solid #1E293B;
   --border-card: 1px solid rgba(30, 41, 59, 0.9);
@@ -1786,6 +1789,16 @@ a:hover { text-decoration: underline; }
 }
 
 .bilateral-overlay__close:hover { color: var(--text-primary); }
+
+/* --- Critical Alert Blink (country borders on map) --- */
+@keyframes critical-border-blink {
+  0%, 100% { stroke: #ff1744; stroke-opacity: 1; stroke-width: 2.5; }
+  50% { stroke: #ff1744; stroke-opacity: 0.15; stroke-width: 1; }
+}
+
+.leaflet-interactive.critical-blink {
+  animation: critical-border-blink 1.4s ease-in-out infinite;
+}
 
 /* --- Responsive fallback --- */
 .view-container { padding: 24px; }

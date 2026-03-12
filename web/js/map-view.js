@@ -137,6 +137,24 @@ var MapView = (function() {
       '<div class="color-legend__labels"><span>' + config.legendMin + '</span><span>' + config.legendMax + '</span></div>';
   }
 
+  function applyCriticalBlink() {
+    if (!geoLayer) return;
+    geoLayer.eachLayer(function(layer) {
+      if (!layer.feature) return;
+      var el = layer.getElement && layer.getElement();
+      if (!el) return;
+      var code = layer.feature.properties.ISO_A3;
+      var summary = summaryLookup[code];
+      var isCritical = currentMetric === 'alert_severity' &&
+        summary && summary.max_alert_severity === 'critical';
+      if (isCritical) {
+        el.classList.add('critical-blink');
+      } else {
+        el.classList.remove('critical-blink');
+      }
+    });
+  }
+
   function deselectCountry() {
     if (selectedFeature) {
       geoLayer.resetStyle(selectedFeature);
@@ -193,6 +211,7 @@ var MapView = (function() {
       legendEl.className = 'color-legend';
       document.getElementById(containerId).appendChild(legendEl);
       updateLegend();
+      applyCriticalBlink();
 
       return map;
     },
@@ -213,6 +232,7 @@ var MapView = (function() {
         selectedFeature.bringToFront();
       }
       updateLegend();
+      applyCriticalBlink();
     },
 
     setOverlay(overlayId) {
@@ -228,6 +248,7 @@ var MapView = (function() {
         selectedFeature.setStyle(COUNTRY_STYLE.selected);
         selectedFeature.bringToFront();
       }
+      applyCriticalBlink();
     },
 
     setSummaryData(summary) {
