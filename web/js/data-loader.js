@@ -32,18 +32,30 @@ var DataLoader = (function() {
     return dataPath('chunks/' + relativePath);
   }
 
-  async function fetchJSON(path) {
+  function wait(ms) { return new Promise(function(r) { setTimeout(r, ms); }); }
+
+  async function fetchJSON(path, retries) {
     if (cache[path]) return cache[path];
-    try {
-      var response = await fetch(path);
-      if (!response.ok) throw new Error('HTTP ' + response.status + ' loading ' + path);
-      var data = await response.json();
-      cache[path] = data;
-      return data;
-    } catch (err) {
-      console.error('[DataLoader] Failed to load:', path, err.message);
-      throw err;
+    retries = retries != null ? retries : 3;
+    var lastErr;
+    for (var attempt = 0; attempt <= retries; attempt++) {
+      try {
+        var response = await fetch(path);
+        if (!response.ok) throw new Error('HTTP ' + response.status + ' loading ' + path);
+        var data = await response.json();
+        cache[path] = data;
+        return data;
+      } catch (err) {
+        lastErr = err;
+        if (attempt < retries) {
+          var delay = Math.pow(2, attempt) * 1000; // 1s, 2s, 4s
+          console.warn('[DataLoader] Retry ' + (attempt + 1) + '/' + retries + ' for:', path, '(' + delay + 'ms)');
+          await wait(delay);
+        }
+      }
     }
+    console.error('[DataLoader] Failed to load after ' + retries + ' retries:', path, lastErr.message);
+    throw lastErr;
   }
 
   return {

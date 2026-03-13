@@ -37,12 +37,12 @@
       </div>
       <div class="header-center">
         <div style="position:relative">
-          <input type="text" id="search" placeholder="Search country..." autocomplete="off" />
-          <div class="search-dropdown" id="search-dropdown"></div>
+          <input type="text" id="search" placeholder="Search country..." autocomplete="off" aria-label="Search countries" role="combobox" aria-expanded="false" aria-controls="search-dropdown" />
+          <div class="search-dropdown" id="search-dropdown" role="listbox"></div>
         </div>
       </div>
       <div class="header-right">
-        <nav id="main-nav">
+        <nav id="main-nav" aria-label="Main navigation">
           <a href="#map" class="nav-link active" data-view="map">Map</a>
           <a href="#briefing" class="nav-link" data-view="briefing">Stories</a>
           <a href="#alerts" class="nav-link" data-view="alerts">Alerts</a>
@@ -54,7 +54,16 @@
 
     <main id="main-content">
       <div id="map-container"></div>
-      <div id="country-panel" class="panel hidden"></div>
+      <div id="country-panel" class="panel hidden" role="complementary" aria-label="Country detail"></div>
+
+      <!-- Intel Overlays toggle (mobile) -->
+      <button id="st-layers-toggle" class="st-layers-toggle" aria-label="Toggle intel overlays">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="3" width="16" height="3" rx="1" fill="currentColor" opacity="0.9"/>
+          <rect x="2" y="9" width="16" height="3" rx="1" fill="currentColor" opacity="0.6"/>
+          <rect x="2" y="15" width="16" height="3" rx="1" fill="currentColor" opacity="0.35"/>
+        </svg>
+      </button>
 
       <!-- Intel Overlays -->
       <div id="st-layers">
@@ -63,83 +72,83 @@
           <span class="hl-toggle">&blacktriangle;</span>
         </div>
         <div id="st-layers-body">
-          <div class="st-group-head">Air &amp; Maritime</div>
-          <div class="st-row on" data-layer="airports">
-            <div class="st-pill"></div>
-            <div class="st-swatch" style="background:var(--st-blue)"></div>
-            <span class="st-label">Major Airports</span>
+          <div class="st-group-head" id="group-air">Air &amp; Maritime</div>
+          <div class="st-row on" data-layer="airports" role="switch" aria-checked="true" tabindex="0" aria-labelledby="label-airports">
+            <div class="st-pill" aria-hidden="true"></div>
+            <div class="st-swatch" style="background:var(--st-blue)" aria-hidden="true"></div>
+            <span class="st-label" id="label-airports">Major Airports</span>
             <span class="st-badge">0</span>
           </div>
-          <div class="st-row on" data-layer="ports">
-            <div class="st-pill"></div>
-            <div class="st-swatch" style="background:var(--st-teal)"></div>
-            <span class="st-label">Strategic Ports</span>
+          <div class="st-row on" data-layer="ports" role="switch" aria-checked="true" tabindex="0" aria-labelledby="label-ports">
+            <div class="st-pill" aria-hidden="true"></div>
+            <div class="st-swatch" style="background:var(--st-teal)" aria-hidden="true"></div>
+            <span class="st-label" id="label-ports">Strategic Ports</span>
             <span class="st-badge">0</span>
           </div>
-          <div class="st-row" data-layer="chokepoints">
-            <div class="st-pill"></div>
-            <div class="st-swatch" style="background:var(--st-orange)"></div>
-            <span class="st-label">Sea Chokepoints</span>
+          <div class="st-row" data-layer="chokepoints" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-chokepoints">
+            <div class="st-pill" aria-hidden="true"></div>
+            <div class="st-swatch" style="background:var(--st-orange)" aria-hidden="true"></div>
+            <span class="st-label" id="label-chokepoints">Sea Chokepoints</span>
             <span class="st-badge">0</span>
           </div>
-          <div class="st-row" data-layer="cables">
-            <div class="st-pill"></div>
-            <div class="st-swatch" style="background:var(--st-purple)"></div>
-            <span class="st-label">Submarine Cables</span>
-            <span class="st-badge">0</span>
-          </div>
-
-          <div class="st-group-head">Military</div>
-          <div class="st-row on" data-layer="bases">
-            <div class="st-pill"></div>
-            <div class="st-swatch" style="background:var(--st-amber)"></div>
-            <span class="st-label">Military Bases</span>
-            <span class="st-badge">0</span>
-          </div>
-          <div class="st-row on" data-layer="conflicts">
-            <div class="st-pill"></div>
-            <div class="st-swatch" style="background:var(--st-red)"></div>
-            <span class="st-label">Conflict Zones</span>
-            <span class="st-badge">0</span>
-          </div>
-          <div class="st-row" data-layer="missiles">
-            <div class="st-pill"></div>
-            <div class="st-swatch" style="background:var(--st-red)"></div>
-            <span class="st-label">Missile Coverage</span>
-            <span class="st-badge">0</span>
-          </div>
-          <div class="st-row" data-layer="nuclear">
-            <div class="st-pill"></div>
-            <div class="st-swatch" style="background:var(--st-orange)"></div>
-            <span class="st-label">Nuclear Sites</span>
+          <div class="st-row" data-layer="cables" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-cables">
+            <div class="st-pill" aria-hidden="true"></div>
+            <div class="st-swatch" style="background:var(--st-purple)" aria-hidden="true"></div>
+            <span class="st-label" id="label-cables">Submarine Cables</span>
             <span class="st-badge">0</span>
           </div>
 
-          <div class="st-group-head">Infrastructure</div>
-          <div class="st-row on" data-layer="power">
-            <div class="st-pill"></div>
-            <div class="st-swatch" style="background:var(--st-amber)"></div>
-            <span class="st-label">Power Stations</span>
+          <div class="st-group-head" id="group-military">Military</div>
+          <div class="st-row on" data-layer="bases" role="switch" aria-checked="true" tabindex="0" aria-labelledby="label-bases">
+            <div class="st-pill" aria-hidden="true"></div>
+            <div class="st-swatch" style="background:var(--st-amber)" aria-hidden="true"></div>
+            <span class="st-label" id="label-bases">Military Bases</span>
             <span class="st-badge">0</span>
           </div>
-          <div class="st-row" data-layer="pipelines">
-            <div class="st-pill"></div>
-            <div class="st-swatch" style="background:var(--st-orange)"></div>
-            <span class="st-label">Oil &amp; Gas Pipelines</span>
+          <div class="st-row on" data-layer="conflicts" role="switch" aria-checked="true" tabindex="0" aria-labelledby="label-conflicts">
+            <div class="st-pill" aria-hidden="true"></div>
+            <div class="st-swatch" style="background:var(--st-red)" aria-hidden="true"></div>
+            <span class="st-label" id="label-conflicts">Conflict Zones</span>
             <span class="st-badge">0</span>
           </div>
-          <div class="st-row" data-layer="cyber">
-            <div class="st-pill"></div>
-            <div class="st-swatch" style="background:var(--st-purple)"></div>
-            <span class="st-label">Cyber Operations</span>
+          <div class="st-row" data-layer="missiles" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-missiles">
+            <div class="st-pill" aria-hidden="true"></div>
+            <div class="st-swatch" style="background:var(--st-red)" aria-hidden="true"></div>
+            <span class="st-label" id="label-missiles">Missile Coverage</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row" data-layer="nuclear" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-nuclear">
+            <div class="st-pill" aria-hidden="true"></div>
+            <div class="st-swatch" style="background:var(--st-orange)" aria-hidden="true"></div>
+            <span class="st-label" id="label-nuclear">Nuclear Sites</span>
             <span class="st-badge">0</span>
           </div>
 
-          <div class="st-group-head">Humanitarian</div>
-          <div class="st-row" data-layer="sanctions">
-            <div class="st-pill"></div>
-            <div class="st-swatch" style="background:var(--st-red)"></div>
-            <span class="st-label">Active Sanctions</span>
+          <div class="st-group-head" id="group-infra">Infrastructure</div>
+          <div class="st-row on" data-layer="power" role="switch" aria-checked="true" tabindex="0" aria-labelledby="label-power">
+            <div class="st-pill" aria-hidden="true"></div>
+            <div class="st-swatch" style="background:var(--st-amber)" aria-hidden="true"></div>
+            <span class="st-label" id="label-power">Power Stations</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row" data-layer="pipelines" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-pipelines">
+            <div class="st-pill" aria-hidden="true"></div>
+            <div class="st-swatch" style="background:var(--st-orange)" aria-hidden="true"></div>
+            <span class="st-label" id="label-pipelines">Oil &amp; Gas Pipelines</span>
+            <span class="st-badge">0</span>
+          </div>
+          <div class="st-row" data-layer="cyber" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-cyber">
+            <div class="st-pill" aria-hidden="true"></div>
+            <div class="st-swatch" style="background:var(--st-purple)" aria-hidden="true"></div>
+            <span class="st-label" id="label-cyber">Cyber Operations</span>
+            <span class="st-badge">0</span>
+          </div>
+
+          <div class="st-group-head" id="group-humanitarian">Humanitarian</div>
+          <div class="st-row" data-layer="sanctions" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-sanctions">
+            <div class="st-pill" aria-hidden="true"></div>
+            <div class="st-swatch" style="background:var(--st-red)" aria-hidden="true"></div>
+            <span class="st-label" id="label-sanctions">Active Sanctions</span>
             <span class="st-badge">0</span>
           </div>
         </div>
@@ -162,7 +171,7 @@
     <footer id="bottom-bar">
       <div class="metric-selector">
         <label>Color by:</label>
-        <select id="metric-select">
+        <select id="metric-select" aria-label="Color map by metric">
           <option value="alert_severity" selected>Alert Severity</option>
           <option value="gdp_growth_trend">GDP Growth</option>
           <option value="political_stability">Political Stability</option>
@@ -176,7 +185,7 @@
       </div>
       <div class="overlay-selector">
         <label>Overlay:</label>
-        <select id="overlay-select">
+        <select id="overlay-select" aria-label="Geopolitical overlay">
           <option value="none">None</option>
           <option value="EU">EU</option>
           <option value="NATO">NATO</option>
@@ -193,7 +202,7 @@
     </footer>
   </div>
 
-  <div id="alert-ticker" class="alert-ticker hidden">
+  <div id="alert-ticker" class="alert-ticker hidden" role="alert" aria-live="polite">
     <!-- Primary bar: critical / warning alerts, rotates every 30s -->
     <div id="ticker-primary" class="ticker-primary">
       <div class="ticker-tag" id="ticker-tag">

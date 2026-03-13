@@ -26,7 +26,7 @@
   --trend-strong-decrease: #ff1744;
 
   /* Alert colors */
-  --alert-critical: #ff1744;
+  --alert-critical: #ff4757;
   --alert-warning: #ffab40;
   --alert-watch: #60a5fa;
 
@@ -56,7 +56,7 @@
   --transition-slow: 400ms ease-out;
 
   /* Critical blink */
-  --critical-blink-color: #ff1744;
+  --critical-blink-color: #ff4757;
 
   /* Borders */
   --border-subtle: 1px solid #1E293B;
@@ -620,8 +620,9 @@ a:hover { text-decoration: underline; }
 }
 
 .alert-badge--critical {
-  background: rgba(255, 23, 68, 0.12);
+  background: rgba(255, 71, 87, 0.15);
   color: var(--alert-critical);
+  text-shadow: 0 0 8px rgba(255, 71, 87, 0.4);
 }
 
 .alert-badge--warning {
