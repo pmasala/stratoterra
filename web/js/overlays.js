@@ -294,10 +294,23 @@ var IntelOverlays = (function() {
         LG[id].addTo(map);
       }
 
+      function toggleLayer() {
+        var on = row.classList.toggle('on');
+        row.setAttribute('aria-checked', on ? 'true' : 'false');
+        if (on) { LG[id].addTo(map); } else { LG[id].remove(); }
+      }
+
       row.addEventListener('click', function(e) {
         e.stopPropagation();
-        var on = row.classList.toggle('on');
-        if (on) { LG[id].addTo(map); } else { LG[id].remove(); }
+        toggleLayer();
+      });
+
+      row.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          e.stopPropagation();
+          toggleLayer();
+        }
       });
     });
 
@@ -317,8 +330,20 @@ var IntelOverlays = (function() {
       closeBtn.addEventListener('click', function() { hideCard(); });
     }
 
-    // Click map to close card
-    map.on('click', function() { hideCard(); });
+    // Click map to close card and mobile overlay panel
+    map.on('click', function() {
+      hideCard();
+      if (panelEl) panelEl.classList.remove('mobile-open');
+    });
+
+    // Mobile toggle button
+    var toggleBtn = document.getElementById('st-layers-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (panelEl) panelEl.classList.toggle('mobile-open');
+      });
+    }
   }
 
   /* ── Public API ──────────────────────────────────────────── */
@@ -338,7 +363,10 @@ var IntelOverlays = (function() {
         LG[id] = L.layerGroup();
       });
 
-      // Fetch all layers
+      // Wire panel immediately so badge counts update as layers load
+      wirePanel();
+
+      // Fetch all layers (badges update as each layer resolves)
       var promises = LAYER_IDS.map(function(id) {
         return fetchLayer(id).catch(function(err) {
           console.warn('[IntelOverlays] Failed to load layer:', id, err);
@@ -346,11 +374,11 @@ var IntelOverlays = (function() {
       });
 
       return Promise.allSettled
-        ? Promise.allSettled(promises).then(function() { wirePanel(); initialized = true; })
+        ? Promise.allSettled(promises).then(function() { initialized = true; })
         : Promise.all(promises.map(function(p) {
             return p.then(function(v) { return {status:'fulfilled',value:v}; },
                           function(e) { return {status:'rejected',reason:e}; });
-          })).then(function() { wirePanel(); initialized = true; });
+          })).then(function() { initialized = true; });
     },
 
     show: function() {

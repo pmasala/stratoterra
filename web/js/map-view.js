@@ -263,7 +263,18 @@ var MapView = (function() {
     getMap() { return map; },
 
     invalidateSize() {
-      if (map) setTimeout(function() { map.invalidateSize(); }, 300);
+      if (!map) return;
+      // Use ResizeObserver for reliable layout-driven resize, with setTimeout fallback
+      var container = map.getContainer();
+      if (window.ResizeObserver && container) {
+        var ro = new ResizeObserver(function() {
+          map.invalidateSize();
+          ro.disconnect();
+        });
+        ro.observe(container);
+      } else {
+        setTimeout(function() { map.invalidateSize(); }, 300);
+      }
     }
   };
 })();

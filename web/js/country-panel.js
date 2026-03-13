@@ -9,6 +9,7 @@ var CountryPanel = (function() {
   var activeTab = 'economy';
   var _currentRelationPairs = [];
   var _networkDrawn = false;
+  var _tabScrollPositions = {};
 
   var TAB_DEFS = [
     { id: 'endowments',   label: 'Endowments' },
@@ -922,6 +923,8 @@ var CountryPanel = (function() {
       var btn = e.target.closest('.layer-tab');
       if (!btn || btn.classList.contains('disabled')) return;
       var tabId = btn.getAttribute('data-tab');
+      // Save scroll position of current tab
+      _tabScrollPositions[activeTab] = panelEl.scrollTop;
       activeTab = tabId;
       // Update active states
       tabsEl.querySelectorAll('.layer-tab').forEach(function(t) { t.classList.remove('active'); });
@@ -929,6 +932,10 @@ var CountryPanel = (function() {
       panelEl.querySelectorAll('.layer-content').forEach(function(c) { c.classList.remove('active'); });
       var content = document.getElementById('tab-' + tabId);
       if (content) content.classList.add('active');
+      // Restore scroll position for this tab
+      if (_tabScrollPositions[tabId] != null) {
+        panelEl.scrollTop = _tabScrollPositions[tabId];
+      }
       // Draw D3 network when Relations tab is first activated
       if (tabId === 'relations' && !_networkDrawn) {
         requestAnimationFrame(function() { drawRelationsNetwork(); });
@@ -968,6 +975,7 @@ var CountryPanel = (function() {
       activeTab = 'economy';
       _currentRelationPairs = [];
       _networkDrawn = false;
+      _tabScrollPositions = {};
 
       // Show panel
       panelEl.classList.remove('hidden');
