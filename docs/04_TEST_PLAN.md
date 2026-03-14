@@ -1,8 +1,8 @@
 # Geopolitical Intelligence Model — Test Plan
 
-**Version:** 1.0-draft
-**Date:** 2026-03-01
-**Status:** Design Phase
+**Version:** 1.1
+**Date:** 2026-03-14
+**Status:** Active
 **Depends on:** `01_FACTOR_MODEL_SPEC.md`, `02_AGENT_ARCHITECTURE.md`, `03_REQUIREMENTS.md`
 
 ---
@@ -44,39 +44,42 @@ All tests are implemented as **validation scripts** that Claude Code runs after 
 /tests
 ├── /fixtures                           # Static test data
 │   ├── /mock_sources                   # Fake API responses for offline testing
-│   │   ├── worldbank_usa_gdp.json
-│   │   ├── gdelt_sample_events.json
-│   │   ├── financial_sample.json
-│   │   └── ...
 │   ├── /expected_outputs               # Expected agent outputs for known inputs
-│   │   ├── expected_processed_usa.json
-│   │   ├── expected_validated_usa.json
-│   │   └── ...
 │   └── /seed_data                      # Minimal starting dataset for testing
-│       ├── countries/
-│       │   ├── USA.json
-│       │   ├── CHN.json
-│       │   └── DEU.json
-│       └── relations/
-│           ├── USA_CHN.json
-│           └── USA_DEU.json
 │
-├── /schemas                            # JSON Schema files for validation
-│   ├── country_schema.json
+├── /schemas                            # JSON Schema validation files
+│   ├── country_detail_schema.json
+│   ├── country_summary_schema.json
+│   ├── alert_schema.json
+│   ├── briefing_schema.json
 │   ├── relation_schema.json
-│   ├── event_schema.json
-│   ├── staging_output_schema.json
-│   └── ...
+│   └── manifest_schema.json
 │
-├── /scripts                            # Test runner scripts
-│   ├── run_all_tests.sh
-│   ├── test_schema_validation.py
-│   ├── test_data_consistency.py
-│   ├── test_agent_outputs.py
-│   ├── test_ui_data_contract.py
-│   └── test_chunking.py
+├── /scripts                            # Python test modules (pytest)
+│   ├── run_all_tests.py                # Master test runner (JSON report output)
+│   ├── test_schema_validation.py       # JSON schema conformance
+│   ├── test_plausibility.py            # Value range checks
+│   ├── test_data_consistency.py        # Cross-file symmetry
+│   ├── test_agent_outputs.py           # Agent output validation
+│   ├── test_pipeline_flow.py           # End-to-end pipeline
+│   ├── test_ui_data_contract.py        # UI data expectations
+│   ├── test_overlay_data.py            # Overlay geospatial data
+│   ├── test_prefetch.py                # Pre-fetch unit tests
+│   ├── test_prefetch_integration.py    # Pre-fetch integration tests
+│   └── test_e2e_pipeline.py            # Full pipeline smoke test
 │
-└── /reports                            # Test result outputs
+├── /e2e                                # Playwright browser tests (TypeScript)
+│   ├── app-init.spec.ts                # App initialization & data loading
+│   ├── map-interactions.spec.ts        # Pan, zoom, click countries
+│   ├── country-panel.spec.ts           # Country detail panel
+│   ├── briefing-view.spec.ts           # Stories listing & article detail
+│   ├── alert-dashboard.spec.ts         # Alert severity mode
+│   ├── alert-ticker.spec.ts            # Alert ticker display
+│   ├── search.spec.ts                  # Search autocomplete
+│   ├── data-integrity.spec.ts          # Live data contract checks
+│   └── fixtures/test-helpers.ts        # Shared test utilities
+│
+└── /reports                            # Test result outputs (gitignored)
     └── test_report_{date}.json
 ```
 
@@ -536,14 +539,14 @@ tests:
   - id: E2E-PIP-001
     name: Full pipeline with seed data
     description: >
-      Run the complete 16-agent pipeline using seed/mock data to verify
+      Run the complete 18-agent pipeline using seed/mock data to verify
       the entire system works end-to-end without depending on live APIs
     setup:
       - Copy seed data to /data (3 countries: USA, CHN, DEU)
       - Copy mock API responses to /tests/fixtures/mock_sources
       - Configure agents to use mock sources instead of live APIs
     execution:
-      - Run all 16 agents in sequence
+      - Run all 18 agents in sequence
     validation:
       - All agents complete without errors
       - /data/countries has updated files for USA, CHN, DEU
@@ -568,7 +571,7 @@ tests:
       - Configure for 5 countries only: USA, CHN, DEU, JPN, BRA
       - Use live APIs
     execution:
-      - Run all 16 agents
+      - Run all 18 agents
     validation:
       - All agents complete (some data collection failures acceptable)
       - At least 80% of expected data points collected
@@ -955,27 +958,148 @@ def run_all_tests(data_dir, staging_dir):
     return report
 ```
 
-### 9.2 Running Tests in Claude Code
+### 9.2 Running Tests
 
-During the weekly pipeline run, after Agent 16 (Archive & Commit), run:
-
+**Data validation tests (pytest):**
 ```bash
-# Run all automated tests
-python /tests/scripts/run_all_tests.py \
-  --data-dir /data \
-  --staging-dir /staging \
-  --output /tests/reports/test_report_{date}.json
+python3 -m pytest tests/scripts/ -v --tb=short
 
-# Check results
-if [ $? -ne 0 ]; then
-  echo "TESTS FAILED — review report before committing"
-  exit 1
-fi
+# Or use the master test runner (outputs JSON report):
+python3 tests/scripts/run_all_tests.py --verbose \
+  --output tests/reports/test_report_{date}.json
+```
+
+Tests run as part of Agent 15 and must all pass before Agent 16 commits.
+
+**E2E browser tests (Playwright):**
+```bash
+# Install dependencies (first time)
+npm install && npx playwright install chromium
+
+# Run headless
+npm test
+
+# Run with visible browser
+npm run test:headed
+
+# View HTML report
+npm run test:report
+```
+
+Playwright auto-starts a local server on port 8089 (see `playwright.config.ts`)
+and runs tests against Chromium at `http://localhost:8089/web/`.
+
+---
+
+## 10. Playwright E2E Browser Tests
+
+**Purpose:** Verify the web UI works correctly end-to-end in a real browser.
+
+**Configuration:** `playwright.config.ts` in project root.
+- Server: `python3 -m http.server 8089` (auto-started)
+- Browser: Chromium, viewport 1280x720
+- Timeout: 30s per test
+- Workers: 4 local, 1 in CI
+
+```yaml
+TEST_GROUP: Playwright E2E
+TEST_ID_PREFIX: PW
+
+tests:
+
+  - id: PW-001
+    name: App initialization
+    file: tests/e2e/app-init.spec.ts
+    validation:
+      - Map container renders
+      - Country summary data loads
+      - At least 70 countries appear on map
+
+  - id: PW-002
+    name: Map interactions
+    file: tests/e2e/map-interactions.spec.ts
+    validation:
+      - Click country opens detail panel
+      - Pan and zoom work
+      - Tooltip appears on hover
+
+  - id: PW-003
+    name: Country detail panel
+    file: tests/e2e/country-panel.spec.ts
+    validation:
+      - Panel shows country name and data
+      - Layer tabs switch content
+      - Close button works
+
+  - id: PW-004
+    name: Briefing view
+    file: tests/e2e/briefing-view.spec.ts
+    validation:
+      - Story cards render from article index
+      - Click card navigates to article detail
+      - SVG illustration renders safely
+
+  - id: PW-005
+    name: Alert dashboard
+    file: tests/e2e/alert-dashboard.spec.ts
+    validation:
+      - Alert severity color-by mode works
+      - Alert list populates
+
+  - id: PW-006
+    name: Search
+    file: tests/e2e/search.spec.ts
+    validation:
+      - Search input accepts text
+      - Autocomplete dropdown appears
+      - Selecting result navigates to country
+
+  - id: PW-007
+    name: Data integrity
+    file: tests/e2e/data-integrity.spec.ts
+    validation:
+      - Fetched JSON parses correctly
+      - Key fields are present and non-null
 ```
 
 ---
 
-## 10. Defect Severity Classification
+## 11. Pre-Fetch Integration Tests
+
+**Purpose:** Verify the deterministic pre-fetch data pipeline works correctly.
+
+```yaml
+TEST_GROUP: Pre-Fetch
+TEST_ID_PREFIX: PF
+
+tests:
+
+  - id: PF-UNIT
+    name: Pre-fetch unit tests
+    file: tests/scripts/test_prefetch.py
+    validation:
+      - Each fetcher class instantiates correctly
+      - Output format matches expected schema
+      - Rate limiting and retry logic works
+      - Error handling for API failures
+
+  - id: PF-INTEGRATION
+    name: Pre-fetch integration tests
+    file: tests/scripts/test_prefetch_integration.py
+    validation:
+      - World Bank returns valid indicator data
+      - IMF returns WEO forecasts
+      - GDELT returns event data
+      - FX/commodities returns exchange rates
+      - Output files written to staging/prefetched/
+      - JSON output is valid and non-empty
+```
+
+**Run:** `python3 -m pytest tests/scripts/test_prefetch*.py -v`
+
+---
+
+## 12. Defect Severity Classification
 
 | Severity | Definition | Response |
 |---|---|---|

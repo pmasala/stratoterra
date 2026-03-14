@@ -1,8 +1,8 @@
 # Geopolitical Intelligence Model — Requirements Specification
 
-**Version:** 1.0-draft
-**Date:** 2026-03-01
-**Status:** Design Phase
+**Version:** 1.1
+**Date:** 2026-03-14
+**Status:** Active
 **Depends on:** `01_FACTOR_MODEL_SPEC.md`, `02_AGENT_ARCHITECTURE.md`
 
 ---
@@ -77,8 +77,8 @@ An interactive, web-based geopolitical intelligence platform that provides inves
 
 ### 2.2 Hosting: GitHub Pages
 
-- **Repository:** Public or private GitHub repo
-- **Branch:** `gh-pages` branch serves the static site
+- **Repository:** `pmasala/stratoterra` on GitHub
+- **Branch:** `main` branch — deployed via `static.yml` GitHub Actions workflow
 - **Data delivery:** JSON files served as static assets from the same repo
 - **Custom domain:** Optional (CNAME record)
 - **HTTPS:** Provided by GitHub Pages
@@ -129,11 +129,15 @@ Total estimated data: ~50-100MB raw JSON across all files.
 │   │   ├── event_feed.json              # ~30KB (last 4 weeks of events)
 │   │   └── chokepoints.json             # ~5KB
 │   │
-│   └── /supranational
-│       ├── supranational_index.json     # ~5KB
-│       ├── EU.json                      # ~10KB each
-│       ├── NATO.json
-│       └── ...
+│   ├── /supranational
+│   │   ├── supranational_index.json     # ~5KB
+│   │   ├── EU.json                      # ~10KB each
+│   │   ├── NATO.json
+│   │   └── ...
+│   └── /global/articles
+│       ├── article_index.json           # ~10KB (merged 30-day index)
+│       ├── art_2026-03-14_001.json      # ~15KB per article
+│       └── ...                          # Daily articles with SVG illustrations
 ```
 
 **Loading strategy:**
@@ -171,7 +175,7 @@ User reads briefing:
 ### 3.1 Data Pipeline (Agent System)
 
 #### FR-DP-001: Weekly Update Orchestration
-- The system shall execute a defined sequence of 16 agents in order
+- The system shall execute a defined sequence of 18 agents in order (Agent 17 invoked twice)
 - Each agent shall read from defined input files and write to defined output files
 - The orchestrator shall log start/end time and status for each agent
 - If an agent fails, the system shall stop and report which agent failed
@@ -196,16 +200,16 @@ User reads briefing:
 - The system shall cross-validate multi-source data points
 - Validation verdicts: ACCEPT, ACCEPT_WITH_NOTE, FLAG, REJECT, ESCALATE
 
-#### FR-DP-005: Human Review (ESCALATE Handling)
-- The system shall present ESCALATED items to the operator with:
-  - The proposed change
-  - The current value
-  - Source information
-  - The reason for escalation
-  - A recommended action
-- The operator shall be able to: accept, reject, or defer each escalation
-- Target: ≤ 20 escalations per weekly run (manageable in 2 hours total review)
-- The 2-hour human review window includes: reviewing escalations, reading the quality report, and spot-checking country narratives
+#### FR-DP-005: Autonomous Escalation Handling
+- The system shall resolve ESCALATED items automatically via Agent 17 (Autonomous Auditor)
+- Agent 17 shall evaluate each escalation using rule-based criteria:
+  - Source count (1, 2, 3+ independent sources)
+  - Confidence score (high ≥ 0.7, moderate 0.4-0.69, low < 0.4)
+  - Validator recommendation from Agent 8
+  - Trend alignment with recent data
+- Decisions: ACCEPT, ACCEPT_WITH_DOWNGRADE, or REJECT
+- Target: ≤ 20 escalations per weekly run
+- No human intervention is required during the pipeline run
 
 #### FR-DP-006: Trend Estimation
 - The system shall produce trend estimates for ~11 key factors per Tier 1-2 country
@@ -407,7 +411,7 @@ User reads briefing:
 ### 5.1 Technical Constraints
 - **No backend server.** The web UI is purely static. All computation happens in the weekly Claude Code session.
 - **GitHub Pages limits.** 1GB repo, 100MB per file, 100GB/month bandwidth, no server-side processing.
-- **Claude Code session limits.** Single session must complete all 16 agents. If session times out, re-run from last completed agent.
+- **Claude Code session limits.** Single session must complete all 18 agents. If session times out, re-run from last completed agent.
 - **Web scraping fragility.** Web page layouts change without notice. Agents must handle extraction failures gracefully.
 - **Free API tier limits.** Many APIs have rate limits or request caps on free tiers. Agents must stay within limits.
 

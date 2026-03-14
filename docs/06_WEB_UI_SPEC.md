@@ -1,8 +1,8 @@
 # Geopolitical Intelligence Model — Web UI Specification
 
-**Version:** 1.0-draft
-**Date:** 2026-03-01
-**Status:** Design Phase
+**Version:** 1.1
+**Date:** 2026-03-14
+**Status:** Active
 **Depends on:** `01_FACTOR_MODEL_SPEC.md`, `03_REQUIREMENTS.md`
 
 ---
@@ -13,23 +13,22 @@
 
 ```
 Frontend:
-  - HTML5 + CSS3 + Vanilla JavaScript (or lightweight framework)
-  - Map rendering: Leaflet.js (https://leafletjs.com) + GeoJSON
-    - Lightweight (~42KB), mobile-friendly, extensive plugin ecosystem
-    - Alternative: D3.js geo projections for custom visualizations
-  - Charts: Chart.js or D3.js
-  - Network graphs: D3.js force-directed layout
-  - Responsive layout: CSS Grid + Flexbox
-  - Icons: Lucide Icons or similar lightweight set
+  - HTML5 + CSS3 + Vanilla JavaScript (IIFEs, no framework, no build step)
+  - Map rendering: Leaflet.js (https://leafletjs.com) + GeoJSON (CDN)
+  - Network graphs: D3.js force-directed layout (CDN)
+  - Charts: Inline SVG/Canvas
+  - Responsive layout: CSS Grid + Flexbox (768px mobile breakpoint)
+  - Routing: Hash-based (#view or #view/sub/path?params) via app.js
 
 Hosting:
   - GitHub Pages (static files only)
-  - No build step required for vanilla JS approach
-  - Optional: Vite or similar for bundling if using modules
+  - Deployed from main branch via .github/workflows/static.yml
+  - No build step — pure static site
+  - Live URL: https://pmasala.github.io/stratoterra/web/
 
 Data:
-  - Pre-computed JSON files served as static assets
-  - Chunked loading (fetch on demand)
+  - Pre-computed JSON files served as static assets from /data/chunks/
+  - DataLoader IIFE caches all fetches, loads on demand
   - No backend, no API calls at runtime (except loading JSON)
 ```
 
@@ -39,30 +38,26 @@ Data:
 /web
 ├── index.html                    # Single page application entry
 ├── /css
-│   ├── main.css                 # Global styles, variables, layout
-│   ├── map.css                  # Map-specific styles
-│   ├── panels.css               # Side panels, modals
-│   ├── charts.css               # Chart containers
-│   └── responsive.css           # Media queries
+│   ├── main.css                 # Global styles + design tokens (:root custom properties)
+│   ├── panels.css               # Panel layouts
+│   ├── responsive.css           # Media queries (768px breakpoint)
+│   └── overlays.css             # Intel overlay styling
 ├── /js
-│   ├── app.js                   # Main application initialization
-│   ├── data-loader.js           # Chunked data fetching & caching
-│   ├── map-view.js              # Map rendering & interactions
+│   ├── app.js                   # Main router (hash-based routing)
+│   ├── data-loader.js           # IIFE: DataLoader for fetching/caching chunks
+│   ├── map-view.js              # Leaflet.js map rendering
 │   ├── country-panel.js         # Country detail panel
-│   ├── relation-explorer.js     # Bilateral relation views
-│   ├── briefing-view.js         # Weekly briefing display
-│   ├── alert-dashboard.js       # Alert display & filtering
+│   ├── relation-explorer.js     # D3.js bilateral relation explorer
+│   ├── briefing-view.js         # Stories listing & article detail view
+│   ├── alert-dashboard.js       # Alert severity mode
 │   ├── comparison-tool.js       # Country comparison view
 │   ├── rankings-view.js         # Global rankings tables
-│   ├── charts.js                # Chart creation utilities
-│   ├── search.js                # Search functionality
-│   ├── utils.js                 # Formatting, helpers
+│   ├── charts.js                # Chart rendering
+│   ├── search.js                # Search autocomplete dropdown
+│   ├── overlays.js              # Intel overlay management
+│   ├── utils.js                 # Sanitization, fetch wrappers
 │   └── constants.js             # Color scales, enum labels, config
-├── /assets
-│   ├── /geojson                 # Country boundary GeoJSON files
-│   ├── /icons                   # Custom icons if needed
-│   └── /flags                   # Country flag images (optional)
-└── /data → symlink or copy of /data/chunks
+└── /assets                      # Static assets (icons, images)
 ```
 
 ---
@@ -832,35 +827,33 @@ Last updated: {date} | Data quality: {coverage}% coverage
 
 ## 9. Implementation Phases
 
-### Phase 1 (MVP):
-- [ ] Map rendering with country coloring by 3 metrics
-- [ ] Country summary loading and tooltip on hover
-- [ ] Country detail panel (Economy + Military tabs only)
-- [ ] Weekly briefing view
-- [ ] Alert dashboard (basic list)
-- [ ] Search by country name
-- [ ] Responsive: desktop + tablet
-- [ ] Disclaimer and methodology page
+### Phase 1 (MVP): COMPLETE
+- [x] Map rendering with country coloring by multiple metrics
+- [x] Country summary loading and tooltip on hover
+- [x] Country detail panel with all 6 layer tabs
+- [x] Weekly briefing / stories view with article detail
+- [x] Alert dashboard with severity mode
+- [x] Search by country name (autocomplete dropdown)
+- [x] Responsive: desktop + mobile (768px breakpoint)
+- [x] Disclaimer
 
-### Phase 2:
-- [ ] All 6 layer tabs in country detail
-- [ ] Sparkline charts
-- [ ] Trend reasoning expandable cards
-- [ ] Rankings view
-- [ ] Supranational overlays
-- [ ] Comparison tool (table mode)
+### Phase 2: COMPLETE
+- [x] All 6 layer tabs in country detail
+- [x] Rankings view
+- [x] Supranational overlays (Conflict Zones enabled by default)
+- [x] Comparison tool
+- [x] Alert severity as default color-by mode
+- [x] SVG article illustrations with DOMParser sanitization
 
-### Phase 3:
-- [ ] Relation explorer (network graph)
-- [ ] Bilateral deep-dive view
-- [ ] Comparison radar charts
-- [ ] Timeseries charts (historical)
-- [ ] Mobile-friendly layout
-- [ ] Confidence indicators throughout
+### Phase 3: COMPLETE
+- [x] Relation explorer (D3.js network graph)
+- [x] Bilateral deep-dive view
+- [x] Mobile-friendly layout
+- [x] Hash-based routing (#view/sub/path)
+- [x] Blinking borders for critical-alert countries
 
-### Phase 4 (Stretch):
-- [ ] Animated timeline showing data changes over time (map playback)
+### Phase 4 (Stretch): PLANNED
+- [ ] Animated timeline showing data changes over time
 - [ ] Custom watchlist with browser localStorage
 - [ ] Export data as CSV
-- [ ] Embed sharing (iframe)
-- [ ] Dark/light theme toggle
+- [ ] Timeseries historical charts

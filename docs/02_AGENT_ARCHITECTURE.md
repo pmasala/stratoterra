@@ -1,8 +1,8 @@
 # Geopolitical Intelligence Model — Agent Architecture
 
-**Version:** 1.0-draft
-**Date:** 2026-03-01
-**Status:** Design Phase
+**Version:** 1.1
+**Date:** 2026-03-14
+**Status:** Active
 **Depends on:** `01_FACTOR_MODEL_SPEC.md`
 
 ---
@@ -61,30 +61,37 @@
 ## Directory Structure
 
 ```
-/geopolitical-model
-├── /agents                          # Agent scripts and configs
-│   ├── /config
-│   │   ├── orchestrator.md          # Master run plan
-│   │   ├── agent_official_stats.md  # Config for each agent
-│   │   ├── agent_news_events.md
-│   │   ├── agent_financial.md
-│   │   ├── agent_trade_sanctions.md
-│   │   ├── agent_military_conflict.md
-│   │   ├── agent_political.md
-│   │   ├── agent_processor.md
-│   │   ├── agent_validator.md
-│   │   ├── agent_trend_estimator.md
-│   │   ├── agent_synthesizer.md
-│   │   └── agent_alert_generator.md
-│   ├── /prompts                     # Reusable prompt templates
-│   │   ├── extraction_prompt.md
-│   │   ├── validation_prompt.md
-│   │   ├── trend_estimation_prompt.md
-│   │   └── synthesis_prompt.md
-│   └── /scripts                     # Shell scripts for orchestration
-│       ├── run_weekly_update.sh
-│       ├── run_single_agent.sh
-│       └── validate_data.sh
+stratoterra/
+├── /agents                          # Agent pipeline infrastructure
+│   ├── /config                      # JSON config files for each agent
+│   ├── /prompts                     # Markdown prompt files
+│   │   ├── orchestrator.md          # Master pipeline orchestrator
+│   │   ├── agent_01_official_stats.md
+│   │   ├── agent_02_financial_data.md
+│   │   ├── ...                      # Agents 03-16
+│   │   ├── agent_17_auditor.md      # Autonomous auditor (invoked twice)
+│   │   └── agent_18_article_writer.md  # Daily article generator
+│   ├── /scripts                     # Shell/Python utility scripts
+│   │   ├── run_weekly_update.sh     # Main entry point (validates env)
+│   │   ├── run_single_agent.sh      # Re-run specific agent
+│   │   ├── run_daily_articles.sh    # Daily article generation
+│   │   ├── run_prefetch.sh          # Pre-fetch data sources
+│   │   ├── validate_staging.sh      # Validate outputs per phase
+│   │   ├── generate_chunks.sh       # Generate UI chunks
+│   │   ├── archive_snapshot.sh      # Create weekly archive
+│   │   └── build_article_index.py   # Build article index chunk
+│   └── /prefetch                    # Deterministic data pre-fetch system
+│       ├── run_all.py               # Main runner
+│       ├── base_fetcher.py          # Base class (rate limiting, retry)
+│       ├── fetch_worldbank.py       # No API key needed
+│       ├── fetch_imf.py             # No API key needed
+│       ├── fetch_gdelt.py           # No API key needed
+│       ├── fetch_fx_commodities.py  # No API key needed
+│       ├── fetch_acled.py           # Requires free API key
+│       ├── fetch_eia.py             # Requires free API key
+│       ├── fetch_comtrade.py        # Requires free API key
+│       ├── requirements.txt         # Python deps: requests, python-dotenv
+│       └── .env.example             # API key template
 │
 ├── /data                            # THE MODEL (output of agents)
 │   ├── /countries
@@ -162,9 +169,12 @@ Phase 6: SYNTHESIS
   13. Agent: Country Profile Synthesizer
   14. Agent: Weekly Briefing Generator
 
+Phase 6.5: ARTICLES
+  18. Agent: Article Writer (5 full articles with SVG illustrations)
+
 Phase 7: FINALIZATION
   15. Agent: Data Quality Report Generator
-  17b. Agent: Autonomous Auditor (Quality Audit)
+  17b. Agent: Autonomous Auditor (Quality Audit — GO/NO-GO gate)
   16. Agent: Archive & Commit
 ```
 
@@ -1503,18 +1513,84 @@ estimated_duration: 2-5 minutes (escalation) + 1-2 minutes (quality)
 
 ---
 
+### Agent 18: Article Writer
+
+```yaml
+agent_id: article_writer
+phase: 6.5_publish
+priority: 18
+
+purpose: >
+  Transform the latest briefing top stories into 5 full-length, professionally
+  written news articles with programmatic SVG hero illustrations. Can run as
+  part of the weekly pipeline (Phase 6.5) or standalone daily via
+  agents/scripts/run_daily_articles.sh.
+
+input_files:
+  - /data/global/weekly_briefing_{date}.json
+  - /data/global/event_feed.json
+  - /data/indices/alert_index.json
+  - /data/countries/*.json
+
+output_files:
+  - /data/global/articles/article_{date}_{rank}.json  # 5 articles per run
+  - /data/global/articles/article_index_{date}.json    # daily index
+
+article_format:
+  length: 800-1200 words
+  structure: lede → context → analysis → implications → outlook
+  illustration: programmatic SVG hero (600x400, abstract/geometric)
+  index_builder: python3 agents/scripts/build_article_index.py
+
+daily_runner: agents/scripts/run_daily_articles.sh
+estimated_duration: 20-30 minutes
+```
+
+---
+
+### Pre-Fetch System
+
+```yaml
+purpose: >
+  Deterministic Python scripts that fetch structured data from public APIs
+  before the pipeline runs, providing agents with cached data. Located in
+  agents/prefetch/.
+
+runner: agents/scripts/run_prefetch.sh [all|--no-key|<source>]
+module: python3 -m agents.prefetch.run_all -v
+
+no_key_sources:
+  - worldbank   # 18 indicators (GDP, population, governance)
+  - imf         # WEO forecasts, IFS monetary data
+  - gdelt       # Global events (news, protests, conflicts)
+  - fx_commodities  # FX rates, commodity prices
+
+key_required_sources:
+  - acled       # Armed conflict events
+  - eia         # US energy data
+  - comtrade    # Bilateral trade
+
+output: staging/prefetched/*.json (committed to repo)
+cache: staging/prefetch_cache/ (gitignored, fallback)
+
+ci_cd: .github/workflows/prefetch.yml (weekly cron, Sunday 06:00 UTC)
+```
+
+---
+
 ## Total Weekly Run Estimate
 
 ```
-Phase 1 (Gathering):    60-120 minutes
-Phase 2 (Processing):   20-30 minutes
-Phase 3 (Validation):   15-20 minutes
-Phase 4 (Integration):  5-10 minutes
-Phase 5 (Analysis):     50-75 minutes
-Phase 6 (Synthesis):    30-45 minutes
-Phase 7 (Finalization): 7-10 minutes
-─────────────────────────────────────
-TOTAL:                  ~3-5 hours per weekly run
+Phase 1   (Gathering):     60-120 minutes
+Phase 2   (Processing):    20-30 minutes
+Phase 3   (Validation):    15-20 minutes  (includes Agent 17a audit)
+Phase 4   (Integration):    5-10 minutes
+Phase 5   (Analysis):      50-75 minutes
+Phase 6   (Synthesis):     30-45 minutes
+Phase 6.5 (Articles):      20-30 minutes  (Agent 18)
+Phase 7   (Finalization):   7-10 minutes  (includes Agent 17b audit)
+──────────────────────────────────────────
+TOTAL:                     ~3-5 hours per weekly run
 ```
 
 With Claude Code MAX, this should be feasible in a single session. The most time-intensive parts are the LLM-based analysis (trend estimation, synthesis) and the web fetching (news, financial data).

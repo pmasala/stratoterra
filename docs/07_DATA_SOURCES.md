@@ -1,8 +1,8 @@
 # Geopolitical Intelligence Model — Data Source Registry
 
-**Version:** 1.0-draft
-**Date:** 2026-03-01
-**Status:** Design Phase
+**Version:** 1.1
+**Date:** 2026-03-14
+**Status:** Active
 **Depends on:** `01_FACTOR_MODEL_SPEC.md`, `02_AGENT_ARCHITECTURE.md`
 
 ---
@@ -912,3 +912,23 @@ When a source degrades:
 2. Attempt alternative sources
 3. If no alternative: mark affected factors as lower confidence
 4. Investigate and fix extraction logic before next run
+
+---
+
+## 13. Pre-Fetch System Integration
+
+Several data sources have been automated via deterministic Python scripts in `agents/prefetch/`. These run before the pipeline (or via GitHub Actions cron) and cache structured data in `staging/prefetched/`.
+
+| Source | Pre-fetch Script | API Key Required | Notes |
+|---|---|---|---|
+| World Bank | `fetch_worldbank.py` | No | 18 indicators; only one indicator per API call; WGI Political Stability = `PV.EST` (not PS.EST); TWN (Taiwan) missing from WB — expected |
+| IMF | `fetch_imf.py` | No | Country-filtered URLs return 403 — must fetch all countries and filter locally; `GGX_NGDP` returns no data |
+| GDELT | `fetch_gdelt.py` | No | Thematic queries get 429'd without 5s delays between them; Geo API unreliable (404s) |
+| FX/Commodities | `fetch_fx_commodities.py` | No | metals.live has TLS SNI issue (`TLSV1_UNRECOGNIZED_NAME`); commodity prices gap-filled by agents |
+| ACLED | `fetch_acled.py` | Yes (free) | Set `ACLED_API_KEY` and `ACLED_EMAIL` in `.env` |
+| EIA | `fetch_eia.py` | Yes (free) | Set `EIA_API_KEY` in `.env` |
+| Comtrade | `fetch_comtrade.py` | Yes (free) | Set `COMTRADE_API_KEY` in `.env` |
+
+**Runner:** `./agents/scripts/run_prefetch.sh [all|--no-key|<source>]`
+**CI/CD:** `.github/workflows/prefetch.yml` — runs every Sunday at 06:00 UTC
+**Output:** `staging/prefetched/*.json` (committed), `staging/prefetch_cache/` (gitignored fallback)

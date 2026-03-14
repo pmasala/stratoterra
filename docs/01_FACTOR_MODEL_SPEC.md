@@ -1,8 +1,8 @@
 # Geopolitical Intelligence Model — Factor Model Specification
 
-**Version:** 1.0-draft
-**Date:** 2026-03-01
-**Status:** Design Phase
+**Version:** 1.1
+**Date:** 2026-03-14
+**Status:** Active
 
 ---
 
@@ -10,7 +10,7 @@
 
 This document defines the complete data schema for the Geopolitical Intelligence Model. Every country in the model is described by factors organized into 6 layers. Bilateral relationships between countries form a separate relational layer. Supranational entities are modeled as overlays.
 
-The model targets **~50 core countries** (representing 95%+ of global investable markets) plus **~20-30 frontier countries** (where information asymmetry provides investor value).
+The model targets **75 countries** in 3 tiers: 30 Tier 1 (major economies), 25 Tier 2 (regional players), and 20 Tier 3 (frontier/watchlist), representing 95%+ of global investable markets.
 
 ---
 

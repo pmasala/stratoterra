@@ -1,8 +1,8 @@
 # Geopolitical Intelligence Model — Agent Configuration Files
 
-**Version:** 1.0-draft
-**Date:** 2026-03-01
-**Status:** Design Phase
+**Version:** 1.1
+**Date:** 2026-03-14
+**Status:** Active
 **Depends on:** `01_FACTOR_MODEL_SPEC.md`, `02_AGENT_ARCHITECTURE.md`
 
 ---
@@ -12,11 +12,11 @@
 This document contains the actual prompt/configuration for each agent that you will use with Claude Code MAX. Each agent is a structured prompt that tells Claude Code exactly what to do, what files to read, what to produce, and how to handle errors.
 
 **Usage pattern:**
-1. Open Claude Code MAX session
-2. Paste or reference the orchestrator prompt
-3. The orchestrator runs agents sequentially
-4. You review escalations and quality report
-5. Approve final commit
+1. Run `./agents/scripts/run_weekly_update.sh` to validate environment
+2. Run `claude --dangerously-skip-permissions agents/prompts/orchestrator.md`
+3. The orchestrator runs all 18 agents sequentially (fully autonomous)
+4. Agent 17 handles escalation audit and quality gate — no human review needed
+5. Agent 16 commits and pushes automatically if quality gate passes
 
 ---
 
@@ -56,6 +56,7 @@ Phase 2 — PROCESSING:
 
 Phase 3 — VALIDATION:
   Agent 8: Cross-Validator & Anomaly Detector
+  Agent 17a: Autonomous Auditor (Escalation Audit)
 
 Phase 4 — INTEGRATION:
   Agent 9: Data Integrator
@@ -69,8 +70,12 @@ Phase 6 — SYNTHESIS:
   Agent 13: Country Profile Synthesizer
   Agent 14: Weekly Briefing Generator
 
+Phase 6.5 — ARTICLES:
+  Agent 18: Article Writer
+
 Phase 7 — FINALIZATION:
   Agent 15: Data Quality Reporter
+  Agent 17b: Autonomous Auditor (Quality Audit — GO/NO-GO gate)
   Agent 16: Archive & Commit Preparer
 
 ## Run log format
@@ -105,13 +110,15 @@ If an agent fails:
 4. Save all staging files so far
 5. Suggest fix and ask if I want to retry or skip
 
-## Human review points
+## Autonomous auditing
 
-After Agent 8 (Validator): If there are ESCALATED items, PAUSE and present
-them to me for review. Wait for my decisions before proceeding to Agent 9.
+Agent 17 replaces all human review checkpoints:
+- After Agent 8: Agent 17a resolves ESCALATE verdicts autonomously using
+  rule-based decision framework (source count, confidence, trend alignment).
+- After Agent 15: Agent 17b reviews quality metrics and decides
+  GO/CONDITIONAL_GO/NO_GO. If NO_GO, Agent 16 skips the commit.
 
-After Agent 15 (Quality Report): Present the quality summary and any
-critical issues. Wait for my acknowledgment before Agent 16.
+No human intervention is required during the pipeline run.
 
 ## Important notes
 
@@ -743,8 +750,8 @@ Present each escalation clearly:
 - What is the recommended action?
 - Options: ACCEPT / REJECT / INVESTIGATE FURTHER
 
-⚠️ PAUSE HERE and present escalations to the human operator.
-Wait for decisions before proceeding.
+Agent 17a (Autonomous Auditor) will resolve escalations automatically
+using rule-based decision framework. No human review needed.
 
 ### Time budget
 Target: 15-20 minutes
@@ -1030,7 +1037,8 @@ Generate /data/metadata/quality_report_{DATE}.json
    "Country Y has degraded coverage"
    "Consider adding source Z for better coverage"
 
-⚠️ PAUSE and present quality summary to human operator.
+Agent 17b (Autonomous Auditor) will review the quality report and
+decide GO/CONDITIONAL_GO/NO_GO for the commit. No human review needed.
 
 Time budget: 5 minutes
 
@@ -1068,10 +1076,133 @@ Phase: 7 | Run ID: {RUN_ID}
    - {change_2}
    - {change_3}"
 
-8. Print the commit message for human to review and execute:
+8. If Agent 17b returned GO or CONDITIONAL_GO, execute:
    git add -A && git commit -m "..." && git push
+   If Agent 17b returned NO_GO, skip the commit and report the issue.
 
 Time budget: 5 minutes
+```
+
+---
+
+## Agent 17: Autonomous Auditor
+
+```markdown
+# AGENT 17: AUTONOMOUS AUDITOR
+
+Agent ID: autonomous_auditor
+Phase: AUDIT (invoked twice per pipeline run)
+Run ID: {RUN_ID}
+
+## Purpose
+Replace human review checkpoints with autonomous, rule-based auditing.
+Invoked twice per pipeline run in two distinct modes:
+
+1. Escalation Audit (after Agent 8, before Agent 9) — resolves ESCALATE verdicts
+2. Quality Audit (after Agent 15, before Agent 16) — reviews quality report, decides GO/NO-GO
+
+Mode is detected automatically based on which input files exist.
+
+## MODE 1: ESCALATION AUDIT
+
+### Inputs
+- /staging/validated/escalation_report_{DATE}.json
+- /staging/validated/validated_updates_{DATE}.json
+- /data/countries/*.json (current values for context)
+
+### Outputs
+- /staging/validated/auditor_escalation_decisions_{DATE}.json
+- Updated /staging/validated/validated_updates_{DATE}.json (ESCALATE verdicts resolved)
+
+### Decision Framework
+For each escalated item, evaluate:
+1. Source Count: 3+ sources → strong, 2 → moderate, 1 → weak
+2. Confidence Score: >= 0.7 → high, 0.4-0.69 → moderate, < 0.4 → low
+3. Validator Recommendation: what did Agent 08 suggest?
+4. Trend Alignment: does the change align with recent trends?
+
+Decisions: ACCEPT, ACCEPT_WITH_DOWNGRADE, REJECT
+
+## MODE 2: QUALITY AUDIT
+
+### Inputs
+- /data/metadata/quality_report_{DATE}.json
+- /staging/run_log.json
+
+### Outputs
+- /data/metadata/auditor_quality_decision_{DATE}.json
+
+### Decision Thresholds
+- GO: all metrics healthy
+- CONDITIONAL_GO: some metrics below ideal but above minimum
+- NO_GO: any critical metric below minimum (blocks Agent 16 commit)
+
+Time budget: 2-5 minutes (escalation) + 1-2 minutes (quality)
+```
+
+---
+
+## Agent 18: Article Writer
+
+```markdown
+# AGENT 18: ARTICLE WRITER
+
+Agent ID: article_writer
+Phase: 6.5 (PUBLISH)
+Run ID: {RUN_ID}
+
+## Purpose
+Transform the latest briefing top stories into 5 full-length, professionally
+written news articles with programmatic SVG hero illustrations. Each article
+reads like content from CNN, CNBC, or NYT — authoritative, analytical, and
+accessible to sophisticated investors.
+
+## Cadence
+Daily — run standalone via `agents/scripts/run_daily_articles.sh` or as
+Phase 6.5 of the weekly pipeline. Always produce exactly 5 articles per run.
+
+## Inputs
+- /data/global/weekly_briefing_{DATE}.json — top stories to expand
+- /data/global/event_feed.json — raw event data for detail
+- /data/indices/alert_index.json — related alerts
+- /data/countries/*.json — country data for statistics
+
+## Outputs
+- /data/global/articles/article_{DATE}_{RANK}.json — one per story (RANK = 001-005)
+- /data/global/articles/article_index_{DATE}.json — lightweight listing index
+
+## Instructions
+
+### Step 1: Load Context
+1. Read the latest weekly_briefing_{DATE}.json
+2. Extract top_stories array — select exactly 5 stories
+3. Read event_feed.json and alert_index.json for source material
+4. For each story, read relevant country files for statistics
+
+### Step 2: Write Articles
+For each top story (in briefing rank order), produce a full article:
+
+Writing Guidelines:
+- Length: 800-1200 words
+- Structure: Lede → context/background → analysis → implications → outlook
+- Tone: Authoritative but accessible. No jargon without explanation.
+- Data: Weave in specific numbers, percentages, and comparisons
+- Balance: Present multiple perspectives. Note uncertainty where it exists.
+- Investor angle: Each article should make clear why this matters for markets.
+
+### Step 3: Generate SVG Hero Illustrations
+For each article, create a programmatic SVG illustration (600x400) using
+abstract/geometric designs that evoke the story's theme. No photographs.
+
+### Step 4: Write Article Files
+Write each article to /data/global/articles/ with article_id format:
+art_{DATE}_{RANK} (e.g., art_2026-03-14_001)
+
+### Step 5: Build Index
+Write article_index_{DATE}.json listing all articles with metadata.
+Then run: python3 agents/scripts/build_article_index.py to merge indexes.
+
+Time budget: 20-30 minutes
 ```
 
 ---
@@ -1081,17 +1212,9 @@ Time budget: 5 minutes
 Before first run, ensure the project structure exists:
 
 ```bash
-#!/bin/bash
-# /agents/scripts/setup_project.sh
+# Environment setup is handled by the weekly update runner:
+./agents/scripts/run_weekly_update.sh
 
-mkdir -p /geopolitical-model/{agents/{config,prompts,scripts},data/{countries,relations,supranational,indices,timeseries,metadata,global,chunks/{country-summary,country-detail,relations,timeseries,global,supranational}},staging/{raw_collected,processed,validated,trends},web/{js,css,assets},archive,docs,tests/{fixtures/{mock_sources,expected_outputs,seed_data},schemas,scripts,reports}}
-
-# Initialize metadata files
-echo '{"schema_version": "1.0", "last_full_run": null}' > /geopolitical-model/data/metadata/schema_version.json
-echo '{}' > /geopolitical-model/data/metadata/last_update.json
-echo '[]' > /geopolitical-model/data/metadata/update_log.json
-echo '{"alerts": []}' > /geopolitical-model/data/indices/alert_index.json
-echo '{"keys": [], "last_modified": null}' > /geopolitical-model/data/chunks/manifest.json
-
-echo "Project structure initialized."
+# This script validates prerequisites (python3, git, jq),
+# creates staging directories, and initializes run_log.json.
 ```
