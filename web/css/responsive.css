@@ -146,12 +146,12 @@
   /* ── Mobile map toolbar (Color by + Overlay) ── */
   .mobile-map-toolbar {
     display: flex;
-    position: absolute;
-    bottom: 8px;
+    position: fixed;
+    bottom: calc(var(--mobile-tab-bar-height) + 8px);
     left: 54px;
     right: 8px;
     gap: 6px;
-    z-index: 860;
+    z-index: 1050;
   }
 
   .mobile-map-toolbar select {
@@ -206,6 +206,31 @@
   #app.ticker-watch-on #main-content              { margin-bottom: 22px; }
   #app.ticker-primary-on #main-content            { margin-bottom: 36px; }
   #app.ticker-watch-on.ticker-primary-on #main-content { margin-bottom: 58px; }
+
+  /* Shift map controls up when ticker bars are visible */
+  #app.ticker-watch-on .mobile-map-toolbar,
+  #app.ticker-watch-on .st-layers-toggle {
+    bottom: calc(var(--mobile-tab-bar-height) + 22px + 8px);
+  }
+  #app.ticker-primary-on .mobile-map-toolbar,
+  #app.ticker-primary-on .st-layers-toggle {
+    bottom: calc(var(--mobile-tab-bar-height) + 36px + 8px);
+  }
+  #app.ticker-watch-on.ticker-primary-on .mobile-map-toolbar,
+  #app.ticker-watch-on.ticker-primary-on .st-layers-toggle {
+    bottom: calc(var(--mobile-tab-bar-height) + 58px + 8px);
+  }
+
+  /* Smooth transition for controls repositioning */
+  .mobile-map-toolbar,
+  .st-layers-toggle {
+    transition: bottom 0.2s ease;
+  }
+
+  /* ── Color legend — above toolbar controls ── */
+  .color-legend {
+    bottom: 52px !important;
+  }
 
   /* ── View containers — full screen above tab bar ── */
   .view-container {
