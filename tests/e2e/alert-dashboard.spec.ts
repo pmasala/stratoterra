@@ -26,15 +26,15 @@ test.describe('Alert Dashboard', () => {
     expect(count).toBeGreaterThanOrEqual(1);
   });
 
-  test('summary bar shows severity counts', async ({ page }) => {
-    await page.waitForSelector('.alert-summary-bar', { timeout: 10_000 });
-    await expect(page.locator('.alert-summary-count--critical')).toBeVisible();
-    await expect(page.locator('.alert-summary-count--warning')).toBeVisible();
-    await expect(page.locator('.alert-summary-count--watch')).toBeVisible();
+  test('alert sections group alerts by severity', async ({ page }) => {
+    await page.waitForSelector('.alert-section', { timeout: 10_000 });
+    const sections = page.locator('.alert-section');
+    const count = await sections.count();
+    expect(count).toBeGreaterThanOrEqual(1);
 
-    // Each count has a number
-    const criticalNum = await page.locator('.alert-summary-count--critical .alert-summary-count__num').textContent();
-    expect(Number(criticalNum)).toBeGreaterThanOrEqual(0);
+    // Each section title includes a count in parentheses
+    const title = await sections.first().locator('.alert-section__title').textContent();
+    expect(title).toMatch(/\(\d+\)/);
   });
 
   test('filter dropdowns are present', async ({ page }) => {

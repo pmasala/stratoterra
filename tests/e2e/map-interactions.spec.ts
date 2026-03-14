@@ -7,14 +7,14 @@ test.describe('Map Interactions', () => {
     await waitForAppInit(page);
   });
 
-  test('metric selector has all 8 options', async ({ page }) => {
+  test('metric selector has all 9 options', async ({ page }) => {
     const options = page.locator('#metric-select option');
-    await expect(options).toHaveCount(8);
+    await expect(options).toHaveCount(9);
 
     const expectedValues = [
-      'gdp_growth_trend', 'political_stability', 'investment_risk',
-      'military_spending_trend', 'alert_severity', 'economic_complexity',
-      'energy_independence', 'trade_openness',
+      'alert_severity', 'gdp_growth_trend', 'political_stability',
+      'investment_risk', 'military_spending_trend', 'military_spending_pct_gdp',
+      'composite_power', 'energy_independence', 'trade_openness',
     ];
     for (const val of expectedValues) {
       await expect(page.locator(`#metric-select option[value="${val}"]`)).toBeAttached();
@@ -26,6 +26,7 @@ test.describe('Map Interactions', () => {
     await expect(options).toHaveCount(8);
 
     const expectedValues = ['none', 'EU', 'NATO', 'BRICS', 'ASEAN', 'OPEC', 'G7', 'G20'];
+    // Note: the HTML uses "None" display text but value is "none"
     for (const val of expectedValues) {
       await expect(page.locator(`#overlay-select option[value="${val}"]`)).toBeAttached();
     }

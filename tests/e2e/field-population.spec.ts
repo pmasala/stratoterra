@@ -261,20 +261,19 @@ test.describe('Field Population — Executive Summary', () => {
 // ─── Suite 7: Briefing View ──────────────────────────────────────────────────
 
 test.describe('Field Population — Briefing View', () => {
-  test('headline and stories populated', async ({ page }) => {
+  test('article cards populated', async ({ page }) => {
     await page.goto('./');
     await waitForAppInit(page);
     await navigateToView(page, 'briefing');
 
-    // Headline
-    const headline = page.locator('.briefing-headline');
-    const headlineText = await headline.textContent();
-    expect(headlineText!.trim().length, 'Briefing headline too short').toBeGreaterThan(10);
+    // Article headlines
+    await page.waitForSelector('.article-card__headline', { timeout: 10_000 });
+    const headlines = page.locator('.article-card__headline');
+    const count = await headlines.count();
+    expect(count, 'Should have article headlines').toBeGreaterThan(0);
 
-    // Stories
-    const stories = page.locator('.story-card__title');
-    const count = await stories.count();
-    expect(count, 'Should have story titles').toBeGreaterThan(0);
+    const text = await headlines.first().textContent();
+    expect(text!.trim().length, 'Article headline too short').toBeGreaterThan(5);
   });
 
   test('regional tabs have content', async ({ page }) => {

@@ -44,9 +44,18 @@ export async function waitForAppInit(page: Page) {
  */
 export async function openCountryViaSearch(page: Page, name: string, code: string) {
   const searchInput = page.locator('#search');
+  await searchInput.click();
   await searchInput.fill(name);
-  // Wait for dropdown to appear with the matching result
-  await page.waitForSelector(`.search-dropdown__item[data-code="${code}"]`, { timeout: 5_000 });
+  // The search handler is debounced at 150ms — if the dropdown doesn't appear,
+  // re-trigger by typing the last character
+  try {
+    await page.waitForSelector(`.search-dropdown__item[data-code="${code}"]`, { timeout: 3_000 });
+  } catch {
+    // Retry: clear and re-type to ensure the input event fires
+    await searchInput.fill('');
+    await searchInput.type(name, { delay: 10 });
+    await page.waitForSelector(`.search-dropdown__item[data-code="${code}"]`, { timeout: 10_000 });
+  }
   await page.locator(`.search-dropdown__item[data-code="${code}"]`).click();
   // Wait for panel to open and finish loading (panel-header__title shows country name)
   await page.waitForSelector('#country-panel.open .panel-header__title', { timeout: 10_000 });

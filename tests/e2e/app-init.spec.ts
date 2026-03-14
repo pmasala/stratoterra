@@ -20,11 +20,11 @@ test.describe('App Initialization', () => {
     expect(count).toBe(75);
   });
 
-  test('navigation links are present for all 6 views', async ({ page }) => {
+  test('navigation links are present for all 5 views', async ({ page }) => {
     const navLinks = page.locator('#main-nav .nav-link');
-    await expect(navLinks).toHaveCount(6);
+    await expect(navLinks).toHaveCount(5);
 
-    const expectedViews = ['map', 'briefing', 'alerts', 'rankings', 'relations', 'compare'];
+    const expectedViews = ['map', 'briefing', 'alerts', 'rankings', 'compare'];
     for (const view of expectedViews) {
       await expect(page.locator(`.nav-link[data-view="${view}"]`)).toBeVisible();
     }

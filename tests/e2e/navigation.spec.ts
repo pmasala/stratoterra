@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { waitForAppInit, navigateToView } from './fixtures/test-helpers';
+import { waitForAppInit, navigateToView, openCountryViaSearch } from './fixtures/test-helpers';
 
 test.describe('Navigation', () => {
   test.beforeEach(async ({ page }) => {
@@ -9,21 +9,21 @@ test.describe('Navigation', () => {
 
   test('clicking nav links switches views', async ({ page }) => {
     // Click Briefing
-    await page.locator('[data-view="briefing"]').click();
+    await page.locator('#main-nav [data-view="briefing"]').click();
     await expect(page.locator('#briefing-view')).toHaveClass(/active/);
     await expect(page.locator('#map-container')).toBeHidden();
 
     // Click Alerts
-    await page.locator('[data-view="alerts"]').click();
+    await page.locator('#main-nav [data-view="alerts"]').click();
     await expect(page.locator('#alerts-view')).toHaveClass(/active/);
     await expect(page.locator('#briefing-view')).not.toHaveClass(/active/);
   });
 
   test('hash changes on navigation', async ({ page }) => {
-    await page.locator('[data-view="rankings"]').click();
+    await page.locator('#main-nav [data-view="rankings"]').click();
     await expect(page).toHaveURL(/#rankings/);
 
-    await page.locator('[data-view="map"]').click();
+    await page.locator('#main-nav [data-view="map"]').click();
     await expect(page).toHaveURL(/#map/);
   });
 
@@ -53,9 +53,9 @@ test.describe('Navigation', () => {
   });
 
   test('active nav link updates on navigation', async ({ page }) => {
-    await page.locator('[data-view="alerts"]').click();
-    await expect(page.locator('[data-view="alerts"]')).toHaveClass(/active/);
-    await expect(page.locator('[data-view="map"]')).not.toHaveClass(/active/);
+    await page.locator('#main-nav [data-view="alerts"]').click();
+    await expect(page.locator('#main-nav [data-view="alerts"]')).toHaveClass(/active/);
+    await expect(page.locator('#main-nav [data-view="map"]')).not.toHaveClass(/active/);
   });
 
   test('browser back/forward works with hash routing', async ({ page }) => {
@@ -72,11 +72,8 @@ test.describe('Navigation', () => {
   });
 
   test('country panel closes when navigating away from map', async ({ page }) => {
-    // Open a country panel
-    await page.fill('#search', 'United States');
-    await page.waitForSelector('.search-dropdown__item[data-code="USA"]');
-    await page.locator('.search-dropdown__item[data-code="USA"]').click();
-    await page.waitForSelector('#country-panel.open');
+    // Open a country panel via search
+    await openCountryViaSearch(page, 'United States', 'USA');
 
     // Navigate away
     await navigateToView(page, 'briefing');
