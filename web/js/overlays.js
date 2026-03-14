@@ -391,7 +391,10 @@ var IntelOverlays = (function() {
         cardEl.dataset.wasOpen = cardEl.style.display === 'block' ? 'true' : 'false';
         cardEl.style.display = 'none';
       }
-      if (panelEl) panelEl.style.display = 'none';
+      if (panelEl) {
+        panelEl.style.display = 'none';
+        panelEl.classList.remove('mobile-open');
+      }
     }
   };
 })();

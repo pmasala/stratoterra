@@ -47,8 +47,24 @@
 }
 
 /* --- Mobile: < 768px --- */
+
+/* Mobile tab bar height variable */
+:root {
+  --mobile-tab-bar-height: 56px;
+}
+
+/* Mobile tab bar — hidden on desktop */
+.mobile-tab-bar {
+  display: none;
+}
+
+/* Mobile map toolbar — hidden on desktop */
+.mobile-map-toolbar {
+  display: none;
+}
+
 @media (max-width: 767px) {
-  /* Header compact */
+  /* Header compact — logo + search only */
   #header {
     flex-wrap: wrap;
     height: auto;
@@ -74,56 +90,47 @@
     margin-left: auto;
   }
 
-  /* Bottom tab navigation */
+  /* Hide desktop nav on mobile */
   #main-nav {
     display: none;
   }
 
+  /* Hide desktop bottom bar on mobile (replaced by mobile toolbar) */
   #bottom-bar {
-    flex-wrap: wrap;
-    height: auto;
-    padding: 6px 8px;
-    gap: 4px;
+    display: none;
   }
 
-  .metric-selector,
-  .overlay-selector {
-    flex: 1 1 45%;
-  }
-
-  .last-updated {
-    flex: 1 1 100%;
-    text-align: center;
-    padding-top: 4px;
-  }
-
-  /* Mobile bottom tab bar */
+  /* ── Mobile bottom tab bar ── */
   .mobile-tab-bar {
     display: flex;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    height: var(--mobile-tab-bar-height);
     background: var(--bg-secondary);
-    border-top: var(--border-subtle);
+    border-top: 1px solid rgba(255,255,255,0.08);
     z-index: 1100;
-    padding: 4px 0;
+    padding: 0;
     justify-content: space-around;
+    align-items: stretch;
   }
 
   .mobile-tab {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6px 4px;
+    justify-content: center;
+    flex: 1;
+    padding: 4px 0;
     background: none;
     border: none;
     color: var(--text-muted);
     font-size: 10px;
+    font-family: var(--font-ui);
     cursor: pointer;
-    min-width: 44px;
-    min-height: 44px;
-    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+    transition: color 0.15s;
   }
 
   .mobile-tab.active {
@@ -131,11 +138,82 @@
   }
 
   .mobile-tab__icon {
-    font-size: 18px;
-    margin-bottom: 2px;
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 3px;
   }
 
-  /* Full-screen panel on mobile */
+  /* ── Mobile map toolbar (Color by + Overlay) ── */
+  .mobile-map-toolbar {
+    display: flex;
+    position: absolute;
+    bottom: 8px;
+    left: 54px;
+    right: 8px;
+    gap: 6px;
+    z-index: 860;
+  }
+
+  .mobile-map-toolbar select {
+    flex: 1;
+    height: 36px;
+    padding: 0 8px;
+    background: rgba(11, 14, 20, 0.92);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: var(--font-ui);
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%2394A3B8'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    padding-right: 24px;
+  }
+
+  /* ── Main content area — leave room for tab bar ── */
+  #app {
+    padding-bottom: var(--mobile-tab-bar-height);
+  }
+
+  /* ── Alert ticker — position above tab bar ── */
+  .alert-ticker {
+    bottom: var(--mobile-tab-bar-height) !important;
+  }
+
+  .ticker-primary {
+    height: 36px;
+  }
+
+  .ticker-headline {
+    font-size: 11px !important;
+  }
+
+  .ticker-tag__label {
+    font-size: 9px !important;
+  }
+
+  .ticker-secondary {
+    height: 22px;
+  }
+
+  .ticker-scroll-item {
+    font-size: 10px !important;
+  }
+
+  /* Adjust main-content margin for ticker on mobile */
+  #app.ticker-watch-on #main-content              { margin-bottom: 22px; }
+  #app.ticker-primary-on #main-content            { margin-bottom: 36px; }
+  #app.ticker-watch-on.ticker-primary-on #main-content { margin-bottom: 58px; }
+
+  /* ── View containers — full screen above tab bar ── */
+  .view-container {
+    padding: 16px 12px;
+    padding-bottom: 24px;
+  }
+
+  /* ── Full-screen panel on mobile ── */
   .panel {
     width: 100%;
     max-width: 100%;
@@ -148,7 +226,7 @@
     flex: 1;
   }
 
-  /* Factor grid single column */
+  /* ── Factor grid single column ── */
   .factor-grid {
     grid-template-columns: 1fr;
   }
@@ -161,11 +239,6 @@
   .layer-tab {
     padding: 8px 10px;
     font-size: 11px;
-  }
-
-  /* View containers full width */
-  .view-container {
-    padding: 12px 8px;
   }
 
   /* Rankings as cards on mobile */
@@ -208,21 +281,19 @@
     min-width: 60px;
   }
 
-  /* Disclaimer */
+  /* Disclaimer — above tab bar */
   #disclaimer {
     font-size: 10px;
     padding: 3px 8px;
+    bottom: var(--mobile-tab-bar-height) !important;
   }
 
   /* Ensure touch targets >= 44px */
-  .nav-link,
   .layer-tab,
   .region-tab,
   .panel-header__back,
   .panel-header__close,
   .alert-filter-select,
-  #metric-select,
-  #overlay-select,
   .reasoning-toggle,
   .source-toggle {
     min-height: 44px;

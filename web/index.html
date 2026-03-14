@@ -56,6 +56,31 @@
       <div id="map-container"></div>
       <div id="country-panel" class="panel hidden" role="complementary" aria-label="Country detail"></div>
 
+      <!-- Mobile map toolbar (Color by + Overlay, visible only on mobile map view) -->
+      <div id="mobile-map-toolbar" class="mobile-map-toolbar">
+        <select id="mobile-metric-select" aria-label="Color map by metric">
+          <option value="alert_severity" selected>Alert Severity</option>
+          <option value="gdp_growth_trend">GDP Growth</option>
+          <option value="political_stability">Stability</option>
+          <option value="investment_risk">Inv. Risk</option>
+          <option value="military_spending_trend">Mil. Spend</option>
+          <option value="military_spending_pct_gdp">Mil. % GDP</option>
+          <option value="composite_power">Power Index</option>
+          <option value="energy_independence">Energy Ind.</option>
+          <option value="trade_openness">Trade Open.</option>
+        </select>
+        <select id="mobile-overlay-select" aria-label="Geopolitical overlay">
+          <option value="none">No Overlay</option>
+          <option value="EU">EU</option>
+          <option value="NATO">NATO</option>
+          <option value="BRICS">BRICS</option>
+          <option value="ASEAN">ASEAN</option>
+          <option value="OPEC">OPEC</option>
+          <option value="G7">G7</option>
+          <option value="G20">G20</option>
+        </select>
+      </div>
+
       <!-- Intel Overlays toggle (mobile) -->
       <button id="st-layers-toggle" class="st-layers-toggle" aria-label="Toggle intel overlays">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -222,6 +247,30 @@
       </div>
     </div>
   </div>
+
+  <!-- Mobile bottom tab bar (hidden on desktop) -->
+  <nav id="mobile-tab-bar" class="mobile-tab-bar" aria-label="Mobile navigation">
+    <button class="mobile-tab active" data-view="map">
+      <span class="mobile-tab__icon">&#x1F5FA;</span>
+      <span>Map</span>
+    </button>
+    <button class="mobile-tab" data-view="briefing">
+      <span class="mobile-tab__icon">&#x1F4F0;</span>
+      <span>Stories</span>
+    </button>
+    <button class="mobile-tab" data-view="alerts">
+      <span class="mobile-tab__icon">&#x26A0;</span>
+      <span>Alerts</span>
+    </button>
+    <button class="mobile-tab" data-view="rankings">
+      <span class="mobile-tab__icon">&#x1F3C6;</span>
+      <span>Rankings</span>
+    </button>
+    <button class="mobile-tab" data-view="compare">
+      <span class="mobile-tab__icon">&#x2194;</span>
+      <span>Compare</span>
+    </button>
+  </nav>
 
   <div id="disclaimer">
     AI-generated geopolitical analysis for informational purposes only.

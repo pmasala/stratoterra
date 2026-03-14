@@ -218,12 +218,12 @@
 
     if (viewName === 'map') {
       mapContainer.style.display = '';
-      bottomBar.style.display = '';
+      bottomBar.classList.remove('force-hidden');
       if (MapView.getMap()) MapView.getMap().invalidateSize();
       IntelOverlays.show();
     } else {
       mapContainer.style.display = 'none';
-      bottomBar.style.display = 'none';
+      bottomBar.classList.add('force-hidden');
       IntelOverlays.hide();
       // Close panels when leaving map
       if (CountryPanel.isOpen()) CountryPanel.close();
@@ -246,10 +246,25 @@
       AlertTicker.show();
     }
 
-    // Update nav active state
+    // Update nav active state (desktop + mobile)
     document.querySelectorAll('.nav-link').forEach(function(link) {
       link.classList.toggle('active', link.getAttribute('data-view') === viewName);
     });
+    document.querySelectorAll('.mobile-tab').forEach(function(tab) {
+      tab.classList.toggle('active', tab.getAttribute('data-view') === viewName);
+    });
+
+    // Show/hide mobile map toolbar
+    var mobileToolbar = document.getElementById('mobile-map-toolbar');
+    if (mobileToolbar) {
+      mobileToolbar.style.display = viewName === 'map' ? '' : 'none';
+    }
+
+    // Show/hide mobile overlay toggle
+    var layersToggle = document.getElementById('st-layers-toggle');
+    if (layersToggle) {
+      layersToggle.style.display = viewName === 'map' ? '' : 'none';
+    }
 
     currentView = viewName;
   }
@@ -309,19 +324,53 @@
       }
     );
 
-    // Wire metric selector
+    // Wire metric selector (desktop)
     var metricSelect = document.getElementById('metric-select');
     if (metricSelect) {
       metricSelect.addEventListener('change', function() {
         MapView.setMetric(this.value);
+        // Sync mobile selector
+        var mob = document.getElementById('mobile-metric-select');
+        if (mob) mob.value = this.value;
       });
     }
 
-    // Wire overlay selector
+    // Wire overlay selector (desktop)
     var overlaySelect = document.getElementById('overlay-select');
     if (overlaySelect) {
       overlaySelect.addEventListener('change', function() {
         MapView.setOverlay(this.value);
+        // Sync mobile selector
+        var mob = document.getElementById('mobile-overlay-select');
+        if (mob) mob.value = this.value;
+      });
+    }
+
+    // Wire mobile tab bar
+    document.querySelectorAll('.mobile-tab').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        var view = tab.getAttribute('data-view');
+        window.location.hash = '#' + view;
+      });
+    });
+
+    // Wire mobile metric selector (synced with desktop)
+    var mobileMetricSelect = document.getElementById('mobile-metric-select');
+    if (mobileMetricSelect) {
+      mobileMetricSelect.addEventListener('change', function() {
+        MapView.setMetric(this.value);
+        // Sync desktop selector
+        if (metricSelect) metricSelect.value = this.value;
+      });
+    }
+
+    // Wire mobile overlay selector (synced with desktop)
+    var mobileOverlaySelect = document.getElementById('mobile-overlay-select');
+    if (mobileOverlaySelect) {
+      mobileOverlaySelect.addEventListener('change', function() {
+        MapView.setOverlay(this.value);
+        // Sync desktop selector
+        if (overlaySelect) overlaySelect.value = this.value;
       });
     }
 
