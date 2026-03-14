@@ -98,9 +98,9 @@ class GDELTFetcher(BaseFetcher):
     def _fetch_geo_conflicts(self) -> list[dict]:
         """Fetch geo-tagged conflict/cooperation events.
 
-        The GDELT Geo API v2 returns point data for event locations.
-        This endpoint is unreliable (frequently returns 404), so failures
-        are handled gracefully.
+        The GDELT Geo API v2 has been silently removed (returns 404 since
+        at least early 2026). Kept for forward compatibility in case it
+        comes back online. Failures are handled gracefully.
         """
         params = {
             "query": "conflict OR military OR sanctions OR protest",

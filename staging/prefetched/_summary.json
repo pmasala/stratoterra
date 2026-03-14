@@ -1,38 +1,59 @@
 {
-  "run_timestamp": "2026-03-10T22:05:55.384104+00:00",
-  "total_elapsed_seconds": 51.5,
-  "fetchers_run": 4,
-  "total_records": 3595,
+  "run_timestamp": "2026-03-14T21:05:02.965468+00:00",
+  "total_elapsed_seconds": 295.1,
+  "fetchers_run": 7,
+  "total_records": 4438,
   "total_errors": 2,
   "fallbacks_used": 0,
   "results": [
+    {
+      "source": "fx_commodities",
+      "records": 29,
+      "errors": 0,
+      "fallback": false,
+      "elapsed": 0.7
+    },
     {
       "source": "imf",
       "records": 1003,
       "errors": 0,
       "fallback": false,
-      "elapsed": 2.4
-    },
-    {
-      "source": "fx_commodities",
-      "records": 25,
-      "errors": 1,
-      "fallback": false,
-      "elapsed": 3.6
+      "elapsed": 2.2
     },
     {
       "source": "worldbank",
       "records": 1960,
       "errors": 0,
       "fallback": false,
-      "elapsed": 6.7
+      "elapsed": 7.0
     },
     {
       "source": "gdelt",
-      "records": 607,
-      "errors": 1,
+      "records": 535,
+      "errors": 2,
       "fallback": false,
-      "elapsed": 51.5
+      "elapsed": 104.3
+    },
+    {
+      "source": "acled",
+      "records": 0,
+      "errors": 0,
+      "fallback": false,
+      "elapsed": 0.0
+    },
+    {
+      "source": "eia",
+      "records": 0,
+      "errors": 0,
+      "fallback": false,
+      "elapsed": 0.0
+    },
+    {
+      "source": "comtrade",
+      "records": 911,
+      "errors": 0,
+      "fallback": false,
+      "elapsed": 190.8
     }
   ]
 }

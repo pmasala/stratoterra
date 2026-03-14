@@ -10,10 +10,6 @@ Covers Agent 2's FX and commodity data needs.
 
 import logging
 import os
-import ssl
-
-import requests
-from requests.adapters import HTTPAdapter
 
 from .base_fetcher import BaseFetcher
 
@@ -96,82 +92,44 @@ class FXCommoditiesFetcher(BaseFetcher):
 
         return records
 
+    # Precious metals to fetch: (symbol, name, indicator_name)
+    METALS = [
+        ("XAU", "gold", "gold_usd_oz"),
+        ("XAG", "silver", "silver_usd_oz"),
+        ("XPT", "platinum", "platinum_usd_oz"),
+        ("XPD", "palladium", "palladium_usd_oz"),
+    ]
+
     def _fetch_commodities(self) -> list[dict]:
-        """Fetch commodity prices from free sources.
+        """Fetch precious metal prices from gold-api.com (free, no key).
 
-        Tries metals.live with standard request first, then with a
-        permissive SSL context (works around TLS SNI issues on some
-        systems). LLM agents gap-fill oil, gas, grains, and other
-        non-metal commodities.
+        LLM agents gap-fill oil, gas, grains, and other non-metal commodities.
         """
-        # Try standard request first
-        data = self.get_json("https://api.metals.live/v1/spot", timeout=15)
-        if data:
-            records = self._parse_metals_live(data)
-            if records:
-                return records
-
-        # Retry with permissive SSL context (TLS SNI workaround)
-        records = self._fetch_metals_live_permissive_ssl()
+        records = self._fetch_gold_api()
         if records:
             return records
 
         logger.warning("No commodity data from APIs — agents will gap-fill")
         return []
 
-    def _fetch_metals_live_permissive_ssl(self) -> list[dict]:
-        """Try metals.live with a permissive SSL context for SNI issues."""
-        try:
-            ctx = ssl.create_default_context()
-            ctx.check_hostname = False
-            ctx.verify_mode = ssl.CERT_NONE
-
-            class _SSLAdapter(HTTPAdapter):
-                def init_poolmanager(self, *args, **kwargs):
-                    kwargs["ssl_context"] = ctx
-                    return super().init_poolmanager(*args, **kwargs)
-
-            session = requests.Session()
-            session.mount("https://", _SSLAdapter())
-            session.headers.update(self.session.headers)
-
-            self.stats["requests_made"] += 1
-            resp = session.get("https://api.metals.live/v1/spot", timeout=15)
-            resp.raise_for_status()
-            return self._parse_metals_live(resp.json())
-        except Exception as e:
-            logger.warning("metals.live SSL fallback failed: %s", e)
-            self.stats["requests_failed"] += 1
-            return []
-
-    def _parse_metals_live(self, data: list) -> list[dict]:
-        """Parse metals.live spot price API response."""
+    def _fetch_gold_api(self) -> list[dict]:
+        """Fetch spot prices from gold-api.com (free, no key needed)."""
         records = []
-        if not isinstance(data, list):
-            return records
-
-        name_map = {
-            "gold": ("gold_usd_oz", "XAU"),
-            "silver": ("silver_usd_oz", "XAG"),
-            "platinum": ("platinum_usd_oz", "XPT"),
-            "palladium": ("palladium_usd_oz", "XPD"),
-        }
-
-        for entry in data:
-            if not isinstance(entry, dict):
-                continue
-            for metal, (indicator, code) in name_map.items():
-                price = entry.get(metal)
-                if price is not None:
-                    records.append({
-                        "commodity": metal,
-                        "commodity_code": code,
-                        "price_usd": price,
-                        "unit": "troy oz",
-                        "source": "metals.live",
-                        "indicator_name": indicator,
-                    })
-
+        for symbol, name, indicator in self.METALS:
+            data = self.get_json(
+                f"https://api.gold-api.com/price/{symbol}", timeout=15
+            )
+            if data and "price" in data:
+                records.append({
+                    "commodity": name,
+                    "commodity_code": symbol,
+                    "price_usd": data["price"],
+                    "unit": "troy oz",
+                    "source": "gold-api.com",
+                    "indicator_name": indicator,
+                })
+            else:
+                logger.warning("gold-api.com: no price for %s", symbol)
         return records
 
     def run(self) -> dict:
