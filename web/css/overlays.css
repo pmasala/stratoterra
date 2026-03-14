@@ -265,15 +265,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 8px;
+    position: fixed;
+    bottom: calc(var(--mobile-tab-bar-height) + 8px);
     left: 8px;
     width: 40px;
     height: 40px;
     background: rgba(11, 14, 20, 0.92);
     border: 1px solid var(--st-border-hi);
     color: var(--st-amber);
-    z-index: 860;
+    z-index: 1050;
     cursor: pointer;
     box-shadow: 0 2px 12px rgba(0,0,0,.5);
     border-radius: 6px;
