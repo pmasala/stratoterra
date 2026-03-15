@@ -3,7 +3,7 @@
   "country_name": "Egypt",
   "tier": 2,
   "region": "middle_east",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -20,9 +20,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Egypt faces severe oil import cost pressure and Suez Canal revenue uncertainty. Tourism disrupted by regional conflict. IMF program constrained. Food import costs rising.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Egypt facing severe oil import cost pressure, Suez Canal revenue uncertainty, and tourism disruption from regional conflict. Food import costs rising. IMF program constrains fiscal response.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 3338.47371395895,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Egypt facing mild inflation pressure from global oil price surge to $116/bbl feeding through energy and transport costs.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Egypt facing inflation pressure from oil at $100+/bbl feeding through energy, transport, and food prices. IEA 400M barrel SPR release provides only partial relief.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 6.781,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Egypt current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Egypt current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 44921341018.4659,
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Egypt debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Egypt debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4.5,
@@ -99,9 +99,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Egypt currency under pressure from widening trade deficit due to oil shock. Terms of trade deteriorating. Central bank may need to intervene.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Egypt currency under pressure from widening trade deficit due to oil shock. Terms of trade deteriorating.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 63713393368.3925,
@@ -122,7 +122,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Egypt policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fdi_inflows_usd": {
       "value": 46578000000,
@@ -155,6 +159,12 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Egypt bond yields rising modestly on inflation expectations from oil shock.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -280,10 +290,49 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Egypt military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 46.4,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 43.9,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Egypt national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 620,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.505,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Egypt investment risk rising from oil import shock, Suez Canal uncertainty, and regional conflict proximity. IMF program constrains fiscal response.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.45,
       "confidence": 0.7,
@@ -308,23 +357,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 38.7,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 34.8
-    },
-    "political_risk_premium_bps": {
-      "value": 895,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.4,
       "confidence": 0.7,
@@ -332,18 +364,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.573,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Egypt investment risk broadly unchanged. Global oil shock creates background pressure but no direct exposure to Gulf conflict. Fundamentals stable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -363,9 +383,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "Egypt political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Egypt political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -375,14 +395,14 @@
       {
         "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
         "value": 28.2705899322083,
-        "reason": "Absolute change 7.8706 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 20.4 vs primary 28.2705899322083 (38.6% diff); Event context: EGY has active event triggers",
+        "reason": "Absolute change 7.8706 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 20.4 vs primary 28.2705899322083 (38.6% diff); Event context: EGY has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
         "value": 2.3991692678251,
-        "reason": "Absolute change 1.9008 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 4.3 vs primary 2.3991692678251 (44.2% diff); Event context: EGY has active event triggers",
+        "reason": "Absolute change 1.9008 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 4.3 vs primary 2.3991692678251 (44.2% diff); Event context: EGY has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -393,19 +413,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 2.4% (declining), inflation at 28.3% (rising). Political risk premium stands at 895 bps, signaling elevated sovereign risk. Overall investment risk is elevated at 0.573 and stable.",
+    "executive_summary": "Egypt faces severe pressure from a triple threat: oil import costs at $100+/bbl, Suez Canal revenue uncertainty from regional conflict, and tourism disruption from the Middle East war. Investment risk is elevated at 0.573 with political risk premium at 620 bps. Inflation at 28.3% and rising. GDP growth declining. The Egyptian pound is weakening on the trade deficit.",
     "key_changes_this_week": [
-      "Egypt: Elevated investment risk at 0.573",
-      "Egypt: Political risk premium at 895 bps",
-      "Egypt: Elevated investment risk with high inflation",
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising"
+      "Oil import costs surging — energy subsidy bill escalating",
+      "Suez Canal revenue facing uncertainty from regional conflict disruption",
+      "Tourism sector disrupted by Middle East war proximity",
+      "Inflation at 28.3% and rising — food import costs elevated"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Elevated political risk premium (895 bps) suggests caution on sovereign exposure. Egypt investment risk stable. Monitor for second-order effects from global energy crisis.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Egypt faces deteriorating outlook from triple pressure: energy costs, Suez revenue uncertainty, and tourism disruption. IMF program constrained by devaluation requirements. Fiscal position under severe stress. Gulf aid may reduce as Gulf states face their own Hormuz crisis. Food import costs rising adds social stability risk.",
+    "investor_implications": "Egyptian assets carry elevated risk. Eurobonds under spread widening pressure. EGP devaluation risk elevated. Banking sector exposed to sovereign risk. Tourism sector outlook negative near-term. IMF program compliance at risk if fiscal deterioration accelerates. Reduce exposure or hedge aggressively.",
+    "data_quality_note": "Multiple warning alerts active. Investment risk elevated at 0.573."
   },
   "code": "EGY",
   "name": "Egypt",
@@ -524,10 +543,10 @@
       "resource_self_sufficiency_index": 0.45,
       "energy_independence_index": 0.6,
       "supply_chain_chokepoint_exposure": 0.499,
-      "composite_national_power_index": 38.7,
-      "political_risk_premium_bps": 895,
+      "composite_national_power_index": 46.4,
+      "political_risk_premium_bps": 620,
       "market_accessibility_score": 0.4,
-      "overall_investment_risk_score": 0.573
+      "overall_investment_risk_score": 0.505
     }
   },
   "economy": {
@@ -601,7 +620,16 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 39.6
+    "trade_openness_pct": 39.6,
+    "financial": {
+      "equity_index_level": {
+        "value": 46790.96,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

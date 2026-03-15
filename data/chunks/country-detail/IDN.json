@@ -3,7 +3,7 @@
   "country_name": "Indonesia",
   "tier": 1,
   "region": "southeast_asia",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -19,10 +19,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Indonesia facing oil shock headwinds as net energy importer. Manufacturing competitiveness eroded by higher input costs. Tourism recovery continues but energy costs weigh on airlines.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Indonesia GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 4925.43048751861,
@@ -37,10 +37,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Indonesia facing mild inflation pressure from global oil price surge to $116/bbl feeding through energy and transport costs.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Indonesia inflation broadly stable with modest upward pressure from global oil prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.237,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Indonesia current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Indonesia current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 155708275547.574,
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Indonesia debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Indonesia debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4.9,
@@ -97,7 +97,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Indonesia policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 16931.73,
@@ -107,15 +111,19 @@
       "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.55,
-      "trend_reasoning": "Indonesia currency broadly stable against USD. No direct conflict exposure. Global risk-off sentiment creates mild depreciation pressure against safe-haven dollar.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Indonesia currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 6.47,
       "confidence": 0.97,
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10b",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Indonesia bond yields broadly stable.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 309745619367.11,
@@ -301,10 +309,49 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Indonesia military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 53.3,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 48.8,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Indonesia national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 140,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.736,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Indonesia investment risk broadly unchanged.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.75,
       "confidence": 0.7,
@@ -329,23 +376,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 43.6,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 39.0
-    },
-    "political_risk_premium_bps": {
-      "value": 209,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.55,
       "confidence": 0.7,
@@ -353,18 +383,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.205,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Indonesia investment risk broadly unchanged. Global oil shock creates background pressure but no direct exposure to Gulf conflict. Fundamentals stable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -384,9 +402,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "Indonesia political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Indonesia political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -404,7 +422,7 @@
       {
         "factor_path": "economy.macroeconomic.unemployment_rate_pct",
         "value": 3.237,
-        "reason": "Absolute change 1.7630 exceeds 3\u00d7 typical (0.3) = 0.8999999999999999; Alternative source (IMF WEO) disagrees: 5.0 vs primary 3.237 (35.3% diff); Event context: IDN has active event triggers",
+        "reason": "Absolute change 1.7630 exceeds 3× typical (0.3) = 0.8999999999999999; Alternative source (IMF WEO) disagrees: 5.0 vs primary 3.237 (35.3% diff); Event context: IDN has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -415,16 +433,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 5.0% (declining), inflation at 2.2% (rising). Energy independence index at 0.750. The economy remains broadly stable with no major disruptions this week.",
+    "executive_summary": "Indonesia is modestly impacted by the energy shock. As a net commodity exporter (coal, palm oil, nickel), elevated prices provide some revenue offset, but oil imports create vulnerability. The Section 301 overcapacity investigation includes Indonesia. GDP growth remains broadly stable. Government debt is rising modestly but from a low base.",
     "key_changes_this_week": [
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising"
+      "Section 301 overcapacity investigation includes Indonesia",
+      "Commodity exports partially offset oil import costs",
+      "Government debt rising modestly from low base",
+      "Current account mildly deteriorating"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Indonesia investment risk stable. Monitor for second-order effects from global energy crisis.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Indonesia growth broadly stable with competing forces from commodity exports versus oil import costs. Trade policy uncertainty from Section 301 manageable. Domestic demand remains supportive. Political transition to Prabowo government providing continuity. Debt levels remain comfortable.",
+    "investor_implications": "Indonesian equities offer relative value in EM — commodity export base provides buffer while low debt gives fiscal flexibility. Rupiah modestly under pressure from oil imports. Coal and palm oil sectors well-positioned. Monitor Section 301 investigation scope for manufacturing sector impact.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "IDN",
   "name": "Indonesia",
@@ -547,10 +567,10 @@
       "resource_self_sufficiency_index": 0.75,
       "energy_independence_index": 0.75,
       "supply_chain_chokepoint_exposure": 0.395,
-      "composite_national_power_index": 43.6,
-      "political_risk_premium_bps": 209,
+      "composite_national_power_index": 53.3,
+      "political_risk_premium_bps": 140,
       "market_accessibility_score": 0.55,
-      "overall_investment_risk_score": 0.205
+      "overall_investment_risk_score": 0.736
     }
   },
   "economy": {
@@ -624,7 +644,31 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 42.57
+    "trade_openness_pct": 42.57,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 16900,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 6.69,
+        "confidence": 0.88,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 7137.21,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11",
+        "note": "Source agent flagged anomaly but passes validation checks"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

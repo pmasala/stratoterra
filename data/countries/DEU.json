@@ -3,7 +3,7 @@
   "country_name": "Germany",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -21,8 +21,8 @@
       "run_id": "2026-W11",
       "trend": "decrease",
       "trend_confidence": 0.85,
-      "trend_reasoning": "Germany facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply. VW slashing 50,000 jobs adds structural pressure.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Germany facing continued GDP headwinds from oil shock. Section 301 investigations add new trade risk. VW job cuts (50,000) deepening industrial recession. Energy costs rising. Stagflation scenario forming.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 56103.7323182554,
@@ -39,8 +39,8 @@
       "run_id": "2026-W11",
       "trend": "growth",
       "trend_confidence": 0.78,
-      "trend_reasoning": "Germany facing inflation uptick from oil shock feeding through energy, transport, and goods prices. EU admitted 'nuclear blunder' on energy policy. ECB faces stagflation dilemma ahead of March policy meeting.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Germany facing inflation pressure from oil at $100+/bbl feeding through energy, transport, and food prices. IEA 400M barrel SPR release provides only partial relief.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.711,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Germany current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Germany current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 377935574356.242,
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Germany debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Germany debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 0.9,
@@ -97,7 +97,11 @@
       "confidence": 0.99,
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10b",
+      "trend": "stable",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "ECB facing stagflation dilemma. Oil shock pushes inflation higher while growth weakens. March policy meeting critical. Belgium general strike highlights wage-price spiral risk.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 0.8608,
@@ -105,17 +109,21 @@
       "last_updated": "2026-03-04T17:00:12Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10",
-      "trend": "decrease",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "EUR under mild pressure from European market crash and energy import costs. USD safe-haven demand dominant. ECB policy response key variable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Germany currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 2.79,
       "confidence": 0.6,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Germany bond yields rising modestly on inflation expectations from oil shock.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "equity_index_level": {
       "value": 23626.77,
@@ -273,9 +281,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W10",
       "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Germany defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% — Europe now top recipient region.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Germany defense spending growing under NATO commitments. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "military_expenditure_trend": {
       "value": "strong_growth",
@@ -359,6 +367,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 73.4,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 72.7,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Germany national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 100,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.78,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "growth",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Germany investment risk modestly elevated from oil shock and global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.35,
       "confidence": 0.7,
@@ -383,23 +424,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 62.8,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 55.7
-    },
-    "political_risk_premium_bps": {
-      "value": 0,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.88,
       "confidence": 0.7,
@@ -407,18 +431,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.103,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Germany investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -437,10 +449,10 @@
       "run_id": "2026-W11"
     },
     "political_stability_trend": {
-      "value": "decrease",
-      "confidence": 0.75,
-      "reasoning": "Germany political stability weakening. VW slashing 50,000 jobs — largest in German auto history. EU admitted 'nuclear blunder' on energy. European markets crashed 6%. Industrial competitiveness crisis deepening.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Germany political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -462,20 +474,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "G7 finance ministers signal coordinated SPR release amid oil crisis. GDP growth at -0.5% (declining), inflation at 2.3% (rising). Investment risk score at 0.103, trending declining.",
+    "executive_summary": "Germany's industrial recession is deepening as the energy shock compounds structural competitiveness challenges. VW is slashing 50,000 jobs — the largest restructuring in German auto history. The EU admitted a 'nuclear blunder' on energy policy as European markets crashed ~6%. GDP growth is declining with inflation rising from energy cost pass-through. Defense spending is trending up as the NATO burden-sharing debate intensifies.",
     "key_changes_this_week": [
-      "G7 finance ministers signal coordinated SPR release amid oil crisis",
-      "Volkswagen to slash 50,000 jobs in Germany amid profit decline",
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising",
-      "Political Stability: declining",
-      "Overall Investment Risk Score: declining"
+      "VW announces 50,000 job cuts — largest in German auto history",
+      "EU admits 'nuclear blunder' on energy policy",
+      "European markets crash ~6% on energy shock and geopolitical risk",
+      "Section 301 overcapacity investigation includes Germany"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Political stability is declining, adding to investor uncertainty.",
-    "investor_implications": "Market accessibility score of 0.880 supports capital flows. Germany investment risk modestly elevated. European-wide energy and market stress weighing.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "German industrial model under structural stress from energy costs, Chinese competition, and auto sector transition. GDP growth declining with limited near-term catalysts. Fiscal space constrained by debt brake. Defense spending rising from low base creates modest demand but insufficient to offset industrial headwinds. Coalition government stability uncertain.",
+    "investor_implications": "German equities underweight recommended. Auto sector facing dual pressure from energy costs and EV transition. Defense and infrastructure plays may offer relative value. Bund yields modestly higher on fiscal uncertainty. EUR weakness adds currency risk for non-hedged positions. Watch for auto supplier distress.",
+    "data_quality_note": "Political stability trend flagged as declining. Data quality within acceptable parameters."
   },
   "code": "DEU",
   "name": "Germany",
@@ -614,10 +624,10 @@
       "resource_self_sufficiency_index": 0.35,
       "energy_independence_index": 0.3,
       "supply_chain_chokepoint_exposure": 0.31,
-      "composite_national_power_index": 62.8,
-      "political_risk_premium_bps": 0,
+      "composite_national_power_index": 73.4,
+      "political_risk_premium_bps": 100,
       "market_accessibility_score": 0.88,
-      "overall_investment_risk_score": 0.103
+      "overall_investment_risk_score": 0.78
     }
   },
   "economy": {
@@ -709,6 +719,29 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 0.87138,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 2.98,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 23447.29,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
     }
   },
   "institutions": {

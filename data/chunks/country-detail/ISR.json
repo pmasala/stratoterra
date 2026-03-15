@@ -3,7 +3,7 @@
   "country_name": "Israel",
   "tier": 1,
   "region": "middle_east",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -21,8 +21,8 @@
       "run_id": "2026-W11",
       "trend": "strong_decrease",
       "trend_confidence": 0.9,
-      "trend_reasoning": "Active war with Iran/Hezbollah. Hezbollah escalation from Lebanon. Military mobilization consuming resources. Tech sector disrupted. But US military support and domestic resilience partially offset.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Multi-front war expanding. Lebanon operations dramatically escalated — 680+ killed, 800,000 displaced, IDF advancing past Litani River. Hezbollah retaliatory strikes on northern Israel. War costs mounting.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 54176.6844383302,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Israel facing mild inflation pressure from global oil price surge to $116/bbl feeding through energy and transport costs.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Israel inflation rising from wartime supply disruptions, import cost pressure from oil shock, and Lebanon operations expanding. Military mobilization creates labor market distortions.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.489,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Israel current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Israel current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 214543676669.814,
@@ -73,10 +73,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Israel debt rising from multi-front war spending. Reserve mobilization costs. US support offsets some burden but fiscal trajectory deteriorating.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_growth",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Israel debt rising sharply from multi-front war spending. Lebanon operations dramatically expanded. Reserve mobilization and reconstruction costs mounting. US aid partially offsets.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 3.9,
@@ -97,7 +97,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Israel policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 3.099,
@@ -105,17 +109,21 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "strong_decrease",
-      "trend_confidence": 0.92,
-      "trend_reasoning": "Israel currency in freefall against USD. War, sanctions, and economic collapse driving capital flight. Parallel market rates diverging from official.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "decrease",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Shekel under pressure from war expansion into Lebanon. Geopolitical risk premium elevated. BoI defending but war costs mounting.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 3.8,
       "confidence": 0.85,
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W09",
+      "trend": "growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Israel bond yields rising on war risk premium and expanded Lebanon operations. Credit downgrades possible if war extends.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 153655742278.939,
@@ -252,9 +260,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W10",
       "trend": "strong_growth",
-      "trend_confidence": 0.92,
-      "trend_reasoning": "Israel military spending surging due to active war. Emergency defense spending eclipsing all other budget priorities. Operation Epic Fury and Roaring Lion consuming massive resources.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.88,
+      "trend_reasoning": "Israel military spending surging as war expands to Lebanon. IDF operations across multiple fronts. Reserve mobilization costs. US aid supplements but domestic spending rising sharply.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "military_expenditure_trend": {
       "value": "strong_growth",
@@ -334,6 +342,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 60.3,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 62.8,
+      "trend": "decrease",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Israel national power declining as multi-front war expands. Lebanon operations dramatically escalated. International condemnation growing. Military resources stretched.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 200,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.709,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "growth",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Israel investment risk rising as war expands into Lebanon. 680+ killed, 800,000 displaced. Hezbollah retaliation on northern Israel. Tech sector disrupted. War duration uncertain.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.3,
       "confidence": 0.7,
@@ -358,23 +399,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 47.6,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 42.5
-    },
-    "political_risk_premium_bps": {
-      "value": 454,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.8,
       "confidence": 0.7,
@@ -382,18 +406,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.272,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "strong_decrease",
-      "trend_confidence": 0.95,
-      "trend_reasoning": "Israel investment risk at maximum. Active war, infrastructure destruction, and economic collapse make all investment uninvestable. Risk premium off the charts.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "strong_decrease",
@@ -412,10 +424,10 @@
       "run_id": "2026-W11"
     },
     "political_stability_trend": {
-      "value": "strong_decrease",
-      "confidence": 0.88,
-      "reasoning": "Israel facing multi-front war with extended duration. Hezbollah escalating from Lebanon. Society under war strain. National unity government but reserves mobilization creating economic friction.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "value": "decrease",
+      "confidence": 0.82,
+      "reasoning": "Israel political stability declining. War expansion into Lebanon highly divisive. International condemnation growing. Domestic debate over war aims intensifying.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -425,7 +437,7 @@
       {
         "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
         "value": 0.871968424377442,
-        "reason": "Absolute change 1.6280 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 2.5 vs primary 0.871968424377442 (65.1% diff); Event context: ISR has active event triggers",
+        "reason": "Absolute change 1.6280 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 2.5 vs primary 0.871968424377442 (65.1% diff); Event context: ISR has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -436,22 +448,19 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Israel faces critical-level risks this week: Israel: Active military conflict \u2014 critical security risk. GDP growth at 0.9% (declining sharply), inflation at 3.1% (rising). Political risk premium stands at 454 bps, signaling elevated sovereign risk. Investment risk score at 0.272, trending declining sharply.",
+    "executive_summary": "Israel is prosecuting a multi-front war with expanding scope. The Lebanon campaign has dramatically escalated — 680+ killed, 800,000 displaced as IDF pushes past the Litani River. Israel struck Hezbollah financial institutions in Lebanon. Meanwhile, the US-Israel war on Iran continues with 6,000+ targets struck. GDP growth is in sharp decline with defense spending surging and the shekel weakening. Government debt trajectory is steep.",
     "key_changes_this_week": [
-      "US-Iran war enters second week \u2014 Pentagon reports 140 US troops injured in first 10 days",
-      "Hezbollah escalates war \u2014 Macron vows to protect Lebanon from conflict spillover",
-      "Tehran under heavy US-Israeli bombing \u2014 residents describe 'hearts shaking'",
-      "Israel: Active military conflict \u2014 critical security risk",
-      "Israel: GDP growth in sharp decline",
-      "Israel: Political stability in sharp decline",
-      "Gdp Real Growth %: declining sharply",
-      "Inflation Cpi %: rising"
+      "Lebanon war expansion — 680+ killed, 800,000 displaced, IDF past Litani River",
+      "Hezbollah financial institutions struck in Lebanon",
+      "US-Israel war on Iran — 6,000+ targets struck",
+      "GDP growth in sharp decline — multi-front war costs accelerating",
+      "Lebanese PM demands Hezbollah disarm"
     ],
-    "outlook": "Near-term outlook for Israel is highly uncertain given active crisis conditions. Israel uninvestable. Maximum risk across all dimensions. Political stability is declining sharply, adding to investor uncertainty.",
-    "investor_implications": "Active crisis conditions warrant heightened caution and defensive positioning. Israel uninvestable. Maximum risk across all dimensions.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Israel faces deepening multi-front conflict with no clear exit timeline. GDP contraction deepening as war expands. Defense spending trajectory unsustainable without US aid supplementals. Shekel depreciation likely to continue. Bond market under pressure — watch for rating agency actions. Political stability weakening under war strain.",
+    "investor_implications": "Israeli equities carry extreme conflict risk. Defense stocks only potential upside. Shekel hedging critical. Tech sector facing talent drain to military reserves. Government bonds under significant pressure — spread widening versus US Treasuries. Reduce Israel exposure until conflict resolution pathway emerges. TA-35 deeply discounted but for fundamental reasons.",
+    "data_quality_note": "Active military conflict alert at critical severity. Data quality impacted by wartime information fog."
   },
   "code": "ISR",
   "name": "Israel",
@@ -592,10 +601,10 @@
       "resource_self_sufficiency_index": 0.3,
       "energy_independence_index": 0.6,
       "supply_chain_chokepoint_exposure": 0.409,
-      "composite_national_power_index": 47.6,
-      "political_risk_premium_bps": 454,
+      "composite_national_power_index": 60.3,
+      "political_risk_premium_bps": 200,
       "market_accessibility_score": 0.8,
-      "overall_investment_risk_score": 0.272
+      "overall_investment_risk_score": 0.709
     }
   },
   "economy": {
@@ -675,7 +684,23 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 54.45
+    "trade_openness_pct": 54.45,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 3.1268,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 4177.58,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

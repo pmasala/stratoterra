@@ -18,7 +18,11 @@
       "confidence": 0.95,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Uzbekistan GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 3161.70010632875,
@@ -32,7 +36,11 @@
       "confidence": 0.95,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Uzbekistan inflation broadly stable with modest upward pressure from global oil prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 4.622,
@@ -46,7 +54,11 @@
       "confidence": 0.95,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Uzbekistan current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 41236890133.3347,
@@ -60,7 +72,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Uzbekistan debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 6,
@@ -81,7 +97,11 @@
       "confidence": 0.8,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Uzbekistan policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 26172759003.5243,
@@ -130,7 +150,17 @@
       "confidence": 0.85,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Uzbekistan currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Uzbekistan bond yields broadly stable.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -199,9 +229,49 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Uzbekistan military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    }
+  },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 21.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 20.8,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Uzbekistan national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 380,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.592,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Uzbekistan investment risk broadly unchanged.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.6,
       "confidence": 0.7,
@@ -226,23 +296,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 30.3,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 27.5
-    },
-    "political_risk_premium_bps": {
-      "value": 465,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.25,
       "confidence": 0.7,
@@ -251,13 +304,13 @@
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     },
-    "overall_investment_risk_score": {
-      "value": 0.337,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk"
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Uzbekistan political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
     }
   },
   "metadata": {
@@ -273,7 +326,7 @@
       {
         "factor_path": "economy.macroeconomic.gdp_per_capita_usd",
         "value": 3161.70010632875,
-        "reason": "Change 13.3% exceeds 3\u00d7 typical (2.0%) = 6.0%; Event context: UZB has active event triggers",
+        "reason": "Change 13.3% exceeds 3× typical (2.0%) = 6.0%; Event context: UZB has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -321,10 +374,10 @@
       "resource_self_sufficiency_index": 0.6,
       "energy_independence_index": 0.85,
       "supply_chain_chokepoint_exposure": 0.211,
-      "composite_national_power_index": 30.3,
-      "political_risk_premium_bps": 465,
+      "composite_national_power_index": 21.0,
+      "political_risk_premium_bps": 380,
       "market_accessibility_score": 0.25,
-      "overall_investment_risk_score": 0.337
+      "overall_investment_risk_score": 0.592
     }
   },
   "narrative": {

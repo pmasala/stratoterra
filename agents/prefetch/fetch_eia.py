@@ -12,7 +12,7 @@ import logging
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from .base_fetcher import BaseFetcher, get_all_country_codes, ISO3_TO_ISO2
+from .base_fetcher import BaseFetcher, get_all_country_codes
 
 logger = logging.getLogger("prefetch.eia")
 
@@ -29,7 +29,7 @@ SERIES_CONFIGS = [
             "data[0]": "value",
             "facets[productId][]": "57",  # Crude oil production
             "facets[activityId][]": "1",   # Production
-            "facets[unitId][]": "TBPD",    # Thousand barrels per day
+            "facets[unit][]": "TBPD",      # Thousand barrels per day
             "sort[0][column]": "period",
             "sort[0][direction]": "desc",
             "length": "500",
@@ -44,7 +44,7 @@ SERIES_CONFIGS = [
             "data[0]": "value",
             "facets[productId][]": "5",   # Petroleum products
             "facets[activityId][]": "2",   # Consumption
-            "facets[unitId][]": "TBPD",
+            "facets[unit][]": "TBPD",
             "sort[0][column]": "period",
             "sort[0][direction]": "desc",
             "length": "500",
@@ -59,7 +59,7 @@ SERIES_CONFIGS = [
             "data[0]": "value",
             "facets[productId][]": "26",  # Dry natural gas
             "facets[activityId][]": "1",   # Production
-            "facets[unitId][]": "BCF",     # Billion cubic feet
+            "facets[unit][]": "BCF",       # Billion cubic feet
             "sort[0][column]": "period",
             "sort[0][direction]": "desc",
             "length": "500",
@@ -74,7 +74,7 @@ SERIES_CONFIGS = [
             "data[0]": "value",
             "facets[productId][]": "26",
             "facets[activityId][]": "2",
-            "facets[unitId][]": "BCF",
+            "facets[unit][]": "BCF",
             "sort[0][column]": "period",
             "sort[0][direction]": "desc",
             "length": "500",
@@ -87,14 +87,14 @@ SERIES_CONFIGS = [
         "params": {
             "frequency": "annual",
             "data[0]": "value",
-            "facets[productId][]": "1",   # Coal
+            "facets[productId][]": "7",   # Coal
             "facets[activityId][]": "1",
-            "facets[unitId][]": "TST",     # Thousand short tons
+            "facets[unit][]": "MT",        # Thousand metric tons
             "sort[0][column]": "period",
             "sort[0][direction]": "desc",
             "length": "500",
         },
-        "indicator_name": "coal_production_kst",
+        "indicator_name": "coal_production_mt",
     },
     {
         "id": "electricity_generation",
@@ -104,7 +104,7 @@ SERIES_CONFIGS = [
             "data[0]": "value",
             "facets[productId][]": "2",   # Electricity
             "facets[activityId][]": "12",  # Generation
-            "facets[unitId][]": "BKWH",    # Billion kilowatt-hours
+            "facets[unit][]": "BKWH",      # Billion kilowatt-hours
             "sort[0][column]": "period",
             "sort[0][direction]": "desc",
             "length": "500",
@@ -135,17 +135,13 @@ class EIAFetcher(BaseFetcher):
         entries = response.get("data", [])
 
         tracked = set(get_all_country_codes())
-        iso2_set = {v for k, v in ISO3_TO_ISO2.items() if k in tracked}
 
         records = []
         # Keep most recent year per country
         best = {}
         for entry in entries:
-            country_code = entry.get("countryRegionId", "")
-            # EIA uses ISO2
-            iso3 = None
-            from .base_fetcher import ISO2_TO_ISO3
-            iso3 = ISO2_TO_ISO3.get(country_code, "")
+            # EIA international endpoint returns ISO3 country codes
+            iso3 = entry.get("countryRegionId", "")
 
             if iso3 not in tracked:
                 continue
@@ -167,7 +163,7 @@ class EIAFetcher(BaseFetcher):
                     "indicator_name": config["indicator_name"],
                     "value": value,
                     "year": period,
-                    "unit": entry.get("unitId", ""),
+                    "unit": entry.get("unit", ""),
                     "source": "US EIA",
                     "series_id": config["id"],
                 }

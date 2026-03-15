@@ -1,6 +1,6 @@
 {
   "country_code": "CIV",
-  "country_name": "C\u00f4te d'Ivoire",
+  "country_name": "Côte d'Ivoire",
   "tier": 3,
   "region": "sub_saharan_africa",
   "last_updated": "2026-03-10T00:00:00Z",
@@ -195,6 +195,31 @@
   "military": {},
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 17.6,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 16.6
+    },
+    "political_risk_premium_bps": {
+      "value": 380,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.632,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.55,
       "confidence": 0.7,
@@ -219,22 +244,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 14.6,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
-    },
-    "political_risk_premium_bps": {
-      "value": 483,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.3,
       "confidence": 0.7,
@@ -242,14 +251,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.371,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk"
     }
   },
   "metadata": {
@@ -257,21 +258,21 @@
       {
         "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
         "value": 3.45053028131019,
-        "reason": "Absolute change 2.4505 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 1.0 vs primary 3.45053028131019 (245.1% diff); Event context: CIV has active event triggers",
+        "reason": "Absolute change 2.4505 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 1.0 vs primary 3.45053028131019 (245.1% diff); Event context: CIV has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.current_account_balance_pct_gdp",
         "value": -11.3988511627879,
-        "reason": "Absolute change 9.2989 exceeds 3\u00d7 typical (1.0) = 3.0; Alternative source (IMF WEO) disagrees: -2.1 vs primary -11.3988511627879 (442.8% diff); Event context: CIV has active event triggers",
+        "reason": "Absolute change 9.2989 exceeds 3× typical (1.0) = 3.0; Alternative source (IMF WEO) disagrees: -2.1 vs primary -11.3988511627879 (442.8% diff); Event context: CIV has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.gdp_per_capita_usd",
         "value": 2727.8935220697,
-        "reason": "Change 9.5% exceeds 3\u00d7 typical (2.0%) = 6.0%; Event context: CIV has active event triggers",
+        "reason": "Change 9.5% exceeds 3× typical (2.0%) = 6.0%; Event context: CIV has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -281,12 +282,12 @@
     "data_quality": "HIGH"
   },
   "code": "CIV",
-  "name": "C\u00f4te d'Ivoire",
-  "executive_summary": "C\u00f4te d'Ivoire: GDP growth at 6.4%, inflation at 1%, credit rating S&P: BB-, Moody's: NR, Fitch: BB-.",
+  "name": "Côte d'Ivoire",
+  "executive_summary": "Côte d'Ivoire: GDP growth at 6.4%, inflation at 1%, credit rating S&P: BB-, Moody's: NR, Fitch: BB-.",
   "key_changes": [
     "No significant changes this week"
   ],
-  "outlook": "C\u00f4te d'Ivoire outlook requires monitoring. Oil price surge affects all energy importers.",
+  "outlook": "Côte d'Ivoire outlook requires monitoring. Oil price surge affects all energy importers.",
   "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
   "active_alerts": [],
   "layers": {
@@ -319,21 +320,21 @@
       "resource_self_sufficiency_index": 0.55,
       "energy_independence_index": 0.5,
       "supply_chain_chokepoint_exposure": 0.193,
-      "composite_national_power_index": 14.6,
-      "political_risk_premium_bps": 483,
+      "composite_national_power_index": 17.6,
+      "political_risk_premium_bps": 380,
       "market_accessibility_score": 0.3,
-      "overall_investment_risk_score": 0.371
+      "overall_investment_risk_score": 0.632
     }
   },
   "narrative": {
     "ai_generated": true,
     "generated_at": "2026-03-02T18:00:00Z",
     "run_id": "2026-W10",
-    "executive_summary": "C\u00f4te d'Ivoire: GDP growth at 6.4%, inflation at 1%, credit rating S&P: BB-, Moody's: NR, Fitch: BB-.",
+    "executive_summary": "Côte d'Ivoire: GDP growth at 6.4%, inflation at 1%, credit rating S&P: BB-, Moody's: NR, Fitch: BB-.",
     "key_changes_this_week": [
       "No significant changes this week"
     ],
-    "outlook": "C\u00f4te d'Ivoire outlook requires monitoring. Oil price surge affects all energy importers.",
+    "outlook": "Côte d'Ivoire outlook requires monitoring. Oil price surge affects all energy importers.",
     "investor_implications": "Frontier market risk applies. Monitor for developments relevant to sector exposure.",
     "data_quality_note": "Tier 3 country with basic coverage only."
   },

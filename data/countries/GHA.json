@@ -18,7 +18,11 @@
       "confidence": 0.95,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Ghana benefits from non-Hormuz oil/commodity exports at elevated prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 2390.77237652715,
@@ -32,7 +36,11 @@
       "confidence": 0.95,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Ghana inflation broadly stable as oil exporter status shields from energy cost pass-through.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 2.979,
@@ -46,7 +54,11 @@
       "confidence": 0.95,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Ghana current account improving as oil/commodity prices surge and non-Hormuz export routes remain secure. Trade surplus widening.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 3623904994.58702,
@@ -60,7 +72,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Ghana debt ratio improving as commodity windfall boosts government revenue.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4.8,
@@ -81,7 +97,11 @@
       "confidence": 0.8,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Ghana policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 29197465998.8647,
@@ -123,7 +143,17 @@
       "confidence": 0.85,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Ghana currency supported by commodity export windfall. Oil/gas revenue boosting external position.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Ghana bond yields stable to declining on improved fiscal position from commodity windfall.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -192,9 +222,49 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Ghana military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    }
+  },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 18.4,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 18.0,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Ghana national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 900,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.513,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Ghana investment risk improving on commodity windfall. Fiscal position strengthening. Non-Hormuz export routes secure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.55,
       "confidence": 0.7,
@@ -219,22 +289,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 20.8,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
-    },
-    "political_risk_premium_bps": {
-      "value": 884,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.35,
       "confidence": 0.7,
@@ -243,13 +297,13 @@
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     },
-    "overall_investment_risk_score": {
-      "value": 0.423,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk"
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Ghana political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
     }
   },
   "metadata": {
@@ -265,21 +319,21 @@
       {
         "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
         "value": 22.8483281157842,
-        "reason": "Absolute change 6.2483 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 16.6 vs primary 22.8483281157842 (37.6% diff); Event context: GHA has active event triggers",
+        "reason": "Absolute change 6.2483 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 16.6 vs primary 22.8483281157842 (37.6% diff); Event context: GHA has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.gdp_per_capita_usd",
         "value": 2390.77237652715,
-        "reason": "Change 25.1% exceeds 3\u00d7 typical (2.0%) = 6.0%; Event context: GHA has active event triggers",
+        "reason": "Change 25.1% exceeds 3× typical (2.0%) = 6.0%; Event context: GHA has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
         "value": 5.59045469593266,
-        "reason": "Absolute change 1.5905 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 4.0 vs primary 5.59045469593266 (39.8% diff); Event context: GHA has active event triggers",
+        "reason": "Absolute change 1.5905 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 4.0 vs primary 5.59045469593266 (39.8% diff); Event context: GHA has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -333,10 +387,10 @@
       "resource_self_sufficiency_index": 0.55,
       "energy_independence_index": 0.5,
       "supply_chain_chokepoint_exposure": 0.23,
-      "composite_national_power_index": 20.8,
-      "political_risk_premium_bps": 884,
+      "composite_national_power_index": 18.4,
+      "political_risk_premium_bps": 900,
       "market_accessibility_score": 0.35,
-      "overall_investment_risk_score": 0.423
+      "overall_investment_risk_score": 0.513
     }
   },
   "narrative": {

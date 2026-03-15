@@ -3,7 +3,7 @@
   "country_name": "Russia",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -20,9 +20,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.75,
-      "trend_reasoning": "Russia benefits from oil price surge to $116/bbl. Shadow fleet oil transfers in Gulf of Oman expand market share. War economy continues to drive GDP. Possible intelligence sharing with Iran complicates Western relations.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Russia emerging as major beneficiary of Iran war. Oil above $100/bbl boosting revenue. Iranian oil off market increases Russian pricing power. War economy continues to drive GDP. Shadow fleet expanding in Gulf of Oman.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 14889.0185546875,
@@ -39,8 +39,8 @@
       "run_id": "2026-W11",
       "trend": "growth",
       "trend_confidence": 0.72,
-      "trend_reasoning": "Russia facing inflation from war economy overheating and sanctions-driven import substitution. Oil windfall partially offsets through stronger fiscal position.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Russia inflation from war economy overheating continues. Labor market at 2.1% unemployment (historic low). Oil windfall partially offsets through stronger fiscal position but wartime demand push persists.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 2.133,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.78,
+      "trend_confidence": 0.75,
       "trend_reasoning": "Russia current account improving as oil/commodity prices surge and non-Hormuz export routes remain secure. Trade surplus widening.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 18.5032227571465,
@@ -68,8 +68,8 @@
       "run_id": "2026-W11",
       "trend": "decrease",
       "trend_confidence": 0.72,
-      "trend_reasoning": "Russia debt ratio improving as oil/commodity windfall boosts government revenue. Fiscal surplus expanding or deficit narrowing.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Russia debt ratio improving as oil windfall boosts government revenue. Fiscal surplus expanding. Low base (18.5%) provides comfort.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 597217063819.197,
@@ -97,7 +97,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "CBR at 21%. Oil windfall improves fiscal position but war economy overheating continues. No room to ease despite growth.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 78.279,
@@ -107,15 +111,19 @@
       "run_id": "2026-W11",
       "trend": "growth",
       "trend_confidence": 0.68,
-      "trend_reasoning": "Ruble modestly strengthening on oil windfall at $116/bbl. Capital controls maintaining stability. Shadow economy complicates assessment.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Ruble modestly strengthening on oil windfall at $100+/bbl. Capital controls maintaining stability. Oil revenue exceeding expectations.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 14.31,
       "confidence": 0.82,
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10b",
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Russia bond yields stable to declining on improved fiscal position from commodity windfall.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "equity_index_level": {
       "value": 2815,
@@ -273,9 +281,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W10",
       "trend": "growth",
-      "trend_confidence": 0.8,
-      "trend_reasoning": "Russia maintaining high military spending for Ukraine war. Arms export collapse (-64% to 6.8% share) redirected to domestic use. War economy sustains GDP but crowds out civilian spending.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Russia military spending elevated from Ukraine war. Large-scale drone/missile barrages continue against Ukraine (10+ killed in Kharkiv). War economy driving defense spending as % GDP higher.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "military_expenditure_trend": {
       "value": "strong_growth",
@@ -373,6 +381,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 60.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 55.7,
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Russia national power rising relatively as US stretched across theaters. Oil windfall strengthens economic base. Strategic position improves with Iran war diverting Western attention. Peace talks stalled at 90% — Russia maintaining leverage.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 1900,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.339,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Russia investment risk improving on commodity windfall. Fiscal position strengthening. Non-Hormuz export routes secure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.95,
       "confidence": 0.7,
@@ -397,23 +438,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 58.9,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 52.3
-    },
-    "political_risk_premium_bps": {
-      "value": 3148,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.15,
       "confidence": 0.7,
@@ -421,18 +445,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.6,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "growth",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Russia investment risk improving as oil/commodity windfall boosts fiscal position and economic growth. Non-Hormuz export routes provide strategic advantage.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -452,9 +464,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "Russia political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.65,
+      "reasoning": "Russia political stability maintained under Putin. Oil windfall strengthens regime. US distracted by Iran war. Peace talks stalled — Russia maintaining advantageous position. No domestic challenge to regime.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -476,21 +488,19 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Russia faces critical-level risks this week: Russia: Political risk premium at 3148 bps. GDP growth at 4.3% (rising), inflation at 8.4% (rising). Political risk premium stands at 3148 bps, signaling elevated sovereign risk. Overall investment risk is elevated at 0.600 and rising.",
+    "executive_summary": "Russia is emerging as an early economic winner from the Iran war amid the oil price surge. GDP growth is improving on the commodity windfall — its best macro position since pre-2022 sanctions. The ruble is strengthening on oil revenues. Peace talks with Ukraine have stalled at '90% complete,' with Russia benefiting from the status quo as US attention is diverted to Iran. Defense spending remains high but is now funded by the oil windfall.",
     "key_changes_this_week": [
-      "Ukraine retakes territory as Russia's buffer zone strategy falters",
-      "Russia: Political risk premium at 3148 bps",
-      "Russia: Elevated investment risk at 0.600",
-      "Russia: Comprehensive sanctions with elevated investment risk",
-      "Gdp Real Growth %: rising",
-      "Inflation Cpi %: rising",
-      "Overall Investment Risk Score: rising"
+      "Russia emerges as early economic winner from Iran war oil surge",
+      "Oil windfall improves fiscal and current account positions",
+      "Russia-Ukraine peace talks stall at '90% complete'",
+      "Large-scale drone and missile barrage hits Ukraine — 10+ killed in Kharkiv",
+      "Russian propaganda targets Hungary with fake news about Ukrainian guards"
     ],
-    "outlook": "Near-term outlook for Russia is highly uncertain given active crisis conditions. Russia investment risk improving. Energy windfall creates opportunistic entry points.",
-    "investor_implications": "Investment risk is critically elevated at 0.600. Defensive positioning or risk reduction recommended. High energy independence (1.000) provides a buffer against the oil price shock. Russia investment risk improving. Energy windfall creates opportunistic entry points.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Russia benefiting from unique combination of oil windfall and US strategic distraction. Peace talks favorable to Russian position. Ruble strengthening supports purchasing power. However, sanctions infrastructure remains intact and Western capital markets inaccessible. Military spending sustainable at current oil prices. Frontline fighting continues in Ukraine.",
+    "investor_implications": "Russia remains largely uninvestable for Western institutional capital due to sanctions. Political risk premium at 1,900 bps reflects sanctions regime, not fundamentals. Indirect exposure via commodity markets. Russian oil windfall may extend war in Ukraine by reducing economic pressure for resolution. No change in sanctions outlook near-term.",
+    "data_quality_note": "Investment risk score at 0.661 reflects sanctions rather than underlying economic fundamentals, which are improving."
   },
   "code": "RUS",
   "name": "Russia",
@@ -660,10 +670,10 @@
       "resource_self_sufficiency_index": 0.95,
       "energy_independence_index": 1.0,
       "supply_chain_chokepoint_exposure": 0.169,
-      "composite_national_power_index": 58.9,
-      "political_risk_premium_bps": 3148,
+      "composite_national_power_index": 60.0,
+      "political_risk_premium_bps": 1900,
       "market_accessibility_score": 0.15,
-      "overall_investment_risk_score": 0.6
+      "overall_investment_risk_score": 0.339
     }
   },
   "economy": {
@@ -737,7 +747,23 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 39.51
+    "trade_openness_pct": 39.51,
+    "financial": {
+      "government_bond_yield_10y": {
+        "value": 14.6,
+        "confidence": 0.8,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 2871.86,
+        "confidence": 0.85,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

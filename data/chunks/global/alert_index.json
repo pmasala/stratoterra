@@ -1,29 +1,29 @@
 {
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "summary": {
-    "critical": 17,
-    "warning": 43,
+    "critical": 18,
+    "warning": 50,
     "watch": 50,
-    "total_active": 110
+    "total_active": 118
   },
   "alerts": [
     {
       "alert_id": "alert_2026-03-10_001",
       "severity": "warning",
       "country_code": "AGO",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 765)",
-      "headline": "Angola: Political risk premium at 765 bps",
-      "details": "Angola's political risk premium of 765 basis points indicates significant sovereign risk. Investment risk score: 0.422.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 700)",
+      "headline": "Angola: Political risk premium at 700 bps",
+      "details": "Angola's political risk premium of 700 basis points indicates significant sovereign risk. Investment risk: 0.494.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Angola: Political risk premium at 765 bps",
-      "description": "Angola's political risk premium of 765 basis points indicates significant sovereign risk. Investment risk score: 0.422.",
+      "title": "Angola: Political risk premium at 700 bps",
+      "description": "Angola's political risk premium of 700 basis points indicates significant sovereign risk. Investment risk: 0.494.",
       "countries": [
         "AGO"
       ],
@@ -33,12 +33,12 @@
       "alert_id": "alert_2026-03-10_002",
       "severity": "watch",
       "country_code": "AGO",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Inflation elevated (actual: 28.2%)",
       "headline": "Angola: High inflation at 28.2%",
       "details": "Angola's CPI inflation of 28.2% is significantly elevated. ",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.inflation_cpi_pct"
       ],
@@ -54,17 +54,17 @@
       "alert_id": "alert_2026-03-10_003",
       "severity": "watch",
       "country_code": "AGO",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Investment risk approaching warning threshold (actual: 0.422)",
-      "headline": "Angola: Investment risk at 0.422 \u2014 approaching elevated territory",
+      "headline": "Angola: Investment risk at 0.422 — approaching elevated territory",
       "details": "Angola's investment risk score of 0.422 is nearing the warning threshold of 0.5. Political risk premium: 765 bps.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
-      "title": "Angola: Investment risk at 0.422 \u2014 approaching elevated territory",
+      "title": "Angola: Investment risk at 0.422 — approaching elevated territory",
       "description": "Angola's investment risk score of 0.422 is nearing the warning threshold of 0.5. Political risk premium: 765 bps.",
       "countries": [
         "AGO"
@@ -75,12 +75,12 @@
       "alert_id": "alert_2026-03-10_004",
       "severity": "warning",
       "country_code": "ARE",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth trend: strong_decrease",
       "headline": "United Arab Emirates: GDP growth in sharp decline",
       "details": "United Arab Emirates's GDP growth trend is 'strong_decrease'. Current growth: 4.0%. Hormuz mine-laying by IRGC blocks primary oil export route. Oil revenue disruption severe despite high prices. United Arab Emirates has limited pipeline alternatives. Defense spending surge adds fiscal pressure.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct"
       ],
@@ -96,12 +96,12 @@
       "alert_id": "alert_2026-03-10_005",
       "severity": "critical",
       "country_code": "ARE",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Supply chain chokepoint exposure > 0.7 (actual: 1.000)",
       "headline": "United Arab Emirates: Extreme chokepoint exposure at 1.000 amid Hormuz crisis",
       "details": "United Arab Emirates has a supply chain chokepoint exposure of 1.000, critically elevated during the Strait of Hormuz crisis. GDP trend: strong_decrease. Investment risk: 0.101.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure"
       ],
@@ -117,12 +117,12 @@
       "alert_id": "alert_2026-03-10_006",
       "severity": "watch",
       "country_code": "ARE",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Political stability trend: decrease",
       "headline": "United Arab Emirates: Political stability declining",
       "details": "United Arab Emirates political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_stability_trend"
       ],
@@ -138,18 +138,18 @@
       "alert_id": "alert_2026-03-10_007",
       "severity": "warning",
       "country_code": "ARG",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 872)",
-      "headline": "Argentina: Political risk premium at 872 bps",
-      "details": "Argentina's political risk premium of 872 basis points indicates significant sovereign risk. Investment risk score: 0.449.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 950)",
+      "headline": "Argentina: Political risk premium at 950 bps",
+      "details": "Argentina's political risk premium of 950 basis points indicates significant sovereign risk. Investment risk: 0.507.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Argentina: Political risk premium at 872 bps",
-      "description": "Argentina's political risk premium of 872 basis points indicates significant sovereign risk. Investment risk score: 0.449.",
+      "title": "Argentina: Political risk premium at 950 bps",
+      "description": "Argentina's political risk premium of 950 basis points indicates significant sovereign risk. Investment risk: 0.507.",
       "countries": [
         "ARG"
       ],
@@ -159,12 +159,12 @@
       "alert_id": "alert_2026-03-10_008",
       "severity": "warning",
       "country_code": "ARG",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Inflation > 50% (actual: 219.9%)",
       "headline": "Argentina: Hyperinflation territory at 219.9%",
       "details": "Argentina's CPI inflation of 219.9% exceeds the hyperinflation threshold. Trend: decrease. ",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.inflation_cpi_pct"
       ],
@@ -180,17 +180,17 @@
       "alert_id": "alert_2026-03-10_009",
       "severity": "watch",
       "country_code": "ARG",
-      "status": "new",
+      "status": "escalated",
       "trigger": "Investment risk approaching warning threshold (actual: 0.449)",
-      "headline": "Argentina: Investment risk at 0.449 \u2014 approaching elevated territory",
+      "headline": "Argentina: Investment risk at 0.449 — approaching elevated territory",
       "details": "Argentina's investment risk score of 0.449 is nearing the warning threshold of 0.5. Political risk premium: 872 bps.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
-      "title": "Argentina: Investment risk at 0.449 \u2014 approaching elevated territory",
+      "title": "Argentina: Investment risk at 0.449 — approaching elevated territory",
       "description": "Argentina's investment risk score of 0.449 is nearing the warning threshold of 0.5. Political risk premium: 872 bps.",
       "countries": [
         "ARG"
@@ -201,19 +201,19 @@
       "alert_id": "alert_2026-03-10_010",
       "severity": "watch",
       "country_code": "ARG",
-      "status": "new",
+      "status": "deescalated",
       "trigger": "GDP growth declining with elevated risk (risk: 0.449)",
       "headline": "Argentina: GDP declining with investment risk at 0.449",
-      "details": "Argentina shows GDP growth trend of 'decrease' combined with an investment risk score of 0.449. Argentina GDP -1.3% under Milei's shock therapy. However, becoming net energy exporter for first time via Vaca Muerta \u2014 particularly valuable as Gulf crisis drives prices higher. Milei courting Wall S",
+      "details": "Argentina shows GDP growth trend of 'decrease' combined with an investment risk score of 0.449. Argentina GDP -1.3% under Milei's shock therapy. However, becoming net energy exporter for first time via Vaca Muerta — particularly valuable as Gulf crisis drives prices higher. Milei courting Wall S",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
       "title": "Argentina: GDP declining with investment risk at 0.449",
-      "description": "Argentina shows GDP growth trend of 'decrease' combined with an investment risk score of 0.449. Argentina GDP -1.3% under Milei's shock therapy. However, becoming net energy exporter for first time via Vaca Muerta \u2014 particularly valuable as Gulf crisis drives prices higher. Milei courting Wall S",
+      "description": "Argentina shows GDP growth trend of 'decrease' combined with an investment risk score of 0.449. Argentina GDP -1.3% under Milei's shock therapy. However, becoming net energy exporter for first time via Vaca Muerta — particularly valuable as Gulf crisis drives prices higher. Milei courting Wall S",
       "countries": [
         "ARG"
       ],
@@ -223,12 +223,12 @@
       "alert_id": "alert_2026-03-10_011",
       "severity": "warning",
       "country_code": "BGD",
-      "status": "new",
+      "status": "deescalated",
       "trigger": "political_risk_premium_bps > 500 (actual: 654)",
       "headline": "Bangladesh: Political risk premium at 654 bps",
       "details": "Bangladesh's political risk premium of 654 basis points indicates significant sovereign risk. Investment risk score: 0.334.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
@@ -244,12 +244,12 @@
       "alert_id": "alert_2026-03-10_012",
       "severity": "watch",
       "country_code": "BGD",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth declining with elevated risk (risk: 0.334)",
       "headline": "Bangladesh: GDP declining with investment risk at 0.334",
       "details": "Bangladesh shows GDP growth trend of 'decrease' combined with an investment risk score of 0.334. Bangladesh heavily dependent on Gulf oil transiting Hormuz. Oil at $116/bbl adds 1-2pp to import bill as % of GDP. Manufacturing and transport sectors hit hardest. G7 SPR release provides partial temp",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "derived.overall_investment_risk_score"
@@ -266,18 +266,18 @@
       "alert_id": "alert_2026-03-10_013",
       "severity": "warning",
       "country_code": "COD",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 1371)",
-      "headline": "DR Congo: Political risk premium at 1371 bps",
-      "details": "DR Congo's political risk premium of 1371 basis points indicates significant sovereign risk. Investment risk score: 0.493.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 750)",
+      "headline": "DR Congo: Political risk premium at 750 bps",
+      "details": "DR Congo's political risk premium of 750 basis points indicates significant sovereign risk. Investment risk: 0.519.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "DR Congo: Political risk premium at 1371 bps",
-      "description": "DR Congo's political risk premium of 1371 basis points indicates significant sovereign risk. Investment risk score: 0.493.",
+      "title": "DR Congo: Political risk premium at 750 bps",
+      "description": "DR Congo's political risk premium of 750 basis points indicates significant sovereign risk. Investment risk: 0.519.",
       "countries": [
         "COD"
       ],
@@ -287,17 +287,17 @@
       "alert_id": "alert_2026-03-10_014",
       "severity": "watch",
       "country_code": "COD",
-      "status": "new",
+      "status": "escalated",
       "trigger": "Investment risk approaching warning threshold (actual: 0.493)",
-      "headline": "DR Congo: Investment risk at 0.493 \u2014 approaching elevated territory",
+      "headline": "DR Congo: Investment risk at 0.493 — approaching elevated territory",
       "details": "DR Congo's investment risk score of 0.493 is nearing the warning threshold of 0.5. Political risk premium: 1371 bps.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
-      "title": "DR Congo: Investment risk at 0.493 \u2014 approaching elevated territory",
+      "title": "DR Congo: Investment risk at 0.493 — approaching elevated territory",
       "description": "DR Congo's investment risk score of 0.493 is nearing the warning threshold of 0.5. Political risk premium: 1371 bps.",
       "countries": [
         "COD"
@@ -308,18 +308,18 @@
       "alert_id": "alert_2026-03-10_015",
       "severity": "watch",
       "country_code": "DEU",
-      "status": "new",
+      "status": "deescalated",
       "trigger": "Political stability trend: decrease",
       "headline": "Germany: Political stability declining",
-      "details": "Germany political stability weakening. VW slashing 50,000 jobs \u2014 largest in German auto history. EU admitted 'nuclear blunder' on energy. European markets crashed 6%. Industrial competitiveness crisis deepening.",
+      "details": "Germany political stability weakening. VW slashing 50,000 jobs — largest in German auto history. EU admitted 'nuclear blunder' on energy. European markets crashed 6%. Industrial competitiveness crisis deepening.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_stability_trend"
       ],
       "run_id": "2026-W11",
       "title": "Germany: Political stability declining",
-      "description": "Germany political stability weakening. VW slashing 50,000 jobs \u2014 largest in German auto history. EU admitted 'nuclear blunder' on energy. European markets crashed 6%. Industrial competitiveness crisis deepening.",
+      "description": "Germany political stability weakening. VW slashing 50,000 jobs — largest in German auto history. EU admitted 'nuclear blunder' on energy. European markets crashed 6%. Industrial competitiveness crisis deepening.",
       "countries": [
         "DEU"
       ],
@@ -329,12 +329,12 @@
       "alert_id": "alert_2026-03-10_016",
       "severity": "warning",
       "country_code": "EGY",
-      "status": "new",
+      "status": "deescalated",
       "trigger": "overall_investment_risk_score > 0.5 (actual: 0.573)",
       "headline": "Egypt: Elevated investment risk at 0.573",
       "details": "Egypt's investment risk score of 0.573 indicates elevated risk. Political risk premium: 895 bps. Inflation: 28.3%. GDP trend: decrease. ",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
@@ -350,18 +350,18 @@
       "alert_id": "alert_2026-03-10_017",
       "severity": "warning",
       "country_code": "EGY",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 895)",
-      "headline": "Egypt: Political risk premium at 895 bps",
-      "details": "Egypt's political risk premium of 895 basis points indicates significant sovereign risk. Investment risk score: 0.573.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 620)",
+      "headline": "Egypt: Political risk premium at 620 bps",
+      "details": "Egypt's political risk premium of 620 basis points indicates significant sovereign risk. Investment risk: 0.495.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Egypt: Political risk premium at 895 bps",
-      "description": "Egypt's political risk premium of 895 basis points indicates significant sovereign risk. Investment risk score: 0.573.",
+      "title": "Egypt: Political risk premium at 620 bps",
+      "description": "Egypt's political risk premium of 620 basis points indicates significant sovereign risk. Investment risk: 0.495.",
       "countries": [
         "EGY"
       ],
@@ -371,12 +371,12 @@
       "alert_id": "alert_2026-03-10_018",
       "severity": "watch",
       "country_code": "EGY",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Inflation elevated (actual: 28.3%)",
       "headline": "Egypt: High inflation at 28.3%",
       "details": "Egypt's CPI inflation of 28.3% is significantly elevated. Trend: growth. ",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.inflation_cpi_pct"
       ],
@@ -392,12 +392,12 @@
       "alert_id": "alert_2026-03-10_019",
       "severity": "watch",
       "country_code": "EGY",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth declining with elevated risk (risk: 0.573)",
       "headline": "Egypt: GDP declining with investment risk at 0.573",
       "details": "Egypt shows GDP growth trend of 'decrease' combined with an investment risk score of 0.573. Egypt faces severe oil import cost pressure and Suez Canal revenue uncertainty. Tourism disrupted by regional conflict. IMF program constrained. Food import costs rising.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "derived.overall_investment_risk_score"
@@ -414,18 +414,18 @@
       "alert_id": "alert_2026-03-10_020",
       "severity": "warning",
       "country_code": "ETH",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 1473)",
-      "headline": "Ethiopia: Political risk premium at 1473 bps",
-      "details": "Ethiopia's political risk premium of 1473 basis points indicates significant sovereign risk. Investment risk score: 0.45.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 1350)",
+      "headline": "Ethiopia: Political risk premium at 1350 bps",
+      "details": "Ethiopia's political risk premium of 1350 basis points indicates significant sovereign risk. Investment risk: 0.589.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Ethiopia: Political risk premium at 1473 bps",
-      "description": "Ethiopia's political risk premium of 1473 basis points indicates significant sovereign risk. Investment risk score: 0.45.",
+      "title": "Ethiopia: Political risk premium at 1350 bps",
+      "description": "Ethiopia's political risk premium of 1350 basis points indicates significant sovereign risk. Investment risk: 0.589.",
       "countries": [
         "ETH"
       ],
@@ -435,12 +435,12 @@
       "alert_id": "alert_2026-03-10_021",
       "severity": "watch",
       "country_code": "ETH",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Inflation elevated (actual: 21.0%)",
       "headline": "Ethiopia: High inflation at 21.0%",
       "details": "Ethiopia's CPI inflation of 21.0% is significantly elevated. ",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.inflation_cpi_pct"
       ],
@@ -456,17 +456,17 @@
       "alert_id": "alert_2026-03-10_022",
       "severity": "watch",
       "country_code": "ETH",
-      "status": "new",
+      "status": "escalated",
       "trigger": "Investment risk approaching warning threshold (actual: 0.450)",
-      "headline": "Ethiopia: Investment risk at 0.450 \u2014 approaching elevated territory",
+      "headline": "Ethiopia: Investment risk at 0.450 — approaching elevated territory",
       "details": "Ethiopia's investment risk score of 0.450 is nearing the warning threshold of 0.5. Political risk premium: 1473 bps.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
-      "title": "Ethiopia: Investment risk at 0.450 \u2014 approaching elevated territory",
+      "title": "Ethiopia: Investment risk at 0.450 — approaching elevated territory",
       "description": "Ethiopia's investment risk score of 0.450 is nearing the warning threshold of 0.5. Political risk premium: 1473 bps.",
       "countries": [
         "ETH"
@@ -477,18 +477,18 @@
       "alert_id": "alert_2026-03-10_023",
       "severity": "warning",
       "country_code": "GHA",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 884)",
-      "headline": "Ghana: Political risk premium at 884 bps",
-      "details": "Ghana's political risk premium of 884 basis points indicates significant sovereign risk. Investment risk score: 0.423.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 900)",
+      "headline": "Ghana: Political risk premium at 900 bps",
+      "details": "Ghana's political risk premium of 900 basis points indicates significant sovereign risk. Investment risk: 0.487.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Ghana: Political risk premium at 884 bps",
-      "description": "Ghana's political risk premium of 884 basis points indicates significant sovereign risk. Investment risk score: 0.423.",
+      "title": "Ghana: Political risk premium at 900 bps",
+      "description": "Ghana's political risk premium of 900 basis points indicates significant sovereign risk. Investment risk: 0.487.",
       "countries": [
         "GHA"
       ],
@@ -498,12 +498,12 @@
       "alert_id": "alert_2026-03-10_024",
       "severity": "watch",
       "country_code": "GHA",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Inflation elevated (actual: 22.8%)",
       "headline": "Ghana: High inflation at 22.8%",
       "details": "Ghana's CPI inflation of 22.8% is significantly elevated. ",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.inflation_cpi_pct"
       ],
@@ -519,17 +519,17 @@
       "alert_id": "alert_2026-03-10_025",
       "severity": "watch",
       "country_code": "GHA",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Investment risk approaching warning threshold (actual: 0.423)",
-      "headline": "Ghana: Investment risk at 0.423 \u2014 approaching elevated territory",
+      "headline": "Ghana: Investment risk at 0.423 — approaching elevated territory",
       "details": "Ghana's investment risk score of 0.423 is nearing the warning threshold of 0.5. Political risk premium: 884 bps.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
-      "title": "Ghana: Investment risk at 0.423 \u2014 approaching elevated territory",
+      "title": "Ghana: Investment risk at 0.423 — approaching elevated territory",
       "description": "Ghana's investment risk score of 0.423 is nearing the warning threshold of 0.5. Political risk premium: 884 bps.",
       "countries": [
         "GHA"
@@ -540,12 +540,12 @@
       "alert_id": "alert_2026-03-10_026",
       "severity": "watch",
       "country_code": "GRC",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth declining with elevated risk (risk: 0.307)",
       "headline": "Greece: GDP declining with investment risk at 0.307",
       "details": "Greece shows GDP growth trend of 'decrease' combined with an investment risk score of 0.307. Greece facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "derived.overall_investment_risk_score"
@@ -562,12 +562,12 @@
       "alert_id": "alert_2026-03-10_027",
       "severity": "watch",
       "country_code": "IND",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth declining with elevated risk (risk: 0.287)",
       "headline": "India: GDP declining with investment risk at 0.287",
       "details": "India shows GDP growth trend of 'decrease' combined with an investment risk score of 0.287. India heavily dependent on Gulf oil transiting Hormuz. Oil at $116/bbl adds 1-2pp to import bill as % of GDP. Manufacturing and transport sectors hit hardest. G7 SPR release provides partial temporary",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "derived.overall_investment_risk_score"
@@ -584,18 +584,18 @@
       "alert_id": "alert_2026-03-10_028",
       "severity": "critical",
       "country_code": "IRN",
-      "status": "new",
-      "trigger": "overall_investment_risk_score > 0.7 (actual: 0.791)",
+      "status": "ongoing",
+      "trigger": "Investment risk score elevated (risk: 0.734)",
       "headline": "Iran: Maximum investment risk at 0.791",
-      "details": "Iran's overall investment risk score reached 0.791, placing it in crisis territory. Political risk premium: 4965 bps. Inflation: 32.5%. GDP growth trend: strong_decrease. War Day 10+ with escalating intensity. Infrastructure destruction accelerating. Hormuz mined, halting oil exports (~70% of revenue). Kurdish ground invasion opens new front. GDP trajectory: deep contr",
+      "details": "Iran's investment risk (inverted score: 0.734) remains in crisis territory. PRP: 870 bps. Inflation: 32.5%.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
       "title": "Iran: Maximum investment risk at 0.791",
-      "description": "Iran's overall investment risk score reached 0.791, placing it in crisis territory. Political risk premium: 4965 bps. Inflation: 32.5%. GDP growth trend: strong_decrease. War Day 10+ with escalating intensity. Infrastructure destruction accelerating. Hormuz mined, halting oil exports (~70% of revenue). Kurdish ground invasion opens new front. GDP trajectory: deep contr",
+      "description": "Iran's investment risk (inverted score: 0.734) remains in crisis territory. PRP: 870 bps. Inflation: 32.5%.",
       "countries": [
         "IRN"
       ],
@@ -605,19 +605,19 @@
       "alert_id": "alert_2026-03-10_029",
       "severity": "critical",
       "country_code": "IRN",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Active high-intensity conflict",
-      "headline": "Iran: Active military conflict \u2014 critical security risk",
+      "headline": "Iran: Active military conflict — critical security risk",
       "details": "US-Iran war Day 10+, Hormuz mined, Kurdish ground invasion, Tehran under sustained bombing. Supreme Leader killed. State approaching collapse.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "military.active_conflicts",
         "derived.overall_investment_risk_score",
         "political.political_stability_score"
       ],
       "run_id": "2026-W11",
-      "title": "Iran: Active military conflict \u2014 critical security risk",
+      "title": "Iran: Active military conflict — critical security risk",
       "description": "US-Iran war Day 10+, Hormuz mined, Kurdish ground invasion, Tehran under sustained bombing. Supreme Leader killed. State approaching collapse.",
       "countries": [
         "IRN"
@@ -628,12 +628,12 @@
       "alert_id": "alert_2026-03-10_030",
       "severity": "warning",
       "country_code": "IRN",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth trend: strong_decrease",
       "headline": "Iran: GDP growth in sharp decline",
       "details": "Iran's GDP growth trend is 'strong_decrease'. Current growth: 3.7%. War Day 10+ with escalating intensity. Infrastructure destruction accelerating. Hormuz mined, halting oil exports (~70% of revenue). Kurdish ground invasion opens new front. GDP trajectory: deep contraction -15% to -20% annualized.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct"
       ],
@@ -649,12 +649,12 @@
       "alert_id": "alert_2026-03-10_031",
       "severity": "warning",
       "country_code": "IRN",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Political stability trend: strong_decrease",
       "headline": "Iran: Political stability in sharp decline",
       "details": "Iran political stability collapsed. Supreme Leader killed Feb 28. Capital under sustained bombing. Internet shut down. Kurdish invasion from west. IRGC claims control but governance paralyzed. State approaching collapse.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_stability_trend",
         "political.political_stability_score"
@@ -671,12 +671,12 @@
       "alert_id": "alert_2026-03-10_032",
       "severity": "critical",
       "country_code": "IRN",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Supply chain chokepoint exposure > 0.7 (actual: 0.904)",
       "headline": "Iran: Extreme chokepoint exposure at 0.904 amid Hormuz crisis",
       "details": "Iran has a supply chain chokepoint exposure of 0.904, critically elevated during the Strait of Hormuz crisis. GDP trend: strong_decrease. Investment risk: 0.791.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure"
       ],
@@ -692,12 +692,12 @@
       "alert_id": "alert_2026-03-10_033",
       "severity": "watch",
       "country_code": "IRN",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Inflation elevated (actual: 32.5%)",
       "headline": "Iran: High inflation at 32.5%",
       "details": "Iran's CPI inflation of 32.5% is significantly elevated. Trend: strong_growth. ",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.inflation_cpi_pct"
       ],
@@ -713,18 +713,18 @@
       "alert_id": "alert_2026-03-10_034",
       "severity": "warning",
       "country_code": "IRQ",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 1609)",
-      "headline": "Iraq: Political risk premium at 1609 bps",
-      "details": "Iraq's political risk premium of 1609 basis points indicates significant sovereign risk. Investment risk score: 0.446.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 800)",
+      "headline": "Iraq: Political risk premium at 800 bps",
+      "details": "Iraq's political risk premium of 800 basis points indicates significant sovereign risk. Investment risk: 0.526.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Iraq: Political risk premium at 1609 bps",
-      "description": "Iraq's political risk premium of 1609 basis points indicates significant sovereign risk. Investment risk score: 0.446.",
+      "title": "Iraq: Political risk premium at 800 bps",
+      "description": "Iraq's political risk premium of 800 basis points indicates significant sovereign risk. Investment risk: 0.526.",
       "countries": [
         "IRQ"
       ],
@@ -734,12 +734,12 @@
       "alert_id": "alert_2026-03-10_035",
       "severity": "warning",
       "country_code": "IRQ",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth trend: strong_decrease",
       "headline": "Iraq: GDP growth in sharp decline",
       "details": "Iraq's GDP growth trend is 'strong_decrease'. Current growth: -1.5%. Iraq caught between US operations and Iranian influence. Kurdish invasion of Iran from Iraqi Kurdistan threatens sovereignty. Oil exports via Hormuz disrupted. Internal security deteriorating.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct"
       ],
@@ -755,12 +755,12 @@
       "alert_id": "alert_2026-03-10_036",
       "severity": "warning",
       "country_code": "IRQ",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Supply chain chokepoint exposure > 0.7 (actual: 0.791)",
       "headline": "Iraq: Extreme chokepoint exposure at 0.791 amid Hormuz crisis",
       "details": "Iraq has a supply chain chokepoint exposure of 0.791, critically elevated during the Strait of Hormuz crisis. GDP trend: strong_decrease. Investment risk: 0.446.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure"
       ],
@@ -776,17 +776,17 @@
       "alert_id": "alert_2026-03-10_037",
       "severity": "watch",
       "country_code": "IRQ",
-      "status": "new",
+      "status": "escalated",
       "trigger": "Investment risk approaching warning threshold (actual: 0.446)",
-      "headline": "Iraq: Investment risk at 0.446 \u2014 approaching elevated territory",
+      "headline": "Iraq: Investment risk at 0.446 — approaching elevated territory",
       "details": "Iraq's investment risk score of 0.446 is nearing the warning threshold of 0.5. Political risk premium: 1609 bps.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
-      "title": "Iraq: Investment risk at 0.446 \u2014 approaching elevated territory",
+      "title": "Iraq: Investment risk at 0.446 — approaching elevated territory",
       "description": "Iraq's investment risk score of 0.446 is nearing the warning threshold of 0.5. Political risk premium: 1609 bps.",
       "countries": [
         "IRQ"
@@ -797,12 +797,12 @@
       "alert_id": "alert_2026-03-10_038",
       "severity": "watch",
       "country_code": "IRQ",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Political stability trend: decrease",
       "headline": "Iraq: Political stability declining",
       "details": "Iraq political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_stability_trend"
       ],
@@ -818,19 +818,19 @@
       "alert_id": "alert_2026-03-10_039",
       "severity": "critical",
       "country_code": "ISR",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Active high-intensity conflict",
-      "headline": "Israel: Active military conflict \u2014 critical security risk",
+      "headline": "Israel: Active military conflict — critical security risk",
       "details": "Multi-front war: Iran strikes, Hezbollah escalation from Lebanon. International condemnation growing. GDP trend strong_decrease.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "military.active_conflicts",
         "derived.overall_investment_risk_score",
         "political.political_stability_score"
       ],
       "run_id": "2026-W11",
-      "title": "Israel: Active military conflict \u2014 critical security risk",
+      "title": "Israel: Active military conflict — critical security risk",
       "description": "Multi-front war: Iran strikes, Hezbollah escalation from Lebanon. International condemnation growing. GDP trend strong_decrease.",
       "countries": [
         "ISR"
@@ -841,12 +841,12 @@
       "alert_id": "alert_2026-03-10_040",
       "severity": "warning",
       "country_code": "ISR",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth trend: strong_decrease",
       "headline": "Israel: GDP growth in sharp decline",
       "details": "Israel's GDP growth trend is 'strong_decrease'. Current growth: 0.9%. Active war with Iran/Hezbollah. Hezbollah escalation from Lebanon. Military mobilization consuming resources. Tech sector disrupted. But US military support and domestic resilience partially offset.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct"
       ],
@@ -862,12 +862,12 @@
       "alert_id": "alert_2026-03-10_041",
       "severity": "warning",
       "country_code": "ISR",
-      "status": "new",
+      "status": "deescalated",
       "trigger": "Political stability trend: strong_decrease",
       "headline": "Israel: Political stability in sharp decline",
       "details": "Israel facing multi-front war with extended duration. Hezbollah escalating from Lebanon. Society under war strain. National unity government but reserves mobilization creating economic friction.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_stability_trend",
         "political.political_stability_score"
@@ -884,18 +884,18 @@
       "alert_id": "alert_2026-03-10_042",
       "severity": "warning",
       "country_code": "KEN",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 665)",
-      "headline": "Kenya: Political risk premium at 665 bps",
-      "details": "Kenya's political risk premium of 665 basis points indicates significant sovereign risk. Investment risk score: 0.35.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 570)",
+      "headline": "Kenya: Political risk premium at 570 bps",
+      "details": "Kenya's political risk premium of 570 basis points indicates significant sovereign risk. Investment risk: 0.382.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Kenya: Political risk premium at 665 bps",
-      "description": "Kenya's political risk premium of 665 basis points indicates significant sovereign risk. Investment risk score: 0.35.",
+      "title": "Kenya: Political risk premium at 570 bps",
+      "description": "Kenya's political risk premium of 570 basis points indicates significant sovereign risk. Investment risk: 0.382.",
       "countries": [
         "KEN"
       ],
@@ -905,12 +905,12 @@
       "alert_id": "alert_2026-03-10_043",
       "severity": "warning",
       "country_code": "KWT",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth trend: strong_decrease",
       "headline": "Kuwait: GDP growth in sharp decline",
       "details": "Kuwait's GDP growth trend is 'strong_decrease'. Current growth: -2.6%. Kuwait GDP under severe pressure from Hormuz disruption. No pipeline alternative to Hormuz. High energy prices cannot be monetized while export channels are blocked.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct"
       ],
@@ -926,12 +926,12 @@
       "alert_id": "alert_2026-03-10_044",
       "severity": "critical",
       "country_code": "KWT",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Supply chain chokepoint exposure > 0.7 (actual: 0.938)",
       "headline": "Kuwait: Extreme chokepoint exposure at 0.938 amid Hormuz crisis",
       "details": "Kuwait has a supply chain chokepoint exposure of 0.938, critically elevated during the Strait of Hormuz crisis. GDP trend: strong_decrease. Investment risk: 0.15.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure"
       ],
@@ -947,12 +947,12 @@
       "alert_id": "alert_2026-03-10_045",
       "severity": "watch",
       "country_code": "KWT",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Political stability trend: decrease",
       "headline": "Kuwait: Political stability declining",
       "details": "Kuwait political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_stability_trend"
       ],
@@ -968,18 +968,18 @@
       "alert_id": "alert_2026-03-10_046",
       "severity": "warning",
       "country_code": "LBY",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 1410)",
-      "headline": "Libya: Political risk premium at 1410 bps",
-      "details": "Libya's political risk premium of 1410 basis points indicates significant sovereign risk. Investment risk score: 0.388.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 620)",
+      "headline": "Libya: Political risk premium at 620 bps",
+      "details": "Libya's political risk premium of 620 basis points indicates significant sovereign risk. Investment risk: 0.547.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Libya: Political risk premium at 1410 bps",
-      "description": "Libya's political risk premium of 1410 basis points indicates significant sovereign risk. Investment risk score: 0.388.",
+      "title": "Libya: Political risk premium at 620 bps",
+      "description": "Libya's political risk premium of 620 basis points indicates significant sovereign risk. Investment risk: 0.547.",
       "countries": [
         "LBY"
       ],
@@ -989,18 +989,18 @@
       "alert_id": "alert_2026-03-10_047",
       "severity": "warning",
       "country_code": "LKA",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 905)",
-      "headline": "Sri Lanka: Political risk premium at 905 bps",
-      "details": "Sri Lanka's political risk premium of 905 basis points indicates significant sovereign risk. Investment risk score: 0.344.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 950)",
+      "headline": "Sri Lanka: Political risk premium at 950 bps",
+      "details": "Sri Lanka's political risk premium of 950 basis points indicates significant sovereign risk. Investment risk: 0.488.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Sri Lanka: Political risk premium at 905 bps",
-      "description": "Sri Lanka's political risk premium of 905 basis points indicates significant sovereign risk. Investment risk score: 0.344.",
+      "title": "Sri Lanka: Political risk premium at 950 bps",
+      "description": "Sri Lanka's political risk premium of 950 basis points indicates significant sovereign risk. Investment risk: 0.488.",
       "countries": [
         "LKA"
       ],
@@ -1010,19 +1010,19 @@
       "alert_id": "alert_2026-03-10_048",
       "severity": "critical",
       "country_code": "MMR",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Active high-intensity conflict",
-      "headline": "Myanmar: Active military conflict \u2014 critical security risk",
+      "headline": "Myanmar: Active military conflict — critical security risk",
       "details": "Myanmar civil war continues. Military junta vs resistance forces. Economy in severe contraction. Humanitarian crisis.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "military.active_conflicts",
         "derived.overall_investment_risk_score",
         "political.political_stability_score"
       ],
       "run_id": "2026-W11",
-      "title": "Myanmar: Active military conflict \u2014 critical security risk",
+      "title": "Myanmar: Active military conflict — critical security risk",
       "description": "Myanmar civil war continues. Military junta vs resistance forces. Economy in severe contraction. Humanitarian crisis.",
       "countries": [
         "MMR"
@@ -1033,18 +1033,18 @@
       "alert_id": "alert_2026-03-10_049",
       "severity": "warning",
       "country_code": "MMR",
-      "status": "new",
-      "trigger": "overall_investment_risk_score > 0.5 (actual: 0.631)",
-      "headline": "Myanmar: Elevated investment risk at 0.631",
-      "details": "Myanmar's investment risk score of 0.631 indicates elevated risk. Political risk premium: 2041 bps. Inflation: 31.0%. ",
+      "status": "ongoing",
+      "trigger": "Investment risk score elevated (risk: 0.639)",
+      "headline": "Myanmar: Elevated investment risk (risk score: 0.639)",
+      "details": "Myanmar's investment risk score of 0.639 indicates elevated risk. PRP: 850 bps. Inflation: 31.0%. GDP trend: N/A.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
-      "title": "Myanmar: Elevated investment risk at 0.631",
-      "description": "Myanmar's investment risk score of 0.631 indicates elevated risk. Political risk premium: 2041 bps. Inflation: 31.0%. ",
+      "title": "Myanmar: Elevated investment risk (risk score: 0.639)",
+      "description": "Myanmar's investment risk score of 0.639 indicates elevated risk. PRP: 850 bps. Inflation: 31.0%. GDP trend: N/A.",
       "countries": [
         "MMR"
       ],
@@ -1054,18 +1054,18 @@
       "alert_id": "alert_2026-03-10_050",
       "severity": "critical",
       "country_code": "MMR",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 2041)",
-      "headline": "Myanmar: Political risk premium at 2041 bps",
-      "details": "Myanmar's political risk premium of 2041 basis points indicates significant sovereign risk. Investment risk score: 0.631.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 850)",
+      "headline": "Myanmar: Political risk premium at 850 bps",
+      "details": "Myanmar's political risk premium of 850 basis points indicates significant sovereign risk. Investment risk: 0.639.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Myanmar: Political risk premium at 2041 bps",
-      "description": "Myanmar's political risk premium of 2041 basis points indicates significant sovereign risk. Investment risk score: 0.631.",
+      "title": "Myanmar: Political risk premium at 850 bps",
+      "description": "Myanmar's political risk premium of 850 basis points indicates significant sovereign risk. Investment risk: 0.639.",
       "countries": [
         "MMR"
       ],
@@ -1075,12 +1075,12 @@
       "alert_id": "alert_2026-03-10_051",
       "severity": "watch",
       "country_code": "MMR",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Inflation elevated (actual: 31.0%)",
       "headline": "Myanmar: High inflation at 31.0%",
       "details": "Myanmar's CPI inflation of 31.0% is significantly elevated. ",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.inflation_cpi_pct"
       ],
@@ -1096,12 +1096,12 @@
       "alert_id": "alert_2026-03-10_052",
       "severity": "warning",
       "country_code": "MOZ",
-      "status": "new",
+      "status": "deescalated",
       "trigger": "overall_investment_risk_score > 0.5 (actual: 0.513)",
       "headline": "Mozambique: Elevated investment risk at 0.513",
       "details": "Mozambique's investment risk score of 0.513 indicates elevated risk. Political risk premium: 939 bps. Inflation: 4.1%. ",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
@@ -1117,18 +1117,18 @@
       "alert_id": "alert_2026-03-10_053",
       "severity": "warning",
       "country_code": "MOZ",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 939)",
-      "headline": "Mozambique: Political risk premium at 939 bps",
-      "details": "Mozambique's political risk premium of 939 basis points indicates significant sovereign risk. Investment risk score: 0.513.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 900)",
+      "headline": "Mozambique: Political risk premium at 900 bps",
+      "details": "Mozambique's political risk premium of 900 basis points indicates significant sovereign risk. Investment risk: 0.468.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Mozambique: Political risk premium at 939 bps",
-      "description": "Mozambique's political risk premium of 939 basis points indicates significant sovereign risk. Investment risk score: 0.513.",
+      "title": "Mozambique: Political risk premium at 900 bps",
+      "description": "Mozambique's political risk premium of 900 basis points indicates significant sovereign risk. Investment risk: 0.468.",
       "countries": [
         "MOZ"
       ],
@@ -1138,18 +1138,18 @@
       "alert_id": "alert_2026-03-10_054",
       "severity": "warning",
       "country_code": "NGA",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 1276)",
-      "headline": "Nigeria: Political risk premium at 1276 bps",
-      "details": "Nigeria's political risk premium of 1276 basis points indicates significant sovereign risk. Investment risk score: 0.457.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 850)",
+      "headline": "Nigeria: Political risk premium at 850 bps",
+      "details": "Nigeria's political risk premium of 850 basis points indicates significant sovereign risk. Investment risk: 0.569.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Nigeria: Political risk premium at 1276 bps",
-      "description": "Nigeria's political risk premium of 1276 basis points indicates significant sovereign risk. Investment risk score: 0.457.",
+      "title": "Nigeria: Political risk premium at 850 bps",
+      "description": "Nigeria's political risk premium of 850 basis points indicates significant sovereign risk. Investment risk: 0.569.",
       "countries": [
         "NGA"
       ],
@@ -1159,12 +1159,12 @@
       "alert_id": "alert_2026-03-10_055",
       "severity": "watch",
       "country_code": "NGA",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Inflation elevated (actual: 33.2%)",
       "headline": "Nigeria: High inflation at 33.2%",
       "details": "Nigeria's CPI inflation of 33.2% is significantly elevated. Trend: growth. ",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.inflation_cpi_pct"
       ],
@@ -1180,17 +1180,17 @@
       "alert_id": "alert_2026-03-10_056",
       "severity": "watch",
       "country_code": "NGA",
-      "status": "new",
+      "status": "escalated",
       "trigger": "Investment risk approaching warning threshold (actual: 0.457)",
-      "headline": "Nigeria: Investment risk at 0.457 \u2014 approaching elevated territory",
+      "headline": "Nigeria: Investment risk at 0.457 — approaching elevated territory",
       "details": "Nigeria's investment risk score of 0.457 is nearing the warning threshold of 0.5. Political risk premium: 1276 bps.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
-      "title": "Nigeria: Investment risk at 0.457 \u2014 approaching elevated territory",
+      "title": "Nigeria: Investment risk at 0.457 — approaching elevated territory",
       "description": "Nigeria's investment risk score of 0.457 is nearing the warning threshold of 0.5. Political risk premium: 1276 bps.",
       "countries": [
         "NGA"
@@ -1201,12 +1201,12 @@
       "alert_id": "alert_2026-03-10_057",
       "severity": "warning",
       "country_code": "OMN",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Supply chain chokepoint exposure > 0.7 (actual: 0.850)",
       "headline": "Oman: Extreme chokepoint exposure at 0.850 amid Hormuz crisis",
       "details": "Oman has a supply chain chokepoint exposure of 0.850, critically elevated during the Strait of Hormuz crisis. GDP trend: decrease. Investment risk: 0.142.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure"
       ],
@@ -1222,12 +1222,12 @@
       "alert_id": "alert_2026-03-10_058",
       "severity": "watch",
       "country_code": "OMN",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Political stability trend: decrease",
       "headline": "Oman: Political stability declining",
       "details": "Oman political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_stability_trend"
       ],
@@ -1243,19 +1243,19 @@
       "alert_id": "alert_2026-03-10_059",
       "severity": "critical",
       "country_code": "PAK",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Active high-intensity conflict",
-      "headline": "Pakistan: Active military conflict \u2014 critical security risk",
+      "headline": "Pakistan: Active military conflict — critical security risk",
       "details": "Pakistan declared war on Afghanistan. Airstrikes on Kabul and Kandahar. Nuclear-armed nation in active conflict. CCC+/Caa1 credit rating.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "military.active_conflicts",
         "derived.overall_investment_risk_score",
         "political.political_stability_score"
       ],
       "run_id": "2026-W11",
-      "title": "Pakistan: Active military conflict \u2014 critical security risk",
+      "title": "Pakistan: Active military conflict — critical security risk",
       "description": "Pakistan declared war on Afghanistan. Airstrikes on Kabul and Kandahar. Nuclear-armed nation in active conflict. CCC+/Caa1 credit rating.",
       "countries": [
         "PAK"
@@ -1266,18 +1266,18 @@
       "alert_id": "alert_2026-03-10_060",
       "severity": "warning",
       "country_code": "PAK",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 1335)",
-      "headline": "Pakistan: Political risk premium at 1335 bps",
-      "details": "Pakistan's political risk premium of 1335 basis points indicates significant sovereign risk. Investment risk score: 0.395.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 900)",
+      "headline": "Pakistan: Political risk premium at 900 bps",
+      "details": "Pakistan's political risk premium of 900 basis points indicates significant sovereign risk. Investment risk: 0.559.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Pakistan: Political risk premium at 1335 bps",
-      "description": "Pakistan's political risk premium of 1335 basis points indicates significant sovereign risk. Investment risk score: 0.395.",
+      "title": "Pakistan: Political risk premium at 900 bps",
+      "description": "Pakistan's political risk premium of 900 basis points indicates significant sovereign risk. Investment risk: 0.559.",
       "countries": [
         "PAK"
       ],
@@ -1287,12 +1287,12 @@
       "alert_id": "alert_2026-03-10_061",
       "severity": "watch",
       "country_code": "PAK",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth declining with elevated risk (risk: 0.395)",
       "headline": "Pakistan: GDP declining with investment risk at 0.395",
       "details": "Pakistan shows GDP growth trend of 'decrease' combined with an investment risk score of 0.395. Pakistan heavily dependent on Gulf oil transiting Hormuz. Oil at $116/bbl adds 1-2pp to import bill as % of GDP. Manufacturing and transport sectors hit hardest. G7 SPR release provides partial tempor",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "derived.overall_investment_risk_score"
@@ -1309,12 +1309,12 @@
       "alert_id": "alert_2026-03-10_062",
       "severity": "watch",
       "country_code": "PHL",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth declining with elevated risk (risk: 0.279)",
       "headline": "Philippines: GDP declining with investment risk at 0.279",
       "details": "Philippines shows GDP growth trend of 'decrease' combined with an investment risk score of 0.279. Philippines heavily dependent on Gulf oil transiting Hormuz. Oil at $116/bbl adds 1-2pp to import bill as % of GDP. Manufacturing and transport sectors hit hardest. G7 SPR release provides partial tem",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "derived.overall_investment_risk_score"
@@ -1331,12 +1331,12 @@
       "alert_id": "alert_2026-03-10_063",
       "severity": "warning",
       "country_code": "QAT",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth trend: strong_decrease",
       "headline": "Qatar: GDP growth in sharp decline",
       "details": "Qatar's GDP growth trend is 'strong_decrease'. Current growth: 2.4%. Qatar GDP under severe pressure from Hormuz disruption. LNG exports completely blocked. High energy prices cannot be monetized while export channels are blocked.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct"
       ],
@@ -1352,12 +1352,12 @@
       "alert_id": "alert_2026-03-10_064",
       "severity": "critical",
       "country_code": "QAT",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Supply chain chokepoint exposure > 0.7 (actual: 0.916)",
       "headline": "Qatar: Extreme chokepoint exposure at 0.916 amid Hormuz crisis",
       "details": "Qatar has a supply chain chokepoint exposure of 0.916, critically elevated during the Strait of Hormuz crisis. GDP trend: strong_decrease. Investment risk: 0.098.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure"
       ],
@@ -1373,12 +1373,12 @@
       "alert_id": "alert_2026-03-10_065",
       "severity": "watch",
       "country_code": "QAT",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Political stability trend: decrease",
       "headline": "Qatar: Political stability declining",
       "details": "Qatar political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_stability_trend"
       ],
@@ -1394,12 +1394,12 @@
       "alert_id": "alert_2026-03-10_066",
       "severity": "watch",
       "country_code": "ROU",
-      "status": "new",
+      "status": "deescalated",
       "trigger": "GDP growth declining with elevated risk (risk: 0.283)",
       "headline": "Romania: GDP declining with investment risk at 0.283",
       "details": "Romania shows GDP growth trend of 'decrease' combined with an investment risk score of 0.283. Romania facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "derived.overall_investment_risk_score"
@@ -1416,18 +1416,18 @@
       "alert_id": "alert_2026-03-10_067",
       "severity": "warning",
       "country_code": "RUS",
-      "status": "new",
-      "trigger": "overall_investment_risk_score > 0.5 (actual: 0.600)",
-      "headline": "Russia: Elevated investment risk at 0.600",
-      "details": "Russia's investment risk score of 0.600 indicates elevated risk. Political risk premium: 3148 bps. Inflation: 8.4%. GDP trend: growth. ",
+      "status": "ongoing",
+      "trigger": "Investment risk score elevated (risk: 0.661)",
+      "headline": "Russia: Elevated investment risk (risk score: 0.661)",
+      "details": "Russia's investment risk score of 0.661 indicates elevated risk. PRP: 1900 bps. Inflation: 8.4%. GDP trend: growth.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
-      "title": "Russia: Elevated investment risk at 0.600",
-      "description": "Russia's investment risk score of 0.600 indicates elevated risk. Political risk premium: 3148 bps. Inflation: 8.4%. GDP trend: growth. ",
+      "title": "Russia: Elevated investment risk (risk score: 0.661)",
+      "description": "Russia's investment risk score of 0.661 indicates elevated risk. PRP: 1900 bps. Inflation: 8.4%. GDP trend: growth.",
       "countries": [
         "RUS"
       ],
@@ -1437,18 +1437,18 @@
       "alert_id": "alert_2026-03-10_068",
       "severity": "critical",
       "country_code": "RUS",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 3148)",
-      "headline": "Russia: Political risk premium at 3148 bps",
-      "details": "Russia's political risk premium of 3148 basis points indicates significant sovereign risk. Investment risk score: 0.6.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 1900)",
+      "headline": "Russia: Political risk premium at 1900 bps",
+      "details": "Russia's political risk premium of 1900 basis points indicates significant sovereign risk. Investment risk: 0.661.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Russia: Political risk premium at 3148 bps",
-      "description": "Russia's political risk premium of 3148 basis points indicates significant sovereign risk. Investment risk score: 0.6.",
+      "title": "Russia: Political risk premium at 1900 bps",
+      "description": "Russia's political risk premium of 1900 basis points indicates significant sovereign risk. Investment risk: 0.661.",
       "countries": [
         "RUS"
       ],
@@ -1458,12 +1458,12 @@
       "alert_id": "alert_2026-03-10_069",
       "severity": "warning",
       "country_code": "SAU",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth trend: strong_decrease",
       "headline": "Saudi Arabia: GDP growth in sharp decline",
       "details": "Saudi Arabia's GDP growth trend is 'strong_decrease'. Current growth: 2.0%. Hormuz mine-laying by IRGC blocks primary oil export route. Oil revenue disruption severe despite high prices. Saudi Arabia has limited pipeline alternatives. Defense spending surge adds fiscal pressure.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct"
       ],
@@ -1479,12 +1479,12 @@
       "alert_id": "alert_2026-03-10_070",
       "severity": "warning",
       "country_code": "SAU",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Supply chain chokepoint exposure > 0.7 (actual: 0.809)",
       "headline": "Saudi Arabia: Extreme chokepoint exposure at 0.809 amid Hormuz crisis",
       "details": "Saudi Arabia has a supply chain chokepoint exposure of 0.809, critically elevated during the Strait of Hormuz crisis. GDP trend: strong_decrease. Investment risk: 0.186.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure"
       ],
@@ -1500,12 +1500,12 @@
       "alert_id": "alert_2026-03-10_071",
       "severity": "watch",
       "country_code": "SAU",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Political stability trend: decrease",
       "headline": "Saudi Arabia: Political stability declining",
       "details": "Saudi Arabia political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_stability_trend"
       ],
@@ -1521,18 +1521,18 @@
       "alert_id": "alert_2026-03-10_072",
       "severity": "warning",
       "country_code": "SEN",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 889)",
-      "headline": "Senegal: Political risk premium at 889 bps",
-      "details": "Senegal's political risk premium of 889 basis points indicates significant sovereign risk. Investment risk score: 0.422.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 850)",
+      "headline": "Senegal: Political risk premium at 850 bps",
+      "details": "Senegal's political risk premium of 850 basis points indicates significant sovereign risk. Investment risk: 0.395.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Senegal: Political risk premium at 889 bps",
-      "description": "Senegal's political risk premium of 889 basis points indicates significant sovereign risk. Investment risk score: 0.422.",
+      "title": "Senegal: Political risk premium at 850 bps",
+      "description": "Senegal's political risk premium of 850 basis points indicates significant sovereign risk. Investment risk: 0.395.",
       "countries": [
         "SEN"
       ],
@@ -1542,17 +1542,17 @@
       "alert_id": "alert_2026-03-10_073",
       "severity": "watch",
       "country_code": "SEN",
-      "status": "new",
+      "status": "deescalated",
       "trigger": "Investment risk approaching warning threshold (actual: 0.422)",
-      "headline": "Senegal: Investment risk at 0.422 \u2014 approaching elevated territory",
+      "headline": "Senegal: Investment risk at 0.422 — approaching elevated territory",
       "details": "Senegal's investment risk score of 0.422 is nearing the warning threshold of 0.5. Political risk premium: 889 bps.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
-      "title": "Senegal: Investment risk at 0.422 \u2014 approaching elevated territory",
+      "title": "Senegal: Investment risk at 0.422 — approaching elevated territory",
       "description": "Senegal's investment risk score of 0.422 is nearing the warning threshold of 0.5. Political risk premium: 889 bps.",
       "countries": [
         "SEN"
@@ -1563,12 +1563,12 @@
       "alert_id": "alert_2026-03-10_074",
       "severity": "critical",
       "country_code": "SGP",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Supply chain chokepoint exposure > 0.7 (actual: 0.940)",
       "headline": "Singapore: Extreme chokepoint exposure at 0.940 amid Hormuz crisis",
       "details": "Singapore has a supply chain chokepoint exposure of 0.940, critically elevated during the Strait of Hormuz crisis. GDP trend: decrease. Investment risk: 0.141.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure"
       ],
@@ -1584,18 +1584,18 @@
       "alert_id": "alert_2026-03-10_075",
       "severity": "warning",
       "country_code": "TUR",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 590)",
-      "headline": "Turkey: Political risk premium at 590 bps",
-      "details": "Turkey's political risk premium of 590 basis points indicates significant sovereign risk. Investment risk score: 0.421.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 530)",
+      "headline": "Turkey: Political risk premium at 530 bps",
+      "details": "Turkey's political risk premium of 530 basis points indicates significant sovereign risk. Investment risk: 0.487.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Turkey: Political risk premium at 590 bps",
-      "description": "Turkey's political risk premium of 590 basis points indicates significant sovereign risk. Investment risk score: 0.421.",
+      "title": "Turkey: Political risk premium at 530 bps",
+      "description": "Turkey's political risk premium of 530 basis points indicates significant sovereign risk. Investment risk: 0.487.",
       "countries": [
         "TUR"
       ],
@@ -1605,12 +1605,12 @@
       "alert_id": "alert_2026-03-10_076",
       "severity": "warning",
       "country_code": "TUR",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Inflation > 50% (actual: 58.5%)",
       "headline": "Turkey: Hyperinflation territory at 58.5%",
       "details": "Turkey's CPI inflation of 58.5% exceeds the hyperinflation threshold. Trend: growth. ",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.inflation_cpi_pct"
       ],
@@ -1626,17 +1626,17 @@
       "alert_id": "alert_2026-03-10_077",
       "severity": "watch",
       "country_code": "TUR",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Investment risk approaching warning threshold (actual: 0.421)",
-      "headline": "Turkey: Investment risk at 0.421 \u2014 approaching elevated territory",
+      "headline": "Turkey: Investment risk at 0.421 — approaching elevated territory",
       "details": "Turkey's investment risk score of 0.421 is nearing the warning threshold of 0.5. Political risk premium: 590 bps.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
-      "title": "Turkey: Investment risk at 0.421 \u2014 approaching elevated territory",
+      "title": "Turkey: Investment risk at 0.421 — approaching elevated territory",
       "description": "Turkey's investment risk score of 0.421 is nearing the warning threshold of 0.5. Political risk premium: 590 bps.",
       "countries": [
         "TUR"
@@ -1647,12 +1647,12 @@
       "alert_id": "alert_2026-03-10_078",
       "severity": "watch",
       "country_code": "TUR",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth declining with elevated risk (risk: 0.421)",
       "headline": "Turkey: GDP declining with investment risk at 0.421",
       "details": "Turkey shows GDP growth trend of 'decrease' combined with an investment risk score of 0.421. Turkey facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply. Turkey navigating between NATO membership and regional re",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "derived.overall_investment_risk_score"
@@ -1669,12 +1669,12 @@
       "alert_id": "alert_2026-03-10_079",
       "severity": "watch",
       "country_code": "TUR",
-      "status": "new",
+      "status": "deescalated",
       "trigger": "Political stability trend: decrease",
       "headline": "Turkey: Political stability declining",
       "details": "Turkey facing complex balancing act between NATO membership and regional relationships. Turkic States coordination tested. Kurdish proxy war in Iran creates domestic concerns. NATO obligations conflict with regional interests.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_stability_trend"
       ],
@@ -1690,18 +1690,18 @@
       "alert_id": "alert_2026-03-10_080",
       "severity": "warning",
       "country_code": "TZA",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 659)",
-      "headline": "Tanzania: Political risk premium at 659 bps",
-      "details": "Tanzania's political risk premium of 659 basis points indicates significant sovereign risk. Investment risk score: 0.32.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 570)",
+      "headline": "Tanzania: Political risk premium at 570 bps",
+      "details": "Tanzania's political risk premium of 570 basis points indicates significant sovereign risk. Investment risk: 0.392.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Tanzania: Political risk premium at 659 bps",
-      "description": "Tanzania's political risk premium of 659 basis points indicates significant sovereign risk. Investment risk score: 0.32.",
+      "title": "Tanzania: Political risk premium at 570 bps",
+      "description": "Tanzania's political risk premium of 570 basis points indicates significant sovereign risk. Investment risk: 0.392.",
       "countries": [
         "TZA"
       ],
@@ -1711,20 +1711,20 @@
       "alert_id": "alert_2026-03-10_081",
       "severity": "critical",
       "country_code": "UKR",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Active high-intensity conflict",
-      "headline": "Ukraine: Active military conflict \u2014 critical security risk",
-      "details": "Russia-Ukraine war Year 5. Ukraine retaking territory. EU \u20ac90B transfer. CC/Ca credit rating. 34% of GDP on defense.",
+      "headline": "Ukraine: Active military conflict — critical security risk",
+      "details": "Russia-Ukraine war Year 5. Ukraine retaking territory. EU €90B transfer. CC/Ca credit rating. 34% of GDP on defense.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "military.active_conflicts",
         "derived.overall_investment_risk_score",
         "political.political_stability_score"
       ],
       "run_id": "2026-W11",
-      "title": "Ukraine: Active military conflict \u2014 critical security risk",
-      "description": "Russia-Ukraine war Year 5. Ukraine retaking territory. EU \u20ac90B transfer. CC/Ca credit rating. 34% of GDP on defense.",
+      "title": "Ukraine: Active military conflict — critical security risk",
+      "description": "Russia-Ukraine war Year 5. Ukraine retaking territory. EU €90B transfer. CC/Ca credit rating. 34% of GDP on defense.",
       "countries": [
         "UKR"
       ],
@@ -1734,18 +1734,18 @@
       "alert_id": "alert_2026-03-10_082",
       "severity": "warning",
       "country_code": "UKR",
-      "status": "new",
-      "trigger": "overall_investment_risk_score > 0.5 (actual: 0.603)",
-      "headline": "Ukraine: Elevated investment risk at 0.603",
-      "details": "Ukraine's investment risk score of 0.603 indicates elevated risk. Political risk premium: 1930 bps. Inflation: 6.5%. GDP trend: stable. ",
+      "status": "ongoing",
+      "trigger": "Investment risk score elevated (risk: 0.523)",
+      "headline": "Ukraine: Elevated investment risk (risk score: 0.523)",
+      "details": "Ukraine's investment risk score of 0.523 indicates elevated risk. PRP: 1000 bps. Inflation: 6.5%. GDP trend: stable.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
-      "title": "Ukraine: Elevated investment risk at 0.603",
-      "description": "Ukraine's investment risk score of 0.603 indicates elevated risk. Political risk premium: 1930 bps. Inflation: 6.5%. GDP trend: stable. ",
+      "title": "Ukraine: Elevated investment risk (risk score: 0.523)",
+      "description": "Ukraine's investment risk score of 0.523 indicates elevated risk. PRP: 1000 bps. Inflation: 6.5%. GDP trend: stable.",
       "countries": [
         "UKR"
       ],
@@ -1755,18 +1755,18 @@
       "alert_id": "alert_2026-03-10_083",
       "severity": "warning",
       "country_code": "UKR",
-      "status": "new",
-      "trigger": "political_risk_premium_bps > 500 (actual: 1930)",
-      "headline": "Ukraine: Political risk premium at 1930 bps",
-      "details": "Ukraine's political risk premium of 1930 basis points indicates significant sovereign risk. Investment risk score: 0.603.",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 1000)",
+      "headline": "Ukraine: Political risk premium at 1000 bps",
+      "details": "Ukraine's political risk premium of 1000 basis points indicates significant sovereign risk. Investment risk: 0.523.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
       "run_id": "2026-W11",
-      "title": "Ukraine: Political risk premium at 1930 bps",
-      "description": "Ukraine's political risk premium of 1930 basis points indicates significant sovereign risk. Investment risk score: 0.603.",
+      "title": "Ukraine: Political risk premium at 1000 bps",
+      "description": "Ukraine's political risk premium of 1000 basis points indicates significant sovereign risk. Investment risk: 0.523.",
       "countries": [
         "UKR"
       ],
@@ -1776,12 +1776,12 @@
       "alert_id": "alert_2026-03-10_084",
       "severity": "watch",
       "country_code": "USA",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Political stability trend: decrease",
       "headline": "United States: Political stability declining",
       "details": "US political stability declining. War with Iran has no clear endpoint. DHS Secretary fired. $175B tariff refund SCOTUS crisis. 5 recession warning signs identified. Midterm mood favoring Democrats. Rand Paul warns of 'disastrous' midterms.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_stability_trend"
       ],
@@ -1797,12 +1797,12 @@
       "alert_id": "alert_2026-03-10_085",
       "severity": "warning",
       "country_code": "VNM",
-      "status": "new",
+      "status": "deescalated",
       "trigger": "political_risk_premium_bps > 500 (actual: 556)",
       "headline": "Vietnam: Political risk premium at 556 bps",
       "details": "Vietnam's political risk premium of 556 basis points indicates significant sovereign risk. Investment risk score: 0.209.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.political_risk_premium_bps"
       ],
@@ -1818,12 +1818,12 @@
       "alert_id": "alert_2026-03-10_086",
       "severity": "watch",
       "country_code": "ZAF",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "GDP growth declining with elevated risk (risk: 0.280)",
       "headline": "South Africa: GDP declining with investment risk at 0.280",
       "details": "South Africa shows GDP growth trend of 'decrease' combined with an investment risk score of 0.280. South Africa facing unprecedented marine gas oil prices from Gulf disruption. Mining sector benefits from gold windfall but energy costs erode broader economy. Load-shedding risk increases with fuel c",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "derived.overall_investment_risk_score"
@@ -1840,12 +1840,12 @@
       "alert_id": "alert_2026-03-10_087",
       "severity": "critical",
       "country_code": "KWT",
-      "status": "new",
-      "trigger": "Hormuz crisis \u2014 direct impact (0.938 chokepoint exposure)",
+      "status": "ongoing",
+      "trigger": "Hormuz crisis — direct impact (0.938 chokepoint exposure)",
       "headline": "Kuwait: Hormuz crisis direct impact",
-      "details": "Kuwait faces near-total economic paralysis from Hormuz closure with 93.8% chokepoint exposure \u2014 highest of all tracked countries. No pipeline alternative. Ali Al Salem Air Base struck by IRGC. GDP trend: strong_decrease.",
+      "details": "Kuwait faces near-total economic paralysis from Hormuz closure with 93.8% chokepoint exposure — highest of all tracked countries. No pipeline alternative. Ali Al Salem Air Base struck by IRGC. GDP trend: strong_decrease.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure",
         "macroeconomic.gdp_real_growth_pct",
@@ -1853,7 +1853,7 @@
       ],
       "run_id": "2026-W11",
       "title": "Kuwait: Hormuz crisis direct impact",
-      "description": "Kuwait faces near-total economic paralysis from Hormuz closure with 93.8% chokepoint exposure \u2014 highest of all tracked countries. No pipeline alternative. Ali Al Salem Air Base struck by IRGC. GDP trend: strong_decrease.",
+      "description": "Kuwait faces near-total economic paralysis from Hormuz closure with 93.8% chokepoint exposure — highest of all tracked countries. No pipeline alternative. Ali Al Salem Air Base struck by IRGC. GDP trend: strong_decrease.",
       "countries": [
         "KWT"
       ],
@@ -1863,12 +1863,12 @@
       "alert_id": "alert_2026-03-10_088",
       "severity": "critical",
       "country_code": "QAT",
-      "status": "new",
-      "trigger": "Hormuz crisis \u2014 direct impact (0.916 chokepoint exposure)",
+      "status": "ongoing",
+      "trigger": "Hormuz crisis — direct impact (0.916 chokepoint exposure)",
       "headline": "Qatar: Hormuz crisis direct impact",
-      "details": "Qatar \u2014 world's largest LNG exporter \u2014 completely offline due to Hormuz mines. 91.6% chokepoint exposure. Al Udeid Air Base struck. North Field LNG expansion timeline at risk. GDP trend: strong_decrease.",
+      "details": "Qatar — world's largest LNG exporter — completely offline due to Hormuz mines. 91.6% chokepoint exposure. Al Udeid Air Base struck. North Field LNG expansion timeline at risk. GDP trend: strong_decrease.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure",
         "macroeconomic.gdp_real_growth_pct",
@@ -1876,7 +1876,7 @@
       ],
       "run_id": "2026-W11",
       "title": "Qatar: Hormuz crisis direct impact",
-      "description": "Qatar \u2014 world's largest LNG exporter \u2014 completely offline due to Hormuz mines. 91.6% chokepoint exposure. Al Udeid Air Base struck. North Field LNG expansion timeline at risk. GDP trend: strong_decrease.",
+      "description": "Qatar — world's largest LNG exporter — completely offline due to Hormuz mines. 91.6% chokepoint exposure. Al Udeid Air Base struck. North Field LNG expansion timeline at risk. GDP trend: strong_decrease.",
       "countries": [
         "QAT"
       ],
@@ -1886,12 +1886,12 @@
       "alert_id": "alert_2026-03-10_089",
       "severity": "critical",
       "country_code": "ARE",
-      "status": "new",
-      "trigger": "Hormuz crisis \u2014 direct impact (1.000 chokepoint exposure)",
+      "status": "ongoing",
+      "trigger": "Hormuz crisis — direct impact (1.000 chokepoint exposure)",
       "headline": "United Arab Emirates: Hormuz crisis direct impact",
       "details": "UAE under direct Iranian missile attacks on Al Dhafra base and cities. 100% chokepoint exposure. Aviation disrupted with 7,700+ delays. Dubai financial hub operations stressed. GDP trend: strong_decrease.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure",
         "macroeconomic.gdp_real_growth_pct",
@@ -1909,12 +1909,12 @@
       "alert_id": "alert_2026-03-10_090",
       "severity": "warning",
       "country_code": "SAU",
-      "status": "new",
-      "trigger": "Hormuz crisis \u2014 direct impact (0.809 chokepoint exposure)",
+      "status": "ongoing",
+      "trigger": "Hormuz crisis — direct impact (0.809 chokepoint exposure)",
       "headline": "Saudi Arabia: Hormuz crisis direct impact",
-      "details": "Saudi Arabia exposed to Hormuz closure with 80.9% chokepoint exposure. IRGC attacks on regional US bases. Political stability declining. GDP trend: strong_decrease despite oil price surge \u2014 cannot export through Hormuz.",
+      "details": "Saudi Arabia exposed to Hormuz closure with 80.9% chokepoint exposure. IRGC attacks on regional US bases. Political stability declining. GDP trend: strong_decrease despite oil price surge — cannot export through Hormuz.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure",
         "macroeconomic.gdp_real_growth_pct",
@@ -1922,7 +1922,7 @@
       ],
       "run_id": "2026-W11",
       "title": "Saudi Arabia: Hormuz crisis direct impact",
-      "description": "Saudi Arabia exposed to Hormuz closure with 80.9% chokepoint exposure. IRGC attacks on regional US bases. Political stability declining. GDP trend: strong_decrease despite oil price surge \u2014 cannot export through Hormuz.",
+      "description": "Saudi Arabia exposed to Hormuz closure with 80.9% chokepoint exposure. IRGC attacks on regional US bases. Political stability declining. GDP trend: strong_decrease despite oil price surge — cannot export through Hormuz.",
       "countries": [
         "SAU"
       ],
@@ -1932,12 +1932,12 @@
       "alert_id": "alert_2026-03-10_091",
       "severity": "warning",
       "country_code": "OMN",
-      "status": "new",
-      "trigger": "Hormuz crisis \u2014 direct impact (0.850 chokepoint exposure)",
+      "status": "ongoing",
+      "trigger": "Hormuz crisis — direct impact (0.850 chokepoint exposure)",
       "headline": "Oman: Hormuz crisis direct impact",
       "details": "Oman critically exposed with 85% chokepoint exposure. Direct proximity to Hormuz mine-laying. Oil exports severely disrupted. GDP trend: decrease.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure",
         "macroeconomic.gdp_real_growth_pct",
@@ -1955,12 +1955,12 @@
       "alert_id": "alert_2026-03-10_092",
       "severity": "warning",
       "country_code": "IRQ",
-      "status": "new",
-      "trigger": "Hormuz crisis \u2014 direct impact (0.791 chokepoint exposure)",
+      "status": "ongoing",
+      "trigger": "Hormuz crisis — direct impact (0.791 chokepoint exposure)",
       "headline": "Iraq: Hormuz crisis direct impact",
       "details": "Iraq exposed with 79.1% chokepoint exposure. Oil export disruption threatens fiscal position. Kurdish invasion of Iran from Iraq Kurdistan complicates sovereignty. GDP trend: strong_decrease.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure",
         "macroeconomic.gdp_real_growth_pct",
@@ -1978,12 +1978,12 @@
       "alert_id": "alert_2026-03-10_093",
       "severity": "warning",
       "country_code": "RUS",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Sanctions + elevated risk (risk: 0.6, PRP: 3148 bps)",
       "headline": "Russia: Comprehensive sanctions with elevated investment risk",
       "details": "Russia remains under comprehensive Western sanctions with investment risk at 0.6 and political risk premium at 3148 bps. Caught conducting ship-to-ship oil transfers in Gulf of Oman. US warned of consequences if Russia providing intelligence to Iran. Ukraine war continues in Year 5.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score",
         "political.sanctions_status",
@@ -2001,19 +2001,19 @@
       "alert_id": "alert_2026-03-10_094",
       "severity": "watch",
       "country_code": "DEU",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "European energy crisis / Hormuz impact (GDP trend: decrease)",
       "headline": "Germany: European energy crisis from Hormuz closure",
-      "details": "Germany faces economic headwinds from the oil price surge to $116.50/bbl driven by Hormuz closure. GDP trend: decrease. Investment risk: 0.103. VW slashing 50,000 jobs \u2014 largest German auto layoff ever. EU admits 'nuclear blunder' on energy policy. European markets crashed ~6%.",
+      "details": "Germany faces economic headwinds from the oil price surge to $116.50/bbl driven by Hormuz closure. GDP trend: decrease. Investment risk: 0.103. VW slashing 50,000 jobs — largest German auto layoff ever. EU admits 'nuclear blunder' on energy policy. European markets crashed ~6%.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "macroeconomic.inflation_cpi_pct"
       ],
       "run_id": "2026-W11",
       "title": "Germany: European energy crisis from Hormuz closure",
-      "description": "Germany faces economic headwinds from the oil price surge to $116.50/bbl driven by Hormuz closure. GDP trend: decrease. Investment risk: 0.103. VW slashing 50,000 jobs \u2014 largest German auto layoff ever. EU admits 'nuclear blunder' on energy policy. European markets crashed ~6%.",
+      "description": "Germany faces economic headwinds from the oil price surge to $116.50/bbl driven by Hormuz closure. GDP trend: decrease. Investment risk: 0.103. VW slashing 50,000 jobs — largest German auto layoff ever. EU admits 'nuclear blunder' on energy policy. European markets crashed ~6%.",
       "countries": [
         "DEU"
       ],
@@ -2023,12 +2023,12 @@
       "alert_id": "alert_2026-03-10_095",
       "severity": "watch",
       "country_code": "FRA",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "European energy crisis / Hormuz impact (GDP trend: decrease)",
       "headline": "France: European energy crisis from Hormuz closure",
       "details": "France faces economic headwinds from the oil price surge to $116.50/bbl driven by Hormuz closure. GDP trend: decrease. Investment risk: 0.181. Macron vows to protect Lebanon. EU leaders split on Iran war. European defense burden growing.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "macroeconomic.inflation_cpi_pct"
@@ -2045,12 +2045,12 @@
       "alert_id": "alert_2026-03-10_096",
       "severity": "watch",
       "country_code": "ITA",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "European energy crisis / Hormuz impact (GDP trend: decrease)",
       "headline": "Italy: European energy crisis from Hormuz closure",
       "details": "Italy faces economic headwinds from the oil price surge to $116.50/bbl driven by Hormuz closure. GDP trend: decrease. Investment risk: 0.175. EU protests Russia's Venice Biennale return. European energy vulnerability acute. GDP trend: decrease.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "macroeconomic.inflation_cpi_pct"
@@ -2067,19 +2067,19 @@
       "alert_id": "alert_2026-03-10_097",
       "severity": "watch",
       "country_code": "ARG",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Recession + reform volatility (inflation: 219.9%)",
-      "headline": "Argentina: Recession with hyperinflation legacy \u2014 Milei reforms tested",
+      "headline": "Argentina: Recession with hyperinflation legacy — Milei reforms tested",
       "details": "Argentina in recession (GDP trend: decrease) with CPI still at 219.9% despite disinflation progress. Milei courting Wall Street, citing net energy exports from Vaca Muerta. Investment risk: 0.449. Argentina emerging as energy crisis beneficiary but structural reform path remains volatile.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "macroeconomic.inflation_cpi_pct",
         "derived.overall_investment_risk_score"
       ],
       "run_id": "2026-W11",
-      "title": "Argentina: Recession with hyperinflation legacy \u2014 Milei reforms tested",
+      "title": "Argentina: Recession with hyperinflation legacy — Milei reforms tested",
       "description": "Argentina in recession (GDP trend: decrease) with CPI still at 219.9% despite disinflation progress. Milei courting Wall Street, citing net energy exports from Vaca Muerta. Investment risk: 0.449. Argentina emerging as energy crisis beneficiary but structural reform path remains volatile.",
       "countries": [
         "ARG"
@@ -2090,12 +2090,12 @@
       "alert_id": "alert_2026-03-10_098",
       "severity": "watch",
       "country_code": "TUR",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "High inflation + declining GDP (inflation: 58.5%)",
       "headline": "Turkey: Inflation at 58.5% with GDP declining",
       "details": "Turkey's CPI inflation remains at 58.5% with GDP growth trend declining. Investment risk: 0.421. Political risk premium: 590 bps. OTS foreign ministers meeting tests Turkic coordination amid Iran crisis. Turkey navigates between NATO and regional relationships.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.inflation_cpi_pct",
         "macroeconomic.gdp_real_growth_pct",
@@ -2113,12 +2113,12 @@
       "alert_id": "alert_2026-03-10_099",
       "severity": "watch",
       "country_code": "USA",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "War escalation + tariff crisis + recession warnings",
       "headline": "USA: Iran war costs + SCOTUS tariff crisis + 5 recession warning signs",
       "details": "US faces convergent risks: Iran war entering 'most intense phase' with boots on ground 'not ruled out'; $175B tariff refund liability from SCOTUS ruling; Dow fell 800+ points; leveraged basis trade ($1T+) unwinding; 5 recession warning signs identified. DHS Secretary fired mid-war. Midterm mood favoring Democrats. Political stability trend: decrease. Risk: 0.238.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.gdp_real_growth_pct",
         "derived.political_stability_trend",
@@ -2136,12 +2136,12 @@
       "alert_id": "alert_2026-03-10_100",
       "severity": "watch",
       "country_code": "IND",
-      "status": "new",
-      "trigger": "Gulf economic exposure \u2014 remittances, energy, trade (chokepoint: 0.549)",
+      "status": "ongoing",
+      "trigger": "Gulf economic exposure — remittances, energy, trade (chokepoint: 0.549)",
       "headline": "India: Gulf crisis threatens remittances, energy imports, and trade",
       "details": "India faces cascading Middle East war impact: $346cr export cargo stranded at Kandla/Mundra ports, $100B+ annual GCC remittances at risk, banking sector Gulf exposure. Oil import costs surging at $116/bbl. Chokepoint exposure: 0.549. GDP trend: decrease. Easing Chinese investment curbs signals strategic recalibration.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.current_account_pct_gdp",
         "macroeconomic.inflation_cpi_pct",
@@ -2159,12 +2159,12 @@
       "alert_id": "alert_2026-03-10_101",
       "severity": "watch",
       "country_code": "JPN",
-      "status": "new",
-      "trigger": "Energy vulnerability \u2014 Hormuz dependency (chokepoint: 0.623)",
+      "status": "ongoing",
+      "trigger": "Energy vulnerability — Hormuz dependency (chokepoint: 0.623)",
       "headline": "Japan: Acute energy vulnerability from Hormuz closure",
       "details": "Japan faces acute energy security crisis with chokepoint exposure of 0.623. Heavy dependence on Gulf oil transiting Hormuz. GDP trend: decrease. SPR drawdown being activated. Asian LNG prices surging.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure",
         "macroeconomic.gdp_real_growth_pct"
@@ -2181,12 +2181,12 @@
       "alert_id": "alert_2026-03-10_102",
       "severity": "watch",
       "country_code": "KOR",
-      "status": "new",
-      "trigger": "Energy vulnerability \u2014 Hormuz dependency (chokepoint: 0.699)",
+      "status": "ongoing",
+      "trigger": "Energy vulnerability — Hormuz dependency (chokepoint: 0.699)",
       "headline": "South Korea: Acute energy vulnerability from Hormuz closure",
       "details": "South Korea faces acute energy security crisis with chokepoint exposure of 0.699. Heavy dependence on Gulf oil transiting Hormuz. GDP trend: decrease. SPR drawdown being activated. Asian LNG prices surging.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure",
         "macroeconomic.gdp_real_growth_pct"
@@ -2203,12 +2203,12 @@
       "alert_id": "alert_2026-03-10_103",
       "severity": "critical",
       "country_code": "ETH",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Sovereign default + conflict resumption (PRP: 1473 bps)",
       "headline": "Ethiopia: Selective default with Tigray conflict resumption",
       "details": "Ethiopia's sovereign credit at SD/Ca/RD (selective default) with political risk premium of 1473 bps. TPLF-government clashes resumed. Elections June 1, 2026. Investment risk: 0.45.",
       "first_triggered": "2026-03-02T12:30:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "macroeconomic.sovereign_credit_rating",
         "military.active_conflicts",
@@ -2226,12 +2226,12 @@
       "alert_id": "alert_2026-03-10_104",
       "severity": "warning",
       "country_code": "EGY",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Elevated risk + high inflation (risk: 0.573, inflation: 28.3%)",
       "headline": "Egypt: Elevated investment risk with high inflation",
       "details": "Egypt's investment risk at 0.573 with CPI inflation at 28.3%. Political risk premium: 895 bps. Suez Canal volumes affected by Hormuz-adjacent disruptions. GDP trend: decrease. Oil import costs surging.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.overall_investment_risk_score",
         "macroeconomic.inflation_cpi_pct"
@@ -2248,18 +2248,18 @@
       "alert_id": "alert_2026-03-10_105",
       "severity": "watch",
       "country_code": "MEX",
-      "status": "new",
-      "trigger": "Major cartel leader killed \u2014 CJNG power vacuum risk",
-      "headline": "Mexico: CJNG leader El Mencho killed \u2014 short-term violence risk",
+      "status": "ongoing",
+      "trigger": "Major cartel leader killed — CJNG power vacuum risk",
+      "headline": "Mexico: CJNG leader El Mencho killed — short-term violence risk",
       "details": "Mexican military killed CJNG cartel leader El Mencho. Major security milestone but CJNG power vacuum could trigger cartel violence in short term. Long-term positive for security environment and US-Mexico relations.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "political.civil_unrest_level",
         "military.active_conflicts"
       ],
       "run_id": "2026-W11",
-      "title": "Mexico: CJNG leader El Mencho killed \u2014 short-term violence risk",
+      "title": "Mexico: CJNG leader El Mencho killed — short-term violence risk",
       "description": "Mexican military killed CJNG cartel leader El Mencho. Major security milestone but CJNG power vacuum could trigger cartel violence in short term. Long-term positive for security environment and US-Mexico relations.",
       "countries": [
         "MEX"
@@ -2270,12 +2270,12 @@
       "alert_id": "alert_2026-03-10_106",
       "severity": "watch",
       "country_code": "COL",
-      "status": "new",
-      "trigger": "Petro coalition wins congressional elections \u2014 reform agenda strengthened",
+      "status": "ongoing",
+      "trigger": "Petro coalition wins congressional elections — reform agenda strengthened",
       "headline": "Colombia: Petro's leftist coalition tops congressional elections",
       "details": "President Petro's Pacto Historico won most seats in Colombia's congressional elections, strengthening his reform mandate on land reform, taxes, and energy transition. Conservative Paloma Valencia surges in 2026 presidential race.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "institutions.political.governing_coalition_stability"
       ],
@@ -2291,12 +2291,12 @@
       "alert_id": "alert_2026-03-10_107",
       "severity": "watch",
       "country_code": "SGP",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Elevated chokepoint exposure (actual: 0.940)",
       "headline": "Singapore: Chokepoint exposure at 0.940 amid global shipping disruption",
       "details": "Singapore has elevated supply chain chokepoint exposure of 0.940 during the global shipping disruption from Hormuz closure. GDP trend: decrease.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure"
       ],
@@ -2312,12 +2312,12 @@
       "alert_id": "alert_2026-03-10_108",
       "severity": "watch",
       "country_code": "TWN",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Elevated chokepoint exposure (actual: 0.684)",
       "headline": "Taiwan: Chokepoint exposure at 0.684 amid global shipping disruption",
       "details": "Taiwan has elevated supply chain chokepoint exposure of 0.684 during the global shipping disruption from Hormuz closure. GDP trend: decrease.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure"
       ],
@@ -2333,12 +2333,12 @@
       "alert_id": "alert_2026-03-10_109",
       "severity": "watch",
       "country_code": "VNM",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Elevated chokepoint exposure (actual: 0.648)",
       "headline": "Vietnam: Chokepoint exposure at 0.648 amid global shipping disruption",
       "details": "Vietnam has elevated supply chain chokepoint exposure of 0.648 during the global shipping disruption from Hormuz closure. GDP trend: decrease.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure"
       ],
@@ -2354,12 +2354,12 @@
       "alert_id": "alert_2026-03-10_110",
       "severity": "watch",
       "country_code": "THA",
-      "status": "new",
+      "status": "ongoing",
       "trigger": "Elevated chokepoint exposure (actual: 0.683)",
       "headline": "Thailand: Chokepoint exposure at 0.683 amid global shipping disruption",
       "details": "Thailand has elevated supply chain chokepoint exposure of 0.683 during the global shipping disruption from Hormuz closure. GDP trend: decrease.",
       "first_triggered": "2026-03-10T00:00:00Z",
-      "last_updated": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "affected_factors": [
         "derived.supply_chain_chokepoint_exposure"
       ],
@@ -2368,6 +2368,174 @@
       "description": "Thailand has elevated supply chain chokepoint exposure of 0.683 during the global shipping disruption from Hormuz closure. GDP trend: decrease.",
       "countries": [
         "THA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_111",
+      "severity": "critical",
+      "country_code": "IRN",
+      "status": "new",
+      "trigger": "Investment risk critical (risk: 0.734)",
+      "headline": "Iran: Critical investment risk at 0.734",
+      "details": "Iran's investment risk score reached 0.734, placing it in crisis territory. PRP: 870 bps. Inflation: 32.5%. GDP trend: strong_decrease.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iran: Critical investment risk at 0.734",
+      "description": "Iran's investment risk score reached 0.734, placing it in crisis territory. PRP: 870 bps. Inflation: 32.5%. GDP trend: strong_decrease.",
+      "countries": [
+        "IRN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_112",
+      "severity": "warning",
+      "country_code": "IRN",
+      "status": "new",
+      "trigger": "political_risk_premium_bps > 500 (actual: 870)",
+      "headline": "Iran: Political risk premium at 870 bps",
+      "details": "Iran's political risk premium of 870 basis points indicates significant sovereign risk.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iran: Political risk premium at 870 bps",
+      "description": "Iran's political risk premium of 870 basis points indicates significant sovereign risk.",
+      "countries": [
+        "IRN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_113",
+      "severity": "warning",
+      "country_code": "LBY",
+      "status": "new",
+      "trigger": "Investment risk elevated (risk: 0.547)",
+      "headline": "Libya: Elevated investment risk at 0.547",
+      "details": "Libya's investment risk score of 0.547 indicates elevated risk. PRP: 620 bps. Inflation: 2.1%. GDP trend: N/A.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Libya: Elevated investment risk at 0.547",
+      "description": "Libya's investment risk score of 0.547 indicates elevated risk. PRP: 620 bps. Inflation: 2.1%. GDP trend: N/A.",
+      "countries": [
+        "LBY"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_114",
+      "severity": "warning",
+      "country_code": "MMR",
+      "status": "new",
+      "trigger": "Investment risk elevated (risk: 0.639)",
+      "headline": "Myanmar: Elevated investment risk at 0.639",
+      "details": "Myanmar's investment risk score of 0.639 indicates elevated risk. PRP: 850 bps. Inflation: 31.0%. GDP trend: N/A.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Myanmar: Elevated investment risk at 0.639",
+      "description": "Myanmar's investment risk score of 0.639 indicates elevated risk. PRP: 850 bps. Inflation: 31.0%. GDP trend: N/A.",
+      "countries": [
+        "MMR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_115",
+      "severity": "warning",
+      "country_code": "OMN",
+      "status": "new",
+      "trigger": "GDP growth trend: strong_decrease",
+      "headline": "Oman: GDP growth in sharp decline",
+      "details": "Oman's GDP growth trend is 'strong_decrease'. Current growth: 1.6%.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Oman: GDP growth in sharp decline",
+      "description": "Oman's GDP growth trend is 'strong_decrease'. Current growth: 1.6%.",
+      "countries": [
+        "OMN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_116",
+      "severity": "warning",
+      "country_code": "PAK",
+      "status": "new",
+      "trigger": "Investment risk elevated (risk: 0.559)",
+      "headline": "Pakistan: Elevated investment risk at 0.559",
+      "details": "Pakistan's investment risk score of 0.559 indicates elevated risk. PRP: 900 bps. Inflation: 12.6%. GDP trend: decrease.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Pakistan: Elevated investment risk at 0.559",
+      "description": "Pakistan's investment risk score of 0.559 indicates elevated risk. PRP: 900 bps. Inflation: 12.6%. GDP trend: decrease.",
+      "countries": [
+        "PAK"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_117",
+      "severity": "warning",
+      "country_code": "RUS",
+      "status": "new",
+      "trigger": "Investment risk elevated (risk: 0.661)",
+      "headline": "Russia: Elevated investment risk at 0.661",
+      "details": "Russia's investment risk score of 0.661 indicates elevated risk. PRP: 1900 bps. Inflation: 8.4%. GDP trend: growth.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Russia: Elevated investment risk at 0.661",
+      "description": "Russia's investment risk score of 0.661 indicates elevated risk. PRP: 1900 bps. Inflation: 8.4%. GDP trend: growth.",
+      "countries": [
+        "RUS"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_118",
+      "severity": "warning",
+      "country_code": "UKR",
+      "status": "new",
+      "trigger": "Investment risk elevated (risk: 0.523)",
+      "headline": "Ukraine: Elevated investment risk at 0.523",
+      "details": "Ukraine's investment risk score of 0.523 indicates elevated risk. PRP: 1000 bps. Inflation: 6.5%. GDP trend: stable.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Ukraine: Elevated investment risk at 0.523",
+      "description": "Ukraine's investment risk score of 0.523 indicates elevated risk. PRP: 1000 bps. Inflation: 6.5%. GDP trend: stable.",
+      "countries": [
+        "UKR"
       ],
       "type": "geopolitical_event"
     }

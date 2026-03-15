@@ -20,9 +20,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Morocco relatively insulated from Gulf crisis compared to other MENA states. Phosphate exports benefit from rising agricultural input demand. Tourism faces some regional risk.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Morocco GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 4153.1943359375,
@@ -37,10 +37,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Morocco facing mild inflation pressure from global oil price surge to $116/bbl feeding through energy and transport costs.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Morocco inflation broadly stable with modest upward pressure from global oil prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 9,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Morocco current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Morocco current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 37133907722.7893,
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Morocco debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Morocco debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4.2,
@@ -111,7 +111,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Morocco policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fdi_inflows_usd": {
       "value": 1638999697.24144,
@@ -146,8 +150,14 @@
       "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.55,
-      "trend_reasoning": "Morocco currency broadly stable against USD. No direct conflict exposure. Global risk-off sentiment creates mild depreciation pressure against safe-haven dollar.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Morocco currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Morocco bond yields broadly stable.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -257,10 +267,49 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Morocco military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 43.7,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 42.8,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Morocco national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 230,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.654,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Morocco investment risk broadly unchanged.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.35,
       "confidence": 0.7,
@@ -285,23 +334,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 36.7,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 33.0
-    },
-    "political_risk_premium_bps": {
-      "value": 401,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.45,
       "confidence": 0.7,
@@ -309,18 +341,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.233,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Morocco investment risk broadly unchanged. Global oil shock creates background pressure but no direct exposure to Gulf conflict. Fundamentals stable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -340,9 +360,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "Morocco political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Morocco political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -360,7 +380,7 @@
       {
         "factor_path": "economy.macroeconomic.unemployment_rate_pct",
         "value": 9,
-        "reason": "Absolute change 4.1000 exceeds 3\u00d7 typical (0.3) = 0.8999999999999999; Alternative source (IMF WEO) disagrees: 13.1 vs primary 9 (31.3% diff)",
+        "reason": "Absolute change 4.1000 exceeds 3× typical (0.3) = 0.8999999999999999; Alternative source (IMF WEO) disagrees: 13.1 vs primary 9 (31.3% diff)",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -371,15 +391,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 3.8% (stable), inflation at 1.0% (rising). Political risk premium stands at 401 bps, signaling elevated sovereign risk.",
+    "executive_summary": "Morocco's economy is broadly stable with limited direct impact from the Hormuz crisis. As a North African economy with Atlantic trade routes, Morocco is geographically insulated from Strait of Hormuz disruption. Energy costs modestly elevated from global oil prices. Phosphate exports benefit from elevated agricultural input prices. No significant country-specific events this week.",
     "key_changes_this_week": [
-      "Inflation Cpi %: rising"
+      "Geographic insulation from Hormuz disruption",
+      "Phosphate exports benefit from elevated agricultural prices",
+      "Current account mildly deteriorating from energy imports",
+      "Government debt rising modestly"
     ],
-    "outlook": "GDP growth outlook is broadly stable. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Low energy independence (0.100) makes the economy vulnerable to the oil price shock. Morocco investment risk stable. Monitor for second-order effects from global energy crisis.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Morocco GDP broadly stable with phosphate exports providing anchor. Renewable energy development (Noor solar complex) reducing oil dependency. Tourism sector may face modest headwinds from European demand weakness. Auto manufacturing sector (Renault, Stellantis) stable. Political stability maintained under Mohammed VI.",
+    "investor_implications": "Moroccan equities offer North African exposure with stable governance. MASI relatively insulated from Gulf crisis. Phosphate sector (OCP) well-positioned. Government bonds stable. MAD modestly under pressure from energy imports. Renewable energy and auto manufacturing plays provide diversification. Monitor European tourism demand.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "MAR",
   "name": "Morocco",
@@ -490,10 +513,10 @@
       "resource_self_sufficiency_index": 0.35,
       "energy_independence_index": 0.1,
       "supply_chain_chokepoint_exposure": 0.304,
-      "composite_national_power_index": 36.7,
-      "political_risk_premium_bps": 401,
+      "composite_national_power_index": 43.7,
+      "political_risk_premium_bps": 230,
       "market_accessibility_score": 0.45,
-      "overall_investment_risk_score": 0.233
+      "overall_investment_risk_score": 0.654
     }
   },
   "economy": {

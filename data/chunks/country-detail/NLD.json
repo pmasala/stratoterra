@@ -3,7 +3,7 @@
   "country_name": "Netherlands",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -19,10 +19,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Netherlands facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Netherlands GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 67520.4218956281,
@@ -37,10 +37,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Netherlands facing inflation uptick from oil shock feeding through energy, transport, and goods prices. EU admitted 'nuclear blunder' on energy policy. ECB faces stagflation dilemma ahead of March policy meeting.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Netherlands inflation broadly stable with modest upward pressure from global oil prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.874,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Netherlands current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Netherlands current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 79129152086.1887,
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Netherlands debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Netherlands debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 1.2,
@@ -97,7 +97,11 @@
       "confidence": 0.99,
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10b",
+      "trend": "stable",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "ECB facing stagflation dilemma. Oil shock pushes inflation higher while growth weakens. March policy meeting critical. Belgium general strike highlights wage-price spiral risk.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 0.8633,
@@ -105,17 +109,21 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "EUR under mild pressure from European market crash and energy import costs. USD safe-haven demand dominant. ECB policy response key variable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Netherlands currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 2.79,
       "confidence": 0.98,
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10b",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Netherlands bond yields broadly stable.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 1001469281569.53,
@@ -291,10 +299,10 @@
     },
     "military_expenditure_pct_gdp": {
       "value": null,
-      "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Netherlands defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% \u2014 Europe now top recipient region.",
-      "trend_updated": "2026-03-10T12:00:00Z",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Netherlands military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z",
       "confidence": 0.82,
       "last_updated": "2026-03-10T12:00:00Z",
       "source": "agent_10_trend_estimator",
@@ -303,6 +311,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 68.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 70.5,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Netherlands national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.886,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Netherlands investment risk broadly unchanged.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.35,
       "confidence": 0.7,
@@ -327,23 +368,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 49.2,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 43.9
-    },
-    "political_risk_premium_bps": {
-      "value": 0,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.9,
       "confidence": 0.7,
@@ -351,18 +375,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.082,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Netherlands investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -382,9 +394,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.65,
-      "reasoning": "Netherlands political stability broadly maintained. European-wide stress from oil shock and market crash creates background pressure but institutions holding.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Netherlands political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -406,17 +418,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 1.1% (declining), inflation at 3.3% (rising). Investment risk score at 0.082, trending declining.",
+    "executive_summary": "The Netherlands faces GDP pressure from the energy shock as a European economy dependent on energy imports after Groningen gas field closure. As a major trading hub, the Hormuz disruption impacts logistics and re-export activity. European markets crashed ~6%. No country-specific headline events this week. Government debt is rising modestly.",
     "key_changes_this_week": [
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising",
-      "Overall Investment Risk Score: declining"
+      "European market crash ~6% impacts Dutch equities",
+      "Energy costs rising — Groningen closure leaves import dependence",
+      "Current account mildly deteriorating",
+      "Government debt rising modestly"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Market accessibility score of 0.900 supports capital flows. Netherlands investment risk modestly elevated. European-wide energy and market stress weighing.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Netherlands faces energy import vulnerability post-Groningen. Trading hub economy impacted by global supply chain disruption. Fiscal position remains strong. European defense spending increase creates modest opportunities. Rotterdam port activity may shift if Hormuz closure extends.",
+    "investor_implications": "Dutch equities face mixed outlook — ASML and tech benefiting from AI demand, energy-intensive sectors pressured. AEX tracking European indices. Government bonds relatively safe. Monitor logistics sector for Hormuz disruption impact. Strong institutional framework provides stability floor.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "NLD",
   "name": "Netherlands",
@@ -536,10 +549,10 @@
       "resource_self_sufficiency_index": 0.35,
       "energy_independence_index": 0.55,
       "supply_chain_chokepoint_exposure": 0.458,
-      "composite_national_power_index": 49.2,
+      "composite_national_power_index": 68.0,
       "political_risk_premium_bps": 0,
       "market_accessibility_score": 0.9,
-      "overall_investment_risk_score": 0.082
+      "overall_investment_risk_score": 0.886
     }
   },
   "economy": {
@@ -620,7 +633,23 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 153.83
+    "trade_openness_pct": 153.83,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 0.87138,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 3.08,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

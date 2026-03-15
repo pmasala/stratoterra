@@ -21,8 +21,8 @@
       "run_id": "2026-W11",
       "trend": "growth",
       "trend_confidence": 0.72,
-      "trend_reasoning": "Nigeria benefits from oil price surge to $116/bbl. Non-Hormuz Atlantic coast exports secure. However, domestic refining challenges and Dangote refinery ramp-up complicate picture.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Nigeria benefits from oil price surge to $100+/bbl. Atlantic coast exports not affected by Hormuz. Dangote refinery ramp-up adds domestic refining capacity.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 1084.16041805436,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.75,
-      "trend_reasoning": "Nigeria inflation elevated. Oil price windfall improves fiscal position but Naira instability and import dependency keep consumer prices rising.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Nigeria inflation elevated at 33%. Oil windfall improves fiscal position but Naira instability and import dependency keep consumer prices rising.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.064,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.78,
+      "trend_confidence": 0.75,
       "trend_reasoning": "Nigeria current account improving as oil/commodity prices surge and non-Hormuz export routes remain secure. Trade surplus widening.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 38612493466.5986,
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Nigeria debt ratio improving as oil/commodity windfall boosts government revenue. Fiscal surplus expanding or deficit narrowing.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Nigeria debt ratio improving as commodity windfall boosts government revenue.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4.2,
@@ -98,10 +98,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "stable",
+      "trend": "growth",
       "trend_confidence": 0.62,
-      "trend_reasoning": "Nigeria currency stable to modestly stronger on commodity exports. Oil windfall supports but USD safe-haven demand provides counterweight.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Nigeria currency supported by commodity export windfall. Oil/gas revenue boosting external position.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 57536063916.6716,
@@ -122,7 +122,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Nigeria policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fdi_inflows_usd": {
       "value": 1080310701.18297,
@@ -155,6 +159,12 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Nigeria bond yields stable to declining on improved fiscal position from commodity windfall.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -264,10 +274,49 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Nigeria military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 41.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 37.9,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Nigeria national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 850,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.431,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Nigeria investment risk improving on commodity windfall. Fiscal position strengthening. Non-Hormuz export routes secure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.6,
       "confidence": 0.7,
@@ -292,22 +341,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 22.4,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
-    },
-    "political_risk_premium_bps": {
-      "value": 1276,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.3,
       "confidence": 0.7,
@@ -315,18 +348,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.457,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "growth",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Nigeria investment risk improving as oil/commodity windfall boosts fiscal position and economic growth. Non-Hormuz export routes provide strategic advantage.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -346,9 +367,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "Nigeria political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Nigeria political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -358,7 +379,7 @@
       {
         "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
         "value": 33.2420966545406,
-        "reason": "Absolute change 10.2421 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 23.0 vs primary 33.2420966545406 (44.5% diff); Event context: NGA has active event triggers",
+        "reason": "Absolute change 10.2421 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 23.0 vs primary 33.2420966545406 (44.5% diff); Event context: NGA has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -369,18 +390,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 4.1% (rising), inflation at 33.2% (rising). Political risk premium stands at 1276 bps, signaling elevated sovereign risk.",
+    "executive_summary": "Nigeria benefits from the oil price surge as an Atlantic coast oil exporter with secure, non-Hormuz export routes. GDP growth is improving on the commodity windfall. Current account strengthening. However, domestic inflation remains elevated and the oil windfall is not reaching consumers. Political risk premium at 850 bps reflects structural governance challenges rather than current events.",
     "key_changes_this_week": [
-      "Nigeria: Political risk premium at 1276 bps",
-      "Gdp Real Growth %: rising",
-      "Inflation Cpi %: rising",
-      "Overall Investment Risk Score: rising"
+      "Atlantic coast oil exports secure — $100+ oil windfall",
+      "GDP growth improving on commodity revenues",
+      "Inflation elevated — oil windfall not reaching consumers",
+      "Naira modestly supported by export revenues"
     ],
-    "outlook": "GDP growth momentum remains positive. Inflation is rising, likely constraining monetary easing.",
-    "investor_implications": "High energy independence (1.000) provides a buffer against the oil price shock. Elevated political risk premium (1276 bps) suggests caution on sovereign exposure. Nigeria investment risk improving. Energy windfall creates opportunistic entry points.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Nigeria well-positioned as non-Hormuz oil exporter. GDP growth trajectory positive from commodity windfall. Current account and fiscal position improving. However, inflationary pressures persist and structural governance challenges limit windfall capture. Naira supported but volatile.",
+    "investor_implications": "Nigerian energy sector directly benefiting but broad market access limited. Political risk premium at 850 bps constrains capital flows. Eurobonds relatively attractive at current spreads if oil prices sustained. Local currency positions carry significant FX risk. Oil services and upstream plays preferred.",
+    "data_quality_note": "Data quality acceptable but political risk premium alert active."
   },
   "code": "NGA",
   "name": "Nigeria",
@@ -497,10 +518,10 @@
       "resource_self_sufficiency_index": 0.6,
       "energy_independence_index": 1.0,
       "supply_chain_chokepoint_exposure": 0.181,
-      "composite_national_power_index": 22.4,
-      "political_risk_premium_bps": 1276,
+      "composite_national_power_index": 41.2,
+      "political_risk_premium_bps": 850,
       "market_accessibility_score": 0.3,
-      "overall_investment_risk_score": 0.457
+      "overall_investment_risk_score": 0.431
     }
   },
   "economy": {

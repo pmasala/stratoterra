@@ -1,103 +1,37 @@
 {
   "run_id": "2026-W11",
-  "started_at": "2026-03-10T22:09:40Z",
+  "started_at": "2026-03-14T22:46:41Z",
+  "completed_at": "2026-03-15T01:12:00Z",
   "status": "completed",
-  "current_date": "2026-03-10",
+  "current_date": "2026-03-14",
   "project_root": "/home/pietro/stratoterra",
   "cache_context": {
     "weekly_due": true,
     "monthly_due": false,
     "quarterly_due": false,
-    "annual_sources_due": [
-      "sipri.arms_transfers"
-    ],
+    "annual_sources_due": [],
     "static_triggers": [],
-    "notes": "SIPRI Arms Transfers 2026 released March 9. All other annual/quarterly/monthly sources not due."
+    "notes": "Weekly-only run. Monthly last fetched 2026-03-02 (12 days ago). Quarterly last fetched 2026-03-02. No annual releases since last fetch."
   },
   "agents": [
-    {
-      "agent_id": "agent_01",
-      "name": "official_stats_gatherer",
-      "status": "completed",
-      "records_produced": 2963,
-      "notes": "Pre-fetched WB (1960) + IMF WEO (1003). 75 countries, ~28 indicators/country."
-    },
-    {
-      "agent_id": "agent_02",
-      "name": "financial_data_gatherer",
-      "status": "completed",
-      "records_produced": 108,
-      "notes": "74 FX rates (fresh), 10 bonds, 11 equities, 11 commodities, 2 CB decisions. Bond/equity/commodity data carried from W10."
-    },
-    {
-      "agent_id": "agent_03",
-      "name": "news_events_gatherer",
-      "status": "completed",
-      "records_produced": 89,
-      "notes": "89 events, 11 event_triggers. Dominant: US-Iran war, Hormuz closure, G7 SPR release."
-    },
-    {
-      "agent_id": "agent_04",
-      "name": "trade_sanctions_gatherer",
-      "status": "completed",
-      "records_produced": 23,
-      "notes": "Part A skipped (cached). 23 event records: 12 sanctions, 5 chokepoint, 3 tariff, 1 WTO, 1 trade agreement."
-    },
-    {
-      "agent_id": "agent_05",
-      "name": "military_conflict_gatherer",
-      "status": "completed",
-      "records_produced": 32,
-      "notes": "SIPRI Arms Transfers 2026 extracted (12 structured). 20 events: 7 conflict, 2 arms deals, 5 exercises, 3 nuclear, 3 cyber."
-    },
-    {
-      "agent_id": "agent_06",
-      "name": "political_regulatory_gatherer",
-      "status": "completed",
-      "records_produced": 457,
-      "notes": "444 WGI structured from pre-fetched data (74 countries × 6 indicators). 13 weekly political events."
-    },
-    {
-      "agent_id": "agent_07",
-      "name": "fact_extractor",
-      "status": "completed",
-      "records_produced": 2812,
-      "notes": "2656 factor updates + 145 event signals + 11 event triggers mapped to schema."
-    },
-    {
-      "agent_id": "agent_08",
-      "name": "cross_validator",
-      "status": "completed",
-      "records_produced": 2656,
-      "notes": "2656 validated: 2328 ACCEPT, 244 ACCEPT_WITH_NOTE, 77 FLAG, 1 REJECT (IRQ inflation -12.3% vs IMF 1.5%), 6 ESCALATE (GDP swings >3pp: RUS, ARG, IRL, IRN, KWT, LBY). 145 event signals + 11 event triggers passed through."
-    },
-    {
-      "agent_id": "agent_16",
-      "name": "archive_commit_preparer",
-      "status": "completed",
-      "started_at": "2026-03-11T05:17:57Z",
-      "completed_at": "2026-03-11T05:17:57Z",
-      "notes": "Archive snapshot created. 75 country summaries, 75 country detail chunks, 556 total chunk files."
-    }
-  ],
-  "agent_09": {
-    "status": "SUCCESS",
-    "started_at": "2026-03-11T04:43:21Z",
-    "completed_at": "2026-03-11T04:43:21Z",
-    "countries_updated": 75,
-    "factors_updated": 2640,
-    "flags_added": 77,
-    "global_updates": 13,
-    "rejected": 1
-  },
-  "agent_16": {
-    "status": "SUCCESS",
-    "started_at": "2026-03-11T05:17:57Z",
-    "completed_at": "2026-03-11T05:17:57Z",
-    "archive_path": "archive/2026-W11/",
-    "summary_countries": 75,
-    "detail_countries": 75,
-    "total_chunk_files": 556
-  },
-  "completed_at": "2026-03-11T05:17:57Z"
+    {"agent_id": "agent_01", "status": "completed", "records_processed": 0, "errors": 0, "notes": "All blocks cached, weekly-only run"},
+    {"agent_id": "agent_02", "status": "completed", "records_processed": 124, "errors": 0, "notes": "35 FX, 30 bonds, 40 indices, 11 commodities, 7 CB, 1 rating"},
+    {"agent_id": "agent_03", "status": "completed", "records_processed": 42, "errors": 0, "notes": "42 events, 12 event triggers"},
+    {"agent_id": "agent_04", "status": "completed", "records_processed": 22, "errors": 0, "notes": "Part A cached, Part B: 22 events"},
+    {"agent_id": "agent_05", "status": "completed", "records_processed": 30, "errors": 0, "notes": "Part A cached, Part B: 30 events"},
+    {"agent_id": "agent_06", "status": "completed", "records_processed": 23, "errors": 0, "notes": "Annual cached, 23 records incl 3 structured"},
+    {"agent_id": "agent_07", "status": "completed", "records_processed": 252, "errors": 0, "notes": "126 direct updates, 114 signals, 12 triggers"},
+    {"agent_id": "agent_08", "status": "completed", "records_processed": 126, "errors": 0, "notes": "114 accept, 6 accept_with_note, 4 flag, 0 reject, 2 escalate"},
+    {"agent_id": "agent_17a", "status": "completed", "records_processed": 2, "errors": 0, "notes": "2 escalations resolved: both ACCEPT"},
+    {"agent_id": "agent_09", "status": "completed", "records_processed": 117, "errors": 0, "notes": "47 countries updated, 117 factors integrated"},
+    {"agent_id": "agent_10", "status": "completed", "records_processed": 605, "errors": 0, "notes": "605 trend estimates, 55 countries"},
+    {"agent_id": "agent_11", "status": "completed", "records_processed": 75, "errors": 0, "notes": "Derived metrics + rankings for 75 countries"},
+    {"agent_id": "agent_12", "status": "completed", "records_processed": 174, "errors": 0, "notes": "54 critical, 70 warning, 50 watch alerts"},
+    {"agent_id": "agent_13", "status": "completed", "records_processed": 55, "errors": 0, "notes": "55 country narratives updated"},
+    {"agent_id": "agent_14", "status": "completed", "records_processed": 1, "errors": 0, "notes": "Weekly briefing generated, 5 top stories"},
+    {"agent_id": "agent_15", "status": "completed", "records_processed": 1, "errors": 0, "notes": "Quality report: 99.7% T1, 99.4% T2, 0.882 avg confidence"},
+    {"agent_id": "agent_17b", "status": "completed", "records_processed": 1, "errors": 0, "notes": "Quality audit: GO"},
+    {"agent_id": "agent_16", "status": "completed", "records_processed": 75, "errors": 0, "notes": "Archive, chunks, manifest generated"},
+    {"agent_id": "tests", "status": "completed", "records_processed": 303, "errors": 0, "notes": "303 passed, 0 failed, 31 skipped"}
+  ]
 }

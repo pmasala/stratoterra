@@ -3,7 +3,7 @@
   "country_name": "Turkey",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -20,9 +20,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.75,
-      "trend_reasoning": "Turkey facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply. Turkey navigating between NATO membership and regional relationships. Turkic coordination tested.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Turkey facing oil shock pressure with 100% energy import dependency. Regional instability from Iran war spilling over. NATO obligations pull in competing directions. Section 301 investigations are not directly targeting Turkey but regional trade disruption affects supply chains.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 15892.7157287241,
@@ -39,8 +39,8 @@
       "run_id": "2026-W11",
       "trend": "growth",
       "trend_confidence": 0.78,
-      "trend_reasoning": "Turkey facing inflation uptick from oil shock feeding through energy, transport, and goods prices. EU admitted 'nuclear blunder' on energy policy. ECB faces stagflation dilemma ahead of March policy meeting.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Turkey inflation (58.5%) pressured higher by oil shock feeding through energy, transport, and food prices. Central bank's ultra-tight policy (47.5%) struggling against commodity cost push.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 8.52,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Turkey current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Turkey current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 26.6192344843666,
@@ -67,9 +67,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Turkey debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Turkey debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 154773780178.169,
@@ -97,7 +97,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "TCMB maintaining ultra-tight 47.5% rate. Oil shock re-accelerating inflation undermines easing case. Regional instability adds risk premium.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 44.053,
@@ -106,16 +110,20 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "EUR under mild pressure from European market crash and energy import costs. USD safe-haven demand dominant. ECB policy response key variable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Turkey currency under pressure from widening trade deficit due to oil shock. Terms of trade deteriorating.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 28.58,
       "confidence": 0.95,
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10b",
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Turkey bond yields rising modestly on inflation expectations from oil shock.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 374686274269.711,
@@ -310,10 +318,49 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Turkey military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 57.1,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 54.1,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Turkey national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 530,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.513,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "growth",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Turkey investment risk modestly elevated from oil shock and global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.4,
       "confidence": 0.7,
@@ -338,23 +385,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 49.6,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 44.3
-    },
-    "political_risk_premium_bps": {
-      "value": 590,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.55,
       "confidence": 0.7,
@@ -362,18 +392,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.421,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Turkey investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -392,10 +410,10 @@
       "run_id": "2026-W11"
     },
     "political_stability_trend": {
-      "value": "decrease",
-      "confidence": 0.72,
-      "reasoning": "Turkey facing complex balancing act between NATO membership and regional relationships. Turkic States coordination tested. Kurdish proxy war in Iran creates domestic concerns. NATO obligations conflict with regional interests.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Turkey political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -413,7 +431,7 @@
       {
         "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
         "value": 58.5064507300343,
-        "reason": "Absolute change 23.6065 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 34.9 vs primary 58.5064507300343 (67.6% diff); Event context: TUR has active event triggers",
+        "reason": "Absolute change 23.6065 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 34.9 vs primary 58.5064507300343 (67.6% diff); Event context: TUR has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -424,20 +442,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 3.3% (declining), inflation at 58.5% (rising). Political risk premium stands at 590 bps, signaling elevated sovereign risk. Investment risk score at 0.421, trending declining.",
+    "executive_summary": "Turkey faces GDP headwinds from oil costs and regional instability as a net energy importer bordering the Middle East conflict zone. Inflation remains in hyperinflationary territory at 58.5% despite central bank tightening. The lira is weakening on the trade deficit. Political risk premium at 530 bps. Turkey's NATO position creates strategic complexity as the alliance responds to the Hormuz crisis.",
     "key_changes_this_week": [
-      "Turkey: Political risk premium at 590 bps",
-      "Turkey: Hyperinflation territory at 58.5%",
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising",
-      "Political Stability: declining",
-      "Overall Investment Risk Score: declining"
+      "GDP declining from oil costs and regional instability",
+      "Inflation re-accelerating — central bank credibility at stake",
+      "Lira weakening on trade deficit and energy costs",
+      "Political risk premium at 530 bps"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Political stability is declining, adding to investor uncertainty.",
-    "investor_implications": "Elevated political risk premium (590 bps) suggests caution on sovereign exposure. Turkey investment risk modestly elevated. European-wide energy and market stress weighing.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Turkey GDP under dual pressure from energy costs and regional instability. Inflation trajectory challenging despite aggressive rate hikes — energy pass-through adding pressure. Lira depreciation likely to continue. NATO response to Hormuz may require Turkish base access, creating diplomatic leverage. Investment risk mildly elevated.",
+    "investor_implications": "Turkish equities and bonds carry elevated risk from inflation and currency weakness. Lira hedging essential. Banking sector under pressure from rate environment and NPLs. Strategic NATO position may provide diplomatic leverage for economic support. Monitor inflation trajectory — central bank credibility is key.",
+    "data_quality_note": "Data quality within acceptable parameters. Political risk premium and inflation alerts active."
   },
   "code": "TUR",
   "name": "Turkey",
@@ -563,10 +579,10 @@
       "resource_self_sufficiency_index": 0.4,
       "energy_independence_index": 0.3,
       "supply_chain_chokepoint_exposure": 0.349,
-      "composite_national_power_index": 49.6,
-      "political_risk_premium_bps": 590,
+      "composite_national_power_index": 57.1,
+      "political_risk_premium_bps": 530,
       "market_accessibility_score": 0.55,
-      "overall_investment_risk_score": 0.421
+      "overall_investment_risk_score": 0.513
     }
   },
   "economy": {
@@ -640,7 +656,31 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 54.6
+    "trade_openness_pct": 54.6,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 44.19,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 31.0,
+        "confidence": 0.85,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11",
+        "note": "Source agent flagged anomaly but passes validation checks"
+      },
+      "equity_index_level": {
+        "value": 13092.93,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

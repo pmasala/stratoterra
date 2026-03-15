@@ -3,7 +3,7 @@
   "country_name": "Canada",
   "tier": 1,
   "region": "north_america",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -19,10 +19,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "stable",
+      "trend": "growth",
       "trend_confidence": 0.72,
-      "trend_reasoning": "Canada benefits from oil price surge but faces US tariff headwinds (25% on goods). Ontario budget planning tariff relief. Trump trade tensions persist. Net effect roughly neutral.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Canada benefits from oil/gas windfall at $100+ prices. Non-Hormuz production routes. But US Section 301 trade investigations and tariff tensions create headwinds.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 54340.3477224733,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Canada as oil exporter benefits from price surge. Domestic inflation contained by energy self-sufficiency. Imported goods inflation the main pressure point.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Canada inflation broadly stable as oil exporter status shields from energy cost pass-through.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 6.907,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.78,
+      "trend_confidence": 0.75,
       "trend_reasoning": "Canada current account improving as oil/commodity prices surge and non-Hormuz export routes remain secure. Trade surplus widening.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 64.9003074523507,
@@ -67,9 +67,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Canada debt ratio improving as oil/commodity windfall boosts government revenue. Fiscal surplus expanding or deficit narrowing.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Canada debt ratio improving as commodity windfall boosts government revenue.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 119778473396.958,
@@ -97,7 +97,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Canada policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 1.3567,
@@ -106,16 +110,20 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Canada currency strengthening as commodity exporter benefiting from oil/energy price surge. Safe-haven and commodity flows both supportive.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Canada currency supported by commodity export windfall. Oil/gas revenue boosting external position.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 3.24,
       "confidence": 0.55,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Canada bond yields stable to declining on improved fiscal position from commodity windfall.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "equity_index_level": {
       "value": 33004,
@@ -266,9 +274,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W10",
       "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Canada defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% \u2014 Europe now top recipient region.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Canada defense spending growing under NATO commitments. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "active_military_personnel": {
       "value": 63500,
@@ -334,6 +342,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 69.3,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 69.7,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Canada national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 100,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.798,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Canada investment risk improving on commodity windfall. Fiscal position strengthening. Non-Hormuz export routes secure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.95,
       "confidence": 0.7,
@@ -358,23 +399,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 55.8,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 49.6
-    },
-    "political_risk_premium_bps": {
-      "value": 0,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.9,
       "confidence": 0.7,
@@ -382,18 +406,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.089,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "growth",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Canada investment risk improving as oil/commodity windfall boosts fiscal position and economic growth. Non-Hormuz export routes provide strategic advantage.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -413,9 +425,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "Canada political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Canada political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -425,7 +437,7 @@
       {
         "factor_path": "economy.macroeconomic.public_debt_pct_gdp",
         "value": 64.9003074523507,
-        "reason": "Absolute change 48.9997 exceeds 3\u00d7 typical (2.0) = 6.0; Alternative source (IMF WEO) disagrees: 113.9 vs primary 64.9003074523507 (43.0% diff); Event context: CAN has active event triggers",
+        "reason": "Absolute change 48.9997 exceeds 3× typical (2.0) = 6.0; Alternative source (IMF WEO) disagrees: 113.9 vs primary 64.9003074523507 (43.0% diff); Event context: CAN has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -436,16 +448,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "G7 finance ministers signal coordinated SPR release amid oil crisis. GDP growth at 1.6% (stable), inflation at 2.4% (stable).",
+    "executive_summary": "Canada is a net beneficiary of the oil price surge as a major energy exporter with non-Hormuz export routes. GDP growth is improving on the commodity windfall. Current account strengthening as oil and gas revenues rise. The Canadian dollar is supported by commodity exports. Canada joined the Shield of Americas alliance discussions and is named in the Section 301 forced labor investigation.",
     "key_changes_this_week": [
-      "G7 finance ministers signal coordinated SPR release amid oil crisis",
-      "Overall Investment Risk Score: rising"
+      "Oil windfall benefiting Canadian fiscal position and current account",
+      "Section 301 forced labor investigation includes Canada among 60 countries",
+      "Canadian dollar strengthening on commodity exports",
+      "Defense spending trending up"
     ],
-    "outlook": "GDP growth outlook is broadly stable.",
-    "investor_implications": "High energy independence (0.950) provides a buffer against the oil price shock. Market accessibility score of 0.900 supports capital flows. Canada investment risk improving. Energy windfall creates opportunistic entry points.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Canada well-positioned as geographically insulated energy exporter. GDP growth trajectory positive from commodity windfall. Fiscal position improving. US trade policy uncertainty (Section 301) creates modest headwind but energy exports provide leverage. Defense spending increasing from low base.",
+    "investor_implications": "Canadian equities attractive — energy sector directly benefiting, financial sector supported by commodity-driven growth. CAD strengthening versus most currencies except USD. Government bonds stable. Energy infrastructure plays particularly well-positioned. Section 301 risk manageable given US energy dependence on Canadian imports.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "CAN",
   "name": "Canada",
@@ -575,10 +589,10 @@
       "resource_self_sufficiency_index": 0.95,
       "energy_independence_index": 0.95,
       "supply_chain_chokepoint_exposure": 0.19,
-      "composite_national_power_index": 55.8,
-      "political_risk_premium_bps": 0,
+      "composite_national_power_index": 69.3,
+      "political_risk_premium_bps": 100,
       "market_accessibility_score": 0.9,
-      "overall_investment_risk_score": 0.089
+      "overall_investment_risk_score": 0.798
     }
   },
   "economy": {
@@ -652,7 +666,37 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 65.15
+    "trade_openness_pct": 65.15,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 1.3703,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 3.51,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 32541.93,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "central_bank_rate": {
+        "value": 2.25,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

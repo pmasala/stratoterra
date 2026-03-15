@@ -3,7 +3,7 @@
   "country_name": "Sweden",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -19,10 +19,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Sweden facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Sweden GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 57117.4877440616,
@@ -37,10 +37,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Sweden facing inflation uptick from oil shock feeding through energy, transport, and goods prices. EU admitted 'nuclear blunder' on energy policy. ECB faces stagflation dilemma ahead of March policy meeting.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Sweden inflation broadly stable with modest upward pressure from global oil prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 8.694,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Sweden current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Sweden current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 62569356006.7168,
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Sweden debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Sweden debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 1.9,
@@ -98,7 +98,11 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10",
-      "note": "Source disagreement >28.6% with Riksbank"
+      "note": "Source disagreement >28.6% with Riksbank",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Sweden policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 9.203,
@@ -106,17 +110,21 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "EUR under mild pressure from European market crash and energy import costs. USD safe-haven demand dominant. ECB policy response key variable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Sweden currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 2.64,
       "confidence": 0.97,
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10b",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Sweden bond yields broadly stable.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 327875208565.624,
@@ -302,9 +310,9 @@
     "military_expenditure_pct_gdp": {
       "value": null,
       "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Sweden defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% \u2014 Europe now top recipient region.",
-      "trend_updated": "2026-03-10T12:00:00Z",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Sweden defense spending growing under NATO commitments. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target.",
+      "trend_updated": "2026-03-14T00:00:00Z",
       "confidence": 0.82,
       "last_updated": "2026-03-10T12:00:00Z",
       "source": "agent_10_trend_estimator",
@@ -313,6 +321,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 64.7,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 67.8,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Sweden national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.892,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Sweden investment risk broadly unchanged.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.55,
       "confidence": 0.7,
@@ -337,23 +378,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 48.6,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 43.4
-    },
-    "political_risk_premium_bps": {
-      "value": 0,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.88,
       "confidence": 0.7,
@@ -361,18 +385,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.063,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Sweden investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -392,9 +404,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.65,
-      "reasoning": "Sweden political stability broadly maintained. European-wide stress from oil shock and market crash creates background pressure but institutions holding.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Sweden political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -407,17 +419,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 0.8% (declining), inflation at 2.8% (rising). Investment risk score at 0.063, trending declining.",
+    "executive_summary": "Sweden's economy is broadly stable with modest energy cost pass-through. As a relatively new NATO member, defense spending is trending up from a low base. The Nordic economy benefits from energy mix diversification (nuclear, hydro) reducing oil dependency. No country-specific headline events this week.",
     "key_changes_this_week": [
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising",
-      "Overall Investment Risk Score: declining"
+      "Defense spending trending up as new NATO member",
+      "Current account mildly deteriorating",
+      "Government debt rising modestly from low base",
+      "No significant country-specific events"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Market accessibility score of 0.880 supports capital flows. Sweden investment risk modestly elevated. European-wide energy and market stress weighing.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Sweden GDP broadly stable with limited Hormuz exposure. Nordic energy mix (nuclear, hydro, renewables) provides insulation. Defense spending increase creates fiscal pressure but from very low base. Krona under modest pressure from EUR weakness. Housing market correction largely absorbed.",
+    "investor_implications": "Swedish equities offer defensive Nordic exposure. OMX modestly impacted by European market volatility. Defense sector benefiting from NATO spending commitments. Banking sector stable. SEK hedging recommended given EUR/USD dynamics. Green energy sector well-positioned.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "SWE",
   "name": "Sweden",
@@ -540,10 +553,10 @@
       "resource_self_sufficiency_index": 0.55,
       "energy_independence_index": 0.65,
       "supply_chain_chokepoint_exposure": 0.302,
-      "composite_national_power_index": 48.6,
+      "composite_national_power_index": 64.7,
       "political_risk_premium_bps": 0,
       "market_accessibility_score": 0.88,
-      "overall_investment_risk_score": 0.063
+      "overall_investment_risk_score": 0.892
     }
   },
   "economy": {
@@ -624,7 +637,23 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 105.88
+    "trade_openness_pct": 105.88,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 9.3713,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 2.75,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

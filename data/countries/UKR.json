@@ -21,8 +21,8 @@
       "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.68,
-      "trend_reasoning": "Ukraine retaking territory as Russia's buffer zone strategy falters. EU \u20ac90B transfer bypassing Hungary provides critical funding. ArcelorMittal Kryvyi Rih operating at a loss signals industrial stress. Peace talks proposed but skepticism high.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Ukraine GDP stable amid frozen conflict. Peace talks '90% complete' but stalled. Russia launched large-scale drone/missile barrage killing 10+ in Kharkiv. Zelenskiy engaging Saudi Arabia diplomatically. EU funding flowing via non-Hungary channels.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 5389.47314453125,
@@ -39,8 +39,8 @@
       "run_id": "2026-W11",
       "trend": "growth",
       "trend_confidence": 0.68,
-      "trend_reasoning": "Ukraine facing mild inflation pressure from global oil price surge to $116/bbl feeding through energy and transport costs.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Ukraine inflation under moderate upward pressure from oil shock and continued wartime supply disruptions. EU funding helps stabilize but Russian attacks on infrastructure increase costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "current_account_pct_gdp": {
       "value": -7.93850256012182,
@@ -49,9 +49,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Ukraine current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Ukraine current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 43780549772.8406,
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Ukraine debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Ukraine debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4.5,
@@ -118,7 +118,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Ukraine policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 43.881,
@@ -128,8 +132,8 @@
       "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.55,
-      "trend_reasoning": "Ukraine currency broadly stable against USD. No direct conflict exposure. Global risk-off sentiment creates mild depreciation pressure against safe-haven dollar.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Ukraine currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fdi_inflows_usd": {
       "value": 4018000000,
@@ -162,6 +166,12 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Ukraine bond yields broadly stable.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -237,10 +247,10 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10",
-      "trend": "strong_growth",
-      "trend_confidence": 0.88,
-      "trend_reasoning": "Ukraine defense spending at extreme levels. SIPRI: world's largest arms importer (9.7% global share, up from 0.1%). EU \u20ac90B transfer sustains military effort. Territory being retaken.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Ukraine defense spending elevated from ongoing war. Large Russian attacks continue. Peace talks stalled. Military spending as % GDP among highest globally.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "military_expenditure_trend": {
       "value": "strong_growth",
@@ -306,6 +316,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 47.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 46.6,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Ukraine national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 1000,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.477,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Ukraine investment risk unchanged. Peace talks stalled. Active combat continues with large-scale Russian attacks. Reconstruction opportunity depends on peace.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.6,
       "confidence": 0.7,
@@ -330,23 +373,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 42.0,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 37.7
-    },
-    "political_risk_premium_bps": {
-      "value": 1930,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.15,
       "confidence": 0.7,
@@ -354,18 +380,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.603,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Ukraine investment risk broadly unchanged. Global oil shock creates background pressure but no direct exposure to Gulf conflict. Fundamentals stable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -378,16 +392,16 @@
     "top_partner_relationship_health": {
       "value": "growth",
       "confidence": 0.75,
-      "reasoning": "Ukraine-EU relationship strengthened by \u20ac90B transfer bypassing Hungary. Fresh US peace talks proposed. EU institutional precedent set for overriding single-member vetoes.",
+      "reasoning": "Ukraine-EU relationship strengthened by €90B transfer bypassing Hungary. Fresh US peace talks proposed. EU institutional precedent set for overriding single-member vetoes.",
       "last_updated": "2026-03-10T12:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.65,
-      "reasoning": "Ukraine political stability steady. Territory retaken. EU \u20ac90B funding secured. Peace talks proposed. But world attention shifting to Iran reduces leverage.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.62,
+      "reasoning": "Ukraine political stability maintained despite ongoing war. Zelenskiy engaging Saudi Arabia diplomatically. EU funding flowing via non-Hungary channels. Peace talks stalled but not collapsed.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -397,21 +411,21 @@
       {
         "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
         "value": 6.50198464669254,
-        "reason": "Absolute change 6.0980 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 12.6 vs primary 6.50198464669254 (48.4% diff); Event context: UKR has active event triggers",
+        "reason": "Absolute change 6.0980 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 12.6 vs primary 6.50198464669254 (48.4% diff); Event context: UKR has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.unemployment_rate_pct",
         "value": 9.834,
-        "reason": "Absolute change 1.7660 exceeds 3\u00d7 typical (0.3) = 0.8999999999999999; Event context: UKR has active event triggers",
+        "reason": "Absolute change 1.7660 exceeds 3× typical (0.3) = 0.8999999999999999; Event context: UKR has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.public_debt_pct_gdp",
         "value": 58.7161850732326,
-        "reason": "Absolute change 49.8838 exceeds 3\u00d7 typical (2.0) = 6.0; Alternative source (IMF WEO) disagrees: 108.6 vs primary 58.7161850732326 (45.9% diff); Event context: UKR has active event triggers",
+        "reason": "Absolute change 49.8838 exceeds 3× typical (2.0) = 6.0; Alternative source (IMF WEO) disagrees: 108.6 vs primary 58.7161850732326 (45.9% diff); Event context: UKR has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -422,20 +436,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Ukraine faces critical-level risks this week: Ukraine: Active military conflict \u2014 critical security risk. GDP growth at 2.9% (stable), inflation at 6.5% (rising). Political risk premium stands at 1930 bps, signaling elevated sovereign risk. Overall investment risk is elevated at 0.603 and stable.",
+    "executive_summary": "Ukraine continues under active military assault from Russia with large-scale drone and missile barrages — at least 10 killed in Kharkiv this week. Peace talks have stalled at '90% complete,' with Russia's bargaining position strengthened by the oil windfall and US distraction with Iran. Zelenskiy spoke with Saudi Crown Prince seeking diplomatic support. Investment risk at 0.523 with political risk premium at 1,000 bps.",
     "key_changes_this_week": [
-      "Ukraine retakes territory as Russia's buffer zone strategy falters",
-      "EU transfers \u20ac90 billion to Kyiv bypassing Hungary's veto",
-      "Ukraine: Active military conflict \u2014 critical security risk",
-      "Ukraine: Elevated investment risk at 0.603",
-      "Ukraine: Political risk premium at 1930 bps",
-      "Inflation Cpi %: rising"
+      "Russia hits Ukraine with large-scale drone and missile barrage — 10+ killed in Kharkiv",
+      "Peace talks stall at '90% complete' — Russia benefits from status quo",
+      "Zelenskiy speaks with Saudi Crown Prince seeking diplomatic support",
+      "US military stretched across Iran and Korea theaters — reduces Ukraine deterrence"
     ],
-    "outlook": "Near-term outlook for Ukraine is highly uncertain given active crisis conditions. Ukraine investment risk stable. Monitor for second-order effects from global energy crisis. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Investment risk is critically elevated at 0.603. Defensive positioning or risk reduction recommended. Ukraine investment risk stable. Monitor for second-order effects from global energy crisis.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Ukraine faces deteriorating military situation as US attention diverts to Iran. Peace talks stalled with Russia in strengthened position from oil windfall. Western aid continuity uncertain given US fiscal pressures from Iran war. Frontline fighting continues. Reconstruction timeline pushed further out. EU integration process provides long-term anchor.",
+    "investor_implications": "Ukraine remains uninvestable for most institutional capital. Reconstruction bonds may offer future opportunity if peace achieved. Sovereign bonds at 1,000 bps spread reflect ongoing conflict. Hryvnia managed but under fundamental pressure. Any investment thesis contingent on peace timeline which has deteriorated this week. Reconstruction ETFs premature.",
+    "data_quality_note": "Critical alert for active military conflict. Investment risk elevated at 0.523."
   },
   "code": "UKR",
   "name": "Ukraine",
@@ -562,10 +574,10 @@
       "resource_self_sufficiency_index": 0.6,
       "energy_independence_index": 0.45,
       "supply_chain_chokepoint_exposure": 0.306,
-      "composite_national_power_index": 42.0,
-      "political_risk_premium_bps": 1930,
+      "composite_national_power_index": 47.2,
+      "political_risk_premium_bps": 1000,
       "market_accessibility_score": 0.15,
-      "overall_investment_risk_score": 0.603
+      "overall_investment_risk_score": 0.477
     }
   },
   "economy": {

@@ -1,0 +1,63 @@
+{
+  "report_date": "2026-03-14",
+  "run_id": "2026-W11",
+  "total_escalations": 2,
+  "escalations": [
+    {
+      "update_id": "upd_123",
+      "country_code": "IRN",
+      "factor_path": "institutions.head_of_state_name",
+      "new_value": "Mojtaba Khamenei (Supreme Leader)",
+      "previous_value": "Interim Council: Pezeshkian, Mohseni-Eje'i, Arafi",
+      "change_pct": null,
+      "confidence": 0.95,
+      "source_agent": "political_regulatory_gatherer",
+      "checks_passed": [
+        "plausibility",
+        "magnitude_leadership_change"
+      ],
+      "checks_failed": [],
+      "notes": "Head of state changed: 'Interim Council: Pezeshkian, Mohseni-Eje'i, Arafi' -> 'Mojtaba Khamenei (Supreme Leader)'; ESCALATE: New head of state/supreme leader: 'Interim Council: Pezeshkian, Mohseni-Eje'i, Arafi' -> 'Mojtaba Khamenei (Supreme Leader)'",
+      "verdict": "ESCALATE",
+      "description": "Head of state/leader change for IRN: 'Interim Council: Pezeshkian, Mohseni-Eje'i, Arafi' -> 'Mojtaba Khamenei (Supreme Leader)'",
+      "sources": [
+        "Al Jazeera",
+        "https://www.aljazeera.com/news/2026/3/8/iran-names-khameneis-son-as-new-supreme-leader-after-fathers-killing-2"
+      ],
+      "recommended_action": "Verify via official government sources and major news outlets",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    },
+    {
+      "update_id": "upd_124",
+      "country_code": "PRT",
+      "factor_path": "institutions.head_of_state_name",
+      "new_value": "Antonio Jose Seguro",
+      "previous_value": "Marcelo Rebelo de Sousa",
+      "change_pct": null,
+      "confidence": 0.97,
+      "source_agent": "political_regulatory_gatherer",
+      "checks_passed": [
+        "plausibility",
+        "magnitude_leadership_change"
+      ],
+      "checks_failed": [],
+      "notes": "Head of state changed: 'Marcelo Rebelo de Sousa' -> 'Antonio Jose Seguro'; ESCALATE: New head of state/supreme leader: 'Marcelo Rebelo de Sousa' -> 'Antonio Jose Seguro'",
+      "verdict": "ESCALATE",
+      "description": "Head of state/leader change for PRT: 'Marcelo Rebelo de Sousa' -> 'Antonio Jose Seguro'",
+      "sources": [
+        "The Portugal News",
+        "https://www.theportugalnews.com/news/2026-03-09/antonio-jose-seguro-takes-office-as-president-of-the-republic/986903"
+      ],
+      "recommended_action": "Verify via official government sources and major news outlets",
+      "options": [
+        "ACCEPT",
+        "REJECT",
+        "INVESTIGATE_FURTHER"
+      ]
+    }
+  ]
+}

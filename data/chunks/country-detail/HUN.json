@@ -3,7 +3,7 @@
   "country_name": "Hungary",
   "tier": 3,
   "region": "europe",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -18,7 +18,11 @@
       "confidence": 0.95,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Hungary GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 23292.3263882478,
@@ -32,7 +36,11 @@
       "confidence": 0.95,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Hungary inflation broadly stable with modest upward pressure from global oil prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 4.521,
@@ -46,14 +54,22 @@
       "confidence": 0.95,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Hungary current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 75.527467420073,
       "confidence": 0.95,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Hungary debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 46422357553.8952,
@@ -81,14 +97,22 @@
       "confidence": 0.8,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Hungary policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 339.079,
       "confidence": 0.95,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Hungary currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 167912655726.946,
@@ -124,6 +148,12 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Hungary bond yields broadly stable.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -185,9 +215,49 @@
     }
   },
   "political": {},
-  "military": {},
+  "military": {
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Hungary military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    }
+  },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 29.6,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 30.9,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Hungary national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 140,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.723,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Hungary investment risk broadly unchanged.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.4,
       "confidence": 0.7,
@@ -212,23 +282,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 33.3,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 30.1
-    },
-    "political_risk_premium_bps": {
-      "value": 209,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.7,
       "confidence": 0.7,
@@ -237,13 +290,13 @@
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
     },
-    "overall_investment_risk_score": {
-      "value": 0.163,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk"
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Hungary political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
     }
   },
   "metadata": {
@@ -251,7 +304,7 @@
       {
         "factor_path": "economy.macroeconomic.gdp_per_capita_usd",
         "value": 23292.3263882478,
-        "reason": "Change 10.1% exceeds 3\u00d7 typical (2.0%) = 6.0%; Event context: HUN has active event triggers",
+        "reason": "Change 10.1% exceeds 3× typical (2.0%) = 6.0%; Event context: HUN has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -300,10 +353,10 @@
       "resource_self_sufficiency_index": 0.4,
       "energy_independence_index": 0.35,
       "supply_chain_chokepoint_exposure": 0.383,
-      "composite_national_power_index": 33.3,
-      "political_risk_premium_bps": 209,
+      "composite_national_power_index": 29.6,
+      "political_risk_premium_bps": 140,
       "market_accessibility_score": 0.7,
-      "overall_investment_risk_score": 0.163
+      "overall_investment_risk_score": 0.723
     }
   },
   "narrative": {
@@ -333,7 +386,23 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 146.5
+    "trade_openness_pct": 146.5,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 341.13,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 121754.84,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "wgi_voice_accountability": {

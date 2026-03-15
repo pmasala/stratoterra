@@ -3,7 +3,7 @@
   "country_name": "Mexico",
   "tier": 1,
   "region": "latin_america",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -19,10 +19,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.75,
-      "trend_reasoning": "Mexico faces headwinds from 25% US tariffs and oil price impact on import costs. El Mencho (CJNG) killing creates short-term cartel violence risk but long-term security positive. USMCA trade disrupted.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Mexico GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 14185.7812248529,
@@ -37,10 +37,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Mexico facing mild inflation pressure from global oil price surge to $116/bbl feeding through energy and transport costs.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Mexico inflation broadly stable with modest upward pressure from global oil prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 2.673,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Mexico current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Mexico current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 45.0297603114434,
@@ -67,9 +67,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Mexico debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Mexico debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 232035392464.815,
@@ -97,7 +97,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Mexico policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 17.749,
@@ -107,15 +111,19 @@
       "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.55,
-      "trend_reasoning": "Mexico currency broadly stable against USD. No direct conflict exposure. Global risk-off sentiment creates mild depreciation pressure against safe-haven dollar.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Mexico currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 8.76,
       "confidence": 0.97,
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10b",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Mexico bond yields broadly stable.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 681348718684.406,
@@ -283,10 +291,49 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Mexico military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 56.8,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 52.7,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Mexico national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 240,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.631,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Mexico investment risk broadly unchanged.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.65,
       "confidence": 0.7,
@@ -311,23 +358,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 47.8,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 42.7
-    },
-    "political_risk_premium_bps": {
-      "value": 241,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.65,
       "confidence": 0.7,
@@ -335,18 +365,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.243,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Mexico investment risk broadly unchanged. Global oil shock creates background pressure but no direct exposure to Gulf conflict. Fundamentals stable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -366,9 +384,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.72,
-      "reasoning": "Mexico political stability mixed. El Mencho killing is major security milestone but CJNG power vacuum risks short-term violence. US tariff tensions persist. Institutional continuity under Sheinbaum.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Mexico political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -386,7 +404,7 @@
       {
         "factor_path": "economy.macroeconomic.public_debt_pct_gdp",
         "value": 45.0297603114434,
-        "reason": "Absolute change 13.8702 exceeds 3\u00d7 typical (2.0) = 6.0; Alternative source (IMF WEO) disagrees: 58.9 vs primary 45.0297603114434 (23.5% diff); Event context: MEX has active event triggers",
+        "reason": "Absolute change 13.8702 exceeds 3× typical (2.0) = 6.0; Alternative source (IMF WEO) disagrees: 58.9 vs primary 45.0297603114434 (23.5% diff); Event context: MEX has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -397,17 +415,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Mexico's El Mencho (CJNG cartel leader) killed by military forces. GDP growth at 1.4% (declining), inflation at 4.7% (rising).",
+    "executive_summary": "Mexico is moderately positioned in the current environment. As a net oil exporter, elevated crude prices provide fiscal revenue uplift, but proximity to the US creates trade policy exposure. Mexico is included in the Shield of Americas alliance discussions and the Section 301 forced labor investigation. Current account mildly deteriorating despite oil exports due to manufacturing import dependence.",
     "key_changes_this_week": [
-      "Mexico's El Mencho (CJNG cartel leader) killed by military forces",
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising"
+      "Section 301 overcapacity and forced labor investigations include Mexico",
+      "Shield of Americas alliance discussions include Mexico",
+      "Oil revenue uplift from elevated crude prices",
+      "Government debt rising modestly"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Mexico investment risk stable. Monitor for second-order effects from global energy crisis.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Mexico faces competing forces: oil export revenue uplift versus US trade policy uncertainty from Section 301. Nearshoring trend provides structural support but tariff risk clouds outlook. AMLO-era institutional changes create governance uncertainty. Peso under modest pressure.",
+    "investor_implications": "Mexican equities selectively attractive — energy sector benefiting, manufacturing sector facing Section 301 uncertainty. Peso hedging recommended given trade policy risk. Government bonds relatively stable. Nearshoring investment thesis intact but timeline uncertain. Monitor Shield of Americas alliance implications for trade flows.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "MEX",
   "name": "Mexico",
@@ -530,10 +549,10 @@
       "resource_self_sufficiency_index": 0.65,
       "energy_independence_index": 0.7,
       "supply_chain_chokepoint_exposure": 0.209,
-      "composite_national_power_index": 47.8,
-      "political_risk_premium_bps": 241,
+      "composite_national_power_index": 56.8,
+      "political_risk_premium_bps": 240,
       "market_accessibility_score": 0.65,
-      "overall_investment_risk_score": 0.243
+      "overall_investment_risk_score": 0.631
     }
   },
   "economy": {
@@ -607,7 +626,30 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 74.59
+    "trade_openness_pct": 74.59,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 17.8215,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 9.21,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 65648.91,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

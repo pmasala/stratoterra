@@ -3,7 +3,7 @@
   "country_name": "Colombia",
   "tier": 2,
   "region": "latin_america",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -19,10 +19,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "stable",
-      "trend_confidence": 0.7,
-      "trend_reasoning": "Colombia benefits from oil exports but Petro's leftist coalition gaining congressional power raises policy uncertainty. Energy transition agenda may limit oil sector expansion. Congressional election results strengthen reform agenda.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Colombia benefits from non-Hormuz oil/commodity exports at elevated prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 7919.20886825345,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Colombia as oil exporter benefits from price surge. Domestic inflation contained by energy self-sufficiency. Imported goods inflation the main pressure point.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Colombia inflation broadly stable as oil exporter status shields from energy cost pass-through.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 8.29,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.78,
+      "trend_confidence": 0.75,
       "trend_reasoning": "Colombia current account improving as oil/commodity prices surge and non-Hormuz export routes remain secure. Trade surplus widening.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 71.483126167997,
@@ -67,9 +67,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Colombia debt ratio improving as oil/commodity windfall boosts government revenue. Fiscal surplus expanding or deficit narrowing.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Colombia debt ratio improving as commodity windfall boosts government revenue.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 61897968642.424,
@@ -98,10 +98,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "stable",
+      "trend": "growth",
       "trend_confidence": 0.62,
-      "trend_reasoning": "Colombia currency stable to modestly stronger on commodity exports. Oil windfall supports but USD safe-haven demand provides counterweight.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Colombia currency supported by commodity export windfall. Oil/gas revenue boosting external position.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 67426785840.6166,
@@ -122,7 +122,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Colombia policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fdi_inflows_usd": {
       "value": 13683861747.2544,
@@ -155,6 +159,12 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Colombia bond yields stable to declining on improved fiscal position from commodity windfall.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -271,10 +281,49 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Colombia military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 50.1,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 48.5,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Colombia national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 180,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.704,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Colombia investment risk improving on commodity windfall. Fiscal position strengthening. Non-Hormuz export routes secure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.7,
       "confidence": 0.7,
@@ -299,23 +348,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 40.3,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 36.2
-    },
-    "political_risk_premium_bps": {
-      "value": 322,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.55,
       "confidence": 0.7,
@@ -323,18 +355,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.299,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "growth",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Colombia investment risk improving as oil/commodity windfall boosts fiscal position and economic growth. Non-Hormuz export routes provide strategic advantage.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -354,9 +374,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.7,
-      "reasoning": "Colombia political dynamics shifting. Petro coalition won congressional majority. Opposition candidate Paloma Valencia gaining. Democratic transitions proceeding normally.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Colombia political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -374,21 +394,21 @@
       {
         "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
         "value": 6.60908593728228,
-        "reason": "Absolute change 1.7091 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 4.9 vs primary 6.60908593728228 (34.9% diff); Event context: COL has active event triggers",
+        "reason": "Absolute change 1.7091 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 4.9 vs primary 6.60908593728228 (34.9% diff); Event context: COL has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.unemployment_rate_pct",
         "value": 8.29,
-        "reason": "Absolute change 1.7100 exceeds 3\u00d7 typical (0.3) = 0.8999999999999999; Event context: COL has active event triggers",
+        "reason": "Absolute change 1.7100 exceeds 3× typical (0.3) = 0.8999999999999999; Event context: COL has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.public_debt_pct_gdp",
         "value": 71.483126167997,
-        "reason": "Absolute change 12.5831 exceeds 3\u00d7 typical (2.0) = 6.0; Alternative source (IMF WEO) disagrees: 58.9 vs primary 71.483126167997 (21.4% diff); Event context: COL has active event triggers",
+        "reason": "Absolute change 12.5831 exceeds 3× typical (2.0) = 6.0; Alternative source (IMF WEO) disagrees: 58.9 vs primary 71.483126167997 (21.4% diff); Event context: COL has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -399,15 +419,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 1.6% (stable), inflation at 6.6% (stable). Political risk premium stands at 322 bps, signaling elevated sovereign risk.",
+    "executive_summary": "Colombia benefits from elevated commodity prices as a net oil and coal exporter. GDP growth is improving on the commodity windfall. Current account strengthening. The Shield of Americas alliance discussions include Colombia. Investment risk is declining on commodity strength. Government fiscal position improving.",
     "key_changes_this_week": [
-      "Overall Investment Risk Score: rising"
+      "Commodity windfall — oil and coal exports benefiting from elevated prices",
+      "Shield of Americas alliance discussions include Colombia",
+      "Current account improving on commodity revenues",
+      "Investment risk declining on commodity strength"
     ],
-    "outlook": "GDP growth outlook is broadly stable.",
-    "investor_implications": "High energy independence (0.850) provides a buffer against the oil price shock. Colombia investment risk improving. Energy windfall creates opportunistic entry points.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Colombia well-positioned as commodity exporter in current environment. GDP growth trajectory positive. Petro government energy transition policy may constrain oil sector investment but revenue uplift provides fiscal space. Security situation stable. Peace process with remaining guerrilla groups continues.",
+    "investor_implications": "Colombian equities offer EM commodity exposure. Ecopetrol benefiting directly. COP strengthening on exports. Government bonds improving on fiscal uplift. COLCAP relatively attractive. Shield of Americas alliance may strengthen US economic ties. Monitor energy policy direction under Petro.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "COL",
   "name": "Colombia",
@@ -518,10 +541,10 @@
       "resource_self_sufficiency_index": 0.7,
       "energy_independence_index": 0.85,
       "supply_chain_chokepoint_exposure": 0.134,
-      "composite_national_power_index": 40.3,
-      "political_risk_premium_bps": 322,
+      "composite_national_power_index": 50.1,
+      "political_risk_premium_bps": 180,
       "market_accessibility_score": 0.55,
-      "overall_investment_risk_score": 0.299
+      "overall_investment_risk_score": 0.704
     }
   },
   "economy": {
@@ -595,7 +618,16 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 37.03
+    "trade_openness_pct": 37.03,
+    "financial": {
+      "equity_index_level": {
+        "value": 2180.75,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

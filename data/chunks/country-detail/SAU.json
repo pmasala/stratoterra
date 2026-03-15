@@ -3,7 +3,7 @@
   "country_name": "Saudi Arabia",
   "tier": 1,
   "region": "middle_east",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -21,8 +21,8 @@
       "run_id": "2026-W11",
       "trend": "strong_decrease",
       "trend_confidence": 0.88,
-      "trend_reasoning": "Hormuz mine-laying by IRGC blocks primary oil export route. Oil revenue disruption severe despite high prices. Saudi Arabia has limited pipeline alternatives. Defense spending surge adds fiscal pressure.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Hormuz blockade remains effective — new Supreme Leader vows 'not a litre of oil' will pass. Oil revenue disruption catastrophic despite $100+ prices. Limited pipeline alternatives cannot substitute maritime capacity.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 35121.6628687742,
@@ -37,10 +37,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Saudi Arabia facing import cost pressure from disrupted supply chains. Energy subsidies buffer consumers but fiscal cost rising. Food import costs increasing as Gulf shipping disrupted.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_growth",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Saudi Arabia facing severe supply chain disruption from Hormuz blockade. Import costs surging. Essential goods supply constrained.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.038,
@@ -55,10 +55,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.85,
-      "trend_reasoning": "Saudi Arabia current account deteriorating as Hormuz disruption blocks energy exports. High oil/gas prices cannot be monetized. Import costs rising. SWF drawdowns support consumption.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_decrease",
+      "trend_confidence": 0.88,
+      "trend_reasoning": "Saudi Arabia current account severely impacted by Hormuz blockade. Oil/gas export revenue sharply curtailed. Import costs rising from alternative routes.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 463869589071.029,
@@ -73,10 +73,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.75,
-      "trend_reasoning": "Saudi Arabia debt ratio rising as revenue drops from export disruption while spending (defense, subsidies) increases. SWF drawdowns buffer but deplete reserves.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Saudi Arabia debt ratio rising sharply as revenue drops from export disruption while defense and subsidy spending increases.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4,
@@ -97,7 +97,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Saudi Arabia policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 3.75,
@@ -106,9 +110,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.8,
-      "trend_reasoning": "Saudi Arabia currency pegged to USD. Peg under pressure from fiscal strain but central bank defending. FX reserves adequate for now.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.75,
+      "trend_reasoning": "SAR peg to USD maintained. Central bank defending despite fiscal strain from Hormuz blockade. FX reserves ($464B) adequate for medium-term peg defense.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 360897333333.333,
@@ -155,6 +159,12 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "strong_growth",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Saudi Arabia bond yields surging on revenue collapse and fiscal deterioration from Hormuz blockade.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -244,10 +254,10 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10",
-      "trend": "growth",
+      "trend": "strong_growth",
       "trend_confidence": 0.8,
-      "trend_reasoning": "Saudi Arabia increasing defense spending in response to Gulf conflict. Regional arms race accelerating. SIPRI data shows Middle East arms imports up despite recent decline.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Saudi Arabia defense spending surging in response to direct military threat from Hormuz conflict. GDP decline increases ratio further.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "active_military_personnel": {
       "value": 247000,
@@ -295,6 +305,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 60.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 58.9,
+      "trend": "strong_decrease",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Saudi Arabia national power declining sharply from Hormuz blockade. Economic base undermined. Military response limited.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 85,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.64,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "strong_growth",
+      "trend_confidence": 0.88,
+      "trend_reasoning": "Saudi Arabia investment risk at extreme levels from Hormuz blockade. Revenue collapsed. Fiscal position deteriorating.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.5,
       "confidence": 0.7,
@@ -319,23 +362,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 55.2,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 49.1
-    },
-    "political_risk_premium_bps": {
-      "value": 266,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.55,
       "confidence": 0.7,
@@ -343,18 +369,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.186,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Saudi Arabia investment risk elevated significantly. Hormuz disruption blocks primary economic activity. SWF reserves buffer but not indefinitely. Conflict duration is key uncertainty.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "decrease",
@@ -374,9 +388,9 @@
     },
     "political_stability_trend": {
       "value": "decrease",
-      "confidence": 0.78,
-      "reasoning": "Saudi Arabia political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.75,
+      "reasoning": "Saudi Arabia political stability under pressure from economic crisis caused by Hormuz blockade. Social contract strained.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -386,7 +400,7 @@
       {
         "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
         "value": 1.99650173436159,
-        "reason": "Absolute change 2.0035 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 4.0 vs primary 1.99650173436159 (50.1% diff); Event context: SAU has active event triggers",
+        "reason": "Absolute change 2.0035 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 4.0 vs primary 1.99650173436159 (50.1% diff); Event context: SAU has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -397,22 +411,19 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations. GDP growth at 2.0% (declining sharply), inflation at 1.7% (rising). Supply chain chokepoint exposure is critically elevated at 0.809 amid the Strait of Hormuz crisis. Investment risk score at 0.186, trending declining.",
+    "executive_summary": "Saudi Arabia is severely impacted by the Hormuz crisis despite being an oil producer — its primary export route is blocked. GDP growth is in sharp decline as export revenue stalls. The kingdom faces extreme chokepoint exposure (0.809) with limited pipeline alternatives. Vision 2030 timeline disrupted. Inflation surging from trade disruption. Defense spending forced higher amid the regional conflict.",
     "key_changes_this_week": [
-      "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations",
-      "Brent crude surges 25% to $116.50/bbl \u2014 gold hits $5,195.60 as markets roil",
-      "Saudi Arabia: GDP growth in sharp decline",
-      "Saudi Arabia: Extreme chokepoint exposure at 0.809 amid Hormuz crisis",
-      "Saudi Arabia: Hormuz crisis direct impact",
-      "Gdp Real Growth %: declining sharply",
-      "Inflation Cpi %: rising",
-      "Political Stability: declining"
+      "Hormuz closure blocks primary oil export route despite high oil prices",
+      "GDP growth in sharp decline — export revenue severely disrupted",
+      "Defense spending surge amid regional conflict",
+      "Vision 2030 timeline disrupted by war and trade disruption",
+      "Fiscal position deteriorating rapidly"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Political stability is declining, adding to investor uncertainty.",
-    "investor_implications": "Extreme supply chain chokepoint exposure (0.809) creates acute risk for trade-dependent sectors. High energy independence (1.000) provides a buffer against the oil price shock. Saudi Arabia investment risk elevated. Underweight until Hormuz reopens.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Saudi GDP contraction inevitable as export revenue blocked despite $100+ oil. Pipeline alternatives (East-West Pipeline, IPSA) provide only ~30% of normal capacity. Vision 2030 mega-projects face funding pressure. Defense spending escalation adds fiscal strain. Duration of Hormuz closure is the key variable — every additional week deepens economic damage.",
+    "investor_implications": "Saudi equities face severe near-term headwinds despite underlying oil wealth. Tadawul under pressure. Government bonds face spread widening. All Saudi investment thesis depends on Hormuz resolution timeline. NEOM and Vision 2030 projects face delays and cost overruns. Reduce Saudi exposure until export route clarity emerges.",
+    "data_quality_note": "Data quality within acceptable parameters. Multiple critical and warning alerts active."
   },
   "code": "SAU",
   "name": "Saudi Arabia",
@@ -537,10 +548,10 @@
       "resource_self_sufficiency_index": 0.5,
       "energy_independence_index": 1.0,
       "supply_chain_chokepoint_exposure": 0.809,
-      "composite_national_power_index": 55.2,
-      "political_risk_premium_bps": 266,
+      "composite_national_power_index": 60.0,
+      "political_risk_premium_bps": 85,
       "market_accessibility_score": 0.55,
-      "overall_investment_risk_score": 0.186
+      "overall_investment_risk_score": 0.64
     }
   },
   "economy": {
@@ -614,7 +625,16 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 54.68
+    "trade_openness_pct": 54.68,
+    "financial": {
+      "equity_index_level": {
+        "value": 10893.27,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

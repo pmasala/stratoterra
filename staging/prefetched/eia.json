@@ -1,17 +1,4076 @@
 {
   "source_id": "eia",
-  "fetched_at": "2026-03-14T21:01:48.471355+00:00",
-  "records": [],
-  "skipped": [
+  "fetched_at": "2026-03-14T22:07:51.096612+00:00",
+  "records": [
     {
-      "reason": "EIA_API_KEY not set in .env"
+      "country_code": "AGO",
+      "indicator_name": "oil_production_kbpd",
+      "value": 1135.7951564147422,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "ARE",
+      "indicator_name": "oil_production_kbpd",
+      "value": 3744.945355191257,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "ARG",
+      "indicator_name": "oil_production_kbpd",
+      "value": 700.7792575954543,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "AUS",
+      "indicator_name": "oil_production_kbpd",
+      "value": 270.3931134012048,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "AZE",
+      "indicator_name": "oil_production_kbpd",
+      "value": 591.1359490455661,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "BGD",
+      "indicator_name": "oil_production_kbpd",
+      "value": 3.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "BGR",
+      "indicator_name": "oil_production_kbpd",
+      "value": 1.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "BRA",
+      "indicator_name": "oil_production_kbpd",
+      "value": 3356.467092896175,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "CAN",
+      "indicator_name": "oil_production_kbpd",
+      "value": 4776.393035519126,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "CHE",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "CHL",
+      "indicator_name": "oil_production_kbpd",
+      "value": 2.1068159445817214,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "CHN",
+      "indicator_name": "oil_production_kbpd",
+      "value": 4234.027322404371,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "CIV",
+      "indicator_name": "oil_production_kbpd",
+      "value": 36.20715821461516,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "COD",
+      "indicator_name": "oil_production_kbpd",
+      "value": 17.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "COL",
+      "indicator_name": "oil_production_kbpd",
+      "value": 772.6929232513663,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "CZE",
+      "indicator_name": "oil_production_kbpd",
+      "value": 1.382016393442623,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "DEU",
+      "indicator_name": "oil_production_kbpd",
+      "value": 28.724265027322403,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "EGY",
+      "indicator_name": "oil_production_kbpd",
+      "value": 536.8497267759562,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "ESP",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.01221311475409836,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "ETH",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "FIN",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "FRA",
+      "indicator_name": "oil_production_kbpd",
+      "value": 10.99498087431694,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "GBR",
+      "indicator_name": "oil_production_kbpd",
+      "value": 593.886912568306,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "GEO",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.23981693989071037,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "GHA",
+      "indicator_name": "oil_production_kbpd",
+      "value": 187.7513661202186,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "GRC",
+      "indicator_name": "oil_production_kbpd",
+      "value": 1.497,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "HRV",
+      "indicator_name": "oil_production_kbpd",
+      "value": 9.651314207650273,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "HUN",
+      "indicator_name": "oil_production_kbpd",
+      "value": 21.22893169398907,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "IDN",
+      "indicator_name": "oil_production_kbpd",
+      "value": 581.9808743169399,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "IND",
+      "indicator_name": "oil_production_kbpd",
+      "value": 603.8129245047637,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "IRL",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "IRN",
+      "indicator_name": "oil_production_kbpd",
+      "value": 3976.5245901639346,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "IRQ",
+      "indicator_name": "oil_production_kbpd",
+      "value": 4422.704918032787,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "ISR",
+      "indicator_name": "oil_production_kbpd",
+      "value": 18.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "ITA",
+      "indicator_name": "oil_production_kbpd",
+      "value": 84.87483333333333,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "JOR",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.02,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "JPN",
+      "indicator_name": "oil_production_kbpd",
+      "value": 3.171707650273224,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "KAZ",
+      "indicator_name": "oil_production_kbpd",
+      "value": 1800.0327350900516,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "KEN",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "KOR",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "KWT",
+      "indicator_name": "oil_production_kbpd",
+      "value": 2579.7837071586987,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "LBY",
+      "indicator_name": "oil_production_kbpd",
+      "value": 1163.2732240437158,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "LKA",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "MAR",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.025,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "MEX",
+      "indicator_name": "oil_production_kbpd",
+      "value": 1841.777868852459,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "MMR",
+      "indicator_name": "oil_production_kbpd",
+      "value": 5.724885245901639,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "MOZ",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "MYS",
+      "indicator_name": "oil_production_kbpd",
+      "value": 476.6867582356301,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "NGA",
+      "indicator_name": "oil_production_kbpd",
+      "value": 1488.869571654497,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "NLD",
+      "indicator_name": "oil_production_kbpd",
+      "value": 23.856852007605802,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "NOR",
+      "indicator_name": "oil_production_kbpd",
+      "value": 1790.5108672404372,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "NZL",
+      "indicator_name": "oil_production_kbpd",
+      "value": 6.82381693989071,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "OMN",
+      "indicator_name": "oil_production_kbpd",
+      "value": 992.588737704918,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "PAK",
+      "indicator_name": "oil_production_kbpd",
+      "value": 65.87340328872418,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "PER",
+      "indicator_name": "oil_production_kbpd",
+      "value": 40.63115007377049,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "PHL",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.5182322404371584,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "POL",
+      "indicator_name": "oil_production_kbpd",
+      "value": 16.08084699453552,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "PRT",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "QAT",
+      "indicator_name": "oil_production_kbpd",
+      "value": 1293.5008540081967,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "ROU",
+      "indicator_name": "oil_production_kbpd",
+      "value": 55.297330601092895,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "RUS",
+      "indicator_name": "oil_production_kbpd",
+      "value": 9891.875412042025,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "SAU",
+      "indicator_name": "oil_production_kbpd",
+      "value": 9232.154456284154,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "SEN",
+      "indicator_name": "oil_production_kbpd",
+      "value": 36.37978142076503,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "SGP",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "SRB",
+      "indicator_name": "oil_production_kbpd",
+      "value": 12.316180327868853,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "SWE",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "THA",
+      "indicator_name": "oil_production_kbpd",
+      "value": 153.0311475409836,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "TUR",
+      "indicator_name": "oil_production_kbpd",
+      "value": 101.99316120218579,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "TWN",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.196,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "TZA",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "UKR",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "USA",
+      "indicator_name": "oil_production_kbpd",
+      "value": 13234.585620218579,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "UZB",
+      "indicator_name": "oil_production_kbpd",
+      "value": 31.104226775956285,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "VNM",
+      "indicator_name": "oil_production_kbpd",
+      "value": 162.81011475409838,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "ZAF",
+      "indicator_name": "oil_production_kbpd",
+      "value": 0.45389344262295084,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_production"
+    },
+    {
+      "country_code": "AGO",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 122.134906392,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "ARE",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 877.966055731,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "ARG",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 734.57271244,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "AUS",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 1145.393442,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "AZE",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 111.63104108,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "BGD",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 287.858507054,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "BGR",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 108.09455486,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "BRA",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 3268.78122138,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "CAN",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 2440.237705,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "CHE",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 194.492496,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "CHL",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 385.93989,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "CHN",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 16370.53619973,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "CIV",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 93.430871004,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "COD",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 25.052996229,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "COL",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 369.0494115,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "CZE",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 221.166666,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "DEU",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 2056.734972,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "EGY",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 953.19093406,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "ESP",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 1322.491802,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "ETH",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 103.689339574,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "FIN",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 173.519126,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "FRA",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 1514.450819,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "GBR",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 1395.409836,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "GEO",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 38.67413699,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "GHA",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 102.778776431,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "GRC",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 309.683805,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "HRV",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 81.9143507,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "HUN",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 179.680328,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "IDN",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 1626.877995148,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "IND",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 5598.89,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "IRL",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 157.948088,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "IRN",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 1970.347504885,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "IRQ",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 1060.795226895,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "ISR",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 219.75683,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "ITA",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 1240.513659,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "JOR",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 100.694897497,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "JPN",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 3140.32787,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "KAZ",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 412.11549588,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "KEN",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 116.16120548,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "KOR",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 2514.543716,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "KWT",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 419.129145825,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "LBY",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 217.476329366,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "LKA",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 91.961707662,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "MAR",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 319.400600555,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "MEX",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 1850.456285,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "MMR",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 125.314578288,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "MOZ",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 42.455148111,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "MYS",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 747.111565706,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "NGA",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 492.939054609,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "NLD",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 816.226777,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "NOR",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 234.357922,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "NZL",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 159.237704,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "OMN",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 230.821227265,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "PAK",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 479.217879943,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "PER",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 264.380449988,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "PHL",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 473.46382885,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "POL",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 738.033667,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "PRT",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 218.515865,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "QAT",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 276.280909983,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "ROU",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 222.62673992,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "RUS",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 3791.146355733353,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "SAU",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 3630.712459856,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "SEN",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 72.916910998,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "SGP",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 1482.170465383,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "SRB",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 87.49890409,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "SWE",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 265.480875,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "THA",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 1372.48028737,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "TUR",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 1107.049103,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "TWN",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 871.491236712,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "TZA",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 83.535870403,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "UKR",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 205.64070497,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "USA",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 20463.72024590164,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "UZB",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 135.56395233,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "VNM",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 555.217939205,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "ZAF",
+      "indicator_name": "oil_consumption_kbpd",
+      "value": 612.110416239,
+      "year": "2024",
+      "unit": "TBPD",
+      "source": "US EIA",
+      "series_id": "petroleum_consumption"
+    },
+    {
+      "country_code": "AGO",
+      "indicator_name": "natgas_production_bcf",
+      "value": 204.82526,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "ARE",
+      "indicator_name": "natgas_production_bcf",
+      "value": 2098.088499,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "ARG",
+      "indicator_name": "natgas_production_bcf",
+      "value": 1652.02428,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "AUS",
+      "indicator_name": "natgas_production_bcf",
+      "value": 5374.054641,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "AZE",
+      "indicator_name": "natgas_production_bcf",
+      "value": 1337.547935,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "BGD",
+      "indicator_name": "natgas_production_bcf",
+      "value": 711.4,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "BGR",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.326541502,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "BRA",
+      "indicator_name": "natgas_production_bcf",
+      "value": 781.7115606,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "CAN",
+      "indicator_name": "natgas_production_bcf",
+      "value": 7025.930409,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "CHE",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "CHL",
+      "indicator_name": "natgas_production_bcf",
+      "value": 38.59427618,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "CHN",
+      "indicator_name": "natgas_production_bcf",
+      "value": 9126.850389,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "CIV",
+      "indicator_name": "natgas_production_bcf",
+      "value": 95.65255428,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "COD",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "COL",
+      "indicator_name": "natgas_production_bcf",
+      "value": 356.3121807,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "CZE",
+      "indicator_name": "natgas_production_bcf",
+      "value": 6.411970189,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "DEU",
+      "indicator_name": "natgas_production_bcf",
+      "value": 145.7760856,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "EGY",
+      "indicator_name": "natgas_production_bcf",
+      "value": 1676.46859,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "ESP",
+      "indicator_name": "natgas_production_bcf",
+      "value": 1.040092023,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "ETH",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "FIN",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "FRA",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.446017719,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "GBR",
+      "indicator_name": "natgas_production_bcf",
+      "value": 1088.324989,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "GEO",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.365783752,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "GHA",
+      "indicator_name": "natgas_production_bcf",
+      "value": 120.6349608,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "GRC",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.070311568,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "HRV",
+      "indicator_name": "natgas_production_bcf",
+      "value": 22.99340117,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "HUN",
+      "indicator_name": "natgas_production_bcf",
+      "value": 60.87601146,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "IDN",
+      "indicator_name": "natgas_production_bcf",
+      "value": 2464.853806,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "IND",
+      "indicator_name": "natgas_production_bcf",
+      "value": 1269.073189,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "IRL",
+      "indicator_name": "natgas_production_bcf",
+      "value": 38.79563513,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "IRN",
+      "indicator_name": "natgas_production_bcf",
+      "value": 9852.843534,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "IRQ",
+      "indicator_name": "natgas_production_bcf",
+      "value": 364.5253963,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "ISR",
+      "indicator_name": "natgas_production_bcf",
+      "value": 940.4237422,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "ITA",
+      "indicator_name": "natgas_production_bcf",
+      "value": 92.51320153,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "JOR",
+      "indicator_name": "natgas_production_bcf",
+      "value": 8.08064619,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "JPN",
+      "indicator_name": "natgas_production_bcf",
+      "value": 67.18981885,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "KAZ",
+      "indicator_name": "natgas_production_bcf",
+      "value": 1033.451606,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "KEN",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "KOR",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "KWT",
+      "indicator_name": "natgas_production_bcf",
+      "value": 703.1982031,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "LBY",
+      "indicator_name": "natgas_production_bcf",
+      "value": 427.3715424,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "LKA",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "MAR",
+      "indicator_name": "natgas_production_bcf",
+      "value": 1.518284989,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "MEX",
+      "indicator_name": "natgas_production_bcf",
+      "value": 1104.771,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "MMR",
+      "indicator_name": "natgas_production_bcf",
+      "value": 454.5375611,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "MOZ",
+      "indicator_name": "natgas_production_bcf",
+      "value": 429.7477778,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "MYS",
+      "indicator_name": "natgas_production_bcf",
+      "value": 2845.572693,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "NGA",
+      "indicator_name": "natgas_production_bcf",
+      "value": 1380.418849,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "NLD",
+      "indicator_name": "natgas_production_bcf",
+      "value": 341.9663692,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "NOR",
+      "indicator_name": "natgas_production_bcf",
+      "value": 4623.324901,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "NZL",
+      "indicator_name": "natgas_production_bcf",
+      "value": 118.1004741,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "OMN",
+      "indicator_name": "natgas_production_bcf",
+      "value": 1566.181981,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "PAK",
+      "indicator_name": "natgas_production_bcf",
+      "value": 851.9883994,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "PER",
+      "indicator_name": "natgas_production_bcf",
+      "value": 478.9385971,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "PHL",
+      "indicator_name": "natgas_production_bcf",
+      "value": 58.58377676,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "POL",
+      "indicator_name": "natgas_production_bcf",
+      "value": 183.8013645,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "PRT",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "QAT",
+      "indicator_name": "natgas_production_bcf",
+      "value": 6001.884083,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "ROU",
+      "indicator_name": "natgas_production_bcf",
+      "value": 323.4406114,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "RUS",
+      "indicator_name": "natgas_production_bcf",
+      "value": 22673.46303,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "SAU",
+      "indicator_name": "natgas_production_bcf",
+      "value": 4357.305617,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "SEN",
+      "indicator_name": "natgas_production_bcf",
+      "value": 1.224714627,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "SGP",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "SRB",
+      "indicator_name": "natgas_production_bcf",
+      "value": 11.37827733,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "SWE",
+      "indicator_name": "natgas_production_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "THA",
+      "indicator_name": "natgas_production_bcf",
+      "value": 952.9312507,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "TUR",
+      "indicator_name": "natgas_production_bcf",
+      "value": 79.78254646,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "TWN",
+      "indicator_name": "natgas_production_bcf",
+      "value": 2.124091312,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "TZA",
+      "indicator_name": "natgas_production_bcf",
+      "value": 70.34600889,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "UKR",
+      "indicator_name": "natgas_production_bcf",
+      "value": 641.5119872,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "USA",
+      "indicator_name": "natgas_production_bcf",
+      "value": 37766.605374,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "UZB",
+      "indicator_name": "natgas_production_bcf",
+      "value": 1631.48324,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "VNM",
+      "indicator_name": "natgas_production_bcf",
+      "value": 225.0090943,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "ZAF",
+      "indicator_name": "natgas_production_bcf",
+      "value": 2.047809624,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_production"
+    },
+    {
+      "country_code": "AGO",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 42.85873216,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "ARE",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 2535.365675,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "ARG",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1647.083796,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "AUS",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1739.051431,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "AZE",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 400.8753502,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "BGD",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 955.240852,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "BGR",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 96.83884027,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "BRA",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1073.514314,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "CAN",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 4881.107993,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "CHE",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 105.0755703,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "CHL",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 222.3072658,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "CHN",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 15004.76479,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "CIV",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 95.65255428,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "COD",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "COL",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 437.5404105,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "CZE",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 236.2960228,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "DEU",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 2745.184461,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "EGY",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 2101.805698,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "ESP",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 985.3042687,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "ETH",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "FIN",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 59.10778046,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "FRA",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1089.683444,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "GBR",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 2207.489087,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "GEO",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 114.8259615,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "GHA",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 149.8659286,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "GRC",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 214.1855553,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "HRV",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 82.44250806,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "HUN",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 300.984578,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "IDN",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1764.727219,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "IND",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 2512.908316,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "IRL",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 179.6372306,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "IRN",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 9315.552448,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "IRQ",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 646.8634199,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "ISR",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 477.8011722,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "ITA",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 2209.742097,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "JOR",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 172.3973801,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "JPN",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 3150.565062,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "KAZ",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 884.409022,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "KEN",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "KOR",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 2186.635609,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "KWT",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 998.4959453,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "LBY",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 377.7014892,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "LKA",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "MAR",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 32.98279596,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "MEX",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 3453.647179,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "MMR",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 142.1594412,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "MOZ",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 67.67384552,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "MYS",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1673.884089,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "NGA",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 708.9045277,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "NLD",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1123.084465,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "NOR",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 166.8554466,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "NZL",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 116.470611,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "OMN",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1050.178518,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "PAK",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1216.819545,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "PER",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 323.6050184,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "PHL",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 116.0822966,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "POL",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 784.520595,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "PRT",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 126.8960246,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "QAT",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1652.668093,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "ROU",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 325.6960308,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "RUS",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 17650.88125,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "SAU",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 4357.305617,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "SEN",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1.224608683,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "SGP",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 488.7724628,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "SRB",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 100.8484273,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "SWE",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 32.97966888,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "THA",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1602.104877,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "TUR",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1879.644317,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "TWN",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1021.070185,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "TZA",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 70.34600889,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "UKR",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 735.2497939,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "USA",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 33082.731939,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "UZB",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 1824.162195,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "VNM",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 239.1320465,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "ZAF",
+      "indicator_name": "natgas_consumption_bcf",
+      "value": 137.7966194,
+      "year": "2024",
+      "unit": "BCF",
+      "source": "US EIA",
+      "series_id": "natural_gas_consumption"
+    },
+    {
+      "country_code": "AGO",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 15.59639754,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "ARE",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 169.025496942,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "ARG",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 147.4650157,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "AUS",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 270.1089075,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "AZE",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 27.831769802,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "BGD",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 101.74796178,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "BGR",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 38.6342585,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "BRA",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 737.07547,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "CAN",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 611.3447732,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "CHE",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 75.065891937,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "CHL",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 88.6120963,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "CHN",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 10161.504461,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "CIV",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 11.140530118,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "COD",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 15.921015659,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "COL",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 115.2528606,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "CZE",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 73.663514715,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "DEU",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 490.176993982,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "EGY",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 215.847989009,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "ESP",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 267.17963309,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "ETH",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 16.644076497,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "FIN",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 79.27830828,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "FRA",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 537.226520875,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "GBR",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 267.980273578,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "GEO",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 13.934416864,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "GHA",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 24.270974318,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "GRC",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 53.528868755,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "HRV",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 14.696206771,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "HUN",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 36.982486619,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "IDN",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 404.85768,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "IND",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 2051.784852148,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "IRL",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 30.580468337,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "IRN",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 384.931381533,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "IRQ",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 145.429991918,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "ISR",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 76.73632115,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "ITA",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 258.84521807,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "JOR",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 24.00251762,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "JPN",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 907.014828843,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "KAZ",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 122.78577624,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "KEN",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 13.262825786,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "KOR",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 577.806857287,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "KWT",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 90.075892907,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "LBY",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 33.811405621,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "LKA",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 16.621418262,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "MAR",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 42.296223148,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "MEX",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 386.833963495,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "MMR",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 21.710258605,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "MOZ",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 19.658120472,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "MYS",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 195.318087783,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "NGA",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 37.554635395,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "NLD",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 119.545590576,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "NOR",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 155.018590438,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "NZL",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 43.9951707,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "OMN",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 44.8539556,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "PAK",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 151.856842663,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "PER",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 59.30293465,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "PHL",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 124.157829179,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "POL",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 167.39671077,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "PRT",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 45.78213002,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "QAT",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 56.680537906,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "ROU",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 49.2409169,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "RUS",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 1160.215843225,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "SAU",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 438.146202665,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "SEN",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 7.628519553,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "SGP",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 59.255392867,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "SRB",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 36.992694724,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "SWE",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 169.523907666,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "THA",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 206.144811569,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "TUR",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 332.919334345,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "TWN",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 285.480966849,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "TZA",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 8.849106426,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "UKR",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 96.912049823,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "USA",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 4392.55234623,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "UZB",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 75.514852953,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "VNM",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 316.473698596,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "ZAF",
+      "indicator_name": "electricity_generation_bkwh",
+      "value": 242.771999632,
+      "year": "2024",
+      "unit": "BKWH",
+      "source": "US EIA",
+      "series_id": "electricity_generation"
+    },
+    {
+      "country_code": "AGO",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "ARE",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "ARG",
+      "indicator_name": "coal_production_mt",
+      "value": 2.0000000000000218,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "AUS",
+      "indicator_name": "coal_production_mt",
+      "value": 467739.2509999969,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "AZE",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "BGD",
+      "indicator_name": "coal_production_mt",
+      "value": 907.1309999999992,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "BGR",
+      "indicator_name": "coal_production_mt",
+      "value": 14992.782000000394,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "BRA",
+      "indicator_name": "coal_production_mt",
+      "value": 6078.811183472004,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "CAN",
+      "indicator_name": "coal_production_mt",
+      "value": 48642.80387622167,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "CHE",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "CHL",
+      "indicator_name": "coal_production_mt",
+      "value": 24.270000000000095,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "CHN",
+      "indicator_name": "coal_production_mt",
+      "value": 4402501.222000046,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "CIV",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "COD",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "COL",
+      "indicator_name": "coal_production_mt",
+      "value": 58077.77714759395,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "CZE",
+      "indicator_name": "coal_production_mt",
+      "value": 25031.996999999606,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "DEU",
+      "indicator_name": "coal_production_mt",
+      "value": 91940.85699999848,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "EGY",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "ESP",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "ETH",
+      "indicator_name": "coal_production_mt",
+      "value": 1073.3889999999838,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "FIN",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "FRA",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "GBR",
+      "indicator_name": "coal_production_mt",
+      "value": 106.50987333291859,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "GEO",
+      "indicator_name": "coal_production_mt",
+      "value": 177.78599999999707,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "GHA",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "GRC",
+      "indicator_name": "coal_production_mt",
+      "value": 6317.07200000005,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "HRV",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "HUN",
+      "indicator_name": "coal_production_mt",
+      "value": 3890.000000000028,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "IDN",
+      "indicator_name": "coal_production_mt",
+      "value": 836000.0000000056,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "IND",
+      "indicator_name": "coal_production_mt",
+      "value": 1012945.8381122032,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "IRL",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "IRN",
+      "indicator_name": "coal_production_mt",
+      "value": 1971.0550000000096,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "IRQ",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "ISR",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "ITA",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "JOR",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "JPN",
+      "indicator_name": "coal_production_mt",
+      "value": 518.2220000000017,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "KAZ",
+      "indicator_name": "coal_production_mt",
+      "value": 112888.13145402461,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "KEN",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "KOR",
+      "indicator_name": "coal_production_mt",
+      "value": 544.0000000000027,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "KWT",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "LBY",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "LKA",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "MAR",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "MEX",
+      "indicator_name": "coal_production_mt",
+      "value": 5692.771999999973,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "MMR",
+      "indicator_name": "coal_production_mt",
+      "value": 2735.6379999999995,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "MOZ",
+      "indicator_name": "coal_production_mt",
+      "value": 16187.10600000034,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "MYS",
+      "indicator_name": "coal_production_mt",
+      "value": 3331.192000000033,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "NGA",
+      "indicator_name": "coal_production_mt",
+      "value": 1262.1049999999777,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "NLD",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "NOR",
+      "indicator_name": "coal_production_mt",
+      "value": 119.90300000000283,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "NZL",
+      "indicator_name": "coal_production_mt",
+      "value": 2509.426000000079,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "OMN",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "PAK",
+      "indicator_name": "coal_production_mt",
+      "value": 15075.233546059628,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "PER",
+      "indicator_name": "coal_production_mt",
+      "value": 1904.5363373099651,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "PHL",
+      "indicator_name": "coal_production_mt",
+      "value": 14939.452000000028,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "POL",
+      "indicator_name": "coal_production_mt",
+      "value": 85159.60423662537,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "PRT",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "QAT",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "ROU",
+      "indicator_name": "coal_production_mt",
+      "value": 12589.99999999996,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "RUS",
+      "indicator_name": "coal_production_mt",
+      "value": 476207.87265377166,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "SAU",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "SEN",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "SGP",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "SRB",
+      "indicator_name": "coal_production_mt",
+      "value": 31249.439999999995,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "SWE",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "THA",
+      "indicator_name": "coal_production_mt",
+      "value": 12811.999999999765,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "TUR",
+      "indicator_name": "coal_production_mt",
+      "value": 78997.95899999984,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "TWN",
+      "indicator_name": "coal_production_mt",
+      "value": 0.0,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "TZA",
+      "indicator_name": "coal_production_mt",
+      "value": 1855.8959999999747,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "UKR",
+      "indicator_name": "coal_production_mt",
+      "value": 19769.000000000342,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "USA",
+      "indicator_name": "coal_production_mt",
+      "value": 464968.7605674558,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "UZB",
+      "indicator_name": "coal_production_mt",
+      "value": 5313.331000000028,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "VNM",
+      "indicator_name": "coal_production_mt",
+      "value": 44648.584000000315,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
+    },
+    {
+      "country_code": "ZAF",
+      "indicator_name": "coal_production_mt",
+      "value": 237425.36816400374,
+      "year": "2024",
+      "unit": "MT",
+      "source": "US EIA",
+      "series_id": "coal_production"
     }
   ],
+  "skipped": [],
   "errors": [],
   "stats": {
-    "requests_made": 0,
+    "requests_made": 6,
     "requests_failed": 0,
     "cache_hits": 0,
-    "elapsed_seconds": 0.0
+    "elapsed_seconds": 3.0
+  },
+  "summary": {
+    "total_records": 450,
+    "countries_covered": 75,
+    "series_fetched": [
+      "petroleum_production",
+      "petroleum_consumption",
+      "natural_gas_production",
+      "natural_gas_consumption",
+      "coal_production",
+      "electricity_generation"
+    ]
   }
 }

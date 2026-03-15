@@ -176,6 +176,31 @@
   "military": {},
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 17.3,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 18.5
+    },
+    "political_risk_premium_bps": {
+      "value": 620,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.453,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.45,
       "confidence": 0.7,
@@ -200,23 +225,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 24.8,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 22.7
-    },
-    "political_risk_premium_bps": {
-      "value": 1410,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.1,
       "confidence": 0.7,
@@ -224,14 +232,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.388,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk"
     }
   },
   "metadata": {
@@ -246,7 +246,7 @@
       {
         "factor_path": "economy.macroeconomic.current_account_balance_pct_gdp",
         "value": 4.23506448409627,
-        "reason": "Absolute change 3.3351 exceeds 3\u00d7 typical (1.0) = 3.0; Alternative source (IMF WEO) disagrees: 0.9 vs primary 4.23506448409627 (370.6% diff)",
+        "reason": "Absolute change 3.3351 exceeds 3× typical (1.0) = 3.0; Alternative source (IMF WEO) disagrees: 0.9 vs primary 4.23506448409627 (370.6% diff)",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -300,10 +300,10 @@
       "resource_self_sufficiency_index": 0.45,
       "energy_independence_index": 1.0,
       "supply_chain_chokepoint_exposure": 0.378,
-      "composite_national_power_index": 24.8,
-      "political_risk_premium_bps": 1410,
+      "composite_national_power_index": 17.3,
+      "political_risk_premium_bps": 620,
       "market_accessibility_score": 0.1,
-      "overall_investment_risk_score": 0.388
+      "overall_investment_risk_score": 0.453
     }
   },
   "narrative": {

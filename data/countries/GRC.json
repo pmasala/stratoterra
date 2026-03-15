@@ -3,7 +3,7 @@
   "country_name": "Greece",
   "tier": 2,
   "region": "europe",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -286,7 +286,7 @@
       "value": null,
       "trend": "growth",
       "trend_confidence": 0.82,
-      "trend_reasoning": "Greece defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% \u2014 Europe now top recipient region.",
+      "trend_reasoning": "Greece defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% — Europe now top recipient region.",
       "trend_updated": "2026-03-10T12:00:00Z",
       "confidence": 0.82,
       "last_updated": "2026-03-10T12:00:00Z",
@@ -296,6 +296,35 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 53.9,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 55.5
+    },
+    "political_risk_premium_bps": {
+      "value": 140,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.758,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Greece investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.3,
       "confidence": 0.7,
@@ -320,23 +349,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 39.2,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 35.2
-    },
-    "political_risk_premium_bps": {
-      "value": 158,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.68,
       "confidence": 0.7,
@@ -344,18 +356,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.307,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Greece investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -399,17 +399,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 2.1% (declining), inflation at 2.7% (rising). Investment risk score at 0.307, trending declining.",
+    "executive_summary": "Greece faces GDP headwinds from the oil shock and European market crash (~6%). As a net energy importer and tourism-dependent economy, both channels are negative. Investment risk at 0.307 — watch level. The Cyprus drone strike by Iran-made drones raises Eastern Mediterranean security concerns relevant to Greek defense posture. Government debt remains elevated.",
     "key_changes_this_week": [
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising",
-      "Overall Investment Risk Score: declining"
+      "GDP declining from oil shock and European market crash",
+      "Iran-made drones strike Cyprus — Eastern Mediterranean security concern",
+      "Tourism demand at risk from European consumer confidence erosion",
+      "Investment risk at watch level (0.307)"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Low energy independence (0.200) makes the economy vulnerable to the oil price shock. Greece investment risk modestly elevated. European-wide energy and market stress weighing.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Greek GDP under pressure from energy costs and tourism demand uncertainty. Eastern Mediterranean security environment deteriorating with Cyprus drone strike. High debt-to-GDP constrains fiscal response. ECB support critical for yield management. Tourism season outlook uncertain depending on conflict trajectory.",
+    "investor_implications": "Greek equities face energy and tourism headwinds. ASE tracking broader European weakness. Government bonds dependent on ECB backstop. Tourism sector outlook uncertain. Banking sector improved but exposed to macro deterioration. Shipping sector may benefit from trade rerouting around Hormuz. Eastern Mediterranean security premium rising.",
+    "data_quality_note": "Watch alert active for GDP declining with investment risk. Data quality within acceptable parameters."
   },
   "code": "GRC",
   "name": "Greece",
@@ -527,10 +528,10 @@
       "resource_self_sufficiency_index": 0.3,
       "energy_independence_index": 0.2,
       "supply_chain_chokepoint_exposure": 0.39,
-      "composite_national_power_index": 39.2,
-      "political_risk_premium_bps": 158,
+      "composite_national_power_index": 53.9,
+      "political_risk_premium_bps": 140,
       "market_accessibility_score": 0.68,
-      "overall_investment_risk_score": 0.307
+      "overall_investment_risk_score": 0.758
     }
   },
   "economy": {
@@ -611,7 +612,23 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 89.78
+    "trade_openness_pct": 89.78,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 0.87138,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 3.76,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

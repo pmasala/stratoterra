@@ -12,10 +12,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Taiwan heavily dependent on Gulf oil transiting Hormuz. Oil at $116/bbl adds 1-2pp to import bill as % of GDP. Manufacturing and transport sectors hit hardest. G7 SPR release provides partial temporary relief.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Taiwan GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_nominal_usd": {
       "value": 884387000000.0,
@@ -30,10 +30,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Taiwan facing inflation pressure from oil at $116/bbl. Energy costs feeding through to transportation, manufacturing, and food prices. Central bank faces stagflation dilemma.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Taiwan inflation broadly stable with modest upward pressure from global oil prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.4,
@@ -49,9 +49,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.8,
-      "trend_reasoning": "Taiwan current account worsening from oil import bill surge at $116/bbl. Energy import costs adding 1-2pp to deficit. Trade balance deteriorating.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Taiwan current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 23.4,
@@ -60,9 +60,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Taiwan debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Taiwan debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 33775,
@@ -90,7 +90,11 @@
       "confidence": 0.9,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Taiwan policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 31.855,
@@ -98,17 +102,21 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Taiwan currency under pressure from widening trade deficit due to oil shock. Terms of trade deteriorating. Central bank may need to intervene.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Taiwan currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 1.45,
       "confidence": 0.8,
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W09",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Taiwan bond yields broadly stable.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "inflation_forecast_2026_pct": {
       "value": 1.6,
@@ -234,10 +242,49 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Taiwan military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 57.3,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 56.1,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Taiwan national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 110,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.79,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Taiwan investment risk broadly unchanged.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.15,
       "confidence": 0.7,
@@ -262,23 +309,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 27.1,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 24.8
-    },
-    "political_risk_premium_bps": {
-      "value": 12,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.78,
       "confidence": 0.7,
@@ -286,18 +316,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.072,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Taiwan investment risk rising from oil shock exposure and energy supply vulnerability. Current account pressure and inflation risks compound.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "decrease",
@@ -317,9 +335,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "Taiwan political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Taiwan political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -329,7 +347,7 @@
       {
         "factor_path": "economy.macroeconomic.gdp_nominal_usd",
         "value": 884387000000.0,
-        "reason": "Change 13.0% exceeds 3\u00d7 typical (2.0%) = 6.0%",
+        "reason": "Change 13.0% exceeds 3× typical (2.0%) = 6.0%",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -340,17 +358,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 3.7% (declining), inflation at 1.7% (rising). Supply chain chokepoint exposure is critically elevated at 0.684 amid the Strait of Hormuz crisis. Investment risk score at 0.072, trending declining.",
+    "executive_summary": "Taiwan's economy is broadly stable with limited direct impact from the Hormuz crisis. However, the semiconductor sector — Taiwan's strategic asset — faces indirect risks from global demand uncertainty and the DPRK 10-missile provocation that elevates Northeast Asian security concerns. Current account mildly deteriorating. Government debt rising modestly.",
     "key_changes_this_week": [
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising",
-      "Overall Investment Risk Score: declining"
+      "DPRK 10-missile salvo elevates Northeast Asian security concerns",
+      "Current account mildly deteriorating",
+      "Government debt rising modestly",
+      "No significant Taiwan-specific events"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Extreme supply chain chokepoint exposure (0.684) creates acute risk for trade-dependent sectors. Low energy independence (0.100) makes the economy vulnerable to the oil price shock. Market accessibility score of 0.780 supports capital flows.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Taiwan GDP broadly stable. TSMC and semiconductor ecosystem provides structural support but faces geopolitical risk premium. NE Asian security environment deteriorating with DPRK provocations. Cross-strait dynamics unchanged this week but US military stretch across multiple theaters reduces perceived deterrence umbrella.",
+    "investor_implications": "TSMC remains critical global asset but geopolitical risk premium persists. Taiwan equities face modest NE Asian security discount. TAIEX sensitive to semiconductor demand cycle and geopolitical news flow. TWD stable. Government bonds stable. Monitor cross-strait dynamics if US military remains stretched.",
+    "data_quality_note": "Data quality within acceptable parameters. Taiwan not covered by World Bank — some data gaps in institutional metrics."
   },
   "code": "TWN",
   "name": "Taiwan",
@@ -476,10 +495,10 @@
       "resource_self_sufficiency_index": 0.15,
       "energy_independence_index": 0.1,
       "supply_chain_chokepoint_exposure": 0.684,
-      "composite_national_power_index": 27.1,
-      "political_risk_premium_bps": 12,
+      "composite_national_power_index": 57.3,
+      "political_risk_premium_bps": 110,
       "market_accessibility_score": 0.78,
-      "overall_investment_risk_score": 0.072
+      "overall_investment_risk_score": 0.79
     }
   },
   "economy": {

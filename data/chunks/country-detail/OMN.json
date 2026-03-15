@@ -19,10 +19,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Oman GDP under severe pressure from Hormuz disruption. Limited Hormuz dependency but regional disruption severe. High energy prices cannot be monetized while export channels are blocked.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_decrease",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Hormuz blockade severely disrupting oil exports. Oman export revenue sharply curtailed. Limited alternative export routes.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 20285.2272897377,
@@ -37,10 +37,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Oman facing import cost pressure from disrupted supply chains. Energy subsidies buffer consumers but fiscal cost rising. Food import costs increasing as Gulf shipping disrupted.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_growth",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Oman facing severe supply chain disruption from Hormuz blockade. Import costs surging. Essential goods supply constrained.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.251,
@@ -55,10 +55,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.85,
-      "trend_reasoning": "Oman current account deteriorating as Hormuz disruption blocks energy exports. High oil/gas prices cannot be monetized. Import costs rising. SWF drawdowns support consumption.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_decrease",
+      "trend_confidence": 0.88,
+      "trend_reasoning": "Oman current account severely impacted by Hormuz blockade. Oil/gas export revenue sharply curtailed. Import costs rising from alternative routes.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 18286526117.9972,
@@ -73,10 +73,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.75,
-      "trend_reasoning": "Oman debt ratio rising as revenue drops from export disruption while spending (defense, subsidies) increases. SWF drawdowns buffer but deplete reserves.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Oman debt ratio rising sharply as revenue drops from export disruption while defense and subsidy spending increases.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4,
@@ -111,7 +111,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Oman policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fdi_inflows_usd": {
       "value": 12465539661.8985,
@@ -144,10 +148,16 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "stable",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Oman currency under pressure from revenue collapse due to Hormuz blockade.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "strong_growth",
       "trend_confidence": 0.8,
-      "trend_reasoning": "Oman currency pegged to USD. Peg under pressure from fiscal strain but central bank defending. FX reserves adequate for now.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Oman bond yields surging on revenue collapse and fiscal deterioration from Hormuz blockade.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -269,10 +279,10 @@
     },
     "military_expenditure_pct_gdp": {
       "value": null,
-      "trend": "growth",
+      "trend": "strong_growth",
       "trend_confidence": 0.8,
-      "trend_reasoning": "Oman increasing defense spending in response to Gulf conflict. Regional arms race accelerating. SIPRI data shows Middle East arms imports up despite recent decline.",
-      "trend_updated": "2026-03-10T12:00:00Z",
+      "trend_reasoning": "Oman defense spending surging in response to direct military threat from Hormuz conflict. GDP decline increases ratio further.",
+      "trend_updated": "2026-03-14T00:00:00Z",
       "confidence": 0.8,
       "last_updated": "2026-03-10T12:00:00Z",
       "source": "agent_10_trend_estimator",
@@ -281,6 +291,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 46.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 48.1,
+      "trend": "strong_decrease",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Oman national power declining sharply from Hormuz blockade. Economic base undermined. Military response limited.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 230,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.641,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "strong_growth",
+      "trend_confidence": 0.88,
+      "trend_reasoning": "Oman investment risk at extreme levels from Hormuz blockade. Revenue collapsed. Fiscal position deteriorating.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.4,
       "confidence": 0.7,
@@ -305,23 +348,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 35.5,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 32.0
-    },
-    "political_risk_premium_bps": {
-      "value": 321,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.5,
       "confidence": 0.7,
@@ -329,18 +355,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.142,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Oman investment risk elevated significantly. Hormuz disruption blocks primary economic activity. SWF reserves buffer but not indefinitely. Conflict duration is key uncertainty.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "decrease",
@@ -360,9 +374,9 @@
     },
     "political_stability_trend": {
       "value": "decrease",
-      "confidence": 0.78,
-      "reasoning": "Oman political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.75,
+      "reasoning": "Oman political stability under pressure from economic crisis caused by Hormuz blockade. Social contract strained.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -375,21 +389,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations. GDP growth at 1.6% (declining), inflation at 0.6% (rising). Supply chain chokepoint exposure is critically elevated at 0.850 amid the Strait of Hormuz crisis. Political risk premium stands at 321 bps, signaling elevated sovereign risk. Investment risk score at 0.142, trending declining.",
+    "executive_summary": "Oman faces severe economic pressure from the Hormuz crisis with extreme chokepoint exposure (0.850). GDP is in strong decline as oil export revenue is disrupted. Unlike Saudi Arabia, Oman has minimal pipeline alternatives. Inflation surging from trade disruption. Defense spending forced higher. The Strait of Hormuz physically borders Oman, making it geographically at the center of the crisis.",
     "key_changes_this_week": [
-      "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations",
-      "Oman: Extreme chokepoint exposure at 0.850 amid Hormuz crisis",
-      "Oman: Hormuz crisis direct impact",
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising",
-      "Political Stability: declining",
-      "Overall Investment Risk Score: declining"
+      "Extreme chokepoint exposure (0.850) — Strait of Hormuz borders Oman",
+      "GDP in strong decline from oil export disruption",
+      "Inflation surging from trade disruption",
+      "Defense spending forced higher by proximity to conflict zone"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Political stability is declining, adding to investor uncertainty.",
-    "investor_implications": "Extreme supply chain chokepoint exposure (0.850) creates acute risk for trade-dependent sectors. High energy independence (1.000) provides a buffer against the oil price shock. Oman investment risk elevated. Underweight until Hormuz reopens.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Oman faces severe near-term outlook from Hormuz closure. Geographic proximity to mine-laying operations creates additional security risk. Limited fiscal buffers compared to wealthier Gulf neighbors. Government debt trajectory steep. Oman's traditional role as diplomatic intermediary in Iran relations may provide unique ceasefire opportunity.",
+    "investor_implications": "Omani assets face severe near-term risk. MSM index under pressure. Government bonds face spread widening. OMR peg under stress. Oil export disruption eliminates primary revenue stream. Monitor Oman's potential diplomatic role — its traditional Iran relationship could become a ceasefire channel, which would be a major catalyst.",
+    "data_quality_note": "Multiple warning alerts active. Extreme chokepoint exposure creates forward-looking data uncertainty."
   },
   "code": "OMN",
   "name": "Oman",
@@ -506,10 +517,10 @@
       "resource_self_sufficiency_index": 0.4,
       "energy_independence_index": 1.0,
       "supply_chain_chokepoint_exposure": 0.85,
-      "composite_national_power_index": 35.5,
-      "political_risk_premium_bps": 321,
+      "composite_national_power_index": 46.0,
+      "political_risk_premium_bps": 230,
       "market_accessibility_score": 0.5,
-      "overall_investment_risk_score": 0.142
+      "overall_investment_risk_score": 0.641
     }
   },
   "economy": {

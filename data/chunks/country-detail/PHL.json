@@ -3,7 +3,7 @@
   "country_name": "Philippines",
   "tier": 2,
   "region": "southeast_asia",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -20,9 +20,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Philippines heavily dependent on Gulf oil transiting Hormuz. Oil at $116/bbl adds 1-2pp to import bill as % of GDP. Manufacturing and transport sectors hit hardest. G7 SPR release provides partial temporary relief.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Philippines facing GDP headwinds from oil shock at $100+/bbl. Energy costs rising for oil-importing economy.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 3984.8315387656,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Philippines facing inflation pressure from oil at $116/bbl. Energy costs feeding through to transportation, manufacturing, and food prices. Central bank faces stagflation dilemma.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Philippines facing inflation pressure from oil at $100+/bbl feeding through energy, transport, and food prices. IEA 400M barrel SPR release provides only partial relief.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 2.235,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.8,
-      "trend_reasoning": "Philippines current account worsening from oil import bill surge at $116/bbl. Energy import costs adding 1-2pp to deficit. Trade balance deteriorating.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Philippines current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 106195050244.098,
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Philippines debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Philippines debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 5.7,
@@ -98,10 +98,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Philippines currency under pressure from widening trade deficit due to oil shock. Terms of trade deteriorating. Central bank may need to intervene.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Philippines currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 118974717244.898,
@@ -122,7 +122,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Philippines policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fdi_inflows_usd": {
       "value": 9440028898.64281,
@@ -155,6 +159,12 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Philippines bond yields rising modestly on inflation expectations from oil shock.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -271,10 +281,49 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Philippines military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 48.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 45.8,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Philippines national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 240,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.65,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "growth",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Philippines investment risk modestly elevated from oil shock and global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.4,
       "confidence": 0.7,
@@ -299,23 +348,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 38.5,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 34.6
-    },
-    "political_risk_premium_bps": {
-      "value": 272,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.55,
       "confidence": 0.7,
@@ -323,18 +355,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.279,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Philippines investment risk rising from oil shock exposure and energy supply vulnerability. Current account pressure and inflation risks compound.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "decrease",
@@ -354,9 +374,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "Philippines political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Philippines political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -374,14 +394,14 @@
       {
         "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
         "value": 3.21260487006347,
-        "reason": "Absolute change 1.6126 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 1.6 vs primary 3.21260487006347 (100.8% diff)",
+        "reason": "Absolute change 1.6126 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 1.6 vs primary 3.21260487006347 (100.8% diff)",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.unemployment_rate_pct",
         "value": 2.235,
-        "reason": "Absolute change 1.6650 exceeds 3\u00d7 typical (0.3) = 0.8999999999999999; Alternative source (IMF WEO) disagrees: 3.9 vs primary 2.235 (42.7% diff)",
+        "reason": "Absolute change 1.6650 exceeds 3× typical (0.3) = 0.8999999999999999; Alternative source (IMF WEO) disagrees: 3.9 vs primary 2.235 (42.7% diff)",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -392,17 +412,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 5.7% (declining), inflation at 3.2% (rising). Supply chain chokepoint exposure is critically elevated at 0.502 amid the Strait of Hormuz crisis. Investment risk score at 0.279, trending declining.",
+    "executive_summary": "The Philippines faces GDP pressure from energy costs as a significant net energy importer. Inflation is rising from energy cost pass-through. The peso is under modest depreciation pressure. Government bond yields modestly higher. No country-specific headline events this week beyond broader ASEAN impacts from the oil shock.",
     "key_changes_this_week": [
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising",
-      "Overall Investment Risk Score: declining"
+      "GDP declining from energy cost pressure",
+      "Inflation rising from energy pass-through",
+      "Government bond yields modestly higher",
+      "Investment risk mildly elevated"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Extreme supply chain chokepoint exposure (0.502) creates acute risk for trade-dependent sectors. Philippines investment risk elevated. Energy dependency is key vulnerability.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Philippines GDP under pressure from energy import costs. BPO sector partially insulated from energy shock. Remittance flows provide current account buffer. BSP faces inflation-growth tradeoff. Fiscal position adequate. South China Sea tensions remain background risk.",
+    "investor_implications": "Philippine equities face energy cost headwinds. PSEi tracking EM weakness. BPO sector relatively defensive. Banking sector stable. PHP hedging recommended given energy import pressure. Government bonds at modest spread widening risk.",
+    "data_quality_note": "Data quality within acceptable parameters. Investment risk mildly elevated."
   },
   "code": "PHL",
   "name": "Philippines",
@@ -523,10 +544,10 @@
       "resource_self_sufficiency_index": 0.4,
       "energy_independence_index": 0.3,
       "supply_chain_chokepoint_exposure": 0.502,
-      "composite_national_power_index": 38.5,
-      "political_risk_premium_bps": 272,
+      "composite_national_power_index": 48.5,
+      "political_risk_premium_bps": 240,
       "market_accessibility_score": 0.55,
-      "overall_investment_risk_score": 0.279
+      "overall_investment_risk_score": 0.65
     }
   },
   "economy": {
@@ -600,7 +621,23 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 65.89
+    "trade_openness_pct": 65.89,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 59.516,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 6058.94,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

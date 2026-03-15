@@ -3,7 +3,7 @@
   "country_name": "Brazil",
   "tier": 1,
   "region": "latin_america",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -21,8 +21,8 @@
       "run_id": "2026-W11",
       "trend": "growth",
       "trend_confidence": 0.78,
-      "trend_reasoning": "Brazil as net oil exporter benefits from price surge. Geographically insulated from Gulf conflict. Pre-salt production boosting export revenues. Commodity basket (iron, soy, oil) all elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Brazil as net oil exporter benefits from price surge. Pre-salt production boosting export revenues. Geographically insulated from Gulf conflict. Commodity basket (iron, soy, oil) all elevated.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 10310.5488778166,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Brazil as oil exporter benefits from price surge. Domestic inflation contained by energy self-sufficiency. Imported goods inflation the main pressure point.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Brazil inflation broadly stable as oil exporter status shields from energy cost pass-through.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 5.97,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.78,
+      "trend_confidence": 0.75,
       "trend_reasoning": "Brazil current account improving as oil/commodity prices surge and non-Hormuz export routes remain secure. Trade surplus widening.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 81.8554431216383,
@@ -67,9 +67,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Brazil debt ratio improving as oil/commodity windfall boosts government revenue. Fiscal surplus expanding or deficit narrowing.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Brazil debt ratio improving as commodity windfall boosts government revenue.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 329732443813.378,
@@ -97,7 +97,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Brazil policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 5.2275,
@@ -105,17 +109,21 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "stable",
+      "trend": "growth",
       "trend_confidence": 0.62,
-      "trend_reasoning": "Brazil currency stable to modestly stronger on commodity exports. Oil windfall supports but USD safe-haven demand provides counterweight.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Brazil currency supported by commodity export windfall. Oil/gas revenue boosting external position.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 13.53,
       "confidence": 0.97,
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10b",
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Brazil bond yields stable to declining on improved fiscal position from commodity windfall.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "equity_index_level": {
       "value": 183250.14,
@@ -273,9 +281,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W10",
       "trend": "stable",
-      "trend_confidence": 0.62,
-      "trend_reasoning": "Brazil defense spending broadly stable. SIPRI global arms transfers +9.2% reflects broad rearmament trend but Brazil not at center of current conflict dynamics.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Brazil military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "active_military_personnel": {
       "value": 376000,
@@ -330,6 +338,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 57.3,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 52.9,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Brazil national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 230,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.724,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Brazil investment risk improving on commodity windfall. Fiscal position strengthening. Non-Hormuz export routes secure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.85,
       "confidence": 0.7,
@@ -354,23 +395,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 50.9,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 45.3
-    },
-    "political_risk_premium_bps": {
-      "value": 377,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.6,
       "confidence": 0.7,
@@ -378,18 +402,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.305,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "growth",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Brazil investment risk improving as oil/commodity windfall boosts fiscal position and economic growth. Non-Hormuz export routes provide strategic advantage.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -409,9 +421,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "Brazil political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Brazil political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -437,14 +449,14 @@
       {
         "factor_path": "economy.macroeconomic.unemployment_rate_pct",
         "value": 5.97,
-        "reason": "Absolute change 1.1300 exceeds 3\u00d7 typical (0.3) = 0.8999999999999999",
+        "reason": "Absolute change 1.1300 exceeds 3× typical (0.3) = 0.8999999999999999",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.public_debt_pct_gdp",
         "value": 81.8554431216383,
-        "reason": "Absolute change 9.5446 exceeds 3\u00d7 typical (2.0) = 6.0",
+        "reason": "Absolute change 9.5446 exceeds 3× typical (2.0) = 6.0",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -455,16 +467,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 3.4% (rising), inflation at 4.4% (stable). Political risk premium stands at 377 bps, signaling elevated sovereign risk.",
+    "executive_summary": "Brazil is a net beneficiary of the current geopolitical environment as a geographically insulated net oil exporter. GDP growth is improving on the commodity windfall — agricultural, energy, and metals exports all benefit from elevated prices and supply disruption elsewhere. Current account strengthening. Investment risk is declining. The Section 301 forced labor investigation includes Brazil but represents a manageable headwind.",
     "key_changes_this_week": [
-      "Gdp Real Growth %: rising",
-      "Overall Investment Risk Score: rising"
+      "Commodity basket elevated — oil, agricultural, and metals exports benefiting",
+      "Section 301 forced labor investigation includes Brazil among 60 countries",
+      "Current account improving on commodity windfall",
+      "Fiscal position improving — debt-to-GDP declining"
     ],
-    "outlook": "GDP growth momentum remains positive.",
-    "investor_implications": "High energy independence (0.850) provides a buffer against the oil price shock. Brazil investment risk improving. Energy windfall creates opportunistic entry points.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Brazil well-positioned as diversified commodity exporter in geographically insulated location. GDP growth trajectory positive. Fiscal consolidation benefiting from revenue uplift. Real strengthening on export revenues. Section 301 forced labor investigation represents medium-term risk but unlikely to offset commodity tailwind near-term.",
+    "investor_implications": "Brazilian equities attractive in current environment — energy, agriculture, and mining sectors directly benefiting. BRL strengthening supports dollar-denominated returns. Government bonds improving. Ibovespa may outperform EM peers. Petrobras and Vale well-positioned. Political risk remains from Lula-era fiscal expansion but commodity windfall provides buffer.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "BRA",
   "name": "Brazil",
@@ -590,10 +604,10 @@
       "resource_self_sufficiency_index": 0.85,
       "energy_independence_index": 0.85,
       "supply_chain_chokepoint_exposure": 0.161,
-      "composite_national_power_index": 50.9,
-      "political_risk_premium_bps": 377,
+      "composite_national_power_index": 57.3,
+      "political_risk_premium_bps": 230,
       "market_accessibility_score": 0.6,
-      "overall_investment_risk_score": 0.305
+      "overall_investment_risk_score": 0.724
     }
   },
   "economy": {
@@ -674,7 +688,30 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 35.58
+    "trade_openness_pct": 35.58,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 5.2433,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 14.31,
+        "confidence": 0.88,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 177653.0,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

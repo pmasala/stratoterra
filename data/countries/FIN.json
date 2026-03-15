@@ -3,7 +3,7 @@
   "country_name": "Finland",
   "tier": 2,
   "region": "europe",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -279,7 +279,7 @@
       "value": null,
       "trend": "growth",
       "trend_confidence": 0.82,
-      "trend_reasoning": "Finland defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% \u2014 Europe now top recipient region.",
+      "trend_reasoning": "Finland defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% — Europe now top recipient region.",
       "trend_updated": "2026-03-10T12:00:00Z",
       "confidence": 0.82,
       "last_updated": "2026-03-10T12:00:00Z",
@@ -289,6 +289,35 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 60.9,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 65.1
+    },
+    "political_risk_premium_bps": {
+      "value": 10,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.868,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Finland investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.55,
       "confidence": 0.7,
@@ -313,23 +342,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 42.9,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 38.4
-    },
-    "political_risk_premium_bps": {
-      "value": 0,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.85,
       "confidence": 0.7,
@@ -337,18 +349,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.119,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Finland investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -392,17 +392,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 0.4% (declining), inflation at 1.6% (rising). Investment risk score at 0.119, trending declining.",
+    "executive_summary": "Finland's economy is broadly stable with limited direct impact from the Hormuz crisis. As a NATO member bordering Russia, the stalled Ukraine peace talks have direct security implications. Energy costs modestly elevated but nuclear power base and renewables provide insulation. No significant country-specific events this week.",
     "key_changes_this_week": [
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising",
-      "Overall Investment Risk Score: declining"
+      "Russia-Ukraine peace talks stalled — security implications for Finland",
+      "Energy costs modestly elevated but nuclear/renewables provide buffer",
+      "No significant country-specific events",
+      "Fiscal position stable"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Market accessibility score of 0.850 supports capital flows. Finland investment risk modestly elevated. European-wide energy and market stress weighing.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Finland GDP broadly stable with energy mix providing insulation. NATO membership provides security anchor — defense spending commitment on track. Russian border management continues. EU membership provides economic stability. Tech sector (Nokia, gaming) partially insulated from energy dynamics.",
+    "investor_implications": "Finnish equities offer defensive Nordic exposure. OMX Helsinki relatively resilient. Government bonds safe-haven. Defense sector benefiting from NATO spending. Nokia and tech plays provide non-energy exposure. EUR dynamics drive currency risk. Monitor Russia border situation.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "FIN",
   "name": "Finland",
@@ -522,10 +523,10 @@
       "resource_self_sufficiency_index": 0.55,
       "energy_independence_index": 0.5,
       "supply_chain_chokepoint_exposure": 0.257,
-      "composite_national_power_index": 42.9,
-      "political_risk_premium_bps": 0,
+      "composite_national_power_index": 60.9,
+      "political_risk_premium_bps": 10,
       "market_accessibility_score": 0.85,
-      "overall_investment_risk_score": 0.119
+      "overall_investment_risk_score": 0.868
     }
   },
   "economy": {
@@ -606,7 +607,23 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 83.46
+    "trade_openness_pct": 83.46,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 0.87138,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 3.28,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

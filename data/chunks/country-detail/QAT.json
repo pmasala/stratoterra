@@ -3,7 +3,7 @@
   "country_name": "Qatar",
   "tier": 2,
   "region": "middle_east",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -20,9 +20,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "strong_decrease",
-      "trend_confidence": 0.88,
-      "trend_reasoning": "Qatar GDP under severe pressure from Hormuz disruption. LNG exports completely blocked. High energy prices cannot be monetized while export channels are blocked.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.9,
+      "trend_reasoning": "World's largest LNG exporter completely offline. Qatar F-15QA fighters now in direct combat — intercepted Iranian bombers targeting US base. Economy paralyzed by Hormuz closure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 76688.6941743178,
@@ -37,10 +37,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Qatar facing import cost pressure from disrupted supply chains. Energy subsidies buffer consumers but fiscal cost rising. Food import costs increasing as Gulf shipping disrupted.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_growth",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Qatar facing severe supply chain disruption from Hormuz blockade. Import costs surging. Essential goods supply constrained.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 0.13,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "strong_decrease",
-      "trend_confidence": 0.85,
-      "trend_reasoning": "Qatar current account deteriorating as Hormuz disruption blocks energy exports. High oil/gas prices cannot be monetized. Import costs rising. SWF drawdowns support consumption.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.88,
+      "trend_reasoning": "Qatar current account severely impacted by Hormuz blockade. Oil/gas export revenue sharply curtailed. Import costs rising from alternative routes.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 53987415590.4034,
@@ -73,10 +73,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.75,
-      "trend_reasoning": "Qatar debt ratio rising as revenue drops from export disruption while spending (defense, subsidies) increases. SWF drawdowns buffer but deplete reserves.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Qatar debt ratio rising sharply as revenue drops from export disruption while defense and subsidy spending increases.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 6.1,
@@ -111,7 +111,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Qatar policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fdi_inflows_usd": {
       "value": 460164835.164835,
@@ -144,10 +148,16 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "stable",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Qatar currency under pressure from revenue collapse due to Hormuz blockade.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "strong_growth",
       "trend_confidence": 0.8,
-      "trend_reasoning": "Qatar currency pegged to USD. Peg under pressure from fiscal strain but central bank defending. FX reserves adequate for now.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Qatar bond yields surging on revenue collapse and fiscal deterioration from Hormuz blockade.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -164,7 +174,7 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "note": "Very high population growth 7.32% \u2014 likely migration-driven (Gulf state pattern)"
+      "note": "Very high population growth 7.32% — likely migration-driven (Gulf state pattern)"
     },
     "life_expectancy": {
       "value": 82.368,
@@ -263,10 +273,10 @@
     },
     "military_expenditure_pct_gdp": {
       "value": null,
-      "trend": "growth",
+      "trend": "strong_growth",
       "trend_confidence": 0.8,
-      "trend_reasoning": "Qatar increasing defense spending in response to Gulf conflict. Regional arms race accelerating. SIPRI data shows Middle East arms imports up despite recent decline.",
-      "trend_updated": "2026-03-10T12:00:00Z",
+      "trend_reasoning": "Qatar defense spending surging in response to direct military threat from Hormuz conflict. GDP decline increases ratio further.",
+      "trend_updated": "2026-03-14T00:00:00Z",
       "confidence": 0.8,
       "last_updated": "2026-03-10T12:00:00Z",
       "source": "agent_10_trend_estimator",
@@ -275,6 +285,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 56.6,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 61.5,
+      "trend": "strong_decrease",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Qatar national power declining sharply from Hormuz blockade. Economic base undermined. Military response limited.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 70,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.692,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "strong_growth",
+      "trend_confidence": 0.88,
+      "trend_reasoning": "Qatar investment risk at extreme levels from Hormuz blockade. Revenue collapsed. Fiscal position deteriorating.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.3,
       "confidence": 0.7,
@@ -299,23 +342,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 38.6,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 34.7
-    },
-    "political_risk_premium_bps": {
-      "value": 116,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.65,
       "confidence": 0.7,
@@ -323,18 +349,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.098,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Qatar investment risk elevated significantly. Hormuz disruption blocks primary economic activity. SWF reserves buffer but not indefinitely. Conflict duration is key uncertainty.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "decrease",
@@ -354,9 +368,9 @@
     },
     "political_stability_trend": {
       "value": "decrease",
-      "confidence": 0.78,
-      "reasoning": "Qatar political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.75,
+      "reasoning": "Qatar political stability under pressure from economic crisis caused by Hormuz blockade. Social contract strained.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -366,7 +380,7 @@
       {
         "factor_path": "economy.macroeconomic.total_exports_usd",
         "value": 161692857142.857,
-        "reason": "Change 29.1% exceeds 3\u00d7 typical (5.0%) = 15.0%; Event context: QAT has active event triggers",
+        "reason": "Change 29.1% exceeds 3× typical (5.0%) = 15.0%; Event context: QAT has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -377,22 +391,19 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Qatar faces critical-level risks this week: Qatar: Extreme chokepoint exposure at 0.916 amid Hormuz crisis; Qatar: Hormuz crisis direct impact. GDP growth at 2.4% (declining sharply), inflation at 1.3% (rising). Supply chain chokepoint exposure is critically elevated at 0.916 amid the Strait of Hormuz crisis. Investment risk score at 0.098, trending declining.",
+    "executive_summary": "Qatar faces extreme economic disruption as the world's largest LNG exporter is effectively offline due to the Hormuz blockade. GDP growth in strong decline. Qatar's F-15QA fighters intercepted Iranian bombers targeting US bases in the Gulf, making Qatar a direct combatant. Chokepoint exposure at critical 0.916. Investment risk extremely elevated. All major revenue streams are disrupted.",
     "key_changes_this_week": [
-      "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations",
-      "Qatar: Extreme chokepoint exposure at 0.916 amid Hormuz crisis",
-      "Qatar: Hormuz crisis direct impact",
-      "Qatar: GDP growth in sharp decline",
-      "Gdp Real Growth %: declining sharply",
-      "Inflation Cpi %: rising",
-      "Political Stability: declining",
-      "Overall Investment Risk Score: declining"
+      "World's largest LNG exporter effectively offline from Hormuz blockade",
+      "F-15QA fighters intercept Iranian bombers — Qatar enters direct combat",
+      "GDP growth in strong decline from total export disruption",
+      "Chokepoint exposure at critical 0.916",
+      "Defense spending surging from direct military engagement"
     ],
-    "outlook": "Near-term outlook for Qatar is highly uncertain given active crisis conditions. Qatar investment risk elevated. Underweight until Hormuz reopens. Political stability is declining, adding to investor uncertainty.",
-    "investor_implications": "Active crisis conditions warrant heightened caution and defensive positioning. Extreme supply chain chokepoint exposure (0.916) creates acute risk for trade-dependent sectors. High energy independence (1.000) provides a buffer against the oil price shock.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Qatar faces catastrophic near-term outlook with LNG exports blocked and direct military engagement. Sovereign wealth fund (QIA) provides extensive fiscal buffer but revenue replacement is impossible at current disruption level. Doha's role as diplomatic mediator compromised by combat participation. All economic planning assumptions invalidated by Hormuz closure.",
+    "investor_implications": "Qatar assets face severe near-term risk despite sovereign wealth buffer. QSE under extreme pressure. LNG supply contracts face force majeure considerations. Qatar sovereign bonds supported by wealth fund but revenue disruption is real. All Qatar investment thesis depends entirely on Hormuz resolution timeline. QIA may need to liquidate foreign assets if closure extends.",
+    "data_quality_note": "Multiple critical alerts active. Data quality impacted by wartime conditions and unprecedented trade disruption."
   },
   "code": "QAT",
   "name": "Qatar",
@@ -511,10 +522,10 @@
       "resource_self_sufficiency_index": 0.3,
       "energy_independence_index": 1.0,
       "supply_chain_chokepoint_exposure": 0.916,
-      "composite_national_power_index": 38.6,
-      "political_risk_premium_bps": 116,
+      "composite_national_power_index": 56.6,
+      "political_risk_premium_bps": 70,
       "market_accessibility_score": 0.65,
-      "overall_investment_risk_score": 0.098
+      "overall_investment_risk_score": 0.692
     }
   },
   "economy": {
@@ -588,7 +599,16 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 107.78
+    "trade_openness_pct": 107.78,
+    "financial": {
+      "equity_index_level": {
+        "value": 10485.94,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

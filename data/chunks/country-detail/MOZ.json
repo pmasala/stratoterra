@@ -202,6 +202,31 @@
   "military": {},
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 10.3,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 10.8
+    },
+    "political_risk_premium_bps": {
+      "value": 900,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.532,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.55,
       "confidence": 0.7,
@@ -226,22 +251,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 5.0,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100"
-    },
-    "political_risk_premium_bps": {
-      "value": 939,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.2,
       "confidence": 0.7,
@@ -249,14 +258,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.513,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk"
     }
   },
   "metadata": {
@@ -264,14 +265,14 @@
       {
         "factor_path": "economy.macroeconomic.public_debt_pct_gdp",
         "value": 71.7932488373315,
-        "reason": "Absolute change 25.4068 exceeds 3\u00d7 typical (2.0) = 6.0; Alternative source (IMF WEO) disagrees: 97.2 vs primary 71.7932488373315 (26.1% diff)",
+        "reason": "Absolute change 25.4068 exceeds 3× typical (2.0) = 6.0; Alternative source (IMF WEO) disagrees: 97.2 vs primary 71.7932488373315 (26.1% diff)",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.current_account_balance_pct_gdp",
         "value": -10.9610583800383,
-        "reason": "Absolute change 28.9389 exceeds 3\u00d7 typical (1.0) = 3.0; Alternative source (IMF WEO) disagrees: -39.9 vs primary -10.9610583800383 (72.5% diff)",
+        "reason": "Absolute change 28.9389 exceeds 3× typical (1.0) = 3.0; Alternative source (IMF WEO) disagrees: -39.9 vs primary -10.9610583800383 (72.5% diff)",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -325,10 +326,10 @@
       "resource_self_sufficiency_index": 0.55,
       "energy_independence_index": 0.7,
       "supply_chain_chokepoint_exposure": 0.401,
-      "composite_national_power_index": 5.0,
-      "political_risk_premium_bps": 939,
+      "composite_national_power_index": 10.3,
+      "political_risk_premium_bps": 900,
       "market_accessibility_score": 0.2,
-      "overall_investment_risk_score": 0.513
+      "overall_investment_risk_score": 0.532
     }
   },
   "narrative": {

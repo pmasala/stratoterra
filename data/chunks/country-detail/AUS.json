@@ -3,7 +3,7 @@
   "country_name": "Australia",
   "tier": 1,
   "region": "oceania",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -19,10 +19,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Australia benefits as LNG premium surges from Qatari supply disruption. Gold at record highs boosts mining revenues. AUD at best levels since 2023. Commodity currency safe haven flows.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Australia GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 64603.9856308464,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Australia as oil exporter benefits from price surge. Domestic inflation contained by energy self-sufficiency. Imported goods inflation the main pressure point.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Australia inflation broadly stable with modest upward pressure from global oil prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 4.09,
@@ -55,10 +55,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Australia current account improving as oil/commodity prices surge and non-Hormuz export routes remain secure. Trade surplus widening.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Australia current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 57.8834285733848,
@@ -66,10 +66,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Australia debt ratio improving as oil/commodity windfall boosts government revenue. Fiscal surplus expanding or deficit narrowing.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Australia debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 60404058269.2777,
@@ -97,7 +97,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Australia policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 1.4206,
@@ -105,17 +109,21 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Australian dollar at best levels since 2023. Rising commodity prices, hawkish RBA, China stimulus, and safe-haven commodity currency flows all supporting AUD.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Australia currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 4.83,
       "confidence": 0.55,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Australia bond yields broadly stable.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "equity_index_level": {
       "value": 8901.2,
@@ -265,10 +273,10 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10",
-      "trend": "stable",
-      "trend_confidence": 0.62,
-      "trend_reasoning": "Australia defense spending broadly stable. SIPRI global arms transfers +9.2% reflects broad rearmament trend but Australia not at center of current conflict dynamics.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Australia defense spending growing under NATO commitments. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "active_military_personnel": {
       "value": 58910,
@@ -335,6 +343,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 70.7,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 72.4,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Australia national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.879,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Australia investment risk broadly unchanged.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.9,
       "confidence": 0.7,
@@ -359,23 +400,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 56.8,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 50.5
-    },
-    "political_risk_premium_bps": {
-      "value": 0,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.9,
       "confidence": 0.7,
@@ -383,18 +407,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.085,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "growth",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Australia investment risk improving as oil/commodity windfall boosts fiscal position and economic growth. Non-Hormuz export routes provide strategic advantage.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -414,9 +426,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "Australia political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Australia political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -434,7 +446,7 @@
       {
         "factor_path": "economy.macroeconomic.public_debt_pct_gdp",
         "value": 57.8834285733848,
-        "reason": "Absolute change 6.8834 exceeds 3\u00d7 typical (2.0) = 6.0; Event context: AUS has active event triggers",
+        "reason": "Absolute change 6.8834 exceeds 3× typical (2.0) = 6.0; Event context: AUS has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -445,16 +457,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 1.4% (rising), inflation at 3.2% (stable). Energy independence index at 0.900. The economy remains broadly stable with no major disruptions this week.",
+    "executive_summary": "Australia is modestly impacted by the global energy shock. As a net energy exporter (coal, LNG), elevated commodity prices provide a revenue uplift, though the export mix is more coal/LNG than crude oil. Defense spending is trending up amid the broader Indo-Pacific security environment, particularly given North Korea's 10-missile salvo. The Section 301 investigations include Australia in the forced labor probe.",
     "key_changes_this_week": [
-      "Gdp Real Growth %: rising",
-      "Overall Investment Risk Score: rising"
+      "Commodity prices elevated — coal and LNG exports benefit",
+      "Section 301 forced labor investigation includes Australia",
+      "Defense spending trending up amid Indo-Pacific security concerns",
+      "Government debt rising modestly"
     ],
-    "outlook": "GDP growth momentum remains positive.",
-    "investor_implications": "High energy independence (0.900) provides a buffer against the oil price shock. Market accessibility score of 0.900 supports capital flows. Australia investment risk improving. Energy windfall creates opportunistic entry points.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Australia positioned as relative beneficiary of energy crisis through coal and LNG exports. Current account mildly deteriorating despite commodity tailwind due to broader trade impacts. Indo-Pacific security environment demanding increased defense spending. Inflation stable for now but monitoring energy pass-through. Housing market and consumer spending remain resilient.",
+    "investor_implications": "Australian equities modestly positive — resource sector benefiting from elevated commodity prices. AUD relatively supported. Banking sector stable. Defense spending growth creates opportunities. Watch for indirect impacts from China trade slowdown if Section 301 investigations escalate. Government bond yields stable.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "AUS",
   "name": "Australia",
@@ -579,10 +593,10 @@
       "resource_self_sufficiency_index": 0.9,
       "energy_independence_index": 0.9,
       "supply_chain_chokepoint_exposure": 0.274,
-      "composite_national_power_index": 56.8,
+      "composite_national_power_index": 70.7,
       "political_risk_premium_bps": 0,
       "market_accessibility_score": 0.9,
-      "overall_investment_risk_score": 0.085
+      "overall_investment_risk_score": 0.879
     }
   },
   "economy": {
@@ -656,7 +670,37 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 47.15
+    "trade_openness_pct": 47.15,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 1.4197,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 4.95,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 8617.1,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "central_bank_rate": {
+        "value": 3.85,
+        "confidence": 0.88,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

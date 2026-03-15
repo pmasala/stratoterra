@@ -3,7 +3,7 @@
   "country_name": "China",
   "tier": 1,
   "region": "east_asia",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -20,9 +20,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.75,
-      "trend_reasoning": "China relatively insulated from Hormuz crisis — diversified oil imports, SPR reserves, Russian pipeline supply. Two Sessions tech/AI push signals continued growth focus. But 10% additional US tariff and oil price surge create headwinds.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "China relatively insulated from Hormuz crisis via diversified oil imports and Russian pipeline supply. But Section 301 overcapacity investigations across 21 sectors plus forced labor probe against 60 countries create major new trade headwinds. Oil price surge adds modest cost pressure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 13303.1481543868,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "China facing near-zero/deflationary pressures from weak domestic demand and property sector correction. Oil price surge partially offsets but PBoC maintaining accommodative stance. Two Sessions signal stimulus continuation.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.6,
+      "trend_reasoning": "China inflation broadly stable with modest upward pressure from global oil prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 4.615,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "China current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "China current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 3456024808739.12,
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "China debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "China debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4.2,
@@ -97,7 +97,11 @@
       "confidence": 0.97,
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10b",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "China policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 6.918,
@@ -106,9 +110,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "CNY broadly stable. PBoC managing controlled depreciation. Oil costs offset by trade surplus. Capital controls effective. Two Sessions signals stability priority.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.55,
+      "trend_reasoning": "China currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "equity_index_level": {
       "value": 4122.68,
@@ -143,7 +147,11 @@
       "confidence": 0.97,
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10b",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "China bond yields broadly stable.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "equity_index_daily_change_pct": {
       "value": -1.43,
@@ -272,10 +280,10 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10",
-      "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "China continuing military modernization. Arms imports dropped 72% reflecting domestic production capability. Two Sessions signaled continued tech/defense focus. PLA budget expected to increase 7-8%.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "China military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "military_expenditure_trend": {
       "value": "growth",
@@ -372,6 +380,39 @@
     }
   },
   "derived": {
+    "composite_national_power_index": {
+      "value": 73.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 65.1,
+      "trend": "stable",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "China national power stable. US distracted by Iran war provides strategic window. But Section 301 investigations (overcapacity + forced labor) across 21 sectors represent major new trade confrontation. Two Sessions tech/AI push continues.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 200,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.518,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "China investment risk broadly unchanged.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.65,
       "confidence": 0.7,
@@ -396,23 +437,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 84.0,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 74.1
-    },
-    "political_risk_premium_bps": {
-      "value": 308,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.45,
       "confidence": 0.7,
@@ -420,18 +444,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.271,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "China investment risk broadly unchanged. Global oil shock creates background pressure but no direct exposure to Gulf conflict. Fundamentals stable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -451,9 +463,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "China political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "China political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -466,13 +478,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 5.0% (stable), inflation at 0.2% (stable). Political risk premium stands at 308 bps, signaling elevated sovereign risk.",
-    "key_changes_this_week": [],
-    "outlook": "GDP growth outlook is broadly stable. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "China investment risk stable. Monitor for second-order effects from global energy crisis.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "executive_summary": "China remains relatively insulated from the Hormuz crisis via diversified oil imports and Russian pipeline supply. GDP growth is stable at ~5.0%. However, the USTR Section 301 overcapacity investigation targeting 21 sectors across 16 economies represents a major new trade headwind, with China as the primary target. The Two Sessions signaled continued stimulus orientation. Top graduates are shifting from tech/finance to manufacturing, reflecting state industrial policy priorities.",
+    "key_changes_this_week": [
+      "USTR Section 301 overcapacity investigation targets China across 21 sectors",
+      "USTR forced labor investigation includes China among 60 countries",
+      "China's top graduates shift to manufacturing sector from tech and finance",
+      "Russian pipeline supply buffers Hormuz disruption exposure"
+    ],
+    "outlook": "GDP growth trajectory stable near 5% with modest upward bias from fiscal stimulus. Section 301 investigations pose medium-term trade headwinds but are unlikely to bite before H2 2026. Oil price surge has limited direct impact due to diversified supply routes. Debt ratio rising modestly as government supports growth.",
+    "investor_implications": "China equities selectively attractive given relative insulation from Middle East crisis. Watch for Section 301 tariff escalation timeline. Manufacturing and industrial policy sectors favored over consumer. CNY broadly stable against USD. Bond market relatively calm versus global peers.",
+    "data_quality_note": "Data quality within acceptable parameters. China-specific economic data subject to standard opacity caveats."
   },
   "code": "CHN",
   "name": "China",
@@ -614,10 +631,10 @@
       "resource_self_sufficiency_index": 0.65,
       "energy_independence_index": 0.55,
       "supply_chain_chokepoint_exposure": 0.494,
-      "composite_national_power_index": 84.0,
-      "political_risk_premium_bps": 308,
+      "composite_national_power_index": 73.5,
+      "political_risk_premium_bps": 200,
       "market_accessibility_score": 0.45,
-      "overall_investment_risk_score": 0.271
+      "overall_investment_risk_score": 0.518
     }
   },
   "economy": {
@@ -705,6 +722,29 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 6.8966,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 1.81,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 4095.45,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
     }
   },
   "institutions": {

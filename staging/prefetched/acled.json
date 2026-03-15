@@ -1,17 +1,31 @@
 {
   "source_id": "acled",
-  "fetched_at": "2026-03-14T21:01:48.470837+00:00",
+  "fetched_at": "2026-03-14T22:07:50.518839+00:00",
   "records": [],
-  "skipped": [
+  "skipped": [],
+  "errors": [
     {
-      "reason": "ACLED_API_KEY or ACLED_EMAIL not set in .env"
+      "url": "https://acleddata.com/api/acled/read",
+      "error": "403 Client Error: Forbidden for url: https://acleddata.com/api/acled/read?_format=json&event_date=2026-03-04%7C2026-03-14&event_date_where=BETWEEN&limit=5000&page=1",
+      "timestamp": "2026-03-14T22:07:51.093271+00:00"
     }
   ],
-  "errors": [],
   "stats": {
-    "requests_made": 0,
-    "requests_failed": 0,
+    "requests_made": 1,
+    "requests_failed": 1,
     "cache_hits": 0,
-    "elapsed_seconds": 0.0
+    "elapsed_seconds": 0.6
+  },
+  "date_range": {
+    "start": "2026-03-04",
+    "end": "2026-03-14"
+  },
+  "summary": {
+    "total_events": 0,
+    "total_unfiltered": 0,
+    "countries_with_events": 0,
+    "total_fatalities": 0,
+    "by_country": {},
+    "by_event_type": {}
   }
 }

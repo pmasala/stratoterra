@@ -20,9 +20,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Bangladesh heavily dependent on Gulf oil transiting Hormuz. Oil at $116/bbl adds 1-2pp to import bill as % of GDP. Manufacturing and transport sectors hit hardest. G7 SPR release provides partial temporary relief.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Bangladesh facing GDP headwinds from oil shock at $100+/bbl. Energy costs rising for oil-importing economy.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 2593.41611680774,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Bangladesh facing inflation pressure from oil at $116/bbl. Energy costs feeding through to transportation, manufacturing, and food prices. Central bank faces stagflation dilemma.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Bangladesh facing inflation pressure from oil at $100+/bbl feeding through energy, transport, and food prices. IEA 400M barrel SPR release provides only partial relief.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.778,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.8,
-      "trend_reasoning": "Bangladesh current account worsening from oil import bill surge at $116/bbl. Energy import costs adding 1-2pp to deficit. Trade balance deteriorating.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Bangladesh current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 21394795733.0405,
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Bangladesh debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Bangladesh debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4.9,
@@ -111,7 +111,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Bangladesh policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 122.242,
@@ -120,9 +124,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Bangladesh currency under pressure from widening trade deficit due to oil shock. Terms of trade deteriorating. Central bank may need to intervene.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Bangladesh currency under pressure from widening trade deficit due to oil shock. Terms of trade deteriorating.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fdi_inflows_usd": {
       "value": 1314541323.36924,
@@ -155,6 +159,12 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Bangladesh bond yields rising modestly on inflation expectations from oil shock.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -273,10 +283,49 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Bangladesh military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 45.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 42.3,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Bangladesh national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 380,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.604,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "growth",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Bangladesh investment risk modestly elevated from oil shock and global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.35,
       "confidence": 0.7,
@@ -301,23 +350,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 26.1,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 23.9
-    },
-    "political_risk_premium_bps": {
-      "value": 654,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.3,
       "confidence": 0.7,
@@ -325,18 +357,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.334,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Bangladesh investment risk rising from oil shock exposure and energy supply vulnerability. Current account pressure and inflation risks compound.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "decrease",
@@ -356,9 +376,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "Bangladesh political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Bangladesh political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -371,18 +391,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 4.2% (declining), inflation at 10.5% (rising). Political risk premium stands at 654 bps, signaling elevated sovereign risk. Investment risk score at 0.334, trending declining.",
+    "executive_summary": "Bangladesh is heavily dependent on Gulf oil transiting the Hormuz Strait, making it acutely vulnerable to the current crisis. GDP growth is declining as oil costs surge. The taka is weakening. Inflation rising from energy cost pass-through. Political risk premium at 654 bps. Manufacturing sector (garments) faces dual pressure from energy costs and USTR Section 301 forced labor investigation.",
     "key_changes_this_week": [
-      "Bangladesh: Political risk premium at 654 bps",
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising",
-      "Overall Investment Risk Score: declining"
+      "Hormuz disruption severely impacts energy imports",
+      "Section 301 forced labor investigation includes Bangladesh",
+      "GDP declining from energy cost pressure",
+      "Taka weakening on deteriorating trade balance"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Low energy independence (0.250) makes the economy vulnerable to the oil price shock. Elevated political risk premium (654 bps) suggests caution on sovereign exposure. Bangladesh investment risk elevated. Energy dependency is key vulnerability.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Bangladesh faces significant near-term headwinds from energy costs. Garment export sector under dual threat from energy costs and Section 301 forced labor investigation. Current account deteriorating. Taka depreciation likely to continue. Government fiscal space limited for energy subsidies.",
+    "investor_implications": "Bangladesh equities carry elevated risk from energy cost exposure and trade policy uncertainty. Garment sector — the primary foreign exchange earner — faces Section 301 headwind. Taka depreciation adds currency risk. Foreign bond market access limited. Monitor energy subsidy policy and trade compliance.",
+    "data_quality_note": "Warning alert active for political risk premium. Investment risk rising."
   },
   "code": "BGD",
   "name": "Bangladesh",
@@ -500,10 +520,10 @@
       "resource_self_sufficiency_index": 0.35,
       "energy_independence_index": 0.25,
       "supply_chain_chokepoint_exposure": 0.384,
-      "composite_national_power_index": 26.1,
-      "political_risk_premium_bps": 654,
+      "composite_national_power_index": 45.5,
+      "political_risk_premium_bps": 380,
       "market_accessibility_score": 0.3,
-      "overall_investment_risk_score": 0.334
+      "overall_investment_risk_score": 0.604
     }
   },
   "economy": {

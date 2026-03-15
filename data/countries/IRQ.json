@@ -21,8 +21,8 @@
       "run_id": "2026-W11",
       "trend": "strong_decrease",
       "trend_confidence": 0.85,
-      "trend_reasoning": "Iraq caught between US operations and Iranian influence. Kurdish invasion of Iran from Iraqi Kurdistan threatens sovereignty. Oil exports via Hormuz disrupted. Internal security deteriorating.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Hormuz blockade severely disrupting oil exports. Iraq export revenue sharply curtailed. Limited alternative export routes.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 6073.61032342708,
@@ -37,10 +37,10 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10",
-      "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Iraq facing import cost pressure from disrupted supply chains. Energy subsidies buffer consumers but fiscal cost rising. Food import costs increasing as Gulf shipping disrupted.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_growth",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Iraq facing severe supply chain disruption from Hormuz blockade. Import costs surging. Essential goods supply constrained.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 15.485,
@@ -55,10 +55,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.85,
-      "trend_reasoning": "Iraq current account deteriorating as Hormuz disruption blocks energy exports. High oil/gas prices cannot be monetized. Import costs rising. SWF drawdowns support consumption.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_decrease",
+      "trend_confidence": 0.88,
+      "trend_reasoning": "Iraq current account severely impacted by Hormuz blockade. Oil/gas export revenue sharply curtailed. Import costs rising from alternative routes.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 100690954781.588,
@@ -73,10 +73,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.75,
-      "trend_reasoning": "Iraq debt ratio rising as revenue drops from export disruption while spending (defense, subsidies) increases. SWF drawdowns buffer but deplete reserves.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Iraq debt ratio rising sharply as revenue drops from export disruption while defense and subsidy spending increases.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 3.6,
@@ -144,10 +144,22 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "stable",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Iraq currency under pressure from revenue collapse due to Hormuz blockade.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "strong_growth",
       "trend_confidence": 0.8,
-      "trend_reasoning": "Iraq currency pegged to USD. Peg under pressure from fiscal strain but central bank defending. FX reserves adequate for now.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Iraq bond yields surging on revenue collapse and fiscal deterioration from Hormuz blockade.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "central_bank_policy_rate_pct": {
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Iraq policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -260,10 +272,10 @@
     },
     "military_expenditure_pct_gdp": {
       "value": null,
-      "trend": "growth",
+      "trend": "strong_growth",
       "trend_confidence": 0.8,
-      "trend_reasoning": "Iraq increasing defense spending in response to Gulf conflict. Regional arms race accelerating. SIPRI data shows Middle East arms imports up despite recent decline.",
-      "trend_updated": "2026-03-10T12:00:00Z",
+      "trend_reasoning": "Iraq defense spending surging in response to direct military threat from Hormuz conflict. GDP decline increases ratio further.",
+      "trend_updated": "2026-03-14T00:00:00Z",
       "confidence": 0.8,
       "last_updated": "2026-03-10T12:00:00Z",
       "source": "agent_10_trend_estimator",
@@ -272,6 +284,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 44.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 41.8,
+      "trend": "strong_decrease",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Iraq national power declining sharply from Hormuz blockade. Economic base undermined. Military response limited.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 800,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.474,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "strong_growth",
+      "trend_confidence": 0.88,
+      "trend_reasoning": "Iraq investment risk at extreme levels from Hormuz blockade. Revenue collapsed. Fiscal position deteriorating.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.55,
       "confidence": 0.7,
@@ -296,23 +341,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 33.6,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 30.4
-    },
-    "political_risk_premium_bps": {
-      "value": 1609,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.2,
       "confidence": 0.7,
@@ -320,18 +348,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.446,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Iraq investment risk elevated significantly. Hormuz disruption blocks primary economic activity. SWF reserves buffer but not indefinitely. Conflict duration is key uncertainty.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "decrease",
@@ -351,9 +367,9 @@
     },
     "political_stability_trend": {
       "value": "decrease",
-      "confidence": 0.78,
-      "reasoning": "Iraq political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.75,
+      "reasoning": "Iraq political stability under pressure from economic crisis caused by Hormuz blockade. Social contract strained.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -363,7 +379,7 @@
       {
         "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
         "value": -1.54525198318304,
-        "reason": "Absolute change 2.0453 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 0.5 vs primary -1.54525198318304 (409.1% diff); Event context: IRQ has active event triggers",
+        "reason": "Absolute change 2.0453 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 0.5 vs primary -1.54525198318304 (409.1% diff); Event context: IRQ has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -374,22 +390,19 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations. GDP growth at -1.5% (declining sharply), inflation at 1.5% (rising). Supply chain chokepoint exposure is critically elevated at 0.791 amid the Strait of Hormuz crisis. Political risk premium stands at 1609 bps, signaling elevated sovereign risk. Investment risk score at 0.446, trending declining.",
+    "executive_summary": "Iraq faces severe economic pressure from the Hormuz crisis as an oil exporter with extreme chokepoint dependence (0.791). GDP growth is in sharp decline. Oil export revenue — accounting for ~90% of government revenue — is severely disrupted. Inflation surging from trade disruption. The security situation remains fragile with Iran-backed militias potentially activated. Investment risk is extremely elevated.",
     "key_changes_this_week": [
-      "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations",
-      "Iraq: Political risk premium at 1609 bps",
-      "Iraq: GDP growth in sharp decline",
-      "Iraq: Extreme chokepoint exposure at 0.791 amid Hormuz crisis",
-      "Gdp Real Growth %: declining sharply",
-      "Inflation Cpi %: rising",
-      "Political Stability: declining",
-      "Overall Investment Risk Score: declining"
+      "Hormuz disruption blocks oil export revenue — 90% of government income",
+      "GDP growth in sharp decline from export revenue loss",
+      "Inflation surging from trade disruption",
+      "Security situation fragile — Iran-backed militia activation risk",
+      "Political risk premium at 800 bps"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Political stability is declining, adding to investor uncertainty.",
-    "investor_implications": "Extreme supply chain chokepoint exposure (0.791) creates acute risk for trade-dependent sectors. High energy independence (1.000) provides a buffer against the oil price shock. Elevated political risk premium (1609 bps) suggests caution on sovereign exposure.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Iraq faces near-total oil revenue disruption from Hormuz closure. Turkish pipeline provides partial alternative but insufficient to offset. Government fiscal position deteriorating rapidly. Militia dynamics unpredictable as Iran-Iraq border becomes active war zone. Sectarian tensions may escalate. Duration of Hormuz closure determines Iraq's fiscal survival timeline.",
+    "investor_implications": "Iraq is effectively uninvestable during Hormuz crisis. Oil revenue collapse eliminates fiscal capacity. Sovereign bonds face distress risk if closure extends beyond 3-6 months. Dinar under severe pressure. All Iraqi assets should be exited or heavily hedged. Monitor Hormuz resolution as single key catalyst.",
+    "data_quality_note": "Multiple warning alerts active. Extreme chokepoint exposure at 0.791. Data quality impacted by regional conflict."
   },
   "code": "IRQ",
   "name": "Iraq",
@@ -505,10 +518,10 @@
       "resource_self_sufficiency_index": 0.55,
       "energy_independence_index": 1.0,
       "supply_chain_chokepoint_exposure": 0.791,
-      "composite_national_power_index": 33.6,
-      "political_risk_premium_bps": 1609,
+      "composite_national_power_index": 44.2,
+      "political_risk_premium_bps": 800,
       "market_accessibility_score": 0.2,
-      "overall_investment_risk_score": 0.446
+      "overall_investment_risk_score": 0.474
     }
   },
   "economy": {

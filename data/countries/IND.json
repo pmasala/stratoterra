@@ -3,7 +3,7 @@
   "country_name": "India",
   "tier": 1,
   "region": "south_asia",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -21,8 +21,8 @@
       "run_id": "2026-W11",
       "trend": "decrease",
       "trend_confidence": 0.82,
-      "trend_reasoning": "India heavily dependent on Gulf oil transiting Hormuz. Oil at $116/bbl adds 1-2pp to import bill as % of GDP. Manufacturing and transport sectors hit hardest. G7 SPR release provides partial temporary relief.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "India heavily dependent on Gulf oil. Oil at $100+/bbl adding 1-2pp to import bill. Section 301 investigation on both overcapacity and forced labor adds trade uncertainty. Stranded Iranian sailors creating diplomatic tension.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 2694.73780859961,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "India facing inflation pressure from oil at $116/bbl. Energy costs feeding through to transportation, manufacturing, and food prices. Central bank faces stagflation dilemma.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.78,
+      "trend_reasoning": "India facing inflation pressure from oil at $100+/bbl feeding through energy, transport, and food prices. IEA 400M barrel SPR release provides only partial relief.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 4.219,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.8,
-      "trend_reasoning": "India current account worsening from oil import bill surge at $116/bbl. Energy import costs adding 1-2pp to deficit. Trade balance deteriorating.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.82,
+      "trend_reasoning": "India current account worsening from oil import bill surge at $100+/bbl. Energy import costs adding 1-2pp to deficit.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 643042560625.541,
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "India debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "India debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 6.2,
@@ -97,7 +97,11 @@
       "confidence": 0.99,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "India policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 92.245,
@@ -106,16 +110,20 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "India currency under pressure from widening trade deficit due to oil shock. Terms of trade deteriorating. Central bank may need to intervene.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.75,
+      "trend_reasoning": "India currency under pressure from widening trade deficit due to oil shock. Terms of trade deteriorating.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 6.7,
       "confidence": 0.55,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "India bond yields rising modestly on inflation expectations from oil shock.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "equity_index_level": {
       "value": 80238.85,
@@ -272,10 +280,10 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10",
-      "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "India defense spending increasing. SIPRI: world's 2nd largest arms importer. Reducing Russian dependence (40% from 51%). China investment curbs easing signals complex strategic recalibration.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "India military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "active_military_personnel": {
       "value": 1431000,
@@ -368,6 +376,39 @@
     }
   },
   "derived": {
+    "composite_national_power_index": {
+      "value": 62.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 55.7,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "India national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 240,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.646,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "growth",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "India investment risk modestly elevated from oil shock and global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.55,
       "confidence": 0.7,
@@ -392,23 +433,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 56.2,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 50.0
-    },
-    "political_risk_premium_bps": {
-      "value": 238,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.5,
       "confidence": 0.7,
@@ -416,18 +440,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.287,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "India investment risk rising from oil shock exposure and energy supply vulnerability. Current account pressure and inflation risks compound.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "decrease",
@@ -447,9 +459,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "India political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "India political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -459,7 +471,7 @@
       {
         "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
         "value": 4.95303550973656,
-        "reason": "Absolute change 2.1530 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 2.8 vs primary 4.95303550973656 (76.9% diff); Event context: IND has active event triggers",
+        "reason": "Absolute change 2.1530 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 2.8 vs primary 4.95303550973656 (76.9% diff); Event context: IND has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -470,17 +482,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 6.5% (declining), inflation at 5.0% (rising). Supply chain chokepoint exposure is critically elevated at 0.549 amid the Strait of Hormuz crisis. Investment risk score at 0.287, trending declining.",
+    "executive_summary": "India is heavily dependent on Gulf oil transiting the Strait of Hormuz, making it one of the most exposed large economies to the current crisis. GDP growth is declining as oil at $100+/bbl adds 1-2 percentage points to the import bill as a share of GDP. The rupee is weakening on the widening trade deficit. India is also named in both USTR Section 301 investigations, adding trade policy uncertainty.",
     "key_changes_this_week": [
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising",
-      "Overall Investment Risk Score: declining"
+      "Oil shock hits India hard — ~85% oil import dependent, much via Hormuz",
+      "Section 301 overcapacity and forced labor investigations include India",
+      "Rupee weakening on deteriorating energy trade balance",
+      "GDP growth trajectory downgraded"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Extreme supply chain chokepoint exposure (0.549) creates acute risk for trade-dependent sectors. India investment risk elevated. Energy dependency is key vulnerability.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Near-term growth trajectory under significant pressure from energy costs. Current account deteriorating as oil import bill surges. RBI faces inflation-growth tradeoff as energy costs pass through. Government debt rising modestly. Structural growth story intact but cyclical headwinds intensifying. IEA SPR release provides partial temporary relief.",
+    "investor_implications": "India equities face near-term headwinds from energy costs and currency weakness. Oil-sensitive sectors (airlines, logistics, chemicals) underweight. IT services and domestic consumption partially insulated. Rupee hedging recommended. Government bond yields modestly higher. Watch for RBI intervention in FX markets.",
+    "data_quality_note": "Data quality within acceptable parameters. Investment risk approaching watch territory at 0.287."
   },
   "code": "IND",
   "name": "India",
@@ -613,10 +626,10 @@
       "resource_self_sufficiency_index": 0.55,
       "energy_independence_index": 0.35,
       "supply_chain_chokepoint_exposure": 0.549,
-      "composite_national_power_index": 56.2,
-      "political_risk_premium_bps": 238,
+      "composite_national_power_index": 62.5,
+      "political_risk_premium_bps": 240,
       "market_accessibility_score": 0.5,
-      "overall_investment_risk_score": 0.287
+      "overall_investment_risk_score": 0.646
     }
   },
   "economy": {
@@ -697,7 +710,31 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 44.65
+    "trade_openness_pct": 44.65,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 92.38,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 6.68,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 74563.92,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11",
+        "note": "Source agent flagged anomaly but passes validation checks"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

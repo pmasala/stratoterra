@@ -3,7 +3,7 @@
   "country_name": "Portugal",
   "tier": 2,
   "region": "europe",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -277,7 +277,7 @@
       "value": null,
       "trend": "growth",
       "trend_confidence": 0.82,
-      "trend_reasoning": "Portugal defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% \u2014 Europe now top recipient region.",
+      "trend_reasoning": "Portugal defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% — Europe now top recipient region.",
       "trend_updated": "2026-03-10T12:00:00Z",
       "confidence": 0.82,
       "last_updated": "2026-03-10T12:00:00Z",
@@ -287,6 +287,35 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 54.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 56.2
+    },
+    "political_risk_premium_bps": {
+      "value": 50,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.824,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Portugal investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.3,
       "confidence": 0.7,
@@ -311,23 +340,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 38.5,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 34.6
-    },
-    "political_risk_premium_bps": {
-      "value": 28,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.78,
       "confidence": 0.7,
@@ -335,18 +347,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.137,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Portugal investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -390,17 +390,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 2.1% (declining), inflation at 2.4% (rising). Investment risk score at 0.137, trending declining.",
+    "executive_summary": "Portugal's economy is broadly stable with limited direct impact from the Hormuz crisis beyond energy cost pass-through. As a net energy importer with growing renewable capacity, the oil shock impact is moderated. No significant country-specific headline events this week. The economy continues its structural improvement trajectory. Government debt declining from peak levels.",
     "key_changes_this_week": [
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising",
-      "Overall Investment Risk Score: declining"
+      "No significant country-specific events this week",
+      "Energy costs modestly elevated but renewable capacity provides buffer",
+      "European market volatility impacts PSI performance",
+      "Fiscal consolidation continuing"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Low energy independence (0.250) makes the economy vulnerable to the oil price shock. Market accessibility score of 0.780 supports capital flows. Portugal investment risk modestly elevated. European-wide energy and market stress weighing.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Portugal GDP broadly stable with growing renewable energy base providing partial oil shock buffer. Tourism sector may face modest demand headwinds from European consumer weakness. Fiscal consolidation continuing — debt trajectory improving. Golden visa and tech hub positioning attract investment. No significant political risk.",
+    "investor_implications": "Portuguese equities offer European peripheral value with improving fundamentals. PSI tracking European markets. Government bonds relatively stable — spread to Bunds manageable. Renewable energy sector well-positioned. Tourism sector watch for demand signals. Real estate market stable after golden visa adjustments.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "PRT",
   "name": "Portugal",
@@ -518,10 +519,10 @@
       "resource_self_sufficiency_index": 0.3,
       "energy_independence_index": 0.25,
       "supply_chain_chokepoint_exposure": 0.299,
-      "composite_national_power_index": 38.5,
-      "political_risk_premium_bps": 28,
+      "composite_national_power_index": 54.5,
+      "political_risk_premium_bps": 50,
       "market_accessibility_score": 0.78,
-      "overall_investment_risk_score": 0.137
+      "overall_investment_risk_score": 0.824
     }
   },
   "economy": {
@@ -602,7 +603,23 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 89.7
+    "trade_openness_pct": 89.7,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 0.87138,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 3.46,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {
@@ -704,11 +721,11 @@
       "run_id": "2026-W10"
     },
     "head_of_state_name": {
-      "value": "Marcelo Rebelo de Sousa",
-      "confidence": 0.92,
-      "last_updated": "2026-03-02T12:05:00Z",
+      "value": "Antonio Jose Seguro",
+      "confidence": 0.97,
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "head_of_state_title": {
       "value": "President",

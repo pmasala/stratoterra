@@ -3,7 +3,7 @@
   "country_name": "United States",
   "tier": 1,
   "region": "north_america",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -20,9 +20,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.6,
-      "trend_reasoning": "United States faces indirect headwinds from global oil shock but no direct exposure to Gulf conflict. GDP growth trajectory broadly unchanged from prior week.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.68,
+      "trend_reasoning": "US GDP stable but facing cross-currents. Energy self-sufficiency provides buffer, but Iran war costs, Section 301 trade escalation against 76 trading partners, and oil shock consumer impact create headwinds. February CPI benign but forward-looking indicators deteriorating. 5 recession warning signs flagged.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 84534.0407841548,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "United States facing mild inflation pressure from global oil price surge to $116/bbl feeding through energy and transport costs.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.75,
+      "trend_reasoning": "US February CPI steady at 2.4% but pre-dates Iran war oil shock. Gas prices at $3.63/gal (22-month high). March/April readings will capture $100+ oil pass-through. IEA 400M barrel SPR release provides partial but insufficient offset.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 4.198,
@@ -57,8 +57,8 @@
       "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.68,
-      "trend_reasoning": "US current account roughly stable. Energy self-sufficiency buffers oil shock impact. Tariffs (15% Section 122) reduce imports. But war costs add to transfers. Safe-haven dollar inflows support.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "US current account roughly stable. Energy self-sufficiency buffers oil shock. Section 301 investigations (16 overcapacity + 60 forced labor) could reduce imports medium-term. War costs add to transfers. Safe-haven dollar inflows support.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 118.110809413059,
@@ -67,9 +67,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "US debt rising from war spending (Operation Epic Fury) plus potential $175B tariff refund liability from SCOTUS ruling. Defense supplementals likely. Higher rates increase debt service. No fiscal consolidation visible.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.85,
+      "trend_reasoning": "US debt rising from war spending (Operation Epic Fury) entering third week. Senate failed to pass war powers resolution — no legislative check on spending. $175B tariff refund SCOTUS liability. GOP House majority razor-thin at 217-214 after Kiley exit. Defense supplementals inevitable.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 910036546651.5,
@@ -97,14 +97,22 @@
       "confidence": 0.8,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Fed on hold at 3.625%. February CPI steady at 2.4% pre-war but March/April readings will capture oil shock. Central bank super week March 16-19 — stagflation dilemma limits rate cuts. War uncertainty keeps Fed cautious.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 4.08,
       "confidence": 0.6,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "US 10yr yields rising on war spending, inflation expectations from oil shock, and fiscal uncertainty from $175B tariff refund liability. Bond market stress from leveraged basis trade ($1T+) echoes March 2020.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "equity_index_level": {
       "value": 6873,
@@ -172,6 +180,12 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "exchange_rate_vs_usd": {
+      "trend": "stable",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "USD strengthening as safe-haven during Middle East war. DXY at multi-month highs. War and global risk-off supporting dollar demand.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -262,9 +276,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W10",
       "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "United States defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% — Europe now top recipient region.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.85,
+      "trend_reasoning": "US defense spending growing from Iran war (Operation Epic Fury) now entering third week. Freedom Shield exercise in Korea with 18,000 troops. Shield of Americas alliance with 15 Latin American nations. SIPRI: global arms transfers +9.2%, US exports +27%.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "military_expenditure_trend": {
       "value": "growth",
@@ -374,6 +388,39 @@
     }
   },
   "derived": {
+    "composite_national_power_index": {
+      "value": 92.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 90.0,
+      "trend": "stable",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "US national power stable but stretched across multiple theaters. Iran war entering third week. Freedom Shield exercise in Korea while DPRK fires 10 missiles. Shield of Americas alliance launched with 15 Latin American nations. Section 301 investigations demonstrate trade leverage.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 100,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.764,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "growth",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "US investment risk rising from war costs, bond market stress, Section 301 trade escalation, and political fragility (217-214 House majority). Senate failed to constrain war spending. 5 recession warning signs. But institutional strength provides floor.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.92,
       "confidence": 0.7,
@@ -398,23 +445,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 96.0,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 84.5
-    },
-    "political_risk_premium_bps": {
-      "value": 42,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.95,
       "confidence": 0.7,
@@ -422,18 +452,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.238,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "US investment risk rising but from a strong base. War costs, SCOTUS tariff crisis, recession warning signs, and bond market stress all add to risk. But US remains core allocation on institutional strength.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -461,9 +479,9 @@
     },
     "political_stability_trend": {
       "value": "decrease",
-      "confidence": 0.8,
-      "reasoning": "US political stability declining. War with Iran has no clear endpoint. DHS Secretary fired. $175B tariff refund SCOTUS crisis. 5 recession warning signs identified. Midterm mood favoring Democrats. Rand Paul warns of 'disastrous' midterms.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.82,
+      "reasoning": "US political stability declining. War with Iran has no congressional authorization — war powers vote failed. GOP House majority razor-thin at 217-214 after Kiley exit to independent. DHS Secretary fired. $175B tariff refund SCOTUS crisis. Rand Paul warns of 'disastrous' midterms.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -484,22 +502,21 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "US-Iran war enters second week — Pentagon reports 140 US troops injured in first 10 days. GDP growth at 2.8% (stable), inflation at 2.9% (rising). Investment risk score at 0.238, trending declining.",
+    "executive_summary": "The US-Iran war enters its third week with 6,000+ targets struck and no ceasefire in sight. GDP growth holds at 2.8% (stable) but recession warning signs multiply as gas prices hit $3.63/gal (22-month high). Government debt trajectory is accelerating with war spending unchecked after the Senate failed to pass a war powers resolution. The GOP House majority narrowed to 217-214 after Rep. Kiley's exit to independent. USTR launched dual Section 301 investigations targeting 16 economies for overcapacity and 60 countries for forced labor, representing the broadest trade escalation in decades.",
     "key_changes_this_week": [
-      "US-Iran war enters second week — Pentagon reports 140 US troops injured in first 10 days",
-      "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations",
-      "Brent crude surges 25% to $116.50/bbl — gold hits $5,195.60 as markets roil",
-      "G7 finance ministers signal coordinated SPR release amid oil crisis",
-      "US Navy sinks IRIS Dena — Sri Lanka evacuates crew of second Iranian vessel",
-      "US steps up strikes as Trump offers mixed signals — boots on ground 'not ruled out'",
-      "Trump supports Kurdish invasion of Iran — US jets providing air cover",
-      "Companies sue for Trump tariff refunds after SCOTUS ruling — $175B windfall"
+      "US-Iran war enters third week — 6,000+ targets struck, 1,348 Iranian civilians killed, 6 US troops killed in combat",
+      "IEA approves historic 400M barrel SPR release as oil stays above $100/bbl",
+      "USTR launches Section 301 investigations: overcapacity (16 economies, 21 sectors) + forced labor (60 countries)",
+      "Senate war powers vote fails — Trump authorized to continue Iran strikes without congressional constraint",
+      "Rep. Kiley leaves GOP for independent — House majority narrows to 217-214",
+      "BlackRock freezes billionaire cash-outs from $26B fund amid market turmoil",
+      "Trump launches Shield of Americas alliance with 15 Latin American nations"
     ],
-    "outlook": "GDP growth outlook is broadly stable. Inflation is rising, likely constraining monetary easing. Political stability is declining, adding to investor uncertainty.",
-    "investor_implications": "High energy independence (1.000) provides a buffer against the oil price shock. Market accessibility score of 0.950 supports capital flows. US investment risk rising but remains investable. Defensive positioning warranted: Treasuries, gold, defense, energy.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Near-term outlook dominated by Iran war duration and oil shock pass-through. February CPI steady at 2.4% but March/April readings will capture energy price surge. Fed faces stagflation dilemma at March 16-19 central bank super week. Bond market stress from leveraged basis trade ($1T+) echoes March 2020 dynamics. Political fragility with razor-thin House majority constrains fiscal response.",
+    "investor_implications": "Defensive positioning warranted. Energy independence (score: 1.000) provides relative buffer but war costs and trade escalation create cross-currents. Overweight defense, energy, and gold. Underweight rate-sensitive sectors. Treasury volatility elevated — monitor basis trade unwind risk. USD strong on safe-haven demand but fiscal trajectory is long-term negative.",
+    "data_quality_note": "All key indicators have adequate source coverage. February CPI data is backward-looking and does not capture Iran war oil shock."
   },
   "code": "USA",
   "name": "United States",
@@ -663,10 +680,10 @@
       "resource_self_sufficiency_index": 0.92,
       "energy_independence_index": 1.0,
       "supply_chain_chokepoint_exposure": 0.15,
-      "composite_national_power_index": 96.0,
-      "political_risk_premium_bps": 42,
+      "composite_national_power_index": 92.5,
+      "political_risk_premium_bps": 100,
       "market_accessibility_score": 0.95,
-      "overall_investment_risk_score": 0.238
+      "overall_investment_risk_score": 0.764
     }
   },
   "economy": {
@@ -753,6 +770,29 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "financial": {
+      "government_bond_yield_10y": {
+        "value": 4.29,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 6632.19,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "central_bank_rate": {
+        "value": 3.625,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
     }
   },
   "institutions": {

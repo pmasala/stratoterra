@@ -3,7 +3,7 @@
   "country_name": "United Arab Emirates",
   "tier": 1,
   "region": "middle_east",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -20,9 +20,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "strong_decrease",
-      "trend_confidence": 0.88,
-      "trend_reasoning": "Hormuz mine-laying by IRGC blocks primary oil export route. Oil revenue disruption severe despite high prices. United Arab Emirates has limited pipeline alternatives. Defense spending surge adds fiscal pressure.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Hormuz blockade severely disrupting oil exports. United Arab Emirates export revenue sharply curtailed. Limited alternative export routes.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 50273.5060469837,
@@ -37,10 +37,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "United Arab Emirates facing import cost pressure from disrupted supply chains. Energy subsidies buffer consumers but fiscal cost rising. Food import costs increasing as Gulf shipping disrupted.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_growth",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "United Arab Emirates facing severe supply chain disruption from Hormuz blockade. Import costs surging. Essential goods supply constrained.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 2.174,
@@ -55,10 +55,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.85,
-      "trend_reasoning": "United Arab Emirates current account deteriorating as Hormuz disruption blocks energy exports. High oil/gas prices cannot be monetized. Import costs rising. SWF drawdowns support consumption.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_decrease",
+      "trend_confidence": 0.88,
+      "trend_reasoning": "United Arab Emirates current account severely impacted by Hormuz blockade. Oil/gas export revenue sharply curtailed. Import costs rising from alternative routes.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 237931339945.397,
@@ -73,10 +73,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.75,
-      "trend_reasoning": "United Arab Emirates debt ratio rising as revenue drops from export disruption while spending (defense, subsidies) increases. SWF drawdowns buffer but deplete reserves.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "United Arab Emirates debt ratio rising sharply as revenue drops from export disruption while defense and subsidy spending increases.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 5,
@@ -97,7 +97,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "United Arab Emirates policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 3.6725,
@@ -105,10 +109,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "stable",
-      "trend_confidence": 0.8,
-      "trend_reasoning": "United Arab Emirates currency pegged to USD. Peg under pressure from fiscal strain but central bank defending. FX reserves adequate for now.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "United Arab Emirates currency under pressure from revenue collapse due to Hormuz blockade.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 558401633764.466,
@@ -155,6 +159,12 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "strong_growth",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "United Arab Emirates bond yields surging on revenue collapse and fiscal deterioration from Hormuz blockade.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -290,10 +300,10 @@
     },
     "military_expenditure_pct_gdp": {
       "value": null,
-      "trend": "growth",
+      "trend": "strong_growth",
       "trend_confidence": 0.8,
-      "trend_reasoning": "United Arab Emirates increasing defense spending in response to Gulf conflict. Regional arms race accelerating. SIPRI data shows Middle East arms imports up despite recent decline.",
-      "trend_updated": "2026-03-10T12:00:00Z",
+      "trend_reasoning": "United Arab Emirates defense spending surging in response to direct military threat from Hormuz conflict. GDP decline increases ratio further.",
+      "trend_updated": "2026-03-14T00:00:00Z",
       "confidence": 0.8,
       "last_updated": "2026-03-10T12:00:00Z",
       "source": "agent_10_trend_estimator",
@@ -302,6 +312,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 58.8,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 60.7,
+      "trend": "strong_decrease",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "United Arab Emirates national power declining sharply from Hormuz blockade. Economic base undermined. Military response limited.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 70,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.724,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "strong_growth",
+      "trend_confidence": 0.88,
+      "trend_reasoning": "United Arab Emirates investment risk at extreme levels from Hormuz blockade. Revenue collapsed. Fiscal position deteriorating.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.4,
       "confidence": 0.7,
@@ -326,23 +369,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 48.9,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 43.7
-    },
-    "political_risk_premium_bps": {
-      "value": 112,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.78,
       "confidence": 0.7,
@@ -350,18 +376,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.101,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "United Arab Emirates investment risk elevated significantly. Hormuz disruption blocks primary economic activity. SWF reserves buffer but not indefinitely. Conflict duration is key uncertainty.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "decrease",
@@ -381,9 +395,9 @@
     },
     "political_stability_trend": {
       "value": "decrease",
-      "confidence": 0.78,
-      "reasoning": "United Arab Emirates political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.75,
+      "reasoning": "United Arab Emirates political stability under pressure from economic crisis caused by Hormuz blockade. Social contract strained.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -396,22 +410,19 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "United Arab Emirates faces critical-level risks this week: United Arab Emirates: Extreme chokepoint exposure at 1.000 amid Hormuz crisis; United Arab Emirates: Hormuz crisis direct impact. GDP growth at 4.0% (declining sharply), inflation at 1.7% (rising). Supply chain chokepoint exposure is critically elevated at 1.000 amid the Strait of Hormuz crisis. Investment risk score at 0.101, trending declining.",
+    "executive_summary": "The UAE faces extreme chokepoint exposure (1.000 — maximum) as the Hormuz crisis blocks its primary oil export route. GDP growth is in strong decline despite high oil prices. IRGC mine-laying has effectively closed the Strait. The UAE has limited pipeline alternatives. Defense spending is surging. OFAC removed UAE freight company Globe Trekkers from the SDN List, a minor positive. Investment risk is extremely elevated.",
     "key_changes_this_week": [
-      "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations",
-      "Brent crude surges 25% to $116.50/bbl \u2014 gold hits $5,195.60 as markets roil",
-      "United Arab Emirates: Extreme chokepoint exposure at 1.000 amid Hormuz crisis",
-      "United Arab Emirates: Hormuz crisis direct impact",
-      "United Arab Emirates: GDP growth in sharp decline",
-      "Gdp Real Growth %: declining sharply",
-      "Inflation Cpi %: rising",
-      "Political Stability: declining"
+      "Hormuz closure blocks primary oil/LNG export route — chokepoint exposure at maximum 1.000",
+      "GDP growth in strong decline despite $100+ oil",
+      "OFAC removes Globe Trekkers from SDN List",
+      "Defense spending surging amid direct threat environment",
+      "Political stability declining from Gulf conflict proximity"
     ],
-    "outlook": "Near-term outlook for United Arab Emirates is highly uncertain given active crisis conditions. United Arab Emirates investment risk elevated. Underweight until Hormuz reopens. Political stability is declining, adding to investor uncertainty.",
-    "investor_implications": "Active crisis conditions warrant heightened caution and defensive positioning. Extreme supply chain chokepoint exposure (1.000) creates acute risk for trade-dependent sectors. High energy independence (1.000) provides a buffer against the oil price shock.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "UAE GDP severely impacted by Hormuz blockade. Abu Dhabi pipeline (ADCOP) to Fujairah provides only partial alternative (~1.5 mbpd vs ~2.9 mbpd exports). Dubai economy also hit by shipping/logistics disruption. All Gulf investment thesis dependent on Hormuz resolution timeline. Defense spending unsustainable at current pace.",
+    "investor_implications": "UAE equities face severe near-term risk. ADX and DFM under pressure. Real estate sector (Emaar, DAMAC) facing demand uncertainty. Banking sector exposed to regional risk repricing. All UAE positions should be reassessed in light of Hormuz closure. Duration of blockade is single most important variable for UAE assets.",
+    "data_quality_note": "Multiple critical alerts active. Extreme chokepoint exposure creates data uncertainty for forward-looking metrics."
   },
   "code": "ARE",
   "name": "United Arab Emirates",
@@ -534,10 +545,10 @@
       "resource_self_sufficiency_index": 0.4,
       "energy_independence_index": 1.0,
       "supply_chain_chokepoint_exposure": 1.0,
-      "composite_national_power_index": 48.9,
-      "political_risk_premium_bps": 112,
+      "composite_national_power_index": 58.8,
+      "political_risk_premium_bps": 70,
       "market_accessibility_score": 0.78,
-      "overall_investment_risk_score": 0.101
+      "overall_investment_risk_score": 0.724
     }
   },
   "economy": {
@@ -611,7 +622,16 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 188.34
+    "trade_openness_pct": 188.34,
+    "financial": {
+      "equity_index_level": {
+        "value": 9635.57,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

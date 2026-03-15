@@ -20,9 +20,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "strong_decrease",
-      "trend_confidence": 0.88,
-      "trend_reasoning": "Kuwait GDP under severe pressure from Hormuz disruption. No pipeline alternative to Hormuz. High energy prices cannot be monetized while export channels are blocked.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.92,
+      "trend_reasoning": "Kuwait has no pipeline alternative to Hormuz. Near-total economic paralysis as maritime trade blocked. Oil revenue effectively zero. Economy dependent on 90%+ oil exports.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 32717.7186631255,
@@ -37,10 +37,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Kuwait facing import cost pressure from disrupted supply chains. Energy subsidies buffer consumers but fiscal cost rising. Food import costs increasing as Gulf shipping disrupted.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_growth",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Kuwait facing severe supply chain disruption from Hormuz blockade. Import costs surging. Essential goods supply constrained.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 2.181,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "strong_decrease",
-      "trend_confidence": 0.85,
-      "trend_reasoning": "Kuwait current account deteriorating as Hormuz disruption blocks energy exports. High oil/gas prices cannot be monetized. Import costs rising. SWF drawdowns support consumption.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.88,
+      "trend_reasoning": "Kuwait current account severely impacted by Hormuz blockade. Oil/gas export revenue sharply curtailed. Import costs rising from alternative routes.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 50727942998.1333,
@@ -73,10 +73,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.75,
-      "trend_reasoning": "Kuwait debt ratio rising as revenue drops from export disruption while spending (defense, subsidies) increases. SWF drawdowns buffer but deplete reserves.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "strong_growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Kuwait debt ratio rising sharply as revenue drops from export disruption while defense and subsidy spending increases.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 3.9,
@@ -111,7 +111,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Kuwait policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fdi_inflows_usd": {
       "value": 614580245.831756,
@@ -144,10 +148,16 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "stable",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Kuwait currency under pressure from revenue collapse due to Hormuz blockade.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "strong_growth",
       "trend_confidence": 0.8,
-      "trend_reasoning": "Kuwait currency pegged to USD. Peg under pressure from fiscal strain but central bank defending. FX reserves adequate for now.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Kuwait bond yields surging on revenue collapse and fiscal deterioration from Hormuz blockade.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -267,10 +277,10 @@
     },
     "military_expenditure_pct_gdp": {
       "value": null,
-      "trend": "growth",
+      "trend": "strong_growth",
       "trend_confidence": 0.8,
-      "trend_reasoning": "Kuwait increasing defense spending in response to Gulf conflict. Regional arms race accelerating. SIPRI data shows Middle East arms imports up despite recent decline.",
-      "trend_updated": "2026-03-10T12:00:00Z",
+      "trend_reasoning": "Kuwait defense spending surging in response to direct military threat from Hormuz conflict. GDP decline increases ratio further.",
+      "trend_updated": "2026-03-14T00:00:00Z",
       "confidence": 0.8,
       "last_updated": "2026-03-10T12:00:00Z",
       "source": "agent_10_trend_estimator",
@@ -279,6 +289,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 49.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 51.3,
+      "trend": "strong_decrease",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Kuwait national power declining sharply from Hormuz blockade. Economic base undermined. Military response limited.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 85,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.651,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "strong_growth",
+      "trend_confidence": 0.88,
+      "trend_reasoning": "Kuwait investment risk at extreme levels from Hormuz blockade. Revenue collapsed. Fiscal position deteriorating.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.35,
       "confidence": 0.7,
@@ -303,23 +346,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 35.8,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 32.2
-    },
-    "political_risk_premium_bps": {
-      "value": 266,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.55,
       "confidence": 0.7,
@@ -327,18 +353,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.15,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Kuwait investment risk elevated significantly. Hormuz disruption blocks primary economic activity. SWF reserves buffer but not indefinitely. Conflict duration is key uncertainty.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "decrease",
@@ -358,9 +372,9 @@
     },
     "political_stability_trend": {
       "value": "decrease",
-      "confidence": 0.78,
-      "reasoning": "Kuwait political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.75,
+      "reasoning": "Kuwait political stability under pressure from economic crisis caused by Hormuz blockade. Social contract strained.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -373,22 +387,19 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Kuwait faces critical-level risks this week: Kuwait: Extreme chokepoint exposure at 0.938 amid Hormuz crisis; Kuwait: Hormuz crisis direct impact. GDP growth at -2.6% (declining sharply), inflation at 2.9% (rising). Supply chain chokepoint exposure is critically elevated at 0.938 amid the Strait of Hormuz crisis. Investment risk score at 0.150, trending declining.",
+    "executive_summary": "Kuwait is the most exposed Gulf state to the Hormuz closure with no pipeline alternative. GDP is in severe contraction as oil export revenue — virtually the entire economy — is blocked. Chokepoint exposure at critical 0.938. The sovereign wealth fund (KIA) provides fiscal buffer but cannot replace export revenue. Inflation surging from trade disruption. Investment risk extremely elevated.",
     "key_changes_this_week": [
-      "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations",
-      "Kuwait: Extreme chokepoint exposure at 0.938 amid Hormuz crisis",
-      "Kuwait: Hormuz crisis direct impact",
-      "Kuwait: GDP growth in sharp decline",
-      "Gdp Real Growth %: declining sharply",
-      "Inflation Cpi %: rising",
-      "Political Stability: declining",
-      "Overall Investment Risk Score: declining"
+      "No pipeline alternative to Hormuz — near-total economic paralysis",
+      "GDP in severe contraction from export revenue block",
+      "Chokepoint exposure at maximum critical level (0.938)",
+      "Inflation surging from import disruption",
+      "Fiscal position deteriorating rapidly"
     ],
-    "outlook": "Near-term outlook for Kuwait is highly uncertain given active crisis conditions. Kuwait investment risk elevated. Underweight until Hormuz reopens. Political stability is declining, adding to investor uncertainty.",
-    "investor_implications": "Active crisis conditions warrant heightened caution and defensive positioning. Extreme supply chain chokepoint exposure (0.938) creates acute risk for trade-dependent sectors. High energy independence (1.000) provides a buffer against the oil price shock.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Kuwait faces the most acute fiscal crisis among Gulf states — zero pipeline alternatives to Hormuz. KIA wealth fund provides years of buffer but current revenue is near-zero. Food import dependence adds social stability risk. Political system under stress from economic disruption. Every additional week of Hormuz closure deepens structural damage.",
+    "investor_implications": "Kuwait assets at maximum risk. KSE effectively non-functional for new investment. Sovereign bonds supported by KIA reserves but revenue flow stopped. KWD peg under unprecedented pressure. All Kuwait exposure should be exited or fully hedged. Hormuz resolution is the only catalyst for recovery. Timeline unknown.",
+    "data_quality_note": "Multiple critical alerts active. Near-total economic disruption creates extreme data uncertainty."
   },
   "code": "KWT",
   "name": "Kuwait",
@@ -508,10 +519,10 @@
       "resource_self_sufficiency_index": 0.35,
       "energy_independence_index": 1.0,
       "supply_chain_chokepoint_exposure": 0.938,
-      "composite_national_power_index": 35.8,
-      "political_risk_premium_bps": 266,
+      "composite_national_power_index": 49.2,
+      "political_risk_premium_bps": 85,
       "market_accessibility_score": 0.55,
-      "overall_investment_risk_score": 0.15
+      "overall_investment_risk_score": 0.651
     }
   },
   "economy": {

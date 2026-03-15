@@ -3,7 +3,7 @@
   "country_name": "New Zealand",
   "tier": 2,
   "region": "oceania",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -260,6 +260,35 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 56.4,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 60.4
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.885,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "New Zealand investment risk broadly unchanged. Global oil shock creates background pressure but no direct exposure to Gulf conflict. Fundamentals stable.",
+      "trend_updated": "2026-03-10T12:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.8,
       "confidence": 0.7,
@@ -284,23 +313,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 35.8,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 32.3
-    },
-    "political_risk_premium_bps": {
-      "value": 0,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.85,
       "confidence": 0.7,
@@ -308,18 +320,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.123,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "New Zealand investment risk broadly unchanged. Global oil shock creates background pressure but no direct exposure to Gulf conflict. Fundamentals stable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -354,16 +354,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 1.3% (declining), inflation at 2.9% (rising). Energy independence index at 0.700. The economy remains broadly stable with no major disruptions this week.",
+    "executive_summary": "New Zealand's economy is broadly stable with limited direct impact from the Hormuz crisis. Geographic isolation provides natural buffer from Middle East conflict. Agricultural exports (dairy, meat) benefit from food price resilience. Energy costs modestly elevated but hydro-dominant grid reduces oil dependency. No significant country-specific events this week.",
     "key_changes_this_week": [
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising"
+      "Geographic isolation provides natural conflict buffer",
+      "Agricultural exports benefit from food price resilience",
+      "No significant country-specific events",
+      "Fiscal position stable"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Market accessibility score of 0.850 supports capital flows. New Zealand investment risk stable. Monitor for second-order effects from global energy crisis.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "New Zealand GDP broadly stable with agricultural export base providing anchor. Hydro-dominant electricity grid reduces oil shock exposure. Housing market stabilizing. RBNZ has policy flexibility. China trade relationship stable. Five Eyes intelligence partnership on watch given NE Asian security dynamics.",
+    "investor_implications": "New Zealand equities offer defensive agricultural exposure. NZX relatively insulated from geopolitical volatility. NZD under modest pressure from risk-off but dairy prices supportive. Government bonds stable. Fonterra and agricultural plays well-positioned. Housing sector stabilizing.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "NZL",
   "name": "New Zealand",
@@ -479,10 +481,10 @@
       "resource_self_sufficiency_index": 0.8,
       "energy_independence_index": 0.7,
       "supply_chain_chokepoint_exposure": 0.252,
-      "composite_national_power_index": 35.8,
+      "composite_national_power_index": 56.4,
       "political_risk_premium_bps": 0,
       "market_accessibility_score": 0.85,
-      "overall_investment_risk_score": 0.123
+      "overall_investment_risk_score": 0.885
     }
   },
   "economy": {
@@ -556,7 +558,16 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 51.22
+    "trade_openness_pct": 51.22,
+    "financial": {
+      "government_bond_yield_10y": {
+        "value": 4.69,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

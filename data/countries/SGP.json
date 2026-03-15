@@ -3,7 +3,7 @@
   "country_name": "Singapore",
   "tier": 1,
   "region": "southeast_asia",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -19,10 +19,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Singapore as trade hub faces disruption from Hormuz closure affecting global shipping routes. Oil price surge impacts refining margins. Asian trade flows rerouting. Financial center safe haven flows partially offset.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Singapore benefits from trade rerouting away from Hormuz but Section 301 overcapacity investigation adds trade uncertainty. Financial hub gains from geopolitical hedging.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 90674.066632628,
@@ -37,10 +37,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Singapore facing mild inflation pressure from global oil price surge to $116/bbl feeding through energy and transport costs.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Singapore inflation broadly stable with modest upward pressure from global oil prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 2.818,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Singapore current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Singapore current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 175.613907899815,
@@ -67,9 +67,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Singapore debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Singapore debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 383945953550.791,
@@ -100,15 +100,19 @@
       "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.55,
-      "trend_reasoning": "Singapore currency broadly stable against USD. No direct conflict exposure. Global risk-off sentiment creates mild depreciation pressure against safe-haven dollar.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Singapore currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 2.85,
       "confidence": 0.8,
       "last_updated": "2026-03-02T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W09"
+      "run_id": "2026-W09",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Singapore bond yields broadly stable.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 978597520043.286,
@@ -155,6 +159,12 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "central_bank_policy_rate_pct": {
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Singapore policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -296,10 +306,49 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Singapore military spending broadly stable relative to GDP.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 65.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 70.6,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Singapore national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.788,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Singapore investment risk broadly unchanged.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.05,
       "confidence": 0.7,
@@ -324,23 +373,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 50.4,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 44.9
-    },
-    "political_risk_premium_bps": {
-      "value": 4,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.95,
       "confidence": 0.7,
@@ -348,18 +380,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.141,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Singapore investment risk broadly unchanged. Global oil shock creates background pressure but no direct exposure to Gulf conflict. Fundamentals stable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -379,9 +399,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "Singapore political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Singapore political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -391,7 +411,7 @@
       {
         "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
         "value": 4.38802362461865,
-        "reason": "Absolute change 2.1880 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 2.2 vs primary 4.38802362461865 (99.5% diff)",
+        "reason": "Absolute change 2.1880 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 2.2 vs primary 4.38802362461865 (99.5% diff)",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -402,17 +422,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Singapore faces critical-level risks this week: Singapore: Extreme chokepoint exposure at 0.940 amid Hormuz crisis. GDP growth at 4.4% (declining), inflation at 2.4% (rising). Supply chain chokepoint exposure is critically elevated at 0.940 amid the Strait of Hormuz crisis.",
+    "executive_summary": "Singapore faces critical chokepoint exposure (0.940) as a major shipping/trade hub dependent on unimpeded maritime routes. The Hormuz crisis disrupts energy imports and trade flows through Singapore's port. However, Singapore's economy is diversified and financial sector benefits from safe-haven flows. The Section 301 overcapacity investigation includes Singapore.",
     "key_changes_this_week": [
-      "Singapore: Extreme chokepoint exposure at 0.940 amid Hormuz crisis",
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising"
+      "Chokepoint exposure at critical 0.940 from Hormuz disruption",
+      "Section 301 overcapacity investigation includes Singapore",
+      "Government debt rising modestly",
+      "Current account mildly deteriorating from trade disruption"
     ],
-    "outlook": "Near-term outlook for Singapore is highly uncertain given active crisis conditions. Singapore investment risk stable. Monitor for second-order effects from global energy crisis. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Active crisis conditions warrant heightened caution and defensive positioning. Extreme supply chain chokepoint exposure (0.940) creates acute risk for trade-dependent sectors. Low energy independence (0.020) makes the economy vulnerable to the oil price shock.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Singapore's trade-dependent economy faces headwinds from Hormuz disruption but financial sector provides buffer. Port activity may shift as global shipping routes adjust. MAS has policy flexibility. Technology sector (semiconductors) insulated from direct conflict impact. Government fiscal position strong.",
+    "investor_implications": "Singapore equities mixed — financial sector benefits from safe-haven flows while shipping/logistics faces disruption. STI relatively resilient. SGD stable as managed currency. REITs face uncertainty from trade volume changes. Watch for semiconductor demand signals. Government bonds ultra-safe.",
+    "data_quality_note": "Critical chokepoint exposure alert active. Data quality within acceptable parameters."
   },
   "code": "SGP",
   "name": "Singapore",
@@ -536,10 +557,10 @@
       "resource_self_sufficiency_index": 0.05,
       "energy_independence_index": 0.02,
       "supply_chain_chokepoint_exposure": 0.94,
-      "composite_national_power_index": 50.4,
-      "political_risk_premium_bps": 4,
+      "composite_national_power_index": 65.5,
+      "political_risk_premium_bps": 0,
       "market_accessibility_score": 0.95,
-      "overall_investment_risk_score": 0.141
+      "overall_investment_risk_score": 0.788
     }
   },
   "economy": {
@@ -613,7 +634,23 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 322.37
+    "trade_openness_pct": 322.37,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 1.2796,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 4842.27,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

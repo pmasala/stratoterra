@@ -3,7 +3,7 @@
   "country_name": "Norway",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -20,9 +20,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Norway as North Sea oil/gas producer is primary beneficiary of Hormuz disruption. Non-Hormuz export routes secure. Energy windfall boosts fiscal position significantly.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Norway's North Sea production benefits from $100+ oil without Hormuz exposure. Energy windfall boosting fiscal position. European energy dependency on Norwegian gas increasing.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 86785.4334489176,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Norway as oil exporter benefits from price surge. Domestic inflation contained by energy self-sufficiency. Imported goods inflation the main pressure point.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Norway inflation broadly stable as oil exporter status shields from energy cost pass-through.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 4.637,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.78,
+      "trend_confidence": 0.75,
       "trend_reasoning": "Norway current account improving as oil/commodity prices surge and non-Hormuz export routes remain secure. Trade surplus widening.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 81241559661.5009,
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Norway debt ratio improving as oil/commodity windfall boosts government revenue. Fiscal surplus expanding or deficit narrowing.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Norway debt ratio improving as commodity windfall boosts government revenue.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 1.6,
@@ -97,7 +97,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Norway policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 9.6207,
@@ -106,16 +110,20 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Norway currency strengthening as commodity exporter benefiting from oil/energy price surge. Safe-haven and commodity flows both supportive.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Norway currency supported by commodity export windfall. Oil/gas revenue boosting external position.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 4.27,
       "confidence": 0.97,
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10b",
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Norway bond yields stable to declining on improved fiscal position from commodity windfall.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 229666413338.504,
@@ -300,9 +308,9 @@
     "military_expenditure_pct_gdp": {
       "value": null,
       "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Norway defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% \u2014 Europe now top recipient region.",
-      "trend_updated": "2026-03-10T12:00:00Z",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Norway defense spending growing under NATO commitments. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target.",
+      "trend_updated": "2026-03-14T00:00:00Z",
       "confidence": 0.82,
       "last_updated": "2026-03-10T12:00:00Z",
       "source": "agent_10_trend_estimator",
@@ -311,6 +319,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 67.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 72.9,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Norway national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.901,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Norway investment risk improving on commodity windfall. Fiscal position strengthening. Non-Hormuz export routes secure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.8,
       "confidence": 0.7,
@@ -335,23 +376,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 48.5,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 43.3
-    },
-    "political_risk_premium_bps": {
-      "value": 0,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.88,
       "confidence": 0.7,
@@ -359,18 +383,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.071,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "growth",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Norway investment risk improving as oil/commodity windfall boosts fiscal position and economic growth. Non-Hormuz export routes provide strategic advantage.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -390,9 +402,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.6,
-      "reasoning": "Norway political stability broadly unchanged this week. Global oil shock creates background economic pressure but no direct political triggers.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "Norway political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -405,16 +417,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "GDP growth at 2.1% (rising), inflation at 3.1% (stable). Energy independence index at 1.000. The economy remains broadly stable with no major disruptions this week.",
+    "executive_summary": "Norway is a primary beneficiary of the current energy crisis. As a North Sea oil and gas producer with non-Hormuz export routes, European energy demand is redirecting toward Norwegian supply. GDP growth is improving on the commodity windfall. The sovereign wealth fund provides fiscal buffer. The Section 301 overcapacity investigation includes Norway, but the impact is negligible given energy export dominance.",
     "key_changes_this_week": [
-      "Gdp Real Growth %: rising",
-      "Overall Investment Risk Score: rising"
+      "European gas demand redirecting toward Norwegian supply",
+      "Oil and gas windfall improving fiscal and current account positions",
+      "Section 301 overcapacity investigation includes Norway (minor impact)",
+      "Defense spending trending up"
     ],
-    "outlook": "GDP growth momentum remains positive.",
-    "investor_implications": "High energy independence (1.000) provides a buffer against the oil price shock. Market accessibility score of 0.880 supports capital flows. Norway investment risk improving. Energy windfall creates opportunistic entry points.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Norway is the leading European beneficiary of the Hormuz crisis. North Sea production at capacity. European energy reorientation favors Norwegian assets structurally. Sovereign wealth fund growing rapidly. Government bonds among safest globally. NOK strengthening on export revenues.",
+    "investor_implications": "Norwegian equities highly attractive — Equinor and energy infrastructure directly benefiting. NOK strengthening supports returns. Government bonds ultra-safe. Oslo Bors energy-weighted index outperforming. Sovereign wealth fund growth accelerating. Overweight Norway in European allocation.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "NOR",
   "name": "Norway",
@@ -535,10 +549,10 @@
       "resource_self_sufficiency_index": 0.8,
       "energy_independence_index": 1.0,
       "supply_chain_chokepoint_exposure": 0.223,
-      "composite_national_power_index": 48.5,
+      "composite_national_power_index": 67.2,
       "political_risk_premium_bps": 0,
       "market_accessibility_score": 0.88,
-      "overall_investment_risk_score": 0.071
+      "overall_investment_risk_score": 0.901
     }
   },
   "economy": {
@@ -612,7 +626,23 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 81.36
+    "trade_openness_pct": 81.36,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 9.7238,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 4.31,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

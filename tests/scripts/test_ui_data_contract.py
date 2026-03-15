@@ -1242,12 +1242,12 @@ class TestE2E_UI_012_IntelOverlaysIntegration(unittest.TestCase):
             "#st-card detail card not found in index.html",
         )
 
-    def test_all_15_layer_rows_in_html(self):
-        """All 15 layer data-layer attributes must be present in index.html."""
+    def test_all_12_layer_rows_in_html(self):
+        """All 12 layer data-layer attributes must be present in index.html."""
         layers = [
-            "flights", "naval", "airports", "ports", "chokepoints", "cables",
+            "airports", "ports", "chokepoints", "cables",
             "bases", "conflicts", "missiles", "nuclear",
-            "power", "pipelines", "cyber", "migration", "sanctions",
+            "power", "pipelines", "cyber", "sanctions",
         ]
         missing = [
             lid for lid in layers

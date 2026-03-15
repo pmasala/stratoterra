@@ -3,7 +3,7 @@
   "country_name": "United Kingdom",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -20,9 +20,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "United Kingdom facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "United Kingdom facing GDP headwinds from oil shock at $100+/bbl. Energy costs rising for oil-importing economy.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 53246.3676145108,
@@ -39,8 +39,8 @@
       "run_id": "2026-W11",
       "trend": "growth",
       "trend_confidence": 0.78,
-      "trend_reasoning": "United Kingdom facing inflation uptick from oil shock feeding through energy, transport, and goods prices. EU admitted 'nuclear blunder' on energy policy. ECB faces stagflation dilemma ahead of March policy meeting.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "United Kingdom facing inflation pressure from oil at $100+/bbl feeding through energy, transport, and food prices. IEA 400M barrel SPR release provides only partial relief.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 4.746,
@@ -56,9 +56,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "United Kingdom current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "United Kingdom current account under modest pressure from higher energy import costs.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 131.073062954793,
@@ -67,9 +67,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "United Kingdom debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "United Kingdom debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 174597843325.182,
@@ -97,7 +97,11 @@
       "confidence": 0.99,
       "last_updated": "2026-03-03T22:30:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10b"
+      "run_id": "2026-W10b",
+      "trend": "stable",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "BoE on hold at 3.75%. Oil shock inflation pass-through delays easing cycle. Pro-Palestine protests and domestic political pressure adding complexity.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
       "value": 0.7471,
@@ -105,17 +109,21 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "EUR under mild pressure from European market crash and energy import costs. USD safe-haven demand dominant. ECB policy response key variable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "United Kingdom currency broadly stable against USD. No direct conflict exposure.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 4.3,
       "confidence": 0.55,
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "United Kingdom bond yields rising modestly on inflation expectations from oil shock.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "equity_index_level": {
       "value": 10408.86,
@@ -266,9 +274,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W10",
       "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "United Kingdom defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% \u2014 Europe now top recipient region.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "United Kingdom defense spending growing under NATO commitments. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "active_military_personnel": {
       "value": 141330,
@@ -342,6 +350,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 73.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 72.3,
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "United Kingdom national power broadly stable. No significant structural changes this week.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 20,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.841,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "growth",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "United Kingdom investment risk modestly elevated from oil shock and global uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.4,
       "confidence": 0.7,
@@ -366,23 +407,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 59.8,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 53.1
-    },
-    "political_risk_premium_bps": {
-      "value": 17,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.93,
       "confidence": 0.7,
@@ -390,18 +414,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.18,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "United Kingdom investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -421,9 +433,9 @@
     },
     "political_stability_trend": {
       "value": "stable",
-      "confidence": 0.7,
-      "reasoning": "UK political stability adequate. Starmer leaked memo controversy over Scotland/Wales override powers. HMS Dragon deploying to Gulf. Energy costs rising but managed.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "confidence": 0.55,
+      "reasoning": "United Kingdom political stability broadly unchanged. No major domestic political disruptions this week.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -440,7 +452,7 @@
       },
       {
         "factor": "economy.macroeconomic.equity_index",
-        "reason": "FTSE 100 \u2014 previous stored value 23766 appears to be DAX not FTSE. Current FTSE value 10408 is plausible for that index. Data mapping correction needed.",
+        "reason": "FTSE 100 — previous stored value 23766 appears to be DAX not FTSE. Current FTSE value 10408 is plausible for that index. Data mapping correction needed.",
         "new_value": 10408.86,
         "flagged_at": "2026-03-04T17:00:12Z",
         "run_id": "2026-W10"
@@ -448,7 +460,7 @@
       {
         "factor_path": "economy.macroeconomic.public_debt_pct_gdp",
         "value": 131.073062954793,
-        "reason": "Absolute change 27.6731 exceeds 3\u00d7 typical (2.0) = 6.0; Alternative source (IMF WEO) disagrees: 103.4 vs primary 131.073062954793 (26.8% diff); Event context: GBR has active event triggers",
+        "reason": "Absolute change 27.6731 exceeds 3× typical (2.0) = 6.0; Alternative source (IMF WEO) disagrees: 103.4 vs primary 131.073062954793 (26.8% diff); Event context: GBR has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -459,18 +471,18 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "G7 finance ministers signal coordinated SPR release amid oil crisis. GDP growth at 1.1% (declining), inflation at 3.3% (rising). Investment risk score at 0.180, trending declining.",
+    "executive_summary": "The UK faces GDP headwinds from the energy shock as a net energy importer. Inflation is rising from energy cost pass-through. Defense spending is trending up amid the broader NATO response to the Middle East crisis. Pro-Palestine Al-Quds Day rally planned for central London on March 15 reflects domestic political sensitivities around the Iran conflict. Government debt is rising modestly.",
     "key_changes_this_week": [
-      "G7 finance ministers signal coordinated SPR release amid oil crisis",
-      "Gdp Real Growth %: declining",
-      "Inflation Cpi %: rising",
-      "Overall Investment Risk Score: declining"
+      "GDP declining from energy cost pass-through",
+      "Section 301 forced labor investigation includes UK among 60 countries",
+      "Pro-Palestine Al-Quds Day rally planned for London March 15",
+      "Defense spending trending up amid NATO burden-sharing"
     ],
-    "outlook": "GDP growth is on a downward trajectory. Inflation is rising, likely constraining monetary easing. Fiscal trajectory warrants monitoring as government debt is rising.",
-    "investor_implications": "Market accessibility score of 0.930 supports capital flows. United Kingdom investment risk modestly elevated. European-wide energy and market stress weighing.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "GDP growth under pressure from energy costs with inflation rising. Bank of England faces similar stagflation calculus to the Fed. Peace talks on Russia-Ukraine stalled at '90% complete' — no near-term resolution to European energy security concerns. Defense spending increase broadly supported politically. Current account mildly deteriorating.",
+    "investor_implications": "UK equities mixed — energy sector benefiting, consumers and industrial sectors under pressure. Gilt yields modestly higher. Sterling under modest pressure versus safe-haven USD. FTSE 100 outperforming European peers due to energy/commodity weighting. Section 301 forced labor investigation creates minor trade policy uncertainty.",
+    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
   },
   "code": "GBR",
   "name": "United Kingdom",
@@ -602,10 +614,10 @@
       "resource_self_sufficiency_index": 0.4,
       "energy_independence_index": 0.65,
       "supply_chain_chokepoint_exposure": 0.246,
-      "composite_national_power_index": 59.8,
-      "political_risk_premium_bps": 17,
+      "composite_national_power_index": 73.0,
+      "political_risk_premium_bps": 20,
       "market_accessibility_score": 0.93,
-      "overall_investment_risk_score": 0.18
+      "overall_investment_risk_score": 0.841
     }
   },
   "economy": {
@@ -686,7 +698,37 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 62.84
+    "trade_openness_pct": 62.84,
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 0.75377,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 4.83,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 10261.15,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "central_bank_rate": {
+        "value": 3.75,
+        "confidence": 0.88,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    }
   },
   "institutions": {
     "under_international_sanctions": {

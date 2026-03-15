@@ -3,7 +3,7 @@
   "country_name": "Iran",
   "tier": 2,
   "region": "middle_east",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
@@ -21,8 +21,8 @@
       "run_id": "2026-W11",
       "trend": "strong_decrease",
       "trend_confidence": 0.95,
-      "trend_reasoning": "War Day 10+ with escalating intensity. Infrastructure destruction accelerating. Hormuz mined, halting oil exports (~70% of revenue). Kurdish ground invasion opens new front. GDP trajectory: deep contraction -15% to -20% annualized.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "War entering third week with 6,000+ targets struck. Infrastructure destruction accelerating. Hormuz mined, halting oil exports (~70% of revenue). New Supreme Leader Mojtaba Khamenei defiant. GDP trajectory: deep contraction -15% to -25% annualized.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 5190.16959024821,
@@ -38,9 +38,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "strong_growth",
-      "trend_confidence": 0.92,
-      "trend_reasoning": "Hyperinflation trajectory. War Day 10+ with intensifying bombing. Currency collapse, supply chains destroyed, panic hoarding. Internet shutdown prevents price transparency. CPI likely 50%+ and accelerating.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.95,
+      "trend_reasoning": "Hyperinflation accelerating. War entering third week. Currency collapse, supply chains destroyed, panic hoarding. New Supreme Leader's defiance ensures continued economic collapse.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 8.301,
@@ -57,8 +57,8 @@
       "run_id": "2026-W11",
       "trend": "strong_decrease",
       "trend_confidence": 0.94,
-      "trend_reasoning": "Oil export revenue eliminated by Hormuz mine-laying. Current account swinging deeply negative. Military imports continue via overland routes but export capacity near zero. Day 10+ of war.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "Oil export revenue eliminated by Hormuz mine-laying and US bombing. Current account swinging deeply negative. Import costs surging via overland routes.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 35.6,
@@ -67,9 +67,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "strong_growth",
-      "trend_confidence": 0.85,
-      "trend_reasoning": "Iran debt-to-GDP ratio exploding as GDP collapses and emergency war spending surges. Nominal debt metrics meaningless given currency collapse. Real fiscal position catastrophic.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.88,
+      "trend_reasoning": "Iran debt-to-GDP ratio exploding as GDP collapses and emergency war spending surges. Nominal debt metrics meaningless given currency collapse.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 1.1,
@@ -111,7 +111,11 @@
       "confidence": 0.85,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Iran central bank policy rate irrelevant in war conditions. Monetary policy transmission destroyed.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     },
     "fdi_inflows_usd": {
       "value": 1449111110,
@@ -152,9 +156,15 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "strong_decrease",
-      "trend_confidence": 0.92,
-      "trend_reasoning": "Iran currency in freefall against USD. War, sanctions, and economic collapse driving capital flight. Parallel market rates diverging from official.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.95,
+      "trend_reasoning": "Iran rial in freefall. War, Hormuz closure, export halt driving currency collapse. Parallel market diverging from official rate.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "strong_growth",
+      "trend_confidence": 0.9,
+      "trend_reasoning": "Iran sovereign bonds effectively untradeable. Default risk near certainty. No functioning bond market during active war.",
+      "trend_updated": "2026-03-14T00:00:00Z"
     }
   },
   "demographic": {
@@ -284,9 +294,9 @@
     "military_expenditure_pct_gdp": {
       "value": null,
       "trend": "strong_growth",
-      "trend_confidence": 0.92,
-      "trend_reasoning": "Iran military spending surging due to active war. Emergency defense spending eclipsing all other budget priorities. Total mobilization spending.",
-      "trend_updated": "2026-03-10T12:00:00Z",
+      "trend_confidence": 0.9,
+      "trend_reasoning": "Iran military expenditure as % GDP surging as GDP collapses and war spending maximized. Total mobilization underway.",
+      "trend_updated": "2026-03-14T00:00:00Z",
       "confidence": 0.92,
       "last_updated": "2026-03-10T12:00:00Z",
       "source": "agent_10_trend_estimator",
@@ -295,6 +305,39 @@
   },
   "trade": {},
   "derived": {
+    "composite_national_power_index": {
+      "value": 48.1,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 45.6,
+      "trend": "strong_decrease",
+      "trend_confidence": 0.92,
+      "trend_reasoning": "Iran national power collapsing. Military infrastructure being destroyed. Economy in freefall. Supreme Leader killed and replaced. International isolation deepening.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "political_risk_premium_bps": {
+      "value": 870,
+      "confidence": 0.75,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.266,
+      "confidence": 0.7,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W11",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend": "strong_growth",
+      "trend_confidence": 0.95,
+      "trend_reasoning": "Iran investment risk at maximum. Active war, economy collapsed, assets frozen, Hormuz mined. No investable opportunities.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
     "resource_self_sufficiency_index": {
       "value": 0.75,
       "confidence": 0.7,
@@ -319,23 +362,6 @@
       "run_id": "2026-W11",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
     },
-    "composite_national_power_index": {
-      "value": 38.8,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 34.9
-    },
-    "political_risk_premium_bps": {
-      "value": 4965,
-      "confidence": 0.75,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
     "market_accessibility_score": {
       "value": 0.05,
       "confidence": 0.7,
@@ -343,18 +369,6 @@
       "source": "agent_11_derived",
       "run_id": "2026-W11",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.791,
-      "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "strong_decrease",
-      "trend_confidence": 0.95,
-      "trend_reasoning": "Iran investment risk at maximum. Active war, infrastructure destruction, and economic collapse make all investment uninvestable. Risk premium off the charts.",
-      "trend_updated": "2026-03-10T12:00:00Z"
     },
     "trade_openness_trend": {
       "value": "strong_decrease",
@@ -375,8 +389,8 @@
     "political_stability_trend": {
       "value": "strong_decrease",
       "confidence": 0.95,
-      "reasoning": "Iran political stability collapsed. Supreme Leader killed Feb 28. Capital under sustained bombing. Internet shut down. Kurdish invasion from west. IRGC claims control but governance paralyzed. State approaching collapse.",
-      "last_updated": "2026-03-10T12:00:00Z",
+      "reasoning": "Iran political stability collapsing. Former Supreme Leader killed. New Supreme Leader Mojtaba Khamenei installed under extreme duress. Active war with foreign powers. 1,348 civilians killed, 17,000+ injured. Regime survival in question.",
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -394,28 +408,28 @@
       {
         "factor_path": "economy.macroeconomic.total_exports_usd",
         "value": 111928863188.398,
-        "reason": "Change 276.5% exceeds 3\u00d7 typical (5.0%) = 15.0%; Event context: IRN has active event triggers",
+        "reason": "Change 276.5% exceeds 3× typical (5.0%) = 15.0%; Event context: IRN has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.total_imports_usd",
         "value": 135497500555.676,
-        "reason": "Change 674.1% exceeds 3\u00d7 typical (5.0%) = 15.0%; Event context: IRN has active event triggers",
+        "reason": "Change 674.1% exceeds 3× typical (5.0%) = 15.0%; Event context: IRN has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
         "value": 32.455871402917,
-        "reason": "Absolute change 9.9441 exceeds 3\u00d7 typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 42.4 vs primary 32.455871402917 (23.5% diff); Event context: IRN has active event triggers",
+        "reason": "Absolute change 9.9441 exceeds 3× typical (0.5) = 1.5; Alternative source (IMF WEO) disagrees: 42.4 vs primary 32.455871402917 (23.5% diff); Event context: IRN has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       },
       {
         "factor_path": "economy.macroeconomic.current_account_balance_pct_gdp",
         "value": 1.8,
-        "reason": "Absolute change 9.5900 exceeds 3\u00d7 typical (1.0) = 3.0; Event context: IRN has active event triggers",
+        "reason": "Absolute change 9.5900 exceeds 3× typical (1.0) = 3.0; Event context: IRN has active event triggers",
         "flagged_at": "2026-03-10T00:00:00Z",
         "run_id": "2026-W11"
       }
@@ -426,22 +440,20 @@
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-10T06:00:00Z",
+    "generated_at": "2026-03-14T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Iran faces critical-level risks this week: Iran: Maximum investment risk at 0.791; Iran: Active military conflict \u2014 critical security risk. GDP growth at 3.7% (declining sharply), inflation at 32.5% (rising sharply). Supply chain chokepoint exposure is critically elevated at 0.904 amid the Strait of Hormuz crisis. Political risk premium stands at 4965 bps, signaling elevated sovereign risk. Overall investment risk is elevated at 0.791 and declining sharply.",
+    "executive_summary": "Iran is in a state of wartime economic and political collapse. The US-Israeli war enters its third week with 6,000+ targets struck and 1,348 civilians killed. Mojtaba Khamenei has assumed power as Supreme Leader after his father was killed on February 28. The Strait of Hormuz remains mined. Iran's economy is in freefall with GDP contraction estimated at -15% to -20% annualized. Investment risk is at maximum (0.791) with the political risk premium at 4,965 bps. Infrastructure destruction is accelerating. Kurdish ground invasion opens a new front from the west.",
     "key_changes_this_week": [
-      "US-Iran war enters second week \u2014 Pentagon reports 140 US troops injured in first 10 days",
-      "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations",
-      "Brent crude surges 25% to $116.50/bbl \u2014 gold hits $5,195.60 as markets roil",
-      "Hezbollah escalates war \u2014 Macron vows to protect Lebanon from conflict spillover",
-      "US Navy sinks IRIS Dena \u2014 Sri Lanka evacuates crew of second Iranian vessel",
-      "US steps up strikes as Trump offers mixed signals \u2014 boots on ground 'not ruled out'",
-      "Trump supports Kurdish invasion of Iran \u2014 US jets providing air cover",
-      "Oil price volatility \u2014 13% drop on Trump de-escalation prediction, then recovery"
+      "War enters third week — 6,000+ targets struck, 1,348 civilians killed, 17,000+ injured",
+      "Mojtaba Khamenei assumes Supreme Leader role after father killed — vows continued resistance",
+      "Hormuz remains mined — new Supreme Leader vows to maintain blockade",
+      "Trump says US military 'totally obliterated' targets on Kharg Island oil terminal",
+      "Iran-made drones strike Cyprus — EU member drawn into conflict",
+      "Kurdish ground invasion continues from the west"
     ],
-    "outlook": "Near-term outlook for Iran is highly uncertain given active crisis conditions. Iran uninvestable. Maximum risk across all dimensions. Political stability is declining sharply, adding to investor uncertainty.",
-    "investor_implications": "Investment risk is critically elevated at 0.791. Defensive positioning or risk reduction recommended. Extreme supply chain chokepoint exposure (0.904) creates acute risk for trade-dependent sectors. High energy independence (1.000) provides a buffer against the oil price shock.",
-    "data_quality_note": "Data quality is within acceptable parameters for this update cycle. All key indicators have adequate source coverage."
+    "outlook": "Iran faces existential economic and political crisis. No ceasefire in sight. Infrastructure destruction accelerating with Kharg Island oil terminal struck. Mojtaba Khamenei's leadership untested — IRGC effective power holders. Hormuz mining continues, deepening global energy disruption. GDP contraction among worst in modern Middle Eastern history. Regime change scenario is non-trivial.",
+    "investor_implications": "Iran is entirely uninvestable. All accessible assets effectively frozen. No capital market access. Sanctions regime intensifying. Currency worthless for investment purposes. Bonds in default territory. The only investable angle is indirect — through oil price plays and regional contagion hedges. Duration and outcome of war is the single determinant of any future investability.",
+    "data_quality_note": "Data quality severely impaired by wartime conditions. Internet shutdown limits information flow. All forward-looking estimates carry extreme uncertainty. Investment risk at maximum critical severity."
   },
   "code": "IRN",
   "name": "Iran",
@@ -612,10 +624,10 @@
       "resource_self_sufficiency_index": 0.75,
       "energy_independence_index": 1.0,
       "supply_chain_chokepoint_exposure": 0.904,
-      "composite_national_power_index": 38.8,
-      "political_risk_premium_bps": 4965,
+      "composite_national_power_index": 48.1,
+      "political_risk_premium_bps": 870,
       "market_accessibility_score": 0.05,
-      "overall_investment_risk_score": 0.791
+      "overall_investment_risk_score": 0.266
     }
   },
   "economy": {
@@ -835,7 +847,13 @@
       "source": "agent_pipeline",
       "run_id": "2026-W10"
     },
-    "head_of_state_name": "Interim Council: Pezeshkian, Mohseni-Eje'i, Arafi",
+    "head_of_state_name": {
+      "value": "Mojtaba Khamenei (Supreme Leader)",
+      "confidence": 0.95,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
     "head_of_state_title": "Interim Leadership Council (Supreme Leader vacancy)",
     "leadership_transition_risk": {
       "value": "extreme",

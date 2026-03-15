@@ -1,40 +1,45 @@
 {
   "run_id": "2026-W11",
   "date": "2026-03-10",
-  "generated_at": "2026-03-11T04:43:21Z",
+  "generated_at": "2026-03-14T23:22:40Z",
   "data": {
     "commodity_price.brent_crude_usd_bbl": {
-      "value": 80.0,
-      "confidence": 0.5,
-      "last_updated": "2026-03-10T00:00:00Z",
+      "value": 103.86,
+      "confidence": 0.9,
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "flag": true,
+      "flag_reason": "Commodity weekly change 29.82% exceeds 15% anomaly threshold; Source agent flagged anomaly"
     },
     "commodity_price.wti_crude_usd_bbl": {
-      "value": 73.1,
-      "confidence": 0.5,
-      "last_updated": "2026-03-10T00:00:00Z",
+      "value": 99.34,
+      "confidence": 0.9,
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "flag": true,
+      "flag_reason": "Commodity weekly change 35.90% exceeds 15% anomaly threshold; Source agent flagged anomaly"
     },
     "commodity_price.natural_gas_henry_hub_usd_mmbtu": {
-      "value": 2.92,
-      "confidence": 0.55,
-      "last_updated": "2026-03-10T00:00:00Z",
+      "value": 3.131,
+      "confidence": 0.88,
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "run_id": "2026-W11",
+      "note": "Source agent flagged anomaly but passes validation checks"
     },
     "commodity_price.gold_usd_oz": {
-      "value": 5413,
-      "confidence": 0.5,
-      "last_updated": "2026-03-10T00:00:00Z",
+      "value": 5019.7,
+      "confidence": 0.95,
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
     "commodity_price.silver_usd_oz": {
-      "value": 85.0,
-      "confidence": 0.5,
-      "last_updated": "2026-03-10T00:00:00Z",
+      "value": 80.695,
+      "confidence": 0.95,
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
@@ -46,9 +51,9 @@
       "run_id": "2026-W11"
     },
     "commodity_price.iron_ore_usd_tonne": {
-      "value": 100.84,
-      "confidence": 0.5,
-      "last_updated": "2026-03-10T00:00:00Z",
+      "value": 115.68,
+      "confidence": 0.85,
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
@@ -97,11 +102,11 @@
       "flag_reason": "Pre-flagged anomaly from processing agent: Strait of Hormuz vessel traffic collapsed ~70% following US-Israel strikes on Iran; ~170 containerships trapped"
     },
     "commodity_price.copper_usd_lb": {
-      "value": 6.03,
-      "confidence": 0.8,
-      "last_updated": "2026-03-04T17:00:12Z",
+      "value": 5.757,
+      "confidence": 0.88,
+      "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W11"
     },
     "military.arms_transfers_global": {
       "value": {
@@ -143,12 +148,51 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "commodity_price.platinum_usd_oz": {
+      "value": 2037.0,
+      "confidence": 0.95,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "commodity_price.palladium_usd_oz": {
+      "value": 1576.0,
+      "confidence": 0.95,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "commodity_price.wheat_usd_bu": {
+      "value": 5.8675,
+      "confidence": 0.85,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "flag": true,
+      "flag_reason": "Commodity weekly change 119.76% exceeds 15% anomaly threshold; Anomalous change but high confidence — flagged for review"
+    },
+    "commodity_price.corn_usd_bu": {
+      "value": 4.415,
+      "confidence": 0.85,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "flag": true,
+      "flag_reason": "Commodity weekly change 124.11% exceeds 15% anomaly threshold; Anomalous change but high confidence — flagged for review"
+    },
+    "ecb.central_bank_rate": {
+      "value": 2.0,
+      "confidence": 0.9,
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
     }
   },
   "flags": [
     {
       "factor": "commodity_price.brent_crude_usd_bbl",
-      "reason": "Brent crude +36% YTD. Anomalous surge driven by Hormuz crisis. Real market data \u2014 FLAG not REJECT.",
+      "reason": "Brent crude +36% YTD. Anomalous surge driven by Hormuz crisis. Real market data — FLAG not REJECT.",
       "value": 80.0,
       "flagged_at": "2026-03-04T17:00:12Z"
     },
