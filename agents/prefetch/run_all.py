@@ -182,7 +182,16 @@ def main():
         print(f"\nWarning: {summary['total_errors']} errors occurred. "
               f"Check staging/prefetched/_summary.json for details.")
 
-    return 0 if summary["total_errors"] == 0 else 1
+    # Only fail if we got no data at all or a fetcher crashed.
+    # API errors that still produced partial data (or used fallback)
+    # should not block the CI pipeline.
+    has_crashes = any(r.get("crash") for r in results)
+    if has_crashes:
+        return 1
+    if summary["total_records"] == 0:
+        print("\nFATAL: No records obtained from any source.")
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
