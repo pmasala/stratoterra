@@ -25,9 +25,11 @@ __pycache__/
 *.pyc
 .pytest_cache/
 
-# Staging raw data (regenerated each run)
+# Staging ephemeral data (regenerated each run)
 staging/raw_collected/
 staging/processed/
+staging/trends/
+staging/validated/
 
 # Pre-fetch cache (local fallback, not committed)
 staging/prefetch_cache/
