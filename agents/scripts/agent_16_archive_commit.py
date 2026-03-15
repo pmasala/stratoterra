@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
-"""Agent 16 — Archive & Commit Preparer (2026-W11)
+"""Agent 16 — Archive & Commit Preparer
 
 Creates archive snapshot, generates UI-optimized chunk files,
 builds manifest, and updates the run log.
 Does NOT execute any git commands.
+
+Usage:
+    python3 agents/scripts/agent_16_archive_commit.py                # auto-detect run_id
+    python3 agents/scripts/agent_16_archive_commit.py --run-id 2026-W11
 """
 
+import argparse
 import json
 import os
 import shutil
@@ -14,7 +19,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-PROJECT_ROOT = Path("/home/pietro/stratoterra")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = PROJECT_ROOT / "data"
 COUNTRIES_DIR = DATA_DIR / "countries"
 GLOBAL_DIR = DATA_DIR / "global"
@@ -24,8 +29,10 @@ CHUNKS_DIR = DATA_DIR / "chunks"
 STAGING_DIR = PROJECT_ROOT / "staging"
 ARCHIVE_DIR = PROJECT_ROOT / "archive"
 
-RUN_ID = "2026-W11"
-NOW = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+NOW = datetime.now(timezone.utc)
+_iso = NOW.isocalendar()
+RUN_ID = f"{_iso.year}-W{_iso.week:02d}"
+NOW = NOW.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 # Country centroid coordinates (ISO3 -> [lat, lon])
 COUNTRY_COORDS = {
@@ -219,6 +226,22 @@ def step_2_country_summary():
             else:
                 narrative_headline = exec_summary[:200]
 
+        # Military
+        military = data.get("military", {})
+        mil_exp_usd = extract_value(get_nested(data, "military", "military_expenditure_usd"))
+        mil_exp_pct = extract_value(get_nested(data, "military", "military_expenditure_pct_gdp"))
+        mil_trend_obj = military.get("military_expenditure_trend", {})
+        mil_trend = extract_value(mil_trend_obj) if mil_trend_obj else None
+
+        # Trade openness
+        trade_openness = extract_value(get_nested(data, "economy", "trade_openness_pct"))
+
+        # Political stability (raw 0-1 for map coloring)
+        pol_stability_raw = pss
+        if pol_stability_raw is not None and isinstance(pol_stability_raw, (int, float)):
+            # WGI range is roughly -2.5 to +2.5, normalize to 0-1
+            pol_stability_raw = max(0.0, min(1.0, (pol_stability_raw + 2.5) / 5.0))
+
         # Active flags count
         active_flags = get_nested(data, "metadata", "active_flags", default=[])
         flags_count = len(active_flags) if isinstance(active_flags, list) else 0
@@ -243,6 +266,11 @@ def step_2_country_summary():
             "energy_independence": energy_ind,
             "political_risk_premium_bps": pol_risk_bps,
             "supply_chain_chokepoint_exposure": chokepoint,
+            "military_expenditure_usd": mil_exp_usd,
+            "military_expenditure_pct_gdp": mil_exp_pct,
+            "military_spending_trend": mil_trend,
+            "political_stability": pol_stability_raw,
+            "trade_openness_pct": trade_openness,
             "active_flags_count": flags_count,
             "alert_count": alert_info["count"],
             "max_alert_severity": alert_info["max_severity"],
@@ -376,6 +404,21 @@ def step_6_manifest(summary_count, detail_count, global_files):
     manifest = {
         "generated_at": NOW,
         "run_id": RUN_ID,
+        "files": {
+            "all_countries_summary": {
+                "path": "data/chunks/country-summary/all_countries_summary.json",
+                "countries": summary_count,
+            },
+            "country_detail": {
+                "count": detail_count,
+            },
+            "weekly_briefing": {
+                "last_modified": NOW,
+            },
+            "alert_index": {
+                "last_modified": NOW,
+            },
+        },
         "chunks": {
             "country_summary": {
                 "file": "country-summary/all_countries_summary.json",
@@ -466,6 +509,13 @@ def step_7_update_run_log(manifest):
 # Main
 # ===========================================================================
 def main():
+    global RUN_ID
+    parser = argparse.ArgumentParser(description="Agent 16 — Archive & Commit Preparer")
+    parser.add_argument("--run-id", help="Run ID (e.g. 2026-W11). Default: auto from date.")
+    args = parser.parse_args()
+    if args.run_id:
+        RUN_ID = args.run_id
+
     print(f"Agent 16 — Archive & Commit Preparer")
     print(f"Run ID: {RUN_ID} | Timestamp: {NOW}")
     print(f"Project root: {PROJECT_ROOT}")

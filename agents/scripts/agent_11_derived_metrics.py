@@ -1,24 +1,37 @@
 #!/usr/bin/env python3
 """
 Agent 11 — Derived Metrics Calculator
-Run ID: 2026-W11 | Date: 2026-03-10
 
 Computes composite and derived scores from base factors for all 75 countries.
 Updates the `derived` section of each country file and generates global_rankings.json.
+
+Usage:
+    python3 agents/scripts/agent_11_derived_metrics.py                # auto-detect date/run_id
+    python3 agents/scripts/agent_11_derived_metrics.py --run-id 2026-W11 --timestamp 2026-03-10T16:00:00Z
 """
 
+import argparse
 import json
 import os
 import sys
 from datetime import datetime, timezone
+from pathlib import Path
 
 # ─── Configuration ───────────────────────────────────────────────────────────
 
-RUN_ID = "2026-W11"
-TIMESTAMP = "2026-03-10T16:00:00Z"
-COUNTRIES_DIR = "/home/pietro/stratoterra/data/countries"
-COUNTRY_LIST = "/home/pietro/stratoterra/data/indices/country_list.json"
-RANKINGS_OUT = "/home/pietro/stratoterra/data/global/global_rankings.json"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+COUNTRIES_DIR = str(PROJECT_ROOT / "data" / "countries")
+COUNTRY_LIST = str(PROJECT_ROOT / "data" / "indices" / "country_list.json")
+RANKINGS_OUT = str(PROJECT_ROOT / "data" / "global" / "global_rankings.json")
+
+def _compute_defaults():
+    now = datetime.now(timezone.utc)
+    iso = now.isocalendar()
+    return f"{iso.year}-W{iso.week:02d}", now.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+_default_run_id, _default_timestamp = _compute_defaults()
+RUN_ID = _default_run_id
+TIMESTAMP = _default_timestamp
 
 # ─── Helper: extract a numeric value from a country dict ─────────────────────
 
@@ -809,6 +822,16 @@ def compute_investment_risk(code, data, political_risk_bps, chokepoint_exposure)
 # ─── Main pipeline ──────────────────────────────────────────────────────────
 
 def main():
+    global RUN_ID, TIMESTAMP
+    parser = argparse.ArgumentParser(description="Agent 11 — Derived Metrics Calculator")
+    parser.add_argument("--run-id", help="Run ID (e.g. 2026-W11). Default: auto from date.")
+    parser.add_argument("--timestamp", help="Timestamp (ISO 8601). Default: now.")
+    args = parser.parse_args()
+    if args.run_id:
+        RUN_ID = args.run_id
+    if args.timestamp:
+        TIMESTAMP = args.timestamp
+
     print(f"Agent 11 — Derived Metrics Calculator")
     print(f"Run ID: {RUN_ID} | Timestamp: {TIMESTAMP}")
     print(f"{'='*60}")
