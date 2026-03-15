@@ -32,8 +32,8 @@ jobs:
 
       - name: Run pre-fetch scripts
         env:
-          ACLED_API_KEY: ${{ secrets.ACLED_API_KEY }}
           ACLED_EMAIL: ${{ secrets.ACLED_EMAIL }}
+          ACLED_PASSWORD: ${{ secrets.ACLED_PASSWORD }}
           EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
           EXCHANGERATE_API_KEY: ${{ secrets.EXCHANGERATE_API_KEY }}
           COMTRADE_API_KEY: ${{ secrets.COMTRADE_API_KEY }}
