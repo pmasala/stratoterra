@@ -19,7 +19,9 @@ DOC_API = "https://api.gdeltproject.org/api/v2/doc/doc"
 GEO_API = "https://api.gdeltproject.org/api/v2/geo/geo"
 
 # Pause between GDELT queries to avoid 429 rate limiting.
-QUERY_DELAY_SECONDS = 5
+# The GDELT API enforces strict rate limits (~1 req/5s) and
+# returns 429 aggressively from CI/shared IPs.  10s is safer.
+QUERY_DELAY_SECONDS = 10
 
 # Thematic queries to cover different event types
 THEME_QUERIES = [
@@ -100,7 +102,8 @@ class GDELTFetcher(BaseFetcher):
 
         The GDELT Geo API v2 has been silently removed (returns 404 since
         at least early 2026). Kept for forward compatibility in case it
-        comes back online. Failures are handled gracefully.
+        comes back online. Failures are handled gracefully and not counted
+        as errors since this endpoint is known to be offline.
         """
         params = {
             "query": "conflict OR military OR sanctions OR protest",
@@ -109,8 +112,14 @@ class GDELTFetcher(BaseFetcher):
             "format": "GeoJSON",
         }
 
+        # Track error count before the request so we can remove the
+        # expected 404 from the error list — it's a known-dead endpoint.
+        errors_before = len(self.errors)
         data = self.get_json(GEO_API, params=params, timeout=30)
         if not data or not isinstance(data, dict):
+            # Remove the error added by get_json — this failure is expected
+            if len(self.errors) > errors_before:
+                self.errors = self.errors[:errors_before]
             logger.info("GDELT Geo API unavailable — skipping geo events")
             return []
 

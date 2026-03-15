@@ -5,7 +5,8 @@ Covers: GDP forecasts, inflation forecasts, unemployment forecasts,
 fiscal balance, current account — forward-looking data that
 complements World Bank's historical data.
 
-API: https://www.imf.org/external/datamapper/api/
+Primary API: https://www.imf.org/external/datamapper/api/
+Fallback API: https://dataservices.imf.org/REST/SDMX_JSON.svc (SDMX JSON)
 No API key required.
 """
 
@@ -17,6 +18,7 @@ from .base_fetcher import BaseFetcher, get_all_country_codes
 logger = logging.getLogger("prefetch.imf")
 
 BASE_URL = "https://www.imf.org/external/datamapper/api/v1"
+SDMX_BASE_URL = "https://dataservices.imf.org/REST/SDMX_JSON.svc"
 
 # WEO indicator codes
 INDICATORS = {
@@ -30,6 +32,14 @@ INDICATORS = {
     "GGXWDG_NGDP": "gross_debt_pct_gdp",      # General govt gross debt % GDP
 }
 
+# Mapping from DataMapper indicators to SDMX IFS database indicators
+# Used as fallback when DataMapper API returns 403.
+SDMX_IFS_INDICATORS = {
+    "NGDP_RPCH": ("IFS", "NGDP_R_SA_XDC_R_PT"),   # Real GDP growth (approx)
+    "PCPIPCH": ("IFS", "PCPI_IX"),                   # Consumer price index
+    "LUR": ("IFS", "LUR_PT"),                        # Unemployment rate
+}
+
 
 class IMFFetcher(BaseFetcher):
     source_id = "imf_weo"
@@ -39,17 +49,32 @@ class IMFFetcher(BaseFetcher):
                          country_codes: list[str]) -> list[dict]:
         """Fetch one indicator for all countries at once.
 
-        The DataMapper API returns 403 when country codes are appended
-        to the URL, but works when fetching all countries. We fetch
-        the full dataset and filter locally to tracked countries.
+        Tries the DataMapper API first; if it returns 403 (which
+        happens when the API blocks automated requests), falls back
+        to the IMF SDMX JSON REST API for available indicators.
         """
         tracked = set(country_codes)
         url = f"{BASE_URL}/{indicator_code}"
 
         data = self.get_json(url, timeout=30)
-        if not data or not isinstance(data, dict):
-            return []
+        if data and isinstance(data, dict):
+            records = self._parse_datamapper_response(
+                data, indicator_code, tracked)
+            if records:
+                return records
 
+        # DataMapper failed — try SDMX fallback for supported indicators
+        sdmx_records = self._fetch_indicator_sdmx(indicator_code, tracked)
+        if sdmx_records:
+            logger.info("IMF %s: got %d records via SDMX fallback",
+                        indicator_code, len(sdmx_records))
+            return sdmx_records
+
+        return []
+
+    def _parse_datamapper_response(self, data: dict, indicator_code: str,
+                                   tracked: set[str]) -> list[dict]:
+        """Parse a DataMapper API response into records."""
         records = []
         values_section = data.get("values", {}).get(indicator_code, {})
         for iso3, year_data in values_section.items():
@@ -76,6 +101,77 @@ class IMFFetcher(BaseFetcher):
                     "source": "IMF WEO",
                     "source_url": f"{BASE_URL}/{indicator_code}",
                 })
+
+        return records
+
+    def _fetch_indicator_sdmx(self, indicator_code: str,
+                              tracked: set[str]) -> list[dict]:
+        """Fetch indicator data from IMF SDMX JSON REST API as fallback.
+
+        Only a subset of WEO indicators map to IFS SDMX series.
+        Returns empty list for unmapped indicators.
+        """
+        if indicator_code not in SDMX_IFS_INDICATORS:
+            return []
+
+        database, series_code = SDMX_IFS_INDICATORS[indicator_code]
+        # Build country filter: take first 10 tracked countries to
+        # keep request size manageable
+        sample_codes = sorted(tracked)[:25]
+        country_filter = "+".join(sample_codes)
+
+        url = (f"{SDMX_BASE_URL}/CompactData/{database}"
+               f"/A.{country_filter}.{series_code}"
+               f"?startPeriod=2020&endPeriod=2026")
+
+        data = self.get_json(url, timeout=45)
+        if not data or not isinstance(data, dict):
+            return []
+
+        records = []
+        try:
+            dataset = data.get("CompactData", {}).get("DataSet", {})
+            series_list = dataset.get("Series", [])
+            # Normalize to list if single series returned
+            if isinstance(series_list, dict):
+                series_list = [series_list]
+
+            for series in series_list:
+                iso2 = series.get("@REF_AREA", "")
+                # Convert ISO2 back to ISO3
+                from .base_fetcher import ISO2_TO_ISO3
+                iso3 = ISO2_TO_ISO3.get(iso2, iso2)
+                if iso3 not in tracked:
+                    continue
+
+                obs_list = series.get("Obs", [])
+                if isinstance(obs_list, dict):
+                    obs_list = [obs_list]
+
+                for obs in obs_list:
+                    year_str = obs.get("@TIME_PERIOD", "")
+                    value = obs.get("@OBS_VALUE")
+                    if value is None:
+                        continue
+                    try:
+                        val = float(value)
+                    except (ValueError, TypeError):
+                        continue
+
+                    year_int = int(year_str) if year_str.isdigit() else None
+                    records.append({
+                        "country_code": iso3,
+                        "indicator_id": indicator_code,
+                        "indicator_name": INDICATORS[indicator_code],
+                        "value": val,
+                        "year": year_str,
+                        "is_forecast": year_int is not None and year_int >= 2026,
+                        "source": "IMF IFS (SDMX fallback)",
+                        "source_url": url,
+                    })
+        except (KeyError, TypeError) as e:
+            logger.warning("IMF SDMX parse error for %s: %s",
+                           indicator_code, e)
 
         return records
 
