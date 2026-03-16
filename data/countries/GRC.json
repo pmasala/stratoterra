@@ -3,68 +3,68 @@
   "country_name": "Greece",
   "tier": 2,
   "region": "europe",
-  "last_updated": "2026-03-14T00:00:00Z",
+  "last_updated": "2026-03-15T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 256238371778.118,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
       "value": 2.0865743380603,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Greece facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "GRC GDP growth slowing but not contracting. Oil shock and trade uncertainty create headwinds partially offset by ECB stability",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 24626.1481858973,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
       "value": 2.74149045788606,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Greece facing inflation uptick from oil shock feeding through energy, transport, and goods prices. EU admitted 'nuclear blunder' on energy policy. ECB faces stagflation dilemma ahead of March policy meeting.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.68,
+      "trend_reasoning": "GRC inflation moderately rising from global oil price shock and tariff-related import cost increases",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 8.54,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
       "value": -7.10950344070572,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "decrease",
       "trend_confidence": 0.65,
-      "trend_reasoning": "Greece current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "GRC current account modestly deteriorating from higher energy import costs and trade disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 15221540695.0005,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "govt_debt_pct_gdp": {
@@ -75,8 +75,8 @@
       "run_id": "2026-W11",
       "trend": "growth",
       "trend_confidence": 0.68,
-      "trend_reasoning": "Greece debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "GRC debt modestly rising from defense spending increases (NATO 5% target pressure) and energy transition costs",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 2,
@@ -98,23 +98,23 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "EUR under mild pressure from European market crash and energy import costs. USD safe-haven demand dominant. ECB policy response key variable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "GRC (EUR) appreciating vs USD — EUR/USD at 1.22 as ECB holds rates while Fed expected to cut. Dollar weakness broadening",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 107906278860.86,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "total_imports_usd": {
       "value": 122135634583.353,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "central_bank_policy_rate_pct": {
@@ -133,20 +133,20 @@
     },
     "fdi_inflows_usd": {
       "value": 6742277267.34835,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Greece FDI broadly stable with mild downward pressure from global uncertainty. Gulf conflict creating risk-off sentiment across emerging markets.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.55,
+      "trend_reasoning": "GRC FDI broadly stable with modest caution from global risk-off sentiment and trade disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_ppp_usd": {
       "value": 461230557615.621,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gini_coefficient": {
@@ -167,23 +167,23 @@
   "demographic": {
     "population_total": {
       "value": 10405134,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "population_growth_pct": {
       "value": -0.0213045199396999,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 81.5365853658537,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "hdi": {
@@ -202,23 +202,44 @@
     },
     "labor_force_participation_pct": {
       "value": 51.958,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "health_expenditure_pct_gdp": {
       "value": 8.39367008,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "urban_population_pct": {
       "value": 78.9967856500534,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 33.4,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 86.2697,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     }
   },
@@ -283,79 +304,82 @@
       }
     },
     "military_expenditure_pct_gdp": {
-      "value": null,
-      "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Greece defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% — Europe now top recipient region.",
-      "trend_updated": "2026-03-10T12:00:00Z",
-      "confidence": 0.82,
-      "last_updated": "2026-03-10T12:00:00Z",
-      "source": "agent_10_trend_estimator",
+      "value": 3.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
       "run_id": "2026-W11"
     }
   },
   "trade": {},
   "derived": {
-    "composite_national_power_index": {
-      "value": 53.9,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 55.5
-    },
-    "political_risk_premium_bps": {
-      "value": 140,
-      "confidence": 0.75,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.758,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Greece investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
-      "trend_updated": "2026-03-10T12:00:00Z"
-    },
     "resource_self_sufficiency_index": {
       "value": 0.3,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 0.2,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
       "value": 0.39,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
+    },
+    "composite_national_power_index": {
+      "value": 39.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 53.9
+    },
+    "political_risk_premium_bps": {
+      "value": 158,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
       "value": 0.68,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.307,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend_confidence": 0.6,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "GRC investment risk broadly stable — EU institutional framework and NATO membership provide stability despite global uncertainty"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -365,19 +389,19 @@
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     },
-    "top_partner_relationship_health": {
-      "value": "stable",
-      "confidence": 0.55,
-      "reasoning": "Greece key bilateral relationships broadly unchanged this week. Global focus on Gulf conflict reduces attention on other bilateral dynamics.",
-      "last_updated": "2026-03-10T12:00:00Z",
-      "source": "agent_10_trend_estimator",
-      "run_id": "2026-W11"
-    },
     "political_stability_trend": {
       "value": "stable",
       "confidence": 0.65,
       "reasoning": "Greece political stability broadly maintained. European-wide stress from oil shock and market crash creates background pressure but institutions holding.",
       "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "GRC partner relationships broadly stable within EU/NATO framework. Iran war creating some alliance strain over burden-sharing",
+      "last_updated": "2026-03-15T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -393,24 +417,23 @@
         "run_id": "2026-W10"
       }
     ],
-    "update_count": 97,
+    "update_count": 130,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-14T00:00:00Z",
+    "generated_at": "2026-03-15T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Greece faces GDP headwinds from the oil shock and European market crash (~6%). As a net energy importer and tourism-dependent economy, both channels are negative. Investment risk at 0.307 — watch level. The Cyprus drone strike by Iran-made drones raises Eastern Mediterranean security concerns relevant to Greek defense posture. Government debt remains elevated.",
+    "executive_summary": "Greece's economy faces mounting pressure from the global energy price shock triggered by the Iran-Hormuz crisis. GDP growth stands at 2.1% (stable) while inflation is at 2.7% (rising). Energy independence is low at 0.200, amplifying vulnerability. Investment risk is moderate at 0.307; selective opportunities exist amid heightened volatility.",
     "key_changes_this_week": [
-      "GDP declining from oil shock and European market crash",
-      "Iran-made drones strike Cyprus — Eastern Mediterranean security concern",
-      "Tourism demand at risk from European consumer confidence erosion",
-      "Investment risk at watch level (0.307)"
+      "Greece: GDP declining with investment risk at 0.307",
+      "Inflation rising at 2.7%",
+      "Government debt trajectory: rising (146.7% of GDP)"
     ],
-    "outlook": "Greek GDP under pressure from energy costs and tourism demand uncertainty. Eastern Mediterranean security environment deteriorating with Cyprus drone strike. High debt-to-GDP constrains fiscal response. ECB support critical for yield management. Tourism season outlook uncertain depending on conflict trajectory.",
-    "investor_implications": "Greek equities face energy and tourism headwinds. ASE tracking broader European weakness. Government bonds dependent on ECB backstop. Tourism sector outlook uncertain. Banking sector improved but exposed to macro deterioration. Shipping sector may benefit from trade rerouting around Hormuz. Eastern Mediterranean security premium rising.",
-    "data_quality_note": "Watch alert active for GDP declining with investment risk. Data quality within acceptable parameters."
+    "outlook": "Greece faces a challenging near-term as the energy price shock works through the economy. With energy independence at only 0.200, the pass-through to production costs will be severe. Inflation at 2.7% (rising) constrains ECB rate cut options. Industrial competitiveness is eroding against energy-rich competitors. A Hormuz reopening would provide significant relief, but structural energy security gaps require long-term investment.",
+    "investor_implications": "Greece faces earnings pressure across energy-intensive sectors. Investment risk at 0.307 is elevated by European standards. Overweight energy-efficient companies and defense. Underweight industrial commodities consumers. Sovereign bonds: 3.3% 10-year yield remains anchored.",
+    "data_quality_note": "Data quality is high with 130 data points updated this run.  Flagged factors: macroeconomic.exchange_rate_vs_usd."
   },
   "code": "GRC",
   "name": "Greece",
@@ -528,10 +551,10 @@
       "resource_self_sufficiency_index": 0.3,
       "energy_independence_index": 0.2,
       "supply_chain_chokepoint_exposure": 0.39,
-      "composite_national_power_index": 53.9,
-      "political_risk_premium_bps": 140,
+      "composite_national_power_index": 39.2,
+      "political_risk_premium_bps": 158,
       "market_accessibility_score": 0.68,
-      "overall_investment_risk_score": 0.758
+      "overall_investment_risk_score": 0.307
     }
   },
   "economy": {
@@ -612,7 +635,13 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 89.78,
+    "trade_openness_pct": {
+      "value": 89.78,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "GRC trade openness broadly stable with modest downward pressure from Hormuz shipping disruption and US tariff escalation",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
     "financial": {
       "exchange_rate_vs_usd": {
         "value": 0.87138,
@@ -628,15 +657,57 @@
         "source": "agent_pipeline",
         "run_id": "2026-W11"
       }
+    },
+    "energy_coal_production_mt": {
+      "value": 6317.07200000005,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 53.528868755,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 214.1855553,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 0.070311568,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 309.683805,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 1.497,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
     }
   },
   "institutions": {
     "under_international_sanctions": {
       "value": false,
-      "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.72,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch",
+      "run_id": "2026-W11"
     },
     "democracy_index": {
       "value": 8.07,
@@ -681,45 +752,49 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": 1.012167,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.01216721534729,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": 0.239744,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "value": 0.239744067192078,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "GRC political stability broadly maintained. NATO cohesion tested by Iran war response and defense spending demands",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "wgi_government_effectiveness": {
-      "value": 0.148003,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 0.148003026843071,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": 0.578935,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 0.578935325145721,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": 0.213159,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 0.213158577680588,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": 0.097847,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 0.0978469252586365,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "fragile_states_index": {
@@ -756,6 +831,14 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "GRC partner relationships broadly stable within EU/NATO framework. Iran war creating some alliance strain over burden-sharing",
+      "trend_updated": "2026-03-15T00:00:00Z"
     }
   }
 }

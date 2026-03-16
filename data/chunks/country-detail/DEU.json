@@ -3,68 +3,68 @@
   "country_name": "Germany",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-14T00:00:00Z",
+  "last_updated": "2026-03-15T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 4685592577804.69,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
       "value": -0.495851897260366,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.85,
-      "trend_reasoning": "Germany facing continued GDP headwinds from oil shock. Section 301 investigations add new trade risk. VW job cuts (50,000) deepening industrial recession. Energy costs rising. Stagflation scenario forming.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "DEU GDP declining from energy cost shock, manufacturing headwinds, and Section 301 trade investigation uncertainty",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 56103.7323182554,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
       "value": 2.2564981433876,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Germany facing inflation pressure from oil at $100+/bbl feeding through energy, transport, and food prices. IEA 400M barrel SPR release provides only partial relief.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "DEU inflation rising from oil shock pass-through. ECB holding rates. Section 122 tariffs adding import cost pressure. March/April readings will capture energy surge",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.711,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
       "value": 5.77188467199732,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.62,
-      "trend_reasoning": "Germany current account under modest pressure from higher energy import costs.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "DEU current account modestly deteriorating from higher energy import costs and trade disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 377935574356.242,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "govt_debt_pct_gdp": {
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Germany debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.68,
+      "trend_reasoning": "DEU debt modestly rising from defense spending increases (NATO 5% target pressure) and energy transition costs",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 0.9,
@@ -93,32 +93,32 @@
       "run_id": "2026-W10"
     },
     "central_bank_policy_rate_pct": {
-      "value": 2.0,
-      "confidence": 0.99,
-      "last_updated": "2026-03-03T22:30:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10b",
+      "value": null,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "ecb",
+      "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.72,
       "trend_reasoning": "ECB facing stagflation dilemma. Oil shock pushes inflation higher while growth weakens. March policy meeting critical. Belgium general strike highlights wage-price spiral risk.",
       "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
-      "value": 0.8608,
-      "confidence": 0.95,
-      "last_updated": "2026-03-04T17:00:12Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10",
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Germany currency broadly stable against USD. No direct conflict exposure.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "value": 0.87138,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "DEU (EUR) appreciating vs USD — EUR/USD at 1.22 as ECB holds rates while Fed expected to cut. Dollar weakness broadening",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 2.79,
-      "confidence": 0.6,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 2.99,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
       "run_id": "2026-W11",
       "trend": "growth",
       "trend_confidence": 0.65,
@@ -126,24 +126,24 @@
       "trend_updated": "2026-03-14T00:00:00Z"
     },
     "equity_index_level": {
-      "value": 23626.77,
-      "confidence": 0.55,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 23447.29,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
       "run_id": "2026-W11"
     },
     "total_exports_usd": {
       "value": 1941431210621.87,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "total_imports_usd": {
       "value": 1764438191610.94,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "inflation_forecast_2026_pct": {
@@ -162,20 +162,20 @@
     },
     "fdi_inflows_usd": {
       "value": 47599143488.7827,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Germany FDI broadly stable with mild downward pressure from global uncertainty. Gulf conflict creating risk-off sentiment across emerging markets.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "DEU FDI facing headwinds from Section 301 investigation and trade policy uncertainty",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_ppp_usd": {
       "value": 6142807000522.21,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gini_coefficient": {
@@ -196,23 +196,23 @@
   "demographic": {
     "population_total": {
       "value": 83516593,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "population_growth_pct": {
       "value": 0.274957829184881,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 80.5414634146342,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "hdi": {
@@ -231,23 +231,44 @@
     },
     "labor_force_participation_pct": {
       "value": 60.571,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "health_expenditure_pct_gdp": {
       "value": 12.26655293,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "urban_population_pct": {
       "value": 82.0211432579125,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 32.4,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 93.5,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     }
   },
@@ -268,11 +289,11 @@
       "run_id": "2026-W09"
     },
     "military_expenditure_usd": {
-      "value": 88500000000,
-      "confidence": 0.93,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "value": 107000000000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "sipri",
+      "run_id": "2026-W11"
     },
     "military_expenditure_pct_gdp": {
       "value": 2.1,
@@ -281,9 +302,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W10",
       "trend": "growth",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Germany defense spending growing under NATO commitments. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.75,
+      "trend_reasoning": "DEU defense spending rising from NATO pressure, Iran war response, and Russia threat. Trump 5% GDP target creating political pressure",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "military_expenditure_trend": {
       "value": "strong_growth",
@@ -367,70 +388,67 @@
   },
   "trade": {},
   "derived": {
-    "composite_national_power_index": {
-      "value": 73.4,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 72.7,
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Germany national power broadly stable. No significant structural changes this week.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
-    "political_risk_premium_bps": {
-      "value": 100,
-      "confidence": 0.75,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.78,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "growth",
-      "trend_confidence": 0.62,
-      "trend_reasoning": "Germany investment risk modestly elevated from oil shock and global uncertainty.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
     "resource_self_sufficiency_index": {
       "value": 0.35,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 0.3,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
       "value": 0.31,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
+    },
+    "composite_national_power_index": {
+      "value": 63.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 73.4
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "previous_value": 100
     },
     "market_accessibility_score": {
       "value": 0.88,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.103,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend_confidence": 0.6,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "DEU investment risk broadly stable — EU institutional framework and NATO membership provide stability despite global uncertainty"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -440,19 +458,19 @@
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     },
-    "top_partner_relationship_health": {
-      "value": "stable",
-      "confidence": 0.55,
-      "reasoning": "Germany key bilateral relationships broadly unchanged this week. Global focus on Gulf conflict reduces attention on other bilateral dynamics.",
-      "last_updated": "2026-03-10T12:00:00Z",
-      "source": "agent_10_trend_estimator",
-      "run_id": "2026-W11"
-    },
     "political_stability_trend": {
       "value": "stable",
       "confidence": 0.55,
       "reasoning": "Germany political stability broadly unchanged. No major domestic political disruptions this week.",
       "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.62,
+      "reasoning": "DEU relationships with US deteriorating from Section 301 investigation targeting manufacturing sectors",
+      "last_updated": "2026-03-15T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -468,24 +486,26 @@
         "run_id": "2026-W10"
       }
     ],
-    "update_count": 108,
+    "update_count": 148,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-14T00:00:00Z",
+    "generated_at": "2026-03-15T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Germany's industrial recession is deepening as the energy shock compounds structural competitiveness challenges. VW is slashing 50,000 jobs — the largest restructuring in German auto history. The EU admitted a 'nuclear blunder' on energy policy as European markets crashed ~6%. GDP growth is declining with inflation rising from energy cost pass-through. Defense spending is trending up as the NATO burden-sharing debate intensifies.",
+    "executive_summary": "Germany's economy faces mounting pressure from the global energy price shock triggered by the Iran-Hormuz crisis. GDP growth stands at -0.5% (declining) while inflation is at 2.3% (rising). Energy independence is low at 0.300, amplifying vulnerability. Key signal: IEA announces record 400 million barrel strategic oil reserve release: The International Energy Agency agreed to release 400 million barrels of oil, the largest coordinated release in history. The US... Investment risk remains contained at 0.103.",
     "key_changes_this_week": [
-      "VW announces 50,000 job cuts — largest in German auto history",
-      "EU admits 'nuclear blunder' on energy policy",
-      "European markets crash ~6% on energy shock and geopolitical risk",
-      "Section 301 overcapacity investigation includes Germany"
+      "IEA announces record 400 million barrel strategic oil reserve release: The International Energy Agency agreed to release 400 million barrels of oil, the largest coordinated...",
+      "Supreme Court strikes down IEEPA tariffs; Trump responds with Section 122 global surcharge: The Supreme Court ruled 6-3 on Feb 20 that IEEPA does not authorize presidential...",
+      "USTR launches new Section 301 investigations targeting 16 countries' manufacturing: On March 11, USTR initiated new Section 301 investigations into 'structural excess capacity and...",
+      "Section 122 tariff increase from 10% to 15% expected imminently: Treasury Secretary Scott Bessent announced on March 4 that the US would increase the Section 122 global tariff...",
+      "Dollar weakening as Fed expected to cut rates twice in 2026: EUR/USD reached 1.22 in March 2026 as the dollar weakens. The Fed is widely expected to cut rates twice in 2026 while...",
+      "Inflation rising at 2.3%"
     ],
-    "outlook": "German industrial model under structural stress from energy costs, Chinese competition, and auto sector transition. GDP growth declining with limited near-term catalysts. Fiscal space constrained by debt brake. Defense spending rising from low base creates modest demand but insufficient to offset industrial headwinds. Coalition government stability uncertain.",
-    "investor_implications": "German equities underweight recommended. Auto sector facing dual pressure from energy costs and EV transition. Defense and infrastructure plays may offer relative value. Bund yields modestly higher on fiscal uncertainty. EUR weakness adds currency risk for non-hedged positions. Watch for auto supplier distress.",
-    "data_quality_note": "Political stability trend flagged as declining. Data quality within acceptable parameters."
+    "outlook": "Germany faces a challenging near-term as the energy price shock works through the economy. With energy independence at only 0.300, the pass-through to production costs will be severe. Inflation at 2.3% (rising) constrains ECB rate cut options. Industrial competitiveness is eroding against energy-rich competitors. A Hormuz reopening would provide significant relief, but structural energy security gaps require long-term investment.",
+    "investor_implications": "Germany faces earnings pressure across energy-intensive sectors. Investment risk at 0.103 is moderate by European standards. Overweight energy-efficient companies and defense. Underweight industrial commodities consumers. Sovereign bonds: 3.0% 10-year yield remains anchored.",
+    "data_quality_note": "Data quality is high with 148 data points updated this run.  Flagged factors: macroeconomic.exchange_rate_vs_usd."
   },
   "code": "DEU",
   "name": "Germany",
@@ -624,10 +644,10 @@
       "resource_self_sufficiency_index": 0.35,
       "energy_independence_index": 0.3,
       "supply_chain_chokepoint_exposure": 0.31,
-      "composite_national_power_index": 73.4,
-      "political_risk_premium_bps": 100,
+      "composite_national_power_index": 63.2,
+      "political_risk_premium_bps": 0,
       "market_accessibility_score": 0.88,
-      "overall_investment_risk_score": 0.78
+      "overall_investment_risk_score": 0.103
     }
   },
   "economy": {
@@ -697,7 +717,11 @@
       "confidence": 0.82,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "DEU trade openness declining from Section 301 investigation, Section 122 tariffs, and global shipping disruption from Hormuz",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "avg_applied_tariff_pct": {
       "value": 5.0,
@@ -742,15 +766,57 @@
         "source": "agent_pipeline",
         "run_id": "2026-W11"
       }
+    },
+    "energy_coal_production_mt": {
+      "value": 91940.85699999848,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 490.176993982,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 2745.184461,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 145.7760856,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 2056.734972,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 28.724265027322403,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
     }
   },
   "institutions": {
     "under_international_sanctions": {
       "value": false,
-      "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
     },
     "democracy_index": {
       "value": 8.73,
@@ -795,53 +861,57 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": 1.461386,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.46138572692871,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": 0.586989,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "value": 0.586989283561707,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "DEU political stability broadly maintained. NATO cohesion tested by Iran war response and defense spending demands",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "wgi_government_effectiveness": {
-      "value": 1.185417,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.18541669845581,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": 1.456975,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.45697498321533,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": 1.551208,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.55120778083801,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": 1.664166,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.66416621208191,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "head_of_state_name": {
       "value": "Frank-Walter Steinmeier",
-      "confidence": 0.92,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
     },
     "head_of_state_title": {
       "value": "President",
@@ -852,10 +922,10 @@
     },
     "head_of_government_name": {
       "value": "Friedrich Merz",
-      "confidence": 0.9,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
     },
     "next_national_election_date": {
       "value": "2029-09",
@@ -863,6 +933,14 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "DEU relationships with US deteriorating from Section 301 investigation targeting manufacturing sectors",
+      "trend_updated": "2026-03-15T00:00:00Z"
     }
   }
 }

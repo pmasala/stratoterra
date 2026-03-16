@@ -1,0 +1,24 @@
+{
+  "audit_date": "2026-03-15",
+  "run_id": "2026-W11",
+  "mode": "quality_audit",
+  "decision": "GO",
+  "metrics_evaluated": {
+    "tier_1_avg_coverage_pct": 99.6,
+    "tier_2_avg_coverage_pct": 99.5,
+    "overall_avg_confidence": 0.855,
+    "agent_failures": 0,
+    "reject_rate_pct": 0.0,
+    "tier_1_below_80_count": 0
+  },
+  "metric_verdicts": {
+    "tier_1_coverage": "GO",
+    "tier_2_coverage": "GO",
+    "confidence": "GO",
+    "agent_failures": "GO",
+    "reject_rate": "GO",
+    "tier_1_flagged_countries": "GO"
+  },
+  "concerns": [],
+  "reasoning": "All quality metrics within GO thresholds. T1 coverage 99.6%, T2 99.5%, confidence 0.855, reject rate 0.0%. Pipeline healthy."
+}

@@ -1,42 +1,24 @@
 {
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-15T00:00:00Z",
   "run_id": "2026-W11",
-  "total_events": 30,
+  "total_events": 137,
   "events": [
     {
       "event_id": "feed_001",
-      "timestamp": "2026-03-10T00:00:00Z",
+      "timestamp": "2026-03-15T00:00:00Z",
       "severity": "critical",
       "countries": [
-        "USA",
-        "IRN",
-        "ISR"
+        "GLOBAL"
       ],
-      "headline": "US-Iran war enters second week \u2014 Pentagon reports 140 US troops injured in first 10 days",
-      "summary": "The US-Israeli war against Iran (Operation Epic Fury / Roaring Lion) entered its second week with no ceasefire in sight. The Pentagon confirmed 140 US troops injured, 8 severely, in the first 10 days of fighting. Defense Secretary Hegseth vowed the 'most intense day yet' of US strikes. The White Hou",
-      "category": "military_conflict",
-      "source_event_id": "evt_2026-03-10_001",
-      "confidence": 0.98
+      "headline": "[NEW] GLOBAL: Brent crude above $100/bbl — WTI posts biggest weekly gain since 1983",
+      "summary": "Brent crude surged above $100/bbl with WTI breaking $90/bbl — posting the biggest weekly gain since oil futures trading began in 1983 (35% weekly gain). Iran's new supreme leader declared Hormuz must remain closed. IEA announced record 400M barrel SPR release (US contributing 172M barrels) but this covers only ~25% of the supply gap and takes 60-90 days to reach markets. IEA cut global oil demand growth by 210 kb/d. Goldman Sachs and EIA revised forecasts upward.",
+      "category": "economic_crisis",
+      "source_event_id": "alert_2026-03-15_119",
+      "confidence": 0.95
     },
     {
       "event_id": "feed_002",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "critical",
-      "countries": [
-        "SAU",
-        "ARE",
-        "IRN",
-        "USA"
-      ],
-      "headline": "Brent crude surges 25% to $116.50/bbl \u2014 gold hits $5,195.60 as markets roil",
-      "summary": "Brent crude surged over 25% to $116.50/bbl amid the worsening West Asia conflict, with experts warning of $150/bbl if Hormuz remains blocked. Gold shattered records at $5,195.60/oz. The Dow fell over 800 points and S&P 500 sank despite a brief 13% oil price dip when Trump predicted de-escalation. G7",
-      "category": "economic_crisis",
-      "source_event_id": "evt_2026-03-10_003",
-      "confidence": 0.98
-    },
-    {
-      "event_id": "feed_003",
-      "timestamp": "2026-03-09T00:00:00Z",
+      "timestamp": "2026-03-15T00:00:00Z",
       "severity": "critical",
       "countries": [
         "IRN",
@@ -46,391 +28,1800 @@
         "KWT",
         "QAT",
         "OMN",
-        "IRQ"
+        "IND"
       ],
-      "headline": "Iran begins laying mines in Strait of Hormuz as US Navy suspends escort operations",
-      "summary": "Iran's IRGC began laying naval mines in the Strait of Hormuz, further blocking the critical oil chokepoint. Simultaneously, the US Navy informed commercial shipping that Hormuz escorts are 'not possible for now,' leaving tankers without military protection. Energy Secretary Chris Wright posted then ",
-      "category": "trade_disruption",
-      "source_event_id": "evt_2026-03-10_002",
+      "headline": "[NEW] Strait of Hormuz: New Iranian supreme leader orders blockade maintained",
+      "summary": "Iran's new supreme leader declared the Strait of Hormuz must remain closed. Commercial maritime traffic at effective standstill. Iran selectively allowing some traffic — two Indian tankers passed after Modi-Pezeshkian talks. ~20% of global daily oil supply affected. Trump calls for multinational naval force but US military 'not ready' to escort ships. Jebel Ali port severed from global container trade.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-15_120",
+      "confidence": 0.95
+    },
+    {
+      "event_id": "feed_003",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
+      "countries": [
+        "IRN",
+        "SAU",
+        "ARE",
+        "KWT",
+        "QAT"
+      ],
+      "headline": "[NEW] Iran threatens to strike Saudi, UAE, Kuwait, Qatar oil infrastructure",
+      "summary": "Tehran warned it would hit regional oil facilities in Gulf states if its own energy infrastructure is attacked. This came after US bombed Kharg Island (sparing oil targets) and Trump threatened to 'reconsider' sparing oil infrastructure if Iran interferes with Hormuz shipping. Escalation to Gulf oil facility attacks would catastrophically amplify the energy crisis.",
+      "category": "military_conflict",
+      "source_event_id": "alert_2026-03-15_121",
       "confidence": 0.95
     },
     {
       "event_id": "feed_004",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "warning",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
       "countries": [
-        "DEU"
+        "ARE"
       ],
-      "headline": "Volkswagen to slash 50,000 jobs in Germany amid profit decline",
-      "summary": "Volkswagen announced plans to cut 50,000 jobs in Germany, citing sinking profits and competitive pressure from Chinese EV manufacturers. This is the largest single job-cut announcement in German automotive history and reflects structural decline in Europe's largest industrial sector.",
-      "category": "economic_crisis",
-      "source_event_id": "evt_2026-03-10_015",
+      "headline": "[ONGOING] United Arab Emirates: Extreme chokepoint exposure at 1.000 amid Hormuz crisis",
+      "summary": "United Arab Emirates has a supply chain chokepoint exposure of 1.000, critically elevated during the Strait of Hormuz crisis. GDP trend: strong_decrease. Investment risk: 0.101.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_005",
       "confidence": 0.95
     },
     {
       "event_id": "feed_005",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "warning",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
       "countries": [
-        "USA"
+        "IRN"
       ],
-      "headline": "US Dow falls 800+ points as Iran war jitters persist despite oil dip",
-      "summary": "The Dow Jones fell more than 800 points, with the S&P 500 and Nasdaq also sinking as Iran war jitters persisted even as oil prices briefly dipped. The sell-off reflects growing recession fears and the market's view that the conflict will be prolonged.",
-      "category": "market_event",
-      "source_event_id": "evt_2026-03-10_029",
+      "headline": "[ONGOING] Iran: Maximum investment risk at 0.791",
+      "summary": "Iran's investment risk (inverted score: 0.734) remains in crisis territory. PRP: 870 bps. Inflation: 32.5%.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_028",
       "confidence": 0.95
     },
     {
       "event_id": "feed_006",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "warning",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
       "countries": [
-        "USA",
         "IRN"
       ],
-      "headline": "US steps up strikes as Trump offers mixed signals \u2014 boots on ground 'not ruled out'",
-      "summary": "The White House confirmed US ground troops in Iran are 'not ruled out' while Defense Secretary Hegseth vowed the 'most intense' military strikes yet against Iran. Trump simultaneously offered contradictory timelines \u2014 calling the operation 'very complete' while escalating. Kurdish invasion of Iran r",
-      "category": "military_conflict",
-      "source_event_id": "evt_2026-03-10_007",
-      "confidence": 0.92
+      "headline": "[ONGOING] Iran: Active military conflict — Day 16, Kharg Island struck",
+      "summary": "US-Iran war Day 16. US bombed Kharg Island (90% of Iran's oil exports) destroying 90+ military targets while sparing oil infrastructure. Iran maintains Hormuz blockade. New supreme leader declared strait must remain closed. State governance paralyzed. Isfahan under continued strikes.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_029",
+      "confidence": 0.95
     },
     {
       "event_id": "feed_007",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "warning",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
       "countries": [
-        "USA",
         "IRN"
       ],
-      "headline": "Oil price volatility \u2014 13% drop on Trump de-escalation prediction, then recovery",
-      "summary": "Crude oil prices swung wildly, dropping 13% after Trump predicted Middle East de-escalation, before recovering as fighting continued. The extreme volatility (>20% intraday range) reflects the market's sensitivity to every geopolitical signal from Washington and Tehran.",
-      "category": "market_event",
-      "source_event_id": "evt_2026-03-10_028",
-      "confidence": 0.92
+      "headline": "[ONGOING] Iran: Extreme chokepoint exposure at 0.904 amid Hormuz crisis",
+      "summary": "Iran has a supply chain chokepoint exposure of 0.904, critically elevated during the Strait of Hormuz crisis. GDP trend: strong_decrease. Investment risk: 0.791.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_032",
+      "confidence": 0.95
     },
     {
       "event_id": "feed_008",
-      "timestamp": "2026-03-09T00:00:00Z",
-      "severity": "warning",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
       "countries": [
-        "LBN",
-        "ISR",
-        "FRA",
-        "IRN"
+        "ISR"
       ],
-      "headline": "Hezbollah escalates war \u2014 Macron vows to protect Lebanon from conflict spillover",
-      "summary": "Hezbollah continued its 'reckless war' from Lebanon against Israel, endangering the country. French President Macron declared France would act to protect Lebanon from escalation in the Iran war. Analysis suggests Hezbollah's actions are pushing Lebanon toward state failure.",
-      "category": "military_conflict",
-      "source_event_id": "evt_2026-03-10_005",
-      "confidence": 0.9
+      "headline": "[ONGOING] Israel: Multi-front war Day 16 — Lebanon ground invasion planned",
+      "summary": "Multi-front war Day 16: Iran strikes continue, Hezbollah escalation from Lebanon with 687 dead and 800,000 displaced. Israel planning largest ground invasion of Lebanon since 2006 to seize area south of Litani River. Running critically low on ballistic missile interceptors. NIS 2.6B ($826M) emergency defense procurement approved.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_039",
+      "confidence": 0.95
     },
     {
       "event_id": "feed_009",
-      "timestamp": "2026-03-05T00:00:00Z",
-      "severity": "warning",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
       "countries": [
-        "USA",
-        "IRN",
-        "LKA"
+        "KWT"
       ],
-      "headline": "US Navy sinks IRIS Dena \u2014 Sri Lanka evacuates crew of second Iranian vessel",
-      "summary": "The US Navy sank the Iranian naval vessel IRIS Dena. Sri Lanka subsequently evacuated the crew of a second Iranian vessel in its waters, indicating expanding naval operations in the Indian Ocean beyond the Persian Gulf theater.",
-      "category": "military_conflict",
-      "source_event_id": "evt_2026-03-10_006",
-      "confidence": 0.9
+      "headline": "[ONGOING] Kuwait: Extreme chokepoint exposure at 0.938 amid Hormuz crisis",
+      "summary": "Kuwait has a supply chain chokepoint exposure of 0.938, critically elevated during the Strait of Hormuz crisis. GDP trend: strong_decrease. Investment risk: 0.15.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_044",
+      "confidence": 0.95
     },
     {
       "event_id": "feed_010",
-      "timestamp": "2026-03-08T00:00:00Z",
-      "severity": "warning",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
       "countries": [
-        "MEX"
+        "MMR"
       ],
-      "headline": "Mexico's El Mencho (CJNG cartel leader) killed by military forces",
-      "summary": "Mexican military forces killed Nemesio Oseguera Cervantes ('El Mencho'), leader of the Jalisco New Generation Cartel (CJNG), one of the world's most powerful drug trafficking organizations. A Mexican general rejected claims that El Mencho had surrendered, stating he 'had a lot of weaponry' when conf",
-      "category": "security",
-      "source_event_id": "evt_2026-03-10_023",
-      "confidence": 0.88
+      "headline": "[ONGOING] Myanmar: Active military conflict — critical security risk",
+      "summary": "Myanmar civil war continues. Military junta vs resistance forces. Economy in severe contraction. Humanitarian crisis.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_048",
+      "confidence": 0.95
     },
     {
       "event_id": "feed_011",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "warning",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
       "countries": [
-        "USA",
-        "JPN",
-        "DEU",
-        "GBR",
-        "FRA",
-        "ITA",
-        "CAN"
+        "MMR"
       ],
-      "headline": "G7 finance ministers signal coordinated SPR release amid oil crisis",
-      "summary": "G7 finance ministers discussed oil market stabilization, signaling a coordinated Strategic Petroleum Reserve release to tamp down surging crude prices. The release would be the largest coordinated SPR drawdown since 2022 and targets the 'fear premium' embedded in energy markets from the Gulf conflic",
-      "category": "political_regulatory",
-      "source_event_id": "evt_2026-03-10_004",
-      "confidence": 0.85
+      "headline": "[ONGOING] Myanmar: Political risk premium at 850 bps",
+      "summary": "Myanmar's political risk premium of 850 basis points indicates significant sovereign risk. Investment risk: 0.639.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_050",
+      "confidence": 0.95
     },
     {
       "event_id": "feed_012",
-      "timestamp": "2026-03-08T00:00:00Z",
-      "severity": "warning",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
       "countries": [
-        "USA",
-        "IRN"
+        "PAK"
       ],
-      "headline": "Trump supports Kurdish invasion of Iran \u2014 US jets providing air cover",
-      "summary": "President Trump confirmed US jets would support a Kurdish ground invasion of Iran, opening a new dimension to the conflict through proxy forces. Kurdish groups operating from Iraq's Kurdistan region are advancing into Iranian territory with US air support.",
-      "category": "military_conflict",
-      "source_event_id": "evt_2026-03-10_008",
-      "confidence": 0.85
+      "headline": "[ONGOING] Pakistan: Active military conflict — advocates Iran diplomacy at UNSC",
+      "summary": "Pakistan war with Afghanistan continues. Airstrikes on Kabul and Kandahar. Pakistan advocating diplomacy on Iran at UN Security Council and intensifying Middle East mediation efforts. CFR warns India-Pakistan confrontation risk in 2026. Nuclear-armed nation in active conflict. CCC+/Caa1 credit rating.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_059",
+      "confidence": 0.95
     },
     {
       "event_id": "feed_013",
-      "timestamp": "2026-03-09T00:00:00Z",
-      "severity": "warning",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
       "countries": [
-        "USA",
-        "ISR",
-        "IRN"
+        "QAT"
       ],
-      "headline": "Tehran under heavy US-Israeli bombing \u2014 residents describe 'hearts shaking'",
-      "summary": "Tehran residents described enduring heavy Israeli-US bombing with 'hearts shaking.' The capital city is under sustained aerial assault. Iran's internet has been shut down, exposing civilian risks. The humanitarian situation in Iran is deteriorating rapidly.",
-      "category": "military_conflict",
-      "source_event_id": "evt_2026-03-10_041",
-      "confidence": 0.85
+      "headline": "[ONGOING] Qatar: Extreme chokepoint exposure at 0.916 amid Hormuz crisis",
+      "summary": "Qatar has a supply chain chokepoint exposure of 0.916, critically elevated during the Strait of Hormuz crisis. GDP trend: strong_decrease. Investment risk: 0.098.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_064",
+      "confidence": 0.95
     },
     {
       "event_id": "feed_014",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "warning",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
       "countries": [
-        "UKR",
         "RUS"
       ],
-      "headline": "Ukraine retakes territory as Russia's buffer zone strategy falters",
-      "summary": "Ukraine reportedly retook territory as Russia's buffer zone strategy in border regions faltered. Both sides claimed front-line progress with US-brokered trilateral peace talks on hold. The conflict continues as a frozen/active war while the world's attention pivots to Iran.",
-      "category": "military_conflict",
-      "source_event_id": "evt_2026-03-10_011",
-      "confidence": 0.82
+      "headline": "[ONGOING] Russia: Political risk premium at 1900 bps",
+      "summary": "Russia's political risk premium of 1900 basis points indicates significant sovereign risk. Investment risk: 0.661.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_068",
+      "confidence": 0.95
     },
     {
       "event_id": "feed_015",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "warning",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
       "countries": [
-        "UKR",
-        "HUN"
+        "SGP"
       ],
-      "headline": "EU transfers \u20ac90 billion to Kyiv bypassing Hungary's veto",
-      "summary": "The EU cleared a mechanism to transfer \u20ac90 billion to Ukraine by stepping over Hungary's veto through an enhanced cooperation framework. This is a significant institutional precedent for EU decision-making when a single member state blocks consensus.",
-      "category": "political_regulatory",
-      "source_event_id": "evt_2026-03-10_013",
-      "confidence": 0.82
+      "headline": "[ONGOING] Singapore: Extreme chokepoint exposure at 0.940 amid Hormuz crisis",
+      "summary": "Singapore has a supply chain chokepoint exposure of 0.940, critically elevated during the Strait of Hormuz crisis. GDP trend: decrease. Investment risk: 0.141.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_074",
+      "confidence": 0.95
     },
     {
       "event_id": "feed_016",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "warning",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
       "countries": [
-        "USA"
+        "UKR"
       ],
-      "headline": "Companies sue for Trump tariff refunds after SCOTUS ruling \u2014 $175B windfall",
-      "summary": "Multiple companies filed lawsuits seeking refunds on Trump tariffs after a Supreme Court ruling reshaped the tariff landscape. The total potential refund pool is estimated at $175 billion. Senate Democrats also introduced a bill to shield small businesses from tariff impacts.",
-      "category": "trade_sanctions",
-      "source_event_id": "evt_2026-03-10_027",
-      "confidence": 0.8
+      "headline": "[ONGOING] Ukraine: Active military conflict — Russia loses 57 sq mi in 4 weeks",
+      "summary": "Russia-Ukraine war Year 5. Russia launched massive 430-drone and 68-missile attack on energy infrastructure. However, Russian forces lost 57 square miles in four-week reversal. EU renewed sanctions on 2,700+ entities for 6 months. Ukraine peace push stalled as Iran conflict diverts attention. CC/Ca credit rating.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_081",
+      "confidence": 0.95
     },
     {
       "event_id": "feed_017",
-      "timestamp": "2026-03-10T00:00:00Z",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
+      "countries": [
+        "KWT"
+      ],
+      "headline": "[ONGOING] Kuwait: Hormuz crisis direct impact",
+      "summary": "Kuwait faces near-total economic paralysis from Hormuz closure with 93.8% chokepoint exposure. No pipeline alternative. Ali Al Salem Air Base struck by IRGC. GDP trend: strong_decrease. Iran threatens to hit Gulf neighbors' oil facilities if its own infrastructure attacked.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_087",
+      "confidence": 0.95
+    },
+    {
+      "event_id": "feed_018",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
+      "countries": [
+        "QAT"
+      ],
+      "headline": "[ONGOING] Qatar: Hormuz crisis direct impact",
+      "summary": "Qatar — world's largest LNG exporter — completely offline due to Hormuz mines. 91.6% chokepoint exposure. Al Udeid Air Base struck. Qatar F-15QA fighters intercepted Iranian bombers 2 min from hitting US base. North Field LNG expansion at risk. GDP trend: strong_decrease.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_088",
+      "confidence": 0.95
+    },
+    {
+      "event_id": "feed_019",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
+      "countries": [
+        "ARE"
+      ],
+      "headline": "[ONGOING] United Arab Emirates: Hormuz crisis direct impact",
+      "summary": "UAE under direct Iranian missile attacks. 100% chokepoint exposure. Jebel Ali container port — global transshipment hub — cut off from international trade. Aviation disrupted with 7,700+ delays. Iran threatens to hit Gulf oil facilities. GDP trend: strong_decrease.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_089",
+      "confidence": 0.95
+    },
+    {
+      "event_id": "feed_020",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
+      "countries": [
+        "ETH"
+      ],
+      "headline": "[ONGOING] Ethiopia: Selective default with Tigray conflict resumption",
+      "summary": "Ethiopia's sovereign credit at SD/Ca/RD (selective default) with political risk premium of 1473 bps. TPLF-government clashes resumed. Elections June 1, 2026. Investment risk: 0.45.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_103",
+      "confidence": 0.95
+    },
+    {
+      "event_id": "feed_021",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "critical",
+      "countries": [
+        "IRN"
+      ],
+      "headline": "[ONGOING] Iran: Critical investment risk at 0.734",
+      "summary": "Iran's investment risk score reached 0.734, placing it in crisis territory. PRP: 870 bps. Inflation: 32.5%. GDP trend: strong_decrease.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-14_111",
+      "confidence": 0.95
+    },
+    {
+      "event_id": "feed_022",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "LBN",
+        "ISR"
+      ],
+      "headline": "[NEW] Lebanon: Israel planning massive ground invasion south of Litani River",
+      "summary": "Israel planning largest ground invasion of Lebanon since 2006, aiming to seize entire area south of Litani River. Death toll at 687 with 800,000 displaced. Lebanon government outlawed Hezbollah military activities. Lebanon proposed ceasefire. Country inching toward internal crisis as Hezbollah's political and military roles clash.",
+      "category": "military_conflict",
+      "source_event_id": "alert_2026-03-15_122",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_023",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "ISR",
+        "USA",
+        "IRN"
+      ],
+      "headline": "[NEW] Israel: Running critically low on missile interceptors amid Iran war",
+      "summary": "Israel informed the US it is running critically low on ballistic missile interceptors. Entered the war already depleted from last summer's conflict. Iran adding cluster munitions to missiles, exacerbating depletion. $826M emergency defense procurement approved. IDF officially denied the reports. This creates acute vulnerability to Iranian missile barrages.",
+      "category": "military_conflict",
+      "source_event_id": "alert_2026-03-15_123",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_024",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "ESP",
+        "USA"
+      ],
+      "headline": "[NEW] Spain: Trump threatens trade cutoff over military base access denial",
+      "summary": "Trump instructed Treasury Secretary to 'cut off all trade with Spain' after Spain refused to allow US use of Rota and Moron bases for Iran strikes. Spain's PM replied 'No to war.' US relocated 15 aircraft. Legal experts question whether US can embargo individual EU member state. Creates precedent for alliance fragmentation over Iran war.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-15_124",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_025",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "JPN",
+        "KOR",
+        "TWN"
+      ],
+      "headline": "[NEW] East Asia: Japan, South Korea, Taiwan announce major defense spending increases",
+      "summary": "Japan advanced counterattack missile capability timeline by two years to March 2026, citing 'most severe security environment since WWII'. South Korea plans to raise defense budget from 2.3% to 3.5% of GDP by 2035. Taiwan increasing defense from 3.3% to 5% of GDP by 2030. Driven by US strategic overstretch in Middle East, THAAD redeployment, and continued Chinese military expansion.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-15_126",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_026",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "RUS",
+        "IRN",
+        "USA",
+        "UKR"
+      ],
+      "headline": "[NEW] Russia: Supplying Iran with Shahed drones and intelligence for attacks on US bases",
+      "summary": "Zelensky stated Russia is supplying Iran with Shahed drones and intelligence used to target US bases — confirmed by Western intelligence. Russian-made components identified inside drones. Trump envoy Witkoff says Kremlin denied involvement. Creates risk of direct US-Russia confrontation escalation through Iran proxy channel.",
+      "category": "military_conflict",
+      "source_event_id": "alert_2026-03-15_131",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_027",
+      "timestamp": "2026-03-15T00:00:00Z",
       "severity": "warning",
       "countries": [
         "USA"
       ],
-      "headline": "Bond market stress \u2014 leveraged basis trade starts to unwind",
-      "summary": "A hidden leveraged trade in US Treasury bonds \u2014 the 'basis trade' \u2014 began unwinding amid market stress from the Iran crisis. This $1+ trillion trade involves hedge funds exploiting small price differences between Treasury futures and cash bonds with high leverage. Its unwind recalls the March 2020 T",
-      "category": "market_event",
-      "source_event_id": "evt_2026-03-10_031",
-      "confidence": 0.78
-    },
-    {
-      "event_id": "feed_018",
-      "timestamp": "2026-03-05T00:00:00Z",
-      "severity": "watch",
-      "countries": [
-        "USA"
-      ],
-      "headline": "Kristi Noem fired from DHS \u2014 Trump creates 'Shield of the Americas' envoy role",
-      "summary": "President Trump fired DHS Secretary Kristi Noem, reassigning her to a new 'Shield of the Americas' Western Hemisphere security envoy position. The move came amid criticism of immigration policy execution. A combative confirmation hearing for her replacement drew attention. The shake-up signals inter",
-      "category": "political_regulatory",
-      "source_event_id": "evt_2026-03-10_016",
-      "confidence": 0.98
-    },
-    {
-      "event_id": "feed_019",
-      "timestamp": "2026-03-08T00:00:00Z",
-      "severity": "watch",
-      "countries": [
-        "CHN",
-        "GBR"
-      ],
-      "headline": "Hong Kong media tycoon Jimmy Lai accepts 20-year sentence \u2014 will not appeal",
-      "summary": "Hong Kong media tycoon Jimmy Lai, founder of Apple Daily, decided not to appeal his conviction and 20-year prison term under the National Security Law. The British citizen's case has been a major point of contention in UK-China relations.",
-      "category": "political_regulatory",
-      "source_event_id": "evt_2026-03-10_020",
+      "headline": "[NEW] USA: Economy sheds 92K jobs — stagflation concerns mount",
+      "summary": "February 2026 jobs report showed US economy shed 92,000 jobs vs +59,000 expected. Unemployment rose to 4.4%. Labor force participation fell to 62% (lowest since Dec 2021). Average unemployment duration 25.7 weeks. Goldman Sachs raised stagflation concerns. NY Fed model shows 18.7% recession probability by Jan 2027. Gas prices spiking from Iran war. Dow fell 0.95%, S&P 500 -1.33%, Nasdaq -1.59%.",
+      "category": "economic_crisis",
+      "source_event_id": "alert_2026-03-15_132",
       "confidence": 0.92
     },
     {
-      "event_id": "feed_020",
-      "timestamp": "2026-03-08T00:00:00Z",
-      "severity": "watch",
-      "countries": [
-        "CHN"
-      ],
-      "headline": "China vows to accelerate technological self-reliance and AI push at 'Two Sessions'",
-      "summary": "At the annual 'Two Sessions' parliamentary meetings, China's leadership vowed to accelerate technological self-reliance with a major push into AI. One-person 'claw-powered' AI companies became a hot topic. The declarations reinforce China's decoupling strategy from Western technology dependencies.",
-      "category": "political_regulatory",
-      "source_event_id": "evt_2026-03-10_019",
-      "confidence": 0.88
-    },
-    {
-      "event_id": "feed_021",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "watch",
-      "countries": [
-        "GBR",
-        "IRN"
-      ],
-      "headline": "UK's HMS Dragon crew departs for Gulf deployment amid Iran conflict",
-      "summary": "Tearful relatives of HMS Dragon crew described 'scary and emotional' farewells as the Royal Navy destroyer departed for deployment to the Gulf region amid the Iran conflict. The deployment signals UK military involvement in the crisis.",
-      "category": "military_conflict",
-      "source_event_id": "evt_2026-03-10_048",
-      "confidence": 0.88
-    },
-    {
-      "event_id": "feed_022",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "watch",
-      "countries": [
-        "IND",
-        "CHN"
-      ],
-      "headline": "India approves limited easing of Chinese investment curbs after years of friction",
-      "summary": "India approved a limited easing of restrictions on Chinese foreign direct investment, partially reversing curbs imposed after the 2020 Galwan border clash. The move signals cautious diplomatic thaw between the world's two most populous nations, driven partly by India's need for Chinese manufacturing",
-      "category": "political_regulatory",
-      "source_event_id": "evt_2026-03-10_017",
-      "confidence": 0.85
-    },
-    {
-      "event_id": "feed_023",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "watch",
-      "countries": [
-        "IND",
-        "IRN"
-      ],
-      "headline": "India export cargo worth \u20b9346 crore to Iran stranded at Kandla and Mundra ports",
-      "summary": "Indian export cargo worth approximately $40 million destined for Iran is stranded at Kandla and Mundra ports due to the conflict. The government confirmed the situation to parliament, highlighting the direct trade disruption from the Gulf war beyond just oil.",
-      "category": "trade_sanctions",
-      "source_event_id": "evt_2026-03-10_018",
-      "confidence": 0.85
-    },
-    {
-      "event_id": "feed_024",
-      "timestamp": "2026-03-09T00:00:00Z",
-      "severity": "watch",
-      "countries": [
-        "COL"
-      ],
-      "headline": "Petro's leftist coalition tops Colombia Congressional elections",
-      "summary": "President Petro's leftist Pacto Hist\u00f3rico coalition won the most seats in Colombia's congressional elections, strengthening his governing mandate. The result gives Petro greater legislative power to advance his reform agenda including land reform, tax changes, and energy transition policies.",
-      "category": "political_regulatory",
-      "source_event_id": "evt_2026-03-10_021",
-      "confidence": 0.85
-    },
-    {
-      "event_id": "feed_025",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "watch",
-      "countries": [
-        "USA"
-      ],
-      "headline": "US midterm mood favors Democrats as GOP faces Iran war and Noem fallout",
-      "summary": "Multiple polls show the midterm mood favoring Democrats despite party image problems. Georgia voters chose a successor to Marjorie Taylor Greene. Sen. Rand Paul warned Republicans are heading toward 'disastrous' midterms if the Iran war continues. The GOP is in 'course-correction mode' after the Noe",
-      "category": "political_regulatory",
-      "source_event_id": "evt_2026-03-10_039",
-      "confidence": 0.85
-    },
-    {
-      "event_id": "feed_026",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "watch",
-      "countries": [
-        "USA",
-        "UKR",
-        "RUS"
-      ],
-      "headline": "US proposes fresh trilateral peace talks on Ukraine \u2014 Zelensky confirms",
-      "summary": "The US proposed a fresh round of trilateral peace talks next week involving Washington, Kyiv, and Moscow. Zelensky confirmed the proposal. Talks come as both sides claim battlefield gains and the US is distracted by the Iran war.",
-      "category": "diplomatic",
-      "source_event_id": "evt_2026-03-10_012",
-      "confidence": 0.82
-    },
-    {
-      "event_id": "feed_027",
-      "timestamp": "2026-03-10T00:00:00Z",
-      "severity": "watch",
-      "countries": [
-        "USA"
-      ],
-      "headline": "5 recession warning signs emerge in US economy amid oil shock",
-      "summary": "Multiple analysts identified 5 warning signs of a potential US recession including surging energy costs, tightening consumer budgets, bond market stress (leveraged basis trade unwinding), falling consumer confidence, and supply chain disruptions from the Gulf conflict.",
-      "category": "economic_crisis",
-      "source_event_id": "evt_2026-03-10_030",
-      "confidence": 0.82
-    },
-    {
       "event_id": "feed_028",
-      "timestamp": "2026-03-09T00:00:00Z",
-      "severity": "watch",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
       "countries": [
-        "ARG",
-        "USA"
+        "AGO"
       ],
-      "headline": "Argentina President Milei woos Wall Street \u2014 cites economic turnaround with net energy exports",
-      "summary": "Argentine President Milei courted Wall Street investors, highlighting Argentina's achievement of net energy exports for the first time \u2014 particularly significant as the Gulf crisis drives global energy prices higher. Vaca Muerta shale production is boosting export revenues.",
-      "category": "diplomatic",
-      "source_event_id": "evt_2026-03-10_035",
-      "confidence": 0.82
+      "headline": "[ONGOING] Angola: Political risk premium at 700 bps",
+      "summary": "Angola's political risk premium of 700 basis points indicates significant sovereign risk. Investment risk: 0.494.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_001",
+      "confidence": 0.92
     },
     {
       "event_id": "feed_029",
-      "timestamp": "2026-03-10T00:00:00Z",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "ARE"
+      ],
+      "headline": "[ONGOING] United Arab Emirates: GDP growth in sharp decline",
+      "summary": "United Arab Emirates's GDP growth trend is 'strong_decrease'. Current growth: 4.0%. Hormuz mine-laying by IRGC blocks primary oil export route. Oil revenue disruption severe despite high prices. United Arab Emirates has limited pipeline alternatives. Defense spending surge adds fiscal pressure.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_004",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_030",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "ARG"
+      ],
+      "headline": "[ONGOING] Argentina: Political risk premium at 950 bps",
+      "summary": "Argentina's political risk premium of 950 basis points indicates significant sovereign risk. Investment risk: 0.507.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_007",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_031",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "ARG"
+      ],
+      "headline": "[ONGOING] Argentina: Hyperinflation territory at 219.9%",
+      "summary": "Argentina's CPI inflation of 219.9% exceeds the hyperinflation threshold. Trend: decrease. ",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_008",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_032",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "COD"
+      ],
+      "headline": "[ONGOING] DR Congo: Political risk premium at 750 bps",
+      "summary": "DR Congo's political risk premium of 750 basis points indicates significant sovereign risk. Investment risk: 0.519.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_013",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_033",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "EGY"
+      ],
+      "headline": "[ONGOING] Egypt: Political risk premium at 620 bps",
+      "summary": "Egypt's political risk premium of 620 basis points indicates significant sovereign risk. Investment risk: 0.495.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_017",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_034",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "ETH"
+      ],
+      "headline": "[ONGOING] Ethiopia: Political risk premium at 1350 bps",
+      "summary": "Ethiopia's political risk premium of 1350 basis points indicates significant sovereign risk. Investment risk: 0.589.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_020",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_035",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "GHA"
+      ],
+      "headline": "[ONGOING] Ghana: Political risk premium at 900 bps",
+      "summary": "Ghana's political risk premium of 900 basis points indicates significant sovereign risk. Investment risk: 0.487.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_023",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_036",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "IRN"
+      ],
+      "headline": "[ONGOING] Iran: GDP growth in sharp decline",
+      "summary": "Iran's GDP growth trend is 'strong_decrease'. Current growth: 3.7%. War Day 10+ with escalating intensity. Infrastructure destruction accelerating. Hormuz mined, halting oil exports (~70% of revenue). Kurdish ground invasion opens new front. GDP trajectory: deep contraction -15% to -20% annualized.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_030",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_037",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "IRN"
+      ],
+      "headline": "[ONGOING] Iran: Political stability in sharp decline",
+      "summary": "Iran political stability collapsed. Supreme Leader killed Feb 28. Capital under sustained bombing. Internet shut down. Kurdish invasion from west. IRGC claims control but governance paralyzed. State approaching collapse.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_031",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_038",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "IRQ"
+      ],
+      "headline": "[ONGOING] Iraq: Political risk premium at 800 bps",
+      "summary": "Iraq's political risk premium of 800 basis points indicates significant sovereign risk. Investment risk: 0.526.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_034",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_039",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "IRQ"
+      ],
+      "headline": "[ONGOING] Iraq: GDP growth in sharp decline",
+      "summary": "Iraq's GDP growth trend is 'strong_decrease'. Current growth: -1.5%. Iraq caught between US operations and Iranian influence. Kurdish invasion of Iran from Iraqi Kurdistan threatens sovereignty. Oil exports via Hormuz disrupted. Internal security deteriorating.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_035",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_040",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "IRQ"
+      ],
+      "headline": "[ONGOING] Iraq: Extreme chokepoint exposure at 0.791 amid Hormuz crisis",
+      "summary": "Iraq has a supply chain chokepoint exposure of 0.791, critically elevated during the Strait of Hormuz crisis. GDP trend: strong_decrease. Investment risk: 0.446.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_036",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_041",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "ISR"
+      ],
+      "headline": "[ONGOING] Israel: GDP growth in sharp decline",
+      "summary": "Israel's GDP growth trend is 'strong_decrease'. Current growth: 0.9%. Active war with Iran/Hezbollah. Hezbollah escalation from Lebanon. Military mobilization consuming resources. Tech sector disrupted. But US military support and domestic resilience partially offset.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_040",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_042",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "KEN"
+      ],
+      "headline": "[ONGOING] Kenya: Political risk premium at 570 bps",
+      "summary": "Kenya's political risk premium of 570 basis points indicates significant sovereign risk. Investment risk: 0.382.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_042",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_043",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "KWT"
+      ],
+      "headline": "[ONGOING] Kuwait: GDP growth in sharp decline",
+      "summary": "Kuwait's GDP growth trend is 'strong_decrease'. Current growth: -2.6%. Kuwait GDP under severe pressure from Hormuz disruption. No pipeline alternative to Hormuz. High energy prices cannot be monetized while export channels are blocked.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_043",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_044",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "LBY"
+      ],
+      "headline": "[ONGOING] Libya: Political risk premium at 620 bps",
+      "summary": "Libya's political risk premium of 620 basis points indicates significant sovereign risk. Investment risk: 0.547.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_046",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_045",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "LKA"
+      ],
+      "headline": "[ONGOING] Sri Lanka: Political risk premium at 950 bps",
+      "summary": "Sri Lanka's political risk premium of 950 basis points indicates significant sovereign risk. Investment risk: 0.488.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_047",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_046",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "MMR"
+      ],
+      "headline": "[ONGOING] Myanmar: Elevated investment risk (risk score: 0.639)",
+      "summary": "Myanmar's investment risk score of 0.639 indicates elevated risk. PRP: 850 bps. Inflation: 31.0%. GDP trend: N/A.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_049",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_047",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "MOZ"
+      ],
+      "headline": "[ONGOING] Mozambique: Political risk premium at 900 bps",
+      "summary": "Mozambique's political risk premium of 900 basis points indicates significant sovereign risk. Investment risk: 0.468.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_053",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_048",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "NGA"
+      ],
+      "headline": "[ONGOING] Nigeria: Political risk premium at 850 bps",
+      "summary": "Nigeria's political risk premium of 850 basis points indicates significant sovereign risk. Investment risk: 0.569.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_054",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_049",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "OMN"
+      ],
+      "headline": "[ONGOING] Oman: Extreme chokepoint exposure at 0.850 amid Hormuz crisis",
+      "summary": "Oman has a supply chain chokepoint exposure of 0.850, critically elevated during the Strait of Hormuz crisis. GDP trend: decrease. Investment risk: 0.142.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_057",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_050",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "PAK"
+      ],
+      "headline": "[ONGOING] Pakistan: Political risk premium at 900 bps",
+      "summary": "Pakistan's political risk premium of 900 basis points indicates significant sovereign risk. Investment risk: 0.559.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_060",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_051",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "QAT"
+      ],
+      "headline": "[ONGOING] Qatar: GDP growth in sharp decline",
+      "summary": "Qatar's GDP growth trend is 'strong_decrease'. Current growth: 2.4%. Qatar GDP under severe pressure from Hormuz disruption. LNG exports completely blocked. High energy prices cannot be monetized while export channels are blocked.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_063",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_052",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "RUS"
+      ],
+      "headline": "[ONGOING] Russia: Elevated investment risk (risk score: 0.661)",
+      "summary": "Russia's investment risk score of 0.661 indicates elevated risk. PRP: 1900 bps. Inflation: 8.4%. GDP trend: growth.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_067",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_053",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "SAU"
+      ],
+      "headline": "[ONGOING] Saudi Arabia: GDP growth in sharp decline",
+      "summary": "Saudi Arabia's GDP growth trend is 'strong_decrease'. Current growth: 2.0%. Hormuz mine-laying by IRGC blocks primary oil export route. Oil revenue disruption severe despite high prices. Saudi Arabia has limited pipeline alternatives. Defense spending surge adds fiscal pressure.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_069",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_054",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "SAU"
+      ],
+      "headline": "[ONGOING] Saudi Arabia: Extreme chokepoint exposure at 0.809 amid Hormuz crisis",
+      "summary": "Saudi Arabia has a supply chain chokepoint exposure of 0.809, critically elevated during the Strait of Hormuz crisis. GDP trend: strong_decrease. Investment risk: 0.186.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_070",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_055",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "SEN"
+      ],
+      "headline": "[ONGOING] Senegal: Political risk premium at 850 bps",
+      "summary": "Senegal's political risk premium of 850 basis points indicates significant sovereign risk. Investment risk: 0.395.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_072",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_056",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "TUR"
+      ],
+      "headline": "[ONGOING] Turkey: Political risk premium at 530 bps",
+      "summary": "Turkey's political risk premium of 530 basis points indicates significant sovereign risk. Investment risk: 0.487.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_075",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_057",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "TUR"
+      ],
+      "headline": "[ONGOING] Turkey: Hyperinflation territory at 58.5%",
+      "summary": "Turkey's CPI inflation of 58.5% exceeds the hyperinflation threshold. Trend: growth. ",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_076",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_058",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "TZA"
+      ],
+      "headline": "[ONGOING] Tanzania: Political risk premium at 570 bps",
+      "summary": "Tanzania's political risk premium of 570 basis points indicates significant sovereign risk. Investment risk: 0.392.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_080",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_059",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "UKR"
+      ],
+      "headline": "[ONGOING] Ukraine: Elevated investment risk (risk score: 0.523)",
+      "summary": "Ukraine's investment risk score of 0.523 indicates elevated risk. PRP: 1000 bps. Inflation: 6.5%. GDP trend: stable.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_082",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_060",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "UKR"
+      ],
+      "headline": "[ONGOING] Ukraine: Political risk premium at 1000 bps",
+      "summary": "Ukraine's political risk premium of 1000 basis points indicates significant sovereign risk. Investment risk: 0.523.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_083",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_061",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "SAU"
+      ],
+      "headline": "[ONGOING] Saudi Arabia: Hormuz crisis direct impact",
+      "summary": "Saudi Arabia exposed to Hormuz closure with 80.9% chokepoint exposure. IRGC attacks on regional US bases. Political stability declining. GDP trend: strong_decrease despite oil price surge — cannot export through Hormuz.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_090",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_062",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "OMN"
+      ],
+      "headline": "[ONGOING] Oman: Hormuz crisis direct impact",
+      "summary": "Oman critically exposed with 85% chokepoint exposure. Direct proximity to Hormuz mine-laying. Oil exports severely disrupted. GDP trend: decrease.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_091",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_063",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "IRQ"
+      ],
+      "headline": "[ONGOING] Iraq: Hormuz crisis direct impact",
+      "summary": "Iraq exposed with 79.1% chokepoint exposure. Oil export disruption threatens fiscal position. Kurdish invasion of Iran from Iraq Kurdistan complicates sovereignty. GDP trend: strong_decrease.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_092",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_064",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "RUS"
+      ],
+      "headline": "[ONGOING] Russia: Sanctions extended + supplying Iran with Shahed drones",
+      "summary": "Russia under comprehensive Western sanctions — EU extended for 6 months to Sep 2026, 20th sanctions package covering energy/financial services. Ukraine/Zelensky states Russia supplying Iran with Shahed drones and tactical advice for attacks on US bases — confirmed by Western intelligence. Trump envoy Witkoff says Kremlin denied it. Investment risk: 0.661. PRP: 1900 bps.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_093",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_065",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "EGY"
+      ],
+      "headline": "[ONGOING] Egypt: Elevated investment risk with high inflation",
+      "summary": "Egypt's investment risk at 0.573 with CPI inflation at 28.3%. Political risk premium: 895 bps. Suez Canal volumes affected by Hormuz-adjacent disruptions. GDP trend: decrease. Oil import costs surging.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_104",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_066",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "IRN"
+      ],
+      "headline": "[ONGOING] Iran: Political risk premium at 870 bps",
+      "summary": "Iran's political risk premium of 870 basis points indicates significant sovereign risk.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-14_112",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_067",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "LBY"
+      ],
+      "headline": "[ONGOING] Libya: Elevated investment risk at 0.547",
+      "summary": "Libya's investment risk score of 0.547 indicates elevated risk. PRP: 620 bps. Inflation: 2.1%. GDP trend: N/A.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-14_113",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_068",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "MMR"
+      ],
+      "headline": "[ONGOING] Myanmar: Elevated investment risk at 0.639",
+      "summary": "Myanmar's investment risk score of 0.639 indicates elevated risk. PRP: 850 bps. Inflation: 31.0%. GDP trend: N/A.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-14_114",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_069",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "OMN"
+      ],
+      "headline": "[ONGOING] Oman: GDP growth in sharp decline",
+      "summary": "Oman's GDP growth trend is 'strong_decrease'. Current growth: 1.6%.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-14_115",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_070",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "PAK"
+      ],
+      "headline": "[ONGOING] Pakistan: Elevated investment risk at 0.559",
+      "summary": "Pakistan's investment risk score of 0.559 indicates elevated risk. PRP: 900 bps. Inflation: 12.6%. GDP trend: decrease.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-14_116",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_071",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "RUS"
+      ],
+      "headline": "[ONGOING] Russia: Elevated investment risk at 0.661",
+      "summary": "Russia's investment risk score of 0.661 indicates elevated risk. PRP: 1900 bps. Inflation: 8.4%. GDP trend: growth.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-14_117",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_072",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "UKR"
+      ],
+      "headline": "[ONGOING] Ukraine: Elevated investment risk at 0.523",
+      "summary": "Ukraine's investment risk score of 0.523 indicates elevated risk. PRP: 1000 bps. Inflation: 6.5%. GDP trend: stable.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-14_118",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_073",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "BGD"
+      ],
+      "headline": "[IMPROVED] Bangladesh: Political risk premium at 654 bps",
+      "summary": "Bangladesh's political risk premium of 654 basis points indicates significant sovereign risk. Investment risk score: 0.334.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_011",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_074",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "EGY"
+      ],
+      "headline": "[IMPROVED] Egypt: Elevated investment risk at 0.573",
+      "summary": "Egypt's investment risk score of 0.573 indicates elevated risk. Political risk premium: 895 bps. Inflation: 28.3%. GDP trend: decrease. ",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_016",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_075",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "ISR"
+      ],
+      "headline": "[IMPROVED] Israel: Political stability in sharp decline",
+      "summary": "Israel facing multi-front war with extended duration. Hezbollah escalating from Lebanon. Society under war strain. National unity government but reserves mobilization creating economic friction.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_041",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_076",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "MOZ"
+      ],
+      "headline": "[IMPROVED] Mozambique: Elevated investment risk at 0.513",
+      "summary": "Mozambique's investment risk score of 0.513 indicates elevated risk. Political risk premium: 939 bps. Inflation: 4.1%. ",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_052",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_077",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "warning",
+      "countries": [
+        "VNM"
+      ],
+      "headline": "[IMPROVED] Vietnam: Political risk premium at 556 bps",
+      "summary": "Vietnam's political risk premium of 556 basis points indicates significant sovereign risk. Investment risk score: 0.209.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_085",
+      "confidence": 0.92
+    },
+    {
+      "event_id": "feed_078",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "KOR",
+        "USA"
+      ],
+      "headline": "[NEW] South Korea: US redeploying THAAD missile defense to Middle East",
+      "summary": "Pentagon transferring THAAD battery components from South Korea to Middle East after THAAD radar was damaged by drone strike in Jordan. South Korea's President Lee acknowledged move despite opposition. Raises concerns about Korean Peninsula defense gap. South Korea announced plan to raise defense budget from 2.3% to 3.5% of GDP by 2035.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-15_125",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_079",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "USA",
+        "CHN",
+        "DEU",
+        "JPN",
+        "KOR",
+        "MEX",
+        "VNM",
+        "TWN",
+        "IND"
+      ],
+      "headline": "[NEW] USA: Section 122 tariffs + new Section 301 investigations targeting 16 countries",
+      "summary": "SCOTUS struck down IEEPA tariffs 6-3. Trump responded with 10% Section 122 global surcharge (rising to 15%). 24 states filed lawsuit to block. USTR launched new Section 301 investigations into 'excess manufacturing capacity' targeting 16 countries including China, EU, Japan, South Korea, India, Mexico, Vietnam, Taiwan. US tariffs on China at 47.5%. Signals permanent tariff regime using alternative legal routes.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-15_127",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_080",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "NPL"
+      ],
+      "headline": "[NEW] Nepal: Balen Shah wins landslide election — 182 of 275 seats",
+      "summary": "Nepal's rapper-turned-politician Balendra Shah, 35, and his Rastriya Swatantra Party won 182 of 275 seats in the March 5 general election. Defeated four-time PM KP Sharma Oli in his own constituency. First election since last year's youth-led uprising that toppled the government. Marks generational shift in Nepali politics.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-15_128",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_081",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "COG"
+      ],
+      "headline": "[NEW] Congo-Brazzaville: Presidential election amid internet blackout",
+      "summary": "Republic of Congo voted in presidential election on March 15, expected to extend Sassou Nguesso's 42-year rule. Internet blackout imposed as voting began. Major opposition parties boycotted. African Union deployed election observation mission. 3.2M registered voters. Democratic quality concerns significant.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-15_129",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_082",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "CHL"
+      ],
+      "headline": "[NEW] Chile: New center-right government takes office — policy shift expected",
+      "summary": "New government took office in Chile in March 2026, part of broader Latin American political pendulum swing from left toward center-right. Could bring greater policy predictability and institutional maturity to the region's third-largest economy. Positive signal for investors.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-15_130",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_083",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "CHN",
+        "USA"
+      ],
+      "headline": "[NEW] US-China: Tariffs at record levels — Trump-Xi summit expected",
+      "summary": "Average US tariffs on Chinese goods at 47.5%, China's tariffs on US at 31.9%. China's trade surplus surged to record $213.62B in Jan-Feb (exports +21.8% YoY). NPC approved Five-Year Plan on high-tech and green transition. Trump-Xi summit expected in coming weeks. USTR launching Section 301 investigation targeting China.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-15_133",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_084",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "SDN",
+        "ETH",
+        "ARE"
+      ],
+      "headline": "[NEW] Sudan: Civil war creates world's worst humanitarian crisis — 25M face hunger",
+      "summary": "Sudan's civil war killed tens of thousands, creating the world's worst humanitarian and displacement crisis. 25 million face hunger, 12+ million fled homes. Sudan accuses Ethiopia of drone attacks from Ethiopian territory. UAE-allied RSF training camp reported near Ethiopian border. Competing regional interests blocking mediation.",
+      "category": "military_conflict",
+      "source_event_id": "alert_2026-03-15_134",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_085",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "RWA",
+        "COD",
+        "USA"
+      ],
+      "headline": "[NEW] Rwanda: US sanctions military and senior officials over M23 support",
+      "summary": "US Treasury sanctioned the Rwanda Defence Force and four senior officials for 'blatant violations' of Washington Peace Accords and direct operational support to M23 rebels in eastern DRC. Most severe US sanctions on Rwanda in over a decade. Impacts Rwanda's defense sector and bilateral relations with the US.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-15_135",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_086",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "CHN",
+        "USA",
+        "TWN",
+        "KOR",
+        "JPN"
+      ],
+      "headline": "[NEW] China: Iran war creating strategic opportunity as US overstretch emerges",
+      "summary": "Iran war diverting US military resources from Indo-Pacific, including THAAD redeployment from South Korea. China's shipyards produced 7 new Type 052D destroyers in 2025. Pentagon facing competing demands between Middle East and Indo-Pacific theaters. War games around Taiwan continue. China's record trade surplus shows economic resilience despite tariffs.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-15_136",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_087",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "NGA",
+        "USA"
+      ],
+      "headline": "[NEW] Nigeria: Anti-American protests emerge amid Iran war backlash",
+      "summary": "Anti-American protests linked to Iranian-backed Islamic Movement of Nigeria (IMN) and broader opposition to US-led war on Iran. Reflects global backlash against US military campaign. Could affect bilateral relations and domestic stability.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-15_137",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_088",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "ARG"
+      ],
+      "headline": "[ESCALATED] Argentina: Investment risk at 0.449 — approaching elevated territory",
+      "summary": "Argentina's investment risk score of 0.449 is nearing the warning threshold of 0.5. Political risk premium: 872 bps.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_009",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_089",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "COD"
+      ],
+      "headline": "[ESCALATED] DR Congo: Investment risk at 0.493 — approaching elevated territory",
+      "summary": "DR Congo's investment risk score of 0.493 is nearing the warning threshold of 0.5. Political risk premium: 1371 bps.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_014",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_090",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "ETH"
+      ],
+      "headline": "[ESCALATED] Ethiopia: Investment risk at 0.450 — approaching elevated territory",
+      "summary": "Ethiopia's investment risk score of 0.450 is nearing the warning threshold of 0.5. Political risk premium: 1473 bps.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_022",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_091",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "IRQ"
+      ],
+      "headline": "[ESCALATED] Iraq: Investment risk at 0.446 — approaching elevated territory",
+      "summary": "Iraq's investment risk score of 0.446 is nearing the warning threshold of 0.5. Political risk premium: 1609 bps.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_037",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_092",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "NGA"
+      ],
+      "headline": "[ESCALATED] Nigeria: Investment risk at 0.457 — approaching elevated territory",
+      "summary": "Nigeria's investment risk score of 0.457 is nearing the warning threshold of 0.5. Political risk premium: 1276 bps.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_056",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_093",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "AGO"
+      ],
+      "headline": "[ONGOING] Angola: High inflation at 28.2%",
+      "summary": "Angola's CPI inflation of 28.2% is significantly elevated. ",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_002",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_094",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "AGO"
+      ],
+      "headline": "[ONGOING] Angola: Investment risk at 0.422 — approaching elevated territory",
+      "summary": "Angola's investment risk score of 0.422 is nearing the warning threshold of 0.5. Political risk premium: 765 bps.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_003",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_095",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "ARE"
+      ],
+      "headline": "[ONGOING] United Arab Emirates: Political stability declining",
+      "summary": "United Arab Emirates political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_006",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_096",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "BGD"
+      ],
+      "headline": "[ONGOING] Bangladesh: GDP declining with investment risk at 0.334",
+      "summary": "Bangladesh shows GDP growth trend of 'decrease' combined with an investment risk score of 0.334. Bangladesh heavily dependent on Gulf oil transiting Hormuz. Oil at $116/bbl adds 1-2pp to import bill as % of GDP. Manufacturing and transport sectors hit hardest. G7 SPR release provides partial temp",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_012",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_097",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "EGY"
+      ],
+      "headline": "[ONGOING] Egypt: High inflation at 28.3%",
+      "summary": "Egypt's CPI inflation of 28.3% is significantly elevated. Trend: growth. ",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_018",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_098",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "EGY"
+      ],
+      "headline": "[ONGOING] Egypt: GDP declining with investment risk at 0.573",
+      "summary": "Egypt shows GDP growth trend of 'decrease' combined with an investment risk score of 0.573. Egypt faces severe oil import cost pressure and Suez Canal revenue uncertainty. Tourism disrupted by regional conflict. IMF program constrained. Food import costs rising.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_019",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_099",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "ETH"
+      ],
+      "headline": "[ONGOING] Ethiopia: High inflation at 21.0%",
+      "summary": "Ethiopia's CPI inflation of 21.0% is significantly elevated. ",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_021",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_100",
+      "timestamp": "2026-03-15T00:00:00Z",
       "severity": "watch",
       "countries": [
         "GHA"
       ],
-      "headline": "Ghana parliament revives dangerous anti-LGBT bill",
-      "summary": "Ghana's parliament revived a controversial anti-LGBT bill that could impose severe criminal penalties. The legislation risks triggering sanctions from Western donors and could affect Ghana's access to World Bank and IMF concessional financing.",
-      "category": "political_regulatory",
-      "source_event_id": "evt_2026-03-10_037",
-      "confidence": 0.82
+      "headline": "[ONGOING] Ghana: High inflation at 22.8%",
+      "summary": "Ghana's CPI inflation of 22.8% is significantly elevated. ",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_024",
+      "confidence": 0.88
     },
     {
-      "event_id": "feed_030",
-      "timestamp": "2026-03-09T00:00:00Z",
+      "event_id": "feed_101",
+      "timestamp": "2026-03-15T00:00:00Z",
       "severity": "watch",
       "countries": [
-        "USA",
-        "ISR",
+        "GHA"
+      ],
+      "headline": "[ONGOING] Ghana: Investment risk at 0.423 — approaching elevated territory",
+      "summary": "Ghana's investment risk score of 0.423 is nearing the warning threshold of 0.5. Political risk premium: 884 bps.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_025",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_102",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "GRC"
+      ],
+      "headline": "[ONGOING] Greece: GDP declining with investment risk at 0.307",
+      "summary": "Greece shows GDP growth trend of 'decrease' combined with an investment risk score of 0.307. Greece facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_026",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_103",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "IND"
+      ],
+      "headline": "[ONGOING] India: GDP declining with investment risk at 0.287",
+      "summary": "India shows GDP growth trend of 'decrease' combined with an investment risk score of 0.287. India heavily dependent on Gulf oil transiting Hormuz. Oil at $116/bbl adds 1-2pp to import bill as % of GDP. Manufacturing and transport sectors hit hardest. G7 SPR release provides partial temporary",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_027",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_104",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
         "IRN"
       ],
-      "headline": "US-Israeli missile strike near Iranian girls' school draws condemnation",
-      "summary": "A US-Israeli missile strike near a girls' school in Iran drew international condemnation. Trump stated the US is 'willing to live with' the report, generating backlash. WHO verified 13 attacks on health sites in Iran. The civilian toll is rising and generating international pressure for ceasefire.",
-      "category": "military_conflict",
-      "source_event_id": "evt_2026-03-10_040",
-      "confidence": 0.82
+      "headline": "[ONGOING] Iran: High inflation at 32.5%",
+      "summary": "Iran's CPI inflation of 32.5% is significantly elevated. Trend: strong_growth. ",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_033",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_105",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "IRQ"
+      ],
+      "headline": "[ONGOING] Iraq: Political stability declining",
+      "summary": "Iraq political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_038",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_106",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "KWT"
+      ],
+      "headline": "[ONGOING] Kuwait: Political stability declining",
+      "summary": "Kuwait political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_045",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_107",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "MMR"
+      ],
+      "headline": "[ONGOING] Myanmar: High inflation at 31.0%",
+      "summary": "Myanmar's CPI inflation of 31.0% is significantly elevated. ",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_051",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_108",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "NGA"
+      ],
+      "headline": "[ONGOING] Nigeria: High inflation at 33.2%",
+      "summary": "Nigeria's CPI inflation of 33.2% is significantly elevated. Trend: growth. ",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_055",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_109",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "OMN"
+      ],
+      "headline": "[ONGOING] Oman: Political stability declining",
+      "summary": "Oman political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_058",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_110",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "PAK"
+      ],
+      "headline": "[ONGOING] Pakistan: GDP declining with investment risk at 0.395",
+      "summary": "Pakistan shows GDP growth trend of 'decrease' combined with an investment risk score of 0.395. Pakistan heavily dependent on Gulf oil transiting Hormuz. Oil at $116/bbl adds 1-2pp to import bill as % of GDP. Manufacturing and transport sectors hit hardest. G7 SPR release provides partial tempor",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_061",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_111",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "PHL"
+      ],
+      "headline": "[ONGOING] Philippines: GDP declining with investment risk at 0.279",
+      "summary": "Philippines shows GDP growth trend of 'decrease' combined with an investment risk score of 0.279. Philippines heavily dependent on Gulf oil transiting Hormuz. Oil at $116/bbl adds 1-2pp to import bill as % of GDP. Manufacturing and transport sectors hit hardest. G7 SPR release provides partial tem",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_062",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_112",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "QAT"
+      ],
+      "headline": "[ONGOING] Qatar: Political stability declining",
+      "summary": "Qatar political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_065",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_113",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "SAU"
+      ],
+      "headline": "[ONGOING] Saudi Arabia: Political stability declining",
+      "summary": "Saudi Arabia political stability declining from Gulf conflict proximity. Economic disruption from Hormuz closure creating internal pressure. Security concerns elevated.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_071",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_114",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "TUR"
+      ],
+      "headline": "[ONGOING] Turkey: Investment risk at 0.421 — approaching elevated territory",
+      "summary": "Turkey's investment risk score of 0.421 is nearing the warning threshold of 0.5. Political risk premium: 590 bps.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_077",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_115",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "TUR"
+      ],
+      "headline": "[ONGOING] Turkey: GDP declining with investment risk at 0.421",
+      "summary": "Turkey shows GDP growth trend of 'decrease' combined with an investment risk score of 0.421. Turkey facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply. Turkey navigating between NATO membership and regional re",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_078",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_116",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "USA"
+      ],
+      "headline": "[ONGOING] United States: Political stability declining",
+      "summary": "US political stability declining. War with Iran has no clear endpoint. DHS Secretary fired. $175B tariff refund SCOTUS crisis. 5 recession warning signs identified. Midterm mood favoring Democrats. Rand Paul warns of 'disastrous' midterms.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_084",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_117",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "ZAF"
+      ],
+      "headline": "[ONGOING] South Africa: GDP declining with investment risk at 0.280",
+      "summary": "South Africa shows GDP growth trend of 'decrease' combined with an investment risk score of 0.280. South Africa facing unprecedented marine gas oil prices from Gulf disruption. Mining sector benefits from gold windfall but energy costs erode broader economy. Load-shedding risk increases with fuel c",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_086",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_118",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "DEU"
+      ],
+      "headline": "[ONGOING] Germany: European energy crisis from Hormuz closure",
+      "summary": "Germany faces economic headwinds from the oil price surge to $116.50/bbl driven by Hormuz closure. GDP trend: decrease. Investment risk: 0.103. VW slashing 50,000 jobs — largest German auto layoff ever. EU admits 'nuclear blunder' on energy policy. European markets crashed ~6%.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_094",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_119",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "FRA"
+      ],
+      "headline": "[ONGOING] France: European energy crisis from Hormuz closure",
+      "summary": "France faces economic headwinds from the oil price surge to $116.50/bbl driven by Hormuz closure. GDP trend: decrease. Investment risk: 0.181. Macron vows to protect Lebanon. EU leaders split on Iran war. European defense burden growing.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_095",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_120",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "ITA"
+      ],
+      "headline": "[ONGOING] Italy: European energy crisis from Hormuz closure",
+      "summary": "Italy faces economic headwinds from the oil price surge to $116.50/bbl driven by Hormuz closure. GDP trend: decrease. Investment risk: 0.175. EU protests Russia's Venice Biennale return. European energy vulnerability acute. GDP trend: decrease.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_096",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_121",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "ARG"
+      ],
+      "headline": "[ONGOING] Argentina: Recession with hyperinflation legacy — Milei reforms tested",
+      "summary": "Argentina in recession (GDP trend: decrease) with CPI still at 219.9% despite disinflation progress. Milei courting Wall Street, citing net energy exports from Vaca Muerta. Investment risk: 0.449. Argentina emerging as energy crisis beneficiary but structural reform path remains volatile.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_097",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_122",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "TUR"
+      ],
+      "headline": "[ONGOING] Turkey: Inflation at 58.5% with GDP declining",
+      "summary": "Turkey's CPI inflation remains at 58.5% with GDP growth trend declining. Investment risk: 0.421. Political risk premium: 590 bps. OTS foreign ministers meeting tests Turkic coordination amid Iran crisis. Turkey navigates between NATO and regional relationships.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_098",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_123",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "USA"
+      ],
+      "headline": "[ONGOING] USA: Iran war Day 16 + Section 122 tariffs + jobs loss",
+      "summary": "US faces convergent risks: Iran war Day 16 — US bombed Kharg Island, Energy Sec says war expected to end 'in weeks'; SCOTUS struck down IEEPA tariffs, Section 122 surcharge at 10% rising to 15%; 24 states lawsuit to block Section 122; USTR launched Section 301 investigations targeting 16 countries; US shed 92,000 jobs in February — unemployment at 4.4%; WTI crude posted biggest weekly gain since 1983. Political stability trend: decrease. Risk: 0.238.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_099",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_124",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "IND"
+      ],
+      "headline": "[ONGOING] India: Negotiates Hormuz passage — Gulf exposure persists",
+      "summary": "India negotiated direct Hormuz passage for two tankers via Modi-Pezeshkian talks — first successful commercial transit since blockade. Demonstrates neutral diplomatic positioning. However, cascading Gulf impact continues: $346cr export cargo stranded, $100B+ GCC remittances at risk, oil import costs surging at $100+/bbl. Chokepoint exposure: 0.549. GDP trend: decrease. Adopting 'strategic indifference' toward Pakistan.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_100",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_125",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "JPN"
+      ],
+      "headline": "[ONGOING] Japan: Advancing counterattack missiles amid Hormuz energy crisis",
+      "summary": "Japan faces acute energy crisis with chokepoint exposure of 0.623. Takaichi government advanced counterattack missile capability timeline by two years to March 2026. Describes security environment as 'most severe since WWII'. THAAD redeployment from South Korea to Middle East creates regional defense gap. GDP trend: decrease.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_101",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_126",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "KOR"
+      ],
+      "headline": "[ONGOING] South Korea: THAAD redeployed to Middle East — defense gap emerging",
+      "summary": "South Korea faces energy crisis with chokepoint exposure of 0.699 and emerging defense gap as Pentagon transfers THAAD battery to Middle East. President Lee acknowledged the move despite opposition. Announced plans to raise defense budget from 2.3% to 3.5% of GDP by 2035. GDP trend: decrease. SPR drawdown activated.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_102",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_127",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "MEX"
+      ],
+      "headline": "[ONGOING] Mexico: CJNG leader El Mencho killed — short-term violence risk",
+      "summary": "Mexican military killed CJNG cartel leader El Mencho. Major security milestone but CJNG power vacuum could trigger cartel violence in short term. Long-term positive for security environment and US-Mexico relations.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_105",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_128",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "COL"
+      ],
+      "headline": "[ONGOING] Colombia: Petro's leftist coalition tops congressional elections",
+      "summary": "President Petro's Pacto Historico won most seats in Colombia's congressional elections, strengthening his reform mandate on land reform, taxes, and energy transition. Conservative Paloma Valencia surges in 2026 presidential race.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_106",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_129",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "SGP"
+      ],
+      "headline": "[ONGOING] Singapore: Chokepoint exposure at 0.940 amid global shipping disruption",
+      "summary": "Singapore has elevated supply chain chokepoint exposure of 0.940 during the global shipping disruption from Hormuz closure. GDP trend: decrease.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_107",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_130",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "TWN"
+      ],
+      "headline": "[ONGOING] Taiwan: Chokepoint exposure at 0.684 amid global shipping disruption",
+      "summary": "Taiwan has elevated supply chain chokepoint exposure of 0.684 during the global shipping disruption from Hormuz closure. GDP trend: decrease.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_108",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_131",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "VNM"
+      ],
+      "headline": "[ONGOING] Vietnam: Chokepoint exposure at 0.648 amid global shipping disruption",
+      "summary": "Vietnam has elevated supply chain chokepoint exposure of 0.648 during the global shipping disruption from Hormuz closure. GDP trend: decrease.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_109",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_132",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "THA"
+      ],
+      "headline": "[ONGOING] Thailand: Chokepoint exposure at 0.683 amid global shipping disruption",
+      "summary": "Thailand has elevated supply chain chokepoint exposure of 0.683 during the global shipping disruption from Hormuz closure. GDP trend: decrease.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_110",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_133",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "ARG"
+      ],
+      "headline": "[IMPROVED] Argentina: GDP declining with investment risk at 0.449",
+      "summary": "Argentina shows GDP growth trend of 'decrease' combined with an investment risk score of 0.449. Argentina GDP -1.3% under Milei's shock therapy. However, becoming net energy exporter for first time via Vaca Muerta — particularly valuable as Gulf crisis drives prices higher. Milei courting Wall S",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_010",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_134",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "DEU"
+      ],
+      "headline": "[IMPROVED] Germany: Political stability declining",
+      "summary": "Germany political stability weakening. VW slashing 50,000 jobs — largest in German auto history. EU admitted 'nuclear blunder' on energy. European markets crashed 6%. Industrial competitiveness crisis deepening.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_015",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_135",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "ROU"
+      ],
+      "headline": "[IMPROVED] Romania: GDP declining with investment risk at 0.283",
+      "summary": "Romania shows GDP growth trend of 'decrease' combined with an investment risk score of 0.283. Romania facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_066",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_136",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "SEN"
+      ],
+      "headline": "[IMPROVED] Senegal: Investment risk at 0.422 — approaching elevated territory",
+      "summary": "Senegal's investment risk score of 0.422 is nearing the warning threshold of 0.5. Political risk premium: 889 bps.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_073",
+      "confidence": 0.88
+    },
+    {
+      "event_id": "feed_137",
+      "timestamp": "2026-03-15T00:00:00Z",
+      "severity": "watch",
+      "countries": [
+        "TUR"
+      ],
+      "headline": "[IMPROVED] Turkey: Political stability declining",
+      "summary": "Turkey facing complex balancing act between NATO membership and regional relationships. Turkic States coordination tested. Kurdish proxy war in Iran creates domestic concerns. NATO obligations conflict with regional interests.",
+      "category": "geopolitical_event",
+      "source_event_id": "alert_2026-03-10_079",
+      "confidence": 0.88
     }
   ]
 }

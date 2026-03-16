@@ -3,7 +3,7 @@
   "country_name": "Taiwan",
   "tier": 1,
   "region": "east_asia",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-15T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_real_growth_pct": {
@@ -13,9 +13,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.6,
-      "trend_reasoning": "Taiwan GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "TWN GDP growth facing new Section 301 investigation headwinds from US. Trade uncertainty weighs on investment",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_nominal_usd": {
       "value": 884387000000.0,
@@ -32,8 +32,8 @@
       "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.6,
-      "trend_reasoning": "Taiwan inflation broadly stable with modest upward pressure from global oil prices.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_reasoning": "TWN inflation broadly stable with modest upward pressure from global oil prices and trade disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.4,
@@ -48,10 +48,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.62,
-      "trend_reasoning": "Taiwan current account under modest pressure from higher energy import costs.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "TWN current account broadly stable. Global trade disruption creates mixed impacts depending on export composition",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 23.4,
@@ -59,10 +59,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Taiwan debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "TWN government debt broadly stable. No acute fiscal pressure but global uncertainty limits fiscal space",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 33775,
@@ -104,8 +104,8 @@
       "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.55,
-      "trend_reasoning": "Taiwan currency broadly stable against USD. No direct conflict exposure.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_reasoning": "TWN currency broadly stable vs USD. Global risk-off sentiment creates mild depreciation pressure against safe-haven currencies",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 1.45,
@@ -145,6 +145,12 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "fdi_inflows_usd": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "TWN FDI facing headwinds from Section 301 investigation and trade policy uncertainty",
+      "trend_updated": "2026-03-15T00:00:00Z"
     }
   },
   "demographic": {
@@ -244,78 +250,94 @@
       }
     },
     "military_expenditure_pct_gdp": {
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Taiwan military spending broadly stable relative to GDP.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "value": 3.3,
+      "confidence": 0.8,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "defense_budget",
+      "run_id": "2026-W11",
+      "trend": "strong_growth",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "TWN announcing major defense budget increases — THAAD redeployment from Korea, US strategic overstretch concerns, regional security deterioration",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "conflict_status": {
+      "value": "stable",
+      "confidence": 0.8,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search+agent_03_crossref",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
     }
   },
   "trade": {},
   "derived": {
-    "composite_national_power_index": {
-      "value": 57.3,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 56.1,
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Taiwan national power broadly stable. No significant structural changes this week.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
-    "political_risk_premium_bps": {
-      "value": 110,
-      "confidence": 0.75,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.79,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Taiwan investment risk broadly unchanged.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
     "resource_self_sufficiency_index": {
       "value": 0.15,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 0.1,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
       "value": 0.684,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
+    },
+    "composite_national_power_index": {
+      "value": 27.1,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 57.3
+    },
+    "political_risk_premium_bps": {
+      "value": 12,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "previous_value": 110
     },
     "market_accessibility_score": {
       "value": 0.78,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.072,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend_confidence": 0.55,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "TWN investment risk broadly stable. Global uncertainty elevated but no acute country-specific triggers"
     },
     "trade_openness_trend": {
       "value": "decrease",
@@ -325,19 +347,19 @@
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     },
-    "top_partner_relationship_health": {
-      "value": "stable",
-      "confidence": 0.55,
-      "reasoning": "Taiwan key bilateral relationships broadly unchanged this week. Global focus on Gulf conflict reduces attention on other bilateral dynamics.",
-      "last_updated": "2026-03-10T12:00:00Z",
-      "source": "agent_10_trend_estimator",
-      "run_id": "2026-W11"
-    },
     "political_stability_trend": {
       "value": "stable",
       "confidence": 0.55,
       "reasoning": "Taiwan political stability broadly unchanged. No major domestic political disruptions this week.",
       "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.62,
+      "reasoning": "TWN relationships with US deteriorating from Section 301 investigation targeting manufacturing sectors",
+      "last_updated": "2026-03-15T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -352,24 +374,24 @@
         "run_id": "2026-W11"
       }
     ],
-    "update_count": 65,
+    "update_count": 76,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-14T00:00:00Z",
+    "generated_at": "2026-03-15T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Taiwan's economy is broadly stable with limited direct impact from the Hormuz crisis. However, the semiconductor sector — Taiwan's strategic asset — faces indirect risks from global demand uncertainty and the DPRK 10-missile provocation that elevates Northeast Asian security concerns. Current account mildly deteriorating. Government debt rising modestly.",
+    "executive_summary": "Taiwan confronts rising energy costs from the Hormuz blockade and $100+ oil. GDP growth is 3.7% (stable), with inflation at 1.7% (stable). Current account pressure is building as energy import bills surge. Key signal: South Korea and Taiwan announce major defense spending increases: South Korea announced plans to raise its defense budget from 2.3% to 3.5% of GDP by 2035. Taiwan is increasing defense spending from... Investment risk remains contained at 0.072.",
     "key_changes_this_week": [
-      "DPRK 10-missile salvo elevates Northeast Asian security concerns",
-      "Current account mildly deteriorating",
-      "Government debt rising modestly",
-      "No significant Taiwan-specific events"
+      "South Korea and Taiwan announce major defense spending increases: South Korea announced plans to raise its defense budget from 2.3% to 3.5% of GDP by 2035. Taiwan is increasing...",
+      "Defense spending target: 5.0% GDP by 2030",
+      "Arms deal: [\"HIMARS rocket systems\", \"Howitzers\", \"Javelin anti-tank missiles\", \"Loitering munition drones\"]",
+      "Increasing defense spending from 3.3% to 5% of GDP by 2030; Concerns about US strategic overstretch in Middle East creating security gap; China continues extensive war games..."
     ],
-    "outlook": "Taiwan GDP broadly stable. TSMC and semiconductor ecosystem provides structural support but faces geopolitical risk premium. NE Asian security environment deteriorating with DPRK provocations. Cross-strait dynamics unchanged this week but US military stretch across multiple theaters reduces perceived deterrence umbrella.",
-    "investor_implications": "TSMC remains critical global asset but geopolitical risk premium persists. Taiwan equities face modest NE Asian security discount. TAIEX sensitive to semiconductor demand cycle and geopolitical news flow. TWD stable. Government bonds stable. Monitor cross-strait dynamics if US military remains stretched.",
-    "data_quality_note": "Data quality within acceptable parameters. Taiwan not covered by World Bank — some data gaps in institutional metrics."
+    "outlook": "Taiwan's growth outlook is under pressure from surging energy import costs. Current account deterioration risks currency weakness if the Hormuz blockade extends beyond Q2. Central bank faces a difficult trade-off between supporting growth and containing imported inflation. Structural energy diversification and strategic reserves adequacy are key medium-term priorities.",
+    "investor_implications": "Taiwan equities face headwinds from rising input costs and potential margin compression. Investment risk at 0.072 with currency under pressure from current account deterioration. Favor exporters with pricing power and domestic-demand plays insulated from energy costs. FX hedging recommended for Taiwan-denominated positions.",
+    "data_quality_note": "Data quality is high with 76 data points updated this run.  Flagged factors: economy.macroeconomic.gdp_nominal_usd."
   },
   "code": "TWN",
   "name": "Taiwan",
@@ -495,10 +517,10 @@
       "resource_self_sufficiency_index": 0.15,
       "energy_independence_index": 0.1,
       "supply_chain_chokepoint_exposure": 0.684,
-      "composite_national_power_index": 57.3,
-      "political_risk_premium_bps": 110,
+      "composite_national_power_index": 27.1,
+      "political_risk_premium_bps": 12,
       "market_accessibility_score": 0.78,
-      "overall_investment_risk_score": 0.79
+      "overall_investment_risk_score": 0.072
     }
   },
   "economy": {
@@ -559,15 +581,63 @@
       "source": "agent_pipeline",
       "run_id": "2026-W10"
     },
-    "trade_openness_pct": 97.02
+    "trade_openness_pct": {
+      "value": 97.02,
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "TWN trade openness declining from Section 301 investigation, Section 122 tariffs, and global shipping disruption from Hormuz",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "energy_coal_production_mt": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 285.480966849,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 1021.070185,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 2.124091312,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 871.491236712,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 0.196,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
   },
   "institutions": {
     "under_international_sanctions": {
       "value": false,
-      "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.82,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
     },
     "democracy_index": {
       "value": 8.78,
@@ -623,7 +693,11 @@
       "confidence": 0.97,
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "TWN political stability broadly stable. Global uncertainty creates background pressure but no acute triggers",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "wgi_government_effectiveness": {
       "value": 1.36,
@@ -655,10 +729,10 @@
     },
     "head_of_state_name": {
       "value": "Lai Ching-te",
-      "confidence": 0.92,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.8,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
     },
     "head_of_state_title": {
       "value": "President",
@@ -675,11 +749,19 @@
       "run_id": "2026-W10"
     },
     "next_national_election_date": {
-      "value": "2028-01",
+      "value": "2028",
       "confidence": 0.8,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "TWN relationships with US deteriorating from Section 301 investigation targeting manufacturing sectors",
+      "trend_updated": "2026-03-15T00:00:00Z"
     }
   }
 }

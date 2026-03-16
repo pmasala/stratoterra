@@ -3,79 +3,79 @@
   "country_name": "Brazil",
   "tier": 1,
   "region": "latin_america",
-  "last_updated": "2026-03-14T00:00:00Z",
+  "last_updated": "2026-03-15T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 2185821648943.86,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
       "value": 3.41931516597739,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Brazil as net oil exporter benefits from price surge. Pre-salt production boosting export revenues. Geographically insulated from Gulf conflict. Commodity basket (iron, soy, oil) all elevated.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "BRA benefits from elevated oil prices ($103/bbl) with exports unaffected by Hormuz blockade. Pre-salt production and commodity basket broadly elevated",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 10310.5488778166,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
       "value": 4.36746407652337,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.65,
-      "trend_reasoning": "Brazil inflation broadly stable as oil exporter status shields from energy cost pass-through.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_reasoning": "BRA inflation broadly stable. Oil revenue supports currency and import capacity. Limited direct Hormuz impact",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 5.97,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
       "value": -3.02715961462093,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.75,
-      "trend_reasoning": "Brazil current account improving as oil/commodity prices surge and non-Hormuz export routes remain secure. Trade surplus widening.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "BRA current account improving from elevated oil/gas export revenues at $103/bbl via non-Hormuz routes",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 81.8554431216383,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "Brazil debt ratio improving as commodity windfall boosts government revenue.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "BRA government debt broadly stable — elevated oil revenues offset modest spending increases",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 329732443813.378,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gdp_growth_forecast_2026_pct": {
@@ -104,46 +104,46 @@
       "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
-      "value": 5.2275,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 5.2433,
+      "confidence": 0.88,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
       "run_id": "2026-W11",
       "trend": "growth",
       "trend_confidence": 0.62,
-      "trend_reasoning": "Brazil currency supported by commodity export windfall. Oil/gas revenue boosting external position.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_reasoning": "BRA currency strengthening from elevated oil/commodity revenue at $103/bbl",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 13.53,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10b",
+      "value": 13.62,
+      "confidence": 0.88,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
       "trend": "decrease",
       "trend_confidence": 0.62,
       "trend_reasoning": "Brazil bond yields stable to declining on improved fiscal position from commodity windfall.",
       "trend_updated": "2026-03-14T00:00:00Z"
     },
     "equity_index_level": {
-      "value": 183250.14,
-      "confidence": 0.55,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 161869.77,
+      "confidence": 0.88,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
       "run_id": "2026-W11"
     },
     "total_exports_usd": {
       "value": 392105352908.42,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "total_imports_usd": {
       "value": 385708875013.773,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "inflation_forecast_2026_pct": {
@@ -162,20 +162,20 @@
     },
     "fdi_inflows_usd": {
       "value": 74090786050.19,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Brazil FDI broadly stable with mild downward pressure from global uncertainty. Gulf conflict creating risk-off sentiment across emerging markets.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.62,
+      "trend_reasoning": "BRA FDI stable to positive — energy sector investment attractive at $103/bbl",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_ppp_usd": {
       "value": 4735725154575.41,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gini_coefficient": {
@@ -196,23 +196,23 @@
   "demographic": {
     "population_total": {
       "value": 211998573,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "population_growth_pct": {
       "value": 0.405467027627251,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 75.848,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "hdi": {
@@ -231,30 +231,51 @@
     },
     "labor_force_participation_pct": {
       "value": 63.139,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "literacy_rate_pct": {
       "value": 94.8005123042056,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "health_expenditure_pct_gdp": {
       "value": 9.73092747,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "urban_population_pct": {
       "value": 87.8958549533146,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 99.8,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 51.6,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 84.4635,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     }
   },
@@ -280,10 +301,10 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10",
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Brazil military spending broadly stable relative to GDP.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "BRA defense spending modestly rising from globally elevated threat environment and regional security concerns",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "active_military_personnel": {
       "value": 376000,
@@ -334,74 +355,78 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
     }
   },
   "trade": {},
   "derived": {
-    "composite_national_power_index": {
-      "value": 57.3,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 52.9,
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Brazil national power broadly stable. No significant structural changes this week.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
-    "political_risk_premium_bps": {
-      "value": 230,
-      "confidence": 0.75,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.724,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Brazil investment risk improving on commodity windfall. Fiscal position strengthening. Non-Hormuz export routes secure.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
     "resource_self_sufficiency_index": {
       "value": 0.85,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 0.85,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
       "value": 0.161,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
+    },
+    "composite_national_power_index": {
+      "value": 50.9,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 57.3
+    },
+    "political_risk_premium_bps": {
+      "value": 377,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "previous_value": 230
     },
     "market_accessibility_score": {
       "value": 0.6,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.305,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend_confidence": 0.62,
+      "trend": "decrease",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "BRA investment risk modestly declining — oil revenue windfall strengthens fiscal position and external balance"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -411,19 +436,19 @@
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     },
-    "top_partner_relationship_health": {
-      "value": "stable",
-      "confidence": 0.55,
-      "reasoning": "Brazil key bilateral relationships broadly unchanged this week. Global focus on Gulf conflict reduces attention on other bilateral dynamics.",
-      "last_updated": "2026-03-10T12:00:00Z",
-      "source": "agent_10_trend_estimator",
-      "run_id": "2026-W11"
-    },
     "political_stability_trend": {
       "value": "stable",
       "confidence": 0.55,
       "reasoning": "Brazil political stability broadly unchanged. No major domestic political disruptions this week.",
       "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "BRA partner relationships broadly stable. Global uncertainty creating pressure but no acute bilateral crises",
+      "last_updated": "2026-03-15T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -461,24 +486,24 @@
         "run_id": "2026-W11"
       }
     ],
-    "update_count": 103,
+    "update_count": 143,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-14T00:00:00Z",
+    "generated_at": "2026-03-15T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Brazil is a net beneficiary of the current geopolitical environment as a geographically insulated net oil exporter. GDP growth is improving on the commodity windfall — agricultural, energy, and metals exports all benefit from elevated prices and supply disruption elsewhere. Current account strengthening. Investment risk is declining. The Section 301 forced labor investigation includes Brazil but represents a manageable headwind.",
+    "executive_summary": "Brazil is benefiting from elevated oil prices driven by the Iran-Hormuz crisis. GDP growth is 3.4% with a rising trend. Energy independence at 0.850 positions the country to capture windfall revenue. Key signal: Latin American markets unsettled by US policy shifts and trade tensions: Growing unease is rippling through Latin American financial markets as investors grapple with diminishing US support for the... Investment risk is moderate at 0.305; selective opportunities exist amid heightened volatility.",
     "key_changes_this_week": [
-      "Commodity basket elevated — oil, agricultural, and metals exports benefiting",
-      "Section 301 forced labor investigation includes Brazil among 60 countries",
-      "Current account improving on commodity windfall",
-      "Fiscal position improving — debt-to-GDP declining"
+      "Latin American markets unsettled by US policy shifts and trade tensions: Growing unease is rippling through Latin American financial markets as investors grapple with diminishing...",
+      "Presidential race tightening: Lula tied at 41% with Flavio Bolsonaro in Genial/Quaest poll (first major pollster to show a tie); Approval rating stable at ~47% (Datafolha); series...",
+      "10-year bond yield declining at 13.6%",
+      "Government debt trajectory: stable (81.9% of GDP)"
     ],
-    "outlook": "Brazil well-positioned as diversified commodity exporter in geographically insulated location. GDP growth trajectory positive. Fiscal consolidation benefiting from revenue uplift. Real strengthening on export revenues. Section 301 forced labor investigation represents medium-term risk but unlikely to offset commodity tailwind near-term.",
-    "investor_implications": "Brazilian equities attractive in current environment — energy, agriculture, and mining sectors directly benefiting. BRL strengthening supports dollar-denominated returns. Government bonds improving. Ibovespa may outperform EM peers. Petrobras and Vale well-positioned. Political risk remains from Lula-era fiscal expansion but commodity windfall provides buffer.",
-    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
+    "outlook": "Brazil stands to benefit from elevated energy prices as long as the Hormuz crisis persists. GDP growth trajectory is rising with windfall revenue boosting fiscal accounts. Downside risk: a rapid war resolution could normalize oil prices and unwind gains. Policy challenge is channeling temporary revenue into durable economic capacity.",
+    "investor_implications": "Brazil energy equities and sovereign bonds benefit from oil windfall. Investment risk at 0.305 with 377 bps risk premium. Overweight energy and fiscal-sensitive sectors. Key risk: rapid oil price normalization on ceasefire would unwind gains.",
+    "data_quality_note": "Data quality is high with 143 data points updated this run.  Flagged factors: macroeconomic.unemployment_rate_pct, macroeconomic.central_bank_rate_pct, economy.macroeconomic.unemployment_rate_pct."
   },
   "code": "BRA",
   "name": "Brazil",
@@ -604,10 +629,10 @@
       "resource_self_sufficiency_index": 0.85,
       "energy_independence_index": 0.85,
       "supply_chain_chokepoint_exposure": 0.161,
-      "composite_national_power_index": 57.3,
-      "political_risk_premium_bps": 230,
+      "composite_national_power_index": 50.9,
+      "political_risk_premium_bps": 377,
       "market_accessibility_score": 0.6,
-      "overall_investment_risk_score": 0.724
+      "overall_investment_risk_score": 0.305
     }
   },
   "economy": {
@@ -688,7 +713,13 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 35.58,
+    "trade_openness_pct": {
+      "value": 35.58,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "BRA trade openness broadly stable with modest downward pressure from Hormuz shipping disruption and US tariff escalation",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
     "financial": {
       "exchange_rate_vs_usd": {
         "value": 5.2433,
@@ -711,15 +742,57 @@
         "source": "agent_pipeline",
         "run_id": "2026-W11"
       }
+    },
+    "energy_coal_production_mt": {
+      "value": 6078.811183472004,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 737.07547,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 1073.514314,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 781.7115606,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 3268.78122138,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 3356.467092896175,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
     }
   },
   "institutions": {
     "under_international_sanctions": {
       "value": false,
-      "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.78,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
     },
     "democracy_index": {
       "value": 6.49,
@@ -764,45 +837,49 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": 0.382854,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 0.382853865623474,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": -0.408568,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "value": -0.408567786216736,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "BRA political stability broadly stable. Global uncertainty creates background pressure but no acute triggers",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "wgi_government_effectiveness": {
-      "value": -0.546764,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": -0.546764314174652,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": -0.296478,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": -0.29647821187973,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": -0.308803,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": -0.308802843093872,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": -0.503643,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": -0.503643155097961,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "fragile_states_index": {
@@ -814,10 +891,10 @@
     },
     "head_of_state_name": {
       "value": "Luiz Inacio Lula da Silva",
-      "confidence": 0.92,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
     },
     "head_of_state_title": {
       "value": "President",
@@ -827,11 +904,19 @@
       "run_id": "2026-W10"
     },
     "next_national_election_date": {
-      "value": "2026-10",
-      "confidence": 0.8,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "value": "2026-10-04",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "BRA partner relationships broadly stable. Global uncertainty creating pressure but no acute bilateral crises",
+      "trend_updated": "2026-03-15T00:00:00Z"
     }
   }
 }

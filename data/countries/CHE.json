@@ -3,79 +3,79 @@
   "country_name": "Switzerland",
   "tier": 1,
   "region": "europe",
-  "last_updated": "2026-03-14T00:00:00Z",
+  "last_updated": "2026-03-15T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 936564198048.516,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
       "value": 1.30233332541106,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.6,
-      "trend_reasoning": "Switzerland GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.68,
+      "trend_reasoning": "CHE GDP broadly stable. Safe-haven/tech-oriented economy partially insulated. Oil shock impact moderate due to services-heavy economy",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 103998.186685604,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
       "value": 1.06234041976595,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
-      "trend": "stable",
-      "trend_confidence": 0.6,
-      "trend_reasoning": "Switzerland inflation broadly stable with modest upward pressure from global oil prices.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "CHE inflation moderately rising from global oil price shock and tariff-related import cost increases",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 4.873,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
       "value": 7.68909869633693,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.62,
-      "trend_reasoning": "Switzerland current account under modest pressure from higher energy import costs.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "CHE current account modestly deteriorating from higher energy import costs and trade disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "govt_debt_pct_gdp": {
       "value": 19.8822985290733,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Switzerland debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "CHE government debt broadly stable. No acute fiscal pressure but global uncertainty limits fiscal space",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 909365744096.394,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gdp_growth_forecast_2026_pct": {
@@ -104,15 +104,15 @@
       "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
-      "value": 0.7786,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 0.78721,
+      "confidence": 0.92,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
       "run_id": "2026-W11",
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Switzerland currency broadly stable against USD. No direct conflict exposure.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Swiss franc strengthening — safe-haven demand surging from Middle East war and global uncertainty. SNB managing appreciation",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "value": 0.28,
@@ -127,16 +127,16 @@
     },
     "total_exports_usd": {
       "value": 675814842375.363,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "total_imports_usd": {
       "value": 580072309988.652,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "inflation_forecast_2026_pct": {
@@ -148,20 +148,20 @@
     },
     "fdi_inflows_usd": {
       "value": -108395568633.839,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Switzerland FDI broadly stable with mild downward pressure from global uncertainty. Gulf conflict creating risk-off sentiment across emerging markets.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "CHE attracting safe-haven FDI as global investors seek stability amid Middle East war and trade disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_ppp_usd": {
       "value": 869017903306.548,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gini_coefficient": {
@@ -182,23 +182,23 @@
   "demographic": {
     "population_total": {
       "value": 9005582,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "population_growth_pct": {
       "value": 1.30500749907811,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 84.0560975609756,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "hdi": {
@@ -217,23 +217,44 @@
     },
     "labor_force_participation_pct": {
       "value": 66.747,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "health_expenditure_pct_gdp": {
       "value": 11.69096088,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "urban_population_pct": {
       "value": 85.4615370020764,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 33.8,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 97.3444,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     }
   },
@@ -259,10 +280,10 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10",
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Switzerland military spending broadly stable relative to GDP.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "CHE defense spending modestly rising from globally elevated threat environment and regional security concerns",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "active_military_personnel": {
       "value": 147178,
@@ -288,74 +309,77 @@
         "source": "agent_pipeline",
         "run_id": "2026-W10"
       }
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
     }
   },
   "trade": {},
   "derived": {
-    "composite_national_power_index": {
-      "value": 70.7,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 76.3,
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Switzerland national power broadly stable. No significant structural changes this week.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
-    "political_risk_premium_bps": {
-      "value": 0,
-      "confidence": 0.75,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.907,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Switzerland investment risk broadly unchanged.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
     "resource_self_sufficiency_index": {
       "value": 0.25,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 0.5,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
       "value": 0.358,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
+    },
+    "composite_national_power_index": {
+      "value": 50.7,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 70.7
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
       "value": 0.92,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.022,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend_confidence": 0.68,
+      "trend": "decrease",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "CHE investment risk declining — safe-haven capital inflows, strong institutions, geographic insulation from conflict"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -365,19 +389,19 @@
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     },
-    "top_partner_relationship_health": {
-      "value": "stable",
-      "confidence": 0.55,
-      "reasoning": "Switzerland key bilateral relationships broadly unchanged this week. Global focus on Gulf conflict reduces attention on other bilateral dynamics.",
-      "last_updated": "2026-03-10T12:00:00Z",
-      "source": "agent_10_trend_estimator",
-      "run_id": "2026-W11"
-    },
     "political_stability_trend": {
       "value": "stable",
       "confidence": 0.55,
       "reasoning": "Switzerland political stability broadly unchanged. No major domestic political disruptions this week.",
       "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.62,
+      "reasoning": "CHE relationships with US deteriorating from Section 301 investigation targeting manufacturing sectors",
+      "last_updated": "2026-03-15T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -407,24 +431,23 @@
         "run_id": "2026-W11"
       }
     ],
-    "update_count": 94,
+    "update_count": 129,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-14T00:00:00Z",
+    "generated_at": "2026-03-15T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Switzerland maintains its traditional safe-haven status amid the global geopolitical crisis. GDP growth is stable with limited energy import vulnerability relative to European peers. The Swiss franc is strengthening on safe-haven demand. Current account mildly deteriorating. Government debt rising modestly from a very low base. The Section 301 overcapacity investigation includes Switzerland, creating minor trade policy uncertainty.",
+    "executive_summary": "Switzerland remains relatively insulated from the Iran-Hormuz crisis. GDP growth is 1.3% (stable), with inflation contained at 1.1%. Political stability is stable. Investment risk remains contained at 0.022.",
     "key_changes_this_week": [
-      "Safe-haven status reinforced — CHF strengthening",
-      "Section 301 overcapacity investigation includes Switzerland",
-      "Current account mildly deteriorating",
-      "No significant country-specific events"
+      "Inflation rising at 1.1%",
+      "10-year bond yield stable at 0.3%",
+      "Government debt trajectory: stable (19.9% of GDP)"
     ],
-    "outlook": "Switzerland well-positioned as safe haven during geopolitical crisis. GDP stable. SNB has policy flexibility. Banking sector benefits from safe-haven flows but faces European market contagion risk. Watch and pharma sectors provide defensive portfolio characteristics.",
-    "investor_implications": "Swiss equities defensive — pharma (Roche, Novartis) and luxury (Richemont) provide portfolio stability. CHF strengthening supports purchasing power. Swiss government bonds among the safest globally. SMI may outperform European indices. Section 301 risk minimal for Swiss economy.",
-    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
+    "outlook": "Switzerland is positioned to weather the current global turbulence with limited direct impact. GDP growth at 1.3% is resilient, with investment risk contained at 0.022. Secondary effects through commodity prices and global demand slowdown remain the primary risk channel.",
+    "investor_implications": "Switzerland offers relative safe-haven characteristics with investment risk at 0.022. Market accessibility score of 0.920 supports portfolio allocation. Sovereign bonds and quality equities provide diversification during global turbulence.",
+    "data_quality_note": "Data quality is high with 129 data points updated this run.  Flagged factors: macroeconomic.unemployment_rate_pct, economy.macroeconomic.unemployment_rate_pct, economy.macroeconomic.public_debt_pct_gdp."
   },
   "code": "CHE",
   "name": "Switzerland",
@@ -539,10 +562,10 @@
       "resource_self_sufficiency_index": 0.25,
       "energy_independence_index": 0.5,
       "supply_chain_chokepoint_exposure": 0.358,
-      "composite_national_power_index": 70.7,
+      "composite_national_power_index": 50.7,
       "political_risk_premium_bps": 0,
       "market_accessibility_score": 0.92,
-      "overall_investment_risk_score": 0.907
+      "overall_investment_risk_score": 0.022
     }
   },
   "economy": {
@@ -616,7 +639,13 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 134.1,
+    "trade_openness_pct": {
+      "value": 134.1,
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "CHE trade openness declining from Section 301 investigation, Section 122 tariffs, and global shipping disruption from Hormuz",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
     "financial": {
       "exchange_rate_vs_usd": {
         "value": 0.78721,
@@ -639,15 +668,57 @@
         "source": "agent_pipeline",
         "run_id": "2026-W11"
       }
+    },
+    "energy_coal_production_mt": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 75.065891937,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 105.0755703,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 194.492496,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
     }
   },
   "institutions": {
     "under_international_sanctions": {
       "value": false,
-      "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.78,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
     },
     "democracy_index": {
       "value": 9.32,
@@ -692,45 +763,49 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": 1.665027,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.66502690315247,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": 1.071444,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "value": 1.07144391536713,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "CHE political stability broadly stable. Global uncertainty creates background pressure but no acute triggers",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "wgi_government_effectiveness": {
-      "value": 2.134927,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 2.13492703437805,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": 1.72938,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.72938001155853,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": 1.761726,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.76172566413879,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": 2.021999,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 2.02199912071228,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "head_of_state_name": {
@@ -753,6 +828,14 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "CHE relationships with US deteriorating from Section 301 investigation targeting manufacturing sectors",
+      "trend_updated": "2026-03-15T00:00:00Z"
     }
   }
 }

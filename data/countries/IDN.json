@@ -3,68 +3,68 @@
   "country_name": "Indonesia",
   "tier": 1,
   "region": "southeast_asia",
-  "last_updated": "2026-03-14T00:00:00Z",
+  "last_updated": "2026-03-15T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 1396300098190.97,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
       "value": 5.03034469419038,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
-      "trend": "stable",
-      "trend_confidence": 0.6,
-      "trend_reasoning": "Indonesia GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "decrease",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "IDN GDP growth declining from elevated oil import costs ($103/bbl) and global trade disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 4925.43048751861,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
       "value": 2.18151273615189,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
-      "trend": "stable",
-      "trend_confidence": 0.6,
-      "trend_reasoning": "Indonesia inflation broadly stable with modest upward pressure from global oil prices.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "IDN inflation rising from oil shock ($103/bbl). Energy import costs passing through to consumer prices. Global food prices elevated",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 3.237,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
       "value": -0.624744460485029,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.62,
-      "trend_reasoning": "Indonesia current account under modest pressure from higher energy import costs.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "IDN current account deteriorating from elevated oil import bill at $103/bbl. Energy import dependency driving trade deficit wider",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 155708275547.574,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "govt_debt_pct_gdp": {
@@ -73,10 +73,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Indonesia debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "IDN government debt broadly stable. No acute fiscal pressure but global uncertainty limits fiscal space",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4.9,
@@ -104,22 +104,22 @@
       "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
-      "value": 16931.73,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 16900,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
       "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.55,
-      "trend_reasoning": "Indonesia currency broadly stable against USD. No direct conflict exposure.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_reasoning": "IDN currency broadly stable vs USD. Global risk-off sentiment creates mild depreciation pressure against safe-haven currencies",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
-      "value": 6.47,
-      "confidence": 0.97,
-      "last_updated": "2026-03-03T22:30:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10b",
+      "value": 6.82,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.55,
       "trend_reasoning": "Indonesia bond yields broadly stable.",
@@ -127,16 +127,16 @@
     },
     "total_exports_usd": {
       "value": 309745619367.11,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "total_imports_usd": {
       "value": 284696296710.895,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "inflation_forecast_2026_pct": {
@@ -148,20 +148,20 @@
     },
     "fdi_inflows_usd": {
       "value": 24246911222.5792,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Indonesia FDI broadly stable with mild downward pressure from global uncertainty. Gulf conflict creating risk-off sentiment across emerging markets.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "IDN FDI facing headwinds from Section 301 investigation and trade policy uncertainty",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_ppp_usd": {
       "value": 4662887595103.26,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gini_coefficient": {
@@ -182,23 +182,23 @@
   "demographic": {
     "population_total": {
       "value": 283487931,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "population_growth_pct": {
       "value": 0.813871513351669,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 71.146,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "hdi": {
@@ -217,30 +217,51 @@
     },
     "labor_force_participation_pct": {
       "value": 67.965,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "literacy_rate_pct": {
       "value": 96,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "health_expenditure_pct_gdp": {
       "value": 2.70239949,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "urban_population_pct": {
       "value": 58.7509635387997,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 99.4,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 34.9,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 72.7808,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     }
   },
@@ -311,78 +332,83 @@
       }
     },
     "military_expenditure_pct_gdp": {
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Indonesia military spending broadly stable relative to GDP.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "value": 0.8,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
     }
   },
   "trade": {},
   "derived": {
-    "composite_national_power_index": {
-      "value": 53.3,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 48.8,
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Indonesia national power broadly stable. No significant structural changes this week.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
-    "political_risk_premium_bps": {
-      "value": 140,
-      "confidence": 0.75,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.736,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Indonesia investment risk broadly unchanged.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
     "resource_self_sufficiency_index": {
       "value": 0.75,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 0.75,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
       "value": 0.395,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
+    },
+    "composite_national_power_index": {
+      "value": 43.6,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 53.3
+    },
+    "political_risk_premium_bps": {
+      "value": 209,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "previous_value": 140
     },
     "market_accessibility_score": {
       "value": 0.55,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.205,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend_confidence": 0.55,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "IDN investment risk broadly stable. Global uncertainty elevated but no acute country-specific triggers"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -392,19 +418,19 @@
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     },
-    "top_partner_relationship_health": {
-      "value": "stable",
-      "confidence": 0.55,
-      "reasoning": "Indonesia key bilateral relationships broadly unchanged this week. Global focus on Gulf conflict reduces attention on other bilateral dynamics.",
-      "last_updated": "2026-03-10T12:00:00Z",
-      "source": "agent_10_trend_estimator",
-      "run_id": "2026-W11"
-    },
     "political_stability_trend": {
       "value": "stable",
       "confidence": 0.55,
       "reasoning": "Indonesia political stability broadly unchanged. No major domestic political disruptions this week.",
       "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.62,
+      "reasoning": "IDN relationships with US deteriorating from Section 301 investigation targeting manufacturing sectors",
+      "last_updated": "2026-03-15T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -427,24 +453,23 @@
         "run_id": "2026-W11"
       }
     ],
-    "update_count": 99,
+    "update_count": 137,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-14T00:00:00Z",
+    "generated_at": "2026-03-15T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Indonesia is modestly impacted by the energy shock. As a net commodity exporter (coal, palm oil, nickel), elevated prices provide some revenue offset, but oil imports create vulnerability. The Section 301 overcapacity investigation includes Indonesia. GDP growth remains broadly stable. Government debt is rising modestly but from a low base.",
+    "executive_summary": "Indonesia confronts rising energy costs from the Hormuz blockade and $100+ oil. GDP growth is 5.0% (declining), with inflation at 2.2% (rising). Current account pressure is building as energy import bills surge. Key signal: Prabowo said would only breach 3% deficit cap if oil prices remain elevated from Iran war; Ordered March 2026 groundbreakings for 18 industrial projects; Fuel prices increased at major providers on... Investment risk remains contained at 0.205.",
     "key_changes_this_week": [
-      "Section 301 overcapacity investigation includes Indonesia",
-      "Commodity exports partially offset oil import costs",
-      "Government debt rising modestly from low base",
-      "Current account mildly deteriorating"
+      "Prabowo said would only breach 3% deficit cap if oil prices remain elevated from Iran war; Ordered March 2026 groundbreakings for 18 industrial projects; Fuel prices increased at...",
+      "Emerging market currencies worst session since Nov 2024: EM currency index posted worst session since Nov 2024 as dollar surged amid Middle East conflict. Central banks in...",
+      "Inflation rising at 2.2%"
     ],
-    "outlook": "Indonesia growth broadly stable with competing forces from commodity exports versus oil import costs. Trade policy uncertainty from Section 301 manageable. Domestic demand remains supportive. Political transition to Prabowo government providing continuity. Debt levels remain comfortable.",
-    "investor_implications": "Indonesian equities offer relative value in EM — commodity export base provides buffer while low debt gives fiscal flexibility. Rupiah modestly under pressure from oil imports. Coal and palm oil sectors well-positioned. Monitor Section 301 investigation scope for manufacturing sector impact.",
-    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
+    "outlook": "Indonesia's growth outlook is under pressure from surging energy import costs. Current account deterioration risks currency weakness if the Hormuz blockade extends beyond Q2. Central bank faces a difficult trade-off between supporting growth and containing imported inflation. Structural energy diversification and strategic reserves adequacy are key medium-term priorities.",
+    "investor_implications": "Indonesia equities face headwinds from rising input costs and potential margin compression. Investment risk at 0.205 with currency under pressure from current account deterioration. Favor exporters with pricing power and domestic-demand plays insulated from energy costs. FX hedging recommended for Indonesia-denominated positions.",
+    "data_quality_note": "Data quality is high with 137 data points updated this run.  Flagged factors: macroeconomic.unemployment_rate_pct, economy.macroeconomic.unemployment_rate_pct."
   },
   "code": "IDN",
   "name": "Indonesia",
@@ -567,10 +592,10 @@
       "resource_self_sufficiency_index": 0.75,
       "energy_independence_index": 0.75,
       "supply_chain_chokepoint_exposure": 0.395,
-      "composite_national_power_index": 53.3,
-      "political_risk_premium_bps": 140,
+      "composite_national_power_index": 43.6,
+      "political_risk_premium_bps": 209,
       "market_accessibility_score": 0.55,
-      "overall_investment_risk_score": 0.736
+      "overall_investment_risk_score": 0.205
     }
   },
   "economy": {
@@ -644,7 +669,13 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 42.57,
+    "trade_openness_pct": {
+      "value": 42.57,
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "IDN trade openness declining from Section 301 investigation, Section 122 tariffs, and global shipping disruption from Hormuz",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
     "financial": {
       "exchange_rate_vs_usd": {
         "value": 16900,
@@ -668,15 +699,57 @@
         "run_id": "2026-W11",
         "note": "Source agent flagged anomaly but passes validation checks"
       }
+    },
+    "energy_coal_production_mt": {
+      "value": 836000.0000000056,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 404.85768,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 1764.727219,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 2464.853806,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 1626.877995148,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 581.9808743169399,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
     }
   },
   "institutions": {
     "under_international_sanctions": {
       "value": false,
-      "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.78,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
     },
     "democracy_index": {
       "value": 6.44,
@@ -721,45 +794,49 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": 0.138983,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 0.138982817530632,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": -0.404375,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "value": -0.404375314712524,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "IDN political stability broadly stable. Global uncertainty creates background pressure but no acute triggers",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "wgi_government_effectiveness": {
-      "value": 0.580326,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 0.58032637834549,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": 0.301379,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 0.301378756761551,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": -0.153604,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": -0.153604462742805,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": -0.486872,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": -0.48687219619751,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "fragile_states_index": {
@@ -771,10 +848,10 @@
     },
     "head_of_state_name": {
       "value": "Prabowo Subianto",
-      "confidence": 0.92,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.8,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
     },
     "head_of_state_title": {
       "value": "President",
@@ -784,11 +861,19 @@
       "run_id": "2026-W10"
     },
     "next_national_election_date": {
-      "value": "2029-02",
+      "value": "2029",
       "confidence": 0.8,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "IDN relationships with US deteriorating from Section 301 investigation targeting manufacturing sectors",
+      "trend_updated": "2026-03-15T00:00:00Z"
     }
   }
 }

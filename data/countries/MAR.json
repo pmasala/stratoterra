@@ -3,68 +3,68 @@
   "country_name": "Morocco",
   "tier": 2,
   "region": "middle_east",
-  "last_updated": "2026-03-10T00:00:00Z",
+  "last_updated": "2026-03-15T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 160610994054.734,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
       "value": 3.79336515978963,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
-      "trend": "stable",
-      "trend_confidence": 0.6,
-      "trend_reasoning": "Morocco GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "decrease",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "MAR GDP growth declining from elevated oil import costs ($103/bbl) and global trade disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 4153.1943359375,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
       "value": 0.985256592004507,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
-      "trend": "stable",
-      "trend_confidence": 0.6,
-      "trend_reasoning": "Morocco inflation broadly stable with modest upward pressure from global oil prices.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "MAR inflation rising from oil shock ($103/bbl). Energy import costs passing through to consumer prices. Global food prices elevated",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 9,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
       "value": -1.16354070328467,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.62,
-      "trend_reasoning": "Morocco current account under modest pressure from higher energy import costs.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.72,
+      "trend_reasoning": "MAR current account deteriorating from elevated oil import bill at $103/bbl. Energy import dependency driving trade deficit wider",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 37133907722.7893,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "govt_debt_pct_gdp": {
@@ -73,10 +73,10 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "growth",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Morocco debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "MAR government debt broadly stable. No acute fiscal pressure but global uncertainty limits fiscal space",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 4.2,
@@ -94,16 +94,16 @@
     },
     "total_exports_usd": {
       "value": 67454245753.4821,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "total_imports_usd": {
       "value": 80608604200.2698,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "central_bank_policy_rate_pct": {
@@ -119,20 +119,20 @@
     },
     "fdi_inflows_usd": {
       "value": 1638999697.24144,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Morocco FDI broadly stable with mild downward pressure from global uncertainty. Gulf conflict creating risk-off sentiment across emerging markets.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.55,
+      "trend_reasoning": "MAR FDI broadly stable with modest caution from global risk-off sentiment and trade disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_ppp_usd": {
       "value": 402770325749.156,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "fiscal_balance_pct_gdp": {
@@ -150,8 +150,8 @@
       "run_id": "2026-W11",
       "trend": "stable",
       "trend_confidence": 0.55,
-      "trend_reasoning": "Morocco currency broadly stable against USD. No direct conflict exposure.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_reasoning": "MAR currency broadly stable vs USD. Global risk-off sentiment creates mild depreciation pressure against safe-haven currencies",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "sovereign_bond_yield_10yr_pct": {
       "trend": "stable",
@@ -163,23 +163,23 @@
   "demographic": {
     "population_total": {
       "value": 38081173,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "population_growth_pct": {
       "value": 0.972827595296714,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 75.313,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "hdi": {
@@ -198,23 +198,37 @@
     },
     "labor_force_participation_pct": {
       "value": 43.941,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "health_expenditure_pct_gdp": {
       "value": 6.06396198,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "urban_population_pct": {
       "value": 62.7998124018197,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 91,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     }
   },
@@ -269,78 +283,83 @@
       }
     },
     "military_expenditure_pct_gdp": {
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Morocco military spending broadly stable relative to GDP.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "value": 10.02,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
     }
   },
   "trade": {},
   "derived": {
-    "composite_national_power_index": {
-      "value": 43.7,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 42.8,
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Morocco national power broadly stable. No significant structural changes this week.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
-    "political_risk_premium_bps": {
-      "value": 230,
-      "confidence": 0.75,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.654,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Morocco investment risk broadly unchanged.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
     "resource_self_sufficiency_index": {
       "value": 0.35,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 0.1,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
       "value": 0.304,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
+    },
+    "composite_national_power_index": {
+      "value": 36.7,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 43.7
+    },
+    "political_risk_premium_bps": {
+      "value": 401,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy",
+      "previous_value": 230
     },
     "market_accessibility_score": {
       "value": 0.45,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.233,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend_confidence": 0.72,
+      "trend": "growth",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "MAR investment risk rising from regional war, Hormuz disruption, and elevated geopolitical uncertainty"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -350,19 +369,19 @@
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     },
-    "top_partner_relationship_health": {
-      "value": "stable",
-      "confidence": 0.55,
-      "reasoning": "Morocco key bilateral relationships broadly unchanged this week. Global focus on Gulf conflict reduces attention on other bilateral dynamics.",
-      "last_updated": "2026-03-10T12:00:00Z",
-      "source": "agent_10_trend_estimator",
-      "run_id": "2026-W11"
-    },
     "political_stability_trend": {
       "value": "stable",
       "confidence": 0.55,
       "reasoning": "Morocco political stability broadly unchanged. No major domestic political disruptions this week.",
       "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "MAR partner relationships broadly stable. Global uncertainty creating pressure but no acute bilateral crises",
+      "last_updated": "2026-03-15T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -385,24 +404,24 @@
         "run_id": "2026-W11"
       }
     ],
-    "update_count": 90,
+    "update_count": 122,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-14T00:00:00Z",
+    "generated_at": "2026-03-15T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Morocco's economy is broadly stable with limited direct impact from the Hormuz crisis. As a North African economy with Atlantic trade routes, Morocco is geographically insulated from Strait of Hormuz disruption. Energy costs modestly elevated from global oil prices. Phosphate exports benefit from elevated agricultural input prices. No significant country-specific events this week.",
+    "executive_summary": "Morocco records GDP growth of 3.8% (declining) with inflation at 1.0% (rising). Investment risk stands at 0.233. Investment risk remains contained at 0.233.",
     "key_changes_this_week": [
-      "Geographic insulation from Hormuz disruption",
-      "Phosphate exports benefit from elevated agricultural prices",
-      "Current account mildly deteriorating from energy imports",
-      "Government debt rising modestly"
+      "Inflation rising at 1.0%",
+      "Investment risk rising to 0.233",
+      "10-year bond yield stable at N/A",
+      "Government debt trajectory: stable (67.2% of GDP)"
     ],
-    "outlook": "Morocco GDP broadly stable with phosphate exports providing anchor. Renewable energy development (Noor solar complex) reducing oil dependency. Tourism sector may face modest headwinds from European demand weakness. Auto manufacturing sector (Renault, Stellantis) stable. Political stability maintained under Mohammed VI.",
-    "investor_implications": "Moroccan equities offer North African exposure with stable governance. MASI relatively insulated from Gulf crisis. Phosphate sector (OCP) well-positioned. Government bonds stable. MAD modestly under pressure from energy imports. Renewable energy and auto manufacturing plays provide diversification. Monitor European tourism demand.",
-    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
+    "outlook": "Morocco's near-term trajectory shows GDP growth at 3.8% (declining) with moderate investment risk. The global energy shock and US trade escalation create headwinds for export-oriented sectors. Political stability is stable, which will shape policy response effectiveness.",
+    "investor_implications": "Morocco presents moderate investment risk at 0.233 with 401 bps political risk premium. Market accessibility at 0.450. Selective opportunities exist across asset classes.",
+    "data_quality_note": "Data quality is high with 122 data points updated this run.  Flagged factors: macroeconomic.unemployment_rate_pct, economy.macroeconomic.unemployment_rate_pct."
   },
   "code": "MAR",
   "name": "Morocco",
@@ -513,10 +532,10 @@
       "resource_self_sufficiency_index": 0.35,
       "energy_independence_index": 0.1,
       "supply_chain_chokepoint_exposure": 0.304,
-      "composite_national_power_index": 43.7,
-      "political_risk_premium_bps": 230,
+      "composite_national_power_index": 36.7,
+      "political_risk_premium_bps": 401,
       "market_accessibility_score": 0.45,
-      "overall_investment_risk_score": 0.654
+      "overall_investment_risk_score": 0.233
     }
   },
   "economy": {
@@ -590,15 +609,63 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 92.19
+    "trade_openness_pct": {
+      "value": 92.19,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "MAR trade openness broadly stable with modest downward pressure from Hormuz shipping disruption and US tariff escalation",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "energy_coal_production_mt": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 42.296223148,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 32.98279596,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 1.518284989,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 319.400600555,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 0.025,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
   },
   "institutions": {
     "under_international_sanctions": {
       "value": false,
-      "confidence": 0.95,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch",
+      "run_id": "2026-W11"
     },
     "democracy_index": {
       "value": 4.97,
@@ -643,45 +710,49 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": -0.48926,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": -0.489260077476501,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": -0.367761,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "value": -0.367761224508286,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "MAR stability declining from regional war, Hormuz crisis, and economic disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "wgi_government_effectiveness": {
-      "value": -0.035915,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": -0.0359151102602482,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": -0.064208,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": -0.0642079934477806,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": -0.127506,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": -0.127505928277969,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": -0.536349,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": -0.536348581314087,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "fragile_states_index": {
@@ -718,6 +789,14 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "MAR partner relationships broadly stable. Global uncertainty creating pressure but no acute bilateral crises",
+      "trend_updated": "2026-03-15T00:00:00Z"
     }
   }
 }

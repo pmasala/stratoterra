@@ -3,68 +3,68 @@
   "country_name": "Czech Republic",
   "tier": 2,
   "region": "europe",
-  "last_updated": "2026-03-14T00:00:00Z",
+  "last_updated": "2026-03-15T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 347034062928.479,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
       "value": 1.23308611983484,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.6,
-      "trend_reasoning": "Czech Republic GDP broadly stable. No direct exposure to Gulf conflict. Global oil shock creates mild headwinds.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "CZE GDP growth slowing but not contracting. Oil shock and trade uncertainty create headwinds partially offset by ECB stability",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 31823.3078290564,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
       "value": 2.43531202435314,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
-      "trend": "stable",
-      "trend_confidence": 0.6,
-      "trend_reasoning": "Czech Republic inflation broadly stable with modest upward pressure from global oil prices.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "CZE inflation moderately rising from global oil price shock and tariff-related import cost increases",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 2.825,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
       "value": 1.74244358000018,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "decrease",
-      "trend_confidence": 0.62,
-      "trend_reasoning": "Czech Republic current account under modest pressure from higher energy import costs.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.65,
+      "trend_reasoning": "CZE current account modestly deteriorating from higher energy import costs and trade disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 146281239761.971,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "govt_debt_pct_gdp": {
@@ -74,9 +74,9 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.65,
-      "trend_reasoning": "Czech Republic debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_confidence": 0.68,
+      "trend_reasoning": "CZE debt modestly rising from defense spending increases (NATO 5% target pressure) and energy transition costs",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 2,
@@ -94,16 +94,16 @@
     },
     "total_exports_usd": {
       "value": 238995944034.86,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "total_imports_usd": {
       "value": 217301727912.937,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "central_bank_policy_rate_pct": {
@@ -118,32 +118,32 @@
       "trend_updated": "2026-03-14T00:00:00Z"
     },
     "exchange_rate_vs_usd": {
-      "value": 21.069,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 21.294,
+      "confidence": 0.92,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
       "run_id": "2026-W11",
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Czech Republic currency broadly stable against USD. No direct conflict exposure.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "CZE currency modestly appreciating vs weakening USD. EU convergence play intact despite regional uncertainty",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "fdi_inflows_usd": {
       "value": 13051379572.6952,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Czech Republic FDI broadly stable with mild downward pressure from global uncertainty. Gulf conflict creating risk-off sentiment across emerging markets.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.55,
+      "trend_reasoning": "CZE FDI broadly stable with modest caution from global risk-off sentiment and trade disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_ppp_usd": {
       "value": 624699149441.868,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gini_coefficient": {
@@ -170,23 +170,23 @@
   "demographic": {
     "population_total": {
       "value": 10905028,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "population_growth_pct": {
       "value": 0.376553049157494,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 79.8780487804878,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "hdi": {
@@ -205,23 +205,44 @@
     },
     "labor_force_participation_pct": {
       "value": 60.341,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "health_expenditure_pct_gdp": {
       "value": 8.50710297,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "urban_population_pct": {
       "value": 72.7947984592185,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 25.7,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 87.6878,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     }
   },
@@ -270,96 +291,87 @@
       }
     },
     "military_expenditure_pct_gdp": {
-      "value": null,
-      "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Czech Republic military spending broadly stable relative to GDP.",
-      "trend_updated": "2026-03-14T00:00:00Z",
-      "confidence": 0.82,
-      "last_updated": "2026-03-10T12:00:00Z",
-      "source": "agent_10_trend_estimator",
+      "value": 2.65,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
       "run_id": "2026-W11"
     }
   },
   "trade": {},
   "derived": {
-    "composite_national_power_index": {
-      "value": 56.1,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 58.0,
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Czech Republic national power broadly stable. No significant structural changes this week.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
-    "political_risk_premium_bps": {
-      "value": 35,
-      "confidence": 0.75,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.835,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "stable",
-      "trend_confidence": 0.55,
-      "trend_reasoning": "Czech Republic investment risk broadly unchanged.",
-      "trend_updated": "2026-03-14T00:00:00Z"
-    },
     "resource_self_sufficiency_index": {
       "value": 0.4,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 0.5,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
       "value": 0.353,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
+    },
+    "composite_national_power_index": {
+      "value": 41.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 56.1
+    },
+    "political_risk_premium_bps": {
+      "value": 38,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
       "value": 0.75,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.08,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend_confidence": 0.6,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "CZE investment risk broadly stable — EU institutional framework and NATO membership provide stability despite global uncertainty"
     },
     "trade_openness_trend": {
       "value": "stable",
       "confidence": 0.6,
       "reasoning": "Czech Republic trade openness broadly stable. Global trade disruption from Hormuz primarily affects Gulf-dependent routes. Some trade rerouting benefits alternative routes.",
-      "last_updated": "2026-03-10T12:00:00Z",
-      "source": "agent_10_trend_estimator",
-      "run_id": "2026-W11"
-    },
-    "top_partner_relationship_health": {
-      "value": "stable",
-      "confidence": 0.55,
-      "reasoning": "Czech Republic key bilateral relationships broadly unchanged this week. Global focus on Gulf conflict reduces attention on other bilateral dynamics.",
       "last_updated": "2026-03-10T12:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
@@ -371,28 +383,35 @@
       "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "CZE partner relationships broadly stable within EU/NATO framework. Iran war creating some alliance strain over burden-sharing",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
     }
   },
   "metadata": {
     "active_flags": [],
-    "update_count": 91,
+    "update_count": 125,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-14T00:00:00Z",
+    "generated_at": "2026-03-15T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "The Czech Republic's economy is broadly stable with limited direct impact from the Hormuz crisis beyond energy cost pass-through. As a Central European manufacturing hub, the auto sector slowdown in Germany creates indirect headwinds. Current account mildly deteriorating. Government debt rising modestly. No significant country-specific events this week.",
+    "executive_summary": "Czech Republic's economy faces mounting pressure from the global energy price shock triggered by the Iran-Hormuz crisis. GDP growth stands at 1.2% (stable) while inflation is at 2.4% (rising). Investment risk remains contained at 0.080.",
     "key_changes_this_week": [
-      "Current account mildly deteriorating from energy costs",
-      "Government debt rising modestly",
-      "German auto sector downturn creates supply chain headwinds",
-      "No significant country-specific events"
+      "Inflation rising at 2.4%",
+      "10-year bond yield stable at N/A",
+      "Government debt trajectory: rising (44.0% of GDP)"
     ],
-    "outlook": "Czech GDP broadly stable but exposed to German industrial slowdown through supply chain linkages. Energy costs manageable with nuclear power base. EU funds supporting investment. CNB has policy flexibility. Defense spending likely to increase under NATO commitments.",
-    "investor_implications": "Czech equities face indirect headwinds from German auto sector. PX index tracking European markets. Government bonds stable at low spreads. CZK relatively stable within EUR orbit. Auto supply chain stocks face German VW restructuring risk. Defense and energy independence plays may offer value.",
-    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
+    "outlook": "Czech Republic faces a challenging near-term as the energy price shock works through the economy. Inflation at 2.4% (rising) constrains ECB rate cut options. Industrial competitiveness is eroding against energy-rich competitors. A Hormuz reopening would provide significant relief, but structural energy security gaps require long-term investment.",
+    "investor_implications": "Czech Republic faces earnings pressure across energy-intensive sectors. Investment risk at 0.080 is moderate by European standards. Overweight energy-efficient companies and defense. Underweight industrial commodities consumers. Sovereign bonds: N/A 10-year yield remains anchored.",
+    "data_quality_note": "Data quality is high with 125 data points updated this run."
   },
   "code": "CZE",
   "name": "Czech Republic",
@@ -509,10 +528,10 @@
       "resource_self_sufficiency_index": 0.4,
       "energy_independence_index": 0.5,
       "supply_chain_chokepoint_exposure": 0.353,
-      "composite_national_power_index": 56.1,
-      "political_risk_premium_bps": 35,
+      "composite_national_power_index": 41.0,
+      "political_risk_premium_bps": 38,
       "market_accessibility_score": 0.75,
-      "overall_investment_risk_score": 0.835
+      "overall_investment_risk_score": 0.08
     }
   },
   "economy": {
@@ -593,7 +612,13 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 131.48,
+    "trade_openness_pct": {
+      "value": 131.48,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "CZE trade openness broadly stable with modest downward pressure from Hormuz shipping disruption and US tariff escalation",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
     "financial": {
       "exchange_rate_vs_usd": {
         "value": 21.294,
@@ -609,15 +634,57 @@
         "source": "agent_pipeline",
         "run_id": "2026-W11"
       }
+    },
+    "energy_coal_production_mt": {
+      "value": 25031.996999999606,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 73.663514715,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 236.2960228,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 6.411970189,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 221.166666,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 1.382016393442623,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
     }
   },
   "institutions": {
     "under_international_sanctions": {
       "value": false,
-      "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.72,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch",
+      "run_id": "2026-W11"
     },
     "democracy_index": {
       "value": 8.08,
@@ -662,45 +729,49 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": 1.076549,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.07654917240143,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": 0.967362,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "value": 0.967361629009247,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "CZE political stability broadly maintained. NATO cohesion tested by Iran war response and defense spending demands",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "wgi_government_effectiveness": {
-      "value": 1.114011,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.1140114068985,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": 1.304489,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.30448853969574,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": 1.142184,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.14218366146088,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": 0.76781,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 0.767809867858887,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "fragile_states_index": {
@@ -737,6 +808,14 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "CZE partner relationships broadly stable within EU/NATO framework. Iran war creating some alliance strain over burden-sharing",
+      "trend_updated": "2026-03-15T00:00:00Z"
     }
   }
 }

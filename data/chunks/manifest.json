@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T00:10:59Z",
+  "generated_at": "2026-03-16T09:14:17Z",
   "run_id": "2026-W11",
   "files": {
     "all_countries_summary": {
@@ -10,10 +10,38 @@
       "count": 75
     },
     "weekly_briefing": {
-      "last_modified": "2026-03-15T00:10:59Z"
+      "last_modified": "2026-03-16T09:14:17Z"
     },
     "alert_index": {
-      "last_modified": "2026-03-15T00:10:59Z"
+      "last_modified": "2026-03-16T09:14:17Z"
     }
-  }
+  },
+  "chunks": {
+    "country_summary": {
+      "file": "country-summary/all_countries_summary.json",
+      "country_count": 75
+    },
+    "country_detail": {
+      "directory": "country-detail/",
+      "file_count": 75
+    },
+    "global": {
+      "directory": "global/",
+      "files": [
+        "weekly_briefing (weekly_briefing_2026-03-15.json)",
+        "alert_index",
+        "event_feed",
+        "global_rankings"
+      ]
+    }
+  },
+  "directory_file_counts": {
+    "country-detail": 75,
+    "timeseries": 5,
+    "supranational": 7,
+    "relations": 438,
+    "country-summary": 1,
+    "global": 37
+  },
+  "total_chunk_files": 563
 }

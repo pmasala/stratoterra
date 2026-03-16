@@ -3,68 +3,68 @@
   "country_name": "Finland",
   "tier": 2,
   "region": "europe",
-  "last_updated": "2026-03-14T00:00:00Z",
+  "last_updated": "2026-03-15T00:00:00Z",
   "run_id": "2026-W11",
   "macroeconomic": {
     "gdp_nominal_usd": {
       "value": 298696961297.656,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gdp_real_growth_pct": {
       "value": 0.416171964862073,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Finland facing GDP headwinds from oil shock ($116/bbl Brent) and European market crash (~6% drops across indices). Energy costs rising sharply.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "FIN GDP growth slowing but not contracting. Oil shock and trade uncertainty create headwinds partially offset by ECB stability",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_per_capita_usd": {
       "value": 53149.7671934051,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "inflation_cpi_pct": {
       "value": 1.56568906231616,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "growth",
-      "trend_confidence": 0.78,
-      "trend_reasoning": "Finland facing inflation uptick from oil shock feeding through energy, transport, and goods prices. EU admitted 'nuclear blunder' on energy policy. ECB faces stagflation dilemma ahead of March policy meeting.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.68,
+      "trend_reasoning": "FIN inflation moderately rising from global oil price shock and tariff-related import cost increases",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "unemployment_rate_pct": {
       "value": 9.461,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "current_account_pct_gdp": {
       "value": -0.665363108803007,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "decrease",
       "trend_confidence": 0.65,
-      "trend_reasoning": "Finland current account deteriorating from higher oil import costs at $116/bbl.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "FIN current account modestly deteriorating from higher energy import costs and trade disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "fx_reserves_usd": {
       "value": 17992736653.4528,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "govt_debt_pct_gdp": {
@@ -75,8 +75,8 @@
       "run_id": "2026-W11",
       "trend": "growth",
       "trend_confidence": 0.68,
-      "trend_reasoning": "Finland debt ratio rising modestly as oil shock reduces growth and increases government energy costs/subsidies. Interest rates remain elevated.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_reasoning": "FIN debt modestly rising from defense spending increases (NATO 5% target pressure) and energy transition costs",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_growth_forecast_2026_pct": {
       "value": 1.3,
@@ -98,23 +98,23 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11",
-      "trend": "decrease",
-      "trend_confidence": 0.68,
-      "trend_reasoning": "EUR under mild pressure from European market crash and energy import costs. USD safe-haven demand dominant. ECB policy response key variable.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend": "growth",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "FIN (EUR) appreciating vs USD — EUR/USD at 1.22 as ECB holds rates while Fed expected to cut. Dollar weakness broadening",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "total_exports_usd": {
       "value": 125177301210.937,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "total_imports_usd": {
       "value": 124115485971.094,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "central_bank_policy_rate_pct": {
@@ -133,20 +133,20 @@
     },
     "fdi_inflows_usd": {
       "value": 8741865603.01226,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11",
       "trend": "stable",
-      "trend_confidence": 0.58,
-      "trend_reasoning": "Finland FDI broadly stable with mild downward pressure from global uncertainty. Gulf conflict creating risk-off sentiment across emerging markets.",
-      "trend_updated": "2026-03-10T12:00:00Z"
+      "trend_confidence": 0.55,
+      "trend_reasoning": "FIN FDI broadly stable with modest caution from global risk-off sentiment and trade disruption",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "gdp_ppp_usd": {
       "value": 367420700448.97,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "gini_coefficient": {
@@ -167,23 +167,23 @@
   "demographic": {
     "population_total": {
       "value": 5619911,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "population_growth_pct": {
       "value": 0.642640054363343,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "life_expectancy": {
       "value": 81.6853658536585,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "hdi": {
@@ -202,23 +202,44 @@
     },
     "labor_force_participation_pct": {
       "value": 59.681,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "health_expenditure_pct_gdp": {
       "value": 10.47389507,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "urban_population_pct": {
       "value": 74.2637190463636,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 27.4,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 93.5139,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     }
   },
@@ -276,79 +297,82 @@
       }
     },
     "military_expenditure_pct_gdp": {
-      "value": null,
-      "trend": "growth",
-      "trend_confidence": 0.82,
-      "trend_reasoning": "Finland defense spending growing under NATO 2% commitment. SIPRI: European arms imports up 210%. All 32 NATO members now at 2% GDP target. US arms exports up 27% — Europe now top recipient region.",
-      "trend_updated": "2026-03-10T12:00:00Z",
-      "confidence": 0.82,
-      "last_updated": "2026-03-10T12:00:00Z",
-      "source": "agent_10_trend_estimator",
+      "value": 2.98,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
       "run_id": "2026-W11"
     }
   },
   "trade": {},
   "derived": {
-    "composite_national_power_index": {
-      "value": 60.9,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
-      "previous_value": 65.1
-    },
-    "political_risk_premium_bps": {
-      "value": 10,
-      "confidence": 0.75,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
-    },
-    "overall_investment_risk_score": {
-      "value": 0.868,
-      "confidence": 0.7,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_11_derived",
-      "run_id": "2026-W11",
-      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
-      "trend": "decrease",
-      "trend_confidence": 0.72,
-      "trend_reasoning": "Finland investment risk modestly elevated from European market crash, oil shock, and defense spending reallocation. But institutional strength provides resilience.",
-      "trend_updated": "2026-03-10T12:00:00Z"
-    },
     "resource_self_sufficiency_index": {
       "value": 0.55,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of min(production/consumption, 1.0) for energy, food, water, minerals"
     },
     "energy_independence_index": {
       "value": 0.5,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "domestic_energy_production / domestic_energy_consumption, capped at 1.0"
     },
     "supply_chain_chokepoint_exposure": {
       "value": 0.257,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "0.6 * maritime_chokepoint_dependency + 0.4 * normalized_trade_openness; elevated due to active Hormuz/Suez disruption"
+    },
+    "composite_national_power_index": {
+      "value": 42.9,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*military + 0.20*technology + 0.10*diplomatic + 0.10*soft_power, normalized 0-100",
+      "previous_value": 60.9
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Sovereign rating implied spread + adjustments for instability, conflict, sanctions, autocracy"
     },
     "market_accessibility_score": {
       "value": 0.85,
       "confidence": 0.7,
-      "last_updated": "2026-03-10T16:00:00Z",
+      "last_updated": "2026-03-16T08:38:48Z",
       "source": "agent_11_derived",
-      "run_id": "2026-W11",
+      "run_id": "2026-W12",
       "methodology": "Average of capital_account_openness, stock_market_cap/200, financial_dev_index, ease_of_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.119,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*political_risk + 0.30*economic_risk + 0.20*financial_market_risk + 0.20*security_risk",
+      "trend_confidence": 0.6,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "FIN investment risk broadly stable — EU institutional framework and NATO membership provide stability despite global uncertainty"
     },
     "trade_openness_trend": {
       "value": "stable",
@@ -358,19 +382,19 @@
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     },
-    "top_partner_relationship_health": {
-      "value": "stable",
-      "confidence": 0.55,
-      "reasoning": "Finland key bilateral relationships broadly unchanged this week. Global focus on Gulf conflict reduces attention on other bilateral dynamics.",
-      "last_updated": "2026-03-10T12:00:00Z",
-      "source": "agent_10_trend_estimator",
-      "run_id": "2026-W11"
-    },
     "political_stability_trend": {
       "value": "stable",
       "confidence": 0.65,
       "reasoning": "Finland political stability broadly maintained. European-wide stress from oil shock and market crash creates background pressure but institutions holding.",
       "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "FIN partner relationships broadly stable within EU/NATO framework. Iran war creating some alliance strain over burden-sharing",
+      "last_updated": "2026-03-15T00:00:00Z",
       "source": "agent_10_trend_estimator",
       "run_id": "2026-W11"
     }
@@ -386,24 +410,22 @@
         "run_id": "2026-W10"
       }
     ],
-    "update_count": 95,
+    "update_count": 128,
     "first_loaded": "2026-03-02T00:00:00Z",
     "data_quality": "HIGH"
   },
   "narrative": {
     "ai_generated": true,
-    "generated_at": "2026-03-14T00:00:00Z",
+    "generated_at": "2026-03-15T00:00:00Z",
     "run_id": "2026-W11",
-    "executive_summary": "Finland's economy is broadly stable with limited direct impact from the Hormuz crisis. As a NATO member bordering Russia, the stalled Ukraine peace talks have direct security implications. Energy costs modestly elevated but nuclear power base and renewables provide insulation. No significant country-specific events this week.",
+    "executive_summary": "Finland's economy faces mounting pressure from the global energy price shock triggered by the Iran-Hormuz crisis. GDP growth stands at 0.4% (stable) while inflation is at 1.6% (rising). Investment risk remains contained at 0.119.",
     "key_changes_this_week": [
-      "Russia-Ukraine peace talks stalled — security implications for Finland",
-      "Energy costs modestly elevated but nuclear/renewables provide buffer",
-      "No significant country-specific events",
-      "Fiscal position stable"
+      "Inflation rising at 1.6%",
+      "Government debt trajectory: rising (86.8% of GDP)"
     ],
-    "outlook": "Finland GDP broadly stable with energy mix providing insulation. NATO membership provides security anchor — defense spending commitment on track. Russian border management continues. EU membership provides economic stability. Tech sector (Nokia, gaming) partially insulated from energy dynamics.",
-    "investor_implications": "Finnish equities offer defensive Nordic exposure. OMX Helsinki relatively resilient. Government bonds safe-haven. Defense sector benefiting from NATO spending. Nokia and tech plays provide non-energy exposure. EUR dynamics drive currency risk. Monitor Russia border situation.",
-    "data_quality_note": "Data quality within acceptable parameters for this update cycle."
+    "outlook": "Finland faces a challenging near-term as the energy price shock works through the economy. Inflation at 1.6% (rising) constrains ECB rate cut options. Industrial competitiveness is eroding against energy-rich competitors. A Hormuz reopening would provide significant relief, but structural energy security gaps require long-term investment.",
+    "investor_implications": "Finland faces earnings pressure across energy-intensive sectors. Investment risk at 0.119 is moderate by European standards. Overweight energy-efficient companies and defense. Underweight industrial commodities consumers. Sovereign bonds: 2.9% 10-year yield remains anchored.",
+    "data_quality_note": "Data quality is high with 128 data points updated this run.  Flagged factors: macroeconomic.exchange_rate_vs_usd."
   },
   "code": "FIN",
   "name": "Finland",
@@ -523,10 +545,10 @@
       "resource_self_sufficiency_index": 0.55,
       "energy_independence_index": 0.5,
       "supply_chain_chokepoint_exposure": 0.257,
-      "composite_national_power_index": 60.9,
-      "political_risk_premium_bps": 10,
+      "composite_national_power_index": 42.9,
+      "political_risk_premium_bps": 0,
       "market_accessibility_score": 0.85,
-      "overall_investment_risk_score": 0.868
+      "overall_investment_risk_score": 0.119
     }
   },
   "economy": {
@@ -607,7 +629,13 @@
       "source": "agent_pipeline",
       "run_id": "2026-W11"
     },
-    "trade_openness_pct": 83.46,
+    "trade_openness_pct": {
+      "value": 83.46,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "FIN trade openness broadly stable with modest downward pressure from Hormuz shipping disruption and US tariff escalation",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
     "financial": {
       "exchange_rate_vs_usd": {
         "value": 0.87138,
@@ -623,15 +651,57 @@
         "source": "agent_pipeline",
         "run_id": "2026-W11"
       }
+    },
+    "energy_coal_production_mt": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 79.27830828,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 59.10778046,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 173.519126,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
     }
   },
   "institutions": {
     "under_international_sanctions": {
       "value": false,
-      "confidence": 0.99,
-      "last_updated": "2026-03-02T12:05:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W10"
+      "confidence": 0.72,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch",
+      "run_id": "2026-W11"
     },
     "democracy_index": {
       "value": 9.3,
@@ -676,45 +746,49 @@
       "run_id": "2026-W10"
     },
     "wgi_voice_accountability": {
-      "value": 1.632636,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.63263607025146,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_political_stability": {
-      "value": 0.713987,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W11"
+      "value": 0.713986694812775,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "FIN political stability broadly maintained. NATO cohesion tested by Iran war response and defense spending demands",
+      "trend_updated": "2026-03-15T00:00:00Z"
     },
     "wgi_government_effectiveness": {
-      "value": 1.738607,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.73860657215118,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_regulatory_quality": {
-      "value": 1.765149,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.76514935493469,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_rule_of_law": {
-      "value": 1.967046,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 1.96704590320587,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "wgi_control_of_corruption": {
-      "value": 2.221517,
-      "confidence": 0.95,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 2.22151660919189,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
       "run_id": "2026-W11"
     },
     "fragile_states_index": {
@@ -751,6 +825,14 @@
       "last_updated": "2026-03-02T12:05:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "FIN partner relationships broadly stable within EU/NATO framework. Iran war creating some alliance strain over burden-sharing",
+      "trend_updated": "2026-03-15T00:00:00Z"
     }
   }
 }

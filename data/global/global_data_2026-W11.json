@@ -1,25 +1,21 @@
 {
   "run_id": "2026-W11",
   "date": "2026-03-10",
-  "generated_at": "2026-03-14T23:22:40Z",
+  "generated_at": "2026-03-16T08:37:38Z",
   "data": {
     "commodity_price.brent_crude_usd_bbl": {
-      "value": 103.86,
+      "value": 103.14,
       "confidence": 0.9,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W11",
-      "flag": true,
-      "flag_reason": "Commodity weekly change 29.82% exceeds 15% anomaly threshold; Source agent flagged anomaly"
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "CNBC/Trading Economics (March 13, 2026)",
+      "run_id": "2026-W11"
     },
     "commodity_price.wti_crude_usd_bbl": {
-      "value": 99.34,
+      "value": 98.71,
       "confidence": 0.9,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_pipeline",
-      "run_id": "2026-W11",
-      "flag": true,
-      "flag_reason": "Commodity weekly change 35.90% exceeds 15% anomaly threshold; Source agent flagged anomaly"
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "CNBC/Trading Economics (March 13, 2026)",
+      "run_id": "2026-W11"
     },
     "commodity_price.natural_gas_henry_hub_usd_mmbtu": {
       "value": 3.131,
@@ -31,16 +27,16 @@
     },
     "commodity_price.gold_usd_oz": {
       "value": 5019.7,
-      "confidence": 0.95,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "gold-api.com (prefetched March 14, 2026)",
       "run_id": "2026-W11"
     },
     "commodity_price.silver_usd_oz": {
-      "value": 80.695,
-      "confidence": 0.95,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 80.7,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "gold-api.com (prefetched March 14, 2026)",
       "run_id": "2026-W11"
     },
     "commodity_price.copper_usd_tonne": {
@@ -65,24 +61,24 @@
       "run_id": "2026-W11"
     },
     "commodity_price.wheat_usd_bushel": {
-      "value": 267,
-      "confidence": 0.45,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 5.975,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "CME/Barchart SRW March contract (March 14, 2026)",
       "run_id": "2026-W11"
     },
     "commodity_price.corn_usd_bushel": {
-      "value": 197,
-      "confidence": 0.45,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 4.625,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "CME/Barchart May contract (March 14, 2026)",
       "run_id": "2026-W11"
     },
     "commodity_price.soybeans_usd_bushel": {
-      "value": 416,
-      "confidence": 0.45,
-      "last_updated": "2026-03-10T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 12.27,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "CME/Barchart May contract (March 13, 2026)",
       "run_id": "2026-W11"
     },
     "military_expenditure_total_usd": {
@@ -102,10 +98,10 @@
       "flag_reason": "Pre-flagged anomaly from processing agent: Strait of Hormuz vessel traffic collapsed ~70% following US-Israel strikes on Iran; ~170 containerships trapped"
     },
     "commodity_price.copper_usd_lb": {
-      "value": 5.757,
-      "confidence": 0.88,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_pipeline",
+      "value": 5.93,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "Trading Economics (February-March 2026)",
       "run_id": "2026-W11"
     },
     "military.arms_transfers_global": {
@@ -151,16 +147,16 @@
     },
     "commodity_price.platinum_usd_oz": {
       "value": 2037.0,
-      "confidence": 0.95,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "gold-api.com (prefetched March 14, 2026)",
       "run_id": "2026-W11"
     },
     "commodity_price.palladium_usd_oz": {
       "value": 1576.0,
-      "confidence": 0.95,
-      "last_updated": "2026-03-14T00:00:00Z",
-      "source": "agent_pipeline",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "gold-api.com (prefetched March 14, 2026)",
       "run_id": "2026-W11"
     },
     "commodity_price.wheat_usd_bu": {
@@ -186,6 +182,27 @@
       "confidence": 0.9,
       "last_updated": "2026-03-14T00:00:00Z",
       "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "commodity_price.iron_ore_usd_ton": {
+      "value": 115.68,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "Dalian Commodity Exchange/SGX (March 12, 2026)",
+      "run_id": "2026-W11"
+    },
+    "commodity_price.natural_gas_usd_mmbtu": {
+      "value": 3.13,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "EIA Henry Hub spot (March 14, 2026)",
+      "run_id": "2026-W11"
+    },
+    "military.global_defense_spending_usd": {
+      "value": 2630000000000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "sipri",
       "run_id": "2026-W11"
     }
   },

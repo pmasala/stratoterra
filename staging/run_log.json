@@ -1,37 +1,135 @@
 {
   "run_id": "2026-W11",
-  "started_at": "2026-03-14T22:46:41Z",
-  "completed_at": "2026-03-15T01:12:00Z",
+  "started_at": "2026-03-15T18:15:00Z",
   "status": "completed",
-  "current_date": "2026-03-14",
-  "project_root": "/home/pietro/stratoterra",
   "cache_context": {
     "weekly_due": true,
     "monthly_due": false,
     "quarterly_due": false,
     "annual_sources_due": [],
     "static_triggers": [],
-    "notes": "Weekly-only run. Monthly last fetched 2026-03-02 (12 days ago). Quarterly last fetched 2026-03-02. No annual releases since last fetch."
+    "event_triggers": [
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_05",
+        "target_source": "conflict_status",
+        "reason": "Active US-Israel war on Iran entering day 16; major escalation with Kharg Island strikes and continued Hormuz blockade"
+      },
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_05",
+        "target_source": "military_spending",
+        "reason": "Israel approved $826M emergency defense procurement; South Korea and Taiwan announced major defense spending increases; THAAD redeployed from South Korea to Middle East"
+      },
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_05",
+        "target_source": "arms_transfers",
+        "reason": "Russia confirmed supplying Iran with Shahed drones and targeting intelligence for use against US bases"
+      },
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_04",
+        "target_source": "sanctions_data",
+        "reason": "EU extended Russia sanctions for 6 months (2,700+ entities); US sanctioned Rwanda Defence Force; Trump threatened Spain trade embargo; EU adopted 20th Russia sanctions package"
+      },
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_04",
+        "target_source": "tariff_data",
+        "reason": "Supreme Court struck down IEEPA tariffs; Section 122 tariffs at 10% expected to rise to 15%; new Section 301 investigations targeting 16 countries; US-China tariffs at record levels"
+      },
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_02",
+        "target_source": "oil_prices",
+        "reason": "Brent crude hit $100+/bbl; WTI posted biggest weekly gain in history; IEA released 400M barrel emergency reserves; Hormuz blockade ongoing; IEA cut demand forecasts"
+      },
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_02",
+        "target_source": "trade_flows",
+        "reason": "Strait of Hormuz blockade cut 20% of global oil supply; Jebel Ali container port severed from trade routes; shipping rerouting through Indian Ocean"
+      },
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_01",
+        "target_source": "employment_data",
+        "reason": "US economy shed 92,000 jobs in February; unemployment rose to 4.4%; labor force participation at lowest since Dec 2021; stagflation fears from Goldman Sachs"
+      },
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_02",
+        "target_source": "exchange_rates",
+        "reason": "EUR/USD at 1.22; USD/JPY at 139; significant dollar weakening on geopolitical risk and rate divergence; Fed expected to cut twice in 2026"
+      },
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_05",
+        "target_source": "lebanon_conflict",
+        "reason": "Israel-Hezbollah war escalated; 687 killed, 800K displaced in Lebanon; Israel plans massive ground invasion south of Litani River"
+      },
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_06",
+        "target_source": "political_stability",
+        "reason": "Nepal landslide election win by Balen Shah; Congo-Brazzaville election with internet blackout; Vietnam legislative elections; Slovenia and Denmark elections upcoming; Iran new supreme leader; Lebanon outlaws Hezbollah military"
+      },
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_05",
+        "target_source": "conflict_data",
+        "reason": "ACLED published Middle East Special Issue with comprehensive conflict data for Iran war; critical source for updating conflict metrics"
+      },
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_02",
+        "target_source": "china_trade",
+        "reason": "China trade surplus hit record $213.62B in Jan-Feb; exports up 21.8% YoY; Five-Year Plan approved; Trump-Xi summit expected; Section 301 investigations launched"
+      },
+      {
+        "trigger_type": "force_refresh",
+        "target_agent": "agent_05",
+        "target_source": "sudan_conflict",
+        "reason": "Sudan accused Ethiopia of drone attacks from its territory; first direct accusation against neighbor in civil war; Ethiopia alleged to host RSF training camp"
+      }
+    ]
   },
   "agents": [
-    {"agent_id": "agent_01", "status": "completed", "records_processed": 0, "errors": 0, "notes": "All blocks cached, weekly-only run"},
-    {"agent_id": "agent_02", "status": "completed", "records_processed": 124, "errors": 0, "notes": "35 FX, 30 bonds, 40 indices, 11 commodities, 7 CB, 1 rating"},
-    {"agent_id": "agent_03", "status": "completed", "records_processed": 42, "errors": 0, "notes": "42 events, 12 event triggers"},
-    {"agent_id": "agent_04", "status": "completed", "records_processed": 22, "errors": 0, "notes": "Part A cached, Part B: 22 events"},
-    {"agent_id": "agent_05", "status": "completed", "records_processed": 30, "errors": 0, "notes": "Part A cached, Part B: 30 events"},
-    {"agent_id": "agent_06", "status": "completed", "records_processed": 23, "errors": 0, "notes": "Annual cached, 23 records incl 3 structured"},
-    {"agent_id": "agent_07", "status": "completed", "records_processed": 252, "errors": 0, "notes": "126 direct updates, 114 signals, 12 triggers"},
-    {"agent_id": "agent_08", "status": "completed", "records_processed": 126, "errors": 0, "notes": "114 accept, 6 accept_with_note, 4 flag, 0 reject, 2 escalate"},
-    {"agent_id": "agent_17a", "status": "completed", "records_processed": 2, "errors": 0, "notes": "2 escalations resolved: both ACCEPT"},
-    {"agent_id": "agent_09", "status": "completed", "records_processed": 117, "errors": 0, "notes": "47 countries updated, 117 factors integrated"},
-    {"agent_id": "agent_10", "status": "completed", "records_processed": 605, "errors": 0, "notes": "605 trend estimates, 55 countries"},
-    {"agent_id": "agent_11", "status": "completed", "records_processed": 75, "errors": 0, "notes": "Derived metrics + rankings for 75 countries"},
-    {"agent_id": "agent_12", "status": "completed", "records_processed": 174, "errors": 0, "notes": "54 critical, 70 warning, 50 watch alerts"},
-    {"agent_id": "agent_13", "status": "completed", "records_processed": 55, "errors": 0, "notes": "55 country narratives updated"},
-    {"agent_id": "agent_14", "status": "completed", "records_processed": 1, "errors": 0, "notes": "Weekly briefing generated, 5 top stories"},
-    {"agent_id": "agent_15", "status": "completed", "records_processed": 1, "errors": 0, "notes": "Quality report: 99.7% T1, 99.4% T2, 0.882 avg confidence"},
-    {"agent_id": "agent_17b", "status": "completed", "records_processed": 1, "errors": 0, "notes": "Quality audit: GO"},
-    {"agent_id": "agent_16", "status": "completed", "records_processed": 75, "errors": 0, "notes": "Archive, chunks, manifest generated"},
-    {"agent_id": "tests", "status": "completed", "records_processed": 303, "errors": 0, "notes": "303 passed, 0 failed, 31 skipped"}
-  ]
+    {
+      "agent": "agent_09_integrator",
+      "started_at": "2026-03-16T08:37:38Z",
+      "completed_at": "2026-03-16T08:37:38Z",
+      "status": "SUCCESS",
+      "stats": {
+        "countries_updated": 75,
+        "factors_updated": 2659,
+        "factors_created": 709,
+        "factors_skipped_no_file": 13,
+        "factors_skipped_signal_path": 0,
+        "factors_skipped_unmapped": 0,
+        "flags_added": 1,
+        "signals_stored": 261,
+        "global_commodities_updated": 13
+      }
+    },
+    {
+      "agent_id": "agent_16",
+      "name": "archive_commit_preparer",
+      "status": "completed",
+      "started_at": "2026-03-16T09:09:50Z",
+      "completed_at": "2026-03-16T09:14:17Z",
+      "notes": "Archive snapshot created. 75 country summaries, 75 country detail chunks, 563 total chunk files."
+    }
+  ],
+  "agent_16": {
+    "status": "SUCCESS",
+    "started_at": "2026-03-16T09:14:17Z",
+    "completed_at": "2026-03-16T09:14:17Z",
+    "archive_path": "archive/2026-W11/",
+    "summary_countries": 75,
+    "detail_countries": 75,
+    "total_chunk_files": 563
+  },
+  "completed_at": "2026-03-16T09:14:17Z"
 }
