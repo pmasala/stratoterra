@@ -130,15 +130,22 @@ var CountryPanel = (function() {
     if (!raw) return null;
 
     switch(tabId) {
-      case 'endowments': return {
-        demographics: {
-          population: raw.population || raw.population_total,
-          population_growth_pct: raw.population_growth_pct,
-          median_age: raw.median_age,
-          life_expectancy: raw.life_expectancy,
-          human_development_index: raw.hdi
-        }
-      };
+      case 'endowments': {
+        var demo = (detail && detail.demographic) || {};
+        return {
+          demographics: {
+            population: raw.population || raw.population_total || demo.population_total,
+            population_growth_pct: raw.population_growth_pct || demo.population_growth_pct,
+            median_age: raw.median_age || demo.median_age,
+            life_expectancy: raw.life_expectancy || demo.life_expectancy,
+            human_development_index: raw.hdi || demo.hdi,
+            urbanization_pct: raw.urbanization_pct || raw.urban_population_pct || demo.urban_population_pct,
+            working_age_pct: raw.working_age_pct || demo.labor_force_participation_pct,
+            gini_coefficient: raw.gini_coefficient || raw.gini_index || demo.gini_index,
+            net_migration_per_1000: raw.net_migration_per_1000 || demo.net_migration_per_1000
+          }
+        };
+      }
 
       case 'institutions': return {
         political_system: {
@@ -277,8 +284,8 @@ var CountryPanel = (function() {
         composite_power_index: raw.composite_national_power_index,
         energy_independence: raw.energy_independence_index,
         supply_chain_exposure: raw.supply_chain_chokepoint_exposure,
-        vulnerability_index: raw.vulnerability_index,
-        investment_risk_score: raw.investment_risk_score,
+        vulnerability_index: raw.vulnerability_index || raw.overall_investment_risk_score,
+        investment_risk_score: raw.investment_risk_score || raw.overall_investment_risk_score,
         resource_self_sufficiency_index: raw.resource_self_sufficiency_index,
         market_accessibility_score: raw.market_accessibility_score,
         political_risk_premium_bps: raw.political_risk_premium_bps
@@ -360,7 +367,7 @@ var CountryPanel = (function() {
     if (data.political_system) {
       var ps = data.political_system;
       html += '<div class="panel-section__title">Political System</div>';
-      html += factorCard('Regime Type', ps.regime_type, null, null, ps.source, ps.confidence);
+      html += factorCard('Regime Type', Utils.formatLabel(ps.regime_type), null, null, ps.source, ps.confidence);
       html += '<div class="factor-grid">';
       html += miniFactorCard('Head of State', ps.head_of_state || '—');
       html += miniFactorCard('Head of Gov\'t', ps.head_of_government || '—');
