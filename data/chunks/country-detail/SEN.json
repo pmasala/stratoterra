@@ -124,6 +124,27 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 7.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "stock_market_cap_usd": {
+      "value": 7500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 18000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -219,6 +240,34 @@
       "confidence": 0.5,
       "last_updated": "2026-03-15T00:00:00Z",
       "source": "default_estimate",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_usd": {
+      "value": 450000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 1.37,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "active_military_personnel": {
+      "value": 17000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "reserve_military_personnel": {
+      "value": 0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
       "run_id": "2026-W11"
     }
   },
@@ -333,10 +382,47 @@
       "govt_debt_pct_gdp": 122.9,
       "fx_reserves_usd": null,
       "sovereign_credit_rating": "S&P: CCC+, Moody's: Caa1, Fitch: CCC+",
-      "central_bank_policy_rate_pct": 3.5
+      "central_bank_policy_rate_pct": 3.5,
+      "sovereign_bond_yield_10yr_pct": 7.2,
+      "equity_index_level": 190,
+      "stock_market_cap_usd": 7500000000,
+      "banking_sector_assets_usd": 18000000000
     },
-    "military": {},
-    "relations": {},
+    "military": {
+      "defense_spending_usd": 450000000,
+      "military_spending_usd": 450000000,
+      "military_expenditure_usd": 450000000,
+      "military_expenditure_pct_gdp": 1.37,
+      "military_expenditure_trend": "stable",
+      "active_military_personnel": 17000,
+      "reserve_military_personnel": 0,
+      "alliance_memberships": [
+        "ECOWAS",
+        "AU"
+      ]
+    },
+    "relations": {
+      "key_partners": [
+        {
+          "partner_code": "FRA",
+          "relationship_type": "ally",
+          "trade_volume_usd": 2200000000,
+          "diplomatic_status": "strained"
+        },
+        {
+          "partner_code": "CHN",
+          "relationship_type": "trade_partner",
+          "trade_volume_usd": 2800000000,
+          "diplomatic_status": "normal"
+        },
+        {
+          "partner_code": "IND",
+          "relationship_type": "trade_partner",
+          "trade_volume_usd": 1500000000,
+          "diplomatic_status": "normal"
+        }
+      ]
+    },
     "derived": {
       "resource_self_sufficiency_index": 0.4,
       "energy_independence_index": 0.3,

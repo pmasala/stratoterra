@@ -160,7 +160,23 @@
       "trend": "stable",
       "trend_confidence": 0.55,
       "trend_reasoning": "Kenya bond yields broadly stable.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 16.5,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 18000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 48000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -255,6 +271,27 @@
       "confidence": 0.5,
       "last_updated": "2026-03-15T00:00:00Z",
       "source": "default_estimate",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_usd": {
+      "value": 1500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "active_military_personnel": {
+      "value": 24000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "reserve_military_personnel": {
+      "value": 0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
       "run_id": "2026-W11"
     }
   },
@@ -376,10 +413,47 @@
       "govt_debt_pct_gdp": 68,
       "fx_reserves_usd": 10066607177.351,
       "sovereign_credit_rating": "S&P: B, Moody's: NR, Fitch: B",
-      "central_bank_policy_rate_pct": 11.25
+      "central_bank_policy_rate_pct": 11.25,
+      "sovereign_bond_yield_10yr_pct": 16.5,
+      "equity_index_level": 1700,
+      "stock_market_cap_usd": 18000000000,
+      "banking_sector_assets_usd": 48000000000
     },
-    "military": {},
-    "relations": {},
+    "military": {
+      "defense_spending_usd": 1500000000,
+      "military_spending_usd": 1500000000,
+      "military_expenditure_usd": 1500000000,
+      "military_expenditure_pct_gdp": 1.25,
+      "military_expenditure_trend": "stable",
+      "active_military_personnel": 24000,
+      "reserve_military_personnel": 0,
+      "alliance_memberships": [
+        "AU",
+        "EAC"
+      ]
+    },
+    "relations": {
+      "key_partners": [
+        {
+          "partner_code": "CHN",
+          "relationship_type": "trade_partner",
+          "trade_volume_usd": 6800000000,
+          "diplomatic_status": "normal"
+        },
+        {
+          "partner_code": "IND",
+          "relationship_type": "trade_partner",
+          "trade_volume_usd": 4200000000,
+          "diplomatic_status": "normal"
+        },
+        {
+          "partner_code": "USA",
+          "relationship_type": "ally",
+          "trade_volume_usd": 1800000000,
+          "diplomatic_status": "normal"
+        }
+      ]
+    },
     "derived": {
       "resource_self_sufficiency_index": 0.45,
       "energy_independence_index": 0.6,

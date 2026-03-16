@@ -157,7 +157,23 @@
       "trend": "growth",
       "trend_confidence": 0.65,
       "trend_reasoning": "Pakistan bond yields rising modestly on inflation expectations from oil shock.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 13.5,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 32000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 160000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -585,7 +601,11 @@
           "country": "USA",
           "pct_of_total": 4.2
         }
-      ]
+      ],
+      "sovereign_bond_yield_10yr_pct": 13.5,
+      "equity_index_level": 82000,
+      "stock_market_cap_usd": 32000000000,
+      "banking_sector_assets_usd": 160000000000
     },
     "military": {
       "military_expenditure_usd": 8200000000,

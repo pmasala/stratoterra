@@ -164,7 +164,23 @@
       "trend": "decrease",
       "trend_confidence": 0.62,
       "trend_reasoning": "Colombia bond yields stable to declining on improved fiscal position from commodity windfall.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 11.2,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 95000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 220000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -562,7 +578,11 @@
           "country": "DEU",
           "pct_of_total": 3.5
         }
-      ]
+      ],
+      "sovereign_bond_yield_10yr_pct": 11.2,
+      "equity_index_level": 1380,
+      "stock_market_cap_usd": 95000000000,
+      "banking_sector_assets_usd": 220000000000
     },
     "military": {
       "military_expenditure_usd": 15100000000,

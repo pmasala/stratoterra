@@ -153,13 +153,31 @@
       "trend": "strong_growth",
       "trend_confidence": 0.8,
       "trend_reasoning": "Iraq bond yields surging on revenue collapse and fiscal deterioration from Hormuz blockade.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 12.0,
+      "confidence": 0.7
     },
     "central_bank_policy_rate_pct": {
       "trend": "stable",
       "trend_confidence": 0.6,
       "trend_reasoning": "Iraq policy rate broadly stable. Central bank balancing growth and inflation concerns amid global uncertainty.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 7.5,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 10000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 85000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -498,7 +516,7 @@
       "govt_debt_pct_gdp": 53.1,
       "fx_reserves_usd": 100690954781.588,
       "sovereign_credit_rating": "S&P: B-, Moody's: NR, Fitch: B-",
-      "central_bank_policy_rate_pct": null,
+      "central_bank_policy_rate_pct": 7.5,
       "total_exports_usd": 111195200000,
       "total_imports_usd": 104517100000,
       "top_export_partners": [
@@ -544,7 +562,11 @@
           "country": "KOR",
           "pct_of_total": 4.0
         }
-      ]
+      ],
+      "sovereign_bond_yield_10yr_pct": 12.0,
+      "equity_index_level": 580,
+      "stock_market_cap_usd": 10000000000,
+      "banking_sector_assets_usd": 85000000000
     },
     "military": {
       "military_expenditure_usd": 8000000000,

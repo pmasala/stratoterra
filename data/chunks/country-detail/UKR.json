@@ -171,7 +171,23 @@
       "trend": "stable",
       "trend_confidence": 0.55,
       "trend_reasoning": "Ukraine bond yields broadly stable.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 19.5,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 4500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 42000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -587,7 +603,11 @@
           "country": "USA",
           "pct_of_total": 5.0
         }
-      ]
+      ],
+      "sovereign_bond_yield_10yr_pct": 19.5,
+      "equity_index_level": 520,
+      "stock_market_cap_usd": 4500000000,
+      "banking_sector_assets_usd": 42000000000
     },
     "military": {
       "military_expenditure_usd": 64700000000,

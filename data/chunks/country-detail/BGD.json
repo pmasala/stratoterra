@@ -164,7 +164,23 @@
       "trend": "growth",
       "trend_confidence": 0.65,
       "trend_reasoning": "Bangladesh bond yields rising modestly on inflation expectations from oil shock.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 9.2,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 42000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 180000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -535,7 +551,11 @@
           "country": "IDN",
           "pct_of_total": 3.8
         }
-      ]
+      ],
+      "sovereign_bond_yield_10yr_pct": 9.2,
+      "equity_index_level": 5450,
+      "stock_market_cap_usd": 42000000000,
+      "banking_sector_assets_usd": 180000000000
     },
     "military": {
       "military_expenditure_usd": 3300000000,

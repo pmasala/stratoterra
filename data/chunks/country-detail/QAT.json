@@ -157,7 +157,23 @@
       "trend": "strong_growth",
       "trend_confidence": 0.8,
       "trend_reasoning": "Qatar bond yields surging on revenue collapse and fiscal deterioration from Hormuz blockade.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 4.5,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 165000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 480000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -529,7 +545,11 @@
           "country": "JPN",
           "pct_of_total": 5.5
         }
-      ]
+      ],
+      "sovereign_bond_yield_10yr_pct": 4.5,
+      "equity_index_level": 10200,
+      "stock_market_cap_usd": 165000000000,
+      "banking_sector_assets_usd": 480000000000
     },
     "military": {
       "military_expenditure_usd": 12000000000,

@@ -164,7 +164,23 @@
       "trend": "stable",
       "trend_confidence": 0.55,
       "trend_reasoning": "Vietnam bond yields broadly stable.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 3.2,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 190000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 580000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -541,7 +557,11 @@
           "country": "USA",
           "pct_of_total": 4.5
         }
-      ]
+      ],
+      "sovereign_bond_yield_10yr_pct": 3.2,
+      "equity_index_level": 1250,
+      "stock_market_cap_usd": 190000000000,
+      "banking_sector_assets_usd": 580000000000
     },
     "military": {
       "military_expenditure_usd": 10200000000,

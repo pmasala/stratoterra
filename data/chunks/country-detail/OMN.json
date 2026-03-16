@@ -157,7 +157,23 @@
       "trend": "strong_growth",
       "trend_confidence": 0.8,
       "trend_reasoning": "Oman bond yields surging on revenue collapse and fiscal deterioration from Hormuz blockade.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 5.5,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 22000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 95000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -527,7 +543,11 @@
           "country": "SAU",
           "pct_of_total": 4.8
         }
-      ]
+      ],
+      "sovereign_bond_yield_10yr_pct": 5.5,
+      "equity_index_level": 4650,
+      "stock_market_cap_usd": 22000000000,
+      "banking_sector_assets_usd": 95000000000
     },
     "military": {
       "military_expenditure_usd": 8400000000,

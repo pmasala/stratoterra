@@ -110,6 +110,20 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 3.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 95000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -198,6 +212,34 @@
       "confidence": 0.5,
       "last_updated": "2026-03-15T00:00:00Z",
       "source": "default_estimate",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_usd": {
+      "value": 3000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 6.19,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "active_military_personnel": {
+      "value": 20000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "reserve_military_personnel": {
+      "value": 0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
       "run_id": "2026-W11"
     }
   },
@@ -320,10 +362,43 @@
       "govt_debt_pct_gdp": null,
       "fx_reserves_usd": 92893708178.1604,
       "sovereign_credit_rating": "S&P: B, Moody's: NR, Fitch: B",
-      "central_bank_policy_rate_pct": null
+      "central_bank_policy_rate_pct": 3.0,
+      "banking_sector_assets_usd": 95000000000
     },
-    "military": {},
-    "relations": {},
+    "military": {
+      "defense_spending_usd": 3000000000,
+      "military_spending_usd": 3000000000,
+      "military_expenditure_usd": 3000000000,
+      "military_expenditure_pct_gdp": 6.19,
+      "military_expenditure_trend": "stable",
+      "active_military_personnel": 20000,
+      "reserve_military_personnel": 0,
+      "alliance_memberships": [
+        "AU"
+      ]
+    },
+    "relations": {
+      "key_partners": [
+        {
+          "partner_code": "ITA",
+          "relationship_type": "trade_partner",
+          "trade_volume_usd": 5800000000,
+          "diplomatic_status": "normal"
+        },
+        {
+          "partner_code": "TUR",
+          "relationship_type": "trade_partner",
+          "trade_volume_usd": 3200000000,
+          "diplomatic_status": "normal"
+        },
+        {
+          "partner_code": "CHN",
+          "relationship_type": "trade_partner",
+          "trade_volume_usd": 2800000000,
+          "diplomatic_status": "normal"
+        }
+      ]
+    },
     "derived": {
       "resource_self_sufficiency_index": 0.45,
       "energy_independence_index": 1.0,

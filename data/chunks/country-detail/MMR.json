@@ -103,6 +103,27 @@
       "last_updated": "2026-03-10T00:00:00Z",
       "source": "agent_pipeline",
       "run_id": "2026-W11"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 10.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "stock_market_cap_usd": {
+      "value": 500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 25000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -198,6 +219,34 @@
       "confidence": 0.5,
       "last_updated": "2026-03-15T00:00:00Z",
       "source": "default_estimate",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_usd": {
+      "value": 2400000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 3.24,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "active_military_personnel": {
+      "value": 350000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "reserve_military_personnel": {
+      "value": 0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
       "run_id": "2026-W11"
     }
   },
@@ -322,10 +371,43 @@
       "govt_debt_pct_gdp": 63.5,
       "fx_reserves_usd": 9337819633.15963,
       "sovereign_credit_rating": "S&P: NR, Moody's: NR, Fitch: NR",
-      "central_bank_policy_rate_pct": null
+      "central_bank_policy_rate_pct": 10.0,
+      "equity_index_level": 430,
+      "stock_market_cap_usd": 500000000,
+      "banking_sector_assets_usd": 25000000000
     },
-    "military": {},
-    "relations": {},
+    "military": {
+      "defense_spending_usd": 2400000000,
+      "military_spending_usd": 2400000000,
+      "military_expenditure_usd": 2400000000,
+      "military_expenditure_pct_gdp": 3.24,
+      "military_expenditure_trend": "growth",
+      "active_military_personnel": 350000,
+      "reserve_military_personnel": 0,
+      "alliance_memberships": []
+    },
+    "relations": {
+      "key_partners": [
+        {
+          "partner_code": "CHN",
+          "relationship_type": "trade_partner",
+          "trade_volume_usd": 12000000000,
+          "diplomatic_status": "normal"
+        },
+        {
+          "partner_code": "THA",
+          "relationship_type": "trade_partner",
+          "trade_volume_usd": 8500000000,
+          "diplomatic_status": "strained"
+        },
+        {
+          "partner_code": "IND",
+          "relationship_type": "neutral",
+          "trade_volume_usd": 2200000000,
+          "diplomatic_status": "strained"
+        }
+      ]
+    },
     "derived": {
       "resource_self_sufficiency_index": 0.55,
       "energy_independence_index": 0.6,

@@ -164,7 +164,23 @@
       "trend": "strong_growth",
       "trend_confidence": 0.9,
       "trend_reasoning": "Iran sovereign bonds effectively untradeable. Default risk near certainty. No functioning bond market during active war.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 28.0,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 180000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 320000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -641,7 +657,11 @@
           "country": "DEU",
           "pct_of_total": 3.5
         }
-      ]
+      ],
+      "sovereign_bond_yield_10yr_pct": 28.0,
+      "equity_index_level": 2100000,
+      "stock_market_cap_usd": 180000000000,
+      "banking_sector_assets_usd": 320000000000
     },
     "military": {
       "military_expenditure_usd": 7900000000,

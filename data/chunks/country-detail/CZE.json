@@ -164,7 +164,23 @@
       "trend": "stable",
       "trend_confidence": 0.55,
       "trend_reasoning": "Czech Republic bond yields broadly stable.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 4.1,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 68000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 310000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -513,7 +529,11 @@
           "pct_of_total": 4.0
         }
       ],
-      "avg_applied_tariff_pct": 5.0
+      "avg_applied_tariff_pct": 5.0,
+      "sovereign_bond_yield_10yr_pct": 4.1,
+      "equity_index_level": 1620,
+      "stock_market_cap_usd": 68000000000,
+      "banking_sector_assets_usd": 310000000000
     },
     "military": {
       "military_expenditure_usd": 9200000000,

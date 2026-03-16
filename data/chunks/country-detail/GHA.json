@@ -153,7 +153,23 @@
       "trend": "decrease",
       "trend_confidence": 0.62,
       "trend_reasoning": "Ghana bond yields stable to declining on improved fiscal position from commodity windfall.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 28.0,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 12000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 35000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -248,6 +264,27 @@
       "confidence": 0.5,
       "last_updated": "2026-03-15T00:00:00Z",
       "source": "default_estimate",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_usd": {
+      "value": 500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "active_military_personnel": {
+      "value": 15500,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "reserve_military_personnel": {
+      "value": 0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
       "run_id": "2026-W11"
     }
   },
@@ -396,10 +433,47 @@
       "govt_debt_pct_gdp": 59.1,
       "fx_reserves_usd": 3623904994.58702,
       "sovereign_credit_rating": "S&P: RD, Moody's: NR, Fitch: RD",
-      "central_bank_policy_rate_pct": 27.0
+      "central_bank_policy_rate_pct": 27.0,
+      "sovereign_bond_yield_10yr_pct": 28.0,
+      "equity_index_level": 3200,
+      "stock_market_cap_usd": 12000000000,
+      "banking_sector_assets_usd": 35000000000
     },
-    "military": {},
-    "relations": {},
+    "military": {
+      "defense_spending_usd": 500000000,
+      "military_spending_usd": 500000000,
+      "military_expenditure_usd": 500000000,
+      "military_expenditure_pct_gdp": 0.61,
+      "military_expenditure_trend": "stable",
+      "active_military_personnel": 15500,
+      "reserve_military_personnel": 0,
+      "alliance_memberships": [
+        "ECOWAS",
+        "AU"
+      ]
+    },
+    "relations": {
+      "key_partners": [
+        {
+          "partner_code": "CHN",
+          "relationship_type": "trade_partner",
+          "trade_volume_usd": 8200000000,
+          "diplomatic_status": "normal"
+        },
+        {
+          "partner_code": "IND",
+          "relationship_type": "trade_partner",
+          "trade_volume_usd": 3800000000,
+          "diplomatic_status": "normal"
+        },
+        {
+          "partner_code": "GBR",
+          "relationship_type": "ally",
+          "trade_volume_usd": 2100000000,
+          "diplomatic_status": "normal"
+        }
+      ]
+    },
     "derived": {
       "resource_self_sufficiency_index": 0.55,
       "energy_independence_index": 0.5,

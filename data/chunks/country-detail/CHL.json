@@ -164,7 +164,23 @@
       "trend": "stable",
       "trend_confidence": 0.55,
       "trend_reasoning": "Chile bond yields broadly stable.",
-      "trend_updated": "2026-03-14T00:00:00Z"
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 5.8,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 210000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 340000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -516,7 +532,11 @@
           "country": "ARG",
           "pct_of_total": 3.8
         }
-      ]
+      ],
+      "sovereign_bond_yield_10yr_pct": 5.8,
+      "equity_index_level": 6350,
+      "stock_market_cap_usd": 210000000000,
+      "banking_sector_assets_usd": 340000000000
     },
     "military": {
       "military_expenditure_usd": 5100000000,

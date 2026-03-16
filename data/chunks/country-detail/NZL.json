@@ -155,6 +155,20 @@
       "trend_confidence": 0.55,
       "trend_reasoning": "NZL currency broadly stable vs USD. Global risk-off sentiment creates mild depreciation pressure against safe-haven currencies",
       "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "stock_market_cap_usd": {
+      "value": 120000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 520000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
     }
   },
   "demographic": {
@@ -490,7 +504,10 @@
           "country": "KOR",
           "pct_of_total": 4.5
         }
-      ]
+      ],
+      "equity_index_level": 12400,
+      "stock_market_cap_usd": 120000000000,
+      "banking_sector_assets_usd": 520000000000
     },
     "military": {
       "military_expenditure_usd": 2500000000,
