@@ -135,10 +135,19 @@ var BriefingView = (function() {
             return;
           }
           var label = m.asset || m.name || '';
-          var val = m.value != null ? (m.unit ? m.value.toLocaleString() + ' ' + m.unit : String(m.value)) : '';
+          var displayValue = m.value;
+          if (displayValue == null && m.driver) {
+            var priceMatch = m.driver.match(/\$([0-9,.]+)/);
+            if (priceMatch) displayValue = '$' + priceMatch[1];
+          }
+          var val = displayValue != null ? (typeof displayValue === 'string' ? displayValue : (m.unit ? displayValue.toLocaleString() + ' ' + m.unit : String(displayValue))) : '';
           var changePct = m.change_pct;
           var changeClass = changePct > 0 ? 'trend--growth' : changePct < 0 ? 'trend--decrease' : 'trend--stable';
           var changeStr = changePct != null ? (changePct > 0 ? '+' : '') + Number(changePct).toFixed(1) + '%' : '';
+          if (!changeStr && m.direction) {
+            changeStr = m.direction === 'up' ? '↑' : m.direction === 'down' ? '↓' : '→';
+            changeClass = m.direction === 'up' ? 'trend--growth' : m.direction === 'down' ? 'trend--decrease' : 'trend--stable';
+          }
           var driver = m.driver || m.description || '';
           html += '<div class="market-chip" title="' + esc(driver) + '">';
           html += '<span class="market-chip__label">' + esc(label) + '</span>';
