@@ -1647,12 +1647,19 @@ a:hover { text-decoration: underline; }
 
 .radar-legend {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
-  margin-top: 12px;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  background: var(--card-bg);
+  border-radius: 8px;
 }
 
-.radar-legend__item { font-size: 12px; color: var(--text-secondary); }
+.radar-legend__item {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
 
 /* --- Relations Tab (country panel split layout) --- */
 .relations-network {
