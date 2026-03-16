@@ -117,7 +117,14 @@ var AlertDashboard = (function() {
   /* ── Render ─────────────────────────────────────────────── */
   function render() {
     var filtered = allAlerts.filter(function(a) {
-      if (filterRegion !== 'all' && a.region !== filterRegion) return false;
+      if (filterRegion !== 'all') {
+        var alertRegion = a.region;
+        if (!alertRegion) {
+          var codes = a.countries || (a.country_code ? [a.country_code] : []);
+          if (codes.length > 0) alertRegion = Utils.getCountryRegion(codes[0]);
+        }
+        if (alertRegion !== filterRegion) return false;
+      }
       if (filterType !== 'all' && a.type !== filterType) return false;
       return true;
     });
@@ -184,14 +191,14 @@ var AlertDashboard = (function() {
       html += '<div class="alert-card alert-card--' + severity + '" data-alert-index="' + (globalIdx++) + '">';
       html += '<div class="alert-card__header">';
       html += '<span class="alert-badge alert-badge--' + severity + '">' + severity + '</span>';
-      if (alertType) html += '<span class="alert-card__type">' + esc(alertType) + '</span>';
+      if (alertType) html += '<span class="alert-card__type">' + esc(Utils.formatLabel(alertType)) + '</span>';
       html += '</div>';
       html += '<h4 class="alert-card__title">' + esc(alertTitle) + '</h4>';
       html += '<p class="alert-card__body">' + esc(alertBody) + '</p>';
       if (alertCountries.length) {
         html += '<div class="alert-card__countries">';
         alertCountries.forEach(function(c) {
-          html += '<span class="panel-sources__tag">' + esc(c) + '</span>';
+          html += '<span class="panel-sources__tag">' + esc(Utils.resolveCountryName(c)) + '</span>';
         });
         html += '</div>';
       }
