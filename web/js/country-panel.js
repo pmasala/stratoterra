@@ -619,7 +619,7 @@ var CountryPanel = (function() {
       .data(links).join('line')
       .attr('stroke', function(d) {
         if (d.quality >= 0.7) return '#22C55E';
-        if (d.quality >= 0.4) return '#E8C547';
+        if (d.quality >= 0.4) return '#4A9FE5';
         return '#EF4444';
       })
       .attr('stroke-width', function(d) {
@@ -638,7 +638,7 @@ var CountryPanel = (function() {
 
     node.append('circle')
       .attr('r', function(d) { return d.isCenter ? 12 : 8; })
-      .attr('fill', function(d) { return d.isCenter ? '#E8C547' : '#1E293B'; })
+      .attr('fill', function(d) { return d.isCenter ? '#4A9FE5' : '#1E293B'; })
       .attr('stroke', function(d) { return d.isCenter ? '#fff' : '#334155'; })
       .attr('stroke-width', 1.5);
 

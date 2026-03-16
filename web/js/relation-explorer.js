@@ -164,7 +164,7 @@ var RelationExplorer = (function() {
 
     node.append('circle')
       .attr('r', function(d) { return d.isCenter ? 16 : 10; })
-      .attr('fill', function(d) { return d.isCenter ? '#E8C547' : '#1E293B'; })
+      .attr('fill', function(d) { return d.isCenter ? '#4A9FE5' : '#1E293B'; })
       .attr('stroke', function(d) { return d.isCenter ? '#fff' : '#334155'; })
       .attr('stroke-width', function(d) { return d.isCenter ? 2 : 1; });
 

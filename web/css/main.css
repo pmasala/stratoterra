@@ -6,17 +6,17 @@
 /* --- CSS Custom Properties (Design Tokens) --- */
 :root {
   /* Background */
-  --bg-primary: #0B1120;
-  --bg-secondary: #111827;
-  --bg-panel: #162032;
-  --bg-card: #1E293B;
-  --bg-hover: #243044;
+  --bg-primary: #0a1628;
+  --bg-secondary: #0f1f3a;
+  --bg-panel: #132744;
+  --bg-card: #1a3050;
+  --bg-hover: #1e3a5f;
 
   /* Text */
-  --text-primary: #F1F5F9;
-  --text-secondary: #94A3B8;
-  --text-accent: #E8C547;       /* Gold — Wave Strata brand color */
-  --text-muted: #64748B;
+  --text-primary: #EDF2F7;
+  --text-secondary: #8DA4BF;
+  --text-accent: #4A9FE5;       /* Datalogic Blue accent */
+  --text-muted: #5A7A99;
 
   /* Trend colors */
   --trend-strong-growth: #00c853;
@@ -38,10 +38,10 @@
   --relation-hostile: #ff1744;
 
   /* Map-specific */
-  --map-ocean: #07101E;
-  --map-land-default: #1E293B;
-  --map-border: #334155;
-  --map-highlight: #E8C547;
+  --map-ocean: #061220;
+  --map-land-default: #1a3050;
+  --map-border: #2a4a6b;
+  --map-highlight: #4A9FE5;
 
   /* Layout */
   --header-height: 52px;
@@ -59,8 +59,8 @@
   --critical-blink-color: #ff4757;
 
   /* Borders */
-  --border-subtle: 1px solid #1E293B;
-  --border-card: 1px solid rgba(30, 41, 59, 0.9);
+  --border-subtle: 1px solid #1a3050;
+  --border-card: 1px solid rgba(74, 159, 229, 0.15);
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
@@ -208,7 +208,7 @@ a:hover { text-decoration: underline; }
 
 .nav-link.active {
   color: var(--text-accent);
-  background: rgba(232, 197, 71, 0.08);
+  background: rgba(74, 159, 229, 0.08);
 }
 
 /* --- Main Content --- */
@@ -978,7 +978,7 @@ a:hover { text-decoration: underline; }
 }
 
 .story-card:hover {
-  border-color: rgba(232, 197, 71, 0.2);
+  border-color: rgba(74, 159, 229, 0.2);
 }
 
 .story-card__header {
@@ -1044,7 +1044,7 @@ a:hover { text-decoration: underline; }
 }
 
 .region-tab:hover { background: var(--bg-hover); color: var(--text-secondary); }
-.region-tab.active { background: rgba(232, 197, 71, 0.12); color: var(--text-accent); }
+.region-tab.active { background: rgba(74, 159, 229, 0.12); color: var(--text-accent); }
 
 .region-content {
   display: none;
@@ -1289,7 +1289,7 @@ a:hover { text-decoration: underline; }
 .article__ai-badge {
   padding: 2px 8px;
   border-radius: var(--radius-sm);
-  background: rgba(232, 197, 71, 0.15);
+  background: rgba(74, 159, 229, 0.15);
   color: var(--text-accent);
   font-size: 10px;
   text-transform: uppercase;
@@ -1401,8 +1401,8 @@ a:hover { text-decoration: underline; }
 .article__disclaimer {
   margin: 20px 0;
   padding: 14px 16px;
-  background: rgba(232, 197, 71, 0.06);
-  border: 1px solid rgba(232, 197, 71, 0.15);
+  background: rgba(74, 159, 229, 0.06);
+  border: 1px solid rgba(74, 159, 229, 0.15);
   border-radius: var(--radius-md);
   font-size: 12px;
   color: var(--text-muted);

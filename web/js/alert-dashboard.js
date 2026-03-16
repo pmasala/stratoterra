@@ -107,7 +107,7 @@ var AlertDashboard = (function() {
       '<text x="450" y="'+titleY+'" text-anchor="middle" fill="#F1F5F9" font-size="22" ' +
       'font-weight="700" font-family="Outfit,sans-serif" letter-spacing="0.5">' + tspans + '</text>' +
       // Countries
-      '<text x="450" y="240" text-anchor="middle" fill="#E8C547" font-size="13" ' +
+      '<text x="450" y="240" text-anchor="middle" fill="#4A9FE5" font-size="13" ' +
       'font-family="JetBrains Mono,monospace" letter-spacing="1.5">' + esc(countries.join(' \u00b7 ')) + '</text>' +
       '</svg>';
 
