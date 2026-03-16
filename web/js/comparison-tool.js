@@ -76,7 +76,7 @@ var ComparisonTool = (function() {
       { label: 'Inflation', field: 'inflation_rate_pct', format: 'percent' },
       { label: 'Political Stability', field: 'political_stability', format: 'score' },
       { label: 'Investment Risk', field: 'investment_risk_score', format: 'score' },
-      { label: 'Military Spending', field: 'military_spending_usd', format: 'currency' },
+      { label: 'Military Spending', field: 'military_expenditure_usd', format: 'currency' },
       { label: 'Economic Complexity', field: 'economic_complexity_index', format: 'decimal' },
       { label: 'Energy Independence', field: 'energy_independence', format: 'score' },
       { label: 'Trade Openness', field: 'trade_openness_pct', format: 'percent' },
