@@ -151,5 +151,27 @@ const Utils = {
   // Clamp a value between min and max
   clamp(value, min, max) {
     return Math.max(min, Math.min(max, value));
+  },
+
+  // Format snake_case or kebab-case strings to Title Case
+  formatLabel(str) {
+    if (!str) return '—';
+    return String(str)
+      .replace(/[_-]/g, ' ')
+      .replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+  },
+
+  // Resolve ISO country code to country name using DataLoader summary
+  resolveCountryName(code) {
+    if (!code) return code;
+    var summary = typeof DataLoader !== 'undefined' ? DataLoader.getSummaryByCode(code) : null;
+    return summary ? summary.name : code;
+  },
+
+  // Get region for a country code
+  getCountryRegion(code) {
+    if (!code) return null;
+    var summary = typeof DataLoader !== 'undefined' ? DataLoader.getSummaryByCode(code) : null;
+    return summary ? summary.region : null;
   }
 };
