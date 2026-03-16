@@ -193,6 +193,9 @@
     var parts = hash.split('?');
     var pathParts = parts[0].split('/');
     var view = pathParts[0];
+    // Hash aliases for backward compatibility
+    var hashAliases = { stories: 'briefing' };
+    if (hashAliases[view]) view = hashAliases[view];
     var params = {};
     if (view === 'briefing' && pathParts[1] === 'article' && pathParts[2]) {
       params.articleId = pathParts[2];
