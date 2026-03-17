@@ -54,7 +54,7 @@ var AlertDashboard = (function() {
     var countries = (alert.countries || (alert.country_code ? [alert.country_code] : []));
     var sev = alert.severity || 'critical';
     var sevColor = sev === 'critical' ? '#ff1744' : sev === 'warning' ? '#ffab40' : '#448aff';
-    var sevLabel = sev.toUpperCase();
+    var sevLabel = I18n.t('severity.' + sev).toUpperCase();
 
     var lines = wrapText(title, 48);
     var titleY = 140 - (lines.length - 1) * 16;
@@ -141,18 +141,18 @@ var AlertDashboard = (function() {
       html += buildMangaHero(heroAlert);
     }
 
-    html += '<h2>Alert Dashboard</h2>';
+    html += '<h2>' + I18n.t('alerts.dashboard') + '</h2>';
 
     // Filters
     html += '<div class="alert-filters">';
     html += '<select id="alert-region-filter" class="alert-filter-select">';
-    html += '<option value="all">All Regions</option>';
+    html += '<option value="all">' + I18n.t('alerts.all_regions') + '</option>';
     Object.keys(REGIONS).forEach(function(r) {
-      html += '<option value="' + r + '"' + (filterRegion === r ? ' selected' : '') + '>' + REGIONS[r].label + '</option>';
+      html += '<option value="' + r + '"' + (filterRegion === r ? ' selected' : '') + '>' + I18n.t(REGIONS[r].label) + '</option>';
     });
     html += '</select>';
     html += '<select id="alert-type-filter" class="alert-filter-select">';
-    html += '<option value="all">All Types</option>';
+    html += '<option value="all">' + I18n.t('alerts.all_types') + '</option>';
     var types = new Set();
     allAlerts.forEach(function(a) { if (a.type) types.add(a.type); });
     types.forEach(function(t) {
@@ -163,11 +163,11 @@ var AlertDashboard = (function() {
 
     // Alert sections
     globalIdx = 0;
-    if (critical.length) html += renderAlertSection('Critical', critical, 'critical');
-    if (warning.length) html += renderAlertSection('Warning', warning, 'warning');
-    if (watch.length) html += renderAlertSection('Watch', watch, 'watch');
+    if (critical.length) html += renderAlertSection(I18n.t('severity.critical'), critical, 'critical');
+    if (warning.length) html += renderAlertSection(I18n.t('severity.warning'), warning, 'warning');
+    if (watch.length) html += renderAlertSection(I18n.t('severity.watch'), watch, 'watch');
     if (filtered.length === 0) {
-      html += '<div class="panel-no-data"><p>No alerts for today.</p></div>';
+      html += '<div class="panel-no-data"><p>' + I18n.t('alerts.no_alerts') + '</p></div>';
     }
 
     html += '</div>';
@@ -203,7 +203,7 @@ var AlertDashboard = (function() {
         html += '</div>';
       }
       if (a.investor_action) {
-        html += '<div class="alert-card__action"><strong>Action:</strong> ' + esc(a.investor_action) + '</div>';
+        html += '<div class="alert-card__action"><strong>' + I18n.t('alerts.action') + '</strong> ' + esc(a.investor_action) + '</div>';
       }
       html += '</div>';
     });
@@ -238,7 +238,7 @@ var AlertDashboard = (function() {
           setTimeout(function() { AlertDashboard.scrollToAlert(params.alertIndex); }, 200);
         }
       } catch (err) {
-        containerEl.innerHTML = '<div class="error-card"><h3 class="error-card__title">Alerts unavailable</h3><p>Alert data has not been generated yet.</p></div>';
+        containerEl.innerHTML = '<div class="error-card"><h3 class="error-card__title">' + I18n.t('alerts.unavailable') + '</h3><p>' + I18n.t('alerts.not_generated') + '</p></div>';
       }
     },
 

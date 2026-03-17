@@ -12,41 +12,41 @@ var RankingsView = (function() {
 
   var METRIC_GROUPS = {
     economic: {
-      label: 'Economic',
+      label: 'rankings.group_economic',
       columns: [
-        { field: 'gdp_nominal_usd', label: 'GDP', format: 'currency' },
-        { field: 'gdp_real_growth_pct', label: 'Growth %', format: 'percent' },
-        { field: 'gdp_per_capita_usd', label: 'GDP/Cap', format: 'currency' },
-        { field: 'inflation_rate_pct', label: 'Inflation %', format: 'percent' },
-        { field: 'trade_openness_pct', label: 'Trade Open %', format: 'percent' },
-        { field: 'political_risk_premium_bps', label: 'Risk Prem (bps)', format: 'number' }
+        { field: 'gdp_nominal_usd', label: 'rankings.col_gdp', format: 'currency' },
+        { field: 'gdp_real_growth_pct', label: 'rankings.col_growth', format: 'percent' },
+        { field: 'gdp_per_capita_usd', label: 'rankings.col_gdp_cap', format: 'currency' },
+        { field: 'inflation_rate_pct', label: 'rankings.col_inflation', format: 'percent' },
+        { field: 'trade_openness_pct', label: 'rankings.col_trade_open', format: 'percent' },
+        { field: 'political_risk_premium_bps', label: 'rankings.col_risk_prem', format: 'number' }
       ]
     },
     power: {
-      label: 'Power',
+      label: 'rankings.group_power',
       columns: [
-        { field: 'composite_national_power_index', label: 'Overall', format: 'score' },
-        { field: 'military_expenditure_usd', label: 'Mil Spend', format: 'currency' },
-        { field: 'population', label: 'Population', format: 'number' },
-        { field: 'energy_independence', label: 'Energy Ind.', format: 'score' }
+        { field: 'composite_national_power_index', label: 'rankings.col_overall', format: 'score' },
+        { field: 'military_expenditure_usd', label: 'rankings.col_mil_spend', format: 'currency' },
+        { field: 'population', label: 'rankings.col_population', format: 'number' },
+        { field: 'energy_independence', label: 'rankings.col_energy_ind', format: 'score' }
       ]
     },
     risk: {
-      label: 'Risk',
+      label: 'rankings.group_risk',
       columns: [
-        { field: 'investment_risk_score', label: 'Inv. Risk', format: 'score' },
-        { field: 'political_stability', label: 'Pol. Stability', format: 'score' },
-        { field: 'political_risk_premium_bps', label: 'Risk Prem (bps)', format: 'number' },
-        { field: 'alert_count', label: 'Alerts', format: 'number' }
+        { field: 'investment_risk_score', label: 'rankings.col_inv_risk', format: 'score' },
+        { field: 'political_stability', label: 'rankings.col_pol_stability', format: 'score' },
+        { field: 'political_risk_premium_bps', label: 'rankings.col_risk_prem', format: 'number' },
+        { field: 'alert_count', label: 'rankings.col_alerts', format: 'number' }
       ]
     },
     development: {
-      label: 'Development',
+      label: 'rankings.group_development',
       columns: [
-        { field: 'gdp_per_capita_usd', label: 'GDP/Cap', format: 'currency' },
-        { field: 'composite_national_power_index', label: 'Power Index', format: 'score' },
-        { field: 'energy_independence', label: 'Energy', format: 'score' },
-        { field: 'trade_openness_pct', label: 'Trade %', format: 'percent' }
+        { field: 'gdp_per_capita_usd', label: 'rankings.col_gdp_cap', format: 'currency' },
+        { field: 'composite_national_power_index', label: 'rankings.col_power_index', format: 'score' },
+        { field: 'energy_independence', label: 'rankings.col_energy', format: 'score' },
+        { field: 'trade_openness_pct', label: 'rankings.col_trade_pct', format: 'percent' }
       ]
     }
   };
@@ -71,41 +71,41 @@ var RankingsView = (function() {
     var cols = group.columns;
 
     var html = '<div class="rankings">';
-    html += '<h2>Global Rankings</h2>';
+    html += '<h2>' + I18n.t('rankings.title') + '</h2>';
 
     // Group tabs
     html += '<div class="rankings-groups">';
     Object.keys(METRIC_GROUPS).forEach(function(key) {
       var cls = key === currentGroup ? 'layer-tab active' : 'layer-tab';
-      html += '<button class="' + cls + '" data-group="' + key + '">' + METRIC_GROUPS[key].label + '</button>';
+      html += '<button class="' + cls + '" data-group="' + key + '">' + I18n.t(METRIC_GROUPS[key].label) + '</button>';
     });
     html += '</div>';
 
     // Filters
     html += '<div class="alert-filters">';
     html += '<select id="rank-region-filter" class="alert-filter-select">';
-    html += '<option value="all">All Regions</option>';
+    html += '<option value="all">' + I18n.t('rankings.all_regions') + '</option>';
     Object.keys(REGIONS).forEach(function(r) {
-      html += '<option value="' + r + '"' + (filterRegion === r ? ' selected' : '') + '>' + REGIONS[r].label + '</option>';
+      html += '<option value="' + r + '"' + (filterRegion === r ? ' selected' : '') + '>' + I18n.t(REGIONS[r].label) + '</option>';
     });
     html += '</select>';
     html += '<select id="rank-tier-filter" class="alert-filter-select">';
-    html += '<option value="all">All Tiers</option>';
-    html += '<option value="1"' + (filterTier === '1' ? ' selected' : '') + '>Tier 1</option>';
-    html += '<option value="2"' + (filterTier === '2' ? ' selected' : '') + '>Tier 2</option>';
-    html += '<option value="3"' + (filterTier === '3' ? ' selected' : '') + '>Tier 3</option>';
+    html += '<option value="all">' + I18n.t('rankings.all_tiers') + '</option>';
+    html += '<option value="1"' + (filterTier === '1' ? ' selected' : '') + '>' + I18n.t('rankings.tier_1') + '</option>';
+    html += '<option value="2"' + (filterTier === '2' ? ' selected' : '') + '>' + I18n.t('rankings.tier_2') + '</option>';
+    html += '<option value="3"' + (filterTier === '3' ? ' selected' : '') + '>' + I18n.t('rankings.tier_3') + '</option>';
     html += '</select>';
-    html += '<span style="color:var(--text-muted);font-size:12px">' + filtered.length + ' countries</span>';
+    html += '<span style="color:var(--text-muted);font-size:12px">' + filtered.length + ' ' + I18n.t('rankings.countries') + '</span>';
     html += '</div>';
 
     // Table
     html += '<div class="rankings-table-wrap"><table class="rankings-table">';
     html += '<thead><tr>';
-    html += '<th class="rank-col">#</th>';
-    html += sortTh('name', 'Country');
-    html += sortTh('region', 'Region');
+    html += '<th class="rank-col">' + I18n.t('rankings.col_rank') + '</th>';
+    html += sortTh('name', I18n.t('rankings.col_country'));
+    html += sortTh('region', I18n.t('rankings.col_region'));
     cols.forEach(function(col) {
-      html += sortTh(col.field, col.label);
+      html += sortTh(col.field, I18n.t(col.label));
     });
     html += '</tr></thead>';
     html += '<tbody>';
@@ -113,7 +113,7 @@ var RankingsView = (function() {
       html += '<tr class="rankings-row" data-code="' + c.code + '">';
       html += '<td class="rank-col">' + (i + 1) + '</td>';
       html += '<td class="name-col"><strong>' + esc(c.name) + '</strong> <span class="data-value" style="font-size:11px;color:var(--text-muted)">' + c.code + '</span></td>';
-      html += '<td>' + (REGIONS[c.region] ? REGIONS[c.region].label : c.region) + '</td>';
+      html += '<td>' + (REGIONS[c.region] ? I18n.t(REGIONS[c.region].label) : c.region) + '</td>';
       cols.forEach(function(col) {
         html += '<td class="data-value">' + formatVal(c[col.field], col.format) + '</td>';
       });

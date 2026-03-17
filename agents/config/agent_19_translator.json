@@ -1,0 +1,92 @@
+{
+  "id": "agent_19",
+  "name": "Content Translator",
+  "phase": 6.7,
+  "phase_name": "TRANSLATE",
+  "description": "Translates all human-readable content in data chunks from English into all supported target languages. Runs after all content is generated (articles, briefings, narratives, alerts) and before quality reporting. Produces parallel language-specific JSON files alongside the English originals.",
+  "inputs": [
+    "data/chunks/global/weekly_briefing.json",
+    "data/chunks/global/alert_index.json",
+    "data/chunks/global/event_feed.json",
+    "data/chunks/global/articles/*.json",
+    "data/chunks/global/article_index.json",
+    "data/chunks/country-summary/all_countries_summary.json",
+    "data/chunks/country-detail/*.json",
+    "data/chunks/relations/*.json",
+    "data/chunks/supranational/*.json",
+    "data/chunks/global/global_rankings.json"
+  ],
+  "outputs": [
+    "data/chunks/global/weekly_briefing_{LANG}.json",
+    "data/chunks/global/alert_index_{LANG}.json",
+    "data/chunks/global/event_feed_{LANG}.json",
+    "data/chunks/global/articles/*_{LANG}.json",
+    "data/chunks/global/article_index_{LANG}.json",
+    "data/chunks/country-summary/all_countries_summary_{LANG}.json",
+    "data/chunks/country-detail/*_{LANG}.json",
+    "data/chunks/relations/*_{LANG}.json",
+    "data/chunks/supranational/*_{LANG}.json",
+    "data/chunks/global/global_rankings_{LANG}.json"
+  ],
+  "target_languages": [
+    {
+      "code": "it",
+      "name": "Italian",
+      "native_name": "Italiano",
+      "locale": "it-IT"
+    }
+  ],
+  "translation_config": {
+    "preserve_fields": [
+      "code", "country_code", "country_a", "country_b", "iso3", "ISO_A3",
+      "run_id", "generated_at", "last_updated", "first_triggered",
+      "ai_generated", "confidence", "score", "value", "latitude", "longitude",
+      "ll", "path", "hero_svg", "hero_svg_alt", "article_id", "pair",
+      "tier", "region", "severity", "status", "type", "trend",
+      "gdp_nominal_usd", "gdp_real_growth_pct", "gdp_per_capita_usd",
+      "population", "inflation_rate_pct", "trade_openness_pct",
+      "political_stability", "investment_risk_score", "composite_national_power_index",
+      "military_expenditure_usd", "military_expenditure_pct_gdp",
+      "energy_independence", "economic_complexity_index", "alert_count",
+      "max_alert_severity", "overall_score", "political_risk_premium_bps",
+      "composite_score", "trade_volume_usd", "quality", "members"
+    ],
+    "translate_fields": [
+      "name", "headline", "subheadline", "title", "summary", "description",
+      "details", "body", "content", "heading", "lede_excerpt",
+      "executive_summary", "key_changes", "outlook", "investor_implications",
+      "narrative_headline", "investor_action", "investor_impact",
+      "ai_disclaimer", "data_quality_note", "reasoning", "evidence",
+      "counter_arguments", "strategic_priorities", "recent_developments",
+      "risks", "regional_summaries", "top_stories", "market_context",
+      "watchlist"
+    ],
+    "preserve_proper_nouns": true,
+    "preserve_acronyms": ["NATO", "EU", "BRICS", "ASEAN", "OPEC", "G7", "G20", "IMF", "GDP", "USD", "WTO", "SIPRI", "ACLED", "GDELT", "EIA", "USGS", "UN", "IATA"],
+    "preserve_country_codes": true,
+    "tone": "Professional, analytical — match the register of the original English text",
+    "batch_size": 10
+  },
+  "priority_tiers": {
+    "tier_1_critical": [
+      "data/chunks/global/weekly_briefing.json",
+      "data/chunks/global/article_index.json",
+      "data/chunks/global/articles/*.json",
+      "data/chunks/country-summary/all_countries_summary.json",
+      "data/chunks/global/global_rankings.json"
+    ],
+    "tier_2_high": [
+      "data/chunks/country-detail/*.json",
+      "data/chunks/supranational/*.json",
+      "data/chunks/global/alert_index.json",
+      "data/chunks/global/event_feed.json"
+    ],
+    "tier_3_medium": [
+      "data/chunks/relations/*.json"
+    ]
+  },
+  "timeout_minutes": 60,
+  "retry_on_failure": false,
+  "idempotent": true,
+  "prompt_file": "agents/prompts/agent_19_translator.md"
+}

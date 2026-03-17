@@ -8,12 +8,12 @@ var ComparisonTool = (function() {
   var mode = 'table'; // 'table' or 'radar'
 
   var RADAR_AXES = [
-    { label: 'Economic', field: 'overall_score' },
-    { label: 'Military', fn: function(c) { return c.military_spending_usd ? Math.min(1, c.military_spending_usd / 900000000000) : 0; } },
-    { label: 'Technology', field: 'economic_complexity_index', normalize: function(v) { return (v + 2) / 4.5; } },
-    { label: 'Stability', field: 'political_stability' },
-    { label: 'Openness', field: 'trade_openness_pct', normalize: function(v) { return Math.min(1, v / 200); } },
-    { label: 'Energy', field: 'energy_independence' }
+    { label: 'compare.radar_economic', field: 'overall_score' },
+    { label: 'compare.radar_military', fn: function(c) { return c.military_spending_usd ? Math.min(1, c.military_spending_usd / 900000000000) : 0; } },
+    { label: 'compare.radar_technology', field: 'economic_complexity_index', normalize: function(v) { return (v + 2) / 4.5; } },
+    { label: 'compare.radar_stability', field: 'political_stability' },
+    { label: 'compare.radar_openness', field: 'trade_openness_pct', normalize: function(v) { return Math.min(1, v / 200); } },
+    { label: 'compare.radar_energy', field: 'energy_independence' }
   ];
 
   function render() {
@@ -21,7 +21,7 @@ var ComparisonTool = (function() {
     var selected = selectedCodes.map(function(code) { return Utils.getCountryByCode(code, summary); }).filter(Boolean);
 
     var html = '<div class="comparison">';
-    html += '<h2>Country Comparison</h2>';
+    html += '<h2>' + I18n.t('compare.title') + '</h2>';
 
     // Country selector
     html += '<div class="compare-selector">';
@@ -31,13 +31,13 @@ var ComparisonTool = (function() {
     });
     html += '</div>';
     if (selectedCodes.length < 5) {
-      html += '<input type="text" class="compare-search" id="compare-search" placeholder="Add country... (' + (5 - selectedCodes.length) + ' remaining)" />';
+      html += '<input type="text" class="compare-search" id="compare-search" placeholder="' + I18n.t('compare.add_country', {n: 5 - selectedCodes.length}) + '" />';
       html += '<div class="search-dropdown" id="compare-dropdown"></div>';
     }
     html += '</div>';
 
     if (selected.length < 2) {
-      html += '<div class="panel-no-data"><p>Select at least 2 countries to compare (up to 5).</p></div>';
+      html += '<div class="panel-no-data"><p>' + I18n.t('compare.min_countries') + '</p></div>';
       html += '</div>';
       containerEl.innerHTML = html;
       bindSelector();
@@ -46,8 +46,8 @@ var ComparisonTool = (function() {
 
     // Mode toggle
     html += '<div class="compare-mode-toggle">';
-    html += '<button class="layer-tab' + (mode === 'table' ? ' active' : '') + '" data-mode="table">Table</button>';
-    html += '<button class="layer-tab' + (mode === 'radar' ? ' active' : '') + '" data-mode="radar">Radar Chart</button>';
+    html += '<button class="layer-tab' + (mode === 'table' ? ' active' : '') + '" data-mode="table">' + I18n.t('compare.mode_table') + '</button>';
+    html += '<button class="layer-tab' + (mode === 'radar' ? ' active' : '') + '" data-mode="radar">' + I18n.t('compare.mode_radar') + '</button>';
     html += '</div>';
 
     if (mode === 'table') {
@@ -69,30 +69,30 @@ var ComparisonTool = (function() {
 
   function renderTable(selected) {
     var metrics = [
-      { label: 'GDP', field: 'gdp_nominal_usd', format: 'currency' },
-      { label: 'GDP Growth', field: 'gdp_real_growth_pct', format: 'percent' },
-      { label: 'GDP/Capita', field: 'gdp_per_capita_usd', format: 'currency' },
-      { label: 'Population', field: 'population', format: 'number' },
-      { label: 'Inflation', field: 'inflation_rate_pct', format: 'percent' },
-      { label: 'Political Stability', field: 'political_stability', format: 'score' },
-      { label: 'Investment Risk', field: 'investment_risk_score', format: 'score' },
-      { label: 'Military Spending', field: 'military_expenditure_usd', format: 'currency' },
-      { label: 'Economic Complexity', field: 'economic_complexity_index', format: 'decimal' },
-      { label: 'Energy Independence', field: 'energy_independence', format: 'score' },
-      { label: 'Trade Openness', field: 'trade_openness_pct', format: 'percent' },
-      { label: 'Overall Score', field: 'overall_score', format: 'score' },
-      { label: 'Alerts', field: 'alert_count', format: 'number' }
+      { label: 'compare.gdp', field: 'gdp_nominal_usd', format: 'currency' },
+      { label: 'compare.gdp_growth', field: 'gdp_real_growth_pct', format: 'percent' },
+      { label: 'compare.gdp_capita', field: 'gdp_per_capita_usd', format: 'currency' },
+      { label: 'compare.population', field: 'population', format: 'number' },
+      { label: 'compare.inflation', field: 'inflation_rate_pct', format: 'percent' },
+      { label: 'compare.political_stability', field: 'political_stability', format: 'score' },
+      { label: 'compare.investment_risk', field: 'investment_risk_score', format: 'score' },
+      { label: 'compare.military_spending', field: 'military_expenditure_usd', format: 'currency' },
+      { label: 'compare.economic_complexity', field: 'economic_complexity_index', format: 'decimal' },
+      { label: 'compare.energy_independence', field: 'energy_independence', format: 'score' },
+      { label: 'compare.trade_openness', field: 'trade_openness_pct', format: 'percent' },
+      { label: 'compare.overall_score', field: 'overall_score', format: 'score' },
+      { label: 'compare.alerts', field: 'alert_count', format: 'number' }
     ];
 
     var html = '<div class="rankings-table-wrap"><table class="rankings-table">';
-    html += '<thead><tr><th>Metric</th>';
+    html += '<thead><tr><th>' + I18n.t('compare.col_metric') + '</th>';
     selected.forEach(function(c) { html += '<th>' + esc(c.name) + '</th>'; });
     html += '</tr></thead><tbody>';
 
     metrics.forEach(function(m) {
       var vals = selected.map(function(c) { return c[m.field]; });
       var best = findBest(vals, m.field);
-      html += '<tr><td style="font-weight:600">' + m.label + '</td>';
+      html += '<tr><td style="font-weight:600">' + I18n.t(m.label) + '</td>';
       selected.forEach(function(c, i) {
         var isBest = i === best;
         var cls = isBest ? 'data-value" style="color:var(--trend-strong-growth)' : 'data-value';
@@ -116,7 +116,7 @@ var ComparisonTool = (function() {
     var canvas = document.getElementById('radar-canvas');
     if (!canvas) return;
 
-    var labels = RADAR_AXES.map(function(a) { return a.label; });
+    var labels = RADAR_AXES.map(function(a) { return I18n.t(a.label); });
     var datasets = selected.map(function(c) {
       return {
         label: c.name,

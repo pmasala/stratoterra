@@ -12,12 +12,12 @@ var CountryPanel = (function() {
   var _tabScrollPositions = {};
 
   var TAB_DEFS = [
-    { id: 'endowments',   label: 'Endowments' },
-    { id: 'institutions',  label: 'Institutions' },
-    { id: 'economy',       label: 'Economy' },
-    { id: 'military',      label: 'Military' },
-    { id: 'relations',     label: 'Relations' },
-    { id: 'derived',       label: 'Derived' }
+    { id: 'endowments',   label: 'panel.tab_endowments' },
+    { id: 'institutions',  label: 'panel.tab_institutions' },
+    { id: 'economy',       label: 'panel.tab_economy' },
+    { id: 'military',      label: 'panel.tab_military' },
+    { id: 'relations',     label: 'panel.tab_relations' },
+    { id: 'derived',       label: 'panel.tab_derived' }
   ];
 
   function renderPanel(code, detail, summary) {
@@ -26,7 +26,7 @@ var CountryPanel = (function() {
 
     // Header
     html += '<div class="panel-header">';
-    html += '<button class="panel-header__back" id="panel-close-btn">← Back</button>';
+    html += '<button class="panel-header__back" id="panel-close-btn">' + I18n.t('panel.back') + '</button>';
     html += '<span class="panel-header__title">' + escH(name) + '</span>';
     html += '<button class="panel-header__close" id="panel-close-x">✕</button>';
     html += '</div>';
@@ -34,7 +34,7 @@ var CountryPanel = (function() {
     if (!detail) {
       html += '<div class="panel-no-data">';
       html += '<div class="panel-no-data__icon">📊</div>';
-      html += '<p>Detailed data not yet available for ' + escH(name) + '.</p>';
+      html += '<p>' + I18n.t('panel.no_data', {name: name}) + '</p>';
       if (summary) {
         html += renderSummaryFallback(summary);
       }
@@ -46,14 +46,14 @@ var CountryPanel = (function() {
 
     // Executive Summary
     html += '<div class="panel-section">';
-    html += '<div class="panel-section__title">Executive Summary</div>';
+    html += '<div class="panel-section__title">' + I18n.t('panel.executive_summary') + '</div>';
     html += '<div class="exec-summary">' + escH(detail.executive_summary || '') + '</div>';
     html += '</div>';
 
     // Key Changes
     if (detail.key_changes && detail.key_changes.length > 0) {
       html += '<div class="panel-section">';
-      html += '<div class="panel-section__title">Key Changes</div>';
+      html += '<div class="panel-section__title">' + I18n.t('panel.key_changes') + '</div>';
       html += '<ul class="key-changes">';
       detail.key_changes.forEach(function(change) {
         html += '<li>' + escH(change) + '</li>';
@@ -65,7 +65,7 @@ var CountryPanel = (function() {
     // Active Alerts
     if (detail.active_alerts && detail.active_alerts.length > 0) {
       html += '<div class="panel-section">';
-      html += '<div class="panel-section__title">Active Alerts</div>';
+      html += '<div class="panel-section__title">' + I18n.t('panel.active_alerts') + '</div>';
       detail.active_alerts.forEach(function(alert) {
         html += '<div class="panel-alert">';
         html += '<div class="panel-alert__icon panel-alert__icon--' + (alert.severity || 'watch') + '"></div>';
@@ -81,7 +81,7 @@ var CountryPanel = (function() {
     html += '<div class="layer-tabs" id="layer-tabs">';
     TAB_DEFS.forEach(function(tab) {
       var cls = tab.id === activeTab ? 'layer-tab active' : 'layer-tab';
-      html += '<button class="' + cls + '" data-tab="' + tab.id + '">' + tab.label + '</button>';
+      html += '<button class="' + cls + '" data-tab="' + tab.id + '">' + I18n.t(tab.label) + '</button>';
     });
     html += '</div>';
 
@@ -97,10 +97,10 @@ var CountryPanel = (function() {
     if (detail.outlook || detail.investor_implications) {
       html += '<div class="outlook-section">';
       if (detail.outlook) {
-        html += '<h4>Outlook</h4><p>' + escH(detail.outlook) + '</p>';
+        html += '<h4>' + I18n.t('panel.outlook') + '</h4><p>' + escH(detail.outlook) + '</p>';
       }
       if (detail.investor_implications) {
-        html += '<h4>Investor Implications</h4><p>' + escH(detail.investor_implications) + '</p>';
+        html += '<h4>' + I18n.t('panel.investor_implications') + '</h4><p>' + escH(detail.investor_implications) + '</p>';
       }
       html += '</div>';
     }
@@ -298,7 +298,7 @@ var CountryPanel = (function() {
   function renderLayerTab(tabId, detail) {
     var layers = detail.layers || {};
     var raw = layers[tabId];
-    if (!raw) return '<div class="panel-no-data"><p>Data not available for this layer.</p></div>';
+    if (!raw) return '<div class="panel-no-data"><p>' + I18n.t('panel.layer_no_data') + '</p></div>';
 
     var data = normalizeLayer(tabId, raw, detail);
 
@@ -318,7 +318,7 @@ var CountryPanel = (function() {
     // Natural Resources
     if (data.natural_resources) {
       var nr = data.natural_resources;
-      html += '<div class="panel-section__title">Natural Resources</div>';
+      html += '<div class="panel-section__title">' + I18n.t('panel.natural_resources') + '</div>';
       if (nr.top_resources) {
         nr.top_resources.forEach(function(r) {
           html += factorCard(r.name, formatResourceValue(r), null, r.global_rank ? 'Global #' + r.global_rank : null, r.source, r.confidence);
@@ -333,7 +333,7 @@ var CountryPanel = (function() {
     // Geography
     if (data.geography) {
       var g = data.geography;
-      html += '<div class="panel-section__title" style="margin-top:16px">Geography</div>';
+      html += '<div class="panel-section__title" style="margin-top:16px">' + I18n.t('panel.geography') + '</div>';
       html += '<div class="factor-grid">';
       html += miniFactorCard('Area', Utils.formatNumber(g.area_km2) + ' km²');
       html += miniFactorCard('Coastline', Utils.formatNumber(g.coastline_km) + ' km');
@@ -347,7 +347,7 @@ var CountryPanel = (function() {
     // Demographics
     if (data.demographics) {
       var d = data.demographics;
-      html += '<div class="panel-section__title" style="margin-top:16px">Demographics</div>';
+      html += '<div class="panel-section__title" style="margin-top:16px">' + I18n.t('panel.demographics') + '</div>';
       html += '<div class="factor-grid">';
       html += miniFactorCard('Population', Utils.formatNumber(d.population));
       html += miniFactorCard('Growth', Utils.formatPercent(d.population_growth_pct, 1));
@@ -366,7 +366,7 @@ var CountryPanel = (function() {
     var html = '';
     if (data.political_system) {
       var ps = data.political_system;
-      html += '<div class="panel-section__title">Political System</div>';
+      html += '<div class="panel-section__title">' + I18n.t('panel.political_system') + '</div>';
       html += factorCard('Regime Type', Utils.formatLabel(ps.regime_type), null, null, ps.source, ps.confidence);
       html += '<div class="factor-grid">';
       html += miniFactorCard('Head of State', ps.head_of_state || '—');
@@ -378,7 +378,7 @@ var CountryPanel = (function() {
     }
     if (data.governance) {
       var g = data.governance;
-      html += '<div class="panel-section__title" style="margin-top:16px">Governance Indicators</div>';
+      html += '<div class="panel-section__title" style="margin-top:16px">' + I18n.t('panel.governance_indicators') + '</div>';
       html += '<div class="factor-grid">';
       html += miniFactorCard('Democracy Index', Utils.formatScore(g.democracy_index));
       html += miniFactorCard('Freedom Score', g.freedom_score);
@@ -396,7 +396,7 @@ var CountryPanel = (function() {
     }
     if (data.cultural) {
       var c = data.cultural;
-      html += '<div class="panel-section__title" style="margin-top:16px">Cultural Dimensions</div>';
+      html += '<div class="panel-section__title" style="margin-top:16px">' + I18n.t('panel.cultural_dimensions') + '</div>';
       html += '<div class="factor-grid">';
       html += miniFactorCard('Individualism', c.hofstede_individualism);
       html += miniFactorCard('Power Distance', c.hofstede_power_distance);
@@ -412,7 +412,7 @@ var CountryPanel = (function() {
     var html = '';
     if (data.macro) {
       var m = data.macro;
-      html += '<div class="panel-section__title">Macroeconomic Indicators</div>';
+      html += '<div class="panel-section__title">' + I18n.t('panel.macroeconomic_indicators') + '</div>';
       html += factorCard('GDP (Nominal)', Utils.formatCurrency(m.gdp_nominal_usd), m.trend ? m.trend.direction : null, null, m.source, m.confidence);
 
       // Trend/reasoning expandable
@@ -433,7 +433,7 @@ var CountryPanel = (function() {
     }
     if (data.financial) {
       var f = data.financial;
-      html += '<div class="panel-section__title" style="margin-top:16px">Financial System</div>';
+      html += '<div class="panel-section__title" style="margin-top:16px">' + I18n.t('panel.financial_system') + '</div>';
       html += '<div class="factor-grid">';
       html += miniFactorCard('Policy Rate', Utils.formatPercent(f.policy_rate_pct, 2));
       html += miniFactorCard('10Y Yield', Utils.formatPercent(f.ten_year_yield_pct, 2));
@@ -447,7 +447,7 @@ var CountryPanel = (function() {
     }
     if (data.trade) {
       var t = data.trade;
-      html += '<div class="panel-section__title" style="margin-top:16px">Trade</div>';
+      html += '<div class="panel-section__title" style="margin-top:16px">' + I18n.t('panel.trade') + '</div>';
       html += '<div class="factor-grid">';
       html += miniFactorCard('Exports', Utils.formatCurrency(t.exports_usd));
       html += miniFactorCard('Imports', Utils.formatCurrency(t.imports_usd));
@@ -458,10 +458,10 @@ var CountryPanel = (function() {
       html += miniFactorCard('Avg Tariff', Utils.formatPercent(t.avg_applied_tariff_pct, 1));
       html += '</div>';
       if (t.top_export_products && t.top_export_products.length) {
-        html += '<p style="font-size:11px;color:var(--text-muted);margin-top:8px">Top exports: ' + t.top_export_products.join(', ') + '</p>';
+        html += '<p style="font-size:11px;color:var(--text-muted);margin-top:8px">' + I18n.t('panel.top_exports') + ': ' + t.top_export_products.join(', ') + '</p>';
       }
       if (t.top_trade_partners && t.top_trade_partners.length) {
-        html += '<p style="font-size:11px;color:var(--text-muted);margin-top:4px">Top partners: ' + t.top_trade_partners.join(', ') + '</p>';
+        html += '<p style="font-size:11px;color:var(--text-muted);margin-top:4px">' + I18n.t('panel.top_partners') + ': ' + t.top_trade_partners.join(', ') + '</p>';
       }
     }
     return html;
@@ -471,7 +471,7 @@ var CountryPanel = (function() {
     var html = '';
     if (data.personnel) {
       var p = data.personnel;
-      html += '<div class="panel-section__title">Personnel</div>';
+      html += '<div class="panel-section__title">' + I18n.t('panel.personnel') + '</div>';
       html += '<div class="factor-grid">';
       html += miniFactorCard('Active Military', Utils.formatNumber(p.active_military));
       html += miniFactorCard('Reserve', Utils.formatNumber(p.reserve_military));
@@ -481,7 +481,7 @@ var CountryPanel = (function() {
     }
     if (data.spending) {
       var s = data.spending;
-      html += '<div class="panel-section__title" style="margin-top:16px">Defense Spending</div>';
+      html += '<div class="panel-section__title" style="margin-top:16px">' + I18n.t('panel.defense_spending') + '</div>';
       html += factorCard('Defense Budget', Utils.formatCurrency(s.defense_budget_usd), s.spending_trend, Utils.formatPercent(s.defense_pct_gdp, 1) + ' of GDP', s.source, s.confidence);
       html += '<div class="factor-grid">';
       html += miniFactorCard('Arms Imports', Utils.formatCurrency(s.arms_imports_usd));
@@ -490,7 +490,7 @@ var CountryPanel = (function() {
     }
     if (data.capabilities) {
       var c = data.capabilities;
-      html += '<div class="panel-section__title" style="margin-top:16px">Capabilities</div>';
+      html += '<div class="panel-section__title" style="margin-top:16px">' + I18n.t('panel.capabilities') + '</div>';
       html += '<div class="factor-grid">';
       html += miniFactorCard('Tanks', Utils.formatNumber(c.tanks));
       html += miniFactorCard('Aircraft', Utils.formatNumber(c.aircraft));
@@ -503,16 +503,16 @@ var CountryPanel = (function() {
     }
     if (data.conflicts) {
       var co = data.conflicts;
-      html += '<div class="panel-section__title" style="margin-top:16px">Conflicts & Incidents</div>';
+      html += '<div class="panel-section__title" style="margin-top:16px">' + I18n.t('panel.conflicts_incidents') + '</div>';
       if (co.active_conflicts && co.active_conflicts.length > 0) {
         co.active_conflicts.forEach(function(conflict) {
           html += '<p style="font-size:12px;color:var(--alert-critical);margin-bottom:4px">⚠ ' + escH(typeof conflict === 'string' ? conflict : conflict.name || JSON.stringify(conflict)) + '</p>';
         });
       } else {
-        html += '<p style="font-size:12px;color:var(--text-muted)">No active conflicts</p>';
+        html += '<p style="font-size:12px;color:var(--text-muted)">' + I18n.t('panel.no_active_conflicts') + '</p>';
       }
       if (co.recent_incidents && co.recent_incidents.length > 0) {
-        html += '<p style="font-size:11px;color:var(--text-secondary);margin-top:8px">Recent: ' + co.recent_incidents.map(escH).join('; ') + '</p>';
+        html += '<p style="font-size:11px;color:var(--text-secondary);margin-top:8px">' + I18n.t('panel.recent') + ': ' + co.recent_incidents.map(escH).join('; ') + '</p>';
       }
     }
     return html;
@@ -523,15 +523,15 @@ var CountryPanel = (function() {
 
     // Network graph container (D3 fills this when tab is activated)
     html += '<div class="relations-network-wrap">';
-    html += '<div class="panel-section__title">Relation Network</div>';
+    html += '<div class="panel-section__title">' + I18n.t('panel.relation_network') + '</div>';
     html += '<div id="relations-network-graph" class="relations-network"></div>';
     html += '</div>';
 
     // Partner table
     if (data.top_partners && data.top_partners.length) {
       html += '<div class="relations-table-wrap">';
-      html += '<div class="panel-section__title" style="margin-top:12px">Partners <span style="font-size:10px;color:var(--text-muted);font-weight:400">(click row for detail)</span></div>';
-      html += '<table class="relations-table"><thead><tr><th>Partner</th><th>Type</th><th>Score</th></tr></thead><tbody>';
+      html += '<div class="panel-section__title" style="margin-top:12px">' + I18n.t('panel.partners') + ' <span style="font-size:10px;color:var(--text-muted);font-weight:400">(' + I18n.t('panel.click_row_for_detail') + ')</span></div>';
+      html += '<table class="relations-table"><thead><tr><th>' + I18n.t('panel.partner') + '</th><th>' + I18n.t('panel.type') + '</th><th>' + I18n.t('panel.score') + '</th></tr></thead><tbody>';
       data.top_partners.forEach(function(p) {
         var qualColor = getRelationColor(p.quality);
         var pairKey = [currentCode, p.code].sort().join('_');
@@ -548,7 +548,7 @@ var CountryPanel = (function() {
 
     // Alliance memberships
     if (data.alliance_memberships && data.alliance_memberships.length) {
-      html += '<div class="panel-section__title" style="margin-top:12px">Alliance Memberships</div>';
+      html += '<div class="panel-section__title" style="margin-top:12px">' + I18n.t('panel.alliance_memberships') + '</div>';
       html += '<div style="display:flex;flex-wrap:wrap;gap:4px">';
       data.alliance_memberships.forEach(function(a) {
         html += '<span class="panel-sources__tag" style="font-size:12px">' + escH(a) + '</span>';
@@ -566,13 +566,13 @@ var CountryPanel = (function() {
     _networkDrawn = true;
 
     if (typeof d3 === 'undefined') {
-      graphEl.innerHTML = '<div class="panel-no-data"><p>D3.js not loaded.</p></div>';
+      graphEl.innerHTML = '<div class="panel-no-data"><p>' + I18n.t('panel.d3_not_loaded') + '</p></div>';
       return;
     }
 
     var pairs = _currentRelationPairs;
     if (!pairs || pairs.length === 0) {
-      graphEl.innerHTML = '<div class="panel-no-data" style="padding:20px 0"><p>No relation data available.</p></div>';
+      graphEl.innerHTML = '<div class="panel-no-data" style="padding:20px 0"><p>' + I18n.t('panel.no_relation_data') + '</p></div>';
       return;
     }
 
@@ -673,7 +673,7 @@ var CountryPanel = (function() {
     overlay.innerHTML =
       '<div class="bilateral-overlay__card">' +
         '<button class="bilateral-overlay__close" id="bilateral-close">✕</button>' +
-        '<div id="bilateral-content"><p style="color:var(--text-muted);padding:8px 0">Loading...</p></div>' +
+        '<div id="bilateral-content"><p style="color:var(--text-muted);padding:8px 0">' + I18n.t('panel.loading') + '</p></div>' +
       '</div>';
     document.body.appendChild(overlay);
 
@@ -689,7 +689,7 @@ var CountryPanel = (function() {
     DataLoader.getRelation(parts[0], parts[1]).then(function(data) {
       contentEl.innerHTML = renderBilateralDetail(data);
     }).catch(function() {
-      contentEl.innerHTML = '<p style="color:var(--text-muted)">Detail not available for ' + escH(pairKey.replace('_', ' ↔ ')) + '.</p>';
+      contentEl.innerHTML = '<p style="color:var(--text-muted)">' + I18n.t('panel.bilateral_not_available', {pair: pairKey.replace('_', ' ↔ ')}) + '</p>';
     });
   }
 
@@ -710,7 +710,7 @@ var CountryPanel = (function() {
       }
       html += '</div>';
       if (dim === 'trade' && d.volume_usd) {
-        html += '<p style="font-size:12px;color:var(--text-secondary)">Volume: ' + Utils.formatCurrency(d.volume_usd) + '</p>';
+        html += '<p style="font-size:12px;color:var(--text-secondary)">' + I18n.t('panel.volume') + ': ' + Utils.formatCurrency(d.volume_usd) + '</p>';
       }
       if (d.summary || d.description) {
         html += '<p style="font-size:12px;color:var(--text-secondary)">' + escH(d.summary || d.description) + '</p>';
@@ -721,7 +721,7 @@ var CountryPanel = (function() {
     if (data.composite_score != null) {
       var compColor = data.composite_score >= 0.7 ? 'var(--relation-allied)' : data.composite_score >= 0.4 ? 'var(--relation-neutral)' : 'var(--relation-hostile)';
       html += '<div class="factor-card" style="background:var(--bg-secondary)">';
-      html += '<div class="factor-card__header"><span class="factor-card__label">Composite Score</span></div>';
+      html += '<div class="factor-card__header"><span class="factor-card__label">' + I18n.t('panel.composite_score') + '</span></div>';
       html += '<div class="factor-card__value" style="color:' + compColor + '">' + data.composite_score.toFixed(2) + '</div>';
       if (data.relationship_type) {
         html += '<p style="font-size:12px;color:var(--text-secondary);margin-top:4px;text-transform:capitalize">' + escH(data.relationship_type) + '</p>';
@@ -743,7 +743,7 @@ var CountryPanel = (function() {
   }
 
   function renderDerived(data) {
-    var html = '<div class="panel-section__title">Composite Indices</div>';
+    var html = '<div class="panel-section__title">' + I18n.t('panel.composite_indices') + '</div>';
     html += '<div class="factor-grid">';
     html += miniFactorCard('Composite Power', Utils.formatScore(data.composite_power_index));
     html += miniFactorCard('Economic Power', Utils.formatScore(data.economic_power));
@@ -752,14 +752,14 @@ var CountryPanel = (function() {
     html += miniFactorCard('Soft Power', Utils.formatScore(data.soft_power_index));
     html += miniFactorCard('Diplomatic Influence', Utils.formatScore(data.diplomatic_influence));
     html += '</div>';
-    html += '<div class="panel-section__title" style="margin-top:16px">Vulnerability & Risk</div>';
+    html += '<div class="panel-section__title" style="margin-top:16px">' + I18n.t('panel.vulnerability_risk') + '</div>';
     html += '<div class="factor-grid">';
     html += miniFactorCard('Vulnerability', Utils.formatScore(data.vulnerability_index));
     html += miniFactorCard('Supply Chain Exposure', Utils.formatScore(data.supply_chain_exposure));
     html += miniFactorCard('Energy Independence', Utils.formatScore(data.energy_independence));
     html += miniFactorCard('Investment Risk', Utils.formatScore(data.investment_risk_score));
     html += '</div>';
-    html += '<div class="panel-section__title" style="margin-top:16px">Development</div>';
+    html += '<div class="panel-section__title" style="margin-top:16px">' + I18n.t('panel.development') + '</div>';
     html += '<div class="factor-grid">';
     html += miniFactorCard('Economic Complexity', data.economic_complexity_index != null ? data.economic_complexity_index.toFixed(2) : '—');
     html += miniFactorCard('Innovation Index', Utils.formatScore(data.innovation_index));
@@ -771,7 +771,7 @@ var CountryPanel = (function() {
     var id = 'reasoning-' + Math.random().toString(36).substr(2, 6);
     var html = '<div class="reasoning-expand">';
     html += '<button class="reasoning-toggle" data-target="' + id + '">';
-    html += '<span class="reasoning-toggle__arrow">▶</span> Show reasoning';
+    html += '<span class="reasoning-toggle__arrow">▶</span> ' + I18n.t('panel.show_reasoning');
     html += '</button>';
     html += '<div class="reasoning-body" id="' + id + '">';
     if (trend.assessment) {
@@ -786,7 +786,7 @@ var CountryPanel = (function() {
     }
     if (trend.counter_arguments && trend.counter_arguments.length) {
       html += '<div class="reasoning-body__counter">';
-      html += '<div class="reasoning-body__counter-title">Counter-arguments</div>';
+      html += '<div class="reasoning-body__counter-title">' + I18n.t('panel.counter_arguments') + '</div>';
       html += '<ul class="reasoning-body__evidence reasoning-body__counter">';
       trend.counter_arguments.forEach(function(c) {
         html += '<li>' + escH(c) + '</li>';
@@ -799,21 +799,21 @@ var CountryPanel = (function() {
 
   function renderNarrative(narrative) {
     var html = '<div class="narrative-section">';
-    html += '<div class="panel-section__title">Analysis</div>';
+    html += '<div class="panel-section__title">' + I18n.t('panel.analysis') + '</div>';
     if (narrative.ai_generated) {
-      html += '<div class="ai-label">✦ AI-Generated Analysis</div>';
+      html += '<div class="ai-label">✦ ' + I18n.t('panel.ai_generated_analysis') + '</div>';
     }
     if (narrative.executive_overview) {
       html += '<p>' + escH(narrative.executive_overview) + '</p>';
     }
     if (narrative.key_developments) {
-      html += '<h4>Key Developments</h4><p>' + escH(narrative.key_developments) + '</p>';
+      html += '<h4>' + I18n.t('panel.key_developments') + '</h4><p>' + escH(narrative.key_developments) + '</p>';
     }
     if (narrative.risk_factors) {
-      html += '<h4>Risk Factors</h4><p>' + escH(narrative.risk_factors) + '</p>';
+      html += '<h4>' + I18n.t('panel.risk_factors') + '</h4><p>' + escH(narrative.risk_factors) + '</p>';
     }
     if (narrative.opportunities) {
-      html += '<h4>Opportunities</h4><p>' + escH(narrative.opportunities) + '</p>';
+      html += '<h4>' + I18n.t('panel.opportunities') + '</h4><p>' + escH(narrative.opportunities) + '</p>';
     }
     html += '</div>';
     return html;
@@ -834,7 +834,7 @@ var CountryPanel = (function() {
     if (sources.size === 0) return '';
 
     var html = '<div class="panel-sources">';
-    html += '<div class="panel-sources__title">Data Sources</div>';
+    html += '<div class="panel-sources__title">' + I18n.t('panel.sources') + '</div>';
     html += '<div class="panel-sources__list">';
     sources.forEach(function(s) {
       html += '<span class="panel-sources__tag">' + escH(s) + '</span>';
@@ -993,7 +993,7 @@ var CountryPanel = (function() {
       MapView.invalidateSize();
 
       // Show loading state
-      panelEl.innerHTML = '<div class="panel-header"><span class="panel-header__title">Loading...</span><button class="panel-header__close" id="panel-close-x">✕</button></div>' +
+      panelEl.innerHTML = '<div class="panel-header"><span class="panel-header__title">' + I18n.t('panel.loading') + '</span><button class="panel-header__close" id="panel-close-x">✕</button></div>' +
         '<div class="panel-loading"><div class="skeleton" style="width:80%;height:16px;margin:8px auto"></div><div class="skeleton" style="width:60%;height:16px;margin:8px auto"></div><div class="skeleton" style="width:70%;height:16px;margin:8px auto"></div></div>';
       document.getElementById('panel-close-x').addEventListener('click', function() { CountryPanel.close(); });
 

@@ -28,7 +28,7 @@
     function applyAlert(alert, severity) {
       var isCritical = severity === 'critical';
       tagEl.className         = 'ticker-tag ticker-tag--' + severity;
-      tagLabelEl.textContent  = severity.toUpperCase();
+      tagLabelEl.textContent  = I18n.t('severity.' + severity).toUpperCase();
       tagDotEl.className      = 'ticker-tag__dot' + (isCritical ? '' : ' hidden');
       contentEl.className     = 'ticker-content ticker-content--' + severity;
       headlineEl.textContent  = (alert.title || alert.headline || '').toUpperCase();
@@ -312,6 +312,74 @@
     // Initialize intel overlays
     await IntelOverlays.init();
 
+    // Initialize language selector
+    (function initLangSelector() {
+      var toggle = document.getElementById('lang-toggle');
+      var dropdown = document.getElementById('lang-dropdown');
+      if (!toggle || !dropdown) return;
+
+      var langs = I18n.getSupportedLanguages();
+      dropdown.innerHTML = langs.map(function(l) {
+        var cls = l.code === I18n.getLang() ? 'lang-option active' : 'lang-option';
+        return '<div class="' + cls + '" data-lang="' + l.code + '">' +
+          '<span class="lang-option__flag">' + l.flag + '</span>' +
+          '<span class="lang-option__label">' + l.label + '</span></div>';
+      }).join('');
+
+      // Update toggle display
+      function updateToggle() {
+        var current = langs.find(function(l) { return l.code === I18n.getLang(); });
+        if (current) {
+          document.getElementById('lang-flag').textContent = current.flag;
+          document.getElementById('lang-code').textContent = current.code.toUpperCase();
+        }
+      }
+      updateToggle();
+
+      toggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+      });
+
+      dropdown.addEventListener('click', function(e) {
+        var option = e.target.closest('.lang-option');
+        if (!option) return;
+        var lang = option.getAttribute('data-lang');
+        I18n.setLang(lang);
+        dropdown.classList.remove('open');
+        // Update active state
+        dropdown.querySelectorAll('.lang-option').forEach(function(el) {
+          el.classList.toggle('active', el.getAttribute('data-lang') === lang);
+        });
+        updateToggle();
+      });
+
+      document.addEventListener('click', function() {
+        dropdown.classList.remove('open');
+      });
+    })();
+
+    // Translate static DOM elements
+    I18n.updateDOM();
+
+    // Re-render dynamic views on language change
+    I18n.onChange(async function() {
+      I18n.updateDOM();
+      // Reload data for the new language (localized content files)
+      await DataLoader.reloadForLanguage();
+      // Update map with reloaded summary data
+      if (typeof MapView !== 'undefined' && MapView.getMap()) {
+        MapView.setSummaryData(DataLoader.getSummary());
+        MapView.setMetric(document.getElementById('metric-select').value);
+      }
+      // Reset cached views so they re-render with new language
+      if (typeof BriefingView !== 'undefined') BriefingView.reset();
+      if (typeof AlertDashboard !== 'undefined') AlertDashboard.reset();
+      // Re-navigate to current view
+      var route = parseHash();
+      navigateTo(route.view, route.params);
+    });
+
     // Initialize search
     Search.init(
       document.getElementById('search'),
@@ -422,7 +490,7 @@
       if (lastDate) {
         dateEl.textContent = Utils.formatDate(lastDate);
       } else {
-        dateEl.textContent = 'Not yet available';
+        dateEl.textContent = I18n.t('footer.not_available');
       }
     }
 

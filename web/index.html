@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stratoterra — Geopolitical Intelligence</title>
+  <title data-i18n="page.title">Stratoterra — Geopolitical Intelligence</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -37,18 +37,25 @@
       </div>
       <div class="header-center">
         <div style="position:relative">
-          <input type="text" id="search" placeholder="Search country..." autocomplete="off" aria-label="Search countries" role="combobox" aria-expanded="false" aria-controls="search-dropdown" />
+          <input type="text" id="search" placeholder="Search country..." data-i18n-placeholder="search.placeholder" autocomplete="off" aria-label="Search countries" data-i18n-aria-label="search.aria" role="combobox" aria-expanded="false" aria-controls="search-dropdown" />
           <div class="search-dropdown" id="search-dropdown" role="listbox"></div>
         </div>
       </div>
       <div class="header-right">
         <nav id="main-nav" aria-label="Main navigation">
-          <a href="#map" class="nav-link active" data-view="map">Map</a>
-          <a href="#briefing" class="nav-link" data-view="briefing">Stories</a>
-          <a href="#alerts" class="nav-link" data-view="alerts">Alerts</a>
-          <a href="#rankings" class="nav-link" data-view="rankings">Rankings</a>
-          <a href="#compare" class="nav-link" data-view="compare">Compare</a>
+          <a href="#map" class="nav-link active" data-view="map" data-i18n="nav.map">Map</a>
+          <a href="#briefing" class="nav-link" data-view="briefing" data-i18n="nav.stories">Stories</a>
+          <a href="#alerts" class="nav-link" data-view="alerts" data-i18n="nav.alerts">Alerts</a>
+          <a href="#rankings" class="nav-link" data-view="rankings" data-i18n="nav.rankings">Rankings</a>
+          <a href="#compare" class="nav-link" data-view="compare" data-i18n="nav.compare">Compare</a>
         </nav>
+        <div id="lang-selector" class="lang-selector">
+          <button id="lang-toggle" class="lang-toggle" aria-label="Language">
+            <span id="lang-flag">🇬🇧</span>
+            <span id="lang-code">EN</span>
+          </button>
+          <div id="lang-dropdown" class="lang-dropdown"></div>
+        </div>
       </div>
     </header>
 
@@ -59,18 +66,18 @@
       <!-- Mobile map toolbar (Color by + Overlay, visible only on mobile map view) -->
       <div id="mobile-map-toolbar" class="mobile-map-toolbar">
         <select id="mobile-metric-select" aria-label="Color map by metric">
-          <option value="alert_severity" selected>Alert Severity</option>
-          <option value="gdp_growth_trend">GDP Growth</option>
-          <option value="political_stability">Stability</option>
-          <option value="investment_risk">Inv. Risk</option>
-          <option value="military_spending_trend">Mil. Spend</option>
-          <option value="military_spending_pct_gdp">Mil. % GDP</option>
-          <option value="composite_power">Power Index</option>
-          <option value="energy_independence">Energy Ind.</option>
-          <option value="trade_openness">Trade Open.</option>
+          <option value="alert_severity" selected data-i18n="metric.alert_severity">Alert Severity</option>
+          <option value="gdp_growth_trend" data-i18n="metric.gdp_growth">GDP Growth</option>
+          <option value="political_stability" data-i18n="metric.political_stability_short">Stability</option>
+          <option value="investment_risk" data-i18n="metric.investment_risk_short">Inv. Risk</option>
+          <option value="military_spending_trend" data-i18n="metric.military_spend_short">Mil. Spend</option>
+          <option value="military_spending_pct_gdp" data-i18n="metric.military_spend_pct_gdp_short">Mil. % GDP</option>
+          <option value="composite_power" data-i18n="metric.power_index_short">Power Index</option>
+          <option value="energy_independence" data-i18n="metric.energy_independence_short">Energy Ind.</option>
+          <option value="trade_openness" data-i18n="metric.trade_openness_short">Trade Open.</option>
         </select>
         <select id="mobile-overlay-select" aria-label="Geopolitical overlay">
-          <option value="none">No Overlay</option>
+          <option value="none" data-i18n="overlay.no_overlay">No Overlay</option>
           <option value="EU">EU</option>
           <option value="NATO">NATO</option>
           <option value="BRICS">BRICS</option>
@@ -93,87 +100,87 @@
       <!-- Intel Overlays -->
       <div id="st-layers">
         <div id="st-layers-head">
-          <span class="hl-title">Intel Overlays</span>
+          <span class="hl-title" data-i18n="intel.title">Intel Overlays</span>
           <span class="hl-toggle">&blacktriangle;</span>
         </div>
         <div id="st-layers-body">
-          <div class="st-group-head" id="group-air">Air &amp; Maritime</div>
+          <div class="st-group-head" id="group-air" data-i18n="intel.group_air">Air &amp; Maritime</div>
           <div class="st-row on" data-layer="airports" role="switch" aria-checked="true" tabindex="0" aria-labelledby="label-airports">
             <div class="st-pill" aria-hidden="true"></div>
             <div class="st-swatch" style="background:var(--st-blue)" aria-hidden="true"></div>
-            <span class="st-label" id="label-airports">Major Airports</span>
+            <span class="st-label" id="label-airports" data-i18n="intel.airports">Major Airports</span>
             <span class="st-badge">0</span>
           </div>
           <div class="st-row on" data-layer="ports" role="switch" aria-checked="true" tabindex="0" aria-labelledby="label-ports">
             <div class="st-pill" aria-hidden="true"></div>
             <div class="st-swatch" style="background:var(--st-teal)" aria-hidden="true"></div>
-            <span class="st-label" id="label-ports">Strategic Ports</span>
+            <span class="st-label" id="label-ports" data-i18n="intel.ports">Strategic Ports</span>
             <span class="st-badge">0</span>
           </div>
           <div class="st-row" data-layer="chokepoints" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-chokepoints">
             <div class="st-pill" aria-hidden="true"></div>
             <div class="st-swatch" style="background:var(--st-orange)" aria-hidden="true"></div>
-            <span class="st-label" id="label-chokepoints">Sea Chokepoints</span>
+            <span class="st-label" id="label-chokepoints" data-i18n="intel.chokepoints">Sea Chokepoints</span>
             <span class="st-badge">0</span>
           </div>
           <div class="st-row" data-layer="cables" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-cables">
             <div class="st-pill" aria-hidden="true"></div>
             <div class="st-swatch" style="background:var(--st-purple)" aria-hidden="true"></div>
-            <span class="st-label" id="label-cables">Submarine Cables</span>
+            <span class="st-label" id="label-cables" data-i18n="intel.cables">Submarine Cables</span>
             <span class="st-badge">0</span>
           </div>
 
-          <div class="st-group-head" id="group-military">Military</div>
+          <div class="st-group-head" id="group-military" data-i18n="intel.group_military">Military</div>
           <div class="st-row on" data-layer="bases" role="switch" aria-checked="true" tabindex="0" aria-labelledby="label-bases">
             <div class="st-pill" aria-hidden="true"></div>
             <div class="st-swatch" style="background:var(--st-amber)" aria-hidden="true"></div>
-            <span class="st-label" id="label-bases">Military Bases</span>
+            <span class="st-label" id="label-bases" data-i18n="intel.bases">Military Bases</span>
             <span class="st-badge">0</span>
           </div>
           <div class="st-row on" data-layer="conflicts" role="switch" aria-checked="true" tabindex="0" aria-labelledby="label-conflicts">
             <div class="st-pill" aria-hidden="true"></div>
             <div class="st-swatch" style="background:var(--st-red)" aria-hidden="true"></div>
-            <span class="st-label" id="label-conflicts">Conflict Zones</span>
+            <span class="st-label" id="label-conflicts" data-i18n="intel.conflicts">Conflict Zones</span>
             <span class="st-badge">0</span>
           </div>
           <div class="st-row" data-layer="missiles" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-missiles">
             <div class="st-pill" aria-hidden="true"></div>
             <div class="st-swatch" style="background:var(--st-red)" aria-hidden="true"></div>
-            <span class="st-label" id="label-missiles">Missile Coverage</span>
+            <span class="st-label" id="label-missiles" data-i18n="intel.missiles">Missile Coverage</span>
             <span class="st-badge">0</span>
           </div>
           <div class="st-row" data-layer="nuclear" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-nuclear">
             <div class="st-pill" aria-hidden="true"></div>
             <div class="st-swatch" style="background:var(--st-orange)" aria-hidden="true"></div>
-            <span class="st-label" id="label-nuclear">Nuclear Sites</span>
+            <span class="st-label" id="label-nuclear" data-i18n="intel.nuclear">Nuclear Sites</span>
             <span class="st-badge">0</span>
           </div>
 
-          <div class="st-group-head" id="group-infra">Infrastructure</div>
+          <div class="st-group-head" id="group-infra" data-i18n="intel.group_infra">Infrastructure</div>
           <div class="st-row on" data-layer="power" role="switch" aria-checked="true" tabindex="0" aria-labelledby="label-power">
             <div class="st-pill" aria-hidden="true"></div>
             <div class="st-swatch" style="background:var(--st-amber)" aria-hidden="true"></div>
-            <span class="st-label" id="label-power">Power Stations</span>
+            <span class="st-label" id="label-power" data-i18n="intel.power_stations">Power Stations</span>
             <span class="st-badge">0</span>
           </div>
           <div class="st-row" data-layer="pipelines" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-pipelines">
             <div class="st-pill" aria-hidden="true"></div>
             <div class="st-swatch" style="background:var(--st-orange)" aria-hidden="true"></div>
-            <span class="st-label" id="label-pipelines">Oil &amp; Gas Pipelines</span>
+            <span class="st-label" id="label-pipelines" data-i18n="intel.pipelines">Oil &amp; Gas Pipelines</span>
             <span class="st-badge">0</span>
           </div>
           <div class="st-row" data-layer="cyber" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-cyber">
             <div class="st-pill" aria-hidden="true"></div>
             <div class="st-swatch" style="background:var(--st-purple)" aria-hidden="true"></div>
-            <span class="st-label" id="label-cyber">Cyber Operations</span>
+            <span class="st-label" id="label-cyber" data-i18n="intel.cyber">Cyber Operations</span>
             <span class="st-badge">0</span>
           </div>
 
-          <div class="st-group-head" id="group-humanitarian">Humanitarian</div>
+          <div class="st-group-head" id="group-humanitarian" data-i18n="intel.group_humanitarian">Humanitarian</div>
           <div class="st-row" data-layer="sanctions" role="switch" aria-checked="false" tabindex="0" aria-labelledby="label-sanctions">
             <div class="st-pill" aria-hidden="true"></div>
             <div class="st-swatch" style="background:var(--st-red)" aria-hidden="true"></div>
-            <span class="st-label" id="label-sanctions">Active Sanctions</span>
+            <span class="st-label" id="label-sanctions" data-i18n="intel.sanctions">Active Sanctions</span>
             <span class="st-badge">0</span>
           </div>
         </div>
@@ -195,23 +202,23 @@
 
     <footer id="bottom-bar">
       <div class="metric-selector">
-        <label>Color by:</label>
+        <label data-i18n="metric.color_by">Color by:</label>
         <select id="metric-select" aria-label="Color map by metric">
-          <option value="alert_severity" selected>Alert Severity</option>
-          <option value="gdp_growth_trend">GDP Growth</option>
-          <option value="political_stability">Political Stability</option>
-          <option value="investment_risk">Investment Risk</option>
-          <option value="military_spending_trend">Military Spend Trend</option>
-          <option value="military_spending_pct_gdp">Military Spend (% GDP)</option>
-          <option value="composite_power">National Power Index</option>
-          <option value="energy_independence">Energy Independence</option>
-          <option value="trade_openness">Trade Openness</option>
+          <option value="alert_severity" selected data-i18n="metric.alert_severity">Alert Severity</option>
+          <option value="gdp_growth_trend" data-i18n="metric.gdp_growth">GDP Growth</option>
+          <option value="political_stability" data-i18n="metric.political_stability">Political Stability</option>
+          <option value="investment_risk" data-i18n="metric.investment_risk">Investment Risk</option>
+          <option value="military_spending_trend" data-i18n="metric.military_spend_trend">Military Spend Trend</option>
+          <option value="military_spending_pct_gdp" data-i18n="metric.military_spend_pct_gdp">Military Spend (% GDP)</option>
+          <option value="composite_power" data-i18n="metric.national_power_index">National Power Index</option>
+          <option value="energy_independence" data-i18n="metric.energy_independence">Energy Independence</option>
+          <option value="trade_openness" data-i18n="metric.trade_openness">Trade Openness</option>
         </select>
       </div>
       <div class="overlay-selector">
-        <label>Overlay:</label>
+        <label data-i18n="overlay.label">Overlay:</label>
         <select id="overlay-select" aria-label="Geopolitical overlay">
-          <option value="none">None</option>
+          <option value="none" data-i18n="overlay.none">None</option>
           <option value="EU">EU</option>
           <option value="NATO">NATO</option>
           <option value="BRICS">BRICS</option>
@@ -222,7 +229,7 @@
         </select>
       </div>
       <div class="last-updated">
-        Last updated: <span id="last-updated-date">—</span>
+        <span data-i18n="footer.last_updated">Last updated:</span> <span id="last-updated-date">—</span>
       </div>
     </footer>
   </div>
@@ -232,7 +239,7 @@
     <div id="ticker-primary" class="ticker-primary">
       <div class="ticker-tag" id="ticker-tag">
         <span class="ticker-tag__dot" id="ticker-tag-dot"></span>
-        <span class="ticker-tag__label" id="ticker-tag-label">CRITICAL</span>
+        <span class="ticker-tag__label" id="ticker-tag-label" data-i18n="ticker.critical">CRITICAL</span>
       </div>
       <div class="ticker-content" id="ticker-content">
         <span class="ticker-headline" id="ticker-headline"></span>
@@ -241,7 +248,7 @@
     </div>
     <!-- Secondary bar: watch alerts, continuous marquee -->
     <div id="ticker-secondary" class="ticker-secondary">
-      <div class="ticker-tag-sm">WATCH</div>
+      <div class="ticker-tag-sm" data-i18n="ticker.watch">WATCH</div>
       <div class="ticker-scroll-wrap">
         <div class="ticker-scroll-track" id="ticker-scroll-track"></div>
       </div>
@@ -252,31 +259,32 @@
   <nav id="mobile-tab-bar" class="mobile-tab-bar" aria-label="Mobile navigation">
     <button class="mobile-tab active" data-view="map">
       <span class="mobile-tab__icon">&#x1F5FA;</span>
-      <span>Map</span>
+      <span data-i18n="nav.map">Map</span>
     </button>
     <button class="mobile-tab" data-view="briefing">
       <span class="mobile-tab__icon">&#x1F4F0;</span>
-      <span>Stories</span>
+      <span data-i18n="nav.stories">Stories</span>
     </button>
     <button class="mobile-tab" data-view="alerts">
       <span class="mobile-tab__icon">&#x26A0;</span>
-      <span>Alerts</span>
+      <span data-i18n="nav.alerts">Alerts</span>
     </button>
     <button class="mobile-tab" data-view="rankings">
       <span class="mobile-tab__icon">&#x1F3C6;</span>
-      <span>Rankings</span>
+      <span data-i18n="nav.rankings">Rankings</span>
     </button>
     <button class="mobile-tab" data-view="compare">
       <span class="mobile-tab__icon">&#x2194;</span>
-      <span>Compare</span>
+      <span data-i18n="nav.compare">Compare</span>
     </button>
   </nav>
 
   <div id="disclaimer">
-    AI-generated geopolitical analysis for informational purposes only.
-    Not financial advice. <a href="#methodology">Methodology</a>
+    <span data-i18n="disclaimer">AI-generated geopolitical analysis for informational purposes only. Not financial advice.</span>
+    <a href="#methodology" data-i18n="disclaimer.methodology">Methodology</a>
   </div>
 
+  <script src="js/i18n.js"></script>
   <script src="js/constants.js"></script>
   <script src="js/utils.js"></script>
   <script src="js/data-loader.js"></script>
