@@ -84,8 +84,8 @@ var IntelOverlays = (function() {
     airports: function(features) {
       features.forEach(function(a) {
         var m = L.marker(a.ll, {icon: mkIcon('\u2708','rgba(9,132,227,.15)',C.blue,15)});
-        m.on('click', function() { showCard('AIRPORT', a.name, [
-          ['IATA code', a.code, 'hi'], ['Passenger traffic', a.traffic]
+        m.on('click', function() { showCard(I18n.t('card.airport'), a.name, [
+          [I18n.t('card.iata_code'), a.code, 'hi'], [I18n.t('card.passenger_traffic'), a.traffic]
         ]); });
         m.bindTooltip('<b>'+esc(a.name)+'</b> \u00b7 '+esc(a.code), {className:'st-tip',direction:'top',offset:[0,-4]});
         LG.airports.addLayer(m);
@@ -95,8 +95,8 @@ var IntelOverlays = (function() {
     ports: function(features) {
       features.forEach(function(p) {
         var m = L.marker(p.ll, {icon: mkIcon('\u2693','rgba(0,206,201,.12)',C.teal,15)});
-        m.on('click', function() { showCard('STRATEGIC PORT', p.name, [
-          ['Country', p.country], ['Capacity', p.cap]
+        m.on('click', function() { showCard(I18n.t('card.strategic_port'), p.name, [
+          [I18n.t('card.country'), p.country], [I18n.t('card.capacity'), p.cap]
         ]); });
         m.bindTooltip('<b>'+esc(p.name)+'</b>', {className:'st-tip',direction:'top',offset:[0,-4]});
         LG.ports.addLayer(m);
@@ -106,8 +106,8 @@ var IntelOverlays = (function() {
     bases: function(features) {
       features.forEach(function(b) {
         var m = L.marker(b.ll, {icon: mkFlag(b.flag)});
-        m.on('click', function() { showCard('MILITARY BASE', b.name, [
-          ['Nation', b.country], ['Facility', b.type], ['Personnel', b.size]
+        m.on('click', function() { showCard(I18n.t('card.military_base'), b.name, [
+          [I18n.t('card.nation'), b.country], [I18n.t('card.facility'), b.type], [I18n.t('card.personnel'), b.size]
         ]); });
         m.bindTooltip('<b>'+esc(b.name)+'</b><br>'+b.flag+' '+esc(b.country)+' \u00b7 '+esc(b.type),
           {className:'st-tip',direction:'top',offset:[0,-6]});
@@ -127,9 +127,9 @@ var IntelOverlays = (function() {
           iconAnchor:[-6,4]
         })});
         [pulse,core].forEach(function(el) {
-          el.on('click', function() { showCard('CONFLICT ZONE', c.name, [
-            ['Intensity', c.intensity, c.intensity==='Critical'?'danger': c.intensity==='High'?'warn':'ok'],
-            ['Since', c.since], ['Type', c.type], ['Casualties', c.casualties, 'danger']
+          el.on('click', function() { showCard(I18n.t('card.conflict_zone'), c.name, [
+            [I18n.t('card.intensity'), c.intensity, c.intensity==='Critical'?'danger': c.intensity==='High'?'warn':'ok'],
+            [I18n.t('card.since'), c.since], [I18n.t('card.type'), c.type], [I18n.t('card.casualties'), c.casualties, 'danger']
           ]); });
         });
         LG.conflicts.addLayer(pulse);
@@ -143,10 +143,10 @@ var IntelOverlays = (function() {
         var col = p.type==='Nuclear'?C.orange : p.type==='Gas'?C.purple : '#636e72';
         var sym = p.type==='Nuclear'?'\u2622':'\u26a1';
         var m = L.marker(p.ll, {icon: mkIcon(sym, col+'22', col, 15)});
-        m.on('click', function() { showCard('POWER STATION', p.name, [
-          ['Type', p.type, p.type==='Nuclear'?'warn':''],
-          ['Output', p.mw ? p.mw.toLocaleString()+' MW' : 'Decommissioned', 'hi'],
-          ['Country', p.country]
+        m.on('click', function() { showCard(I18n.t('card.power_station'), p.name, [
+          [I18n.t('card.type'), p.type, p.type==='Nuclear'?'warn':''],
+          [I18n.t('card.output'), p.mw ? p.mw.toLocaleString()+' MW' : I18n.t('card.decommissioned'), 'hi'],
+          [I18n.t('card.country'), p.country]
         ]); });
         m.bindTooltip('<b>'+esc(p.name)+'</b><br>'+esc(p.type)+' \u00b7 '+(p.mw||0)+' MW',
           {className:'st-tip',direction:'top',offset:[0,-4]});
@@ -157,8 +157,8 @@ var IntelOverlays = (function() {
     nuclear: function(features) {
       features.forEach(function(n) {
         var m = L.marker(n.ll, {icon: mkIcon('\u2622','rgba(225,112,85,.15)',C.orange,16)});
-        m.on('click', function() { showCard('NUCLEAR SITE \u2622', n.name, [
-          ['Type', n.type, 'warn'], ['Country', n.country]
+        m.on('click', function() { showCard(I18n.t('card.nuclear_site') + ' \u2622', n.name, [
+          [I18n.t('card.type'), n.type, 'warn'], [I18n.t('card.country'), n.country]
         ]); });
         m.bindTooltip('<b>'+esc(n.name)+'</b><br>\u2622 '+esc(n.type)+' \u00b7 '+esc(n.country),
           {className:'st-tip',direction:'top',offset:[0,-5]});
@@ -180,8 +180,8 @@ var IntelOverlays = (function() {
         })});
         ring.bindTooltip('<b>'+esc(m.name)+'</b><br>Range: '+m.range.toLocaleString()+' km',
           {className:'st-tip',direction:'top'});
-        pin.on('click', function() { showCard('MISSILE COVERAGE', m.name, [
-          ['System', m.system], ['Range', m.range.toLocaleString()+' km', 'danger'], ['Country', m.country]
+        pin.on('click', function() { showCard(I18n.t('card.missile_coverage'), m.name, [
+          [I18n.t('card.system'), m.system], [I18n.t('card.range'), m.range.toLocaleString()+' km', 'danger'], [I18n.t('card.country'), m.country]
         ]); });
         LG.missiles.addLayer(ring);
         LG.missiles.addLayer(pin);
@@ -198,9 +198,9 @@ var IntelOverlays = (function() {
             '<text x="10" y="14" text-anchor="middle" font-size="9" fill="'+col+'" font-weight="bold">!</text></svg>',
           iconSize:[20,18], iconAnchor:[10,9]
         })});
-        m.on('click', function() { showCard('SEA CHOKEPOINT', c.name, [
-          ['Daily flow', c.flow, 'hi'],
-          ['Risk level', c.risk, c.risk==='Critical'?'danger':c.risk==='High'?'warn':'ok']
+        m.on('click', function() { showCard(I18n.t('card.sea_chokepoint'), c.name, [
+          [I18n.t('card.daily_flow'), c.flow, 'hi'],
+          [I18n.t('card.risk_level'), c.risk, c.risk==='Critical'?'danger':c.risk==='High'?'warn':'ok']
         ]); });
         m.bindTooltip('<b>'+esc(c.name)+'</b><br>'+esc(c.flow), {className:'st-tip',direction:'top',offset:[0,-4]});
         LG.chokepoints.addLayer(m);
@@ -210,7 +210,7 @@ var IntelOverlays = (function() {
     cables: function(features) {
       features.forEach(function(c) {
         var pl = L.polyline(c.path, {color:C.purple, weight:2, opacity:.6, dashArray:'8 5'});
-        pl.on('click', function() { showCard('SUBMARINE CABLE', c.name, [['Operator', c.owner], ['Status', 'Active']]); });
+        pl.on('click', function() { showCard(I18n.t('card.submarine_cable'), c.name, [[I18n.t('card.operator'), c.owner], [I18n.t('card.status'), I18n.t('card.active')]]); });
         pl.bindTooltip('<b>'+esc(c.name)+'</b><br>'+esc(c.owner), {className:'st-tip',direction:'top'});
         LG.cables.addLayer(pl);
       });
@@ -219,8 +219,8 @@ var IntelOverlays = (function() {
     pipelines: function(features) {
       features.forEach(function(p) {
         var pl = L.polyline(p.path, {color:C.orange, weight:2.5, opacity:.65, dashArray:'10 5'});
-        pl.on('click', function() { showCard('PIPELINE', p.name, [
-          ['Product', p.prod, 'hi'], ['From', p.from], ['To', p.to]
+        pl.on('click', function() { showCard(I18n.t('card.pipeline'), p.name, [
+          [I18n.t('card.product'), p.prod, 'hi'], [I18n.t('card.from'), p.from], [I18n.t('card.to'), p.to]
         ]); });
         pl.bindTooltip('<b>'+esc(p.name)+'</b><br>'+esc(p.prod)+': '+esc(p.from)+' \u2192 '+esc(p.to),
           {className:'st-tip',direction:'top'});
@@ -238,9 +238,9 @@ var IntelOverlays = (function() {
             '<text x="7" y="11" text-anchor="middle" font-size="9" fill="'+col+'">\u2328</text></svg>',
           iconSize:[14,14], iconAnchor:[7,7]
         })});
-        m.on('click', function() { showCard('CYBER OPERATIONS', c.name, [
-          ['Origin', c.origin, 'hi'], ['Target', c.target],
-          ['Severity', c.sev, c.sev==='Critical'?'danger':c.sev==='High'?'warn':'']
+        m.on('click', function() { showCard(I18n.t('card.cyber_ops'), c.name, [
+          [I18n.t('card.origin'), c.origin, 'hi'], [I18n.t('card.target'), c.target],
+          [I18n.t('card.severity'), c.sev, c.sev==='Critical'?'danger':c.sev==='High'?'warn':'']
         ]); });
         m.bindTooltip('<b>'+esc(c.name)+'</b><br>Origin: '+esc(c.origin), {className:'st-tip',direction:'top',offset:[0,-4]});
         LG.cyber.addLayer(m);
@@ -250,8 +250,8 @@ var IntelOverlays = (function() {
     sanctions: function(features) {
       features.forEach(function(s) {
         var m = L.marker(s.ll, {icon: mkIcon('\ud83d\udd12','rgba(214,48,49,.12)',C.red,14)});
-        m.on('click', function() { showCard('ACTIVE SANCTIONS', s.name, [
-          ['Issuing body', s.body], ['Type', s.type], ['In force since', s.since, 'warn']
+        m.on('click', function() { showCard(I18n.t('card.sanctions'), s.name, [
+          [I18n.t('card.issuing_body'), s.body], [I18n.t('card.type'), s.type], [I18n.t('card.in_force_since'), s.since, 'warn']
         ]); });
         m.bindTooltip('<b>'+esc(s.name)+'</b><br>'+esc(s.body)+' \u00b7 Since '+esc(s.since),
           {className:'st-tip',direction:'top',offset:[0,-4]});

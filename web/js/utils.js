@@ -38,7 +38,7 @@ const Utils = {
     if (!dateStr) return '—';
     const d = new Date(dateStr);
     if (isNaN(d.getTime())) return dateStr;
-    return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+    return d.toLocaleDateString(I18n.getLocale(), { year: 'numeric', month: 'short', day: 'numeric' });
   },
 
   formatRelativeDate(dateStr) {
@@ -48,11 +48,11 @@ const Utils = {
     const now = new Date();
     const diffMs = now - d;
     const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-    if (diffDays === 0) return 'Today';
-    if (diffDays === 1) return 'Yesterday';
-    if (diffDays < 7) return diffDays + 'd ago';
-    if (diffDays < 30) return Math.floor(diffDays / 7) + 'w ago';
-    return Math.floor(diffDays / 30) + 'mo ago';
+    if (diffDays === 0) return I18n.t('date.today');
+    if (diffDays === 1) return I18n.t('date.yesterday');
+    if (diffDays < 7) return I18n.t('date.days_ago', {n: diffDays});
+    if (diffDays < 30) return I18n.t('date.weeks_ago', {n: Math.floor(diffDays / 7)});
+    return I18n.t('date.months_ago', {n: Math.floor(diffDays / 30)});
   },
 
   debounce(fn, delay) {
@@ -123,13 +123,13 @@ const Utils = {
       case 'score': return this.formatScore(value);
       case 'decimal2': return Number(value).toFixed(2);
       case 'severity':
-        var labels = ['None', 'Watch', 'Warning', 'Critical'];
-        return labels[Math.round(value)] || 'None';
+        var labels = [I18n.t('format.none'), I18n.t('format.watch'), I18n.t('format.warning'), I18n.t('format.critical')];
+        return labels[Math.round(value)] || I18n.t('format.none');
       case 'trend':
-        if (value > 5) return '↗ Strong';
-        if (value > 0) return '↗ Growth';
-        if (value > -5) return '↘ Decline';
-        return '⬇ Strong Decline';
+        if (value > 5) return I18n.t('format.strong');
+        if (value > 0) return I18n.t('format.growth');
+        if (value > -5) return I18n.t('format.decline');
+        return I18n.t('format.strong_decline');
       default: return String(value);
     }
   },
@@ -145,7 +145,7 @@ const Utils = {
   // Build HTML for trend indicator
   trendHTML(trendKey) {
     var info = this.getTrendInfo(trendKey);
-    return '<span class="trend ' + info.cssClass + '"><span class="trend-arrow"></span> ' + info.label + '</span>';
+    return '<span class="trend ' + info.cssClass + '"><span class="trend-arrow"></span> ' + I18n.t(info.label) + '</span>';
   },
 
   // Clamp a value between min and max

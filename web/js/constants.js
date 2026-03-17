@@ -92,60 +92,77 @@ const COLOR_SCALES = {
 };
 
 // Metric display config
+// label values are i18n keys — resolve with I18n.t(config.label) at render time
 const METRIC_CONFIG = {
-  gdp_growth_trend:      { label: 'GDP Growth (%)',        field: 'gdp_real_growth_pct',    format: 'percent1',  legendMin: '-5%', legendMax: '+10%' },
-  political_stability:   { label: 'Political Stability',   field: 'political_stability',    format: 'score',     legendMin: '0', legendMax: '1.0' },
-  investment_risk:       { label: 'Investment Risk',        field: 'investment_risk_score',  format: 'score',     legendMin: 'Low', legendMax: 'High' },
-  military_spending_trend:{ label: 'Military Spend Trend',  field: 'military_spending_trend',format: 'trend',     legendMin: 'Decline', legendMax: 'Growth' },
-  military_spending_pct_gdp:{ label: 'Military Spend (% GDP)', field: 'military_expenditure_pct_gdp', format: 'percent1', legendMin: '0%', legendMax: '6%' },
-  alert_severity:        { label: 'Alert Severity',         field: 'max_alert_severity',     format: 'severity',  legendMin: 'None', legendMax: 'Critical' },
-  composite_power:       { label: 'National Power Index',   field: 'composite_national_power_index', format: 'decimal2', legendMin: '0', legendMax: '100' },
-  energy_independence:   { label: 'Energy Independence',    field: 'energy_independence',    format: 'score',     legendMin: '0', legendMax: '1.0' },
-  trade_openness:        { label: 'Trade Openness (%)',     field: 'trade_openness_pct',     format: 'percent0',  legendMin: '0%', legendMax: '200%' }
+  gdp_growth_trend:      { label: 'metric.gdp_growth_pct',        field: 'gdp_real_growth_pct',    format: 'percent1',  legendMin: '-5%', legendMax: '+10%' },
+  political_stability:   { label: 'metric.political_stability',   field: 'political_stability',    format: 'score',     legendMin: '0', legendMax: '1.0' },
+  investment_risk:       { label: 'metric.investment_risk',        field: 'investment_risk_score',  format: 'score',     legendMin: 'legend.low', legendMax: 'legend.high' },
+  military_spending_trend:{ label: 'metric.military_spend_trend',  field: 'military_spending_trend',format: 'trend',     legendMin: 'legend.decline', legendMax: 'legend.growth' },
+  military_spending_pct_gdp:{ label: 'metric.military_spend_pct_gdp', field: 'military_expenditure_pct_gdp', format: 'percent1', legendMin: '0%', legendMax: '6%' },
+  alert_severity:        { label: 'metric.alert_severity',         field: 'max_alert_severity',     format: 'severity',  legendMin: 'severity.none', legendMax: 'severity.critical' },
+  composite_power:       { label: 'metric.national_power_index',   field: 'composite_national_power_index', format: 'decimal2', legendMin: '0', legendMax: '100' },
+  energy_independence:   { label: 'metric.energy_independence',    field: 'energy_independence',    format: 'score',     legendMin: '0', legendMax: '1.0' },
+  trade_openness:        { label: 'metric.trade_openness_pct',     field: 'trade_openness_pct',     format: 'percent0',  legendMin: '0%', legendMax: '200%' }
 };
 
+// Helper: resolve metric label via I18n
+function getMetricLabel(metricId) {
+  var config = METRIC_CONFIG[metricId];
+  if (!config) return metricId;
+  return I18n.t(config.label);
+}
+
+// Helper: resolve legend label via I18n (passes through raw values like '0%')
+function getLegendLabel(value) {
+  if (!value) return value;
+  if (value.indexOf('.') !== -1 && isNaN(Number(value))) {
+    return I18n.t(value);
+  }
+  return value;
+}
+
 const TREND_LABELS = {
-  strong_growth:    { label: 'Strong Growth',    arrow: '⬆', cssClass: 'trend--strong-growth' },
-  growth:           { label: 'Growth',           arrow: '↗', cssClass: 'trend--growth' },
-  stable:           { label: 'Stable',           arrow: '→', cssClass: 'trend--stable' },
-  decrease:         { label: 'Decrease',         arrow: '↘', cssClass: 'trend--decrease' },
-  strong_decrease:  { label: 'Strong Decrease',  arrow: '⬇', cssClass: 'trend--strong-decrease' }
+  strong_growth:    { label: 'trend.strong_growth',    arrow: '⬆', cssClass: 'trend--strong-growth' },
+  growth:           { label: 'trend.growth',           arrow: '↗', cssClass: 'trend--growth' },
+  stable:           { label: 'trend.stable',           arrow: '→', cssClass: 'trend--stable' },
+  decrease:         { label: 'trend.decrease',         arrow: '↘', cssClass: 'trend--decrease' },
+  strong_decrease:  { label: 'trend.strong_decrease',  arrow: '⬇', cssClass: 'trend--strong-decrease' }
 };
 
 const ALERT_SEVERITY = {
-  critical: { label: 'Critical', color: '#ff1744', numericValue: 3 },
-  warning:  { label: 'Warning',  color: '#ffab40', numericValue: 2 },
-  watch:    { label: 'Watch',    color: '#448aff', numericValue: 1 },
-  none:     { label: 'None',     color: '#2a2a5a', numericValue: 0 }
+  critical: { label: 'severity.critical', color: '#ff1744', numericValue: 3 },
+  warning:  { label: 'severity.warning',  color: '#ffab40', numericValue: 2 },
+  watch:    { label: 'severity.watch',    color: '#448aff', numericValue: 1 },
+  none:     { label: 'severity.none',     color: '#2a2a5a', numericValue: 0 }
 };
 
 const REGIONS = {
-  north_america:       { label: 'North America',       color: '#42a5f5' },
-  latin_america:       { label: 'Latin America',       color: '#66bb6a' },
-  europe:              { label: 'Europe',              color: '#ab47bc' },
-  middle_east:         { label: 'Middle East',         color: '#ffa726' },
-  sub_saharan_africa:  { label: 'Sub-Saharan Africa',  color: '#ef5350' },
-  south_asia:          { label: 'South Asia',          color: '#26c6da' },
-  east_asia:           { label: 'East Asia',           color: '#ec407a' },
-  southeast_asia:      { label: 'Southeast Asia',      color: '#26a69a' },
-  central_asia:        { label: 'Central Asia',        color: '#8d6e63' },
-  oceania:             { label: 'Oceania',             color: '#78909c' }
+  north_america:       { label: 'region.north_america',       color: '#42a5f5' },
+  latin_america:       { label: 'region.latin_america',       color: '#66bb6a' },
+  europe:              { label: 'region.europe',              color: '#ab47bc' },
+  middle_east:         { label: 'region.middle_east',         color: '#ffa726' },
+  sub_saharan_africa:  { label: 'region.sub_saharan_africa',  color: '#ef5350' },
+  south_asia:          { label: 'region.south_asia',          color: '#26c6da' },
+  east_asia:           { label: 'region.east_asia',           color: '#ec407a' },
+  southeast_asia:      { label: 'region.southeast_asia',      color: '#26a69a' },
+  central_asia:        { label: 'region.central_asia',        color: '#8d6e63' },
+  oceania:             { label: 'region.oceania',             color: '#78909c' }
 };
 
 const OVERLAY_ENTITIES = {
-  EU:   { label: 'European Union',  color: '#3f51b5', members: ['AUT','BEL','BGR','HRV','CYP','CZE','DNK','EST','FIN','FRA','DEU','GRC','HUN','IRL','ITA','LVA','LTU','LUX','MLT','NLD','POL','PRT','ROU','SVK','SVN','ESP','SWE'] },
-  NATO: { label: 'NATO',            color: '#1565c0', members: ['USA','GBR','FRA','DEU','CAN','ITA','ESP','TUR','POL','NLD','BEL','NOR','CZE','GRC','PRT','HUN','BGR','ROU','HRV','SVK','SVN','ALB','MNE','MKD','FIN','SWE','ISL','DNK','LUX','LVA','LTU','EST'] },
-  BRICS:{ label: 'BRICS',           color: '#e65100', members: ['BRA','RUS','IND','CHN','ZAF','IRN','EGY','ETH','SAU','ARE'] },
-  ASEAN:{ label: 'ASEAN',           color: '#00838f', members: ['IDN','THA','MYS','SGP','PHL','VNM','MMR','KHM','LAO','BRN'] },
-  OPEC: { label: 'OPEC',            color: '#4e342e', members: ['SAU','IRN','IRQ','KWT','ARE','VEN','NGA','AGO','LBY','DZA','COG','GNQ','GAB'] },
-  G7:   { label: 'G7',              color: '#7b1fa2', members: ['USA','GBR','FRA','DEU','JPN','ITA','CAN'] },
-  G20:  { label: 'G20',             color: '#c62828', members: ['USA','GBR','FRA','DEU','JPN','ITA','CAN','AUS','BRA','ARG','CHN','IND','IDN','KOR','MEX','RUS','SAU','ZAF','TUR','ARE'] }
+  EU:   { label: 'overlay.eu',    color: '#3f51b5', members: ['AUT','BEL','BGR','HRV','CYP','CZE','DNK','EST','FIN','FRA','DEU','GRC','HUN','IRL','ITA','LVA','LTU','LUX','MLT','NLD','POL','PRT','ROU','SVK','SVN','ESP','SWE'] },
+  NATO: { label: 'overlay.nato',  color: '#1565c0', members: ['USA','GBR','FRA','DEU','CAN','ITA','ESP','TUR','POL','NLD','BEL','NOR','CZE','GRC','PRT','HUN','BGR','ROU','HRV','SVK','SVN','ALB','MNE','MKD','FIN','SWE','ISL','DNK','LUX','LVA','LTU','EST'] },
+  BRICS:{ label: 'overlay.brics', color: '#e65100', members: ['BRA','RUS','IND','CHN','ZAF','IRN','EGY','ETH','SAU','ARE'] },
+  ASEAN:{ label: 'overlay.asean', color: '#00838f', members: ['IDN','THA','MYS','SGP','PHL','VNM','MMR','KHM','LAO','BRN'] },
+  OPEC: { label: 'overlay.opec',  color: '#4e342e', members: ['SAU','IRN','IRQ','KWT','ARE','VEN','NGA','AGO','LBY','DZA','COG','GNQ','GAB'] },
+  G7:   { label: 'overlay.g7',    color: '#7b1fa2', members: ['USA','GBR','FRA','DEU','JPN','ITA','CAN'] },
+  G20:  { label: 'overlay.g20',   color: '#c62828', members: ['USA','GBR','FRA','DEU','JPN','ITA','CAN','AUS','BRA','ARG','CHN','IND','IDN','KOR','MEX','RUS','SAU','ZAF','TUR','ARE'] }
 };
 
 const TIER_CONFIG = {
-  1: { label: 'Tier 1 — Major', color: '#e8e8f0' },
-  2: { label: 'Tier 2 — Regional', color: '#9898b8' },
-  3: { label: 'Tier 3 — Frontier', color: '#666690' }
+  1: { label: 'tier.1', color: '#e8e8f0' },
+  2: { label: 'tier.2', color: '#9898b8' },
+  3: { label: 'tier.3', color: '#666690' }
 };
 
 // Helper: 3-stop color interpolation

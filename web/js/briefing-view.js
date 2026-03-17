@@ -42,7 +42,7 @@ var BriefingView = (function() {
     if (!dateStr) return '';
     try {
       var d = new Date(dateStr);
-      return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      return d.toLocaleDateString(I18n.getLocale(), { year: 'numeric', month: 'long', day: 'numeric' });
     } catch (e) {
       return dateStr;
     }
@@ -115,7 +115,7 @@ var BriefingView = (function() {
     if (!data.market_context) return html;
     var mc = data.market_context;
     if (typeof mc === 'string') {
-      html += '<div class="briefing-section"><h3>Market Context</h3><p>' + esc(mc) + '</p></div>';
+      html += '<div class="briefing-section"><h3>' + I18n.t('briefing.market_context') + '</h3><p>' + esc(mc) + '</p></div>';
     } else if (mc.oil_brent_usd || mc.gold_usd || mc.eur_usd || mc.us_10y_yield || mc.dxy_index) {
       html += '<div class="market-strip">';
       if (mc.oil_brent_usd) html += marketChip('Brent', '$' + mc.oil_brent_usd, mc.oil_change_pct);
@@ -125,7 +125,7 @@ var BriefingView = (function() {
       if (mc.dxy_index) html += marketChip('DXY', mc.dxy_index.toFixed(1), mc.dxy_change_pct);
       html += '</div>';
     } else if (mc.summary || mc.notable_moves) {
-      html += '<div class="briefing-section"><h3>Market Context</h3>';
+      html += '<div class="briefing-section"><h3>' + I18n.t('briefing.market_context') + '</h3>';
       if (mc.summary) html += '<p>' + esc(mc.summary) + '</p>';
       if (mc.notable_moves && mc.notable_moves.length) {
         html += '<div class="market-strip">';
@@ -165,7 +165,7 @@ var BriefingView = (function() {
   function renderTopStories(data) {
     var html = '';
     if (!data.top_stories || !data.top_stories.length) return html;
-    html += '<div class="briefing-section"><h3>Top Stories</h3>';
+    html += '<div class="briefing-section"><h3>' + I18n.t('briefing.top_stories') + '</h3>';
     data.top_stories.forEach(function(story, i) {
       var sevClass = story.severity ? 'alert-badge--' + story.severity : '';
       html += '<div class="story-card">';
@@ -185,7 +185,7 @@ var BriefingView = (function() {
       }
       var investorNote = story.investor_action || story.investor_impact;
       if (investorNote) {
-        html += '<div class="story-card__action"><strong>Investor action:</strong> ' + esc(investorNote) + '</div>';
+        html += '<div class="story-card__action"><strong>' + I18n.t('briefing.investor_action') + '</strong> ' + esc(investorNote) + '</div>';
       }
       html += '</div>';
     });
@@ -196,11 +196,11 @@ var BriefingView = (function() {
   function renderRegionalRoundup(data) {
     var html = '';
     if (!data.regional_summaries) return html;
-    html += '<div class="briefing-section"><h3>Regional Roundup</h3>';
+    html += '<div class="briefing-section"><h3>' + I18n.t('briefing.regional_roundup') + '</h3>';
     var regions = Object.keys(data.regional_summaries);
     html += '<div class="region-tabs" id="region-tabs">';
     regions.forEach(function(r, i) {
-      var label = (typeof REGIONS !== 'undefined' && REGIONS[r]) ? REGIONS[r].label : r;
+      var label = (typeof REGIONS !== 'undefined' && REGIONS[r]) ? I18n.t(REGIONS[r].label) : r;
       var cls = i === 0 ? 'region-tab active' : 'region-tab';
       html += '<button class="' + cls + '" data-region="' + slugify(r) + '">' + esc(label) + '</button>';
     });
@@ -236,7 +236,7 @@ var BriefingView = (function() {
     var html = '<div class="article">';
 
     // Back link
-    html += '<a href="#briefing" class="article__back">&larr; Back to Stories</a>';
+    html += '<a href="#briefing" class="article__back">' + I18n.t('briefing.back_to_stories') + '</a>';
 
     // Meta badges
     html += '<div class="article__meta">';
@@ -260,7 +260,7 @@ var BriefingView = (function() {
     html += '<div class="article__byline">';
     html += '<span>' + formatDate(art.published_at) + '</span>';
     if (art.ai_generated) {
-      html += '<span class="article__ai-badge">AI-Generated</span>';
+      html += '<span class="article__ai-badge">' + I18n.t('briefing.ai_generated') + '</span>';
     }
     html += '</div>';
 
@@ -291,7 +291,7 @@ var BriefingView = (function() {
     // Countries
     if (art.countries_affected && art.countries_affected.length) {
       html += '<div class="article__countries">';
-      html += '<span class="article__countries-label">Countries:</span> ';
+      html += '<span class="article__countries-label">' + I18n.t('briefing.countries') + '</span> ';
       art.countries_affected.forEach(function(c) {
         html += '<span class="panel-sources__tag">' + esc(c) + '</span>';
       });
@@ -301,14 +301,14 @@ var BriefingView = (function() {
     // Sources
     if (art.sources && art.sources.length) {
       html += '<div class="article__sources">';
-      html += '<h3>Sources</h3><ul>';
+      html += '<h3>' + I18n.t('briefing.sources') + '</h3><ul>';
       art.sources.forEach(function(src) {
         if (src.url) {
           html += '<li><a href="' + esc(src.url) + '" target="_blank" rel="noopener noreferrer">' + esc(src.name) + '</a>';
         } else {
           html += '<li>' + esc(src.name);
         }
-        if (src.accessed) html += ' <span class="article__source-date">(accessed ' + esc(src.accessed) + ')</span>';
+        if (src.accessed) html += ' <span class="article__source-date">(' + I18n.t('briefing.accessed') + ' ' + esc(src.accessed) + ')</span>';
         html += '</li>';
       });
       html += '</ul></div>';
@@ -353,7 +353,7 @@ var BriefingView = (function() {
           renderArticle(article);
           lastMode = params.articleId;
         } catch (err) {
-          containerEl.innerHTML = '<div class="error-card"><h3 class="error-card__title">Article not found</h3><p>This article could not be loaded.</p><a href="#briefing">&larr; Back to Stories</a></div>';
+          containerEl.innerHTML = '<div class="error-card"><h3 class="error-card__title">' + I18n.t('briefing.article_not_found') + '</h3><p>' + I18n.t('briefing.article_load_error') + '</p><a href="#briefing">' + I18n.t('briefing.back_to_stories') + '</a></div>';
         }
       } else {
         // Listing mode
@@ -389,7 +389,7 @@ var BriefingView = (function() {
           if (briefingData) {
             renderListing(null, briefingData);
           } else {
-            containerEl.innerHTML = '<div class="error-card"><h3 class="error-card__title">Stories unavailable</h3><p>Daily stories have not been generated yet.</p></div>';
+            containerEl.innerHTML = '<div class="error-card"><h3 class="error-card__title">' + I18n.t('briefing.stories_unavailable') + '</h3><p>' + I18n.t('briefing.stories_not_generated') + '</p></div>';
           }
         }
         lastMode = 'listing';

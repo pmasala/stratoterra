@@ -22,32 +22,32 @@ var RelationExplorer = (function() {
 
   function render() {
     var html = '<div class="relation-explorer">';
-    html += '<h2>Relation Explorer</h2>';
+    html += '<h2>' + I18n.t('relations.title') + '</h2>';
 
     // Mode selector — hidden in panel mode; replaced by back button when in bilateral mode
     if (!panelMode) {
       html += '<div class="compare-mode-toggle">';
-      html += '<button class="layer-tab' + (currentMode === 'network' ? ' active' : '') + '" data-mode="network">Network Graph</button>';
-      html += '<button class="layer-tab' + (currentMode === 'bilateral' ? ' active' : '') + '" data-mode="bilateral">Bilateral Detail</button>';
+      html += '<button class="layer-tab' + (currentMode === 'network' ? ' active' : '') + '" data-mode="network">' + I18n.t('relations.network_graph') + '</button>';
+      html += '<button class="layer-tab' + (currentMode === 'bilateral' ? ' active' : '') + '" data-mode="bilateral">' + I18n.t('relations.bilateral_detail') + '</button>';
       html += '</div>';
     } else if (panelMode && currentMode === 'bilateral') {
-      html += '<button id="rel-back-btn" class="layer-tab" style="margin-bottom:12px">← Network</button>';
+      html += '<button id="rel-back-btn" class="layer-tab" style="margin-bottom:12px">' + I18n.t('relations.back_network') + '</button>';
     }
 
     // Country/Pair selector
     html += '<div class="relation-selector">';
     if (currentMode === 'network') {
-      html += '<label>Center country: </label>';
+      html += '<label>' + I18n.t('relations.center_country') + '</label>';
       html += '<select id="relation-country-select" class="alert-filter-select">';
-      html += '<option value="">Select...</option>';
+      html += '<option value="">' + I18n.t('relations.select') + '</option>';
       DataLoader.getSummary().filter(function(c) { return c.tier <= 2; }).forEach(function(c) {
         html += '<option value="' + c.code + '"' + (currentCountry === c.code ? ' selected' : '') + '>' + c.name + '</option>';
       });
       html += '</select>';
     } else {
-      html += '<label>Select pair: </label>';
+      html += '<label>' + I18n.t('relations.select_pair') + '</label>';
       html += '<select id="relation-pair-select" class="alert-filter-select">';
-      html += '<option value="">Select...</option>';
+      html += '<option value="">' + I18n.t('relations.select') + '</option>';
       if (relationIndex && relationIndex.pairs) {
         relationIndex.pairs.forEach(function(p) {
           var pair = p.pair || (p.country_a + '_' + p.country_b);
@@ -65,7 +65,7 @@ var RelationExplorer = (function() {
     } else if (currentMode === 'bilateral' && currentPair) {
       html += '<div id="bilateral-detail" class="panel-loading"><div class="skeleton" style="width:60%;height:20px;margin:12px auto"></div></div>';
     } else {
-      html += '<div class="panel-no-data"><p>Select a country or pair to explore relationships.</p></div>';
+      html += '<div class="panel-no-data"><p>' + I18n.t('relations.no_selection') + '</p></div>';
     }
     html += '</div>';
     html += '</div>';
@@ -84,7 +84,7 @@ var RelationExplorer = (function() {
     var graphEl = document.getElementById('network-graph');
     if (!graphEl || !currentCountry) return;
     if (typeof d3 === 'undefined') {
-      graphEl.innerHTML = '<div class="error-card"><p>D3.js not loaded.</p></div>';
+      graphEl.innerHTML = '<div class="error-card"><p>' + I18n.t('relations.d3_not_loaded') + '</p></div>';
       return;
     }
 
@@ -120,7 +120,7 @@ var RelationExplorer = (function() {
 
     // If no links, show connected countries from summary
     if (links.length === 0) {
-      graphEl.innerHTML = '<div class="panel-no-data"><p>No relation data available for ' + currentCountry + '. Relations will appear after pipeline generates bilateral data.</p></div>';
+      graphEl.innerHTML = '<div class="panel-no-data"><p>' + I18n.t('relations.no_data', {country: currentCountry}) + '</p></div>';
       return;
     }
 
@@ -202,7 +202,7 @@ var RelationExplorer = (function() {
       var data = await DataLoader.getRelation(parts[0], parts[1]);
       renderBilateral(detailEl, data);
     } catch (err) {
-      detailEl.innerHTML = '<div class="error-card"><p>Bilateral detail not available for ' + currentPair.replace('_', ' ↔ ') + '.</p></div>';
+      detailEl.innerHTML = '<div class="error-card"><p>' + I18n.t('relations.bilateral_unavailable', {pair: currentPair.replace('_', ' ↔ ')}) + '</p></div>';
     }
   }
 
@@ -214,7 +214,7 @@ var RelationExplorer = (function() {
       var d = data[dim];
       if (!d) return;
       html += '<div class="factor-card" style="margin-bottom:12px">';
-      html += '<div class="factor-card__header"><span class="factor-card__label" style="text-transform:capitalize">' + dim + '</span>';
+      html += '<div class="factor-card__header"><span class="factor-card__label">' + I18n.t('relations.dim_' + dim) + '</span>';
       if (d.score != null) {
         var color = d.score >= 0.7 ? 'var(--relation-allied)' : d.score >= 0.4 ? 'var(--relation-neutral)' : 'var(--relation-hostile)';
         html += '<span class="data-value" style="color:' + color + '">' + d.score.toFixed(2) + '</span>';
@@ -229,7 +229,7 @@ var RelationExplorer = (function() {
 
     if (data.composite_score != null) {
       var compColor = data.composite_score >= 0.7 ? 'var(--relation-allied)' : data.composite_score >= 0.4 ? 'var(--relation-neutral)' : 'var(--relation-hostile)';
-      html += '<div class="factor-card" style="background:var(--bg-secondary)"><div class="factor-card__header"><span class="factor-card__label">Composite Score</span></div>';
+      html += '<div class="factor-card" style="background:var(--bg-secondary)"><div class="factor-card__header"><span class="factor-card__label">' + I18n.t('panel.composite_score') + '</span></div>';
       html += '<div class="factor-card__value" style="color:' + compColor + '">' + data.composite_score.toFixed(2) + '</div>';
       if (data.relationship_type) html += '<p style="font-size:12px;color:var(--text-secondary);margin-top:4px;text-transform:capitalize">' + data.relationship_type + '</p>';
       html += '</div>';

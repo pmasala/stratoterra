@@ -50,9 +50,9 @@ var MapView = (function() {
 
   function buildTooltipHTML(code) {
     var summary = summaryLookup[code];
-    if (!summary) return '<div class="country-tooltip"><div class="country-tooltip__name">' + code + '</div><div style="color:var(--text-muted)">No data available</div></div>';
+    if (!summary) return '<div class="country-tooltip"><div class="country-tooltip__name">' + code + '</div><div style="color:var(--text-muted)">' + I18n.t('tooltip.no_data') + '</div></div>';
 
-    var metricLabel = METRIC_CONFIG[currentMetric] ? METRIC_CONFIG[currentMetric].label : currentMetric;
+    var metricLabel = METRIC_CONFIG[currentMetric] ? I18n.t(METRIC_CONFIG[currentMetric].label) : currentMetric;
     var metricValue = Utils.getMetricValue(summary, currentMetric);
     var formattedValue = Utils.formatMetricValue(metricValue, currentMetric);
 
@@ -61,14 +61,14 @@ var MapView = (function() {
     html += '<div class="country-tooltip__metric"><span class="country-tooltip__metric-label">' + metricLabel + '</span><span class="country-tooltip__metric-value">' + formattedValue + '</span></div>';
 
     if (summary.gdp_nominal_usd) {
-      html += '<div class="country-tooltip__metric"><span class="country-tooltip__metric-label">GDP</span><span class="country-tooltip__metric-value">' + Utils.formatCurrency(summary.gdp_nominal_usd) + '</span></div>';
+      html += '<div class="country-tooltip__metric"><span class="country-tooltip__metric-label">' + I18n.t('tooltip.gdp') + '</span><span class="country-tooltip__metric-value">' + Utils.formatCurrency(summary.gdp_nominal_usd) + '</span></div>';
     }
     if (summary.investment_risk_score != null) {
-      html += '<div class="country-tooltip__metric"><span class="country-tooltip__metric-label">Risk</span><span class="country-tooltip__metric-value">' + Utils.formatScore(summary.investment_risk_score) + '</span></div>';
+      html += '<div class="country-tooltip__metric"><span class="country-tooltip__metric-label">' + I18n.t('tooltip.risk') + '</span><span class="country-tooltip__metric-value">' + Utils.formatScore(summary.investment_risk_score) + '</span></div>';
     }
     if (summary.alert_count > 0) {
       var sevClass = 'alert-badge--' + (summary.max_alert_severity || 'watch');
-      html += '<div style="margin-top:4px"><span class="alert-badge ' + sevClass + '">' + summary.alert_count + ' alert' + (summary.alert_count > 1 ? 's' : '') + '</span></div>';
+      html += '<div style="margin-top:4px"><span class="alert-badge ' + sevClass + '">' + summary.alert_count + ' ' + (summary.alert_count > 1 ? I18n.t('tooltip.alerts') : I18n.t('tooltip.alert')) + '</span></div>';
     }
     html += '</div>';
     return html;
@@ -132,9 +132,9 @@ var MapView = (function() {
       stops.push(COLOR_SCALES[currentMetric](val));
     }
 
-    legendEl.innerHTML = '<div class="color-legend__title">' + config.label + '</div>' +
+    legendEl.innerHTML = '<div class="color-legend__title">' + I18n.t(config.label) + '</div>' +
       '<div class="color-legend__gradient" style="background:linear-gradient(to right,' + stops.join(',') + ')"></div>' +
-      '<div class="color-legend__labels"><span>' + config.legendMin + '</span><span>' + config.legendMax + '</span></div>';
+      '<div class="color-legend__labels"><span>' + I18n.t(config.legendMin) + '</span><span>' + I18n.t(config.legendMax) + '</span></div>';
   }
 
   function applyCriticalBlink() {
