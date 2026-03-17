@@ -1,0 +1,847 @@
+{
+  "country_code": "THA",
+  "country_name": "Thailandia",
+  "tier": 1,
+  "region": "southeast_asia",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 526517658841.684,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 2.54182067735289,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "THA crescita del PIL in calo per i costi elevati di importazione del petrolio ($103/bbl) and global disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 7346.62022142185,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 1.36580540798037,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "THA inflazione in aumento dallo shock petrolifero ($103/bbl). I costi di importazione energetica si trasmettono ai prezzi al consumo. I prezzi alimentari globali sono elevati",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 0.781,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 2.20678307557943,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "THA conto corrente in deterioramento per la bolletta elevata delle importazioni di petrolio at $103/bbl. La dipendenza dalle importazioni energetiche amplia il deficit commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 62.1983655632713,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "THA debito pubblico sostanzialmente stabile. Nessuna pressione fiscale acuta ma l'incertezza globale limita lo spazio fiscale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 236933974075.014,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 1.6,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: BBB+, Moody's: Baa1, Fitch: BBB+",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 2.25,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Thailandia tasso di riferimento sostanzialmente stabile. La banca centrale bilancia le preoccupazioni per la crescita e l'inflazione in un contesto di incertezza globale.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 32.2,
+      "confidence": 0.92,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "THA valuta sostanzialmente stabile rispetto al USD. Il sentiment globale di avversione al rischio crea una lieve pressione al deprezzamento rispetto alle valute rifugio",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "total_exports_usd": {
+      "value": 368824202322.816,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 351173464105.526,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_forecast_2026_pct": {
+      "value": 0.7,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "fdi_inflows_usd": {
+      "value": 14302158846.415,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "THA FDI facing headwinds from indagine Sezione 301 and politica commerciale uncertainty",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 1771064607709,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 33.5,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -2.6,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Thailandia rendimenti obbligazionari in modesto aumento on inflation expectations from shock petrolifero.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 71668011,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": -0.0480210554154485,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 76.412,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.798,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 41.5,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 66.678,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 91.0999984741211,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 4.53787661,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 61.8689338391321,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 33.5,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 90.8672,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 7500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    },
+    "military_expenditure_usd": {
+      "value": 6000000000,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 360850,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 200000,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 744,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 496,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 1.14,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.45,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.683,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_colli_di_bottiglia_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della disruzione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 43.6,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologico + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 50.0
+    },
+    "political_risk_premium_bps": {
+      "value": 185,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia",
+      "previous_value": 110
+    },
+    "market_accessibility_score": {
+      "value": 0.6,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_borsa/200, indice_sviluppo_finanziario, facilita_affari/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.202,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.55,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "THA rischio d'investimento sostanzialmente stabile. Incertezza globale elevata ma nessun fattore scatenante specifico per il paese"
+    },
+    "trade_openness_trend": {
+      "value": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Thailandia apertura commerciale in calo as shock petrolifero disrupts trade patterns. Higher costi di importazione reduce trade volumes. Supply chain rerouting underway but costly.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Thailandia stabilita politica sostanzialmente invariata. Nessuna grande disruzione politica interna questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.62,
+      "reasoning": "THA relationships with US deteriorating from indagine Sezione 301 targeting manufacturing sectors",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [],
+    "update_count": 135,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Thailandia confronts rising energy costs from the blocco di Hormuz and $100+ oil. la crescita del PIL e del 2.5% (declining), con inflazione al 1.4% (rising). La pressione sul conto corrente aumenta as la bolletta delle importazioni energetiche sale. Segnale chiave: Targeted by US indagine Sezione 301s into manufacturing capacity; Affected by ASEAN regional disaster events (floods, storms) Il rischio d'investimento rimane contenuto a 0.202.",
+    "key_changes_this_week": [
+      "Targeted by US indagine Sezione 301s into manufacturing capacity; Affected by ASEAN regional disaster events (floods, storms)",
+      "Thailandia: Esposizione ai colli di bottiglia a 0.683 amid global disruzione marittima",
+      "Inflation in aumento al 1.4%"
+    ],
+    "outlook": "Thailandia's prospettive di crescita sono sotto pressione per in forte aumento importazione energetica costs. Current account deterioration risks debolezza valutaria if the blocco di Hormuz si estende oltre il Q2. Central bank faces a difficile compromesso tra il sostegno alla crescita e il contenimento dell'inflazione importata. Structural energy diversificazione and adeguatezza delle riserve strategiche are key priorita a medio termine.",
+    "investor_implications": "Thailandia equities face headwinds from rising costi degli input and potential compressione dei margini. Rischio d'investimento a 0.202 with valuta sotto pressione from current account deterioration. Favor exporters with potere di prezzo and domestic-demand plays insulated from energy costs. Si raccomanda la copertura valutaria for Thailandia-posizioni denominate in valuta locale.",
+    "data_quality_note": "La qualita dei dati e elevata con 135 punti dati aggiornati in questa esecuzione."
+  },
+  "code": "THA",
+  "name": "Thailandia",
+  "executive_summary": "Thailandia is in political transition with PM Anutin forming a new coalition government on Feb 13. Policy direction under the new government remains to be defined. Tourism recovery is the key growth driver but faces event risk from instabilita regionale. crescita del PIL moderate. L'impennata del prezzo del petrolio adds import cost pressure.",
+  "key_changes": [
+    "PM Anutin formed new coalition government (Feb 13, moderate)",
+    "Tourism recovery faces event risk from instabilita regionale",
+    "L'impennata del prezzo del petrolio adds import cost pressure",
+    "Political transition period with policy direction unclear"
+  ],
+  "outlook": "Thailandia's near-term trajectory depends on new government policy signals. Tourism season is the primary growth lever -- any travel disruption from regional conflict is a downside risk. BOT rate path may be influenced by energy-driven inflation.",
+  "investor_implications": "Thai tourism and hospitality stocks face mixed signals. SET index may be range-bound during political transition. THB under moderate pressure from importazione energeticas. Monitor new government's economic policy announcements.",
+  "active_alerts": [
+    {
+      "severity": "watch",
+      "title": "Thailandia PM Anutin forms coalition government",
+      "description": "Thailandia's PM Anutin formed a new coalition government on February 13, 2026. This represents a political transition that could affect policy direction. Thailandia's political stability and investment climate are in a period of adjustment under new leadership."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 71668011,
+      "population_growth_pct": -0.048,
+      "life_expectancy": 76.412,
+      "population_total": 71668011,
+      "hdi": 0.798,
+      "median_age": 41.5
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 6.27,
+      "regime_type": "hybrid_regime",
+      "freedom_house_score": 34,
+      "freedom_house_status": "not_free",
+      "corruption_perception_index": 34,
+      "press_freedom_index_rank": 85,
+      "wgi_voice_accountability": -0.45,
+      "wgi_political_stability": -0.28,
+      "wgi_government_effectiveness": 0.17,
+      "wgi_regulatory_quality": 0.16,
+      "wgi_rule_of_law": 0.24,
+      "wgi_control_of_corruption": -0.49,
+      "fragile_states_index": 66.2,
+      "head_of_state_name": "Maha Vajiralongkorn",
+      "head_of_state_title": "King",
+      "head_of_government_name": "Anutin Charnvirakul",
+      "next_national_election_date": "2030-02"
+    },
+    "economy": {
+      "gdp_nominal_usd": 526517658841.684,
+      "gdp_real_growth_pct": 2,
+      "gdp_per_capita_usd": 7346.62022142185,
+      "inflation_cpi_pct": 0.2,
+      "unemployment_rate_pct": 1,
+      "current_account_pct_gdp": 2.21,
+      "govt_debt_pct_gdp": 64.9,
+      "fx_reserves_usd": 236933974075.014,
+      "sovereign_credit_rating": "S&P: BBB+, Moody's: Baa1, Fitch: BBB+",
+      "central_bank_policy_rate_pct": 2.25,
+      "total_exports_usd": 369187850950.796,
+      "total_imports_usd": 349875480199.872,
+      "gdp_growth_forecast_2026_pct": 1.6,
+      "inflation_forecast_2026_pct": 0.7,
+      "exchange_rate_vs_usd": 31.58,
+      "top_export_partners": [
+        {
+          "country": "USA",
+          "pct_of_total": 16.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 12.2
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 8.8
+        },
+        {
+          "country": "AUS",
+          "pct_of_total": 4.5
+        },
+        {
+          "country": "MYS",
+          "pct_of_total": 4.0
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 25.0
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 10.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "MYS",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 4.8
+        }
+      ]
+    },
+    "military": {
+      "military_spending_usd": 7500000000,
+      "military_expenditure_usd": 6000000000,
+      "active_military_personnel": 360850,
+      "reserve_military_personnel": 200000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.5,
+      "energy_independence_index": 0.45,
+      "supply_chain_chokepoint_exposure": 0.683,
+      "composite_national_power_index": 43.6,
+      "political_risk_premium_bps": 185,
+      "market_accessibility_score": 0.6,
+      "overall_investment_risk_score": 0.202
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "USA",
+          "pct_of_total": 16.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 12.2
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 8.8
+        },
+        {
+          "country": "AUS",
+          "pct_of_total": 4.5
+        },
+        {
+          "country": "MYS",
+          "pct_of_total": 4.0
+        }
+      ],
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 25.0
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 10.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "MYS",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 4.8
+        }
+      ],
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 90.8672,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 136.75,
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "THA apertura commerciale in calo from indagine Sezione 301, dazi Sezione 122, and global disruzione marittima from Hormuz",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 32.2,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 1409.35,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 12811.999999999765,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 206.144811569,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 1602.104877,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 952.9312507,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 1372.48028737,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 153.0311475409836,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.78,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 6.27,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "hybrid_regime",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 34,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "not_free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 34,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 85,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": -0.450371354818344,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -0.280302882194519,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "THA stabilita politica sostanzialmente stabile. Incertezza globale creates pressione di fondo but no fattori scatenanti acuti",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": 0.171705812215805,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": 0.158257782459259,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": 0.244872748851776,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -0.489050775766373,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 66.2,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Maha Vajiralongkorn",
+      "confidence": 0.65,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "King",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Paetongtarn Shinawatra",
+      "confidence": 0.65,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "next_national_election_date": {
+      "value": "2030-02",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "THA relationships with US deteriorating from indagine Sezione 301 targeting manufacturing sectors",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

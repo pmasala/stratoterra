@@ -1,0 +1,997 @@
+{
+  "country_code": "IRN",
+  "country_name": "Iran",
+  "tier": 2,
+  "region": "middle_east",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 475252089215.416,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 3.66312056830718,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "strong_decrease",
+      "trend_confidence": 0.95,
+      "trend_reasoning": "Active war with US/Israel — 6,000+ targets struck, infrastructure destroyed, esportazioni petrolifere halted by Hormuz mining",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 5190.16959024821,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 32.455871402917,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "strong_growth",
+      "trend_confidence": 0.95,
+      "trend_reasoning": "Iperinflazione in accelerazione — war destroying catena di approvvigionamentos, valuta in caduta libera, panic hoarding, import routes severely constrained",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 8.301,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 1.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "strong_decrease",
+      "trend_confidence": 0.94,
+      "trend_reasoning": "Oil export revenue eliminated by Hormuz mining and war. Conto corrente swinging deeply negative. Import costs surging via overland routes",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 35.6,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "strong_growth",
+      "trend_confidence": 0.9,
+      "trend_reasoning": "Iran debito/PIL exploding as GDP collapses and emergency spesa bellica surges. Nominal debt metrics meaningless given crollo della valuta",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 1.1,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: NR, Moody's: NR, Fitch: B+",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "total_exports_usd": {
+      "value": 111928863188.398,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 135497500555.676,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fx_reserves_usd": {
+      "value": 7685456407.40761,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 23.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Iran banca centrale tasso di riferimento irrelevant in war conditions. Monetary policy transmission destroyed.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "fdi_inflows_usd": {
+      "value": 1449111110,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "strong_decrease",
+      "trend_confidence": 0.95,
+      "trend_reasoning": "Iran IDE crollati to zero — guerra attiva zone, sanzioni maximized, all foreign investors exiting",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 1819806794107.97,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 35.9,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -4.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 964542.38,
+      "confidence": 0.7,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "strong_decrease",
+      "trend_confidence": 0.95,
+      "trend_reasoning": "Iranian rial in freefall — war, sanzioni, hyperinflation, fuga di capitali destroying currency value",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "strong_growth",
+      "trend_confidence": 0.9,
+      "trend_reasoning": "Iran titoli di stato effectively untradeable. Default risk near certainty. No functioning bond market during guerra attiva.",
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 28.0,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 180000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 320000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 91567738,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 1.05286922170537,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 77.654,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.799,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 33.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 40.965,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 88.9233339833467,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 6.02542305,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 77.0201263427734,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 35.9,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 79.6309,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_expenditure_usd": {
+      "value": 7900000000,
+      "confidence": 0.75,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 610000,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 350000,
+      "confidence": 0.75,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 2675,
+        "confidence": 0.78,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 551,
+        "confidence": 0.78,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 25,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.65,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 1.66,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "conflict_status": {
+      "value": "active_war",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search+agent_03_crossref",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.75,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, alimentari, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 1.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_interna / consumo_energetico_interno, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.904,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_punti_strozzatura_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della perturbazione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 38.8,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 48.1
+    },
+    "political_risk_premium_bps": {
+      "value": 4965,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia",
+      "previous_value": 870
+    },
+    "market_accessibility_score": {
+      "value": 0.05,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato/200, indice_sviluppo_finanziario, facilita_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.791,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.95,
+      "trend": "strong_growth",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "Iran rischio d'investimento al massimo — guerra attiva zone, sanzioni, hyperinflation, crollo della valuta, distruzione delle infrastrutture"
+    },
+    "trade_openness_trend": {
+      "value": "strong_decrease",
+      "confidence": 0.82,
+      "reasoning": "Iran apertura commerciale in crollo as perturbazione di Hormuz blocks commercio marittimo. Both exports and imports severely disrupted. Overland routes insufficient to replace sea trade.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "strong_decrease",
+      "confidence": 0.95,
+      "reasoning": "Iran stabilita politica in crollo. Former Supreme Leader killed. New Supreme Leader Mojtaba Khamenei installed under extreme duress. Active war with foreign powers. 1,348 civilians killed, 17,000+ injured. Regime survival in question.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "strong_decrease",
+      "confidence": 0.95,
+      "reasoning": "Iran relationships collapsing — at war with US/Israel, blocco di Hormuz antagonizing Gulf neighbors, only Russia providing support",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor": "macroeconomic.gdp_nominal_usd",
+        "reason": "Variazione percentuale elevata: 33.3% (soglia: 30%)",
+        "previous_value": 356513000000.0,
+        "new_value": 475252089215.416,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      },
+      {
+        "factor_path": "economy.macroeconomic.total_exports_usd",
+        "value": 111928863188.398,
+        "reason": "Variazione 276.5% superiore a 3× typical (5.0%) = 15.0%; Contesto evento: IRN ha trigger di eventi attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      },
+      {
+        "factor_path": "economy.macroeconomic.total_imports_usd",
+        "value": 135497500555.676,
+        "reason": "Variazione 674.1% superiore a 3× typical (5.0%) = 15.0%; Contesto evento: IRN ha trigger di eventi attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      },
+      {
+        "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
+        "value": 32.455871402917,
+        "reason": "Variazione assoluta 9.9441 superiore a 3× typical (0.5) = 1.5; Fonte alternativa (IMF WEO) discorde: 42.4 vs primary 32.455871402917 (23.5% diff); Contesto evento: IRN ha trigger di eventi attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      },
+      {
+        "factor_path": "economy.macroeconomic.current_account_balance_pct_gdp",
+        "value": 1.8,
+        "reason": "Variazione assoluta 9.5900 superiore a 3× typical (1.0) = 3.0; Contesto evento: IRN ha trigger di eventi attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 125,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Iran is under active military assault from US and Israeli forces, now in its third week. La crescita del PIL era al 3.7% pre-war but the trend is in forte calo as distruzione delle infrastrutture, esportazione petrolifera disruption, and catena di approvvigionamento collapse accelerate economic contraction. Iran: Maximum rischio d'investimento at 0.791. Il rischio d'investimento complessivo e molto elevato at 0.791 — estrema cautela consigliata.",
+    "key_changes_this_week": [
+      "US-Israel war on Iran enters day 16 with continued strikes on Isfahan: The United States and Israel carried out attacks on Iran's Isfahan city, killing at least 15 people, as the...",
+      "US bombs Iran's Kharg Island esportazione petrolifera hub, spares oil infrastructure: President Trump announced US Central Command executed 'one of the most powerful bombing raids in the...",
+      "Iran maintains Stretto di blocco di Hormuz; commercial shipping at standstill: Commercial maritime traffic through the Stretto di Hormuz remains effectively at a standstill. Iran's...",
+      "Iran's new supreme leader says Stretto di Hormuz must remain closed; Brent oil hits $100: Iran's new supreme leader declared the Stretto di Hormuz must remain closed, sending Brent...",
+      "Israel running critically low on ballistic missile interceptors: Israel informed the US it is running critically low on ballistic missile interceptors as the Iran conflict rages....",
+      "tendenza della crescita del PIL: in forte calo (3.7%)",
+      "Inflazione in forte aumento al 32.5%"
+    ],
+    "outlook": "Iran's a breve termine trajectory depends entirely on war duration and cessate il fuoco terms. Continued US strikes are destroying military and civilian infrastructure, while the blocco di Hormuz cuts off the country's primary revenue source. Post-war ricostruzione needs will be massive, but sanzioni relief could follow a negotiated settlement.",
+    "investor_implications": "Iranian assets are effectively non investibile during ostilita attive. Rischio d'investimento a 0.791 with 4965 bps political premio per il rischio. Post-war, debito in sofferenza and ricostruzione plays may emerge, but only for investors with high risk tolerance and long horizons.",
+    "data_quality_note": "La qualita dei dati e elevata con 125 dati aggiornati in questa esecuzione.  Fattori segnalati: macroeconomic.gdp_nominal_usd, economy.macroeconomic.total_exports_usd, economy.macroeconomic.total_imports_usd.  Le condizioni di conflitto attivo rendono i dati economici in tempo reale inaffidabili; il deterioramento effettivo probabilmente supera i dati riportati."
+  },
+  "code": "IRN",
+  "name": "Iran",
+  "executive_summary": "Iran is in the most severe crisis since the 1979 revolution. US-Israeli Operation Epic Fury struck 1,000+ targets on Feb 28, killing Supreme Leader Khamenei. IRGC retaliated against 27 US bases and Gulf states on Mar 1, closing the Stretto di Hormuz. The economy faces collapse: GDP strong_decrease, inflazione al 42.4% approaching hyperinflation, valuta in caduta libera, trade completely disrupted. Political succession crisis with no clear heir during 40-day mourning. Iran is effectively non investibile across all asset classes.",
+  "key_changes": [
+    "US-Israeli strikes hit 1,000+ targets; Supreme Leader Khamenei killed (Feb 28, transformative)",
+    "IRGC retaliated against 27 US bases and Gulf states; Stretto di Hormuz closed (Mar 1, transformative)",
+    "Succession crisis with no clear heir; IRGC consolidating control during mourning period",
+    "Inflazione al 42.4% approaching hyperinflation threshold; crollo della valuta accelerating",
+    "Strong_decrease trends across GDP, trade, FDI, conto corrente, stabilita politica",
+    "Nuclear infrastructure targeted in strikes"
+  ],
+  "outlook": "Iran faces state collapse risk in the near-to-medium term. IRGC control may stabilize security apparatus but cannot address economic collapse. Succession outcome (hardliner vs pragmatist) will determine whether Iran escalates further or seeks negotiated de-escalation. chiusura di Hormuz duration is the key variable for global energy markets. No diplomatic resolution visible in the breve termine.",
+  "investor_implications": "Iran is completely non investibile. All existing exposures face total loss risk. Secondary sanzioni apply to any entity transacting with Iran. The primary investment implication is the chiusura di Hormuz's impact on global energy prices and Gulf state sovereigns. Iran crisis duration is the single most important variable for global commodity markets in Q1-Q2 2026.",
+  "active_alerts": [
+    {
+      "severity": "critical",
+      "title": "Iran under massive US-Israeli military strikes; Supreme Leader Khamenei killed",
+      "description": "US and Israel launched joint Operation Epic Fury on Feb 28, striking 1,000+ targets in Iran. Supreme Leader Khamenei was killed. Iran retaliated with strikes on 27 US bases and Gulf Arab states. IRGC consolidating control during 40-day mourning period. Succession crisis with no clear heir. Active military conflict continues with no cessate il fuoco in sight. Le condizioni persistono e potrebbero peggiorare as IRGC pledges sustained retaliation campaign."
+    },
+    {
+      "severity": "critical",
+      "title": "Iran economic collapse trajectory: strong_decrease across GDP, trade, FDI, conto corrente",
+      "description": "Iran shows strong_decrease trends in 8 of 11 tracked factors: crescita del PIL (strong_decrease), conto corrente (strong_decrease), stabilita politica (strong_decrease at -1.69), apertura commerciale (strong_decrease), FDI (strong_decrease), exchange rate (strong_decrease), rischio d'investimento (strong_growth), and relationship health (strong_decrease). Inflazione al 42.4% with strong_growth trend approaching hyperinflation. Iran is effectively non investibile."
+    },
+    {
+      "severity": "warning",
+      "title": "Iran inflazione al 42.4% and rising sharply; approaching hyperinflation territory",
+      "description": "Iran CPI inflazione al 42.4% with strong_growth trend. Currency collapse, sanzioni, military conflict, and chiusura di Hormuz driving prices. Approaching the 50% hyperinflation threshold. Le condizioni persistonoing and worsening."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 91567738,
+      "population_growth_pct": 1.053,
+      "life_expectancy": 77.654,
+      "population_total": 91567738,
+      "hdi": 0.799,
+      "median_age": 33.8
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": true,
+      "sanctions": [
+        {
+          "imposing_entity": "USA",
+          "type": "comprehensive",
+          "sectors_affected": [
+            "financial",
+            "energy",
+            "trade",
+            "military",
+            "nuclear"
+          ],
+          "since_date": "1979",
+          "severity_score": 0.98
+        },
+        {
+          "imposing_entity": "EU",
+          "type": "comprehensive",
+          "sectors_affected": [
+            "financial",
+            "energy",
+            "nuclear",
+            "trade"
+          ],
+          "since_date": "2012",
+          "severity_score": 0.9
+        },
+        {
+          "imposing_entity": "UN",
+          "type": "targeted",
+          "sectors_affected": [
+            "nuclear",
+            "military",
+            "financial"
+          ],
+          "since_date": "2006",
+          "severity_score": 0.8
+        }
+      ],
+      "democracy_index": 1.96,
+      "regime_type": "authoritarian",
+      "freedom_house_score": 11,
+      "freedom_house_status": "not_free",
+      "corruption_perception_index": 23,
+      "press_freedom_index_rank": 176,
+      "wgi_voice_accountability": -1.45,
+      "wgi_political_stability": -1.69,
+      "wgi_government_effectiveness": -1.02,
+      "wgi_regulatory_quality": -1.69,
+      "wgi_rule_of_law": -1.06,
+      "wgi_control_of_corruption": -1.23,
+      "fragile_states_index": 82.9,
+      "head_of_state_name": "Masoud Pezeshkian",
+      "head_of_state_title": "President",
+      "head_of_state": "VACANT (Supreme Leader Ali Khamenei killed Feb 28)",
+      "leadership_transition_risk": "extreme",
+      "civil_unrest_level": "extreme",
+      "head_of_government_name": "Masoud Pezeshkian"
+    },
+    "economy": {
+      "gdp_nominal_usd": 475252089215.416,
+      "gdp_real_growth_pct": 0.6,
+      "gdp_per_capita_usd": 5190.16959024821,
+      "inflation_cpi_pct": 42.4,
+      "unemployment_rate_pct": 9.2,
+      "current_account_pct_gdp": 11.39,
+      "govt_debt_pct_gdp": 35.6,
+      "fx_reserves_usd": 7685456407.40761,
+      "sovereign_credit_rating": "S&P: NR, Moody's: NR, Fitch: B+",
+      "central_bank_policy_rate_pct": 23.0,
+      "total_exports_usd": 29727000000,
+      "total_imports_usd": 17503000000,
+      "top_export_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 26.0,
+          "value_usd": 14600000000
+        },
+        {
+          "country": "IRQ",
+          "pct_of_total": 12.5
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 10.8
+        },
+        {
+          "country": "TUR",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 4.5
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 28.0
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 18.0
+        },
+        {
+          "country": "TUR",
+          "pct_of_total": 12.0
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 3.5
+        }
+      ],
+      "sovereign_bond_yield_10yr_pct": 28.0,
+      "equity_index_level": 2100000,
+      "stock_market_cap_usd": 180000000000,
+      "banking_sector_assets_usd": 320000000000
+    },
+    "military": {
+      "military_expenditure_usd": 7900000000,
+      "active_military_personnel": 610000,
+      "reserve_military_personnel": 350000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.75,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.904,
+      "composite_national_power_index": 38.8,
+      "political_risk_premium_bps": 4965,
+      "market_accessibility_score": 0.05,
+      "overall_investment_risk_score": 0.791
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 26.0,
+          "value_usd": 14600000000
+        },
+        {
+          "country": "IRQ",
+          "pct_of_total": 12.5
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 10.8
+        },
+        {
+          "country": "TUR",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 4.5
+        }
+      ],
+      "confidence": 0.72,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 28.0
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 18.0
+        },
+        {
+          "country": "TUR",
+          "pct_of_total": 12.0
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 3.5
+        }
+      ],
+      "confidence": 0.68,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 79.6309,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 52.06,
+      "trend": "strong_decrease",
+      "trend_confidence": 0.92,
+      "trend_reasoning": "Iran apertura commerciale in crollo — blocco di Hormuz and war destroying all canali commerciali. Only limited overland routes to Iraq/Turkey/Pakistan remain",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "energy_coal_production_mt": {
+      "value": 1971.0550000000096,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 384.931381533,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 9315.552448,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 9852.843534,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 1970.347504885,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 3976.5245901639346,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": true,
+      "confidence": 0.95,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "OFAC/UN/EU/WebSearch",
+      "run_id": "2026-W11"
+    },
+    "sanctions": {
+      "value": [
+        {
+          "imposing_entity": "USA",
+          "type": "comprehensive",
+          "sectors_affected": [
+            "financial",
+            "energy",
+            "trade",
+            "military",
+            "nuclear"
+          ],
+          "since_date": "1979",
+          "severity_score": 0.98
+        },
+        {
+          "imposing_entity": "EU",
+          "type": "comprehensive",
+          "sectors_affected": [
+            "financial",
+            "energy",
+            "nuclear",
+            "trade"
+          ],
+          "since_date": "2012",
+          "severity_score": 0.9
+        },
+        {
+          "imposing_entity": "UN",
+          "type": "targeted",
+          "sectors_affected": [
+            "nuclear",
+            "military",
+            "financial"
+          ],
+          "since_date": "2006",
+          "severity_score": 0.8
+        }
+      ],
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "democracy_index": {
+      "value": 1.96,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "theocratic republic under interim emergency governance",
+      "confidence": 0.82,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
+    },
+    "freedom_house_score": {
+      "value": 11,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "not_free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 23,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 176,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": -1.45358419418335,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -1.6941009759903,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "strong_decrease",
+      "trend_confidence": 0.95,
+      "trend_reasoning": "Iran stabilita politica in caduta libera — Supreme Leader Khamenei killed Feb 28, Mojtaba Khamenei installed as successor, guerra attiva with US/Israel, defiant chiusura di Hormuz stance",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": -1.02239692211151,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": -1.68747353553772,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": -1.06095492839813,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -1.23189043998718,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 82.9,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Mojtaba Khamenei",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": "Interim Leadership Council (Supreme Leader vacancy)",
+    "leadership_transition_risk": {
+      "value": "extreme",
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state": {
+      "value": "VACANT (Supreme Leader Ali Khamenei killed Feb 28)",
+      "confidence": 0.98,
+      "last_updated": "2026-03-04T17:00:12Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "civil_unrest_level": {
+      "value": "extreme",
+      "confidence": 0.95,
+      "last_updated": "2026-03-04T17:00:12Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Masoud Pezeshkian",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_government_title": "President"
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "strong_decrease",
+      "trend_confidence": 0.95,
+      "trend_reasoning": "Iran relationships collapsing — at war with US/Israel, blocco di Hormuz antagonizing Gulf neighbors, only Russia providing support",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

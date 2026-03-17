@@ -1,0 +1,910 @@
+{
+  "country_code": "AUS",
+  "country_name": "Australia",
+  "tier": 1,
+  "region": "oceania",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 1757022451652.83,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 1.37340773365975,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "AUS crescita del PIL sostanzialmente stabile amid incertezza globalee. Shock petrolifero e perturbazione commerciale create modest venti contrari",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 64603.9856308464,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 3.1616142830575,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "AUS inflazione sostanzialmente stabile con modesta upward pressure da globale oil prezzi e perturbazione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 4.09,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": -1.97811216711747,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "AUS conto corrente sostanzialmente stabile. Globale perturbazione commerciale creates mixed impatti depending su export composition",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 57.8834285733848,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "AUS debito pubblico sostanzialmente stabile. No acute fiscal pressure ma incertezza globalee limits fiscal space",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 60404058269.2777,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 2.1,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 4.35,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Australia tasso di riferimento sostanzialmente stabile. Banca centrale balancing crescita e inflazione preoccupazioni amid incertezza globalee.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 1.4197,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "AUS currency sostanzialmente stabile vs USD. Globale sentimento di avversione al rischio creates mild depreciation pressure contro bene rifugio currencies",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 5.0,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Australia rendimenti obbligazionari sostanzialmente stabile.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "equity_index_level": {
+      "value": 8617.1,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11"
+    },
+    "total_exports_usd": {
+      "value": 432605705549.386,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 395749225409.455,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_forecast_2026_pct": {
+      "value": 3,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -0.5,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
+    },
+    "fdi_inflows_usd": {
+      "value": 53393088476.4107,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "AUS FDI sostanzialmente stabile con modesta caution da globale sentimento di avversione al rischio e perturbazione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 1961194326932.44,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 33.8,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -2.7,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 27196812,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 1.99383715356028,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 83.0512195121951,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.958,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 38.1,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 66.537,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 10.39852047,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 87.6021469990446,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 33.8,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 97.0631,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 32400000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    },
+    "military_expenditure_usd": {
+      "value": 33000000000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 2.0,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "AUS spesa per la difesa in modesto aumento da globalely elevato threat environment e regional security concerns",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "active_military_personnel": {
+      "value": 58910,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 33270,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 46,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 348,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 6,
+        "confidence": 0.88,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "alliance_memberships": {
+      "value": [
+        "Five Eyes",
+        "AUKUS",
+        "ANZUS",
+        "Quad"
+      ],
+      "confidence": 0.98,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.9,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(production/consumption, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.9,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.274,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_da_strozzature_marittime + 0.4 * apertura_commerciale_normalizzata; elevato a causa di Hormuz/Suez perturbazione"
+    },
+    "composite_national_power_index": {
+      "value": 56.8,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 70.7
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito del rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia"
+    },
+    "market_accessibility_score": {
+      "value": 0.9,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato_azionario/200, indice_sviluppo_finanziario, facilita_di_fare_impresa/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.085,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.55,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "AUS rischio di investimento sostanzialmente stabile. Globale uncertainty elevato ma no acute country-specific triggers"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Australia apertura commerciale sostanzialmente stabile. Globale perturbazione commerciale da Hormuz principalmente affects Gulf-dependent routes. Some reindirizzamento commerciale benefits alternative routes.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Australia stabilita politica sostanzialmente invariato. Nessuna perturbazione politica interna significativa questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "AUS relazioni con i partner sostanzialmente stabile. Globale uncertainty creating pressure ma no acute bilateral crises",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor": "macroeconomic.exchange_rate_vs_usd",
+        "reason": "Variazione % elevata: 115.6% (soglia: 15%)",
+        "previous_value": 0.655,
+        "new_value": 1.412,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      },
+      {
+        "factor_path": "economy.macroeconomic.public_debt_pct_gdp",
+        "value": 57.8834285733848,
+        "reason": "Variazione assoluta 6.8834 supera 3× tipico (2.0) = 6.0; Contesto evento: AUS ha trigger di evento attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 143,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Australia rimane relativamente isolata dalla crisi Iran-Hormuz. crescita del PIL e 1.4% (stabile), con inflazione contained at 3.2%. Stabilita politica e stabile. Segnale chiave: Arms deal: [] Rischio di investimento rimane contenuto a 0.085.",
+    "key_changes_this_week": [
+      "Arms deal: []",
+      "David Littleproud resigned poiche National Party leader su March 10, 2026; Former Opposition Leader Sussan Ley resigned Feb 27; by-election in Farrer su May 9; Angus Taylor leads...",
+      "10-year rendimento obbligazionario stabile at 5.0%",
+      "Debito pubblico trajectory: stabile (57.9% di PIL)"
+    ],
+    "outlook": "Australia e positioned a weather la attuale globale turbulence con limited diretta impact. crescita del PIL at 1.4% e resilient, con rischio di investimento contained at 0.085. Secondary effects attraverso prezzi delle materie prime e globale demand slowdown remain la primary risk channel.",
+    "investor_implications": "Australia offers relative bene rifugio characteristics con rischio di investimento at 0.085. Market accessibility score di 0.900 supports portfolio allocation. Obbligazioni sovrane e quality equities provide diversification durante globale turbulence.",
+    "data_quality_note": "La qualita dei dati e alta con 143 punti dati aggiornati in questa esecuzione.  Fattori segnalati: macroeconomic.exchange_rate_vs_usd, economy.macroeconomic.public_debt_pct_gdp."
+  },
+  "code": "AUS",
+  "name": "Australia",
+  "executive_summary": "Australia benefits da commodity exposure e energy self-sufficiency in la attuale crisis environment. LNG esportazioni benefit da Hormuz-driven price surge poiche alternative supply. crescita del PIL at 1.8% con stabile trend. Cina slowdown e la primary crescita risk given Australia's export concentration. AUKUS defense partnership strengthened da regional security deterioration.",
+  "key_changes": [
+    "chiusura di Hormuz benefits Australian LNG poiche alternative supply source (Mar 1)",
+    "Cina slowdown (4.8% a 4.2%) creates demand venti contrari per commodities",
+    "AUKUS alliance relevance increases amid regional security deterioration",
+    "PIL at 1.8% con stabile trend; RBA rate path unchanged"
+  ],
+  "outlook": "Australia benefits poiche un alternative energy supplier durante la Hormuz disruption. LNG e coal esportazioni command premium pricing. Cina demand deceleration e la chiave risk -- iron ore e base metals prezzi potrebbe diverge da energy. RBA probabilmente holds tassi steady amid mixed esterna signals.",
+  "investor_implications": "Australian LNG producers (Woodside, Santos) benefit da Hormuz supply disruption. Iron ore names (BHP, Rio Tinto) face Cina demand venti contrari. AUD potrebbe strengthen su energy export earnings. ASX resources outperform broader market in questo environment.",
+  "active_alerts": [],
+  "layers": {
+    "endowments": {
+      "population": 27196812,
+      "population_growth_pct": 1.99383715356028,
+      "life_expectancy": 83.0512195121951,
+      "population_total": 27196812,
+      "hdi": 0.958,
+      "median_age": 38.1
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 8.85,
+      "regime_type": "full_democracy",
+      "freedom_house_score": 95,
+      "freedom_house_status": "free",
+      "corruption_perception_index": 76,
+      "press_freedom_index_rank": 29,
+      "wgi_voice_accountability": 1.51,
+      "wgi_political_stability": 0.92,
+      "wgi_government_effectiveness": 1.59,
+      "wgi_regulatory_quality": 1.94,
+      "wgi_rule_of_law": 1.52,
+      "wgi_control_of_corruption": 1.78,
+      "head_of_state_name": "Charles III",
+      "head_of_state_title": "King",
+      "head_of_government_name": "Anthony Albanese",
+      "next_national_election_date": "2028-05"
+    },
+    "economy": {
+      "gdp_nominal_usd": 1757022451652.83,
+      "gdp_real_growth_pct": 1.8,
+      "gdp_per_capita_usd": 64603.9856308464,
+      "inflation_cpi_pct": 2.6,
+      "unemployment_rate_pct": 4.2,
+      "current_account_pct_gdp": -1.98,
+      "govt_debt_pct_gdp": 51,
+      "fx_reserves_usd": 60404058269.2777,
+      "sovereign_credit_rating": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "central_bank_policy_rate_pct": 4.35,
+      "total_exports_usd": 425212482436.938,
+      "total_imports_usd": 406080788709.18,
+      "gdp_growth_forecast_2026_pct": 2.1,
+      "inflation_forecast_2026_pct": 3,
+      "exchange_rate_vs_usd": 1.4203,
+      "sovereign_bond_yield_10yr_pct": 4.83,
+      "equity_index_level": 8901.2,
+      "top_export_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 29.0
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 15.5
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 9.2
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 5.8
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 4.5
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 25.0
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 10.5
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "THA",
+          "pct_of_total": 4.2
+        }
+      ],
+      "equity_index_daily_change_pct": -0.5
+    },
+    "military": {
+      "military_spending_usd": 32400000000,
+      "military_expenditure_usd": 33000000000,
+      "military_expenditure_pct_gdp": 2.0,
+      "active_military_personnel": 58910,
+      "reserve_military_personnel": 33270,
+      "alliance_memberships": [
+        "Five Eyes",
+        "AUKUS",
+        "ANZUS",
+        "Quad"
+      ]
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.9,
+      "energy_independence_index": 0.9,
+      "supply_chain_chokepoint_exposure": 0.274,
+      "composite_national_power_index": 56.8,
+      "political_risk_premium_bps": 0,
+      "market_accessibility_score": 0.9,
+      "overall_investment_risk_score": 0.085
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 29.0
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 15.5
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 9.2
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 5.8
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 4.5
+        }
+      ],
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 25.0
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 10.5
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "THA",
+          "pct_of_total": 4.2
+        }
+      ],
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 97.0631,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 47.15,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "AUS apertura commerciale sostanzialmente stabile con modesta downward pressure da Hormuz perturbazione del trasporto marittimo e US tariff escalation",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 1.4197,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 4.95,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 8617.1,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "central_bank_rate": {
+        "value": 3.85,
+        "confidence": 0.88,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 467739.2509999969,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 270.1089075,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 1739.051431,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 5374.054641,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 1145.393442,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 270.3931134012048,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.78,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 8.85,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "full_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 95,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 76,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 29,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": 1.50660192966461,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": 0.91705721616745,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "AUS stabilita politica sostanzialmente stabile. Globale uncertainty creates pressione di fondo ma no acute triggers",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": 1.58987963199615,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": 1.94220554828644,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": 1.52318394184113,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": 1.78120493888855,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_name": {
+      "value": "Charles III",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "King",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Anthony Albanese",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "next_national_election_date": {
+      "value": "2028",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "AUS relazioni con i partner sostanzialmente stabile. Globale uncertainty creating pressure ma no acute bilateral crises",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

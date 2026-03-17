@@ -1,0 +1,963 @@
+{
+  "country_code": "CHN",
+  "country_name": "Cina",
+  "tier": 1,
+  "region": "east_asia",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 18743803170827.2,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 4.9773565917572,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Cina relativamente insulated da Hormuz via Russian pipeline supply e diversified imports. Record $213.6B surplus commerciale in Jan-Feb nonostante 47.5% US tariffs. Five-Year Plan focused su tech self-sufficiency. But Section 301 overcapacity investigation attraverso 21 settori adds venti contrari",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 13303.1481543868,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 0.218128938439177,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Cina inflazione near zero — deflationary pressures da property sector offset da modest oil cost increase. Russian pipeline supply limits costo energetico pass-through",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 4.615,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 2.2616499482671,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "Cina conto corrente strengthening — record $213.6B surplus commerciale in Jan-Feb. Exports up 21.8% YoY nonostante US tariffs. Russian pipeline oil reduces importazione energetica cost pressure",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 3456024808739.12,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 96.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "CHN debito pubblico sostanzialmente stabile. No acute fiscal pressure ma incertezza globalee limits fiscal space",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 4.2,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: A+, Moody's: A1, Fitch: A+",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 3.0,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Cina tasso di riferimento sostanzialmente stabile. Banca centrale balancing crescita e inflazione preoccupazioni amid incertezza globalee.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 6.8966,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Yuan sostanzialmente stabile — PBOC managing controlled depreciation. Trade surplus record supports ma US tariffs e capital outflows create pressure",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "equity_index_level": {
+      "value": 4096,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11"
+    },
+    "total_exports_usd": {
+      "value": 3753056083349.04,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 3219342570126.17,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_forecast_2026_pct": {
+      "value": 0.7,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 1.82,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Cina rendimenti obbligazionari sostanzialmente stabile.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -1.43,
+      "confidence": 0.96,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
+    },
+    "fdi_inflows_usd": {
+      "value": 18556141172.84,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Cina FDI in calo da US-Cina trade tensions (47.5% tariffs), Section 301 investigations, e geopremio per il rischio politico",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 38190084585497.8,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 36,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -8.6,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 1408975000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": -0.123063407363995,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 77.953,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.797,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 40.2,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 64.551,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 96.7399978637695,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 5.94388866,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 65.8946980998325,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 36,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 92,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 296000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    },
+    "military_expenditure_usd": {
+      "value": 314000000000,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 1.7,
+      "confidence": 0.75,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Cina spesa per la difesa in aumento — US strategic overstretch in Middle East creates window, Taiwan scenario planning, THAAD gap in Korea",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "military_expenditure_trend": {
+      "value": "growth",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 2035000,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 510000,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 5870,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 3529,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 61,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "alliance_memberships": {
+      "value": [
+        "SCO"
+      ],
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "nuclear": {
+      "status": {
+        "value": "declared_arsenal",
+        "confidence": 0.99,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      },
+      "warheads_estimated": {
+        "value": 600,
+        "confidence": 0.8,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "arms_imports_global_share": {
+      "value": {
+        "period": "2021-2025",
+        "volume_change": "-72%",
+        "note": "Dropped from top 10 importers for first time since 1991-95. Received 13% of Russian exports."
+      },
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "conflict_status": {
+      "value": "stable",
+      "confidence": 0.75,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search+agent_03_crossref",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {
+    "fta_count": {
+      "value": 23,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.65,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(production/consumption, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.55,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.494,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_da_strozzature_marittime + 0.4 * apertura_commerciale_normalizzata; elevato a causa di Hormuz/Suez perturbazione"
+    },
+    "composite_national_power_index": {
+      "value": 84.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 73.5
+    },
+    "political_risk_premium_bps": {
+      "value": 308,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito del rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia",
+      "previous_value": 200
+    },
+    "market_accessibility_score": {
+      "value": 0.45,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato_azionario/200, indice_sviluppo_finanziario, facilita_di_fare_impresa/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.271,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.68,
+      "trend": "growth",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "Cina rischio di investimento in modesto aumento da US-Cina trade escalation (47.5% tariffs, Section 301), property sector overhang, e geopolitical tensions"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Cina apertura commerciale sostanzialmente stabile. Globale perturbazione commerciale da Hormuz principalmente affects Gulf-dependent routes. Some reindirizzamento commerciale benefits alternative routes.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Cina stabilita politica sostanzialmente invariato. Nessuna perturbazione politica interna significativa questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.65,
+      "reasoning": "Cina relationships mixed — Trump-Xi summit expected, record trade tensions ma diplomatic channel open. Five-Year Plan industrial policy drawing criticism. Iran positioning careful",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [],
+    "update_count": 148,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Cina registra crescita del PIL di 5.0% (stabile) con inflazione at 0.2% (stabile). Rischio di investimento si attesta a 0.271. Segnale chiave: Supreme Court strikes down IEEPA tariffs; Trump responds con Section 122 globale surcharge: The Supreme Court ruled 6-3 su Feb 20 che IEEPA does non authorize presidential tariffs. Trump responded... Rischio di investimento rimane contenuto a 0.271.",
+    "key_changes_this_week": [
+      "Supreme Court strikes down IEEPA tariffs; Trump responds con Section 122 globale surcharge: The Supreme Court ruled 6-3 su Feb 20 che IEEPA does non authorize presidential...",
+      "USTR launches nuova Section 301 indagini targeting 16 countries' manufacturing: On March 11, USTR initiated nuova Section 301 indagini in 'strutturale excess capacity and...",
+      "US-Cina tariffs at record levels; Beijing approves nuova Five-Year Plan: Average US tariffs su Chinese goods stand at 47.5%, mentre Cina's tariffs su US esportazioni sono at 31.9%....",
+      "Section 122 tariff increase da 10% a 15% previsto imminently: Treasury Secretary Scott Bessent annunciato su March 4 che la US would increase la Section 122 globale tariff...",
+      "Trump-Xi summit previsto in coming weeks amid record trade tensions: Presidente Trump e Chinese Presidente Xi Jinping sono previsto a meet in a high-stakes summit in la coming...",
+      "Rischio di investimento in aumento a 0.271"
+    ],
+    "outlook": "Cina's breve termine trajectory shows crescita del PIL at 5.0% (stabile) con moderata rischio di investimento. The globale energy shock e US trade escalation create venti contrari per export-oriented sectors. Stabilita politica e stabile, che sara shape policy response effectiveness.",
+    "investor_implications": "Cina presents moderata rischio di investimento at 0.271 con 308 bps premio per il rischio politico. Market accessibility at 0.450. Selective opportunities exist attraverso asset classes.",
+    "data_quality_note": "La qualita dei dati e alta con 148 punti dati aggiornati in questa esecuzione."
+  },
+  "code": "CHN",
+  "name": "Cina",
+  "executive_summary": "Cina faces pressione crescente su multiple fronts questa settimana. crescita del PIL decelerating da 4.8% a 4.2% forecast amid US tariff escalation a 20% cumulative. In a sharp escalation, Cina sanctioned 50 Giapponeese aziende e imposed rare earth export controls su Feb 25 in response a PM Takaichi's Taiwan defense comments -- la worst Cina-Giappone bilateral moment in decades. CPI at 0% signals persistent deflation risk. NPC opens March 5 con economic targets e stimulus signals expected. Cina positioned poiche neutral su Iran conflitto ma called UNSC emergency session. PBOC cut FX forward reserve ratio da 20% a 0% a manage yuan.",
+  "key_changes": [
+    "Cina sanctioned 50 Giapponeese aziende con rare earth export controls e dual-use goods restrictions (Feb 25, major)",
+    "US imposed aggiuntiva 10% tariff su Cina (20% total) effective March 4 (major)",
+    "PBOC cut FX forward reserve ratio da 20% a 0% a slow yuan appreciation (moderate)",
+    "NPC opens March 5 -- annual economic crescita targets e stimulus measures expected",
+    "Cina called UNSC emergency session su attacchi all'Iran; positioned poiche neutral mediator",
+    "CPI at 0% con deflation risk persisting; property sector weak"
+  ],
+  "outlook": "Cina's crescita trajectory e modestamente decelerating ma manageable attraverso fiscal stimulus. The Giappone sanzioni escalation opens a nuova front in Cina's geopolitical confrontation che could fragment East Asian catene di approvvigionamento. NPC announcements March 5 sara set policy tone -- expect a PIL target di 4.5-5.0% con fiscal expansion. The crisi di Hormuz provides Cina leverage poiche un alternative energy partner per Iran ma anche raises costi delle importazioni. Trump-Xi summit March 30 e la chiave bilateral event a watch.",
+  "investor_implications": "Chinese equities face cross-currents: tariff venti contrari vs potenziale NPC stimulus announcements. CNY management signals tolerance per modest depreciation. Giappone-Cina sanzioni create winners (domestic rare earth substitution plays) e losers (Giappone-dependent catene di approvvigionamento). Monitor semiconductor sector per tech decoupling escalation. Defensive positioning in stimulus-linked settori (infrastructure, SOEs) su private consumer-facing firms.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Cina PIL decelerating amid US tariff war e Giappone sanzioni escalation",
+      "description": "Cina PIL trend diminuzione (4.8% a 4.2%). Additional 10% US tariff effective March 4. Cina sanctioned 50 Giapponeese aziende con rare earth export controls su Feb 25 -- marking sharp escalation in Cina-Giappone tensions. CPI at 0% (deflation risk). FDI trend diminuzione. NPC opening March 5 a set economic direction. Le condizioni persistono con Giappone sanzioni adding nuova dimension."
+    },
+    {
+      "severity": "warning",
+      "title": "Giappone-Cina relations severely deteriorated: 50 aziende sanctioned, rare earth controls imposed",
+      "description": "Cina sanctioned 50 Giapponeese aziende su Feb 25, restricted rare earth exports, e imposed dual-use goods controls in response a PM Takaichi's Taiwan defense comments. This e la worst Giappone-Cina bilateral moment in decades. Relations trend forte diminuzione. PIL trend diminuzione poiche Giappone manufacturing faces catena di approvvigionamento disruption. Military spending at forte crescita con defense budget at $58B. Tokyo issued formal protest."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 1408975000,
+      "population_growth_pct": -0.123063407363995,
+      "life_expectancy": 77.953,
+      "population_total": 1408975000,
+      "hdi": 0.797,
+      "median_age": 40.2
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 2.12,
+      "regime_type": "authoritarian",
+      "freedom_house_score": 9,
+      "freedom_house_status": "not_free",
+      "corruption_perception_index": 43,
+      "press_freedom_index_rank": 178,
+      "wgi_voice_accountability": -1.5,
+      "wgi_political_stability": -0.51,
+      "wgi_government_effectiveness": 0.68,
+      "wgi_regulatory_quality": -0.36,
+      "wgi_rule_of_law": -0.04,
+      "wgi_control_of_corruption": -0.01,
+      "fragile_states_index": 64.4,
+      "head_of_state_name": "Xi Jinping",
+      "head_of_state_title": "President",
+      "head_of_government_name": "Li Qiang",
+      "next_national_election_date": "2028-03"
+    },
+    "economy": {
+      "gdp_nominal_usd": 18743803170827.2,
+      "gdp_real_growth_pct": 4.8,
+      "gdp_per_capita_usd": 13303.1481543868,
+      "inflation_cpi_pct": 0,
+      "unemployment_rate_pct": 5.1,
+      "current_account_pct_gdp": 2.26,
+      "govt_debt_pct_gdp": 96.3,
+      "fx_reserves_usd": 3456024808739.12,
+      "sovereign_credit_rating": "S&P: A+, Moody's: A1, Fitch: A+",
+      "central_bank_policy_rate_pct": 3.0,
+      "total_exports_usd": 3792950717268.08,
+      "total_imports_usd": 3253992699024.39,
+      "gdp_growth_forecast_2026_pct": 4.2,
+      "inflation_forecast_2026_pct": 0.7,
+      "exchange_rate_vs_usd": 6.9006,
+      "sovereign_bond_yield_10yr_pct": 1.79,
+      "equity_index_level": 4122.68,
+      "top_export_partners": [
+        {
+          "country": "USA",
+          "pct_of_total": 11.1,
+          "value_usd": 421000000000
+        },
+        {
+          "country": "ASEAN",
+          "pct_of_total": 16.0
+        },
+        {
+          "country": "EU",
+          "pct_of_total": 13.0
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 4.5
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 4.2
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "TWN",
+          "pct_of_total": 9.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 7.2
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "AUS",
+          "pct_of_total": 5.8
+        }
+      ],
+      "avg_applied_tariff_pct": 7.5,
+      "trade_openness_pct": 37.2,
+      "equity_index_daily_change_pct": -1.43
+    },
+    "military": {
+      "military_spending_usd": 296000000000,
+      "military_expenditure_usd": 314000000000,
+      "military_expenditure_pct_gdp": 1.7,
+      "military_expenditure_trend": "growth",
+      "active_military_personnel": 2035000,
+      "reserve_military_personnel": 510000,
+      "alliance_memberships": [
+        "SCO"
+      ]
+    },
+    "relations": {
+      "fta_count": 23
+    },
+    "derived": {
+      "resource_self_sufficiency_index": 0.65,
+      "energy_independence_index": 0.55,
+      "supply_chain_chokepoint_exposure": 0.494,
+      "composite_national_power_index": 84.0,
+      "political_risk_premium_bps": 308,
+      "market_accessibility_score": 0.45,
+      "overall_investment_risk_score": 0.271
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "USA",
+          "pct_of_total": 11.1,
+          "value_usd": 421000000000
+        },
+        {
+          "country": "ASEAN",
+          "pct_of_total": 16.0
+        },
+        {
+          "country": "EU",
+          "pct_of_total": 13.0
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 4.5
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 4.2
+        }
+      ],
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "TWN",
+          "pct_of_total": 9.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 7.2
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "AUS",
+          "pct_of_total": 5.8
+        }
+      ],
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "avg_applied_tariff_pct": {
+      "value": 7.5,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "trade_openness_pct": {
+      "value": 37.2,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Cina apertura commerciale resilient — record esportazioni nonostante 47.5% US tariffs. Trade rerouting attraverso third countries. Five-Year Plan emphasizes dual circulation",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 92,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 6.8966,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 1.81,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 4095.45,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 4402501.222000046,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 10161.504461,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 15004.76479,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 9126.850389,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 16370.53619973,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 4234.027322404371,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 2.12,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "authoritarian",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 9,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "not_free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 43,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 178,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": -1.50455415248871,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -0.513097047805786,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "CHN stabilita politica sostanzialmente stabile. Globale uncertainty creates pressione di fondo ma no acute triggers",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": 0.679014027118683,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": -0.356507807970047,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": -0.0401299707591534,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -0.00537010468542576,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 64.4,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Xi Jinping",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Li Qiang",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "next_national_election_date": {
+      "value": "2028-03",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Cina relationships mixed — Trump-Xi summit expected, record trade tensions ma diplomatic channel open. Five-Year Plan industrial policy drawing criticism. Iran positioning careful",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

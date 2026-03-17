@@ -1,0 +1,884 @@
+{
+  "country_code": "UKR",
+  "country_name": "Ucraina",
+  "tier": 2,
+  "region": "europe",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 190741262414.705,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 2.9138222142611,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Russia-Ucraina war continues with massive attacchi con droni/missili contro le infrastrutture energetiche. Colloqui di pace stalled as guerra in Iran devia l'attenzione",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 5389.47314453125,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 6.50198464669254,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "UKR inflazione sostanzialmente stabile with modest pressione al rialzo from global prezzi del petrolio and disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "current_account_pct_gdp": {
+      "value": -7.93850256012182,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "UKR conto corrente sostanzialmente stabile. Global disruzione commerciale creates impatti misti a seconda della composizione delle esportazioni",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 43780549772.8406,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "unemployment_rate_pct": {
+      "value": 9.834,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 58.7161850732326,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Ucraina debt rising from continued war spending and infrastructure reconstruction needs. Western aid partially offsets but debt burden growing",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 4.5,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: CCC+, Moody's: Ca, Fitch: CC",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "imf_program_usd": {
+      "value": 8100000000,
+      "confidence": 0.97,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "total_exports_usd": {
+      "value": 56097413426.8451,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 92209661949.5432,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 13.5,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Ucraina tasso di riferimento sostanzialmente stabile. La banca centrale bilancia le preoccupazioni per la crescita e l'inflazione in un contesto di incertezza globale.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 43.881,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "UKR valuta sostanzialmente stabile rispetto al USD. Il sentiment globale di avversione al rischio crea una lieve pressione al deprezzamento rispetto alle valute rifugio",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fdi_inflows_usd": {
+      "value": 4018000000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Ucraina FDI limited by ongoing war. Colloqui di pace stalled. Reconstruction FDI potential but contingent on ceasefire",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 656527758178.686,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 25.6,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -21.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Ucraina rendimenti obbligazionari sostanzialmente stabili.",
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 19.5,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 4500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 42000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 37860221,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 0.33702862573394,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 73.422,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.779,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 44.9,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 54.639,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 8.2027483,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 69.5315643200148,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 25.6,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 82.3755,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_expenditure_usd": {
+      "value": 64700000000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 34.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Ucraina spesa per la difesa elevated — continued frontline operations, air defense critical, Western military aid ongoing",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "military_expenditure_trend": {
+      "value": "strong_growth",
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 900000,
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 4000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 1121,
+        "confidence": 0.7,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 347,
+        "confidence": 0.7,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "arms_imports_global_share": {
+      "value": {
+        "share_pct": 9.7,
+        "period": "2021-2025",
+        "previous_share_pct": 0.1,
+        "rank": 1,
+        "note": "World's largest arms importer in 2021-25, up from 0.1% in 2016-20."
+      },
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "conflict_status": {
+      "value": "active_war",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search+agent_03_crossref",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.6,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.45,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.305,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_colli_di_bottiglia_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della disruzione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 42.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologico + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 47.2
+    },
+    "political_risk_premium_bps": {
+      "value": 1930,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia",
+      "previous_value": 1000
+    },
+    "market_accessibility_score": {
+      "value": 0.15,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_borsa/200, indice_sviluppo_finanziario, facilita_affari/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.603,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.78,
+      "trend": "growth",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "Ucraina rischio d'investimento elevated — war ongoing, energy infrastructure under attack, peace stalled"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Ucraina apertura commerciale sostanzialmente stabile. La disruzione del commercio globale da Hormuz colpisce principalmente le rotte dipendenti dal Golfo. Parte del ridirezionamento commerciale avvantaggia rotte alternative.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.62,
+      "reasoning": "Ucraina political stability maintained despite ongoing war. Zelenskiy engaging Arabia Saudita diplomatically. EU funding flowing via non-Ungheria channels. Colloqui di pace stalled but not collapsed.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Ucraina relationships under pressure — international attention diverted to Iran, colloqui di pace stalled, war fatigue among Western supporters",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
+        "value": 6.50198464669254,
+        "reason": "Variazione assoluta 6.0980 supera 3× typical (0.5) = 1.5; Fonte alternativa (IMF WEO) non concorda: 12.6 vs primary 6.50198464669254 (48.4% diff); Contesto eventi: UKR ha fattori scatenanti attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      },
+      {
+        "factor_path": "economy.macroeconomic.unemployment_rate_pct",
+        "value": 9.834,
+        "reason": "Variazione assoluta 1.7660 supera 3× typical (0.3) = 0.8999999999999999; Contesto eventi: UKR ha fattori scatenanti attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      },
+      {
+        "factor_path": "economy.macroeconomic.public_debt_pct_gdp",
+        "value": 58.7161850732326,
+        "reason": "Variazione assoluta 49.8838 supera 3× typical (2.0) = 6.0; Fonte alternativa (IMF WEO) non concorda: 108.6 vs primary 58.7161850732326 (45.9% diff); Contesto eventi: UKR ha fattori scatenanti attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 131,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Ucraina registra crescita del PIL of 2.9% (declining) con inflazione al 6.5% (stable). Il rischio d'investimento si attesta a 0.603. Ucraina: Active conflitto militare — Russia loses 57 sq mi in 4 weeks. Il rischio d'investimento e elevato a 0.603, requiring careful position sizing.",
+    "key_changes_this_week": [
+      "Russia hits Ucraina with massive 430-drone and 68-missile attack contro le infrastrutture energetiche: Russia launched a massive combined attack on Ucraina with approximately 430...",
+      "russo forces lose 57 square miles in four-week territorial reversal in Ucraina: During the four-week period from Feb 10 to March 10, 2026, russo forces lost 57 square miles of...",
+      "EU extends Russia sanctions for six months, targeting 2,700+ entities: On March 14, 2026, the EU Council unanimously extended sanctions against 2,700+ individuals and entities...",
+      "Ucraina strikes Bryansk region in Russia with missiles: Ucraina conducted a missile attack on Russia's Bryansk region, continuing its policy of striking military obiettivi within...",
+      "Russia-Ucraina peace push stalls as guerra in Iran diverts international attention: The US-backed peace push for the Ucraina-Russia war has stalled as the Iran conflict consumed...",
+      "Investment risk rising to 0.603"
+    ],
+    "outlook": "Ucraina's outlook remains dominated by the ongoing invasione russa, now complicated by shifting US attention to Iran. ridispiegamento del THAAD from allies to the Medio Oriente signals priorita di difesa USA concorrenti. europeo support is critical for sustaining defense capability while reconstruction planning continues.",
+    "investor_implications": "Ucraina presents high rischio d'investimento a 0.603 with 1930 bps premio per il rischio politico. Accessibilita al mercato a 0.150. Exercise caution with concentrated positions.",
+    "data_quality_note": "La qualita dei dati e elevata con 131 punti dati aggiornati in questa esecuzione.  Fattori segnalati: economy.macroeconomic.inflation_rate_cpi_pct, economy.macroeconomic.unemployment_rate_pct, economy.macroeconomic.public_debt_pct_gdp."
+  },
+  "code": "UKR",
+  "name": "Ucraina",
+  "executive_summary": "Ucraina's la guerra entra nel suo 5o anno with mixed sviluppi militari. The southern controffensiva riconquistato 300+ sq km. Flamingo missiles colpito a fabbrica russa di ICBM and infrastrutture petrolifere del Caspio -- demonstrating expanding strike capability. Russia launched a record 1,720+ drones in late February. GDP at 2% trend di crescita shows remarkable resilience. IMF $8.1B loan approved anchoring a $136.5B international support package. Sovereign credit at CC/Ca with 2,250 bps premio di rischio.",
+  "key_changes": [
+    "Southern controffensiva riconquistato 300+ sq km (Feb, major)",
+    "Flamingo missiles colpito fabbrica russa di ICBM and infrastrutture petrolifere del Caspio (major)",
+    "Russia launched record 1,720+ drones at Ucraina in late February",
+    "IMF $8.1B loan approved anchoring $136.5B support package",
+    "GDP at 2% trend di crescita showing wartime resilience",
+    "Sovereign credit at CC/Ca with 2,250 bps premio di rischio"
+  ],
+  "outlook": "Ucraina's military capability is demonstrably expanding while the economy shows war-adjusted resilience. Flamingo missile capability targeting russo energy infrastructure is strategically significant. IMF support package provides fiscal lifeline through 2026. Any ceasefire/negotiation scenario remains distant but Ucraina's improved military position strengthens negotiating leverage. Reconstruction opportunity remains the long-term investment thesis.",
+  "investor_implications": "Ucraina titoli sovrani trade at deep distress levels -- any ceasefire trigger would produce outsized returns. Current investment is speculative and requires conflict resolution conviction. Ukrainian agricultural assets have value in any post-conflict scenario. International reconstruction commitments ($136.5B+) represent future opportunity pipeline.",
+  "active_alerts": [
+    {
+      "severity": "critical",
+      "title": "Ucraina war enters 5th year; CC/Ca rating creditizio with 2,250 bps premio di rischio",
+      "description": "Russia's war on Ucraina continues in Year 5 with Russia occupying ~20% of territory. Record 1,720+ drones launched by Russia in late February. Ucraina's Flamingo missiles colpito russo infrastrutture petrolifere del Caspio. IMF $8.1B loan anchoring $136.5B package. trend del PIL growth (2%) showing resilience despite war. Le condizioni persistono."
+    },
+    {
+      "severity": "watch",
+      "title": "Ucraina controffensiva gains and improved offensive capabilities",
+      "description": "Southern controffensiva riconquistato 300+ sq km. Flamingo missiles colpito fabbrica russa di ICBM. IMF $8.1B loan approved. Ucraina striking russo infrastrutture petrolifere del Caspio via drone. Le condizioni persistono."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 37860221,
+      "population_growth_pct": 0.337,
+      "life_expectancy": 73.422,
+      "population_total": 37860221,
+      "hdi": 0.779,
+      "median_age": 44.9
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 4.9,
+      "regime_type": "hybrid_regime",
+      "freedom_house_score": 51,
+      "freedom_house_status": "partly_free",
+      "corruption_perception_index": 35,
+      "press_freedom_index_rank": 62,
+      "wgi_voice_accountability": -0.1,
+      "wgi_political_stability": -1.43,
+      "wgi_government_effectiveness": -0.36,
+      "wgi_regulatory_quality": -0.27,
+      "wgi_rule_of_law": -0.89,
+      "wgi_control_of_corruption": -0.69,
+      "fragile_states_index": 93.1,
+      "head_of_state_name": "Volodymyr Zelenskyy",
+      "head_of_state_title": "President",
+      "head_of_government_name": "Denys Shmyhal"
+    },
+    "economy": {
+      "gdp_nominal_usd": 190741262414.705,
+      "gdp_real_growth_pct": 2,
+      "gdp_per_capita_usd": 5389.47314453125,
+      "inflation_cpi_pct": 12.6,
+      "unemployment_rate_pct": 11.6,
+      "current_account_pct_gdp": -7.94,
+      "govt_debt_pct_gdp": 108.6,
+      "fx_reserves_usd": 43780549772.8406,
+      "sovereign_credit_rating": "S&P: CCC+, Moody's: Ca, Fitch: CC",
+      "central_bank_policy_rate_pct": 13.5,
+      "total_exports_usd": 56639000000,
+      "total_imports_usd": 95252000000,
+      "exchange_rate_vs_usd": 43.11,
+      "top_export_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 10.5
+        },
+        {
+          "country": "POL",
+          "pct_of_total": 9.2
+        },
+        {
+          "country": "TUR",
+          "pct_of_total": 5.8
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 5.7
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 3.1
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 14.0
+        },
+        {
+          "country": "POL",
+          "pct_of_total": 12.5
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "TUR",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 5.0
+        }
+      ],
+      "sovereign_bond_yield_10yr_pct": 19.5,
+      "equity_index_level": 520,
+      "stock_market_cap_usd": 4500000000,
+      "banking_sector_assets_usd": 42000000000
+    },
+    "military": {
+      "military_expenditure_usd": 64700000000,
+      "military_expenditure_pct_gdp": 34.0,
+      "military_expenditure_trend": "strong_growth",
+      "active_military_personnel": 900000,
+      "reserve_military_personnel": 4000000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.6,
+      "energy_independence_index": 0.45,
+      "supply_chain_chokepoint_exposure": 0.305,
+      "composite_national_power_index": 42.0,
+      "political_risk_premium_bps": 1930,
+      "market_accessibility_score": 0.15,
+      "overall_investment_risk_score": 0.603
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 10.5
+        },
+        {
+          "country": "POL",
+          "pct_of_total": 9.2
+        },
+        {
+          "country": "TUR",
+          "pct_of_total": 5.8
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 5.7
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 3.1
+        }
+      ],
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 14.0
+        },
+        {
+          "country": "POL",
+          "pct_of_total": 12.5
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "TUR",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 5.0
+        }
+      ],
+      "confidence": 0.75,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 82.3755,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 77.75,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "UKR apertura commerciale sostanzialmente stabile with modest pressione al ribasso from disruzione marittima di Hormuz e l'escalation tariffaria USA",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "energy_coal_production_mt": {
+      "value": 19769.000000000342,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 96.912049823,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 735.2497939,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 641.5119872,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 205.64070497,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 4.9,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "hybrid_regime",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 51,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "partly_free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 35,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 62,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": -0.100543133914471,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -1.42982339859009,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Ucraina stability declining — colloqui di pace stalled as guerra in Iran devia l'attenzione, energy infrastructure under massive attack, war fatigue",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": -0.357320100069046,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": -0.266427397727966,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": -0.888317406177521,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -0.686146318912506,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 93.1,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Volodymyr Zelensky",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Denys Shmyhal",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Ucraina relationships under pressure — international attention diverted to Iran, colloqui di pace stalled, war fatigue among Western supporters",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

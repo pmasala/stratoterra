@@ -1,0 +1,886 @@
+{
+  "country_code": "ITA",
+  "country_name": "Italia",
+  "tier": 1,
+  "region": "europe",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 2380825077243.59,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 0.692676948440536,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "ITA GDP declining from energy cost shock, manifatturiero venti contrari, and Section 301 trade investigation uncertainty",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 40385.3413957669,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 0.982373023061417,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "ITA inflazione in aumento from shock petrolifero pass-through. ECB holding rates. Section 122 tariffs adding import cost pressure. March/April readings will capture energy surge",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 6.391,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 1.08253400174467,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "ITA conto corrente in modesto deterioramento from higher costi di importazione energetica and perturbazione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 290547246726.359,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 136.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "ITA debito in modesto aumento from spesa per la difesa increases (NATO 5% target pressure) and transizione energetica costs",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 0.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: BBB+, Moody's: Baa2, Fitch: BBB",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": null,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "ecb",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "ECB facing stagflation dilemma. Shock petrolifero pushes inflation higher while la crescita si indebolisce. Riunione di politica monetaria di marzo critica. Lo sciopero generale in Belgio evidenzia il rischio di spirale prezzi-salari.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 0.87138,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "trading_economics",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "ITA (EUR) in apprezzamento vs USD — EUR/USD at 1.22 as la BCE mantiene i tassi mentre la Fed dovrebbe tagliarli. Debolezza del dollaro in estensione",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 3.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "trading_economics",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Italy rendimenti obbligazionari rising modestly on inflation expectations from shock petrolifero.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "total_exports_usd": {
+      "value": 773888180686.25,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 721835854515.781,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_forecast_2026_pct": {
+      "value": 2,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "fdi_inflows_usd": {
+      "value": 26903748175.4513,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "ITA IDE sostanzialmente stabili with modest caution from global sentiment di avversione al rischio and perturbazione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 3655908756610.36,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 34.3,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -3.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 58952704,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": -0.0534387378437725,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 83.7,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.915,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 48.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 49.302,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 8.44437313,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 69.6047535143071,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 34.3,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 89.2207,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 32000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    },
+    "military_expenditure_usd": {
+      "value": 37400000000,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 1.6,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "ITA spesa per la difesa rising from NATO pressione dell'alleanza, sicurezza regionale deterioration, and Trump 5% spending demands",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "active_military_personnel": {
+      "value": 165500,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 203,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 714,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 8,
+        "confidence": 0.88,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "alliance_memberships": {
+      "value": [
+        "NATO",
+        "EU CSDP"
+      ],
+      "confidence": 0.98,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "nuclear": {
+      "status": {
+        "value": "nuclear_sharing",
+        "confidence": 0.95,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "arms_exports_global_share": {
+      "value": {
+        "share_pct_approx": 4.5,
+        "period": "2021-2025",
+        "volume_change": "+157%",
+        "note": "Massive increase in Italian arms exports."
+      },
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.3,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, alimentari, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_interna / consumo_energetico_interno, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.306,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_punti_strozzatura_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della perturbazione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 54.8,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 66.4
+    },
+    "political_risk_premium_bps": {
+      "value": 110,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia"
+    },
+    "market_accessibility_score": {
+      "value": 0.78,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato/200, indice_sviluppo_finanziario, facilita_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.175,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.6,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "ITA rischio d'investimento sostanzialmente stabile — EU institutional framework and NATO membership provide stability despite incertezza globale"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Italy apertura commerciale sostanzialmente stabile. Global perturbazione commerciale from Hormuz colpisce principalmente le rotte dipendenti dal Golfo. Alcuni ridirezionamenti commerciali avvantaggiano rotte alternative.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Italy stabilita politica sostanzialmente invariata. No major domestic political disruptions questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "ITA relazioni con i partner sostanzialmente stabili nel quadro UE/NATO. Iran war creating some tensione nell'alleanza over condivisione degli oneri",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor": "macroeconomic.exchange_rate_vs_usd",
+        "reason": "Variazione percentuale elevata: 27.9% (soglia: 15%)",
+        "previous_value": 1.1818,
+        "new_value": 0.8518,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      }
+    ],
+    "update_count": 139,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Italy's economy affronta crescenti pressioni from the global shock dei prezzi energetici triggered by the Iran-crisi di Hormuz. La crescita del PIL si attesta al 0.7% (declining) while l'inflazione e al 1.0% (rising). L'indipendenza energetica e bassa a 0.200, amplifying vulnerability. Key signal: European prezzi del gas naturale surge on crisi di Hormuz: European prezzi del gas naturale surged from ~EUR30/MWh to peak above EUR60/MWh on Mar 3, settling around EUR48/MWh. Major inflationary risk for... Il rischio d'investimento rimane contenuto a 0.175.",
+    "key_changes_this_week": [
+      "European prezzi del gas naturale surge on crisi di Hormuz: European prezzi del gas naturale surged from ~EUR30/MWh to peak above EUR60/MWh on Mar 3, settling around EUR48/MWh. Major...",
+      "Italy: European energy crisis from chiusura di Hormuz",
+      "Inflazione in aumento al 1.0%"
+    ],
+    "outlook": "Italy affronta un periodo difficile a breve termine as the shock dei prezzi energetici works through the economy. With indipendenza energetica at only 0.200, the pass-through to costi di produzione will be severe. Inflazione al 1.0% (rising) constrains ECB opzioni di taglio dei tassi. Competitivita industriale is eroding against concorrenti ricchi di energia. A riapertura di Hormuz would provide significant relief, but structural lacune nella sicurezza energetica require a lungo termine investment.",
+    "investor_implications": "Italy affronta pressione sugli utili across settori ad alta intensita energetica. Rischio d'investimento a 0.175 is moderate by European standards. Sovrappesare societa ad alta efficienza energetica and defense. Sottopesare industrial commodities consumers. Titoli di stato: 3.8% rendimento decennale may offer entry point.",
+    "data_quality_note": "La qualita dei dati e elevata con 139 dati aggiornati in questa esecuzione.  Fattori segnalati: macroeconomic.exchange_rate_vs_usd."
+  },
+  "code": "ITA",
+  "name": "Italia",
+  "executive_summary": "Italy affronta moderati venti contrari from the impennata del prezzo del petrolio with PIL al 0.6% and low indipendenza energetica. The chiusura di Hormuz adds inflation pressure atop a fragile ripresa. EU-Mercosur agreement provides trade diversification. Debito pubblico at elevated levels constrains fiscal response to energy shock.",
+  "key_changes": [
+    "chiusura di Hormuz drives impennata del prezzo del petrolio; Italy energy-dependent (Mar 1)",
+    "EU-Mercosur Partnership Agreement signed -- positive for trade (Jan 17)",
+    "PIL al 0.6% with fragile ripresa amid external venti contrari"
+  ],
+  "outlook": "Italy's ripresa is the most vulnerable among major EU economies to an shock dei prezzi energetici. BTP-Bund spread may widen if growth falters. ECB tagli dei tassi would support Italian debito sovrano dynamics. Structural reform momentum under Meloni provides positive backdrop if external shocks contained.",
+  "investor_implications": "BTPs face spread widening risk if shock petrolifero persists. Italian bank stocks sensitive to prospettive di crescita and sovereign spread. Settore della difesa benefits from EU rearmament. Sottopesare Italian cyclicals exposed to costi energetici.",
+  "active_alerts": [],
+  "layers": {
+    "endowments": {
+      "population": 58952704,
+      "population_growth_pct": -0.053,
+      "life_expectancy": 83.7,
+      "population_total": 58952704,
+      "hdi": 0.915,
+      "median_age": 48.4
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 7.58,
+      "regime_type": "flawed_democracy",
+      "freedom_house_score": 89,
+      "freedom_house_status": "free",
+      "corruption_perception_index": 53,
+      "press_freedom_index_rank": 49,
+      "wgi_voice_accountability": 1.12,
+      "wgi_political_stability": 0.58,
+      "wgi_government_effectiveness": 0.61,
+      "wgi_regulatory_quality": 0.64,
+      "wgi_rule_of_law": 0.39,
+      "wgi_control_of_corruption": 0.55,
+      "head_of_state_name": "Sergio Mattarella",
+      "head_of_state_title": "President",
+      "head_of_government_name": "Giorgia Meloni",
+      "next_national_election_date": "2027-10"
+    },
+    "economy": {
+      "gdp_nominal_usd": 2380825077243.59,
+      "gdp_real_growth_pct": 0.5,
+      "gdp_per_capita_usd": 40385.3413957669,
+      "inflation_cpi_pct": 1.7,
+      "unemployment_rate_pct": 6.7,
+      "current_account_pct_gdp": 1.08,
+      "govt_debt_pct_gdp": 136.8,
+      "fx_reserves_usd": 290547246726.359,
+      "sovereign_credit_rating": "S&P: BBB+, Moody's: Baa2, Fitch: BBB",
+      "central_bank_policy_rate_pct": 2.0,
+      "total_exports_usd": 775983643285.188,
+      "total_imports_usd": 721783449768.61,
+      "gdp_growth_forecast_2026_pct": 0.8,
+      "inflation_forecast_2026_pct": 2,
+      "exchange_rate_vs_usd": 0.8552,
+      "sovereign_bond_yield_10yr_pct": 3.51,
+      "top_export_partners": [
+        {
+          "country": "DEU",
+          "pct_of_total": 12.2
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 10.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 10.3
+        },
+        {
+          "country": "ESP",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "CHE",
+          "pct_of_total": 4.8
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "DEU",
+          "pct_of_total": 14.5
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 8.2
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 7.8
+        },
+        {
+          "country": "NLD",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "ESP",
+          "pct_of_total": 4.9
+        }
+      ],
+      "avg_applied_tariff_pct": 5.0
+    },
+    "military": {
+      "military_spending_usd": 32000000000,
+      "military_expenditure_usd": 37400000000,
+      "military_expenditure_pct_gdp": 1.6,
+      "active_military_personnel": 165500,
+      "alliance_memberships": [
+        "NATO",
+        "EU CSDP"
+      ]
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.3,
+      "energy_independence_index": 0.2,
+      "supply_chain_chokepoint_exposure": 0.306,
+      "composite_national_power_index": 54.8,
+      "political_risk_premium_bps": 110,
+      "market_accessibility_score": 0.78,
+      "overall_investment_risk_score": 0.175
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "DEU",
+          "pct_of_total": 12.2
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 10.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 10.3
+        },
+        {
+          "country": "ESP",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "CHE",
+          "pct_of_total": 4.8
+        }
+      ],
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "DEU",
+          "pct_of_total": 14.5
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 8.2
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 7.8
+        },
+        {
+          "country": "NLD",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "ESP",
+          "pct_of_total": 4.9
+        }
+      ],
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "avg_applied_tariff_pct": {
+      "value": 5.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 89.2207,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 62.82,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "ITA apertura commerciale sostanzialmente stabile with modest downward pressure from perturbazione marittima di Hormuz and US tariff escalation",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 0.87138,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 3.8,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 44316.92,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 258.84521807,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 2209.742097,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 92.51320153,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 1240.513659,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 84.87483333333333,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.75,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 7.58,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "flawed_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 89,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 53,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 49,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": 1.11553084850311,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": 0.583320736885071,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "ITA stabilita politica sostanzialmente mantenuta. NATO cohesion tested by Iran war response and spesa per la difesa demands",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": 0.611036896705627,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": 0.644031763076782,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": 0.390358686447144,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": 0.550129175186157,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_name": {
+      "value": "Sergio Mattarella",
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Giorgia Meloni",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "next_national_election_date": {
+      "value": "2027-10",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "ITA relazioni con i partner sostanzialmente stabili nel quadro UE/NATO. Iran war creating some tensione nell'alleanza over condivisione degli oneri",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

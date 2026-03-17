@@ -1,0 +1,867 @@
+{
+  "country_code": "ZAF",
+  "country_name": "Sudafrica",
+  "tier": 1,
+  "region": "sub_saharan_africa",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 401144998373.585,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 0.534843531905139,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "ZAF crescita del PIL sostanzialmente stabile amid incertezza globale. Shock petrolifero and disruzione commerciale create modesti venti contrari",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 6267.186814093,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 4.36115246518962,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "ZAF inflazione sostanzialmente stabile with modest pressione al rialzo from global prezzi del petrolio and disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 32.391,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": -0.64279979707505,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "ZAF conto corrente sostanzialmente stabile. Global disruzione commerciale creates impatti misti a seconda della composizione delle esportazioni",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 79.446907709916,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "ZAF debito pubblico sostanzialmente stabile. Nessuna pressione fiscale acuta ma l'incertezza globale limita lo spazio fiscale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 65434957159.2265,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 1.2,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: BB, Moody's: Ba2, Fitch: BB-",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 7.75,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Sudafrica tasso di riferimento sostanzialmente stabile. La banca centrale bilancia le preoccupazioni per la crescita e l'inflazione in un contesto di incertezza globale.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 16.7963,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "ZAF valuta sostanzialmente stabile rispetto al USD. Il sentiment globale di avversione al rischio crea una lieve pressione al deprezzamento rispetto alle valute rifugio",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 8.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Sudafrica rendimenti obbligazionari in modesto aumento on inflation expectations from shock petrolifero.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "equity_index_level": {
+      "value": 120000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
+    },
+    "total_exports_usd": {
+      "value": 127531645077.343,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 119761291334.041,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_forecast_2026_pct": {
+      "value": 3.7,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": null,
+      "confidence": 0.8,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
+    },
+    "fdi_inflows_usd": {
+      "value": 2330218039.32031,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "ZAF IDE sostanzialmente stabili with modest caution from global sentiment di avversione al rischio and disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 989307819277.577,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -6.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 64007187,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 1.24951426055192,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 66.139,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.741,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 30.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 55.584,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 91.1500015258789,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 8.90966797,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 63.6917984858172,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 87.7,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 75.6592,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 4000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    },
+    "military_expenditure_usd": {
+      "value": 2900000000,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 68731,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 29350,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 248,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 181,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 3,
+        "confidence": 0.88,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "nuclear": {
+      "status": {
+        "value": "renounced",
+        "confidence": 0.99,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 0.72,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.7,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.7,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.273,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_colli_di_bottiglia_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della disruzione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 32.1,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologico + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 47.5
+    },
+    "political_risk_premium_bps": {
+      "value": 340,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia"
+    },
+    "market_accessibility_score": {
+      "value": 0.65,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_borsa/200, indice_sviluppo_finanziario, facilita_affari/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.28,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.55,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "ZAF rischio d'investimento sostanzialmente stabile. Incertezza globale elevata ma nessun fattore scatenante specifico per il paese"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Sudafrica apertura commerciale sostanzialmente stabile. La disruzione del commercio globale da Hormuz colpisce principalmente le rotte dipendenti dal Golfo. Parte del ridirezionamento commerciale avvantaggia rotte alternative.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Sudafrica stabilita politica sostanzialmente invariata. Nessuna grande disruzione politica interna questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "ZAF relazioni con i partner sostanzialmente stabili. L'incertezza globale crea pressione ma nessuna crisi bilaterale acuta",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor": "macroeconomic.equity_index_level",
+        "reason": "Large % change: 32.9% (soglia: 15%)",
+        "previous_value": 85500.0,
+        "new_value": 113647.0,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      }
+    ],
+    "update_count": 136,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Sudafrica registra crescita del PIL of 0.5% (stable) con inflazione al 4.4% (stable). Il rischio d'investimento si attesta a 0.280. Il rischio d'investimento rimane contenuto a 0.280.",
+    "key_changes_this_week": [
+      "Sudafrica: GDP declining with rischio d'investimento a 0.280",
+      "10-year rendimento obbligazionario in aumento al 8.4%",
+      "Traiettoria del debito pubblico: stabile (79.4% del PIL)"
+    ],
+    "outlook": "Sudafrica's la traiettoria a breve termine mostra crescita del PIL al 0.5% (stable) with moderate rischio d'investimento. The global energy shock and US escalation commerciale creano venti contrari per settori orientati all'esportazione. La stabilita politica e stabile, il che determinera l'efficacia della risposta politica.",
+    "investor_implications": "Sudafrica presents moderate rischio d'investimento a 0.280 with 340 bps premio per il rischio politico. Accessibilita al mercato a 0.650. Esistono opportunita selettive tra le classi di attivi.",
+    "data_quality_note": "La qualita dei dati e elevata con 136 punti dati aggiornati in questa esecuzione.  Fattori segnalati: macroeconomic.equity_index_level."
+  },
+  "code": "ZAF",
+  "name": "Sudafrica",
+  "executive_summary": "Sudafrica affronta segnali contrastanti: l'impennata del prezzo del petrolio adds costi di importazione but esportazioni di materie prime (gold, platinum, coal) beneficiano della forza dei prezzi. Gold at $5,300+ is molto positivo per Sudafrican mining revenue. crescita del PIL remains sluggish with structural load-shedding challenges. GNU coalition provides political stability.",
+  "key_changes": [
+    "Gold surge to $5,300+ benefits Sudafrican settore minerario significantly",
+    "L'impennata del prezzo del petrolio adds import cost pressure",
+    "Commodity export revenue boosted by global crisis dynamics",
+    "GNU coalition mantiene political stability"
+  ],
+  "outlook": "Sudafrica's gold and platinum settore minerarios are direct beneficiaries of the crisis environment. Structural challenges (load-shedding, unemployment) persist. SARB rate path depends on inflation trajectory amid commodity price cross-currents. GNU coalition stability tested by policy implementation.",
+  "investor_implications": "Sudafrican gold miners (AngloGold, Gold Fields, Harmony) are conviction sovrappesares at $5,300+ gold. Platinum group metals beneficiano da supply disruption dynamics. ZAR may strengthen on mining export earnings. JSE resources index outperforms broader market.",
+  "active_alerts": [],
+  "layers": {
+    "endowments": {
+      "population": 64007187,
+      "population_growth_pct": 1.25,
+      "life_expectancy": 66.139,
+      "population_total": 64007187,
+      "hdi": 0.741,
+      "median_age": 30.4
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 7.16,
+      "regime_type": "flawed_democracy",
+      "freedom_house_score": 81,
+      "freedom_house_status": "free",
+      "corruption_perception_index": 41,
+      "press_freedom_index_rank": 27,
+      "wgi_voice_accountability": 0.74,
+      "wgi_political_stability": -0.67,
+      "wgi_government_effectiveness": -0.26,
+      "wgi_regulatory_quality": -0.22,
+      "wgi_rule_of_law": 0.09,
+      "wgi_control_of_corruption": -0.28,
+      "fragile_states_index": 69.6,
+      "head_of_state_name": "Cyril Ramaphosa",
+      "head_of_state_title": "President",
+      "next_national_election_date": "2029-05"
+    },
+    "economy": {
+      "gdp_nominal_usd": 401144998373.585,
+      "gdp_real_growth_pct": 1.1,
+      "gdp_per_capita_usd": 6267.186814093,
+      "inflation_cpi_pct": 3.4,
+      "unemployment_rate_pct": 32.7,
+      "current_account_pct_gdp": -0.64,
+      "govt_debt_pct_gdp": 77.3,
+      "fx_reserves_usd": 65434957159.2265,
+      "sovereign_credit_rating": "S&P: BB, Moody's: Ba2, Fitch: BB-",
+      "central_bank_policy_rate_pct": 7.75,
+      "total_exports_usd": 127675629255.043,
+      "total_imports_usd": 119864127356.452,
+      "gdp_growth_forecast_2026_pct": 1.2,
+      "inflation_forecast_2026_pct": 3.7,
+      "exchange_rate_vs_usd": 16.5,
+      "sovereign_bond_yield_10yr_pct": 8.16,
+      "equity_index_level": 120000,
+      "top_export_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 12.3,
+          "value_usd": 12800000000
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 8.6
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "GBR",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 4.8
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 22.5
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 7.3
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 6.87
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.86
+        },
+        {
+          "country": "OMN",
+          "pct_of_total": 3.3
+        }
+      ],
+      "equity_index_daily_change_pct": null
+    },
+    "military": {
+      "military_spending_usd": 4000000000,
+      "military_expenditure_usd": 2900000000,
+      "active_military_personnel": 68731,
+      "reserve_military_personnel": 29350
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.7,
+      "energy_independence_index": 0.7,
+      "supply_chain_chokepoint_exposure": 0.273,
+      "composite_national_power_index": 32.1,
+      "political_risk_premium_bps": 340,
+      "market_accessibility_score": 0.65,
+      "overall_investment_risk_score": 0.28
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 12.3,
+          "value_usd": 12800000000
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 8.6
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "GBR",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 4.8
+        }
+      ],
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 22.5
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 7.3
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 6.87
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.86
+        },
+        {
+          "country": "OMN",
+          "pct_of_total": 3.3
+        }
+      ],
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 87.7,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 75.6592,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 61.65,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "ZAF apertura commerciale sostanzialmente stabile with modest pressione al ribasso from disruzione marittima di Hormuz e l'escalation tariffaria USA",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 16.7963,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 8.4,
+        "confidence": 0.88,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 107285.27,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 237425.36816400374,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 242.771999632,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 137.7966194,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 2.047809624,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 612.110416239,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 0.45389344262295084,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.72,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 7.16,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "flawed_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 81,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 41,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 27,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": 0.744892179965973,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -0.665642023086548,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "ZAF stabilita politica sostanzialmente stabile. Incertezza globale creates pressione di fondo but no fattori scatenanti acuti",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": -0.256946682929993,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": -0.223697945475578,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": 0.0862350836396217,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -0.284670442342758,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 69.6,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Cyril Ramaphosa",
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "next_national_election_date": {
+      "value": "2029-05",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "ZAF relazioni con i partner sostanzialmente stabili. L'incertezza globale crea pressione ma nessuna crisi bilaterale acuta",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

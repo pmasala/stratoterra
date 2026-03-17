@@ -1,0 +1,869 @@
+{
+  "country_code": "EGY",
+  "country_name": "Egitto",
+  "tier": 2,
+  "region": "middle_east",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 389059911003.566,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 2.3991692678251,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "EGY crescita del PIL in calo da elevato oil costi delle importazioni ($103/bbl) e globale perturbazione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 3338.47371395895,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 28.2705899322083,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "strong_growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "EGY inflazione surging — already elevato base combined con $103 oil costi delle importazioni. Currency weakness amplifying pass-through",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 6.781,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": -5.72048144014404,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "EGY conto corrente in deterioramento da elevato oil import bill at $103/bbl. Energy import dependency driving deficit commerciale wider",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 44921341018.4659,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 87.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "EGY debt in aumento da energy subsidy costs, currency weakness increasing foreign-denominated debt burden, e fiscal stimulus needs",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 4.5,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: B, Moody's: Caa1, Fitch: B",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 52.788,
+      "confidence": 0.9,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "EGY currency depreciating — oil costi delle importazioni, inflazione pressure, e capital outflows weighing su FX",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "total_exports_usd": {
+      "value": 63713393368.3925,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 90357257459.4849,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 27.25,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Egitto tasso di riferimento sostanzialmente stabile. Banca centrale balancing crescita e inflazione preoccupazioni amid incertezza globalee.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "fdi_inflows_usd": {
+      "value": 46578000000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "EGY FDI sostanzialmente stabile con modesta caution da globale sentimento di avversione al rischio e perturbazione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 2225198389821.18,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 28.5,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -12.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Egitto rendimenti obbligazionari in aumento modestamente su inflazione expectations da shock petrolifero.",
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 22.5,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 45000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 150000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 116538258,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 1.73324205302065,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 71.633,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.754,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 24.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 44.568,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 79.4565788949049,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 4.88449335,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 42.8004363938404,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 28.5,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 72.6899,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_expenditure_usd": {
+      "value": 5200000000,
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 438500,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 479000,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 3620,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 1088,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 8,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.95,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 1.34,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.45,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(production/consumption, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.6,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.499,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_da_strozzature_marittime + 0.4 * apertura_commerciale_normalizzata; elevato a causa di Hormuz/Suez perturbazione"
+    },
+    "composite_national_power_index": {
+      "value": 38.7,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 46.4
+    },
+    "political_risk_premium_bps": {
+      "value": 895,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito del rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia",
+      "previous_value": 620
+    },
+    "market_accessibility_score": {
+      "value": 0.4,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato_azionario/200, indice_sviluppo_finanziario, facilita_di_fare_impresa/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.573,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.72,
+      "trend": "growth",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "EGY rischio di investimento in aumento da shock petrolifero, currency pressure, inflazione, e instabilita regionale spillover"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Egitto apertura commerciale sostanzialmente stabile. Globale perturbazione commerciale da Hormuz principalmente affects Gulf-dependent routes. Some reindirizzamento commerciale benefits alternative routes.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Egitto stabilita politica sostanzialmente invariato. Nessuna perturbazione politica interna significativa questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "EGY relazioni con i partner sostanzialmente stabile. Globale uncertainty creating pressure ma no acute bilateral crises",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
+        "value": 28.2705899322083,
+        "reason": "Variazione assoluta 7.8706 supera 3× tipico (0.5) = 1.5; Fonte alternativa (IMF WEO) discorda: 20.4 rispetto al primario 28.2705899322083 (38.6% diff); Contesto evento: EGY ha trigger di evento attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      },
+      {
+        "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
+        "value": 2.3991692678251,
+        "reason": "Variazione assoluta 1.9008 supera 3× tipico (0.5) = 1.5; Fonte alternativa (IMF WEO) discorda: 4.3 rispetto al primario 2.3991692678251 (44.2% diff); Contesto evento: EGY ha trigger di evento attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 128,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Egitto registra crescita del PIL di 2.4% (in calo) con inflazione at 28.3% (in impennata). Rischio di investimento si attesta a 0.573. Egitto: Elevated rischio di investimento at 0.573. Rischio di investimento e elevato at 0.573, requiring careful position sizing.",
+    "key_changes_this_week": [
+      "Egitto: Elevated rischio di investimento at 0.573",
+      "Egitto: Premio per il rischio politico at 620 bps",
+      "Egitto: Elevated rischio di investimento con alto inflazione",
+      "Inflazione surging at 28.3%",
+      "Rischio di investimento in aumento a 0.573"
+    ],
+    "outlook": "Egitto's breve termine trajectory shows crescita del PIL at 2.4% (in calo) con elevato rischio di investimento. The globale energy shock e US trade escalation create venti contrari per export-oriented sectors. Stabilita politica e stabile, che sara shape policy response effectiveness.",
+    "investor_implications": "Egitto presents alto rischio di investimento at 0.573 con 895 bps premio per il rischio politico. Market accessibility at 0.400. Exercise caution con concentrated positions.",
+    "data_quality_note": "La qualita dei dati e alta con 128 punti dati aggiornati in questa esecuzione.  Fattori segnalati: economy.macroeconomic.inflazione_rate_cpi_pct, economy.macroeconomic.gdp_real_crescita_rate_pct."
+  },
+  "code": "EGY",
+  "name": "Egitto",
+  "executive_summary": "Egitto faces second-order effects da la Iran-Gulf crisis attraverso Suez Canal traffic disruption e oil costi delle importazioni. Regional instability weighs su tourism. crescita del PIL moderata con IMF program providing fiscal anchor.",
+  "key_changes": [
+    "Suez Canal traffic potentially affected da regional shipping rerouting",
+    "Oil costi delle importazioni increase su price surge",
+    "Regional instability affects tourism prospettive",
+    "IMF program provides fiscal anchor"
+  ],
+  "outlook": "Egitto's Suez Canal revenues e tourism face venti contrari da instabilita regionale. IMF program compliance e la chiave fiscal discipline mechanism. EGP management sotto banca centrale scrutiny.",
+  "investor_implications": "Egittoian government bonds priced con IMF support backstop. Tourism titoli face regional event risk. Suez Canal revenue potrebbe fluctuate con rerouting patterns.",
+  "active_alerts": [
+    {
+      "severity": "watch",
+      "title": "Egitto faces Suez Canal revenue disruption da Houthi attacks amid economy-focused rimpasto di governo",
+      "description": "Houthis resumed Red Sea attacks following Iran conflitto, threatening Suez Canal transit revenues che sono critica per Egitto's foreign exchange earnings. Conto corrente trend e diminuzione (-5.1% di PIL). Economy-focused rimpasto di governo con nuova Investment Minister signals reform priority ma premio per il rischio remains elevato at 1,150 bps. Inflazione a 20.4%."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 116538258,
+      "population_growth_pct": 1.73324205302065,
+      "life_expectancy": 71.633,
+      "population_total": 116538258,
+      "hdi": 0.754,
+      "median_age": 24.4
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 2.79,
+      "regime_type": "authoritarian",
+      "freedom_house_score": 18,
+      "freedom_house_status": "not_free",
+      "corruption_perception_index": 30,
+      "press_freedom_index_rank": 170,
+      "wgi_voice_accountability": -1.38,
+      "wgi_political_stability": -0.87,
+      "wgi_government_effectiveness": -0.24,
+      "wgi_regulatory_quality": -0.67,
+      "wgi_rule_of_law": -0.18,
+      "wgi_control_of_corruption": -0.75,
+      "fragile_states_index": 82.8,
+      "head_of_state_name": "Abdel Fattah el-Sisi",
+      "head_of_state_title": "President",
+      "head_of_government_name": "Mostafa Madbouly",
+      "next_national_election_date": "2030-04"
+    },
+    "economy": {
+      "gdp_nominal_usd": 389059911003.566,
+      "gdp_real_growth_pct": 4.3,
+      "gdp_per_capita_usd": 3338.47371395895,
+      "inflation_cpi_pct": 20.4,
+      "unemployment_rate_pct": 7.4,
+      "current_account_pct_gdp": -5.72,
+      "govt_debt_pct_gdp": 87,
+      "fx_reserves_usd": 44921341018.4659,
+      "sovereign_credit_rating": "S&P: B, Moody's: Caa1, Fitch: B",
+      "central_bank_policy_rate_pct": 27.25,
+      "total_exports_usd": 64373200000,
+      "total_imports_usd": 100377300000,
+      "exchange_rate_vs_usd": 49.88,
+      "top_export_partners": [
+        {
+          "country": "TUR",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "SAU",
+          "pct_of_total": 5.8
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 5.2
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 16.5
+        },
+        {
+          "country": "SAU",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 7.2
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "TUR",
+          "pct_of_total": 5.0
+        }
+      ],
+      "sovereign_bond_yield_10yr_pct": 22.5,
+      "equity_index_level": 28500,
+      "stock_market_cap_usd": 45000000000,
+      "banking_sector_assets_usd": 150000000000
+    },
+    "military": {
+      "military_expenditure_usd": 5200000000,
+      "active_military_personnel": 438500,
+      "reserve_military_personnel": 479000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.45,
+      "energy_independence_index": 0.6,
+      "supply_chain_chokepoint_exposure": 0.499,
+      "composite_national_power_index": 38.7,
+      "political_risk_premium_bps": 895,
+      "market_accessibility_score": 0.4,
+      "overall_investment_risk_score": 0.573
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "TUR",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "SAU",
+          "pct_of_total": 5.8
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 5.2
+        }
+      ],
+      "confidence": 0.72,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 16.5
+        },
+        {
+          "country": "SAU",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 7.2
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "TUR",
+          "pct_of_total": 5.0
+        }
+      ],
+      "confidence": 0.72,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 72.6899,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 39.6,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "EGY apertura commerciale sostanzialmente stabile con modesta downward pressure da Hormuz perturbazione del trasporto marittimo e US tariff escalation",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "equity_index_level": {
+        "value": 46790.96,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 215.847989009,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 2101.805698,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 1676.46859,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 953.19093406,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 536.8497267759562,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.8,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 2.79,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "authoritarian",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 18,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "not_free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 30,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 170,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": -1.37938976287842,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -0.866764307022095,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Egitto stability pressured — regional war spillover, oil costi delle importazioni straining subsidies, Suez Canal revenue concerns, Gaza crisis proximity",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": -0.239516973495483,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": -0.665456295013428,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": -0.184178426861763,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -0.747790396213531,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 82.8,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Abdel Fattah el-Sisi",
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Mostafa Madbouly",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "next_national_election_date": {
+      "value": "2030-04",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "EGY relazioni con i partner sostanzialmente stabile. Globale uncertainty creating pressure ma no acute bilateral crises",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

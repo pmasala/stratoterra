@@ -1,0 +1,913 @@
+{
+  "country_code": "ISR",
+  "country_name": "Israele",
+  "tier": 1,
+  "region": "middle_east",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 540379921261.681,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 0.871968424377442,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "strong_decrease",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Guerra su piu fronti with Iran and Hezbollah. $826M emergency approvvigionamento per la difesa. Interceptor stocks critically low. War economy mode",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 54176.6844383302,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 3.07480889805025,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Israel inflazione in aumento from economia di guerra — spesa per la difesa surge, interruzioni dell'approvvigionamento from Iran/Hezbollah attacks, costi di importazione elevated",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 3.489,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 2.86378146024895,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Israel conto corrente in peggioramento from economia di guerra — defense imports surging, turismo collapsed, trade disrupted by Hormuz and conflict",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 214543676669.814,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 69.2,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "strong_growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Israel debito in forte crescita from guerra su piu fronti — $826M emergency approvvigionamento per la difesa, economia di guerra mobilization, tax revenue declining",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 3.9,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: A, Moody's: Baa1, Fitch: A+",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 4.5,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Israel tasso di riferimento sostanzialmente stabile. Banca centrale balancing preoccupazioni di crescita e inflazione amid incertezza globale.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 3.1268,
+      "confidence": 0.92,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Shekel in deprezzamento from war premio per il rischio, spesa per la difesa, and economic disruption. BOI intervention limited",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 3.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09",
+      "trend": "growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "Israel rendimenti obbligazionari rising on war premio per il rischio and expanded Lebanon operations. Credit downgrades possible if war extends.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "total_exports_usd": {
+      "value": 153655742278.939,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 140591934051.253,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_forecast_2026_pct": {
+      "value": 2.2,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "fdi_inflows_usd": {
+      "value": 14777900000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Israel IDE in calo from guerra su piu fronti uncertainty. Settore tecnologico investors pausing. Security premio per il rischio surging",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 570892527370.231,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 37.9,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -6.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 9974400,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 1.26518834033156,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 83.1951219512195,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.919,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 30.1,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 65.489,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 7.09822369,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 91.536188843818,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 37.9,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 88.1824,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 24000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    },
+    "military_expenditure_usd": {
+      "value": 46500000000,
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 8.8,
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "strong_growth",
+      "trend_confidence": 0.88,
+      "trend_reasoning": "Israel spesa militare surging — $826M emergency procurement, guerra su piu fronti, interceptor resupply critical, Lebanon ground invasion planned",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "military_expenditure_trend": {
+      "value": "strong_growth",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 169500,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 465000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 1300,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 597,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 6,
+        "confidence": 0.88,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "nuclear": {
+      "status": {
+        "value": "undeclared_suspected",
+        "confidence": 0.95,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      },
+      "warheads_estimated": {
+        "value": 90,
+        "confidence": 0.8,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "arms_exports_global_share": {
+      "value": {
+        "share_pct": 4.4,
+        "period": "2021-2025",
+        "change": "+1.3 percentage points"
+      },
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "conflict_status": {
+      "value": "active_war",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search+agent_03_crossref",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.3,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, alimentari, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.6,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_interna / consumo_energetico_interno, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.409,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_punti_strozzatura_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della perturbazione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 47.6,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 60.3
+    },
+    "political_risk_premium_bps": {
+      "value": 454,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia",
+      "previous_value": 200
+    },
+    "market_accessibility_score": {
+      "value": 0.8,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato/200, indice_sviluppo_finanziario, facilita_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.272,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.85,
+      "trend": "strong_growth",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "Israel rischio d'investimento in forte aumento — guerra su piu fronti, interceptor crisis, Lebanon invasion planned, spesa bellica unsustainable"
+    },
+    "trade_openness_trend": {
+      "value": "strong_decrease",
+      "confidence": 0.82,
+      "reasoning": "Israel apertura commerciale in crollo as perturbazione di Hormuz blocks commercio marittimo. Both exports and imports severely disrupted. Overland routes insufficient to replace sea trade.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "decrease",
+      "confidence": 0.82,
+      "reasoning": "Israel stabilita politica in calo. War expansion into Lebanon highly divisive. International condemnation growing. Domestic debate over war aims intensifying.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Israel relazioni con i partner sotto tensione — Lebanon war creating regional backlash, Gaza cessate il fuoco diverted, dependence on US deepening. OHCHR criticism",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
+        "value": 0.871968424377442,
+        "reason": "Variazione assoluta 1.6280 superiore a 3× typical (0.5) = 1.5; Fonte alternativa (IMF WEO) discorde: 2.5 vs primary 0.871968424377442 (65.1% diff); Contesto evento: ISR ha trigger di eventi attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 139,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Israel is engaged in active combat operations against Iran alongside the United States. La crescita del PIL si attesta al 0.9% with a in forte calo trajectory. The economy faces dual pressure from costi di guerra and Iranian retaliatory missile strikes. Israel: Guerra su piu fronti Day 16 — Lebanon ground invasion planned. Il rischio d'investimento rimane contenuto a 0.272.",
+    "key_changes_this_week": [
+      "US-Israel war on Iran enters day 16 with continued strikes on Isfahan: The United States and Israel carried out attacks on Iran's Isfahan city, killing at least 15 people, as the...",
+      "Iran maintains Stretto di blocco di Hormuz; commercial shipping at standstill: Commercial maritime traffic through the Stretto di Hormuz remains effectively at a standstill. Iran's...",
+      "Israel-Hezbollah war escalates; Israel plans massive ground invasion of Lebanon: Hezbollah launched strikes on Israel on March 2 after the killing of Iran's supreme leader...",
+      "Israel running critically low on ballistic missile interceptors: Israel informed the US it is running critically low on ballistic missile interceptors as the Iran conflict rages....",
+      "Iran war diverts attention from Gaza cessate il fuoco deal; Israel sealed off Gaza strip: The US and Israel's war on Iran has diverted the Trump administration's attention from Gaza,...",
+      "tendenza della crescita del PIL: in forte calo (0.9%)",
+      "Inflazione in aumento al 3.1%"
+    ],
+    "outlook": "Israel's outlook hinges on Iran's retaliatory capacity and interceptor resupply from the US. The economy faces mounting costi di guerra with tendenza della crescita del PIL in forte calo. A cessate il fuoco would trigger significant relief rally, but protracted conflict risks exhausting missile defense stocks and deepening tensione fiscale.",
+    "investor_implications": "Israeli equities and bonds face war-related volatilita with rischio d'investimento at 0.272. Defense and cybersecurity sectors outperform; consumer discretionary and turismo underperform. Shekel weakness creates hedging costs; consider USD-denominated Israeli corporate bonds for relative value.",
+    "data_quality_note": "La qualita dei dati e elevata con 139 dati aggiornati in questa esecuzione.  Fattori segnalati: economy.macroeconomic.gdp_real_growth_rate_pct.  Le condizioni di conflitto attivo rendono i dati economici in tempo reale inaffidabili; il deterioramento effettivo probabilmente supera i dati riportati."
+  },
+  "code": "ISR",
+  "name": "Israele",
+  "executive_summary": "Israel faces a three-front war following the most significant military escalation in decades. Hezbollah broke the November 2024 cessate il fuoco on Mar 1, reopening the northern front. IRGC launched retaliatory strikes including a missile hitting West Jerusalem. Spesa militare at 8.8% of GDP (2nd highest globally). Debito pubblico trend strong_growth. Budget deadline March 31 could trigger government dissolution. Stabilita politica a -1.46 with multiple critical alerts active.",
+  "key_changes": [
+    "Hezbollah broke cessate il fuoco, fired rockets at northern Israel (Mar 1, major)",
+    "IRGC retaliatory strike hit road in West Jerusalem (Mar 1, transformative)",
+    "Israel now faces three-front war: Gaza, Lebanon, Iran",
+    "Spesa militare at 8.8% of GDP; debt trend strong_growth",
+    "Budget deadline March 31 could trigger government dissolution",
+    "Stabilita politica a -1.46 with critical alert upgraded"
+  ],
+  "outlook": "Israel's security and fiscal situation has deteriorated critically. A three-front war (Gaza, Lebanon, Iran) strains military capacity and risorse fiscali simultaneously. Budget deadline March 31 creates political crisis risk on top of security crisis. Settore tecnologico resilienza is being tested by reservist call-ups and investor avversione al rischio. US support is assured but the scope of conflict is unprecedented for Israel since 1973.",
+  "investor_implications": "Israeli equities face severe downside risk. TA-35 likely gap down Monday. Shekel depreciation accelerating under multi-front conflict stress. Israeli government bonds face sell-off on deterioramento fiscale and rating creditizio downgrade risk. Settore tecnologico (TASE-listed and US-listed Israeli firms) face talent retention challenges from reservist mobilization. Defense stocks are the only sector with positive positioning.",
+  "active_alerts": [
+    {
+      "severity": "critical",
+      "title": "Israel faces guerra su piu fronti as Hezbollah breaks cessate il fuoco and IRGC retaliates",
+      "description": "Israel's security situation critically deteriorated. Hezbollah broke the November 2024 cessate il fuoco on March 1, firing rockets at northern Israel. IRGC launched retaliatory strikes including a missile that hit a road in West Jerusalem. Spesa militare at 8.8% of GDP (2nd highest globally). Debt trend strong_growth. Stabilita politica a -1.46 with budget deadline March 31 that could trigger government dissolution. Elevato da avvertimento a critico due to multi-front conflict escalation."
+    },
+    {
+      "severity": "warning",
+      "title": "Israel warning superseded by critical alert due to multi-front escalation",
+      "description": "Questo avviso di livello avvertimento e stato sostituito dall'avviso critico alert_2026-03-02_058 reflecting the escalation to guerra su piu fronti with Hezbollah cessate il fuoco collapse and direct IRGC retaliation."
+    },
+    {
+      "severity": "watch",
+      "title": "Hezbollah breaks November 2024 cessate il fuoco; fires rockets at northern Israel",
+      "description": "Hezbollah broke the November 2024 cessate il fuoco on March 1, firing rockets at northern Israel. This reopens the northern front alongside the ongoing Gaza campaign and new Iran-Israel conflict axis. Israel now faces a three-front war: Gaza, Lebanon, and Iran. The cessate il fuoco collapse represents a major escalation of regional conflict."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 9974400,
+      "population_growth_pct": 1.265,
+      "life_expectancy": 83.1951219512195,
+      "population_total": 9974400,
+      "hdi": 0.919,
+      "median_age": 30.1
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 7.8,
+      "regime_type": "flawed_democracy",
+      "freedom_house_score": 73,
+      "freedom_house_status": "free",
+      "corruption_perception_index": 64,
+      "press_freedom_index_rank": 112,
+      "wgi_voice_accountability": 0.64,
+      "wgi_political_stability": -1.46,
+      "wgi_government_effectiveness": 1.15,
+      "wgi_regulatory_quality": 1.12,
+      "wgi_rule_of_law": 0.78,
+      "wgi_control_of_corruption": 0.83,
+      "head_of_state_name": "Isaac Herzog",
+      "head_of_state_title": "President",
+      "head_of_government_name": "Benjamin Netanyahu",
+      "next_national_election_date": "2026-10"
+    },
+    "economy": {
+      "gdp_nominal_usd": 540379921261.681,
+      "gdp_real_growth_pct": 2.5,
+      "gdp_per_capita_usd": 54176.6844383302,
+      "inflation_cpi_pct": 3.2,
+      "unemployment_rate_pct": 2.9,
+      "current_account_pct_gdp": 2.86,
+      "govt_debt_pct_gdp": 69.2,
+      "fx_reserves_usd": 214543676669.814,
+      "sovereign_credit_rating": "S&P: A, Moody's: Baa1, Fitch: A+",
+      "central_bank_policy_rate_pct": 4.5,
+      "total_exports_usd": 153686400000,
+      "total_imports_usd": 140748500000,
+      "gdp_growth_forecast_2026_pct": 3.9,
+      "inflation_forecast_2026_pct": 2.2,
+      "exchange_rate_vs_usd": 3.0942,
+      "top_export_partners": [
+        {
+          "country": "USA",
+          "pct_of_total": 28.5,
+          "value_usd": 17300000000
+        },
+        {
+          "country": "IRL",
+          "pct_of_total": 5.3,
+          "value_usd": 3200000000
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 4.6,
+          "value_usd": 2800000000
+        },
+        {
+          "country": "GBR",
+          "pct_of_total": 4.2
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 3.5
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 18.0,
+          "value_usd": 19000000000
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 9.0,
+          "value_usd": 9400000000
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 5.3,
+          "value_usd": 5600000000
+        },
+        {
+          "country": "TUR",
+          "pct_of_total": 4.5
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 3.8
+        }
+      ]
+    },
+    "military": {
+      "military_spending_usd": 24000000000,
+      "military_expenditure_usd": 46500000000,
+      "military_expenditure_pct_gdp": 8.8,
+      "military_expenditure_trend": "strong_growth",
+      "active_military_personnel": 169500,
+      "reserve_military_personnel": 465000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.3,
+      "energy_independence_index": 0.6,
+      "supply_chain_chokepoint_exposure": 0.409,
+      "composite_national_power_index": 47.6,
+      "political_risk_premium_bps": 454,
+      "market_accessibility_score": 0.8,
+      "overall_investment_risk_score": 0.272
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "USA",
+          "pct_of_total": 28.5,
+          "value_usd": 17300000000
+        },
+        {
+          "country": "IRL",
+          "pct_of_total": 5.3,
+          "value_usd": 3200000000
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 4.6,
+          "value_usd": 2800000000
+        },
+        {
+          "country": "GBR",
+          "pct_of_total": 4.2
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 3.5
+        }
+      ],
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 18.0,
+          "value_usd": 19000000000
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 9.0,
+          "value_usd": 9400000000
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 5.3,
+          "value_usd": 5600000000
+        },
+        {
+          "country": "TUR",
+          "pct_of_total": 4.5
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 3.8
+        }
+      ],
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 88.1824,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 54.45,
+      "trend": "decrease",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Israel apertura commerciale in calo — war disrupting trade, flight cancellations, catena di approvvigionamento disruption from Iran attacks",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 3.1268,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 4177.58,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 76.73632115,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 477.8011722,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 940.4237422,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 219.75683,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 18.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.88,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 7.8,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "flawed_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 73,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 64,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 112,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": 0.64426463842392,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -1.46484839916229,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "strong_decrease",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "Israel stabilita politica gravemente sotto tensione — guerra su piu fronti (Iran + Lebanon + Gaza), interceptor shortages, emergency procurement, 800K displaced in Lebanon",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": 1.1453697681427,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": 1.12179791927338,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": 0.783846437931061,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": 0.829359412193298,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_name": {
+      "value": "Isaac Herzog",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Benjamin Netanyahu",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "next_national_election_date": {
+      "value": "2026-06-30",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Israel relazioni con i partner sotto tensione — Lebanon war creating regional backlash, Gaza cessate il fuoco diverted, dependence on US deepening. OHCHR criticism",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

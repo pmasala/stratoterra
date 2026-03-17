@@ -1,0 +1,892 @@
+{
+  "country_code": "POL",
+  "country_name": "Polonia",
+  "tier": 1,
+  "region": "europe",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 917767106146.761,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 3.02841630700273,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "POL crescita del PIL slowing but not contracting. Shock petrolifero and incertezza commerciale create headwinds partially offset by ECB stability",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 25103.565661423,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 3.7842600751287,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "POL inflation moderately rising from global oil price shock and tariff-related import cost increases",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 2.976,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 0.30454349270969,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "POL current account modestly deteriorating from higher importazione energetica costs and disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 223114909804.172,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 60.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "POL debt modestly rising from spesa per la difesa increases (NATO 5% target pressure) and energy transition costs",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 3.1,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: A-, Moody's: A2, Fitch: A-",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 5.75,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Polonia tasso di riferimento sostanzialmente stabile. La banca centrale bilancia le preoccupazioni per la crescita e l'inflazione in un contesto di incertezza globale.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 3.7186,
+      "confidence": 0.92,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "POL currency modestly appreciating vs weakening USD. EU convergence play intact despite regional uncertainty",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 4.88,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Polonia rendimenti obbligazionari sostanzialmente stabili.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "total_exports_usd": {
+      "value": 478889163359.631,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 442176791003.799,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_forecast_2026_pct": {
+      "value": 2.8,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "fdi_inflows_usd": {
+      "value": 20606000000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "POL IDE sostanzialmente stabili with modest caution from global sentiment di avversione al rischio and disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 1874118068301.56,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 28.5,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -7.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 36559233,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": -0.349832361234927,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 78.5073170731707,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.906,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 42.9,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 58.312,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 8.06380177,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 59.9705468695101,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 28.5,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 88.585,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "defense_spending_usd": {
+      "value": 38000000000,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "military_spending_usd": {
+      "value": 38000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    },
+    "military_expenditure_usd": {
+      "value": 38000000000,
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 4.2,
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "POL spesa per la difesa rising from NATO pressure, guerra in Iran response, and Russia threat. Trump 5% GDP target creating political pressure",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "military_expenditure_trend": {
+      "value": "strong_growth",
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 250000,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 350000,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 798,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 457,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 1,
+        "confidence": 0.88,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "alliance_memberships": {
+      "value": [
+        "NATO",
+        "EU CSDP"
+      ],
+      "confidence": 0.98,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "conflict_status": {
+      "value": "stable",
+      "confidence": 0.6,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.55,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.291,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_colli_di_bottiglia_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della disruzione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 50.7,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologico + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 60.5
+    },
+    "political_risk_premium_bps": {
+      "value": 65,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia"
+    },
+    "market_accessibility_score": {
+      "value": 0.75,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_borsa/200, indice_sviluppo_finanziario, facilita_affari/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.139,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.6,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "POL rischio d'investimento sostanzialmente stabile — EU institutional framework and NATO membership provide stability despite incertezza globale"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Polonia apertura commerciale sostanzialmente stabile. La disruzione del commercio globale da Hormuz colpisce principalmente le rotte dipendenti dal Golfo. Parte del ridirezionamento commerciale avvantaggia rotte alternative.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Polonia stabilita politica sostanzialmente invariata. Nessuna grande disruzione politica interna questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "POL relazioni con i partner sostanzialmente stabili within EU/NATO framework. guerra in Iran creating some alliance strain over burden-sharing",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [],
+    "update_count": 141,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Polonia's economy faces mounting pressure from the global energy price shock triggered by the Iran-crisi di Hormuz. crescita del PIL stands at 3.0% (stable) while inflation is at 3.8% (rising). Segnale chiave: Polonia participating in IEA record 400 million barrel strategic oil reserve release; EU sanctions renewal on Russia supported Il rischio d'investimento rimane contenuto a 0.139.",
+    "key_changes_this_week": [
+      "Polonia participating in IEA record 400 million barrel strategic oil reserve release; EU sanctions renewal on Russia supported",
+      "Inflation in aumento al 3.8%",
+      "10-year rendimento obbligazionario stabile at 4.9%",
+      "Traiettoria del debito pubblico: in aumento (60.0% del PIL)"
+    ],
+    "outlook": "Polonia faces a challenging near-term as the energy price shock works through the economy. Inflation at 3.8% (rising) constrains ECB rate cut options. Industrial competitiveness is eroding against energy-rich competitors. A Hormuz reopening would provide significant relief, but structural energy security gaps require long-term investment.",
+    "investor_implications": "Polonia faces earnings pressure across energy-intensive sectors. Rischio d'investimento a 0.139 is moderate by europeo standards. Sovrappesare energy-efficient companies and defense. Sottopesare industrial commodities consumers. Sovereign bonds: 4.9% 10-year yield may offer entry point.",
+    "data_quality_note": "La qualita dei dati e elevata con 141 punti dati aggiornati in questa esecuzione."
+  },
+  "code": "POL",
+  "name": "Polonia",
+  "executive_summary": "Polonia's economy grows at 3.2% with moderate inflation. NATO's eastern flank posture strengthens with EU spesa per la difesa increase. Polonia beneficia di nearshoring flows redirected from more volatile EM markets. Energy dependence creates vulnerability to l'impennata del prezzo del petrolio.",
+  "key_changes": [
+    "crisi di Hormuz adds energy cost pressure to energy-dependent economy",
+    "NATO eastern flank posture strengthens amid global security deterioration",
+    "GDP at 3.2% -- among strongest in EU",
+    "Nearshoring flows beneficiano da trade redirection dynamics"
+  ],
+  "outlook": "Polonia remains an EU growth leader with structural advantages from nearshoring and EU fund absorption. Defense spending increase creates domestic demand stimulus. Energy transition investments partially offset oil dependence over time. NBP rate path depends on inflation trajectory.",
+  "investor_implications": "Polish equities offer EU growth esposizione at reasonable valuations. WIG 20 beneficia di EU fund flows and nearshoring. PLN may face pressure from importazione energetica costs. Polish defense sector beneficia di NATO spending increase.",
+  "active_alerts": [
+    {
+      "severity": "watch",
+      "title": "Polonia sees record spesa per la difesa $38B but presidente-PM institutional conflict threatens EU funds",
+      "description": "Polonia's spesa per la difesa at $38B with strong_trend di crescita in military expenditure. However, PM Tusk and Presidente Nawrocki locked in institutional tug-of-war. Labour law reform rollback threatens EUR 2.5B in EU Recovery Fund. Despite political friction, Polonia expected to record highest crescita del PIL in EU."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 36559233,
+      "population_growth_pct": -0.35,
+      "life_expectancy": 78.5073170731707,
+      "population_total": 36559233,
+      "hdi": 0.906,
+      "median_age": 42.9
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 7.4,
+      "regime_type": "flawed_democracy",
+      "freedom_house_score": 82,
+      "freedom_house_status": "free",
+      "corruption_perception_index": 53,
+      "press_freedom_index_rank": 31,
+      "wgi_voice_accountability": 0.63,
+      "wgi_political_stability": 0.56,
+      "wgi_government_effectiveness": 0.42,
+      "wgi_regulatory_quality": 0.78,
+      "wgi_rule_of_law": 0.46,
+      "wgi_control_of_corruption": 0.57,
+      "head_of_state_name": "Andrzej Duda",
+      "head_of_state_title": "President",
+      "head_of_government_name": "Donald Tusk",
+      "next_national_election_date": "2025-05"
+    },
+    "economy": {
+      "gdp_nominal_usd": 917767106146.761,
+      "gdp_real_growth_pct": 3.2,
+      "gdp_per_capita_usd": 25103.565661423,
+      "inflation_cpi_pct": 3.8,
+      "unemployment_rate_pct": 2.9,
+      "current_account_pct_gdp": 0.3,
+      "govt_debt_pct_gdp": 60,
+      "fx_reserves_usd": 223114909804.172,
+      "sovereign_credit_rating": "S&P: A-, Moody's: A2, Fitch: A-",
+      "central_bank_policy_rate_pct": 5.75,
+      "total_exports_usd": 478820000000,
+      "total_imports_usd": 442136000000,
+      "gdp_growth_forecast_2026_pct": 3.1,
+      "inflation_forecast_2026_pct": 2.8,
+      "exchange_rate_vs_usd": 3.6944,
+      "sovereign_bond_yield_10yr_pct": 4.88,
+      "top_export_partners": [
+        {
+          "country": "DEU",
+          "pct_of_total": 27.1,
+          "value_usd": 102900000000
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 5.8
+        },
+        {
+          "country": "CZE",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "GBR",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 4.8
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "DEU",
+          "pct_of_total": 20.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 12.0
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "NLD",
+          "pct_of_total": 4.0
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 3.8
+        }
+      ],
+      "avg_applied_tariff_pct": 5.0
+    },
+    "military": {
+      "defense_spending_usd": 38000000000,
+      "military_spending_usd": 38000000000,
+      "military_expenditure_usd": 38000000000,
+      "military_expenditure_pct_gdp": 4.2,
+      "military_expenditure_trend": "strong_growth",
+      "active_military_personnel": 250000,
+      "reserve_military_personnel": 350000,
+      "alliance_memberships": [
+        "NATO",
+        "EU CSDP"
+      ]
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.5,
+      "energy_independence_index": 0.55,
+      "supply_chain_chokepoint_exposure": 0.291,
+      "composite_national_power_index": 50.7,
+      "political_risk_premium_bps": 65,
+      "market_accessibility_score": 0.75,
+      "overall_investment_risk_score": 0.139
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "DEU",
+          "pct_of_total": 27.1,
+          "value_usd": 102900000000
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 5.8
+        },
+        {
+          "country": "CZE",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "GBR",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 4.8
+        }
+      ],
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "DEU",
+          "pct_of_total": 20.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 12.0
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "NLD",
+          "pct_of_total": 4.0
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 3.8
+        }
+      ],
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "avg_applied_tariff_pct": {
+      "value": 5.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 88.585,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 100.36,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "POL apertura commerciale sostanzialmente stabile with modest pressione al ribasso from disruzione marittima di Hormuz e l'escalation tariffaria USA",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 3.7186,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 3274.54,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 85159.60423662537,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 167.39671077,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 784.520595,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 183.8013645,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 738.033667,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 16.08084699453552,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.75,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 7.4,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "flawed_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 82,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 53,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 31,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": 0.626450896263123,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": 0.559584558010101,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "POL stabilita politica sostanzialmente mantenuta. NATO cohesion tested by guerra in Iran response and spesa per la difesa demands",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": 0.421437799930573,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": 0.780193567276001,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": 0.458741247653961,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": 0.565399944782257,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_name": {
+      "value": "Andrzej Duda",
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Donald Tusk",
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "next_national_election_date": {
+      "value": "2025-05",
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "POL relazioni con i partner sostanzialmente stabili within EU/NATO framework. guerra in Iran creating some alliance strain over burden-sharing",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

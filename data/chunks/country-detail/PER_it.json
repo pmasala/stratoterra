@@ -1,0 +1,849 @@
+{
+  "country_code": "PER",
+  "country_name": "Peru",
+  "tier": 2,
+  "region": "latin_america",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 289221969062.941,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 3.30394098171516,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "PER crescita del PIL sostanzialmente stabile. America Latinan mercati turbati dai cambiamenti di politica USA but not severely impacted by Hormuz directly",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 8452.37167056621,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 2.00770739412712,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "PER inflazione sostanzialmente stabile with modest pressione al rialzo from global prezzi del petrolio and disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 5.117,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 2.2093667985816,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "PER conto corrente sostanzialmente stabile. Global disruzione commerciale creates impatti misti a seconda della composizione delle esportazioni",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 79246042707.9259,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 35.2492265687178,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "PER debito pubblico sostanzialmente stabile. Nessuna pressione fiscale acuta ma l'incertezza globale limita lo spazio fiscale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 2.7,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: BBB-, Moody's: Baa1, Fitch: BBB",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "total_exports_usd": {
+      "value": 82536982274.1351,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 66342594208.1993,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 4.75,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Peru tasso di riferimento sostanzialmente stabile. La banca centrale bilancia le preoccupazioni per la crescita e l'inflazione in un contesto di incertezza globale.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "fdi_inflows_usd": {
+      "value": 6799395299.75657,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "PER IDE sostanzialmente stabili with modest caution from global sentiment di avversione al rischio and disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 609160441707.41,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 40.1,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -2.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 3.4743,
+      "confidence": 0.9,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "PER valuta sostanzialmente stabile rispetto al USD. Il sentiment globale di avversione al rischio crea una lieve pressione al deprezzamento rispetto alle valute rifugio",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Peru rendimenti obbligazionari sostanzialmente stabili.",
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 6.8,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 85000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 120000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 34217848,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 1.0937871324756,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 77.74,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.794,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 30.2,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 72.856,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 93.6600036621094,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 5.63786411,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 85.1912729600355,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 96.2,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 40.1,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 81.9571,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_expenditure_usd": {
+      "value": 2600000000,
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 120000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 386000,
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 355,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 6,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 0.9,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.6,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.55,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.163,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_colli_di_bottiglia_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della disruzione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 34.4,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologico + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 46.8
+    },
+    "political_risk_premium_bps": {
+      "value": 250,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia",
+      "previous_value": 110
+    },
+    "market_accessibility_score": {
+      "value": 0.55,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_borsa/200, indice_sviluppo_finanziario, facilita_affari/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.55,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "PER rischio d'investimento sostanzialmente stabile. Incertezza globale elevata ma nessun fattore scatenante specifico per il paese"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Peru apertura commerciale sostanzialmente stabile. La disruzione del commercio globale da Hormuz colpisce principalmente le rotte dipendenti dal Golfo. Parte del ridirezionamento commerciale avvantaggia rotte alternative.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Peru stabilita politica sostanzialmente invariata. Nessuna grande disruzione politica interna questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "PER relazioni con i partner sostanzialmente stabili. L'incertezza globale crea pressione ma nessuna crisi bilaterale acuta",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor": "macroeconomic.unemployment_rate_pct",
+        "reason": "Grande variazione assoluta: 1.38 (soglia: 0.8999999999999999)",
+        "previous_value": 5.117,
+        "new_value": 6.5,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      },
+      {
+        "factor_path": "economy.macroeconomic.unemployment_rate_pct",
+        "value": 5.117,
+        "reason": "Variazione assoluta 1.3830 supera 3× typical (0.3) = 0.8999999999999999; Fonte alternativa (IMF WEO) non concorda: 6.5 vs primary 5.117 (21.3% diff)",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 128,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Peru registra crescita del PIL of 3.3% (stable) con inflazione al 2.0% (stable). Il rischio d'investimento si attesta a 0.200. Segnale chiave: Elezioni presidenziali previste per April 12, 2026; America Latinan mercati turbati dai cambiamenti di politica USA Il rischio d'investimento rimane contenuto a 0.200.",
+    "key_changes_this_week": [
+      "Elezioni presidenziali previste per April 12, 2026; America Latinan mercati turbati dai cambiamenti di politica USA",
+      "10-year rendimento obbligazionario stabile at N/A",
+      "Traiettoria del debito pubblico: stabile (35.2% del PIL)"
+    ],
+    "outlook": "Peru's la traiettoria a breve termine mostra crescita del PIL al 3.3% (stable) with moderate rischio d'investimento. The global energy shock and US escalation commerciale creano venti contrari per settori orientati all'esportazione. La stabilita politica e stabile, il che determinera l'efficacia della risposta politica.",
+    "investor_implications": "Peru presents moderate rischio d'investimento a 0.200 with 250 bps premio per il rischio politico. Accessibilita al mercato a 0.550. Esistono opportunita selettive tra le classi di attivi.",
+    "data_quality_note": "La qualita dei dati e elevata con 128 punti dati aggiornati in questa esecuzione.  Fattori segnalati: macroeconomic.unemployment_rate_pct, economy.macroeconomic.unemployment_rate_pct."
+  },
+  "code": "PER",
+  "name": "Peru",
+  "executive_summary": "Peru installed its 9th presidente in a decade (Balcazar), with presidenteial elezioni previste per April 12. Political instability is chronic. Il settore minerario rimane la spina dorsale economica. Oil costi di importazione add modesta pressione.",
+  "key_changes": [
+    "Balcazar insediato come 9th presidente in a decade (ongoing instability)",
+    "Presidenteial elezioni previste per April 12",
+    "Mining and contesto d'investimento uncertain"
+  ],
+  "outlook": "Peru's chronic political instability is the key risk. April 12 elections will set the next political cycle. Il settore minerario (copper, gold, silver) provides economic resilience regardless of political leadership.",
+  "investor_implications": "Peruvian esposizione mineraria (Southern Copper, Buenaventura) attraente con l'impennata dell'oro. PEN relativamente stabile. Political uncertainty giustifica cautela on non-settore minerarios.",
+  "active_alerts": [
+    {
+      "severity": "watch",
+      "title": "Peru installs 9th presidente in a decade; elections April 12",
+      "description": "Balcazar insediato come 9th presidente. Presidenteial elezioni previste per April 12. Mining and contesto d'investimento remains uncertain. Le condizioni persistono."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 34217848,
+      "population_growth_pct": 1.094,
+      "life_expectancy": 77.74,
+      "population_total": 34217848,
+      "hdi": 0.794,
+      "median_age": 30.2
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 5.69,
+      "regime_type": "hybrid_regime",
+      "freedom_house_score": 67,
+      "freedom_house_status": "partly_free",
+      "corruption_perception_index": 31,
+      "press_freedom_index_rank": 130,
+      "wgi_voice_accountability": 0.06,
+      "wgi_political_stability": -0.52,
+      "wgi_government_effectiveness": -0.49,
+      "wgi_regulatory_quality": 0.29,
+      "wgi_rule_of_law": -0.54,
+      "wgi_control_of_corruption": -0.72,
+      "fragile_states_index": 72.0,
+      "head_of_state_name": "Dina Boluarte",
+      "head_of_state_title": "President",
+      "next_national_election_date": "2026-04"
+    },
+    "economy": {
+      "gdp_nominal_usd": 289221969062.941,
+      "gdp_real_growth_pct": 2.9,
+      "gdp_per_capita_usd": 8452.37167056621,
+      "inflation_cpi_pct": 1.7,
+      "unemployment_rate_pct": 6.5,
+      "current_account_pct_gdp": 2.21,
+      "govt_debt_pct_gdp": 32.1,
+      "fx_reserves_usd": 79246042707.9259,
+      "sovereign_credit_rating": "S&P: BBB-, Moody's: Baa1, Fitch: BBB",
+      "central_bank_policy_rate_pct": 4.75,
+      "total_exports_usd": 83324835863.2063,
+      "total_imports_usd": 67159924887.4784,
+      "top_export_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 30.0
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 13.5
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "CAN",
+          "pct_of_total": 5.0
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 4.2
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 28.0
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 20.0
+        },
+        {
+          "country": "BRA",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "MEX",
+          "pct_of_total": 3.8
+        },
+        {
+          "country": "CHL",
+          "pct_of_total": 3.5
+        }
+      ],
+      "sovereign_bond_yield_10yr_pct": 6.8,
+      "equity_index_level": 750,
+      "stock_market_cap_usd": 85000000000,
+      "banking_sector_assets_usd": 120000000000
+    },
+    "military": {
+      "military_expenditure_usd": 2600000000,
+      "active_military_personnel": 120000,
+      "reserve_military_personnel": 386000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.6,
+      "energy_independence_index": 0.55,
+      "supply_chain_chokepoint_exposure": 0.163,
+      "composite_national_power_index": 34.4,
+      "political_risk_premium_bps": 250,
+      "market_accessibility_score": 0.55,
+      "overall_investment_risk_score": 0.2
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 30.0
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 13.5
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "CAN",
+          "pct_of_total": 5.0
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 4.2
+        }
+      ],
+      "confidence": 0.72,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 28.0
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 20.0
+        },
+        {
+          "country": "BRA",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "MEX",
+          "pct_of_total": 3.8
+        },
+        {
+          "country": "CHL",
+          "pct_of_total": 3.5
+        }
+      ],
+      "confidence": 0.72,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 96.2,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 81.9571,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 51.48,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "PER apertura commerciale sostanzialmente stabile with modest pressione al ribasso from disruzione marittima di Hormuz e l'escalation tariffaria USA",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "equity_index_level": {
+        "value": 52127.81,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 1904.5363373099651,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 59.30293465,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 323.6050184,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 478.9385971,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 264.380449988,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 40.63115007377049,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 5.69,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "hybrid_regime",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 67,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "partly_free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 31,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 130,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": 0.060481496155262,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -0.52178555727005,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "PER stabilita politica sostanzialmente stabile. Incertezza globale creates pressione di fondo but no fattori scatenanti acuti",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": -0.491872787475586,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": 0.292205184698105,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": -0.538132667541504,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -0.721040904521942,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 72.0,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Dina Boluarte",
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "next_national_election_date": {
+      "value": "2026-04-12",
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "PER relazioni con i partner sostanzialmente stabili. L'incertezza globale crea pressione ma nessuna crisi bilaterale acuta",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

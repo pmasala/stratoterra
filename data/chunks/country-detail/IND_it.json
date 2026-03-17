@@ -1,0 +1,959 @@
+{
+  "country_code": "IND",
+  "country_name": "India",
+  "tier": 1,
+  "region": "south_asia",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 3909891533858.08,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 6.49476552383821,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "India negotiated Hormuz passage for tankers via direct Modi-Pezeshkian talks. Oil costi di importazione elevated but diplomatic positioning mitigates worst impact. Domanda interna rimane forte",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 2694.73780859961,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 4.95303550973656,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "IND inflazione in aumento from shock petrolifero ($103/bbl). Importazione energetica costs passing through to prezzi al consumo. Global food prices elevated",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 4.219,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": -0.82224320865487,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "IND conto corrente in deterioramento from elevated fattura delle importazioni petrolifere at $103/bbl. Importazione energetica dependency driving trade deficit wider",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 643042560625.541,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 81.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "IND debito pubblico sostanzialmente stabile. No acute pressione fiscale but incertezza globale limits spazio fiscale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 6.2,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: BBB, Moody's: Baa3, Fitch: BBB-",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 5.25,
+      "confidence": 0.99,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "India tasso di riferimento sostanzialmente stabile. Banca centrale balancing preoccupazioni di crescita e inflazione amid incertezza globale.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 92.38,
+      "confidence": 0.88,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Indian rupee sostanzialmente stabile — RBI managing depreciation. Oil costs elevated but Hormuz passage negotiated. Neutral diplomacy supports confidence",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 6.68,
+      "confidence": 0.88,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "India rendimenti obbligazionari rising modestly on inflation expectations from shock petrolifero.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "equity_index_level": {
+      "value": 85439.62,
+      "confidence": 0.88,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11"
+    },
+    "total_exports_usd": {
+      "value": 827405227198.603,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 918333719557.771,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_forecast_2026_pct": {
+      "value": 4,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -0.44,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
+    },
+    "fdi_inflows_usd": {
+      "value": 27139853378.1402,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "IND IDE che affrontano venti contrari from indagine Section 301 and incertezza sulla politica commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 16192422603162.4,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 25.5,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -7.1,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 1450935791,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 0.890706546985984,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 72.003,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.685,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 29.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 55.658,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 81.6999969482422,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 3.33944035,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 35.3788972368389,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 99.5,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 25.5,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 70,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 83500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    },
+    "military_expenditure_usd": {
+      "value": 86100000000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 2.4,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "India spesa per la difesa rising — instabilita regionale from Iran war, Pakistan confrontation risk per CFR, strategic autonomy investments",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "active_military_personnel": {
+      "value": 1431000,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 1000000,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 3913,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 2183,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 18,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "alliance_memberships": {
+      "value": [
+        "Quad"
+      ],
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "nuclear": {
+      "status": {
+        "value": "declared_arsenal",
+        "confidence": 0.99,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      },
+      "warheads_estimated": {
+        "value": 180,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "arms_imports_global_share": {
+      "value": {
+        "rank": 2,
+        "period": "2021-2025",
+        "volume_change": "-4%",
+        "russian_share_of_imports": "40%",
+        "previous_russian_share": "51%",
+        "note": "Still world's 2nd largest importer but reducing dependence on Russia."
+      },
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "conflict_status": {
+      "value": "stable",
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_03_crossref",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {
+    "fta_count": {
+      "value": 13,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.55,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, alimentari, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.35,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_interna / consumo_energetico_interno, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.549,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_punti_strozzatura_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della perturbazione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 56.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 62.5
+    },
+    "political_risk_premium_bps": {
+      "value": 238,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia"
+    },
+    "market_accessibility_score": {
+      "value": 0.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato/200, indice_sviluppo_finanziario, facilita_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.287,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.55,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "IND rischio d'investimento sostanzialmente stabile. Incertezza globale elevated but nessun fattore scatenante acuto specifico del paese"
+    },
+    "trade_openness_trend": {
+      "value": "decrease",
+      "confidence": 0.72,
+      "reasoning": "India apertura commerciale in calo as shock petrolifero disrupts trade patterns. Higher costi di importazione reduce volumi commerciali. Catena di approvvigionamento rerouting underway but costly.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "India stabilita politica sostanzialmente invariata. No major domestic political disruptions questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "growth",
+      "confidence": 0.68,
+      "reasoning": "India relazioni con i partner in miglioramento — Modi-Iran direct diplomacy secured Hormuz passage, neutral positioning enhancing strategic value to both sides",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
+        "value": 4.95303550973656,
+        "reason": "Variazione assoluta 2.1530 superiore a 3× typical (0.5) = 1.5; Fonte alternativa (IMF WEO) discorde: 2.8 vs primary 4.95303550973656 (76.9% diff); Contesto evento: IND ha trigger di eventi attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 152,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "India confronts rising costi energetici from the blocco di Hormuz and $100+ oil. La crescita del PIL e al 6.5% (stable), with inflazione al 5.0% (rising). La pressione sul conto corrente sta aumentando as fatture di importazione energetica surge. Key signal: India negotiates Hormuz passage for tankers through direct talks with Iran: Two Indian-flagged LPG tankers successfully crossed the Stretto di Hormuz after Prime Minister Modi held direct talks with... Il rischio d'investimento rimane contenuto a 0.287.",
+    "key_changes_this_week": [
+      "India negotiates Hormuz passage for tankers through direct talks with Iran: Two Indian-flagged LPG tankers successfully crossed the Stretto di Hormuz after Prime Minister Modi held...",
+      "India adopts 'strategic indifference' toward Pakistan, focuses on China threat: India has shifted its strategic posture to 'strategic indifference' toward Pakistan, concluding...",
+      "Conflict at Stretto di Hormuz spills into Indian Ocean rotte marittime: The disruption at the Stretto di Hormuz is spilling into the Indian Ocean, affecting broader global shipping...",
+      "Modi negotiated Hormuz passage for Indian tankers through direct talks with Iranian President Pezeshkian; Unveiling Rs 18,680 crore development projects in West Bengal ahead of...",
+      "Inflazione in aumento al 5.0%"
+    ],
+    "outlook": "India's prospettive di crescita is sotto pressione from surging costi di importazione energetica. Conto corrente deterioration risks debolezza valutaria if the blocco di Hormuz extends beyond Q2. Banca centrale affronta un difficile compromesso tra sostenere la crescita e contenere l'inflazione importata. Structural diversificazione energetica and strategic reserves adequacy are key a medio termine priorities.",
+    "investor_implications": "India equities face venti contrari from rising costi dei fattori produttivi and potential compressione dei margini. Rischio d'investimento a 0.287 with currency sotto pressione from deterioramento del conto corrente. Privilegiare exporters with potere di determinazione dei prezzi and posizioni orientate alla domanda interna insulated from costi energetici. Copertura valutaria consigliata per India-denominated positions.",
+    "data_quality_note": "La qualita dei dati e elevata con 152 dati aggiornati in questa esecuzione.  Fattori segnalati: economy.macroeconomic.inflation_rate_cpi_pct."
+  },
+  "code": "IND",
+  "name": "India",
+  "executive_summary": "India faces significant shock petrolifero exposure as the largest economy most dependent on Gulf energy imports. Importing approximately 85% of its oil needs via Hormuz-affected routes, the closure threatens inflation (CPI trending from 2.8% to 4%) and the conto corrente deficit. The rupee is under pressione al deprezzamento at 91.42/USD. GDP trend is decreasing from 6.6% to 6.2% but India remains the fastest-growing major economy. Government faces a choice between fuel subsidies and consolidamento fiscale.",
+  "key_changes": [
+    "chiusura di Hormuz critically threatens India's oil imports (85% import dependency) (Mar 1, major)",
+    "CPI inflation trending from 2.8% to 4% on energy pass-through",
+    "Rupee under pressione al deprezzamento at 91.42/USD",
+    "tendenza del PIL in diminuzione from 6.6% to 6.2% forecast",
+    "Conto corrente deficit widening on higher fattura delle importazioni petrolifere"
+  ],
+  "outlook": "India's growth premium faces a breve termine compression from the shock petrolifero. If Hormuz remains closed for more than 2-4 weeks, inflation could exceed 5% and force RBI to pause normalizzazione dei tassi. Fiscal impact of fuel subsidies could add 0.5-0.8% of GDP to the deficit. India's non-alignment diplomacy allows it to potentially source discounted Russian oil, providing partial offset. The a medio termine structural growth story (demographics, digital infrastructure, manifatturiero shift) rimane intatto.",
+  "investor_implications": "Sovrappesare Indian IT services (USD earners, energy-agnostic) and sottopesare ad alta intensita energetica industrials. INR hedge recommended given pressione al deprezzamento. Indian government bonds face yield pressure on inflation and fiscal concerns. Monitorare RBI statements for any emergency rate action. India remains a structural sovrappesare but tactical caution warranted.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "India highly exposed to shock petrolifero: imports 85% of oil via Hormuz-dependent routes",
+      "description": "India imports approximately 85% of its oil needs, much via Gulf routes affected by chiusura di Hormuz. Impennata del prezzo del petrolio adds significant cost-push inflation (CPI trend growth from 2.8% to 4%). Conto corrente deficit widening. Rupee under pressione al deprezzamento at 91.42/USD. Government faces choice between subsidies and consolidamento fiscale. tendenza del PIL in calo (6.6% to 6.2%) but remains fastest major economy."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 1450935791,
+      "population_growth_pct": 0.891,
+      "life_expectancy": 72.003,
+      "population_total": 1450935791,
+      "hdi": 0.685,
+      "median_age": 29.8
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 7.29,
+      "regime_type": "flawed_democracy",
+      "freedom_house_score": 63,
+      "freedom_house_status": "partly_free",
+      "corruption_perception_index": 39,
+      "press_freedom_index_rank": 151,
+      "wgi_voice_accountability": 0.09,
+      "wgi_political_stability": -0.64,
+      "wgi_government_effectiveness": 0.48,
+      "wgi_regulatory_quality": -0.14,
+      "wgi_rule_of_law": 0.19,
+      "wgi_control_of_corruption": -0.37,
+      "fragile_states_index": 72.3,
+      "head_of_state_name": "Droupadi Murmu",
+      "head_of_state_title": "President",
+      "head_of_government_name": "Narendra Modi",
+      "next_national_election_date": "2029-04"
+    },
+    "economy": {
+      "gdp_nominal_usd": 3909891533858.08,
+      "gdp_real_growth_pct": 6.6,
+      "gdp_per_capita_usd": 2694.73780859961,
+      "inflation_cpi_pct": 2.8,
+      "unemployment_rate_pct": 4.9,
+      "current_account_pct_gdp": -0.82,
+      "govt_debt_pct_gdp": 81.4,
+      "fx_reserves_usd": 643042560625.541,
+      "sovereign_credit_rating": "S&P: BBB, Moody's: Baa3, Fitch: BBB-",
+      "central_bank_policy_rate_pct": 5.25,
+      "total_exports_usd": 822010899401.314,
+      "total_imports_usd": 923567747218.907,
+      "gdp_growth_forecast_2026_pct": 6.2,
+      "inflation_forecast_2026_pct": 4,
+      "exchange_rate_vs_usd": 92.01,
+      "sovereign_bond_yield_10yr_pct": 6.7,
+      "equity_index_level": 80238.85,
+      "top_export_partners": [
+        {
+          "country": "USA",
+          "pct_of_total": 17.5
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "NLD",
+          "pct_of_total": 3.8
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 3.5
+        },
+        {
+          "country": "GBR",
+          "pct_of_total": 3.2
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 15.2
+        },
+        {
+          "country": "RUS",
+          "pct_of_total": 9.1
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 7.0
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "SAU",
+          "pct_of_total": 5.8
+        }
+      ],
+      "avg_applied_tariff_pct": 16.2,
+      "equity_index_daily_change_pct": -0.44
+    },
+    "military": {
+      "military_spending_usd": 83500000000,
+      "military_expenditure_usd": 86100000000,
+      "military_expenditure_pct_gdp": 2.4,
+      "active_military_personnel": 1431000,
+      "reserve_military_personnel": 1000000,
+      "alliance_memberships": [
+        "Quad"
+      ]
+    },
+    "relations": {
+      "fta_count": 13
+    },
+    "derived": {
+      "resource_self_sufficiency_index": 0.55,
+      "energy_independence_index": 0.35,
+      "supply_chain_chokepoint_exposure": 0.549,
+      "composite_national_power_index": 56.2,
+      "political_risk_premium_bps": 238,
+      "market_accessibility_score": 0.5,
+      "overall_investment_risk_score": 0.287
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "USA",
+          "pct_of_total": 17.5
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "NLD",
+          "pct_of_total": 3.8
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 3.5
+        },
+        {
+          "country": "GBR",
+          "pct_of_total": 3.2
+        }
+      ],
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 15.2
+        },
+        {
+          "country": "RUS",
+          "pct_of_total": 9.1
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 7.0
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "SAU",
+          "pct_of_total": 5.8
+        }
+      ],
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "avg_applied_tariff_pct": {
+      "value": 16.2,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 99.5,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 70,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 44.65,
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "IND apertura commerciale in calo from indagine Section 301, Section 122 tariffs, and global perturbazione del trasporto marittimo from Hormuz",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 92.38,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 6.68,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 74563.92,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11",
+        "note": "L'agente fonte ha segnalato un'anomalia ma supera i controlli di validazione"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 1012945.8381122032,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 2051.784852148,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 2512.908316,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 1269.073189,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 5598.89,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 603.8129245047637,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.88,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 7.29,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "flawed_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 63,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "partly_free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 39,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 151,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": 0.0944044888019562,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -0.635076940059662,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "IND stabilita politica sostanzialmente stabile. Incertezza globale creates pressione di fondo but no acute triggers",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": 0.47511014342308,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": -0.136969581246376,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": 0.188364565372467,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -0.366014748811722,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 72.3,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Droupadi Murmu",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Narendra Modi",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "next_national_election_date": {
+      "value": "2029",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "India relazioni con i partner in miglioramento — Modi-Iran direct diplomacy secured Hormuz passage, neutral positioning enhancing strategic value to both sides",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

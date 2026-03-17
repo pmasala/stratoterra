@@ -1,0 +1,946 @@
+{
+  "country_code": "DEU",
+  "country_name": "Germania",
+  "tier": 1,
+  "region": "europe",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 4685592577804.69,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": -0.495851897260366,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "DEU PIL in calo da costo energetico shock, manufacturing venti contrari, e Section 301 trade investigation uncertainty",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 56103.7323182554,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 2.2564981433876,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "DEU inflazione in aumento da shock petrolifero pass-through. ECB holding rates. Section 122 tariffs adding costo delle importazioni pressure. March/April readings sara capture energy surge",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 3.711,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 5.77188467199732,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "DEU conto corrente in modesto deterioramento da higher importazione energetica costi e perturbazione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 377935574356.242,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 64.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "DEU debt in modesto aumento da spesa per la difesa increases (NATO 5% target pressure) e transizione energetica costs",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 0.9,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": null,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "ecb",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "ECB facing stagflazione dilemma. Shock petrolifero pushes inflazione higher mentre crescita weakens. riunione di politica monetaria di marzo critica. Belgio sciopero generale highlights spirale salari-prezzi risk.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 0.87138,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "DEU (EUR) in apprezzamento rispetto al USD — EUR/USD at 1.22 poiche ECB holds tassi mentre Fed previsto a cut. Debolezza del dollaro in espansione",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 2.99,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Germania rendimenti obbligazionari in aumento modestamente su inflazione expectations da shock petrolifero.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "equity_index_level": {
+      "value": 23447.29,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11"
+    },
+    "total_exports_usd": {
+      "value": 1941431210621.87,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 1764438191610.94,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_forecast_2026_pct": {
+      "value": 1.8,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -3.54,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
+    },
+    "fdi_inflows_usd": {
+      "value": 47599143488.7827,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "DEU FDI facing venti contrari da Section 301 investigation e politica commerciale uncertainty",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 6142807000522.21,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 32.4,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -2.5,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 83516593,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 0.274957829184881,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 80.5414634146342,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.959,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 46.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 60.571,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 12.26655293,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 82.0211432579125,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 32.4,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 93.5,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "defense_spending_usd": {
+      "value": 88500000000,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "military_spending_usd": {
+      "value": 88500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    },
+    "military_expenditure_usd": {
+      "value": 107000000000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "sipri",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 2.1,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "DEU spesa per la difesa in aumento da NATO pressure, guerra con l'Iran response, e Russia threat. Trump 5% PIL target creating pressione politica",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "military_expenditure_trend": {
+      "value": "strong_growth",
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 184324,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 860000,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 296,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 6,
+        "confidence": 0.88,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "alliance_memberships": {
+      "value": [
+        "NATO",
+        "EU CSDP"
+      ],
+      "confidence": 0.98,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "nuclear": {
+      "status": {
+        "value": "nuclear_sharing",
+        "confidence": 0.95,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 569,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "arms_exports_global_share": {
+      "value": {
+        "share_pct": 5.7,
+        "period": "2021-2025",
+        "rank": 4,
+        "note": "Overtook China as 4th largest exporter."
+      },
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.35,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(production/consumption, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.3,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.31,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_da_strozzature_marittime + 0.4 * apertura_commerciale_normalizzata; elevato a causa di Hormuz/Suez perturbazione"
+    },
+    "composite_national_power_index": {
+      "value": 63.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 73.4
+    },
+    "political_risk_premium_bps": {
+      "value": 0,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito del rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia",
+      "previous_value": 100
+    },
+    "market_accessibility_score": {
+      "value": 0.88,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato_azionario/200, indice_sviluppo_finanziario, facilita_di_fare_impresa/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.103,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.6,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "DEU rischio di investimento sostanzialmente stabile — EU quadro istituzionale e NATO membership provide stability nonostante incertezza globalee"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Germania apertura commerciale sostanzialmente stabile. Globale perturbazione commerciale da Hormuz principalmente affects Gulf-dependent routes. Some reindirizzamento commerciale benefits alternative routes.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Germania stabilita politica sostanzialmente invariato. Nessuna perturbazione politica interna significativa questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.62,
+      "reasoning": "DEU relationships con US in deterioramento da Section 301 investigation targeting manufacturing sectors",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor": "macroeconomic.exchange_rate_vs_usd",
+        "reason": "Variazione % elevata: 27.9% (soglia: 15%)",
+        "previous_value": 1.1818,
+        "new_value": 0.8518,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      }
+    ],
+    "update_count": 148,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Germania's economy faces pressione crescente da la globale shock dei prezzi energetici triggered da la crisi Iran-Hormuz. La crescita del PIL si attesta a -0.5% (in calo) mentre l'inflazione e a 2.3% (in aumento). Indipendenza energetica e basso a 0.300, amplificando la vulnerabilita. Segnale chiave: IEA announces record 400 million barrel strategic oil reserve release: The International Energy Agency agreed a release 400 million barrels di oil, la largest coordinated release in history. The US... Rischio di investimento rimane contenuto a 0.103.",
+    "key_changes_this_week": [
+      "IEA announces record 400 million barrel strategic oil reserve release: The International Energy Agency agreed a release 400 million barrels di oil, la largest coordinated...",
+      "Supreme Court strikes down IEEPA tariffs; Trump responds con Section 122 globale surcharge: The Supreme Court ruled 6-3 su Feb 20 che IEEPA does non authorize presidential...",
+      "USTR launches nuova Section 301 indagini targeting 16 countries' manufacturing: On March 11, USTR initiated nuova Section 301 indagini in 'strutturale excess capacity and...",
+      "Section 122 tariff increase da 10% a 15% previsto imminently: Treasury Secretary Scott Bessent annunciato su March 4 che la US would increase la Section 122 globale tariff...",
+      "Dollar weakening poiche Fed previsto a cut tassi twice in 2026: EUR/USD reached 1.22 in March 2026 poiche la dollar weakens. The Fed e widely previsto a cut tassi twice in 2026 while...",
+      "Inflazione in aumento at 2.3%"
+    ],
+    "outlook": "Germania faces a breve termine impegnativo poiche la shock dei prezzi energetici works attraverso la economy. Con indipendenza energetica a solo 0.300, il trasferimento sui costi di produzione sara severo. Inflazione a 2.3% (in aumento) vincola le opzioni di taglio dei tassi della ECB. Competitivita industriale e eroding contro ricchi di energia competitors. A riapertura di Hormuz fornirebbe un sollievo significativo, ma strutturale sicurezza energetica gaps require lungo termine investment.",
+    "investor_implications": "Germania faces pressione sugli utili attraverso settori ad alta intensita energetica. Rischio di investimento a 0.103 e moderato per gli standard europei. Sovrappesare energy-efficient aziende e defense. Sottopesare industrial commodities consumers. Obbligazioni sovrane: 3.0% rendimento decennale rimane ancorato.",
+    "data_quality_note": "La qualita dei dati e alta con 148 punti dati aggiornati in questa esecuzione.  Fattori segnalati: macroeconomic.exchange_rate_vs_usd."
+  },
+  "code": "DEU",
+  "name": "Germania",
+  "executive_summary": "Germania's fragile recovery faces esterna venti contrari da impennata del prezzo del petrolio e trade fragmentation risks. PIL at 0.2% con a crescita trend a 0.9% forecast, ma la chiusura di Hormuz threatens costi energetici (indipendenza energetica: 30%). Cina's sanzioni su Giappone e broader trade decoupling signals risk per Germania's export-dependent model. EU-US trade deal postponed amid tariff uncertainty. The EU-Mercosur Partnership Agreement provides a positiva counterweight.",
+  "key_changes": [
+    "chiusura di Hormuz drives impennata del prezzo del petrolio; Germania indipendenza energetica at 30% (Mar 1)",
+    "Cina-Giappone sanzioni escalation signals broader trade fragmentation risk per exporters",
+    "EU-US trade deal postponed amid SCOTUS tariff ruling uncertainty",
+    "EU-Mercosur Partnership Agreement signed -- largest FTA ever (Jan 17)",
+    "PIL trend crescita (0.2% a 0.9%) ma fragile amid esterna shocks"
+  ],
+  "outlook": "Germania's recovery trajectory depends su costi energetici e trade stability. The impennata del prezzo del petrolio adds 0.2-0.4pp a inflazione e compresses margins per ad alta intensita energetica manufacturers. Cina-Giappone escalation e a warning signal per broader East Asian trade fragmentation che would hurt German auto e machinery exports. EU fiscal rules e spesa per la difesa requirements compete per fiscal space. The nuova Merz government's industrial policy sara be tested da these cross-currents.",
+  "investor_implications": "German equities sensitive a costi energetici e Cina trade flows. Sovrappesare defense-exposed firms benefiting da EU riarmo. Sottopesare auto sector su Cina-Giappone contagion risk e trade fragmentation. Bund yields potrebbe compress su flight-to-safety flows. EUR/USD could face pressure if ECB signals concern su crescita.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Germania exposed a impennata del prezzo del petrolio e Cina slowdown venti contrari",
+      "description": "Oil prezzi remain elevated. Germania indipendenza energetica at 30%. PIL at 0.2% con crescita trend a 0.9%. Cina slowdown e Cina-Giappone sanzioni signal broader trade fragmentation risk per export-dependent economy. EU-US trade deal postponed. Le condizioni persistono."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 83516593,
+      "population_growth_pct": 0.274957829184881,
+      "life_expectancy": 80.5414634146342,
+      "population_total": 83516593,
+      "hdi": 0.959,
+      "median_age": 46.8
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 8.73,
+      "regime_type": "full_democracy",
+      "freedom_house_score": 95,
+      "freedom_house_status": "free",
+      "corruption_perception_index": 75,
+      "press_freedom_index_rank": 11,
+      "wgi_voice_accountability": 1.46,
+      "wgi_political_stability": 0.59,
+      "wgi_government_effectiveness": 1.19,
+      "wgi_regulatory_quality": 1.46,
+      "wgi_rule_of_law": 1.55,
+      "wgi_control_of_corruption": 1.66,
+      "head_of_state_name": "Frank-Walter Steinmeier",
+      "head_of_state_title": "President",
+      "head_of_government_name": "Friedrich Merz",
+      "next_national_election_date": "2029-09"
+    },
+    "economy": {
+      "gdp_nominal_usd": 4685592577804.69,
+      "gdp_real_growth_pct": 0.2,
+      "gdp_per_capita_usd": 56103.7323182554,
+      "inflation_cpi_pct": 2.1,
+      "unemployment_rate_pct": 3.7,
+      "current_account_pct_gdp": 5.77,
+      "govt_debt_pct_gdp": 64.4,
+      "fx_reserves_usd": 377935574356.242,
+      "sovereign_credit_rating": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "central_bank_policy_rate_pct": 2.0,
+      "total_exports_usd": 1939702201602.97,
+      "total_imports_usd": 1760032612948.98,
+      "gdp_growth_forecast_2026_pct": 0.9,
+      "inflation_forecast_2026_pct": 1.8,
+      "exchange_rate_vs_usd": 0.8608,
+      "sovereign_bond_yield_10yr_pct": 2.79,
+      "equity_index_level": 23626.77,
+      "top_export_partners": [
+        {
+          "country": "USA",
+          "pct_of_total": 10.5,
+          "value_usd": 175590000000
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 7.5,
+          "value_usd": 125640000000
+        },
+        {
+          "country": "NLD",
+          "pct_of_total": 7.1,
+          "value_usd": 118840000000
+        },
+        {
+          "country": "POL",
+          "pct_of_total": 6.1,
+          "value_usd": 101440000000
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 5.9,
+          "value_usd": 97780000000
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 11.8
+        },
+        {
+          "country": "NLD",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.2
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 5.8
+        },
+        {
+          "country": "POL",
+          "pct_of_total": 5.5
+        }
+      ],
+      "trade_openness_pct": 80.0,
+      "avg_applied_tariff_pct": 5.0,
+      "equity_index_daily_change_pct": -3.54
+    },
+    "military": {
+      "defense_spending_usd": 88500000000,
+      "military_spending_usd": 88500000000,
+      "military_expenditure_usd": 88500000000,
+      "military_expenditure_pct_gdp": 2.1,
+      "military_expenditure_trend": "strong_growth",
+      "active_military_personnel": 184324,
+      "reserve_military_personnel": 860000,
+      "alliance_memberships": [
+        "NATO",
+        "EU CSDP"
+      ]
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.35,
+      "energy_independence_index": 0.3,
+      "supply_chain_chokepoint_exposure": 0.31,
+      "composite_national_power_index": 63.2,
+      "political_risk_premium_bps": 0,
+      "market_accessibility_score": 0.88,
+      "overall_investment_risk_score": 0.103
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "USA",
+          "pct_of_total": 10.5,
+          "value_usd": 175590000000
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 7.5,
+          "value_usd": 125640000000
+        },
+        {
+          "country": "NLD",
+          "pct_of_total": 7.1,
+          "value_usd": 118840000000
+        },
+        {
+          "country": "POL",
+          "pct_of_total": 6.1,
+          "value_usd": 101440000000
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 5.9,
+          "value_usd": 97780000000
+        }
+      ],
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 11.8
+        },
+        {
+          "country": "NLD",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.2
+        },
+        {
+          "country": "FRA",
+          "pct_of_total": 5.8
+        },
+        {
+          "country": "POL",
+          "pct_of_total": 5.5
+        }
+      ],
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "trade_openness_pct": {
+      "value": 80.0,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "DEU apertura commerciale in calo da Section 301 investigation, Section 122 tariffs, e globale perturbazione del trasporto marittimo da Hormuz",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "avg_applied_tariff_pct": {
+      "value": 5.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 93.5,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 0.87138,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 2.98,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 23447.29,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 91940.85699999848,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 490.176993982,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 2745.184461,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 145.7760856,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 2056.734972,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 28.724265027322403,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 8.73,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "full_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 95,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 75,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 11,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": 1.46138572692871,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": 0.586989283561707,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "DEU stabilita politica sostanzialmente mantenuto. NATO cohesion tested da guerra con l'Iran response e spesa per la difesa demands",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": 1.18541669845581,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": 1.45697498321533,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": 1.55120778083801,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": 1.66416621208191,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_name": {
+      "value": "Frank-Walter Steinmeier",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Friedrich Merz",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "next_national_election_date": {
+      "value": "2029-09",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "DEU relationships con US in deterioramento da Section 301 investigation targeting manufacturing sectors",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

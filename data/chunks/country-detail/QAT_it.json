@@ -1,0 +1,828 @@
+{
+  "country_code": "QAT",
+  "country_name": "Qatar",
+  "tier": 2,
+  "region": "middle_east",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 219162637362.637,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 2.35970586926597,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "strong_decrease",
+      "trend_confidence": 0.88,
+      "trend_reasoning": "QAT GDP sharply declining — blocco di Hormuz prevents oil/gas exports despite $103/bbl prices. Limited alternative via oleodotto insufficient",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 76688.6941743178,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 1.26734310292375,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "strong_growth",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "QAT facing severe disruzione della catena di approvvigionamento from blocco di Hormuz. Import costs in forte aumento for food and essential goods",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 0.13,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 17.2860738675678,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "strong_decrease",
+      "trend_confidence": 0.88,
+      "trend_reasoning": "QAT conto corrente gravemente colpito — oil/gas exports blocked by chiusura di Hormuz. Import costs rising from alternative routes",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 53987415590.4034,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 40.6,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "strong_growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "QAT debito in forte aumento — ricavi petroliferi disrupted by Hormuz while defense and subsidy spending increases. Fondo sovrano drawdowns needed",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 6.1,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: AA, Moody's: Aa2, Fitch: AA-",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "total_exports_usd": {
+      "value": 161692857142.857,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 74520054945.0549,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 4.85,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Qatar tasso di riferimento sostanzialmente stabile. La banca centrale bilancia le preoccupazioni per la crescita e l'inflazione in un contesto di incertezza globale.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "fdi_inflows_usd": {
+      "value": 460164835.164835,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "strong_decrease",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "QAT IDE in forte calo — guerra regionale zone, blocco di Hormuz uncertainty, investor risk aversion to Golfo",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 360218045926.174,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -0.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 3.64,
+      "confidence": 0.99,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "QAT valuta sotto pressione — blocco di Hormuz disrupting revenue base, dollar demand for essential imports",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "strong_growth",
+      "trend_confidence": 0.8,
+      "trend_reasoning": "Qatar rendimenti obbligazionari in forte aumento on revenue collapse and deterioramento fiscale from blocco di Hormuz.",
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 4.5,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 165000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 480000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 2857822,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 7.32265165181291,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 82.368,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.886,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 34.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 87.013,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 2.52358818,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 99.3219891728394,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 99.6528,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_expenditure_usd": {
+      "value": 12000000000,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 26550,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 62,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 263,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "alliance_memberships": {
+      "value": [
+        "GCC"
+      ],
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 5.48,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "conflict_status": {
+      "value": "fragile",
+      "confidence": 0.75,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search+agent_03_crossref",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.3,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 1.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.916,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_colli_di_bottiglia_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della disruzione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 38.6,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologico + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 56.6
+    },
+    "political_risk_premium_bps": {
+      "value": 116,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia"
+    },
+    "market_accessibility_score": {
+      "value": 0.65,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_borsa/200, indice_sviluppo_finanziario, facilita_affari/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.098,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.88,
+      "trend": "strong_growth",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "QAT rischio d'investimento in forte aumento — blocco di Hormuz paralyzing economy, Iranian missile attacks on territory, revenue collapse"
+    },
+    "trade_openness_trend": {
+      "value": "decrease",
+      "confidence": 0.82,
+      "reasoning": "Qatar apertura commerciale in crollo as disruzione di Hormuz blocks maritime trade. Both exports and imports severely disrupted. Overland routes insufficient to replace sea trade.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "decrease",
+      "confidence": 0.75,
+      "reasoning": "Qatar stabilita politica sotto pressione from economic crisis caused by blocco di Hormuz. Social contract strained.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.75,
+      "reasoning": "QAT relazioni con i partner sotto stress — crisi di Hormuz creating dependency on alternative partners, Iran missile attacks creating security demands",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor_path": "economy.macroeconomic.total_exports_usd",
+        "value": 161692857142.857,
+        "reason": "Change 29.1% supera 3× typical (5.0%) = 15.0%; Contesto eventi: QAT ha fattori scatenanti attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 121,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Qatar faces severe economic disruption from Iran's Stretto di blocco di Hormuz. crescita del PIL was 2.4% but is now sharply declining as oil export routes are blocked. Chokepoint esposizione is at 0.916, critically elevated amid the crisis. Qatar: Extreme esposizione ai colli di bottiglia at 0.916 amid crisi di Hormuz. Il rischio d'investimento rimane contenuto a 0.098.",
+    "key_changes_this_week": [
+      "blocco di Hormuz cuts Jebel Ali off from global container trade: The Stretto di blocco di Hormuz has cut Jebel Ali, the UAE's main container port and a global transshipment hub, off...",
+      "Qatar F-15QA fighters intercept Iranian bombers heading for US base: Qatar's F-15QA fighters intercepted and stopped Iranian bombers that were reportedly two minutes away from...",
+      "Trade disruption: Critical - LNG exports blocked by Hormuz; air cargo also disrupted",
+      "Stretto di blocco di Hormuz affecting Qatar's esportazione energeticas; Iran threatens to hit Qatari oil infrastructure; Qatar positioned insieme a Turchia in regional realignment",
+      "crescita del PIL trend: sharply declining (2.4%)",
+      "Inflazione in forte aumento al 1.3%",
+      "Investment risk in forte aumento to 0.098"
+    ],
+    "outlook": "Qatar's outlook is in ostaggio della Hormuz strait tempistica di riapertura. Each week of blockade costs billions in ricavi di esportazione bloccati and risks ridirezionamento permanente degli acquirenti. Diversification into alternative via oleodotto and lavorazione a valle is a imperativo a medio termine. A riapertura negoziata innescherebbe una forte ripresa, but la nuova leadership iraniana non mostra segni di cedimento.",
+    "investor_implications": "Qatar il reddito fisso presenta un rischio elevato with 116 bps premio per il rischio politico amid the blocco di Hormuz. Esposizione ai colli di bottiglia a 0.916 e tra i piu alti al mondo. Posizionamento azionario: sottopesare energy-export-dependent sectors, sovrappesare servizi domestici. Gli asset collegati agli oleodotti may see valore relativo if si sviluppano rotte di esportazione alternative.",
+    "data_quality_note": "La qualita dei dati e elevata con 121 punti dati aggiornati in questa esecuzione.  Fattori segnalati: economy.macroeconomic.total_exports_usd.  blocco di Hormuz impact on trade flows is estimated; actual GDP drag may be larger than current models capture."
+  },
+  "code": "QAT",
+  "name": "Qatar",
+  "executive_summary": "Qatar is under direct Iranian attack. IRGC colpito Al Udeid Air Base. Stretto di chiusura di Hormuz blocks Qatar's LNG exports (66% esposizione ai colli di bottiglia). Current account trend forte_calo from 17.29%. crescita del PIL outlook severely downgraded from pre-crisis 6.1% forecast. North Field LNG expansion timeline at risk. Qatar is caught between hosting the primary US military base in the Golfo and proximity to Iran.",
+  "key_changes": [
+    "IRGC colpito Al Udeid Air Base in Qatar (Mar 1, critical/transformative)",
+    "chiusura di Hormuz blocks LNG exports -- 66% esposizione ai colli di bottiglia (Mar 1, critical)",
+    "GDP outlook severely downgraded from 6.1% forecast",
+    "North Field LNG expansion timeline at risk",
+    "Current account trend forte_calo from 17.29%"
+  ],
+  "outlook": "Qatar's LNG-dependent economy faces existential disruption from chiusura di Hormuz. North Field expansion -- the largest single energy project globally -- faces delay risk. Qatar's diplomatic agility (historically mediating between rivals) may prove valuable but Al Udeid targeting limits neutrality options.",
+  "investor_implications": "QatarEnergy and LNG project investments face force majeure conditions. QSE index faces severe repricing. Qatari titoli sovrani may widen but sovereign wealth (QIA) provides strong backstop. Any LNG offtake agreements face supply disruption clauses.",
+  "active_alerts": [
+    {
+      "severity": "critical",
+      "title": "Qatar under direct Iranian attack on Al Udeid; Hormuz blocks LNG exports",
+      "description": "IRGC colpito Al Udeid Air Base in Qatar. chiusura di Hormuz blocks Qatar's LNG exports (66% esposizione ai colli di bottiglia). Current account trend forte_calo from 17.29%. crescita del PIL outlook severely downgraded from pre-crisis 6.1% forecast. North Field LNG expansion timeline at risk. Qatar caught between hosting US base and proximity to Iran. Escalated from esposizione ai colli di bottiglia to direct military targeting."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 2857822,
+      "population_growth_pct": 7.323,
+      "life_expectancy": 82.368,
+      "population_total": 2857822,
+      "hdi": 0.886,
+      "median_age": 34.3
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 3.17,
+      "regime_type": "authoritarian",
+      "freedom_house_score": 25,
+      "freedom_house_status": "not_free",
+      "corruption_perception_index": 59,
+      "press_freedom_index_rank": 79,
+      "wgi_voice_accountability": -0.97,
+      "wgi_political_stability": 0.99,
+      "wgi_government_effectiveness": 1.2,
+      "wgi_regulatory_quality": 0.98,
+      "wgi_rule_of_law": 0.93,
+      "wgi_control_of_corruption": 0.7,
+      "fragile_states_index": 39.8,
+      "head_of_state_name": "Tamim bin Hamad Al Thani",
+      "head_of_state_title": "Emir"
+    },
+    "economy": {
+      "gdp_nominal_usd": 219162637362.637,
+      "gdp_real_growth_pct": 2.9,
+      "gdp_per_capita_usd": 76688.6941743178,
+      "inflation_cpi_pct": 0.1,
+      "unemployment_rate_pct": 0.13,
+      "current_account_pct_gdp": 17.29,
+      "govt_debt_pct_gdp": 40.6,
+      "fx_reserves_usd": 53987415590.4034,
+      "sovereign_credit_rating": "S&P: AA, Moody's: Aa2, Fitch: AA-",
+      "central_bank_policy_rate_pct": 4.85,
+      "total_exports_usd": 125216483516.483,
+      "total_imports_usd": 69692032967.0329,
+      "top_export_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 15.5
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 12.0
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 11.5
+        },
+        {
+          "country": "SGP",
+          "pct_of_total": 8.2
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 7.8
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 15.0
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 12.5
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 6.0
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 5.5
+        }
+      ],
+      "sovereign_bond_yield_10yr_pct": 4.5,
+      "equity_index_level": 10200,
+      "stock_market_cap_usd": 165000000000,
+      "banking_sector_assets_usd": 480000000000
+    },
+    "military": {
+      "military_expenditure_usd": 12000000000,
+      "active_military_personnel": 26550,
+      "alliance_memberships": [
+        "GCC"
+      ]
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.3,
+      "energy_independence_index": 1.0,
+      "supply_chain_chokepoint_exposure": 0.916,
+      "composite_national_power_index": 38.6,
+      "political_risk_premium_bps": 116,
+      "market_accessibility_score": 0.65,
+      "overall_investment_risk_score": 0.098
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 15.5
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 12.0
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 11.5
+        },
+        {
+          "country": "SGP",
+          "pct_of_total": 8.2
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 7.8
+        }
+      ],
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 15.0
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 12.5
+        },
+        {
+          "country": "ITA",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 6.0
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 5.5
+        }
+      ],
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 99.6528,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 107.78,
+      "trend": "strong_decrease",
+      "trend_confidence": 0.85,
+      "trend_reasoning": "QAT apertura commerciale in forte calo — blocco di Hormuz cuts off primary maritime trade route. Jebel Ali and Golfo ports cut from global container trade",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "equity_index_level": {
+        "value": 10485.94,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 56.680537906,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 1652.668093,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 6001.884083,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 276.280909983,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 1293.5008540081967,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.88,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 3.17,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "authoritarian",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 25,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "not_free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 59,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 79,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": -0.970600128173828,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": 0.993381142616272,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "QAT stabilita politica in declino — Iranian missile attacks on territory, blocco di Hormuz economic stress, guerra regionale spillover",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": 1.19741261005402,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": 0.977040886878967,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": 0.932885050773621,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": 0.702209830284119,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 39.8,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Tamim bin Hamad Al Thani",
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "Emir",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "decrease",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "QAT relazioni con i partner sotto stress — crisi di Hormuz creating dependency on alternative partners, Iran missile attacks creating security demands",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

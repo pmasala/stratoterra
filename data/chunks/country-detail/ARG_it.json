@@ -1,0 +1,850 @@
+{
+  "country_code": "ARG",
+  "country_name": "Argentina",
+  "tier": 2,
+  "region": "latin_america",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 638365455340.04,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": -1.34293072157739,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "Argentina crescita in miglioramento — Milei reforms gaining credibility, Vaca Muerta energy produzione in aumento, net energy exporter benefits da $103 oil",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 13969.7836603737,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 219.883929014578,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "ARG inflazione sostanzialmente stabile con modesta upward pressure da globale oil prezzi e perturbazione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 7.145,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 0.893118418089374,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "ARG conto corrente sostanzialmente stabile. Globale perturbazione commerciale creates mixed impatti depending su export composition",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 29559610350.7831,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 78.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "ARG debito pubblico sostanzialmente stabile. No acute fiscal pressure ma incertezza globalee limits fiscal space",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: CCC+, Moody's: Caa1, Fitch: C",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 1452.25,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Argentina peso stabilizing — Milei reforms, Vaca Muerta energy exports, crawling peg adjustment",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "total_exports_usd": {
+      "value": 97349127043.1651,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 80944817978.281,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 32.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Argentina tasso di riferimento sostanzialmente stabile. Banca centrale balancing crescita e inflazione preoccupazioni amid incertezza globalee.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "fdi_inflows_usd": {
+      "value": 11644393816.0627,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "ARG FDI sostanzialmente stabile con modesta caution da globale sentimento di avversione al rischio e perturbazione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 1390588639479.49,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 42.4,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": 0.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Argentina rendimenti obbligazionari stabile a in calo su improved posizione fiscale da guadagno straordinario dalle materie prime.",
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 18.5,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 65000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 95000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 45696159,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 0.345829819817895,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 77.395,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.865,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 33.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 61.913,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 99.1399993896484,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 10.2695179,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 92.2742315972952,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 42.4,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 89.6672,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_expenditure_usd": {
+      "value": 4200000000,
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 108000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 362,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 241,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 2,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 0.66,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.75,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(production/consumption, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.75,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.116,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_da_strozzature_marittime + 0.4 * apertura_commerciale_normalizzata; elevato a causa di Hormuz/Suez perturbazione"
+    },
+    "composite_national_power_index": {
+      "value": 40.7,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 52.6
+    },
+    "political_risk_premium_bps": {
+      "value": 872,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito del rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia",
+      "previous_value": 950
+    },
+    "market_accessibility_score": {
+      "value": 0.35,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato_azionario/200, indice_sviluppo_finanziario, facilita_di_fare_impresa/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.449,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.65,
+      "trend": "decrease",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "ARG rischio di investimento modestamente in calo da reform momentum e governance improvement"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Argentina apertura commerciale sostanzialmente stabile. Globale perturbazione commerciale da Hormuz principalmente affects Gulf-dependent routes. Some reindirizzamento commerciale benefits alternative routes.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Argentina stabilita politica sostanzialmente invariato. Nessuna perturbazione politica interna significativa questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "growth",
+      "confidence": 0.62,
+      "reasoning": "ARG relazioni con i partner in miglioramento da reform credibility e governance improvements",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
+        "value": 219.883929014578,
+        "reason": "Variazione assoluta 178.5839 supera 3× tipico (0.5) = 1.5; Fonte alternativa (IMF WEO) discorda: 41.3 rispetto al primario 219.883929014578 (432.4% diff); Contesto evento: ARG ha trigger di evento attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 128,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Argentina registra crescita del PIL di -1.3% (in aumento) con inflazione at 219.9% (stabile). Rischio di investimento si attesta a 0.449. Argentina: Premio per il rischio politico at 950 bps. Rischio di investimento e moderata at 0.449; selective opportunities exist amid heightened volatility.",
+    "key_changes_this_week": [
+      "Latin American mercati unsettled da US policy shifts e trade tensions: Growing unease e rippling attraverso Latin American financial mercati poiche investors grapple con diminishing...",
+      "Senate approved labor market reform su Feb 27 da 42-28 vote; reduces barriers a formal employment; Milei delivered combative 90-minute speech a Congress su March 1 announcing 90...",
+      "Emerging market currencies worst session since Nov 2024: EM currency index posted worst session since Nov 2024 poiche dollar surged amid Middle East conflitto. Banca centrales in..."
+    ],
+    "outlook": "Argentina's breve termine trajectory shows crescita del PIL at -1.3% (in aumento) con elevato rischio di investimento. The globale energy shock e US trade escalation create venti contrari per export-oriented sectors. Stabilita politica e stabile, che sara shape policy response effectiveness.",
+    "investor_implications": "Argentina presents elevato rischio di investimento at 0.449 con 872 bps premio per il rischio politico. Market accessibility at 0.350. Exercise caution con concentrated positions.",
+    "data_quality_note": "La qualita dei dati e alta con 128 punti dati aggiornati in questa esecuzione.  Fattori segnalati: economy.macroeconomic.inflazione_rate_cpi_pct."
+  },
+  "code": "ARG",
+  "name": "Argentina",
+  "executive_summary": "Argentina delivers a landmark positiva development: la Senate approved importante labor reform (42-28 vote) su Feb 27, advancing Milei's economic restructuring agenda. Monthly inflazione decelerated dramatically a 2.9% da a peak sopra 25%. Annual CPI at 41.3% ancora elevato ma la trajectory e sharply positive. PIL at 4.5% con stabile trend. Sovereign credit remains CCC+/Caa1 ma la reform trajectory e in miglioramento.",
+  "key_changes": [
+    "Senate approved landmark labor reform (42-28 vote) su Feb 27 (major, positive)",
+    "Monthly inflazione decelerated a 2.9% da peak di 25%+ (positive trajectory)",
+    "PIL at 4.5% con stabile trend showing recovery",
+    "Stabilita politica in miglioramento sotto Milei reform agenda",
+    "Sovereign credit remains CCC+/Caa1 ma prospettive in miglioramento"
+  ],
+  "outlook": "Argentina's reform trajectory sotto Milei e la most positiva strutturale story among frontier markets. Labor reform passage removes a chiave strutturale impediment a formal employment. If monthly inflazione continues sotto 3%, annual rate sara fall sotto 20% da H2 2026. FDI recovery depends su sustained reform implementation e rating creditizio upgrade.",
+  "investor_implications": "Argentine obbligazioni sovrane offer high-yield opportunity su reform thesis -- ma CCC+ credit requires conviction. Merval index pricing in reform optimism. ARS stabilization depends su continued disinflazione. Vaca Muerta energy assets benefit da impennata del prezzo del petrolio. This e a high-conviction, high-risk strutturale turnaround trade.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Argentina inflazione at 41.3% ma monthly rate decelerating a 2.9%; labor reform passed",
+      "description": "Argentina annual CPI at 41.3% ma monthly inflazione at 2.9% shows dramatic deceleration sotto Milei reforms. Senate approved landmark labor reform (42-28 vote) su Feb 27. Trend e forte diminuzione (positive). Stabilita politica in miglioramento. However, sovereign credit remains CCC+/Caa1. Conditions moderating positively."
+    },
+    {
+      "severity": "watch",
+      "title": "Argentina Senate approves landmark labor reform advancing Milei restructuring agenda",
+      "description": "Argentina's Senate approved a landmark labor reform law su Feb 27 da a vote di 42-28, advancing Milei's economic restructuring agenda. Monthly inflazione decelerated a 2.9% (from peak di 25%+). PIL at 4.5% con stabile trend. Stabilita politica in miglioramento. This e a positiva strutturale development per Argentina's investment climate, though sovereign credit remains CCC+/Caa1."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 45696159,
+      "population_growth_pct": 0.345829819817895,
+      "life_expectancy": 77.395,
+      "population_total": 45696159,
+      "hdi": 0.865,
+      "median_age": 33.3
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 6.51,
+      "regime_type": "flawed_democracy",
+      "freedom_house_score": 85,
+      "freedom_house_status": "free",
+      "corruption_perception_index": 37,
+      "press_freedom_index_rank": 87,
+      "wgi_voice_accountability": 0.53,
+      "wgi_political_stability": -0.13,
+      "wgi_government_effectiveness": -0.38,
+      "wgi_regulatory_quality": -0.48,
+      "wgi_rule_of_law": -0.41,
+      "wgi_control_of_corruption": -0.36,
+      "fragile_states_index": 44.2,
+      "head_of_state_name": "Javier Milei",
+      "head_of_state_title": "President",
+      "next_national_election_date": "2027-10"
+    },
+    "economy": {
+      "gdp_nominal_usd": 638365455340.04,
+      "gdp_real_growth_pct": 4.5,
+      "gdp_per_capita_usd": 13969.7836603737,
+      "inflation_cpi_pct": 41.3,
+      "unemployment_rate_pct": 7.5,
+      "current_account_pct_gdp": 0.89,
+      "govt_debt_pct_gdp": 78.8,
+      "fx_reserves_usd": 29559610350.7831,
+      "sovereign_credit_rating": "S&P: CCC+, Moody's: Caa1, Fitch: C",
+      "central_bank_policy_rate_pct": 32.0,
+      "total_exports_usd": 96926387166.7011,
+      "total_imports_usd": 80272476728.841,
+      "exchange_rate_vs_usd": 1414.03,
+      "top_export_partners": [
+        {
+          "country": "BRA",
+          "pct_of_total": 15.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 7.2
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 5.8
+        },
+        {
+          "country": "CHL",
+          "pct_of_total": 4.5
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 21.0
+        },
+        {
+          "country": "BRA",
+          "pct_of_total": 20.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 11.0
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 4.5
+        },
+        {
+          "country": "PRY",
+          "pct_of_total": 3.0
+        }
+      ],
+      "sovereign_bond_yield_10yr_pct": 18.5,
+      "equity_index_level": 2380000,
+      "stock_market_cap_usd": 65000000000,
+      "banking_sector_assets_usd": 95000000000
+    },
+    "military": {
+      "military_expenditure_usd": 4200000000,
+      "active_military_personnel": 108000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.75,
+      "energy_independence_index": 0.75,
+      "supply_chain_chokepoint_exposure": 0.116,
+      "composite_national_power_index": 40.7,
+      "political_risk_premium_bps": 872,
+      "market_accessibility_score": 0.35,
+      "overall_investment_risk_score": 0.449
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "BRA",
+          "pct_of_total": 15.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 7.2
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 5.8
+        },
+        {
+          "country": "CHL",
+          "pct_of_total": 4.5
+        }
+      ],
+      "confidence": 0.75,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 21.0
+        },
+        {
+          "country": "BRA",
+          "pct_of_total": 20.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 11.0
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 4.5
+        },
+        {
+          "country": "PRY",
+          "pct_of_total": 3.0
+        }
+      ],
+      "confidence": 0.75,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 89.6672,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 27.93,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "ARG apertura commerciale sostanzialmente stabile con modesta downward pressure da Hormuz perturbazione del trasporto marittimo e US tariff escalation",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "equity_index_level": {
+        "value": 2642584.25,
+        "confidence": 0.88,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 2.0000000000000218,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 147.4650157,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 1647.083796,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 1652.02428,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 734.57271244,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 700.7792575954543,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.75,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 6.51,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "flawed_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 85,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 37,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 87,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": 0.533921837806702,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -0.127517908811569,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "ARG stabilita politica in miglioramento — reform momentum e governance improvements",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": -0.377517342567444,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": -0.482535392045975,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": -0.410826534032822,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -0.360883951187134,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 44.2,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Javier Milei",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "next_national_election_date": {
+      "value": "2027-10",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "growth",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "ARG relazioni con i partner in miglioramento da reform credibility e governance improvements",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

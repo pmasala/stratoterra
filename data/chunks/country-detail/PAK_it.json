@@ -1,0 +1,896 @@
+{
+  "country_code": "PAK",
+  "country_name": "Pakistan",
+  "tier": 2,
+  "region": "south_asia",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 371570000121.266,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 3.04898287335465,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "PAK crescita del PIL in calo per i costi elevati di importazione del petrolio ($103/bbl) and global disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 1478.77277977996,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 12.6325318530452,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "strong_growth",
+      "trend_confidence": 0.82,
+      "trend_reasoning": "PAK inflazione in forte aumento — already elevated base combined with $103 costi di importazione del petrolio. La debolezza valutaria amplifica trasmissione",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 5.42,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 0.133557216822667,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "PAK conto corrente in deterioramento per la bolletta elevata delle importazioni di petrolio at $103/bbl. La dipendenza dalle importazioni energetiche amplia il deficit commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 18407745860.6666,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 71.6,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "PAK debt rising from costi dei sussidi energetici, debolezza valutaria increasing peso del debito in valuta estera, and necessita di stimolo fiscale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 3.6,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: B-, Moody's: Caa1, Fitch: CCC-",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "total_exports_usd": {
+      "value": 38607805445.7571,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 63865509443.4708,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 13.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Pakistan tasso di riferimento sostanzialmente stabile. La banca centrale bilancia le preoccupazioni per la crescita e l'inflazione in un contesto di incertezza globale.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 279.776,
+      "confidence": 0.9,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "PAK valuta in deprezzamento — costi di importazione del petrolio, inflation pressure, and deflussi di capitali weighing on FX",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fdi_inflows_usd": {
+      "value": 2663000000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "PAK IDE sostanzialmente stabili with modest caution from global sentiment di avversione al rischio and disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 1570963817829.03,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -5.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Pakistan rendimenti obbligazionari in modesto aumento on inflation expectations from shock petrolifero.",
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 13.5,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 32000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 160000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 251269164,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 1.50959876314033,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 67.649,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.544,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 22.9,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 52.335,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 58.8600006103516,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 2.51988316,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 39.1734368360905,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 95.6,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 27.3759,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_expenditure_usd": {
+      "value": 8200000000,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 660000,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 550000,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 2677,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 1397,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 8,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "nuclear": {
+      "status": {
+        "value": "declared_arsenal",
+        "confidence": 0.99,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      },
+      "warheads_estimated": {
+        "value": 170,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "arms_imports_global_share": {
+      "value": {
+        "rank": 5,
+        "period": "2021-2025",
+        "volume_change": "+66%",
+        "china_share_of_imports": "80%",
+        "note": "Arms imports grew 66%. Cina supplied 80% of Pakistani imports."
+      },
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 2.21,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "conflict_status": {
+      "value": "terrorism",
+      "confidence": 0.6,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_03_crossref",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.45,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.4,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.415,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_colli_di_bottiglia_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della disruzione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 22.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologico + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 43.3
+    },
+    "political_risk_premium_bps": {
+      "value": 1335,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia",
+      "previous_value": 900
+    },
+    "market_accessibility_score": {
+      "value": 0.35,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_borsa/200, indice_sviluppo_finanziario, facilita_affari/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.395,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.72,
+      "trend": "growth",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "PAK rischio d'investimento in aumento from shock petrolifero, currency pressure, inflation, and instabilita regionale spillover"
+    },
+    "trade_openness_trend": {
+      "value": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Pakistan apertura commerciale in calo as shock petrolifero disrupts trade patterns. Higher costi di importazione reduce trade volumes. Supply chain rerouting underway but costly.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Pakistan stabilita politica sostanzialmente invariata. Nessuna grande disruzione politica interna questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "PAK relazioni con i partner sostanzialmente stabili. L'incertezza globale crea pressione ma nessuna crisi bilaterale acuta",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor": "macroeconomic.unemployment_rate_pct",
+        "reason": "Grande variazione assoluta: 2.58 (soglia: 0.8999999999999999)",
+        "previous_value": 5.42,
+        "new_value": 8,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      },
+      {
+        "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
+        "value": 12.6325318530452,
+        "reason": "Variazione assoluta 8.1325 supera 3× typical (0.5) = 1.5; Fonte alternativa (IMF WEO) non concorda: 4.5 vs primary 12.6325318530452 (180.7% diff); Contesto eventi: PAK ha fattori scatenanti attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      },
+      {
+        "factor_path": "economy.macroeconomic.unemployment_rate_pct",
+        "value": 5.42,
+        "reason": "Variazione assoluta 2.5800 supera 3× typical (0.3) = 0.8999999999999999; Fonte alternativa (IMF WEO) non concorda: 8.0 vs primary 5.42 (32.2% diff); Contesto eventi: PAK ha fattori scatenanti attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 132,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Pakistan confronts rising energy costs from the blocco di Hormuz and $100+ oil. la crescita del PIL e del 3.0% (declining), con inflazione al 12.6% (in forte aumento). La pressione sul conto corrente aumenta as la bolletta delle importazioni energetiche sale. Pakistan: Active conflitto militare — advocates Iran diplomacy at UNSC. Il rischio d'investimento e moderato a 0.395; opportunita selettive exist in un contesto di elevata volatilita.",
+    "key_changes_this_week": [
+      "Pakistan advocates diplomacy on Iran at UNSC; intensifies Medio Oriente mediation: Pakistan urged diplomacy over force on the Iran nuclear issue at the UN Security Council on March...",
+      "India adopts 'strategic indifference' toward Pakistan, focuses on Cina threat: India has shifted its strategic posture to 'strategic indifference' toward Pakistan, concluding...",
+      "Pakistan urged diplomacy over force on Iran at UNSC on March 14; Intensifying diplomatic efforts in un contesto di guerra in Medio Oriente; positioning as mediator; CFR warns India-Pakistan could...",
+      "Inflazione in forte aumento al 12.6%",
+      "Investment risk rising to 0.395"
+    ],
+    "outlook": "Pakistan's prospettive di crescita sono sotto pressione per in forte aumento importazione energetica costs. Current account deterioration risks debolezza valutaria if the blocco di Hormuz si estende oltre il Q2. Central bank faces a difficile compromesso tra il sostegno alla crescita e il contenimento dell'inflazione importata. Structural energy diversificazione and adeguatezza delle riserve strategiche are key priorita a medio termine.",
+    "investor_implications": "Pakistan equities face headwinds from rising costi degli input and potential compressione dei margini. Rischio d'investimento a 0.395 with valuta sotto pressione from current account deterioration. Favor exporters with potere di prezzo and domestic-demand plays insulated from energy costs. Si raccomanda la copertura valutaria for Pakistan-posizioni denominate in valuta locale.",
+    "data_quality_note": "La qualita dei dati e elevata con 132 punti dati aggiornati in questa esecuzione.  Fattori segnalati: macroeconomic.unemployment_rate_pct, economy.macroeconomic.inflation_rate_cpi_pct, economy.macroeconomic.unemployment_rate_pct."
+  },
+  "code": "PAK",
+  "name": "Pakistan",
+  "executive_summary": "Pakistan is in crisis on multiple fronts: declared open war on Afghanistan on Feb 27 with airstrikes on Kabul and Kandahar, while 20 people were killed in domestic protests over US-Israelei strikes on Iran. Stabilita politica a -1.93 -- tra i peggiori del dataset. trend del PIL forte_calo, inflation forte_crescita, debt forte_crescita. Sovereign credit at CCC+/Caa1. A nuclear-armed nation in conflitto attivo with deteriorating posizione fiscale.",
+  "key_changes": [
+    "Pakistan declared open war on Afghanistan with airstrikes on Kabul and Kandahar (Feb 27, transformative)",
+    "20 killed in domestic protests over Iran strikes (Mar 1)",
+    "Stabilita politica a -1.93 (forte_calo) -- near worst in dataset",
+    "trend del PIL forte_calo; trend dell'inflazione forte_crescita; trend del debito forte_crescita",
+    "Sovereign credit at CCC+/Caa1; posizione fiscale deteriorating rapidly"
+  ],
+  "outlook": "Pakistan faces compounding crises: active war, disordini interni, deterioramento fiscale, and instabilita regionale from the Iran conflict. IMF program compliance at severe risk if war spending expands. Nuclear dimension adds global escalation risk. No diplomatic resolution with Afghanistan visible. Stabilita politica may deteriorate further if protests spread.",
+  "investor_implications": "Pakistan is di fatto non investibile at current risk levels. Sovereign bonds affrontano prezzi da stress. KSE-100 affronta un forte ribasso. Rupee sotto pressione estrema. Any existing esposizione should be reduced to zero where possible.",
+  "active_alerts": [
+    {
+      "severity": "critical",
+      "title": "Pakistan declares open war on Afghanistan with airstrikes on Kabul and Kandahar",
+      "description": "Pakistan declared open war on Afghanistan on Feb 27, launching airstrikes on Kabul and Kandahar. Stabilita politica a -1.93 (forte_calo), trend del PIL forte_calo, inflation forte_crescita, debt forte_crescita. 20 killed in protests over Iran strikes compound instabilita interna. Nuclear-armed nation in conflitto attivo with deteriorating posizione fiscale. Sovereign credit at CCC+/Caa1."
+    },
+    {
+      "severity": "watch",
+      "title": "Pakistan domestic protests compound war crisis: 20 killed",
+      "description": "Twenty people were killed in protests across Pakistan over the US-Israelei strikes on Iran, compounding the instabilita interna from the declared war on Afghanistan. Stabilita politica a -1.93 (forte_calo) -- tra i peggiori del dataset. Multiple crises converging: active war, disordini interni, and deterioramento fiscale."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 251269164,
+      "population_growth_pct": 1.51,
+      "life_expectancy": 67.649,
+      "population_total": 251269164,
+      "hdi": 0.544,
+      "median_age": 22.9
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 2.84,
+      "regime_type": "authoritarian",
+      "freedom_house_score": 32,
+      "freedom_house_status": "partly_free",
+      "corruption_perception_index": 27,
+      "press_freedom_index_rank": 158,
+      "wgi_voice_accountability": -0.96,
+      "wgi_political_stability": -1.93,
+      "wgi_government_effectiveness": -0.58,
+      "wgi_regulatory_quality": -0.9,
+      "wgi_rule_of_law": -0.86,
+      "wgi_control_of_corruption": -1.0,
+      "fragile_states_index": 91.7,
+      "head_of_state_name": "Asif Ali Zardari",
+      "head_of_state_title": "President",
+      "head_of_government_name": "Shehbaz Sharif",
+      "next_national_election_date": "2029-02"
+    },
+    "economy": {
+      "gdp_nominal_usd": 371570000121.266,
+      "gdp_real_growth_pct": 2.7,
+      "gdp_per_capita_usd": 1478.77277977996,
+      "inflation_cpi_pct": 4.5,
+      "unemployment_rate_pct": 8,
+      "current_account_pct_gdp": 0.13,
+      "govt_debt_pct_gdp": 71.6,
+      "fx_reserves_usd": 18407745860.6666,
+      "sovereign_credit_rating": "S&P: B-, Moody's: Caa1, Fitch: CCC-",
+      "central_bank_policy_rate_pct": 13.0,
+      "total_exports_usd": 40245783628.53,
+      "total_imports_usd": 66847525077.8201,
+      "exchange_rate_vs_usd": 279.39,
+      "top_export_partners": [
+        {
+          "country": "USA",
+          "pct_of_total": 16.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 8.2
+        },
+        {
+          "country": "GBR",
+          "pct_of_total": 7.5
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 6.2
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 5.8
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 28.5
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 12.0
+        },
+        {
+          "country": "SAU",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "IDN",
+          "pct_of_total": 4.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 4.2
+        }
+      ],
+      "sovereign_bond_yield_10yr_pct": 13.5,
+      "equity_index_level": 82000,
+      "stock_market_cap_usd": 32000000000,
+      "banking_sector_assets_usd": 160000000000
+    },
+    "military": {
+      "military_expenditure_usd": 8200000000,
+      "active_military_personnel": 660000,
+      "reserve_military_personnel": 550000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.45,
+      "energy_independence_index": 0.4,
+      "supply_chain_chokepoint_exposure": 0.415,
+      "composite_national_power_index": 22.5,
+      "political_risk_premium_bps": 1335,
+      "market_accessibility_score": 0.35,
+      "overall_investment_risk_score": 0.395
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "USA",
+          "pct_of_total": 16.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 8.2
+        },
+        {
+          "country": "GBR",
+          "pct_of_total": 7.5
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 6.2
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 5.8
+        }
+      ],
+      "confidence": 0.72,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 28.5
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 12.0
+        },
+        {
+          "country": "SAU",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "IDN",
+          "pct_of_total": 4.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 4.2
+        }
+      ],
+      "confidence": 0.72,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 95.6,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 27.3759,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 27.58,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "PAK apertura commerciale sostanzialmente stabile with modest pressione al ribasso from disruzione marittima di Hormuz e l'escalation tariffaria USA",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "equity_index_level": {
+        "value": 153866.17,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 15075.233546059628,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 151.856842663,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 1216.819545,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 851.9883994,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 479.217879943,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 65.87340328872418,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.72,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 2.84,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "authoritarian",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 32,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "partly_free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 27,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 158,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": -0.959140300750732,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -1.93273079395294,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "Pakistan stability declining — CFR warns of India-Pakistan military confrontation risk, internal political tensions, guerra in Iran creating pressione regionale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": -0.577790379524231,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": -0.901008188724518,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": -0.859885513782501,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -0.999357461929321,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 91.7,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Asif Ali Zardari",
+      "confidence": 0.75,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Shehbaz Sharif",
+      "confidence": 0.75,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "next_national_election_date": {
+      "value": "2029",
+      "confidence": 0.75,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "PAK relazioni con i partner sostanzialmente stabili. L'incertezza globale crea pressione ma nessuna crisi bilaterale acuta",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

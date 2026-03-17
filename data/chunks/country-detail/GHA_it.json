@@ -1,0 +1,609 @@
+{
+  "country_code": "GHA",
+  "country_name": "Ghana",
+  "tier": 3,
+  "region": "sub_saharan_africa",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 82308110386.4641,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 5.59045469593266,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Ghana benefits da non-Hormuz oil/esportazioni di materie prime at elevato prices.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 2390.77237652715,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 22.8483281157842,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Ghana inflazione sostanzialmente stabile poiche oil exporter status shields da costo energetico pass-through.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 2.979,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 2.04180009736218,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Ghana conto corrente in miglioramento poiche oil/prezzi delle materie prime surge e non-Hormuz export rotte remain secure. Surplus commerciale in ampliamento.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 3623904994.58702,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 59.1,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "Ghana rapporto debito/PIL in miglioramento poiche guadagno straordinario dalle materie prime boosts government revenue.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 4.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: RD, Moody's: NR, Fitch: RD",
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 27.0,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Ghana tasso di riferimento sostanzialmente stabile. Banca centrale balancing crescita e inflazione preoccupazioni amid incertezza globalee.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "total_exports_usd": {
+      "value": 29197465998.8647,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 28244066026.1723,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fdi_inflows_usd": {
+      "value": 1765552579.5641,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_ppp_usd": {
+      "value": 276107757820.439,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -2.7,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 10.824,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Ghana currency supported da esportazione di materie prime windfall. Oil/gas revenue boosting esterna position.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Ghana rendimenti obbligazionari stabile a in calo su improved posizione fiscale da guadagno straordinario dalle materie prime.",
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 28.0,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 12000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 35000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 34427414,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 1.87500010333119,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 65.498,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.628,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 21.4,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 58.524,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 76.4899978637695,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 2.94686937,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 58.3654868038581,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 89.5,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 69.9445,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_expenditure_pct_gdp": {
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "Ghana spesa militare sostanzialmente stabile relative a PIL.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_usd": {
+      "value": 500000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "active_military_personnel": {
+      "value": 15500,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    },
+    "reserve_military_personnel": {
+      "value": 0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.55,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(production/consumption, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.23,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_da_strozzature_marittime + 0.4 * apertura_commerciale_normalizzata; elevato a causa di Hormuz/Suez perturbazione"
+    },
+    "composite_national_power_index": {
+      "value": 20.8,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 18.4
+    },
+    "political_risk_premium_bps": {
+      "value": 884,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito del rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia"
+    },
+    "market_accessibility_score": {
+      "value": 0.35,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato_azionario/200, indice_sviluppo_finanziario, facilita_di_fare_impresa/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.423,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.65,
+      "trend": "decrease",
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "trend_reasoning": "Ghana rischio di investimento in miglioramento su guadagno straordinario dalle materie prime. Posizione fiscale in rafforzamento. Non-Hormuz export rotte secure."
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Ghana stabilita politica sostanzialmente invariato. Nessuna perturbazione politica interna significativa questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor": "macroeconomic.gdp_nominal_usd",
+        "reason": "Variazione % elevata: 26.5% (soglia: 15%)",
+        "previous_value": 111963000000.0,
+        "new_value": 82308110386.4641,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      },
+      {
+        "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
+        "value": 22.8483281157842,
+        "reason": "Variazione assoluta 6.2483 supera 3× tipico (0.5) = 1.5; Fonte alternativa (IMF WEO) discorda: 16.6 rispetto al primario 22.8483281157842 (37.6% diff); Contesto evento: GHA ha trigger di evento attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      },
+      {
+        "factor_path": "economy.macroeconomic.gdp_per_capita_usd",
+        "value": 2390.77237652715,
+        "reason": "Variazione 25.1% supera 3× tipico (2.0%) = 6.0%; Contesto evento: GHA ha trigger di evento attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      },
+      {
+        "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
+        "value": 5.59045469593266,
+        "reason": "Variazione assoluta 1.5905 supera 3× tipico (0.5) = 1.5; Fonte alternativa (IMF WEO) discorda: 4.0 rispetto al primario 5.59045469593266 (39.8% diff); Contesto evento: GHA ha trigger di evento attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 90,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "code": "GHA",
+  "name": "Ghana",
+  "executive_summary": "Ghana: crescita del PIL at 4%, inflazione at 16.6%, rating creditizio S&P: RD, Moody's: NR, Fitch: RD. WARNING: Ghana in default selettivo con 2,500 bps premio per il rischio.",
+  "key_changes": [
+    "WARNING: Ghana in default selettivo con 2,500 bps premio per il rischio"
+  ],
+  "outlook": "Ghana le prospettive richiedono monitoraggio. L'impennata del prezzo del petrolio colpisce tutti gli importatori di energia.",
+  "investor_implications": "Si applica il rischio di mercato di frontiera. Monitorare gli sviluppi rilevanti per l'esposizione settoriale.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Ghana in default selettivo con 2,500 bps premio per il rischio",
+      "description": "Ghana sovereign credit at SD/Caa3/RD. Premio per il rischio politico at 2,500 bps. Inflazione a 16.6%. Debt restructuring ongoing. Le condizioni persistono."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 34427414,
+      "population_growth_pct": 1.87500010333119,
+      "life_expectancy": 65.498,
+      "population_total": 34427414,
+      "hdi": 0.628,
+      "median_age": 21.4
+    },
+    "institutions": {
+      "political_stability": {}
+    },
+    "economy": {
+      "gdp_nominal_usd": 82308110386.4641,
+      "gdp_real_growth_pct": 4,
+      "gdp_per_capita_usd": 3193.071,
+      "inflation_cpi_pct": 16.6,
+      "unemployment_rate_pct": 2.979,
+      "current_account_pct_gdp": 1.8,
+      "govt_debt_pct_gdp": 59.1,
+      "fx_reserves_usd": 3623904994.58702,
+      "sovereign_credit_rating": "S&P: RD, Moody's: NR, Fitch: RD",
+      "central_bank_policy_rate_pct": 27.0,
+      "sovereign_bond_yield_10yr_pct": 28.0,
+      "equity_index_level": 3200,
+      "stock_market_cap_usd": 12000000000,
+      "banking_sector_assets_usd": 35000000000
+    },
+    "military": {
+      "defense_spending_usd": 500000000,
+      "military_spending_usd": 500000000,
+      "military_expenditure_usd": 500000000,
+      "military_expenditure_pct_gdp": 0.61,
+      "military_expenditure_trend": "stable",
+      "active_military_personnel": 15500,
+      "reserve_military_personnel": 0,
+      "alliance_memberships": [
+        "ECOWAS",
+        "AU"
+      ]
+    },
+    "relations": {
+      "key_partners": [
+        {
+          "partner_code": "CHN",
+          "relationship_type": "trade_partner",
+          "trade_volume_usd": 8200000000,
+          "diplomatic_status": "normal"
+        },
+        {
+          "partner_code": "IND",
+          "relationship_type": "trade_partner",
+          "trade_volume_usd": 3800000000,
+          "diplomatic_status": "normal"
+        },
+        {
+          "partner_code": "GBR",
+          "relationship_type": "ally",
+          "trade_volume_usd": 2100000000,
+          "diplomatic_status": "normal"
+        }
+      ]
+    },
+    "derived": {
+      "resource_self_sufficiency_index": 0.55,
+      "energy_independence_index": 0.5,
+      "supply_chain_chokepoint_exposure": 0.23,
+      "composite_national_power_index": 20.8,
+      "political_risk_premium_bps": 884,
+      "market_accessibility_score": 0.35,
+      "overall_investment_risk_score": 0.423
+    }
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-02T18:00:00Z",
+    "run_id": "2026-W10",
+    "executive_summary": "Ghana: crescita del PIL at 4%, inflazione at 16.6%, rating creditizio S&P: RD, Moody's: NR, Fitch: RD. WARNING: Ghana in default selettivo con 2,500 bps premio per il rischio.",
+    "key_changes_this_week": [
+      "WARNING: Ghana in default selettivo con 2,500 bps premio per il rischio"
+    ],
+    "outlook": "Ghana le prospettive richiedono monitoraggio. L'impennata del prezzo del petrolio colpisce tutti gli importatori di energia.",
+    "investor_implications": "Si applica il rischio di mercato di frontiera. Monitorare gli sviluppi rilevanti per l'esposizione settoriale.",
+    "data_quality_note": "Paese Tier 3 con copertura di base. 1 allerta attiva(s)."
+  },
+  "economy": {
+    "electricity_access_pct": {
+      "value": 89.5,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 69.9445,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": 69.79,
+    "energy_coal_production_mt": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 24.270974318,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 149.8659286,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 120.6349608,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 102.778776431,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 187.7513661202186,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "wgi_voice_accountability": {
+      "value": 0.410351544618607,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -0.0216207038611174,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_government_effectiveness": {
+      "value": -0.092661589384079,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": -0.18065220117569,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": -0.0996378883719444,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -0.0990211144089699,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.68,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch",
+      "run_id": "2026-W11"
+    }
+  }
+}

@@ -1,0 +1,853 @@
+{
+  "country_code": "SGP",
+  "country_name": "Singapore",
+  "tier": 1,
+  "region": "southeast_asia",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 547386645891.847,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 4.38802362461865,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "SGP crescita del PIL facing new indagine Sezione 301 headwinds from US. L'incertezza commerciale pesa sugli investimenti",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 90674.066632628,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 2.38951123595017,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "SGP inflazione sostanzialmente stabile with modest pressione al rialzo from global prezzi del petrolio and disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 2.818,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 17.5406529695398,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "SGP conto corrente sostanzialmente stabile. Global disruzione commerciale creates impatti misti a seconda della composizione delle esportazioni",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 175.613907899815,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "SGP debito pubblico sostanzialmente stabile. Nessuna pressione fiscale acuta ma l'incertezza globale limita lo spazio fiscale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 383945953550.791,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 1.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 1.2796,
+      "confidence": 0.92,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "SGP valuta sostanzialmente stabile rispetto al USD. Il sentiment globale di avversione al rischio crea una lieve pressione al deprezzamento rispetto alle valute rifugio",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 2.85,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Singapore rendimenti obbligazionari sostanzialmente stabili.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "total_exports_usd": {
+      "value": 978597520043.286,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 786020626642.21,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_forecast_2026_pct": {
+      "value": 1.3,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "fdi_inflows_usd": {
+      "value": 151941202883.727,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.68,
+      "trend_reasoning": "SGP attracting IDE di tipo rifugio sicuro as gli investitori globali cercano stabilita in un contesto di Medio Oriente war and disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 909690217412.881,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": 3.1,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "central_bank_policy_rate_pct": {
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Singapore tasso di riferimento sostanzialmente stabile. La banca centrale bilancia le preoccupazioni per la crescita e l'inflazione in un contesto di incertezza globale.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 6036860,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 1.99449365639324,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 82.8951219512195,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.946,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 39.4,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 69.673,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 97.6500015258789,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 4.49163246,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 94.3776,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 13000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    },
+    "military_expenditure_usd": {
+      "value": 14600000000,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 51000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 252500,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 170,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 235,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 6,
+        "confidence": 0.88,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "alliance_memberships": {
+      "value": [
+        "FPDA"
+      ],
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 2.67,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.05,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.02,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.94,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_colli_di_bottiglia_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della disruzione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 50.4,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologico + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 65.5
+    },
+    "political_risk_premium_bps": {
+      "value": 4,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia"
+    },
+    "market_accessibility_score": {
+      "value": 0.95,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_borsa/200, indice_sviluppo_finanziario, facilita_affari/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.141,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.68,
+      "trend": "decrease",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "SGP rischio d'investimento in calo — afflussi di capitali rifugio, istituzioni solide, geographic insulation from conflict"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Singapore apertura commerciale sostanzialmente stabile. La disruzione del commercio globale da Hormuz colpisce principalmente le rotte dipendenti dal Golfo. Parte del ridirezionamento commerciale avvantaggia rotte alternative.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Singapore stabilita politica sostanzialmente invariata. Nessuna grande disruzione politica interna questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.62,
+      "reasoning": "SGP relationships with US deteriorating from indagine Sezione 301 targeting manufacturing sectors",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor_path": "economy.macroeconomic.gdp_real_growth_rate_pct",
+        "value": 4.38802362461865,
+        "reason": "Variazione assoluta 2.1880 supera 3× typical (0.5) = 1.5; Fonte alternativa (IMF WEO) non concorda: 2.2 vs primary 4.38802362461865 (99.5% diff)",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 133,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Singapore confronts rising energy costs from the blocco di Hormuz and $100+ oil. la crescita del PIL e del 4.4% (stable), con inflazione al 2.4% (stable). La pressione sul conto corrente aumenta as la bolletta delle importazioni energetiche sale. Singapore: Extreme esposizione ai colli di bottiglia at 0.940 amid crisi di Hormuz. Il rischio d'investimento rimane contenuto a 0.141.",
+    "key_changes_this_week": [
+      "Targeted by US indagine Sezione 301s into manufacturing capacity",
+      "Singapore: Extreme esposizione ai colli di bottiglia at 0.940 amid crisi di Hormuz",
+      "Singapore: Esposizione ai colli di bottiglia a 0.940 amid global disruzione marittima"
+    ],
+    "outlook": "Singapore's prospettive di crescita sono sotto pressione per in forte aumento importazione energetica costs. Current account deterioration risks debolezza valutaria if the blocco di Hormuz si estende oltre il Q2. Central bank faces a difficile compromesso tra il sostegno alla crescita e il contenimento dell'inflazione importata. Structural energy diversificazione and adeguatezza delle riserve strategiche are key priorita a medio termine.",
+    "investor_implications": "Singapore equities face headwinds from rising costi degli input and potential compressione dei margini. Rischio d'investimento a 0.141 with valuta sotto pressione from current account deterioration. Favor exporters with potere di prezzo and domestic-demand plays insulated from energy costs. Si raccomanda la copertura valutaria for Singapore-posizioni denominate in valuta locale.",
+    "data_quality_note": "La qualita dei dati e elevata con 133 punti dati aggiornati in questa esecuzione.  Fattori segnalati: economy.macroeconomic.gdp_real_growth_rate_pct."
+  },
+  "code": "SGP",
+  "name": "Singapore",
+  "executive_summary": "Singapore's economia dipendente dal commercio affronta venti contrari da global disruzione marittima in seguito alla crisi di Hormuz. Current account at 17.54% del PIL evidenzia l'estrema dipendenza commerciale. trend del PIL decreasing from 2.2% to 1.8%. Apertura commerciale trend decrease as re-routing costs rise. Stabilita politica a 1.42 -- highest nel dataset -- provides institutional buffer. Singapore benefits as a relative safe haven in Southeast Asia.",
+  "key_changes": [
+    "crisi di Hormuz increases re-routing costs for Medio Oriente-Asia trade flows (Mar 1)",
+    "trend del PIL decrease from 2.2% to 1.8% on disruzione commerciale",
+    "Apertura commerciale trend decrease as shipping costs rise",
+    "Stabilita politica a 1.42 (highest in dataset) provides institutional buffer"
+  ],
+  "outlook": "Singapore faces second-order effects from the crisi di Hormuz through trade flow disruption rather than direct energy esposizione. Bunkering and ship servicing revenues may increase from rerouted traffic. Singapore dollar remains a regional rifugio sicuro currency. Financial services sector relatively insulated from physical disruzione commerciale.",
+  "investor_implications": "STI may underperform on disruzione commerciale concerns but Singapore's rifugio sicuro premium limits downside. Singapore REITs (S-REITs) face mixed signals from logistics sector disruption. DBS, OCBC, UOB banks beneficiano da flight-to-quality deposit flows. SGD supported by rifugio sicuro status.",
+  "active_alerts": [
+    {
+      "severity": "watch",
+      "title": "Singapore hub commerciale faces disruzione marittima from crisi di Hormuz",
+      "description": "Singapore, with a current account at 17.54% del PIL and extreme dipendenza commerciale, affronta venti contrari da global disruzione marittimas and crisi di Hormuz. Re-routing costs increase for Medio Oriente-Asia trade flows. trend del PIL decrease (2.2% to 1.8%). Apertura commerciale trend decrease. Stabilita politica a 1.42 (highest in dataset) provides institutional buffer."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 6036860,
+      "population_growth_pct": 1.994,
+      "life_expectancy": 82.8951219512195,
+      "population_total": 6036860,
+      "hdi": 0.946,
+      "median_age": 39.4
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 6.18,
+      "regime_type": "flawed_democracy",
+      "freedom_house_score": 48,
+      "freedom_house_status": "partly_free",
+      "corruption_perception_index": 84,
+      "press_freedom_index_rank": 123,
+      "wgi_voice_accountability": -0.07,
+      "wgi_political_stability": 1.42,
+      "wgi_government_effectiveness": 2.32,
+      "wgi_regulatory_quality": 2.31,
+      "wgi_rule_of_law": 1.75,
+      "wgi_control_of_corruption": 2.04,
+      "head_of_state_name": "Tharman Shanmugaratnam",
+      "head_of_state_title": "President",
+      "head_of_government_name": "Lawrence Wong",
+      "next_national_election_date": "2029-11"
+    },
+    "economy": {
+      "gdp_nominal_usd": 547386645891.847,
+      "gdp_real_growth_pct": 2.2,
+      "gdp_per_capita_usd": 90674.066632628,
+      "inflation_cpi_pct": 0.9,
+      "unemployment_rate_pct": 2.1,
+      "current_account_pct_gdp": 17.54,
+      "govt_debt_pct_gdp": 175.6,
+      "fx_reserves_usd": 383945953550.791,
+      "sovereign_credit_rating": "S&P: AAA, Moody's: Aaa, Fitch: AAA",
+      "central_bank_policy_rate_pct": null,
+      "total_exports_usd": 978597275924.863,
+      "total_imports_usd": 786020430563.524,
+      "gdp_growth_forecast_2026_pct": 1.8,
+      "inflation_forecast_2026_pct": 1.3,
+      "exchange_rate_vs_usd": 1.2769,
+      "top_export_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 14.0
+        },
+        {
+          "country": "HKG",
+          "pct_of_total": 10.9
+        },
+        {
+          "country": "MYS",
+          "pct_of_total": 10.4
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 8.7
+        },
+        {
+          "country": "IDN",
+          "pct_of_total": 7.9
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 14.5
+        },
+        {
+          "country": "MYS",
+          "pct_of_total": 12.0
+        },
+        {
+          "country": "TWN",
+          "pct_of_total": 10.2
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 9.5
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 5.8
+        }
+      ]
+    },
+    "military": {
+      "military_spending_usd": 13000000000,
+      "military_expenditure_usd": 14600000000,
+      "active_military_personnel": 51000,
+      "reserve_military_personnel": 252500,
+      "alliance_memberships": [
+        "FPDA"
+      ]
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.05,
+      "energy_independence_index": 0.02,
+      "supply_chain_chokepoint_exposure": 0.94,
+      "composite_national_power_index": 50.4,
+      "political_risk_premium_bps": 4,
+      "market_accessibility_score": 0.95,
+      "overall_investment_risk_score": 0.141
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 14.0
+        },
+        {
+          "country": "HKG",
+          "pct_of_total": 10.9
+        },
+        {
+          "country": "MYS",
+          "pct_of_total": 10.4
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 8.7
+        },
+        {
+          "country": "IDN",
+          "pct_of_total": 7.9
+        }
+      ],
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 14.5
+        },
+        {
+          "country": "MYS",
+          "pct_of_total": 12.0
+        },
+        {
+          "country": "TWN",
+          "pct_of_total": 10.2
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 9.5
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 5.8
+        }
+      ],
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 94.3776,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 322.37,
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "SGP apertura commerciale in calo from indagine Sezione 301, dazi Sezione 122, and global disruzione marittima from Hormuz",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 1.2796,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 4842.27,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 59.255392867,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 488.7724628,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 1482.170465383,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.8,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 6.18,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "flawed_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 48,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "partly_free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 84,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 123,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": -0.0654119327664375,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": 1.42420423030853,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "SGP stabilita politica sostanzialmente stabile. Incertezza globale creates pressione di fondo but no fattori scatenanti acuti",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": 2.31747198104858,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": 2.30859136581421,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": 1.75317537784576,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": 2.04018402099609,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_name": {
+      "value": "Tharman Shanmugaratnam",
+      "confidence": 0.65,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Lawrence Wong",
+      "confidence": 0.65,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "next_national_election_date": {
+      "value": "2029-11",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "SGP relationships with US deteriorating from indagine Sezione 301 targeting manufacturing sectors",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

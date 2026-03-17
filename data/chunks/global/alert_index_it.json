@@ -1,0 +1,3020 @@
+{
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "summary": {
+    "critical": 21,
+    "warning": 56,
+    "watch": 60,
+    "total_active": 137
+  },
+  "alerts": [
+    {
+      "alert_id": "alert_2026-03-10_001",
+      "severity": "warning",
+      "country_code": "AGO",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 700)",
+      "headline": "Angola: Premio per il rischio politico a 700 bps",
+      "details": "Il premio per il rischio politico dell'Angola di 700 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.494.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Angola: Premio per il rischio politico a 700 bps",
+      "description": "Il premio per il rischio politico dell'Angola di 700 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.494.",
+      "countries": [
+        "AGO"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_002",
+      "severity": "watch",
+      "country_code": "AGO",
+      "status": "ongoing",
+      "trigger": "Inflation elevated (actual: 28.2%)",
+      "headline": "Angola: Inflazione elevata al 28.2%",
+      "details": "L'inflazione CPI dell'Angola del 28.2% è significativamente elevata. ",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Angola: Inflazione elevata al 28.2%",
+      "description": "L'inflazione CPI dell'Angola del 28.2% è significativamente elevata. ",
+      "countries": [
+        "AGO"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_003",
+      "severity": "watch",
+      "country_code": "AGO",
+      "status": "ongoing",
+      "trigger": "Investment risk approaching warning threshold (actual: 0.422)",
+      "headline": "Angola: Rischio d'investimento a 0.422 — in avvicinamento alla soglia elevata",
+      "details": "Il punteggio di rischio d'investimento dell'Angola di 0.422 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 765 bps.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Angola: Rischio d'investimento a 0.422 — in avvicinamento alla soglia elevata",
+      "description": "Il punteggio di rischio d'investimento dell'Angola di 0.422 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 765 bps.",
+      "countries": [
+        "AGO"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_004",
+      "severity": "warning",
+      "country_code": "ARE",
+      "status": "ongoing",
+      "trigger": "GDP growth trend: forte_calo",
+      "headline": "Emirati Arabi Uniti: Crescita del PIL in forte calo",
+      "details": "Emirati Arabi Uniti's andamento della crescita del PIL è 'forte_calo'. Crescita attuale: 4.0%. La posa di mine nello Stretto di Hormuz da parte dell'IRGC blocca la principale rotta di esportazione petrolifera. Grave perturbazione delle entrate petrolifere nonostante i prezzi elevati. Emirati Arabi Uniti ha alternative limitate via oleodotto. L'aumento della spesa per la difesa aggiunge pressione fiscale.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Emirati Arabi Uniti: Crescita del PIL in forte calo",
+      "description": "Emirati Arabi Uniti's andamento della crescita del PIL è 'forte_calo'. Crescita attuale: 4.0%. La posa di mine nello Stretto di Hormuz da parte dell'IRGC blocca la principale rotta di esportazione petrolifera. Grave perturbazione delle entrate petrolifere nonostante i prezzi elevati. Emirati Arabi Uniti ha alternative limitate via oleodotto. L'aumento della spesa per la difesa aggiunge pressione fiscale.",
+      "countries": [
+        "ARE"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_005",
+      "severity": "critical",
+      "country_code": "ARE",
+      "status": "ongoing",
+      "trigger": "Supply chain esposizione ai punti di strozzatura > 0.7 (actual: 1.000)",
+      "headline": "Emirati Arabi Uniti: Esposizione estrema ai punti di strozzatura a 1.000 durante la crisi di Hormuz",
+      "details": "Emirati Arabi Uniti has a esposizione ai punti di strozzatura della catena di approvvigionamento di 1.000, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: forte_calo. Rischio d'investimento: 0.101.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure"
+      ],
+      "run_id": "2026-W11",
+      "title": "Emirati Arabi Uniti: Esposizione estrema ai punti di strozzatura a 1.000 durante la crisi di Hormuz",
+      "description": "Emirati Arabi Uniti has a esposizione ai punti di strozzatura della catena di approvvigionamento di 1.000, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: forte_calo. Rischio d'investimento: 0.101.",
+      "countries": [
+        "ARE"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_006",
+      "severity": "watch",
+      "country_code": "ARE",
+      "status": "ongoing",
+      "trigger": "Tendenza stabilità politica: in calo",
+      "headline": "Emirati Arabi Uniti: Stabilità politica in calo",
+      "details": "Emirati Arabi Uniti stabilità politica in calo dalla prossimità al conflitto del Golfo. Perturbazione economica dalla chiusura di Hormuz che crea pressione interna. Preoccupazioni per la sicurezza elevate.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_stability_trend"
+      ],
+      "run_id": "2026-W11",
+      "title": "Emirati Arabi Uniti: Stabilità politica in calo",
+      "description": "Emirati Arabi Uniti stabilità politica in calo dalla prossimità al conflitto del Golfo. Perturbazione economica dalla chiusura di Hormuz che crea pressione interna. Preoccupazioni per la sicurezza elevate.",
+      "countries": [
+        "ARE"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_007",
+      "severity": "warning",
+      "country_code": "ARG",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 950)",
+      "headline": "Argentina: Premio per il rischio politico a 950 bps",
+      "details": "Il premio per il rischio politico dell'Argentina di 950 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.507.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Argentina: Premio per il rischio politico a 950 bps",
+      "description": "Il premio per il rischio politico dell'Argentina di 950 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.507.",
+      "countries": [
+        "ARG"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_008",
+      "severity": "warning",
+      "country_code": "ARG",
+      "status": "ongoing",
+      "trigger": "Inflation > 50% (actual: 219.9%)",
+      "headline": "Argentina: Territorio di iperinflazione al 219.9%",
+      "details": "L'inflazione CPI dell'Argentina del 219.9% supera la soglia di iperinflazione. Tendenza: in calo. ",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Argentina: Territorio di iperinflazione al 219.9%",
+      "description": "L'inflazione CPI dell'Argentina del 219.9% supera la soglia di iperinflazione. Tendenza: in calo. ",
+      "countries": [
+        "ARG"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_009",
+      "severity": "watch",
+      "country_code": "ARG",
+      "status": "escalated",
+      "trigger": "Investment risk approaching warning threshold (actual: 0.449)",
+      "headline": "Argentina: Rischio d'investimento a 0.449 — in avvicinamento alla soglia elevata",
+      "details": "Il punteggio di rischio d'investimento dell'Argentina di 0.449 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 872 bps.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Argentina: Rischio d'investimento a 0.449 — in avvicinamento alla soglia elevata",
+      "description": "Il punteggio di rischio d'investimento dell'Argentina di 0.449 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 872 bps.",
+      "countries": [
+        "ARG"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_010",
+      "severity": "watch",
+      "country_code": "ARG",
+      "status": "deescalated",
+      "trigger": "GDP growth declining with elevated risk (risk: 0.449)",
+      "headline": "Argentina: PIL in calo con rischio d'investimento at 0.449",
+      "details": "Argentina shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.449. Argentina GDP -1.3% under Milei's shock therapy. However, becoming net energy exporter for first time via Vaca Muerta — particularly valuable as Gulf crisis drives prices higher. Milei courting Wall S",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Argentina: PIL in calo con rischio d'investimento at 0.449",
+      "description": "Argentina shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.449. Argentina GDP -1.3% under Milei's shock therapy. However, becoming net energy exporter for first time via Vaca Muerta — particularly valuable as Gulf crisis drives prices higher. Milei courting Wall S",
+      "countries": [
+        "ARG"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_011",
+      "severity": "warning",
+      "country_code": "BGD",
+      "status": "deescalated",
+      "trigger": "political_risk_premium_bps > 500 (actual: 654)",
+      "headline": "Bangladesh: Premio per il rischio politico a 654 bps",
+      "details": "Il premio per il rischio politico del Bangladesh di 654 punti base indica un significativo rischio sovrano. Punteggio di rischio d'investimento: 0.334.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Bangladesh: Premio per il rischio politico a 654 bps",
+      "description": "Il premio per il rischio politico del Bangladesh di 654 punti base indica un significativo rischio sovrano. Punteggio di rischio d'investimento: 0.334.",
+      "countries": [
+        "BGD"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_012",
+      "severity": "watch",
+      "country_code": "BGD",
+      "status": "ongoing",
+      "trigger": "GDP growth declining with elevated risk (risk: 0.334)",
+      "headline": "Bangladesh: PIL in calo con rischio d'investimento at 0.334",
+      "details": "Bangladesh shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.334. Bangladesh fortemente dipendente dal petrolio del Golfo che transita per Hormuz. Oil at $116/bbl aggiunge 1-2 punti percentuali alla bolletta delle importazioni in % del PIL. I settori manifatturiero e dei trasporti sono i più colpiti. Il rilascio SPR del G7 fornisce un parziale temp",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Bangladesh: PIL in calo con rischio d'investimento at 0.334",
+      "description": "Bangladesh shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.334. Bangladesh fortemente dipendente dal petrolio del Golfo che transita per Hormuz. Oil at $116/bbl aggiunge 1-2 punti percentuali alla bolletta delle importazioni in % del PIL. I settori manifatturiero e dei trasporti sono i più colpiti. Il rilascio SPR del G7 fornisce un parziale temp",
+      "countries": [
+        "BGD"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_013",
+      "severity": "warning",
+      "country_code": "COD",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 750)",
+      "headline": "RD Congo: Premio per il rischio politico a 750 bps",
+      "details": "RD Congo's premio per il rischio politico di 750 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.519.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "RD Congo: Premio per il rischio politico a 750 bps",
+      "description": "RD Congo's premio per il rischio politico di 750 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.519.",
+      "countries": [
+        "COD"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_014",
+      "severity": "watch",
+      "country_code": "COD",
+      "status": "escalated",
+      "trigger": "Investment risk approaching warning threshold (actual: 0.493)",
+      "headline": "RD Congo: Rischio d'investimento a 0.493 — in avvicinamento alla soglia elevata",
+      "details": "RD Congo's punteggio di rischio d'investimento di 0.493 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 1371 bps.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "RD Congo: Rischio d'investimento a 0.493 — in avvicinamento alla soglia elevata",
+      "description": "RD Congo's punteggio di rischio d'investimento di 0.493 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 1371 bps.",
+      "countries": [
+        "COD"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_015",
+      "severity": "watch",
+      "country_code": "DEU",
+      "status": "deescalated",
+      "trigger": "Tendenza stabilità politica: in calo",
+      "headline": "Germania: Stabilità politica in calo",
+      "details": "Germania stabilità politica in indebolimento. VW slashing 50,000 jobs — largest in German auto history. EU admitted 'nuclear blunder' on energy. European markets crashed 6%. Industrial competitiveness crisis deepening.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_stability_trend"
+      ],
+      "run_id": "2026-W11",
+      "title": "Germania: Stabilità politica in calo",
+      "description": "Germania stabilità politica in indebolimento. VW slashing 50,000 jobs — largest in German auto history. EU admitted 'nuclear blunder' on energy. European markets crashed 6%. Industrial competitiveness crisis deepening.",
+      "countries": [
+        "DEU"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_016",
+      "severity": "warning",
+      "country_code": "EGY",
+      "status": "deescalated",
+      "trigger": "overall_investment_risk_score > 0.5 (actual: 0.573)",
+      "headline": "Egitto: Rischio d'investimento elevato a 0.573",
+      "details": "Egitto's punteggio di rischio d'investimento di 0.573 indica un rischio elevato. Premio per il rischio politico: 895 bps. Inflazione: 28.3%. Andamento del PIL: decrease. ",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Egitto: Rischio d'investimento elevato a 0.573",
+      "description": "Egitto's punteggio di rischio d'investimento di 0.573 indica un rischio elevato. Premio per il rischio politico: 895 bps. Inflazione: 28.3%. Andamento del PIL: decrease. ",
+      "countries": [
+        "EGY"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_017",
+      "severity": "warning",
+      "country_code": "EGY",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 620)",
+      "headline": "Egitto: Premio per il rischio politico a 620 bps",
+      "details": "Egitto's premio per il rischio politico di 620 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.495.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Egitto: Premio per il rischio politico a 620 bps",
+      "description": "Egitto's premio per il rischio politico di 620 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.495.",
+      "countries": [
+        "EGY"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_018",
+      "severity": "watch",
+      "country_code": "EGY",
+      "status": "ongoing",
+      "trigger": "Inflation elevated (actual: 28.3%)",
+      "headline": "Egitto: Inflazione elevata al 28.3%",
+      "details": "Egitto's inflazione CPI del 28.3% è significativamente elevata. Tendenza: in crescita. ",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Egitto: Inflazione elevata al 28.3%",
+      "description": "Egitto's inflazione CPI del 28.3% è significativamente elevata. Tendenza: in crescita. ",
+      "countries": [
+        "EGY"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_019",
+      "severity": "watch",
+      "country_code": "EGY",
+      "status": "ongoing",
+      "trigger": "GDP growth declining with elevated risk (risk: 0.573)",
+      "headline": "Egitto: PIL in calo con rischio d'investimento at 0.573",
+      "details": "Egitto shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.573. Egitto faces severe oil import cost pressure and Suez Canal revenue uncertainty. Tourism disrupted by regional conflict. IMF program constrained. Food import costs rising.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Egitto: PIL in calo con rischio d'investimento at 0.573",
+      "description": "Egitto shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.573. Egitto faces severe oil import cost pressure and Suez Canal revenue uncertainty. Tourism disrupted by regional conflict. IMF program constrained. Food import costs rising.",
+      "countries": [
+        "EGY"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_020",
+      "severity": "warning",
+      "country_code": "ETH",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 1350)",
+      "headline": "Etiopia: Premio per il rischio politico a 1350 bps",
+      "details": "Etiopia's premio per il rischio politico di 1350 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.589.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Etiopia: Premio per il rischio politico a 1350 bps",
+      "description": "Etiopia's premio per il rischio politico di 1350 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.589.",
+      "countries": [
+        "ETH"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_021",
+      "severity": "watch",
+      "country_code": "ETH",
+      "status": "ongoing",
+      "trigger": "Inflation elevated (actual: 21.0%)",
+      "headline": "Etiopia: Inflazione elevata al 21.0%",
+      "details": "Etiopia's inflazione CPI del 21.0% è significativamente elevata. ",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Etiopia: Inflazione elevata al 21.0%",
+      "description": "Etiopia's inflazione CPI del 21.0% è significativamente elevata. ",
+      "countries": [
+        "ETH"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_022",
+      "severity": "watch",
+      "country_code": "ETH",
+      "status": "escalated",
+      "trigger": "Investment risk approaching warning threshold (actual: 0.450)",
+      "headline": "Etiopia: Rischio d'investimento a 0.450 — in avvicinamento alla soglia elevata",
+      "details": "Etiopia's punteggio di rischio d'investimento di 0.450 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 1473 bps.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Etiopia: Rischio d'investimento a 0.450 — in avvicinamento alla soglia elevata",
+      "description": "Etiopia's punteggio di rischio d'investimento di 0.450 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 1473 bps.",
+      "countries": [
+        "ETH"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_023",
+      "severity": "warning",
+      "country_code": "GHA",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 900)",
+      "headline": "Ghana: Premio per il rischio politico a 900 bps",
+      "details": "Il premio per il rischio politico del Ghana di 900 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.487.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Ghana: Premio per il rischio politico a 900 bps",
+      "description": "Il premio per il rischio politico del Ghana di 900 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.487.",
+      "countries": [
+        "GHA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_024",
+      "severity": "watch",
+      "country_code": "GHA",
+      "status": "ongoing",
+      "trigger": "Inflation elevated (actual: 22.8%)",
+      "headline": "Ghana: Inflazione elevata al 22.8%",
+      "details": "L'inflazione CPI del Ghana del 22.8% è significativamente elevata. ",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Ghana: Inflazione elevata al 22.8%",
+      "description": "L'inflazione CPI del Ghana del 22.8% è significativamente elevata. ",
+      "countries": [
+        "GHA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_025",
+      "severity": "watch",
+      "country_code": "GHA",
+      "status": "ongoing",
+      "trigger": "Investment risk approaching warning threshold (actual: 0.423)",
+      "headline": "Ghana: Rischio d'investimento a 0.423 — in avvicinamento alla soglia elevata",
+      "details": "Il punteggio di rischio d'investimento del Ghana di 0.423 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 884 bps.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Ghana: Rischio d'investimento a 0.423 — in avvicinamento alla soglia elevata",
+      "description": "Il punteggio di rischio d'investimento del Ghana di 0.423 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 884 bps.",
+      "countries": [
+        "GHA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_026",
+      "severity": "watch",
+      "country_code": "GRC",
+      "status": "ongoing",
+      "trigger": "GDP growth declining with elevated risk (risk: 0.307)",
+      "headline": "Grecia: PIL in calo con rischio d'investimento at 0.307",
+      "details": "Grecia shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.307. Grecia affronta venti contrari al PIL dallo shock petrolifero ($116/bbl Brent) e dal crollo dei mercati europei (cali di ~6% su tutti gli indici). Costi energetici in forte aumento.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Grecia: PIL in calo con rischio d'investimento at 0.307",
+      "description": "Grecia shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.307. Grecia affronta venti contrari al PIL dallo shock petrolifero ($116/bbl Brent) e dal crollo dei mercati europei (cali di ~6% su tutti gli indici). Costi energetici in forte aumento.",
+      "countries": [
+        "GRC"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_027",
+      "severity": "watch",
+      "country_code": "IND",
+      "status": "ongoing",
+      "trigger": "GDP growth declining with elevated risk (risk: 0.287)",
+      "headline": "India: PIL in calo con rischio d'investimento at 0.287",
+      "details": "India shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.287. India fortemente dipendente dal petrolio del Golfo che transita per Hormuz. Oil at $116/bbl aggiunge 1-2 punti percentuali alla bolletta delle importazioni in % del PIL. I settori manifatturiero e dei trasporti sono i più colpiti. Il rilascio SPR del G7 fornisce un parziale temporary",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "India: PIL in calo con rischio d'investimento at 0.287",
+      "description": "India shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.287. India fortemente dipendente dal petrolio del Golfo che transita per Hormuz. Oil at $116/bbl aggiunge 1-2 punti percentuali alla bolletta delle importazioni in % del PIL. I settori manifatturiero e dei trasporti sono i più colpiti. Il rilascio SPR del G7 fornisce un parziale temporary",
+      "countries": [
+        "IND"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_028",
+      "severity": "critical",
+      "country_code": "IRN",
+      "status": "ongoing",
+      "trigger": "Investment risk score elevated (risk: 0.734)",
+      "headline": "Iran: Rischio d'investimento massimo a 0.791",
+      "details": "Il rischio d'investimento dell'Iran (inverted score: 0.734) remains in territorio di crisi. PRP: 870 bps. Inflazione: 32.5%.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iran: Rischio d'investimento massimo a 0.791",
+      "description": "Il rischio d'investimento dell'Iran (inverted score: 0.734) remains in territorio di crisi. PRP: 870 bps. Inflazione: 32.5%.",
+      "countries": [
+        "IRN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_029",
+      "severity": "critical",
+      "country_code": "IRN",
+      "status": "ongoing",
+      "trigger": "Active high-intensity conflict",
+      "headline": "Iran: Conflitto militare attivo — Day 16, Kharg Island struck",
+      "details": "US-Iran war Day 16. Gli USA hanno bombardato l'Isola di Kharg (90% of L'Iran ha un oil exports) destroying 90+ military targets while sparing oil infrastructure. Iran maintains Hormuz blockade. New supreme leader declared strait must remain closed. State governance paralyzed. Isfahan under continued strikes.",
+      "first_triggered": "2026-03-02T12:30:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.overall_investment_risk_score",
+        "political.political_stability_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iran: Conflitto militare attivo — Day 16, Kharg Island struck",
+      "description": "US-Iran war Day 16. Gli USA hanno bombardato l'Isola di Kharg (90% of L'Iran ha un oil exports) destroying 90+ military targets while sparing oil infrastructure. Iran maintains Hormuz blockade. New supreme leader declared strait must remain closed. State governance paralyzed. Isfahan under continued strikes.",
+      "countries": [
+        "IRN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_030",
+      "severity": "warning",
+      "country_code": "IRN",
+      "status": "ongoing",
+      "trigger": "GDP growth trend: forte_calo",
+      "headline": "Iran: Crescita del PIL in forte calo",
+      "details": "L'andamento della crescita del PIL dell'Iran è 'forte_calo'. Crescita attuale: 3.7%. War Day 10+ with escalating intensity. Infrastructure destruction accelerating. Hormuz mined, halting oil exports (~70% of revenue). Kurdish ground invasion opens new front. GDP trajectory: deep contraction -15% to -20% annualized.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iran: Crescita del PIL in forte calo",
+      "description": "L'andamento della crescita del PIL dell'Iran è 'forte_calo'. Crescita attuale: 3.7%. War Day 10+ with escalating intensity. Infrastructure destruction accelerating. Hormuz mined, halting oil exports (~70% of revenue). Kurdish ground invasion opens new front. GDP trajectory: deep contraction -15% to -20% annualized.",
+      "countries": [
+        "IRN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_031",
+      "severity": "warning",
+      "country_code": "IRN",
+      "status": "ongoing",
+      "trigger": "Political stability trend: forte_calo",
+      "headline": "Iran: Stabilità politica in forte calo",
+      "details": "Iran stabilità politica collassata. Supreme Leader killed Feb 28. Capital under sustained bombing. Internet shut down. Kurdish invasion from west. IRGC claims control but governance paralyzed. State approaching collapse.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_stability_trend",
+        "political.political_stability_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iran: Stabilità politica in forte calo",
+      "description": "Iran stabilità politica collassata. Supreme Leader killed Feb 28. Capital under sustained bombing. Internet shut down. Kurdish invasion from west. IRGC claims control but governance paralyzed. State approaching collapse.",
+      "countries": [
+        "IRN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_032",
+      "severity": "critical",
+      "country_code": "IRN",
+      "status": "ongoing",
+      "trigger": "Supply chain esposizione ai punti di strozzatura > 0.7 (actual: 0.904)",
+      "headline": "Iran: Esposizione estrema ai punti di strozzatura a 0.904 durante la crisi di Hormuz",
+      "details": "Iran has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.904, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: forte_calo. Rischio d'investimento: 0.791.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iran: Esposizione estrema ai punti di strozzatura a 0.904 durante la crisi di Hormuz",
+      "description": "Iran has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.904, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: forte_calo. Rischio d'investimento: 0.791.",
+      "countries": [
+        "IRN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_033",
+      "severity": "watch",
+      "country_code": "IRN",
+      "status": "ongoing",
+      "trigger": "Inflation elevated (actual: 32.5%)",
+      "headline": "Iran: Inflazione elevata al 32.5%",
+      "details": "L'inflazione CPI dell'Iran del 32.5% è significativamente elevata. Trend: forte_crescita. ",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iran: Inflazione elevata al 32.5%",
+      "description": "L'inflazione CPI dell'Iran del 32.5% è significativamente elevata. Trend: forte_crescita. ",
+      "countries": [
+        "IRN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_034",
+      "severity": "warning",
+      "country_code": "IRQ",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 800)",
+      "headline": "Iraq: Premio per il rischio politico a 800 bps",
+      "details": "Il premio per il rischio politico dell'Iraq di 800 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.526.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iraq: Premio per il rischio politico a 800 bps",
+      "description": "Il premio per il rischio politico dell'Iraq di 800 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.526.",
+      "countries": [
+        "IRQ"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_035",
+      "severity": "warning",
+      "country_code": "IRQ",
+      "status": "ongoing",
+      "trigger": "GDP growth trend: forte_calo",
+      "headline": "Iraq: Crescita del PIL in forte calo",
+      "details": "L'andamento della crescita del PIL dell'Iraq è 'forte_calo'. Crescita attuale: -1.5%. Iraq caught between US operations and Iranian influence. Kurdish invasion of Iran from Iraqi Kurdistan threatens sovereignty. Oil exports via Hormuz disrupted. Internal security deteriorating.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iraq: Crescita del PIL in forte calo",
+      "description": "L'andamento della crescita del PIL dell'Iraq è 'forte_calo'. Crescita attuale: -1.5%. Iraq caught between US operations and Iranian influence. Kurdish invasion of Iran from Iraqi Kurdistan threatens sovereignty. Oil exports via Hormuz disrupted. Internal security deteriorating.",
+      "countries": [
+        "IRQ"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_036",
+      "severity": "warning",
+      "country_code": "IRQ",
+      "status": "ongoing",
+      "trigger": "Supply chain esposizione ai punti di strozzatura > 0.7 (actual: 0.791)",
+      "headline": "Iraq: Esposizione estrema ai punti di strozzatura a 0.791 durante la crisi di Hormuz",
+      "details": "Iraq has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.791, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: forte_calo. Rischio d'investimento: 0.446.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iraq: Esposizione estrema ai punti di strozzatura a 0.791 durante la crisi di Hormuz",
+      "description": "Iraq has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.791, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: forte_calo. Rischio d'investimento: 0.446.",
+      "countries": [
+        "IRQ"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_037",
+      "severity": "watch",
+      "country_code": "IRQ",
+      "status": "escalated",
+      "trigger": "Investment risk approaching warning threshold (actual: 0.446)",
+      "headline": "Iraq: Rischio d'investimento a 0.446 — in avvicinamento alla soglia elevata",
+      "details": "Il punteggio di rischio d'investimento dell'Iraq di 0.446 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 1609 bps.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iraq: Rischio d'investimento a 0.446 — in avvicinamento alla soglia elevata",
+      "description": "Il punteggio di rischio d'investimento dell'Iraq di 0.446 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 1609 bps.",
+      "countries": [
+        "IRQ"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_038",
+      "severity": "watch",
+      "country_code": "IRQ",
+      "status": "ongoing",
+      "trigger": "Tendenza stabilità politica: in calo",
+      "headline": "Iraq: Stabilità politica in calo",
+      "details": "Iraq stabilità politica in calo dalla prossimità al conflitto del Golfo. Perturbazione economica dalla chiusura di Hormuz che crea pressione interna. Preoccupazioni per la sicurezza elevate.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_stability_trend"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iraq: Stabilità politica in calo",
+      "description": "Iraq stabilità politica in calo dalla prossimità al conflitto del Golfo. Perturbazione economica dalla chiusura di Hormuz che crea pressione interna. Preoccupazioni per la sicurezza elevate.",
+      "countries": [
+        "IRQ"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_039",
+      "severity": "critical",
+      "country_code": "ISR",
+      "status": "ongoing",
+      "trigger": "Active high-intensity conflict",
+      "headline": "Israele: Multi-front war Day 16 — Libano ground invasion planned",
+      "details": "Multi-front war Day 16: Iran strikes continue, Hezbollah escalation from Libano with 687 dead and 800,000 displaced. Israele planning largest ground invasion of Libano since 2006 to seize area south of Litani River. Running critically low on ballistic missile interceptors. NIS 2.6B ($826M) approvvigionamento d'emergenza per la difesa approvato.",
+      "first_triggered": "2026-03-02T12:30:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.overall_investment_risk_score",
+        "political.political_stability_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Israele: Multi-front war Day 16 — Libano ground invasion planned",
+      "description": "Multi-front war Day 16: Iran strikes continue, Hezbollah escalation from Libano with 687 dead and 800,000 displaced. Israele planning largest ground invasion of Libano since 2006 to seize area south of Litani River. Running critically low on ballistic missile interceptors. NIS 2.6B ($826M) approvvigionamento d'emergenza per la difesa approvato.",
+      "countries": [
+        "ISR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_040",
+      "severity": "warning",
+      "country_code": "ISR",
+      "status": "ongoing",
+      "trigger": "GDP growth trend: forte_calo",
+      "headline": "Israele: Crescita del PIL in forte calo",
+      "details": "Israele's andamento della crescita del PIL è 'forte_calo'. Crescita attuale: 0.9%. Active war with Iran/Hezbollah. Hezbollah escalation from Libano. Military mobilization consuming resources. Tech sector disrupted. But US military support and domestic resilience partially offset.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Israele: Crescita del PIL in forte calo",
+      "description": "Israele's andamento della crescita del PIL è 'forte_calo'. Crescita attuale: 0.9%. Active war with Iran/Hezbollah. Hezbollah escalation from Libano. Military mobilization consuming resources. Tech sector disrupted. But US military support and domestic resilience partially offset.",
+      "countries": [
+        "ISR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_041",
+      "severity": "warning",
+      "country_code": "ISR",
+      "status": "deescalated",
+      "trigger": "Political stability trend: forte_calo",
+      "headline": "Israele: Stabilità politica in forte calo",
+      "details": "Israele facing multi-front war with extended duration. Hezbollah escalating from Libano. Society under war strain. National unity government but reserves mobilization creating economic friction.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_stability_trend",
+        "political.political_stability_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Israele: Stabilità politica in forte calo",
+      "description": "Israele facing multi-front war with extended duration. Hezbollah escalating from Libano. Society under war strain. National unity government but reserves mobilization creating economic friction.",
+      "countries": [
+        "ISR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_042",
+      "severity": "warning",
+      "country_code": "KEN",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 570)",
+      "headline": "Kenya: Premio per il rischio politico a 570 bps",
+      "details": "Il premio per il rischio politico del Kenya di 570 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.382.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Kenya: Premio per il rischio politico a 570 bps",
+      "description": "Il premio per il rischio politico del Kenya di 570 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.382.",
+      "countries": [
+        "KEN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_043",
+      "severity": "warning",
+      "country_code": "KWT",
+      "status": "ongoing",
+      "trigger": "GDP growth trend: forte_calo",
+      "headline": "Kuwait: Crescita del PIL in forte calo",
+      "details": "L'andamento della crescita del PIL del Kuwait è 'forte_calo'. Crescita attuale: -2.6%. Kuwait PIL sotto forte pressione dalla perturbazione di Hormuz. Nessuna alternativa via oleodotto a Hormuz. I prezzi elevati dell'energia non possono essere monetizzati mentre i canali di esportazione sono bloccati.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Kuwait: Crescita del PIL in forte calo",
+      "description": "L'andamento della crescita del PIL del Kuwait è 'forte_calo'. Crescita attuale: -2.6%. Kuwait PIL sotto forte pressione dalla perturbazione di Hormuz. Nessuna alternativa via oleodotto a Hormuz. I prezzi elevati dell'energia non possono essere monetizzati mentre i canali di esportazione sono bloccati.",
+      "countries": [
+        "KWT"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_044",
+      "severity": "critical",
+      "country_code": "KWT",
+      "status": "ongoing",
+      "trigger": "Supply chain esposizione ai punti di strozzatura > 0.7 (actual: 0.938)",
+      "headline": "Kuwait: Esposizione estrema ai punti di strozzatura a 0.938 durante la crisi di Hormuz",
+      "details": "Kuwait has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.938, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: forte_calo. Rischio d'investimento: 0.15.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure"
+      ],
+      "run_id": "2026-W11",
+      "title": "Kuwait: Esposizione estrema ai punti di strozzatura a 0.938 durante la crisi di Hormuz",
+      "description": "Kuwait has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.938, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: forte_calo. Rischio d'investimento: 0.15.",
+      "countries": [
+        "KWT"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_045",
+      "severity": "watch",
+      "country_code": "KWT",
+      "status": "ongoing",
+      "trigger": "Tendenza stabilità politica: in calo",
+      "headline": "Kuwait: Stabilità politica in calo",
+      "details": "Kuwait stabilità politica in calo dalla prossimità al conflitto del Golfo. Perturbazione economica dalla chiusura di Hormuz che crea pressione interna. Preoccupazioni per la sicurezza elevate.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_stability_trend"
+      ],
+      "run_id": "2026-W11",
+      "title": "Kuwait: Stabilità politica in calo",
+      "description": "Kuwait stabilità politica in calo dalla prossimità al conflitto del Golfo. Perturbazione economica dalla chiusura di Hormuz che crea pressione interna. Preoccupazioni per la sicurezza elevate.",
+      "countries": [
+        "KWT"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_046",
+      "severity": "warning",
+      "country_code": "LBY",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 620)",
+      "headline": "Libia: Premio per il rischio politico a 620 bps",
+      "details": "Libia's premio per il rischio politico di 620 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.547.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Libia: Premio per il rischio politico a 620 bps",
+      "description": "Libia's premio per il rischio politico di 620 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.547.",
+      "countries": [
+        "LBY"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_047",
+      "severity": "warning",
+      "country_code": "LKA",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 950)",
+      "headline": "Sri Lanka: Premio per il rischio politico a 950 bps",
+      "details": "Il premio per il rischio politico dello Sri Lanka di 950 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.488.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Sri Lanka: Premio per il rischio politico a 950 bps",
+      "description": "Il premio per il rischio politico dello Sri Lanka di 950 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.488.",
+      "countries": [
+        "LKA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_048",
+      "severity": "critical",
+      "country_code": "MMR",
+      "status": "ongoing",
+      "trigger": "Active high-intensity conflict",
+      "headline": "Myanmar: Conflitto militare attivo — rischio di sicurezza critico",
+      "details": "Myanmar la guerra civile continua. Giunta militare contro forze di resistenza. Economia in forte contrazione. Crisi umanitaria.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.overall_investment_risk_score",
+        "political.political_stability_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Myanmar: Conflitto militare attivo — rischio di sicurezza critico",
+      "description": "Myanmar la guerra civile continua. Giunta militare contro forze di resistenza. Economia in forte contrazione. Crisi umanitaria.",
+      "countries": [
+        "MMR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_049",
+      "severity": "warning",
+      "country_code": "MMR",
+      "status": "ongoing",
+      "trigger": "Investment risk score elevated (risk: 0.639)",
+      "headline": "Myanmar: Rischio d'investimento elevato (risk score: 0.639)",
+      "details": "Il Myanmar ha un punteggio di rischio d'investimento di 0.639 indica un rischio elevato. PRP: 850 bps. Inflazione: 31.0%. Andamento del PIL: N/A.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Myanmar: Rischio d'investimento elevato (risk score: 0.639)",
+      "description": "Il Myanmar ha un punteggio di rischio d'investimento di 0.639 indica un rischio elevato. PRP: 850 bps. Inflazione: 31.0%. Andamento del PIL: N/A.",
+      "countries": [
+        "MMR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_050",
+      "severity": "critical",
+      "country_code": "MMR",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 850)",
+      "headline": "Myanmar: Premio per il rischio politico a 850 bps",
+      "details": "Il premio per il rischio politico del Myanmar di 850 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.639.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Myanmar: Premio per il rischio politico a 850 bps",
+      "description": "Il premio per il rischio politico del Myanmar di 850 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.639.",
+      "countries": [
+        "MMR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_051",
+      "severity": "watch",
+      "country_code": "MMR",
+      "status": "ongoing",
+      "trigger": "Inflation elevated (actual: 31.0%)",
+      "headline": "Myanmar: Inflazione elevata al 31.0%",
+      "details": "L'inflazione CPI del Myanmar del 31.0% è significativamente elevata. ",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Myanmar: Inflazione elevata al 31.0%",
+      "description": "L'inflazione CPI del Myanmar del 31.0% è significativamente elevata. ",
+      "countries": [
+        "MMR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_052",
+      "severity": "warning",
+      "country_code": "MOZ",
+      "status": "deescalated",
+      "trigger": "overall_investment_risk_score > 0.5 (actual: 0.513)",
+      "headline": "Mozambico: Rischio d'investimento elevato a 0.513",
+      "details": "Mozambico's punteggio di rischio d'investimento di 0.513 indica un rischio elevato. Premio per il rischio politico: 939 bps. Inflazione: 4.1%. ",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Mozambico: Rischio d'investimento elevato a 0.513",
+      "description": "Mozambico's punteggio di rischio d'investimento di 0.513 indica un rischio elevato. Premio per il rischio politico: 939 bps. Inflazione: 4.1%. ",
+      "countries": [
+        "MOZ"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_053",
+      "severity": "warning",
+      "country_code": "MOZ",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 900)",
+      "headline": "Mozambico: Premio per il rischio politico a 900 bps",
+      "details": "Mozambico's premio per il rischio politico di 900 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.468.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Mozambico: Premio per il rischio politico a 900 bps",
+      "description": "Mozambico's premio per il rischio politico di 900 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.468.",
+      "countries": [
+        "MOZ"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_054",
+      "severity": "warning",
+      "country_code": "NGA",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 850)",
+      "headline": "Nigeria: Premio per il rischio politico a 850 bps",
+      "details": "Il premio per il rischio politico della Nigeria di 850 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.569.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Nigeria: Premio per il rischio politico a 850 bps",
+      "description": "Il premio per il rischio politico della Nigeria di 850 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.569.",
+      "countries": [
+        "NGA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_055",
+      "severity": "watch",
+      "country_code": "NGA",
+      "status": "ongoing",
+      "trigger": "Inflation elevated (actual: 33.2%)",
+      "headline": "Nigeria: Inflazione elevata al 33.2%",
+      "details": "L'inflazione CPI della Nigeria del 33.2% è significativamente elevata. Tendenza: in crescita. ",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Nigeria: Inflazione elevata al 33.2%",
+      "description": "L'inflazione CPI della Nigeria del 33.2% è significativamente elevata. Tendenza: in crescita. ",
+      "countries": [
+        "NGA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_056",
+      "severity": "watch",
+      "country_code": "NGA",
+      "status": "escalated",
+      "trigger": "Investment risk approaching warning threshold (actual: 0.457)",
+      "headline": "Nigeria: Rischio d'investimento a 0.457 — in avvicinamento alla soglia elevata",
+      "details": "Il punteggio di rischio d'investimento della Nigeria di 0.457 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 1276 bps.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Nigeria: Rischio d'investimento a 0.457 — in avvicinamento alla soglia elevata",
+      "description": "Il punteggio di rischio d'investimento della Nigeria di 0.457 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 1276 bps.",
+      "countries": [
+        "NGA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_057",
+      "severity": "warning",
+      "country_code": "OMN",
+      "status": "ongoing",
+      "trigger": "Supply chain esposizione ai punti di strozzatura > 0.7 (actual: 0.850)",
+      "headline": "Oman: Esposizione estrema ai punti di strozzatura a 0.850 durante la crisi di Hormuz",
+      "details": "Oman has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.850, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: decrease. Rischio d'investimento: 0.142.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure"
+      ],
+      "run_id": "2026-W11",
+      "title": "Oman: Esposizione estrema ai punti di strozzatura a 0.850 durante la crisi di Hormuz",
+      "description": "Oman has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.850, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: decrease. Rischio d'investimento: 0.142.",
+      "countries": [
+        "OMN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_058",
+      "severity": "watch",
+      "country_code": "OMN",
+      "status": "ongoing",
+      "trigger": "Tendenza stabilità politica: in calo",
+      "headline": "Oman: Stabilità politica in calo",
+      "details": "Oman stabilità politica in calo dalla prossimità al conflitto del Golfo. Perturbazione economica dalla chiusura di Hormuz che crea pressione interna. Preoccupazioni per la sicurezza elevate.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_stability_trend"
+      ],
+      "run_id": "2026-W11",
+      "title": "Oman: Stabilità politica in calo",
+      "description": "Oman stabilità politica in calo dalla prossimità al conflitto del Golfo. Perturbazione economica dalla chiusura di Hormuz che crea pressione interna. Preoccupazioni per la sicurezza elevate.",
+      "countries": [
+        "OMN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_059",
+      "severity": "critical",
+      "country_code": "PAK",
+      "status": "ongoing",
+      "trigger": "Active high-intensity conflict",
+      "headline": "Pakistan: Conflitto militare attivo — advocates Iran diplomacy at UNSC",
+      "details": "Pakistan war with Afghanistan continues. Airstrikes on Kabul and Kandahar. Pakistan advocating diplomacy on Iran at UN Security Council and intensifying Middle East mediation efforts. CFR warns India-Pakistan confrontation risk in 2026. Nuclear-armed nation in active conflict. CCC+/Caa1 credit rating.",
+      "first_triggered": "2026-03-02T12:30:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.overall_investment_risk_score",
+        "political.political_stability_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Pakistan: Conflitto militare attivo — advocates Iran diplomacy at UNSC",
+      "description": "Pakistan war with Afghanistan continues. Airstrikes on Kabul and Kandahar. Pakistan advocating diplomacy on Iran at UN Security Council and intensifying Middle East mediation efforts. CFR warns India-Pakistan confrontation risk in 2026. Nuclear-armed nation in active conflict. CCC+/Caa1 credit rating.",
+      "countries": [
+        "PAK"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_060",
+      "severity": "warning",
+      "country_code": "PAK",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 900)",
+      "headline": "Pakistan: Premio per il rischio politico a 900 bps",
+      "details": "Il premio per il rischio politico del Pakistan di 900 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.559.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Pakistan: Premio per il rischio politico a 900 bps",
+      "description": "Il premio per il rischio politico del Pakistan di 900 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.559.",
+      "countries": [
+        "PAK"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_061",
+      "severity": "watch",
+      "country_code": "PAK",
+      "status": "ongoing",
+      "trigger": "GDP growth declining with elevated risk (risk: 0.395)",
+      "headline": "Pakistan: PIL in calo con rischio d'investimento at 0.395",
+      "details": "Pakistan shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.395. Pakistan fortemente dipendente dal petrolio del Golfo che transita per Hormuz. Oil at $116/bbl aggiunge 1-2 punti percentuali alla bolletta delle importazioni in % del PIL. I settori manifatturiero e dei trasporti sono i più colpiti. Il rilascio SPR del G7 fornisce un parziale tempor",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Pakistan: PIL in calo con rischio d'investimento at 0.395",
+      "description": "Pakistan shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.395. Pakistan fortemente dipendente dal petrolio del Golfo che transita per Hormuz. Oil at $116/bbl aggiunge 1-2 punti percentuali alla bolletta delle importazioni in % del PIL. I settori manifatturiero e dei trasporti sono i più colpiti. Il rilascio SPR del G7 fornisce un parziale tempor",
+      "countries": [
+        "PAK"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_062",
+      "severity": "watch",
+      "country_code": "PHL",
+      "status": "ongoing",
+      "trigger": "GDP growth declining with elevated risk (risk: 0.279)",
+      "headline": "Filippine: PIL in calo con rischio d'investimento at 0.279",
+      "details": "Filippine shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.279. Filippine fortemente dipendente dal petrolio del Golfo che transita per Hormuz. Oil at $116/bbl aggiunge 1-2 punti percentuali alla bolletta delle importazioni in % del PIL. I settori manifatturiero e dei trasporti sono i più colpiti. G7 SPR release provides partial tem",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Filippine: PIL in calo con rischio d'investimento at 0.279",
+      "description": "Filippine shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.279. Filippine fortemente dipendente dal petrolio del Golfo che transita per Hormuz. Oil at $116/bbl aggiunge 1-2 punti percentuali alla bolletta delle importazioni in % del PIL. I settori manifatturiero e dei trasporti sono i più colpiti. G7 SPR release provides partial tem",
+      "countries": [
+        "PHL"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_063",
+      "severity": "warning",
+      "country_code": "QAT",
+      "status": "ongoing",
+      "trigger": "GDP growth trend: forte_calo",
+      "headline": "Qatar: Crescita del PIL in forte calo",
+      "details": "L'andamento della crescita del PIL del Qatar è 'forte_calo'. Crescita attuale: 2.4%. Qatar PIL sotto forte pressione dalla perturbazione di Hormuz. LNG exports completely blocked. I prezzi elevati dell'energia non possono essere monetizzati mentre i canali di esportazione sono bloccati.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Qatar: Crescita del PIL in forte calo",
+      "description": "L'andamento della crescita del PIL del Qatar è 'forte_calo'. Crescita attuale: 2.4%. Qatar PIL sotto forte pressione dalla perturbazione di Hormuz. LNG exports completely blocked. I prezzi elevati dell'energia non possono essere monetizzati mentre i canali di esportazione sono bloccati.",
+      "countries": [
+        "QAT"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_064",
+      "severity": "critical",
+      "country_code": "QAT",
+      "status": "ongoing",
+      "trigger": "Supply chain esposizione ai punti di strozzatura > 0.7 (actual: 0.916)",
+      "headline": "Qatar: Esposizione estrema ai punti di strozzatura a 0.916 durante la crisi di Hormuz",
+      "details": "Qatar has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.916, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: forte_calo. Rischio d'investimento: 0.098.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure"
+      ],
+      "run_id": "2026-W11",
+      "title": "Qatar: Esposizione estrema ai punti di strozzatura a 0.916 durante la crisi di Hormuz",
+      "description": "Qatar has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.916, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: forte_calo. Rischio d'investimento: 0.098.",
+      "countries": [
+        "QAT"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_065",
+      "severity": "watch",
+      "country_code": "QAT",
+      "status": "ongoing",
+      "trigger": "Tendenza stabilità politica: in calo",
+      "headline": "Qatar: Stabilità politica in calo",
+      "details": "Qatar stabilità politica in calo dalla prossimità al conflitto del Golfo. Perturbazione economica dalla chiusura di Hormuz che crea pressione interna. Preoccupazioni per la sicurezza elevate.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_stability_trend"
+      ],
+      "run_id": "2026-W11",
+      "title": "Qatar: Stabilità politica in calo",
+      "description": "Qatar stabilità politica in calo dalla prossimità al conflitto del Golfo. Perturbazione economica dalla chiusura di Hormuz che crea pressione interna. Preoccupazioni per la sicurezza elevate.",
+      "countries": [
+        "QAT"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_066",
+      "severity": "watch",
+      "country_code": "ROU",
+      "status": "deescalated",
+      "trigger": "GDP growth declining with elevated risk (risk: 0.283)",
+      "headline": "Romania: PIL in calo con rischio d'investimento at 0.283",
+      "details": "Romania shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.283. Romania affronta venti contrari al PIL dallo shock petrolifero ($116/bbl Brent) e dal crollo dei mercati europei (cali di ~6% su tutti gli indici). Costi energetici in forte aumento.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Romania: PIL in calo con rischio d'investimento at 0.283",
+      "description": "Romania shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.283. Romania affronta venti contrari al PIL dallo shock petrolifero ($116/bbl Brent) e dal crollo dei mercati europei (cali di ~6% su tutti gli indici). Costi energetici in forte aumento.",
+      "countries": [
+        "ROU"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_067",
+      "severity": "warning",
+      "country_code": "RUS",
+      "status": "ongoing",
+      "trigger": "Investment risk score elevated (risk: 0.661)",
+      "headline": "Russia: Rischio d'investimento elevato (risk score: 0.661)",
+      "details": "La Russia ha un punteggio di rischio d'investimento di 0.661 indica un rischio elevato. PRP: 1900 bps. Inflazione: 8.4%. Andamento del PIL: growth.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Russia: Rischio d'investimento elevato (risk score: 0.661)",
+      "description": "La Russia ha un punteggio di rischio d'investimento di 0.661 indica un rischio elevato. PRP: 1900 bps. Inflazione: 8.4%. Andamento del PIL: growth.",
+      "countries": [
+        "RUS"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_068",
+      "severity": "critical",
+      "country_code": "RUS",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 1900)",
+      "headline": "Russia: Premio per il rischio politico a 1900 bps",
+      "details": "Il premio per il rischio politico della Russia di 1900 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.661.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Russia: Premio per il rischio politico a 1900 bps",
+      "description": "Il premio per il rischio politico della Russia di 1900 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.661.",
+      "countries": [
+        "RUS"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_069",
+      "severity": "warning",
+      "country_code": "SAU",
+      "status": "ongoing",
+      "trigger": "GDP growth trend: forte_calo",
+      "headline": "Arabia Saudita: Crescita del PIL in forte calo",
+      "details": "Arabia Saudita's andamento della crescita del PIL è 'forte_calo'. Crescita attuale: 2.0%. La posa di mine nello Stretto di Hormuz da parte dell'IRGC blocca la principale rotta di esportazione petrolifera. Grave perturbazione delle entrate petrolifere nonostante i prezzi elevati. Arabia Saudita ha alternative limitate via oleodotto. L'aumento della spesa per la difesa aggiunge pressione fiscale.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Arabia Saudita: Crescita del PIL in forte calo",
+      "description": "Arabia Saudita's andamento della crescita del PIL è 'forte_calo'. Crescita attuale: 2.0%. La posa di mine nello Stretto di Hormuz da parte dell'IRGC blocca la principale rotta di esportazione petrolifera. Grave perturbazione delle entrate petrolifere nonostante i prezzi elevati. Arabia Saudita ha alternative limitate via oleodotto. L'aumento della spesa per la difesa aggiunge pressione fiscale.",
+      "countries": [
+        "SAU"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_070",
+      "severity": "warning",
+      "country_code": "SAU",
+      "status": "ongoing",
+      "trigger": "Supply chain esposizione ai punti di strozzatura > 0.7 (actual: 0.809)",
+      "headline": "Arabia Saudita: Esposizione estrema ai punti di strozzatura a 0.809 durante la crisi di Hormuz",
+      "details": "Arabia Saudita has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.809, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: forte_calo. Rischio d'investimento: 0.186.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure"
+      ],
+      "run_id": "2026-W11",
+      "title": "Arabia Saudita: Esposizione estrema ai punti di strozzatura a 0.809 durante la crisi di Hormuz",
+      "description": "Arabia Saudita has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.809, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: forte_calo. Rischio d'investimento: 0.186.",
+      "countries": [
+        "SAU"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_071",
+      "severity": "watch",
+      "country_code": "SAU",
+      "status": "ongoing",
+      "trigger": "Tendenza stabilità politica: in calo",
+      "headline": "Arabia Saudita: Stabilità politica in calo",
+      "details": "Arabia Saudita stabilità politica in calo dalla prossimità al conflitto del Golfo. Perturbazione economica dalla chiusura di Hormuz che crea pressione interna. Preoccupazioni per la sicurezza elevate.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_stability_trend"
+      ],
+      "run_id": "2026-W11",
+      "title": "Arabia Saudita: Stabilità politica in calo",
+      "description": "Arabia Saudita stabilità politica in calo dalla prossimità al conflitto del Golfo. Perturbazione economica dalla chiusura di Hormuz che crea pressione interna. Preoccupazioni per la sicurezza elevate.",
+      "countries": [
+        "SAU"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_072",
+      "severity": "warning",
+      "country_code": "SEN",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 850)",
+      "headline": "Senegal: Premio per il rischio politico a 850 bps",
+      "details": "Il premio per il rischio politico del Senegal di 850 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.395.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Senegal: Premio per il rischio politico a 850 bps",
+      "description": "Il premio per il rischio politico del Senegal di 850 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.395.",
+      "countries": [
+        "SEN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_073",
+      "severity": "watch",
+      "country_code": "SEN",
+      "status": "deescalated",
+      "trigger": "Investment risk approaching warning threshold (actual: 0.422)",
+      "headline": "Senegal: Rischio d'investimento a 0.422 — in avvicinamento alla soglia elevata",
+      "details": "Il punteggio di rischio d'investimento del Senegal di 0.422 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 889 bps.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Senegal: Rischio d'investimento a 0.422 — in avvicinamento alla soglia elevata",
+      "description": "Il punteggio di rischio d'investimento del Senegal di 0.422 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 889 bps.",
+      "countries": [
+        "SEN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_074",
+      "severity": "critical",
+      "country_code": "SGP",
+      "status": "ongoing",
+      "trigger": "Supply chain esposizione ai punti di strozzatura > 0.7 (actual: 0.940)",
+      "headline": "Singapore: Esposizione estrema ai punti di strozzatura a 0.940 durante la crisi di Hormuz",
+      "details": "Singapore has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.940, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: decrease. Rischio d'investimento: 0.141.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure"
+      ],
+      "run_id": "2026-W11",
+      "title": "Singapore: Esposizione estrema ai punti di strozzatura a 0.940 durante la crisi di Hormuz",
+      "description": "Singapore has a esposizione ai punti di strozzatura della catena di approvvigionamento di 0.940, critically elevated during the Stretto di Hormuz crisis. Andamento del PIL: decrease. Rischio d'investimento: 0.141.",
+      "countries": [
+        "SGP"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_075",
+      "severity": "warning",
+      "country_code": "TUR",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 530)",
+      "headline": "Turchia: Premio per il rischio politico a 530 bps",
+      "details": "Turchia's premio per il rischio politico di 530 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.487.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Turchia: Premio per il rischio politico a 530 bps",
+      "description": "Turchia's premio per il rischio politico di 530 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.487.",
+      "countries": [
+        "TUR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_076",
+      "severity": "warning",
+      "country_code": "TUR",
+      "status": "ongoing",
+      "trigger": "Inflation > 50% (actual: 58.5%)",
+      "headline": "Turchia: Territorio di iperinflazione al 58.5%",
+      "details": "Turchia's inflazione CPI del 58.5% supera la soglia di iperinflazione. Tendenza: in crescita. ",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Turchia: Territorio di iperinflazione al 58.5%",
+      "description": "Turchia's inflazione CPI del 58.5% supera la soglia di iperinflazione. Tendenza: in crescita. ",
+      "countries": [
+        "TUR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_077",
+      "severity": "watch",
+      "country_code": "TUR",
+      "status": "ongoing",
+      "trigger": "Investment risk approaching warning threshold (actual: 0.421)",
+      "headline": "Turchia: Rischio d'investimento a 0.421 — in avvicinamento alla soglia elevata",
+      "details": "Turchia's punteggio di rischio d'investimento di 0.421 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 590 bps.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Turchia: Rischio d'investimento a 0.421 — in avvicinamento alla soglia elevata",
+      "description": "Turchia's punteggio di rischio d'investimento di 0.421 si avvicina alla soglia di allerta di 0.5. Premio per il rischio politico: 590 bps.",
+      "countries": [
+        "TUR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_078",
+      "severity": "watch",
+      "country_code": "TUR",
+      "status": "ongoing",
+      "trigger": "GDP growth declining with elevated risk (risk: 0.421)",
+      "headline": "Turchia: PIL in calo con rischio d'investimento at 0.421",
+      "details": "Turchia shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.421. Turchia affronta venti contrari al PIL dallo shock petrolifero ($116/bbl Brent) e dal crollo dei mercati europei (cali di ~6% su tutti gli indici). Costi energetici in forte aumento. Turchia navigating between NATO membership and regional re",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Turchia: PIL in calo con rischio d'investimento at 0.421",
+      "description": "Turchia shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.421. Turchia affronta venti contrari al PIL dallo shock petrolifero ($116/bbl Brent) e dal crollo dei mercati europei (cali di ~6% su tutti gli indici). Costi energetici in forte aumento. Turchia navigating between NATO membership and regional re",
+      "countries": [
+        "TUR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_079",
+      "severity": "watch",
+      "country_code": "TUR",
+      "status": "deescalated",
+      "trigger": "Tendenza stabilità politica: in calo",
+      "headline": "Turchia: Stabilità politica in calo",
+      "details": "Turchia affronta un complesso equilibrio tra l'appartenenza alla NATO e le relazioni regionali. Coordinamento degli Stati Turchi messo alla prova. La guerra per procura curda in Iran crea preoccupazioni interne. Gli obblighi NATO sono in conflitto con gli interessi regionali.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_stability_trend"
+      ],
+      "run_id": "2026-W11",
+      "title": "Turchia: Stabilità politica in calo",
+      "description": "Turchia affronta un complesso equilibrio tra l'appartenenza alla NATO e le relazioni regionali. Coordinamento degli Stati Turchi messo alla prova. La guerra per procura curda in Iran crea preoccupazioni interne. Gli obblighi NATO sono in conflitto con gli interessi regionali.",
+      "countries": [
+        "TUR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_080",
+      "severity": "warning",
+      "country_code": "TZA",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 570)",
+      "headline": "Tanzania: Premio per il rischio politico a 570 bps",
+      "details": "Il premio per il rischio politico della Tanzania di 570 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.392.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Tanzania: Premio per il rischio politico a 570 bps",
+      "description": "Il premio per il rischio politico della Tanzania di 570 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.392.",
+      "countries": [
+        "TZA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_081",
+      "severity": "critical",
+      "country_code": "UKR",
+      "status": "ongoing",
+      "trigger": "Active high-intensity conflict",
+      "headline": "Ucraina: Conflitto militare attivo — Russia loses 57 sq mi in 4 settimane",
+      "details": "Russia-Ucraina war Year 5. Russia launched massive 430-drone and 68-missile attack on energy infrastructure. However, Russian forces lost 57 square miles in four-week reversal. EU renewed sanctions on 2,700+ entities for 6 months. Ucraina peace push stalled as Iran conflict diverts attention. CC/Ca credit rating.",
+      "first_triggered": "2026-03-02T12:30:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "military.active_conflicts",
+        "derived.overall_investment_risk_score",
+        "political.political_stability_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Ucraina: Conflitto militare attivo — Russia loses 57 sq mi in 4 settimane",
+      "description": "Russia-Ucraina war Year 5. Russia launched massive 430-drone and 68-missile attack on energy infrastructure. However, Russian forces lost 57 square miles in four-week reversal. EU renewed sanctions on 2,700+ entities for 6 months. Ucraina peace push stalled as Iran conflict diverts attention. CC/Ca credit rating.",
+      "countries": [
+        "UKR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_082",
+      "severity": "warning",
+      "country_code": "UKR",
+      "status": "ongoing",
+      "trigger": "Investment risk score elevated (risk: 0.523)",
+      "headline": "Ucraina: Rischio d'investimento elevato (risk score: 0.523)",
+      "details": "Ucraina's punteggio di rischio d'investimento di 0.523 indica un rischio elevato. PRP: 1000 bps. Inflazione: 6.5%. Andamento del PIL: stable.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Ucraina: Rischio d'investimento elevato (risk score: 0.523)",
+      "description": "Ucraina's punteggio di rischio d'investimento di 0.523 indica un rischio elevato. PRP: 1000 bps. Inflazione: 6.5%. Andamento del PIL: stable.",
+      "countries": [
+        "UKR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_083",
+      "severity": "warning",
+      "country_code": "UKR",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 1000)",
+      "headline": "Ucraina: Premio per il rischio politico a 1000 bps",
+      "details": "Ucraina's premio per il rischio politico di 1000 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.523.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Ucraina: Premio per il rischio politico a 1000 bps",
+      "description": "Ucraina's premio per il rischio politico di 1000 punti base indica un significativo rischio sovrano. Rischio d'investimento: 0.523.",
+      "countries": [
+        "UKR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_084",
+      "severity": "watch",
+      "country_code": "USA",
+      "status": "ongoing",
+      "trigger": "Tendenza stabilità politica: in calo",
+      "headline": "Stati Uniti: Stabilità politica in calo",
+      "details": "US stabilità politica in calo. La guerra con l'Iran non ha un chiaro punto finale. DHS Secretary licenziato. $175B crisi SCOTUS del rimborso tariffario. 5 segnali di allarme recessione identificati. L'umore per le elezioni di metà mandato favorisce i Democratici. Rand Paul avverte di elezioni di metà mandato 'disastrose'.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_stability_trend"
+      ],
+      "run_id": "2026-W11",
+      "title": "Stati Uniti: Stabilità politica in calo",
+      "description": "US stabilità politica in calo. La guerra con l'Iran non ha un chiaro punto finale. DHS Secretary licenziato. $175B crisi SCOTUS del rimborso tariffario. 5 segnali di allarme recessione identificati. L'umore per le elezioni di metà mandato favorisce i Democratici. Rand Paul avverte di elezioni di metà mandato 'disastrose'.",
+      "countries": [
+        "USA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_085",
+      "severity": "warning",
+      "country_code": "VNM",
+      "status": "deescalated",
+      "trigger": "political_risk_premium_bps > 500 (actual: 556)",
+      "headline": "Vietnam: Premio per il rischio politico a 556 bps",
+      "details": "Il premio per il rischio politico del Vietnam di 556 punti base indica un significativo rischio sovrano. Punteggio di rischio d'investimento: 0.209.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Vietnam: Premio per il rischio politico a 556 bps",
+      "description": "Il premio per il rischio politico del Vietnam di 556 punti base indica un significativo rischio sovrano. Punteggio di rischio d'investimento: 0.209.",
+      "countries": [
+        "VNM"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_086",
+      "severity": "watch",
+      "country_code": "ZAF",
+      "status": "ongoing",
+      "trigger": "GDP growth declining with elevated risk (risk: 0.280)",
+      "headline": "Sudafrica: PIL in calo con rischio d'investimento at 0.280",
+      "details": "Sudafrica shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.280. Sudafrica facing unprecedented marine gas oil prices from Gulf disruption. Mining sector benefits from gold windfall but energy costs erode broader economy. Load-shedding risk increases with fuel c",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Sudafrica: PIL in calo con rischio d'investimento at 0.280",
+      "description": "Sudafrica shows andamento della crescita del PIL in 'decrease' combined with an punteggio di rischio d'investimento di 0.280. Sudafrica facing unprecedented marine gas oil prices from Gulf disruption. Mining sector benefits from gold windfall but energy costs erode broader economy. Load-shedding risk increases with fuel c",
+      "countries": [
+        "ZAF"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_087",
+      "severity": "critical",
+      "country_code": "KWT",
+      "status": "ongoing",
+      "trigger": "Hormuz crisis — direct impact (0.938 esposizione ai punti di strozzatura)",
+      "headline": "Kuwait: Impatto diretto della crisi di Hormuz",
+      "details": "Kuwait faces paralisi economica quasi totale from Hormuz closure with 93.8% esposizione ai punti di strozzatura. No pipeline alternative. Base aerea di Ali Al Salem colpita dall'IRGC. Andamento del PIL: forte_calo. Iran threatens to hit Gulf neighbors' oil facilities if its own infrastructure attacked.",
+      "first_triggered": "2026-03-02T12:30:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure",
+        "macroeconomic.gdp_real_growth_pct",
+        "macroeconomic.current_account_pct_gdp"
+      ],
+      "run_id": "2026-W11",
+      "title": "Kuwait: Impatto diretto della crisi di Hormuz",
+      "description": "Kuwait faces paralisi economica quasi totale from Hormuz closure with 93.8% esposizione ai punti di strozzatura. No pipeline alternative. Base aerea di Ali Al Salem colpita dall'IRGC. Andamento del PIL: forte_calo. Iran threatens to hit Gulf neighbors' oil facilities if its own infrastructure attacked.",
+      "countries": [
+        "KWT"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_088",
+      "severity": "critical",
+      "country_code": "QAT",
+      "status": "ongoing",
+      "trigger": "Hormuz crisis — direct impact (0.916 esposizione ai punti di strozzatura)",
+      "headline": "Qatar: Impatto diretto della crisi di Hormuz",
+      "details": "Qatar — world's largest LNG exporter — completamente fuori servizio due to Hormuz mines. 91.6% esposizione ai punti di strozzatura. Base aerea di Al Udeid colpita. Qatar F-15QA caccia hanno intercettato bombardieri iraniani 2 min dal colpire la base USA. L'espansione del LNG di North Field a rischio. Andamento del PIL: forte_calo.",
+      "first_triggered": "2026-03-02T12:30:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure",
+        "macroeconomic.gdp_real_growth_pct",
+        "macroeconomic.current_account_pct_gdp"
+      ],
+      "run_id": "2026-W11",
+      "title": "Qatar: Impatto diretto della crisi di Hormuz",
+      "description": "Qatar — world's largest LNG exporter — completamente fuori servizio due to Hormuz mines. 91.6% esposizione ai punti di strozzatura. Base aerea di Al Udeid colpita. Qatar F-15QA caccia hanno intercettato bombardieri iraniani 2 min dal colpire la base USA. L'espansione del LNG di North Field a rischio. Andamento del PIL: forte_calo.",
+      "countries": [
+        "QAT"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_089",
+      "severity": "critical",
+      "country_code": "ARE",
+      "status": "ongoing",
+      "trigger": "Hormuz crisis — direct impact (1.000 esposizione ai punti di strozzatura)",
+      "headline": "Emirati Arabi Uniti: Impatto diretto della crisi di Hormuz",
+      "details": "UAE sotto attacchi missilistici iraniani diretti. 100% esposizione ai punti di strozzatura. Jebel Ali container port — hub di trasbordo globale — isolato dal commercio internazionale. Aviazione perturbata con 7,700+ delays. Iran minaccia di colpire le infrastrutture petrolifere del Golfo. Andamento del PIL: forte_calo.",
+      "first_triggered": "2026-03-02T12:30:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure",
+        "macroeconomic.gdp_real_growth_pct",
+        "macroeconomic.current_account_pct_gdp"
+      ],
+      "run_id": "2026-W11",
+      "title": "Emirati Arabi Uniti: Impatto diretto della crisi di Hormuz",
+      "description": "UAE sotto attacchi missilistici iraniani diretti. 100% esposizione ai punti di strozzatura. Jebel Ali container port — hub di trasbordo globale — isolato dal commercio internazionale. Aviazione perturbata con 7,700+ delays. Iran minaccia di colpire le infrastrutture petrolifere del Golfo. Andamento del PIL: forte_calo.",
+      "countries": [
+        "ARE"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_090",
+      "severity": "warning",
+      "country_code": "SAU",
+      "status": "ongoing",
+      "trigger": "Hormuz crisis — direct impact (0.809 esposizione ai punti di strozzatura)",
+      "headline": "Arabia Saudita: Impatto diretto della crisi di Hormuz",
+      "details": "Arabia Saudita esposta alla chiusura di Hormuz con 80.9% esposizione ai punti di strozzatura. Attacchi dell'IRGC alle basi USA regionali. Stabilità politica in calo. Andamento del PIL: forte_calo despite oil price surge — non può esportare attraverso Hormuz.",
+      "first_triggered": "2026-03-02T12:30:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure",
+        "macroeconomic.gdp_real_growth_pct",
+        "macroeconomic.current_account_pct_gdp"
+      ],
+      "run_id": "2026-W11",
+      "title": "Arabia Saudita: Impatto diretto della crisi di Hormuz",
+      "description": "Arabia Saudita esposta alla chiusura di Hormuz con 80.9% esposizione ai punti di strozzatura. Attacchi dell'IRGC alle basi USA regionali. Stabilità politica in calo. Andamento del PIL: forte_calo despite oil price surge — non può esportare attraverso Hormuz.",
+      "countries": [
+        "SAU"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_091",
+      "severity": "warning",
+      "country_code": "OMN",
+      "status": "ongoing",
+      "trigger": "Hormuz crisis — direct impact (0.850 esposizione ai punti di strozzatura)",
+      "headline": "Oman: Impatto diretto della crisi di Hormuz",
+      "details": "Oman criticamente esposta con 85% esposizione ai punti di strozzatura. Prossimità diretta alla posa di mine a Hormuz. Esportazioni petrolifere gravemente perturbate. Andamento del PIL: decrease.",
+      "first_triggered": "2026-03-02T12:30:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure",
+        "macroeconomic.gdp_real_growth_pct",
+        "macroeconomic.current_account_pct_gdp"
+      ],
+      "run_id": "2026-W11",
+      "title": "Oman: Impatto diretto della crisi di Hormuz",
+      "description": "Oman criticamente esposta con 85% esposizione ai punti di strozzatura. Prossimità diretta alla posa di mine a Hormuz. Esportazioni petrolifere gravemente perturbate. Andamento del PIL: decrease.",
+      "countries": [
+        "OMN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_092",
+      "severity": "warning",
+      "country_code": "IRQ",
+      "status": "ongoing",
+      "trigger": "Hormuz crisis — direct impact (0.791 esposizione ai punti di strozzatura)",
+      "headline": "Iraq: Impatto diretto della crisi di Hormuz",
+      "details": "Iraq exposed with 79.1% esposizione ai punti di strozzatura. La perturbazione delle esportazioni petrolifere minaccia la posizione fiscale. L'invasione curda dell'Iran dal Kurdistan iracheno complica la sovranità. Andamento del PIL: forte_calo.",
+      "first_triggered": "2026-03-02T12:30:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure",
+        "macroeconomic.gdp_real_growth_pct",
+        "macroeconomic.current_account_pct_gdp"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iraq: Impatto diretto della crisi di Hormuz",
+      "description": "Iraq exposed with 79.1% esposizione ai punti di strozzatura. La perturbazione delle esportazioni petrolifere minaccia la posizione fiscale. L'invasione curda dell'Iran dal Kurdistan iracheno complica la sovranità. Andamento del PIL: forte_calo.",
+      "countries": [
+        "IRQ"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_093",
+      "severity": "warning",
+      "country_code": "RUS",
+      "status": "ongoing",
+      "trigger": "Sanctions + elevated risk (risk: 0.6, PRP: 3148 bps)",
+      "headline": "Russia: Sanzioni prorogate + fornitura di droni Shahed all'Iran",
+      "details": "Russia sotto sanzioni occidentali complete — EU ha prorogato for 6 months to Sep 2026, 20° pacchetto di sanzioni che copre energia/servizi finanziari. Ucraina/Zelensky afferma che la Russia sta fornendo droni Shahed e consulenza tattica all'Iran per attacchi alle basi USA — confermato dall'intelligence occidentale. Trump envoy Witkoff says Kremlin denied it. Rischio d'investimento: 0.661. PRP: 1900 bps.",
+      "first_triggered": "2026-03-02T12:30:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score",
+        "political.sanctions_status",
+        "military.active_conflicts"
+      ],
+      "run_id": "2026-W11",
+      "title": "Russia: Sanzioni prorogate + fornitura di droni Shahed all'Iran",
+      "description": "Russia sotto sanzioni occidentali complete — EU ha prorogato for 6 months to Sep 2026, 20° pacchetto di sanzioni che copre energia/servizi finanziari. Ucraina/Zelensky afferma che la Russia sta fornendo droni Shahed e consulenza tattica all'Iran per attacchi alle basi USA — confermato dall'intelligence occidentale. Trump envoy Witkoff says Kremlin denied it. Rischio d'investimento: 0.661. PRP: 1900 bps.",
+      "countries": [
+        "RUS"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_094",
+      "severity": "watch",
+      "country_code": "DEU",
+      "status": "ongoing",
+      "trigger": "European energy crisis / Hormuz impact (Andamento del PIL: decrease)",
+      "headline": "Germania: Crisi energetica europea dalla chiusura di Hormuz",
+      "details": "Germania affronta venti contrari economici dall'impennata del prezzo del petrolio a $116.50/bbl guidata dalla chiusura di Hormuz. Andamento del PIL: decrease. Rischio d'investimento: 0.103. VW taglia 50.000 posti — il più grande licenziamento nell'auto tedesca di sempre. L'UE ammette 'errore nucleare' sulla politica energetica. I mercati europei sono crollati di ~6%.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Germania: Crisi energetica europea dalla chiusura di Hormuz",
+      "description": "Germania affronta venti contrari economici dall'impennata del prezzo del petrolio a $116.50/bbl guidata dalla chiusura di Hormuz. Andamento del PIL: decrease. Rischio d'investimento: 0.103. VW taglia 50.000 posti — il più grande licenziamento nell'auto tedesca di sempre. L'UE ammette 'errore nucleare' sulla politica energetica. I mercati europei sono crollati di ~6%.",
+      "countries": [
+        "DEU"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_095",
+      "severity": "watch",
+      "country_code": "FRA",
+      "status": "ongoing",
+      "trigger": "European energy crisis / Hormuz impact (Andamento del PIL: decrease)",
+      "headline": "Francia: Crisi energetica europea dalla chiusura di Hormuz",
+      "details": "Francia affronta venti contrari economici dall'impennata del prezzo del petrolio a $116.50/bbl guidata dalla chiusura di Hormuz. Andamento del PIL: decrease. Rischio d'investimento: 0.181. Macron giura di proteggere Libano. I leader UE divisi sulla guerra con l'Iran. Il peso della difesa europea cresce.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Francia: Crisi energetica europea dalla chiusura di Hormuz",
+      "description": "Francia affronta venti contrari economici dall'impennata del prezzo del petrolio a $116.50/bbl guidata dalla chiusura di Hormuz. Andamento del PIL: decrease. Rischio d'investimento: 0.181. Macron giura di proteggere Libano. I leader UE divisi sulla guerra con l'Iran. Il peso della difesa europea cresce.",
+      "countries": [
+        "FRA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_096",
+      "severity": "watch",
+      "country_code": "ITA",
+      "status": "ongoing",
+      "trigger": "European energy crisis / Hormuz impact (Andamento del PIL: decrease)",
+      "headline": "Italia: Crisi energetica europea dalla chiusura di Hormuz",
+      "details": "Italia affronta venti contrari economici dall'impennata del prezzo del petrolio a $116.50/bbl guidata dalla chiusura di Hormuz. Andamento del PIL: decrease. Rischio d'investimento: 0.175. L'UE protesta per il ritorno della Russia alla Biennale di Venezia. Vulnerabilità energetica europea acuta. Andamento del PIL: decrease.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Italia: Crisi energetica europea dalla chiusura di Hormuz",
+      "description": "Italia affronta venti contrari economici dall'impennata del prezzo del petrolio a $116.50/bbl guidata dalla chiusura di Hormuz. Andamento del PIL: decrease. Rischio d'investimento: 0.175. L'UE protesta per il ritorno della Russia alla Biennale di Venezia. Vulnerabilità energetica europea acuta. Andamento del PIL: decrease.",
+      "countries": [
+        "ITA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_097",
+      "severity": "watch",
+      "country_code": "ARG",
+      "status": "ongoing",
+      "trigger": "Recession + reform volatility (inflation: 219.9%)",
+      "headline": "Argentina: Recessione con eredità di iperinflazione — le riforme di Milei alla prova",
+      "details": "Argentina in recessione (Andamento del PIL: decrease) with CPI still at 219.9% nonostante i progressi nella disinflazione. Milei corteggiando Wall Street, citando le esportazioni nette di energia da Vaca Muerta. Rischio d'investimento: 0.449. Argentina emergente come beneficiario della crisi energetica ma il percorso di riforme strutturali resta volatile.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "macroeconomic.inflation_cpi_pct",
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Argentina: Recessione con eredità di iperinflazione — le riforme di Milei alla prova",
+      "description": "Argentina in recessione (Andamento del PIL: decrease) with CPI still at 219.9% nonostante i progressi nella disinflazione. Milei corteggiando Wall Street, citando le esportazioni nette di energia da Vaca Muerta. Rischio d'investimento: 0.449. Argentina emergente come beneficiario della crisi energetica ma il percorso di riforme strutturali resta volatile.",
+      "countries": [
+        "ARG"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_098",
+      "severity": "watch",
+      "country_code": "TUR",
+      "status": "ongoing",
+      "trigger": "High inflation + declining GDP (inflation: 58.5%)",
+      "headline": "Turchia: Inflazione al 58,5% con PIL in calo",
+      "details": "Turchia's L'inflazione CPI rimane al 58.5% with andamento della crescita del PIL in calo. Rischio d'investimento: 0.421. Premio per il rischio politico: 590 bps. La riunione dei ministri degli esteri OTS mette alla prova il coordinamento turco durante la crisi iraniana. Turchia naviga tra NATO e relazioni regionali.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.inflation_cpi_pct",
+        "macroeconomic.gdp_real_growth_pct",
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Turchia: Inflazione al 58,5% con PIL in calo",
+      "description": "Turchia's L'inflazione CPI rimane al 58.5% with andamento della crescita del PIL in calo. Rischio d'investimento: 0.421. Premio per il rischio politico: 590 bps. La riunione dei ministri degli esteri OTS mette alla prova il coordinamento turco durante la crisi iraniana. Turchia naviga tra NATO e relazioni regionali.",
+      "countries": [
+        "TUR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_099",
+      "severity": "watch",
+      "country_code": "USA",
+      "status": "ongoing",
+      "trigger": "War escalation + tariff crisis + recession warnings",
+      "headline": "USA: Guerra con l'Iran Giorno 16 + dazi Section 122 + perdita di posti di lavoro",
+      "details": "Gli USA affrontano rischi convergenti: Iran war Day 16 — Gli USA hanno bombardato l'Isola di Kharg, Il Segretario all'Energia dice che la guerra dovrebbe finire 'in settimane'; La SCOTUS ha annullato i dazi IEEPA, Sovrattassa Section 122 al 10% in aumento al 15%; 24 stati hanno intentato causa per bloccare la Section 122; L'USTR ha lanciato indagini Section 301 su 16 paesi; Gli USA hanno perso 92.000 posti a febbraio — disoccupazione al 4,4%; Il greggio WTI ha registrato il più grande guadagno settimanale dal 1983. Tendenza stabilità politica: in calo. Risk: 0.238.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct",
+        "derived.political_stability_trend",
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "USA: Guerra con l'Iran Giorno 16 + dazi Section 122 + perdita di posti di lavoro",
+      "description": "Gli USA affrontano rischi convergenti: Iran war Day 16 — Gli USA hanno bombardato l'Isola di Kharg, Il Segretario all'Energia dice che la guerra dovrebbe finire 'in settimane'; La SCOTUS ha annullato i dazi IEEPA, Sovrattassa Section 122 al 10% in aumento al 15%; 24 stati hanno intentato causa per bloccare la Section 122; L'USTR ha lanciato indagini Section 301 su 16 paesi; Gli USA hanno perso 92.000 posti a febbraio — disoccupazione al 4,4%; Il greggio WTI ha registrato il più grande guadagno settimanale dal 1983. Tendenza stabilità politica: in calo. Risk: 0.238.",
+      "countries": [
+        "USA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_100",
+      "severity": "watch",
+      "country_code": "IND",
+      "status": "ongoing",
+      "trigger": "Gulf economic exposure — remittances, energy, trade (chokepoint: 0.549)",
+      "headline": "India: Negozia il passaggio attraverso Hormuz — l'esposizione al Golfo persiste",
+      "details": "India ha negoziato il passaggio diretto attraverso Hormuz for two tankers via Modi-Pezeshkian talks — primo transito commerciale riuscito dal blocco. Dimostra un posizionamento diplomatico neutrale. However, l'impatto a cascata del Golfo continua: $346cr carico di esportazione bloccato, $100B+ GCC rimesse a rischio, costi di importazione del petrolio in impennata at $100+/bbl. Esposizione ai punti di strozzatura: 0.549. Andamento del PIL: decrease. Adottando 'indifferenza strategica' verso Pakistan.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.current_account_pct_gdp",
+        "macroeconomic.inflation_cpi_pct",
+        "derived.supply_chain_chokepoint_exposure"
+      ],
+      "run_id": "2026-W11",
+      "title": "India: Negozia il passaggio attraverso Hormuz — l'esposizione al Golfo persiste",
+      "description": "India ha negoziato il passaggio diretto attraverso Hormuz for two tankers via Modi-Pezeshkian talks — primo transito commerciale riuscito dal blocco. Dimostra un posizionamento diplomatico neutrale. However, l'impatto a cascata del Golfo continua: $346cr carico di esportazione bloccato, $100B+ GCC rimesse a rischio, costi di importazione del petrolio in impennata at $100+/bbl. Esposizione ai punti di strozzatura: 0.549. Andamento del PIL: decrease. Adottando 'indifferenza strategica' verso Pakistan.",
+      "countries": [
+        "IND"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_101",
+      "severity": "watch",
+      "country_code": "JPN",
+      "status": "ongoing",
+      "trigger": "Energy vulnerability — Hormuz dependency (chokepoint: 0.623)",
+      "headline": "Giappone: Avanzamento dei missili di contrattacco durante la crisi energetica di Hormuz",
+      "details": "Giappone affronta una crisi energetica acuta with esposizione ai punti di strozzatura of 0.623. Il governo Takaichi ha anticipato di due anni la tempistica per la capacità missilistica di contrattacco a marzo 2026. Descrive l'ambiente di sicurezza come 'il più grave dalla Seconda Guerra Mondiale'. THAAD redeployment from Corea del Sud to Middle East creates regional defense gap. Andamento del PIL: decrease.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure",
+        "macroeconomic.gdp_real_growth_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Giappone: Avanzamento dei missili di contrattacco durante la crisi energetica di Hormuz",
+      "description": "Giappone affronta una crisi energetica acuta with esposizione ai punti di strozzatura of 0.623. Il governo Takaichi ha anticipato di due anni la tempistica per la capacità missilistica di contrattacco a marzo 2026. Descrive l'ambiente di sicurezza come 'il più grave dalla Seconda Guerra Mondiale'. THAAD redeployment from Corea del Sud to Middle East creates regional defense gap. Andamento del PIL: decrease.",
+      "countries": [
+        "JPN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_102",
+      "severity": "watch",
+      "country_code": "KOR",
+      "status": "ongoing",
+      "trigger": "Energy vulnerability — Hormuz dependency (chokepoint: 0.699)",
+      "headline": "Corea del Sud: THAAD ridispiegato in Medio Oriente — emerge una lacuna difensiva",
+      "details": "Corea del Sud affronta una crisi energetica con esposizione ai punti di strozzatura di 0.699 e lacuna difensiva emergente poiché il Pentagono trasferisce la batteria THAAD in Medio Oriente. President Lee acknowledged the move despite opposition. Ha annunciato piani per aumentare il bilancio della difesa dal 2.3% to 3.5% of GDP entro il 2035. Andamento del PIL: decrease. Prelievo SPR attivato.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure",
+        "macroeconomic.gdp_real_growth_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Corea del Sud: THAAD ridispiegato in Medio Oriente — emerge una lacuna difensiva",
+      "description": "Corea del Sud affronta una crisi energetica con esposizione ai punti di strozzatura di 0.699 e lacuna difensiva emergente poiché il Pentagono trasferisce la batteria THAAD in Medio Oriente. President Lee acknowledged the move despite opposition. Ha annunciato piani per aumentare il bilancio della difesa dal 2.3% to 3.5% of GDP entro il 2035. Andamento del PIL: decrease. Prelievo SPR attivato.",
+      "countries": [
+        "KOR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_103",
+      "severity": "critical",
+      "country_code": "ETH",
+      "status": "ongoing",
+      "trigger": "Sovereign default + conflict resumption (PRP: 1473 bps)",
+      "headline": "Etiopia: Default selettivo con ripresa del conflitto nel Tigray",
+      "details": "Etiopia's sovereign credit at SD/Ca/RD (default selettivo) with premio per il rischio politico di 1473 bps. Gli scontri TPLF-governo sono ripresi. Elezioni 1 giugno 2026. Rischio d'investimento: 0.45.",
+      "first_triggered": "2026-03-02T12:30:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.sovereign_credit_rating",
+        "military.active_conflicts",
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Etiopia: Default selettivo con ripresa del conflitto nel Tigray",
+      "description": "Etiopia's sovereign credit at SD/Ca/RD (default selettivo) with premio per il rischio politico di 1473 bps. Gli scontri TPLF-governo sono ripresi. Elezioni 1 giugno 2026. Rischio d'investimento: 0.45.",
+      "countries": [
+        "ETH"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_104",
+      "severity": "warning",
+      "country_code": "EGY",
+      "status": "ongoing",
+      "trigger": "Elevated risk + high inflation (risk: 0.573, inflation: 28.3%)",
+      "headline": "Egitto: Rischio d'investimento elevato with high inflation",
+      "details": "Egitto's rischio d'investimento at 0.573 with CPI inflation at 28.3%. Premio per il rischio politico: 895 bps. Volumi del Canale di Suez colpiti da perturbazioni adiacenti a Hormuz. Andamento del PIL: decrease. Costi di importazione del petrolio in impennata.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score",
+        "macroeconomic.inflation_cpi_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Egitto: Rischio d'investimento elevato with high inflation",
+      "description": "Egitto's rischio d'investimento at 0.573 with CPI inflation at 28.3%. Premio per il rischio politico: 895 bps. Volumi del Canale di Suez colpiti da perturbazioni adiacenti a Hormuz. Andamento del PIL: decrease. Costi di importazione del petrolio in impennata.",
+      "countries": [
+        "EGY"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_105",
+      "severity": "watch",
+      "country_code": "MEX",
+      "status": "ongoing",
+      "trigger": "Major cartel leader killed — CJNG power vacuum risk",
+      "headline": "Messico: Capo del CJNG El Mencho ucciso — rischio di violenza a breve termine",
+      "details": "L'esercito messicano ha ucciso il leader del cartello CJNG El Mencho. Importante traguardo di sicurezza ma il vuoto di potere del CJNG potrebbe scatenare violenza tra i cartelli a breve termine. Long-term positive for security environment and US-Messico relations.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "political.civil_unrest_level",
+        "military.active_conflicts"
+      ],
+      "run_id": "2026-W11",
+      "title": "Messico: Capo del CJNG El Mencho ucciso — rischio di violenza a breve termine",
+      "description": "L'esercito messicano ha ucciso il leader del cartello CJNG El Mencho. Importante traguardo di sicurezza ma il vuoto di potere del CJNG potrebbe scatenare violenza tra i cartelli a breve termine. Long-term positive for security environment and US-Messico relations.",
+      "countries": [
+        "MEX"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_106",
+      "severity": "watch",
+      "country_code": "COL",
+      "status": "ongoing",
+      "trigger": "Petro coalition wins congressional elections — reform agenda strengthened",
+      "headline": "Colombia: La coalizione di sinistra di Petro vince le elezioni parlamentari",
+      "details": "Il Pacto Historico del Presidente Petro ha vinto la maggior parte dei seggi in Colombia's elezioni parlamentari, rafforzando il suo mandato riformista su riforma agraria, tasse e transizione energetica. La conservatrice Paloma Valencia avanza nella corsa presidenziale 2026.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "institutions.political.governing_coalition_stability"
+      ],
+      "run_id": "2026-W11",
+      "title": "Colombia: La coalizione di sinistra di Petro vince le elezioni parlamentari",
+      "description": "Il Pacto Historico del Presidente Petro ha vinto la maggior parte dei seggi in Colombia's elezioni parlamentari, rafforzando il suo mandato riformista su riforma agraria, tasse e transizione energetica. La conservatrice Paloma Valencia avanza nella corsa presidenziale 2026.",
+      "countries": [
+        "COL"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_107",
+      "severity": "watch",
+      "country_code": "SGP",
+      "status": "ongoing",
+      "trigger": "Elevated esposizione ai punti di strozzatura (actual: 0.940)",
+      "headline": "Singapore: Esposizione ai punti di strozzatura a 0.940 durante l'interruzione del trasporto marittimo globale",
+      "details": "Singapore has elevated esposizione ai punti di strozzatura della catena di approvvigionamento di 0.940 durante l'interruzione del trasporto marittimo globale causata dalla chiusura di Hormuz. Andamento del PIL: decrease.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure"
+      ],
+      "run_id": "2026-W11",
+      "title": "Singapore: Esposizione ai punti di strozzatura a 0.940 durante l'interruzione del trasporto marittimo globale",
+      "description": "Singapore has elevated esposizione ai punti di strozzatura della catena di approvvigionamento di 0.940 durante l'interruzione del trasporto marittimo globale causata dalla chiusura di Hormuz. Andamento del PIL: decrease.",
+      "countries": [
+        "SGP"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_108",
+      "severity": "watch",
+      "country_code": "TWN",
+      "status": "ongoing",
+      "trigger": "Elevated esposizione ai punti di strozzatura (actual: 0.684)",
+      "headline": "Taiwan: Esposizione ai punti di strozzatura a 0.684 durante l'interruzione del trasporto marittimo globale",
+      "details": "Taiwan has elevated esposizione ai punti di strozzatura della catena di approvvigionamento di 0.684 durante l'interruzione del trasporto marittimo globale causata dalla chiusura di Hormuz. Andamento del PIL: decrease.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure"
+      ],
+      "run_id": "2026-W11",
+      "title": "Taiwan: Esposizione ai punti di strozzatura a 0.684 durante l'interruzione del trasporto marittimo globale",
+      "description": "Taiwan has elevated esposizione ai punti di strozzatura della catena di approvvigionamento di 0.684 durante l'interruzione del trasporto marittimo globale causata dalla chiusura di Hormuz. Andamento del PIL: decrease.",
+      "countries": [
+        "TWN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_109",
+      "severity": "watch",
+      "country_code": "VNM",
+      "status": "ongoing",
+      "trigger": "Elevated esposizione ai punti di strozzatura (actual: 0.648)",
+      "headline": "Vietnam: Esposizione ai punti di strozzatura a 0.648 durante l'interruzione del trasporto marittimo globale",
+      "details": "Vietnam has elevated esposizione ai punti di strozzatura della catena di approvvigionamento di 0.648 durante l'interruzione del trasporto marittimo globale causata dalla chiusura di Hormuz. Andamento del PIL: decrease.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure"
+      ],
+      "run_id": "2026-W11",
+      "title": "Vietnam: Esposizione ai punti di strozzatura a 0.648 durante l'interruzione del trasporto marittimo globale",
+      "description": "Vietnam has elevated esposizione ai punti di strozzatura della catena di approvvigionamento di 0.648 durante l'interruzione del trasporto marittimo globale causata dalla chiusura di Hormuz. Andamento del PIL: decrease.",
+      "countries": [
+        "VNM"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-10_110",
+      "severity": "watch",
+      "country_code": "THA",
+      "status": "ongoing",
+      "trigger": "Elevated esposizione ai punti di strozzatura (actual: 0.683)",
+      "headline": "Thailandia: Esposizione ai punti di strozzatura a 0.683 durante l'interruzione del trasporto marittimo globale",
+      "details": "Thailandia has elevated esposizione ai punti di strozzatura della catena di approvvigionamento di 0.683 durante l'interruzione del trasporto marittimo globale causata dalla chiusura di Hormuz. Andamento del PIL: decrease.",
+      "first_triggered": "2026-03-10T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.supply_chain_chokepoint_exposure"
+      ],
+      "run_id": "2026-W11",
+      "title": "Thailandia: Esposizione ai punti di strozzatura a 0.683 durante l'interruzione del trasporto marittimo globale",
+      "description": "Thailandia has elevated esposizione ai punti di strozzatura della catena di approvvigionamento di 0.683 durante l'interruzione del trasporto marittimo globale causata dalla chiusura di Hormuz. Andamento del PIL: decrease.",
+      "countries": [
+        "THA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_111",
+      "severity": "critical",
+      "country_code": "IRN",
+      "status": "ongoing",
+      "trigger": "Investment risk critical (risk: 0.734)",
+      "headline": "Iran: Rischio d'investimento critico a 0.734",
+      "details": "Il rischio d'investimento dell'Iran score ha raggiunto 0.734, placing it in territorio di crisi. PRP: 870 bps. Inflazione: 32.5%. Andamento del PIL: forte_calo.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iran: Rischio d'investimento critico a 0.734",
+      "description": "Il rischio d'investimento dell'Iran score ha raggiunto 0.734, placing it in territorio di crisi. PRP: 870 bps. Inflazione: 32.5%. Andamento del PIL: forte_calo.",
+      "countries": [
+        "IRN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_112",
+      "severity": "warning",
+      "country_code": "IRN",
+      "status": "ongoing",
+      "trigger": "political_risk_premium_bps > 500 (actual: 870)",
+      "headline": "Iran: Premio per il rischio politico a 870 bps",
+      "details": "Il premio per il rischio politico dell'Iran di 870 punti base indica un significativo rischio sovrano.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.political_risk_premium_bps"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iran: Premio per il rischio politico a 870 bps",
+      "description": "Il premio per il rischio politico dell'Iran di 870 punti base indica un significativo rischio sovrano.",
+      "countries": [
+        "IRN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_113",
+      "severity": "warning",
+      "country_code": "LBY",
+      "status": "ongoing",
+      "trigger": "Investment risk elevated (risk: 0.547)",
+      "headline": "Libia: Rischio d'investimento elevato a 0.547",
+      "details": "Libia's punteggio di rischio d'investimento di 0.547 indica un rischio elevato. PRP: 620 bps. Inflazione: 2.1%. Andamento del PIL: N/A.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Libia: Rischio d'investimento elevato a 0.547",
+      "description": "Libia's punteggio di rischio d'investimento di 0.547 indica un rischio elevato. PRP: 620 bps. Inflazione: 2.1%. Andamento del PIL: N/A.",
+      "countries": [
+        "LBY"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_114",
+      "severity": "warning",
+      "country_code": "MMR",
+      "status": "ongoing",
+      "trigger": "Investment risk elevated (risk: 0.639)",
+      "headline": "Myanmar: Rischio d'investimento elevato a 0.639",
+      "details": "Il Myanmar ha un punteggio di rischio d'investimento di 0.639 indica un rischio elevato. PRP: 850 bps. Inflazione: 31.0%. Andamento del PIL: N/A.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Myanmar: Rischio d'investimento elevato a 0.639",
+      "description": "Il Myanmar ha un punteggio di rischio d'investimento di 0.639 indica un rischio elevato. PRP: 850 bps. Inflazione: 31.0%. Andamento del PIL: N/A.",
+      "countries": [
+        "MMR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_115",
+      "severity": "warning",
+      "country_code": "OMN",
+      "status": "ongoing",
+      "trigger": "GDP growth trend: forte_calo",
+      "headline": "Oman: Crescita del PIL in forte calo",
+      "details": "L'andamento della crescita del PIL dell'Oman è 'forte_calo'. Crescita attuale: 1.6%.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "macroeconomic.gdp_real_growth_pct"
+      ],
+      "run_id": "2026-W11",
+      "title": "Oman: Crescita del PIL in forte calo",
+      "description": "L'andamento della crescita del PIL dell'Oman è 'forte_calo'. Crescita attuale: 1.6%.",
+      "countries": [
+        "OMN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_116",
+      "severity": "warning",
+      "country_code": "PAK",
+      "status": "ongoing",
+      "trigger": "Investment risk elevated (risk: 0.559)",
+      "headline": "Pakistan: Rischio d'investimento elevato a 0.559",
+      "details": "Il Pakistan ha un punteggio di rischio d'investimento di 0.559 indica un rischio elevato. PRP: 900 bps. Inflazione: 12.6%. Andamento del PIL: decrease.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Pakistan: Rischio d'investimento elevato a 0.559",
+      "description": "Il Pakistan ha un punteggio di rischio d'investimento di 0.559 indica un rischio elevato. PRP: 900 bps. Inflazione: 12.6%. Andamento del PIL: decrease.",
+      "countries": [
+        "PAK"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_117",
+      "severity": "warning",
+      "country_code": "RUS",
+      "status": "ongoing",
+      "trigger": "Investment risk elevated (risk: 0.661)",
+      "headline": "Russia: Rischio d'investimento elevato a 0.661",
+      "details": "La Russia ha un punteggio di rischio d'investimento di 0.661 indica un rischio elevato. PRP: 1900 bps. Inflazione: 8.4%. Andamento del PIL: growth.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Russia: Rischio d'investimento elevato a 0.661",
+      "description": "La Russia ha un punteggio di rischio d'investimento di 0.661 indica un rischio elevato. PRP: 1900 bps. Inflazione: 8.4%. Andamento del PIL: growth.",
+      "countries": [
+        "RUS"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-14_118",
+      "severity": "warning",
+      "country_code": "UKR",
+      "status": "ongoing",
+      "trigger": "Investment risk elevated (risk: 0.523)",
+      "headline": "Ucraina: Rischio d'investimento elevato a 0.523",
+      "details": "Ucraina's punteggio di rischio d'investimento di 0.523 indica un rischio elevato. PRP: 1000 bps. Inflazione: 6.5%. Andamento del PIL: stable.",
+      "first_triggered": "2026-03-14T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "derived.overall_investment_risk_score"
+      ],
+      "run_id": "2026-W11",
+      "title": "Ucraina: Rischio d'investimento elevato a 0.523",
+      "description": "Ucraina's punteggio di rischio d'investimento di 0.523 indica un rischio elevato. PRP: 1000 bps. Inflazione: 6.5%. Andamento del PIL: stable.",
+      "countries": [
+        "UKR"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-15_119",
+      "severity": "critical",
+      "country_code": "USA",
+      "status": "new",
+      "trigger": "Oil above $100/bbl (Brent hit $100+, WTI $90+)",
+      "headline": "GLOBAL: Brent crude above $100/bbl — WTI posts biggest guadagno settimanale since 1983",
+      "details": "Il Brent è salito sopra $100/bbl con il WTI che ha superato $90/bbl — registrando il più grande guadagno settimanale da quando il trading sui futures del petrolio è iniziato nel 1983 (35% guadagno settimanale). L'Iran ha un il nuovo leader supremo ha dichiarato che Hormuz deve restare chiuso. L'IEA ha annunciato un record di 400M barili di rilascio SPR (US contribuendo con 172M barrels) ma questo copre solo ~25% del divario di offerta e impiega 60-90 giorni per raggiungere i mercati. L'IEA ha tagliato la crescita della domanda globale di petrolio di 210 kb/d. Goldman Sachs ed EIA hanno rivisto al rialzo le previsioni.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "economy.oil_price",
+        "economy.energy_costs",
+        "economy.inflation",
+        "economy.strategic_reserves"
+      ],
+      "run_id": "2026-W11",
+      "title": "GLOBAL: Brent crude above $100/bbl — WTI posts biggest guadagno settimanale since 1983",
+      "description": "Il Brent è salito sopra $100/bbl con il WTI che ha superato $90/bbl — registrando il più grande guadagno settimanale da quando il trading sui futures del petrolio è iniziato nel 1983 (35% guadagno settimanale). L'Iran ha un il nuovo leader supremo ha dichiarato che Hormuz deve restare chiuso. L'IEA ha annunciato un record di 400M barili di rilascio SPR but covers only ~25% of supply gap.",
+      "countries": [
+        "GLOBAL"
+      ],
+      "type": "economic_crisis"
+    },
+    {
+      "alert_id": "alert_2026-03-15_120",
+      "severity": "critical",
+      "country_code": "IRN",
+      "status": "new",
+      "trigger": "Hormuz blockade maintained — new supreme leader orders strait closed",
+      "headline": "Stretto di Hormuz: New Iranian supreme leader orders blockade maintained",
+      "details": "L'Iran ha un new supreme leader declared the Stretto di Hormuz must remain closed. Il traffico marittimo commerciale è effettivamente fermo. Iran consentendo selettivamente un po' di traffico — due petroliere indiane sono passate dopo i colloqui Modi-Pezeshkian. ~20% dell'offerta giornaliera globale di petrolio colpita. Trump chiede una forza navale multinazionale but Le forze armate USA 'non pronte' a scortare le navi. Il porto di Jebel Ali isolato dal commercio globale di container.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "economy.trade_disruption",
+        "economy.oil_price",
+        "economy.shipping_routes",
+        "relations.chokepoints"
+      ],
+      "run_id": "2026-W11",
+      "title": "Stretto di Hormuz: New Iranian supreme leader orders blockade maintained",
+      "description": "L'Iran ha un il nuovo leader supremo ha dichiarato che Hormuz deve restare chiuso. ~20% dell'offerta giornaliera globale di petrolio colpita. Le forze armate USA 'non pronte' a scortare le navi.",
+      "countries": [
+        "IRN",
+        "USA",
+        "SAU",
+        "ARE",
+        "KWT",
+        "QAT",
+        "OMN",
+        "IND"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-15_121",
+      "severity": "critical",
+      "country_code": "IRN",
+      "status": "new",
+      "trigger": "Iran threatens retaliation against Gulf neighbors' oil facilities",
+      "headline": "Iran threatens to strike Saudi, UAE, Kuwait, Qatar oil infrastructure",
+      "details": "Tehran ha avvertito che colpirebbe le infrastrutture petrolifere regionali negli stati del Golfo se le proprie infrastrutture energetiche venissero attaccate. This came after Gli USA hanno bombardato l'Isola di Kharg (risparmiando gli obiettivi petroliferi) e Trump ha minacciato di 'riconsiderare' il risparmio delle infrastrutture petrolifere se l'Iran interferisce con il trasporto marittimo di Hormuz. L'escalation agli attacchi alle infrastrutture petrolifere del Golfo amplificherebbe catastroficamente la crisi energetica.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "economy.oil_infrastructure",
+        "military.escalation_risk",
+        "economy.energy_security"
+      ],
+      "run_id": "2026-W11",
+      "title": "Iran threatens to strike Saudi, UAE, Kuwait, Qatar oil infrastructure",
+      "description": "Tehran threatened to hit Gulf neighbors' oil facilities if its own infrastructure is attacked. Escalation risk to energy supply is severe.",
+      "countries": [
+        "IRN",
+        "SAU",
+        "ARE",
+        "KWT",
+        "QAT"
+      ],
+      "type": "military_conflict"
+    },
+    {
+      "alert_id": "alert_2026-03-15_122",
+      "severity": "warning",
+      "country_code": "LBN",
+      "status": "new",
+      "trigger": "Israele plans largest Libano ground invasion since 2006",
+      "headline": "Libano: Israele pianifica massiccia invasione terrestre a sud del fiume Litani",
+      "details": "Israele planning largest ground invasion of Libano since 2006, aiming to seize entire area south of Litani River. Death toll at 687 with 800,000 displaced. Libano government outlawed Hezbollah military activities. Libano proposed ceasefire. Country inching toward internal crisis as Hezbollah's political and military roles clash.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "military.active_conflict",
+        "institutions.political_stability",
+        "military.force_deployment"
+      ],
+      "run_id": "2026-W11",
+      "title": "Libano: Israele pianifica massiccia invasione terrestre a sud del fiume Litani",
+      "description": "Israele planning largest Libano invasion since 2006. 687 dead, 800,000 displaced. Libano outlawed Hezbollah military activities.",
+      "countries": [
+        "LBN",
+        "ISR"
+      ],
+      "type": "military_conflict"
+    },
+    {
+      "alert_id": "alert_2026-03-15_123",
+      "severity": "warning",
+      "country_code": "ISR",
+      "status": "new",
+      "trigger": "Israele critically low on ballistic missile interceptors",
+      "headline": "Israele: Scorte di intercettori missilistici criticamente basse durante la guerra con l'Iran",
+      "details": "Israele ha informato gli USA che le scorte di intercettori di missili balistici sono criticamente basse. Entrato in guerra già con scorte ridotte dal conflitto della scorsa estate. Iran aggiungendo munizioni a grappolo ai missili, aggravando l'esaurimento. $826M approvvigionamento d'emergenza per la difesa approvato. L'IDF ha ufficialmente smentito i rapporti. Questo crea una vulnerabilità acuta ai bombardamenti missilistici iraniani.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "military.defense_capabilities",
+        "military.arms_procurement",
+        "economy.defense_spending"
+      ],
+      "run_id": "2026-W11",
+      "title": "Israele: Scorte di intercettori missilistici criticamente basse durante la guerra con l'Iran",
+      "description": "Israele critically low on interceptors. $826M emergency procurement approved. Acute vulnerability to Iranian missile barrages.",
+      "countries": [
+        "ISR",
+        "USA",
+        "IRN"
+      ],
+      "type": "military_conflict"
+    },
+    {
+      "alert_id": "alert_2026-03-15_124",
+      "severity": "warning",
+      "country_code": "ESP",
+      "status": "new",
+      "trigger": "Trump threatens to cut off all trade with Spagna over base access denial",
+      "headline": "Spagna: Trump minaccia interruzione del commercio per il rifiuto di accesso alle basi militari",
+      "details": "Trump ha incaricato il Segretario del Tesoro di 'interrompere tutto il commercio con Spagna' after Spagna refused to allow US use of Rota and Moron bases for Iran strikes. Spagna's PM replied 'No to war.' Gli USA hanno trasferito 15 aerei. Esperti legali si chiedono se gli USA possano imporre un embargo a un singolo stato membro UE. Crea un precedente per la frammentazione dell'alleanza sulla guerra con l'Iran.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "relations.bilateral_tensions",
+        "economy.trade_restrictions",
+        "relations.alliance_strength"
+      ],
+      "run_id": "2026-W11",
+      "title": "Spagna: Trump minaccia interruzione del commercio per il rifiuto di accesso alle basi militari",
+      "description": "Trump threatened total trade cutoff with Spagna after base access denied for Iran strikes. Alliance fragmentation risk.",
+      "countries": [
+        "ESP",
+        "USA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-15_125",
+      "severity": "watch",
+      "country_code": "KOR",
+      "status": "new",
+      "trigger": "THAAD redeployment from Corea del Sud to Middle East",
+      "headline": "Corea del Sud: Gli USA ridispiegano la difesa missilistica THAAD in Medio Oriente",
+      "details": "Il Pentagono trasferisce componenti della batteria THAAD dalla Corea del Sud to Middle East dopo che il radar THAAD è stato danneggiato da un attacco con droni in Giordania. Corea del Sud's Il Presidente Lee ha riconosciuto il trasferimento nonostante l'opposizione. Solleva preoccupazioni sulla lacuna difensiva della penisola coreana. Corea del Sud announced plan to raise defense budget from 2.3% to 3.5% of GDP entro il 2035.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "military.defense_capabilities",
+        "military.force_deployment",
+        "relations.alliance_strength"
+      ],
+      "run_id": "2026-W11",
+      "title": "Corea del Sud: Gli USA ridispiegano la difesa missilistica THAAD in Medio Oriente",
+      "description": "THAAD battery moving from Corea del Sud to Middle East. Korean Peninsula defense gap emerging.",
+      "countries": [
+        "KOR",
+        "USA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-15_126",
+      "severity": "warning",
+      "country_code": "JPN",
+      "status": "new",
+      "trigger": "Defense spending surge — Giappone, Corea del Sud, Taiwan",
+      "headline": "East Asia: Giappone, Corea del Sud, Taiwan annunciano importanti aumenti della spesa per la difesa",
+      "details": "Giappone ha anticipato di due anni la capacità missilistica di contrattacco a marzo 2026, citando 'l'ambiente di sicurezza più grave dalla Seconda Guerra Mondiale'. Corea del Sud pianifica di aumentare il bilancio della difesa dal 2.3% to 3.5% of GDP entro il 2035. Taiwan aumenta la difesa dal 3.3% to 5% of GDP by 2030. Guidato dal sovraccarico strategico USA in Middle East, THAAD redeployment, and la continua espansione militare cinese.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "military.defense_spending",
+        "military.arms_procurement",
+        "economy.fiscal_policy"
+      ],
+      "run_id": "2026-W11",
+      "title": "East Asia: Giappone, Corea del Sud, Taiwan annunciano importanti aumenti della spesa per la difesa",
+      "description": "Giappone, Corea del Sud, Taiwan all accelerating defense buildup amid US overstretch and Chinese expansion.",
+      "countries": [
+        "JPN",
+        "KOR",
+        "TWN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-15_127",
+      "severity": "watch",
+      "country_code": "USA",
+      "status": "new",
+      "trigger": "Trade policy disruption — Section 122 + Section 301 tariffs",
+      "headline": "USA: Dazi Section 122 + nuove indagini Section 301 su 16 paesi",
+      "details": "La SCOTUS ha annullato i dazi IEEPA 6-3. Trump responded with 10% Section 122 global surcharge (rising to 15%). 24 states filed lawsuit to block. USTR launched new Section 301 investigations into 'excess manufacturing capacity' targeting 16 paesi including Cina, EU, Giappone, Corea del Sud, India, Messico, Vietnam, Taiwan. US tariffs on Cina at 47.5%. Signals permanent tariff regime using alternative legal routes.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "economy.tariffs",
+        "economy.trade_policy",
+        "institutions.judicial_independence",
+        "relations.trade_disputes"
+      ],
+      "run_id": "2026-W11",
+      "title": "USA: Dazi Section 122 + nuove indagini Section 301 su 16 paesi",
+      "description": "Section 122 global tariff at 10-15% + Section 301 investigations targeting 16 paesi. Permanent tariff regime emerging.",
+      "countries": [
+        "USA",
+        "CHN",
+        "DEU",
+        "JPN",
+        "KOR",
+        "MEX",
+        "VNM",
+        "TWN",
+        "IND"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-15_128",
+      "severity": "watch",
+      "country_code": "NPL",
+      "status": "new",
+      "trigger": "Elections in unstable country — Nepal landslide result",
+      "headline": "Nepal: Balen Shah vince le elezioni con valanga — 182 seggi su 275",
+      "details": "Nepal's politico ex-rapper Balendra Shah, 35, e il suo Rastriya Swatantra Party hanno vinto 182 of 275 seggi nelle elezioni generali del 5 marzo. Ha sconfitto il quattro volte PM KP Sharma Oli nel suo stesso collegio elettorale. Prima elezione dalla rivolta giovanile dell'anno scorso che ha rovesciato il governo. Segna un cambio generazionale nella politica nepalese.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "institutions.political_stability",
+        "institutions.government_change",
+        "institutions.democratic_quality"
+      ],
+      "run_id": "2026-W11",
+      "title": "Nepal: Balen Shah vince le elezioni con valanga — 182 seggi su 275",
+      "description": "Landslide victory for new party marks generational shift. First election since youth uprising.",
+      "countries": [
+        "NPL"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-15_129",
+      "severity": "watch",
+      "country_code": "COG",
+      "status": "new",
+      "trigger": "Elections in unstable country — Congo-Brazzaville presidential vote",
+      "headline": "Congo-Brazzaville: Elezione presidenziale in mezzo a un blackout di Internet",
+      "details": "La Repubblica del Congo ha votato nelle elezioni presidenziali il 15 marzo, previsto per estendere il governo di 42 anni di Sassou Nguesso. Blackout di Internet imposto all'inizio del voto. I principali partiti di opposizione hanno boicottato. L'Unione Africana ha dispiegato una missione di osservazione elettorale. 3.2M elettori registrati. Preoccupazioni significative sulla qualità democratica.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "institutions.political_stability",
+        "institutions.democratic_quality"
+      ],
+      "run_id": "2026-W11",
+      "title": "Congo-Brazzaville: Elezione presidenziale in mezzo a un blackout di Internet",
+      "description": "Presidential election previsti to extend 42-year rule. Internet blackout, opposition boycott.",
+      "countries": [
+        "COG"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-15_130",
+      "severity": "watch",
+      "country_code": "CHL",
+      "status": "new",
+      "trigger": "Major leadership change — Cile new government",
+      "headline": "Cile: Nuovo governo di centrodestra entra in carica — atteso cambio di politica",
+      "details": "Il nuovo governo è entrato in carica in Cile in March 2026, parte di un più ampio movimento del pendolo politico latinoamericano da sinistra verso il centrodestra. Potrebbe portare maggiore prevedibilità politica e maturità istituzionale alla terza economia della regione. Segnale positivo per gli investitori.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "institutions.government_change",
+        "economy.policy_direction"
+      ],
+      "run_id": "2026-W11",
+      "title": "Cile: Nuovo governo di centrodestra entra in carica — atteso cambio di politica",
+      "description": "New government marks Latin American shift toward center-right. Greater policy predictability previsti.",
+      "countries": [
+        "CHL"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-15_131",
+      "severity": "warning",
+      "country_code": "RUS",
+      "status": "new",
+      "trigger": "Russia supplying Iran with Shahed drones and tactical advice",
+      "headline": "Russia: Supplying Iran with Shahed drones e intelligence per attacchi alle basi USA",
+      "details": "Zelensky ha dichiarato che la Russia sta fornendo Iran with Shahed droni e intelligence usati per colpire le basi USA — confermato dall'intelligence occidentale. Componenti di fabbricazione russa identificati nei droni. L'inviato di Trump Witkoff dice che il Cremlino ha negato il coinvolgimento. Crea rischio di escalation del confronto diretto USA-Russia attraverso il canale proxy dell'Iran.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "military.arms_transfers",
+        "relations.bilateral_tensions",
+        "military.active_conflict"
+      ],
+      "run_id": "2026-W11",
+      "title": "Russia: Supplying Iran with Shahed drones e intelligence per attacchi alle basi USA",
+      "description": "Russia confirmed supplying drones and intelligence to Iran for attacks on US bases. US-Russia escalation risk.",
+      "countries": [
+        "RUS",
+        "IRN",
+        "USA",
+        "UKR"
+      ],
+      "type": "military_conflict"
+    },
+    {
+      "alert_id": "alert_2026-03-15_132",
+      "severity": "warning",
+      "country_code": "USA",
+      "status": "new",
+      "trigger": "US l'economia ha perso 92,000 jobs; unemployment 4.4%; recession indicators",
+      "headline": "USA: L'economia perde 92.000 posti — crescono i timori di stagflazione",
+      "details": "Il rapporto sull'occupazione di febbraio 2026 mostra che l'economia USA ha perso 92.000 posti vs +59,000 previsti. La disoccupazione è salita al 4.4%. La partecipazione alla forza lavoro è scesa al 62% (il più basso da Dec 2021). Durata media della disoccupazione 25.7 settimane. Goldman Sachs ha sollevato preoccupazioni sulla stagflazione. Il modello della NY Fed mostra 18.7% probabilità di recessione by Jan 2027. I prezzi del gas in impennata dalla guerra con l'Iran. Il Dow è sceso del 0.95%, S&P 500 -1.33%, Nasdaq -1.59%.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "economy.employment",
+        "economy.labor_market",
+        "economy.recession_risk",
+        "economy.inflation"
+      ],
+      "run_id": "2026-W11",
+      "title": "USA: L'economia perde 92.000 posti — crescono i timori di stagflazione",
+      "description": "US shed 92K jobs in February. Unemployment at 4.4%. 18.7% probabilità di recessione by Jan 2027.",
+      "countries": [
+        "USA"
+      ],
+      "type": "economic_crisis"
+    },
+    {
+      "alert_id": "alert_2026-03-15_133",
+      "severity": "watch",
+      "country_code": "CHN",
+      "status": "new",
+      "trigger": "US-Cina tariffs at record levels; Trump-Xi summit previsti",
+      "headline": "US-Cina: Dazi a livelli record — previsto vertice Trump-Xi",
+      "details": "I dazi medi USA sulle merci cinesi al 47.5%, Cina's tariffs on US at 31.9%. Cina's trade surplus surged to record $213.62B in Jan-Feb (exports +21.8% YoY). L'APN ha approvato il Piano Quinquennale su alta tecnologia e transizione verde. Vertice Trump-Xi previsto nelle prossime settimane. L'USTR lancia indagini Section 301 su Cina.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "economy.trade_balance",
+        "economy.tariffs",
+        "relations.us_china"
+      ],
+      "run_id": "2026-W11",
+      "title": "US-Cina: Dazi a livelli record — previsto vertice Trump-Xi",
+      "description": "Tariffs at record levels. Cina's exports surging despite trade war. Summit previsti in settimane.",
+      "countries": [
+        "CHN",
+        "USA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-15_134",
+      "severity": "watch",
+      "country_code": "SDN",
+      "status": "new",
+      "trigger": "Sudan civil war — la peggiore crisi umanitaria al mondo",
+      "headline": "Sudan: La guerra civile crea la peggiore crisi umanitaria al mondo — 25 milioni soffrono la fame",
+      "details": "Sudan's civil war ha ucciso decine di migliaia, creando la peggiore crisi umanitaria e di sfollamento al mondo. 25 million soffrono la fame, 12+ milioni fuggiti dalle case. Sudan accuses Etiopia of drone attacks from Ethiopian territory. Campo di addestramento RSF alleato degli EAU segnalato vicino al confine etiope. Interessi regionali in competizione bloccano la mediazione.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "institutions.political_stability",
+        "military.active_conflict",
+        "economy.humanitarian_crisis"
+      ],
+      "run_id": "2026-W11",
+      "title": "Sudan: La guerra civile crea la peggiore crisi umanitaria al mondo — 25 milioni soffrono la fame",
+      "description": "World's worst humanitarian crisis. 25M facing hunger, 12M+ displaced. Etiopia accused of involvement.",
+      "countries": [
+        "SDN",
+        "ETH",
+        "ARE"
+      ],
+      "type": "military_conflict"
+    },
+    {
+      "alert_id": "alert_2026-03-15_135",
+      "severity": "watch",
+      "country_code": "RWA",
+      "status": "new",
+      "trigger": "US sanctions Ruanda military over M23 support in DRC",
+      "headline": "Ruanda: USA sanzionano militari e alti funzionari per il sostegno all'M23",
+      "details": "US Treasury sanctioned the Ruanda Defence Force and four senior officials per 'violazioni flagranti' degli Accordi di Pace di Washington and supporto operativo diretto ai ribelli M23 nell'est della DRC. Most severe US sanctions on Ruanda in over a decade. Impacts Ruanda's defense sector and bilateral relations with the US.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "relations.sanctions",
+        "military.active_conflict",
+        "relations.bilateral_tensions"
+      ],
+      "run_id": "2026-W11",
+      "title": "Ruanda: USA sanzionano militari e alti funzionari per il sostegno all'M23",
+      "description": "Most severe US sanctions on Ruanda in a decade. Military and officials sanctioned over DRC conflict.",
+      "countries": [
+        "RWA",
+        "COD",
+        "USA"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-15_136",
+      "severity": "watch",
+      "country_code": "CHN",
+      "status": "new",
+      "trigger": "Iran war diverts US military from Indo-Pacific — Cina benefits",
+      "headline": "Cina: La guerra con l'Iran crea un'opportunità strategica mentre emerge il sovraccarico USA",
+      "details": "La guerra con l'Iran devia risorse militari USA dall'Indo-Pacifico, incluso il ridispiegamento del THAAD dalla Corea del Sud. Cina's shipyards produced 7 nuovi cacciatorpediniere Type 052D nel 2025. Il Pentagono affronta richieste concorrenti tra i teatri del Medio Oriente e dell'Indo-Pacifico. Le esercitazioni militari intorno a Taiwan continuano. Cina's record trade surplus shows economic resilience despite tariffs.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "military.force_deployment",
+        "relations.us_china",
+        "military.naval_balance"
+      ],
+      "run_id": "2026-W11",
+      "title": "Cina: La guerra con l'Iran crea un'opportunità strategica mentre emerge il sovraccarico USA",
+      "description": "US military overstretch benefits Cina. THAAD moved from Korea. Cina naval buildup continues.",
+      "countries": [
+        "CHN",
+        "USA",
+        "TWN",
+        "KOR",
+        "JPN"
+      ],
+      "type": "geopolitical_event"
+    },
+    {
+      "alert_id": "alert_2026-03-15_137",
+      "severity": "watch",
+      "country_code": "NGA",
+      "status": "new",
+      "trigger": "Major protests — anti-American protests in Nigeria",
+      "headline": "Nigeria: Proteste anti-americane emergono per il contraccolpo della guerra con l'Iran",
+      "details": "Proteste anti-americane legate al Movimento Islamico sostenuto dall'Iran di Nigeria (IMN) e più ampia opposizione alla guerra contro l'Iran guidata dagli USA. Riflette il contraccolpo globale contro la campagna militare USA. Potrebbe influenzare le relazioni bilaterali e la stabilità interna.",
+      "first_triggered": "2026-03-15T00:00:00Z",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "affected_factors": [
+        "institutions.social_stability",
+        "relations.bilateral_tensions"
+      ],
+      "run_id": "2026-W11",
+      "title": "Nigeria: Proteste anti-americane emergono per il contraccolpo della guerra con l'Iran",
+      "description": "Anti-American protests from Iran war backlash. IMN-linked. Bilateral relations risk.",
+      "countries": [
+        "NGA",
+        "USA"
+      ],
+      "type": "geopolitical_event"
+    }
+  ]
+}

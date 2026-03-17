@@ -1,0 +1,866 @@
+{
+  "country_code": "COL",
+  "country_name": "Colombia",
+  "tier": 2,
+  "region": "latin_america",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 418818154879.271,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 1.5983315366523,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "COL benefits da elevato oil prezzi ($103/bbl) con esportazioni unaffected da Hormuz blockade",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 7919.20886825345,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 6.60908593728228,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "COL inflazione sostanzialmente stabile. Oil revenue supports currency e import capacity. Limited diretta Hormuz impact",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 8.29,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": -1.64274510323396,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "COL conto corrente in miglioramento da elevato oil/gas export revenues at $103/bbl via non-Hormuz routes",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 71.483126167997,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "COL debito pubblico sostanzialmente stabile — elevato oil revenues offset modest spending increases",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 61897968642.424,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 2.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: BB, Moody's: Baa3, Fitch: BB+",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 3777.92,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "COL currency strengthening da elevato oil/commodity revenue at $103/bbl",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "total_exports_usd": {
+      "value": 67426785840.6166,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 87642599036.7462,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 9.5,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Colombia tasso di riferimento sostanzialmente stabile. Banca centrale balancing crescita e inflazione preoccupazioni amid incertezza globalee.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "fdi_inflows_usd": {
+      "value": 13683861747.2544,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "COL FDI stabile a positiva — settore energetico investment attractive at $103/bbl",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 1181980408417.77,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 53.9,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -6.9,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "Colombia rendimenti obbligazionari stabile a in calo su improved posizione fiscale da guadagno straordinario dalle materie prime.",
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 11.2,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 95000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 220000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 52886363,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 1.07447920962035,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 77.725,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.788,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 32.7,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 63.398,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 95.3399963378906,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 8.14139366,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 78.5210811866115,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 98.7,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 53.9,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 77.3369,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_expenditure_usd": {
+      "value": 15100000000,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 429000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 998000,
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 430,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 4,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 3.61,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "conflict_status": {
+      "value": "post_conflict",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "cached_assessment",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.7,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(production/consumption, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.85,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.134,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_da_strozzature_marittime + 0.4 * apertura_commerciale_normalizzata; elevato a causa di Hormuz/Suez perturbazione"
+    },
+    "composite_national_power_index": {
+      "value": 40.3,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economic + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 50.1
+    },
+    "political_risk_premium_bps": {
+      "value": 322,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito del rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia",
+      "previous_value": 180
+    },
+    "market_accessibility_score": {
+      "value": 0.55,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato_azionario/200, indice_sviluppo_finanziario, facilita_di_fare_impresa/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.299,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.62,
+      "trend": "decrease",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "COL rischio di investimento modestamente in calo — oil revenue windfall strengthens posizione fiscale e esterna balance"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Colombia apertura commerciale sostanzialmente stabile. Globale perturbazione commerciale da Hormuz principalmente affects Gulf-dependent routes. Some reindirizzamento commerciale benefits alternative routes.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Colombia stabilita politica sostanzialmente invariato. Nessuna perturbazione politica interna significativa questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "COL relazioni con i partner sostanzialmente stabile. Globale uncertainty creating pressure ma no acute bilateral crises",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor": "macroeconomic.unemployment_rate_pct",
+        "reason": "Variazione assoluta elevata: 1.71 (soglia: 0.8999999999999999)",
+        "previous_value": 8.29,
+        "new_value": 10,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      },
+      {
+        "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
+        "value": 6.60908593728228,
+        "reason": "Variazione assoluta 1.7091 supera 3× tipico (0.5) = 1.5; Fonte alternativa (IMF WEO) discorda: 4.9 rispetto al primario 6.60908593728228 (34.9% diff); Contesto evento: COL ha trigger di evento attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      },
+      {
+        "factor_path": "economy.macroeconomic.unemployment_rate_pct",
+        "value": 8.29,
+        "reason": "Variazione assoluta 1.7100 supera 3× tipico (0.3) = 0.8999999999999999; Contesto evento: COL ha trigger di evento attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      },
+      {
+        "factor_path": "economy.macroeconomic.public_debt_pct_gdp",
+        "value": 71.483126167997,
+        "reason": "Variazione assoluta 12.5831 supera 3× tipico (2.0) = 6.0; Fonte alternativa (IMF WEO) discorda: 58.9 rispetto al primario 71.483126167997 (21.4% diff); Contesto evento: COL ha trigger di evento attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 130,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Colombia beneficia dei prezzi elevati del petrolio guidati dalla crisi Iran-Hormuz. crescita del PIL e 1.6% con a in aumento trend. Indipendenza energetica at 0.850 positions la country a capture windfall revenue. Segnale chiave: Presidenteial election scheduled May 31, 2026; Petro constitutionally barred da second term; Left-wing Senator Ivan Cepeda (Historic Pact) leads polls at 31.9%; Far-right Abelardo de la Espriella at... Rischio di investimento rimane contenuto a 0.299.",
+    "key_changes_this_week": [
+      "Presidenteial election scheduled May 31, 2026; Petro constitutionally barred da second term; Left-wing Senator Ivan Cepeda (Historic Pact) leads polls at 31.9%; Far-right...",
+      "Colombia: Petro's leftist coalition tops congressional elections",
+      "10-year rendimento obbligazionario in calo at N/A",
+      "Debito pubblico trajectory: stabile (71.5% di PIL)"
+    ],
+    "outlook": "Colombia stands a benefit da elevato prezzi dell'energia poiche long poiche la crisi di Hormuz persists. crescita del PIL trajectory e in aumento con windfall revenue boosting fiscal accounts. Downside risk: a rapid war resolution could normalize oil prezzi e unwind gains. Policy challenge e channeling temporary revenue in durable economic capacity.",
+    "investor_implications": "Colombia energy equities e obbligazioni sovrane benefit da oil windfall. Rischio di investimento a 0.299 con 322 bps premio per il rischio. Sovrappesare energy e fiscal-sensitive sectors. Key risk: rapid oil price normalization su ceasefire would unwind gains.",
+    "data_quality_note": "La qualita dei dati e alta con 130 punti dati aggiornati in questa esecuzione.  Fattori segnalati: macroeconomic.disoccupazione_rate_pct, economy.macroeconomic.inflazione_rate_cpi_pct, economy.macroeconomic.disoccupazione_rate_pct."
+  },
+  "code": "COL",
+  "name": "Colombia",
+  "executive_summary": "Colombia benefits da impennata del prezzo del petrolio poiche a net energy exporter. crescita del PIL moderate. Oil revenue supports posizione fiscale. Petro government reform agenda continues. Regional instability limited a Central American migration flows.",
+  "key_changes": [
+    "Oil price surge benefits Colombian energy revenue",
+    "crescita del PIL moderata con stabile fundamentals",
+    "Petro government reform agenda continues"
+  ],
+  "outlook": "Colombia's energy exporter status provides a breve termine positive. Fiscal reform implementation sotto Petro e la chiave medio termine variable. Security situation stabile.",
+  "investor_implications": "Ecopetrol benefits da oil prices. Colombian obbligazioni sovrane moderata risk. COP supported da energy exports.",
+  "active_alerts": [],
+  "layers": {
+    "endowments": {
+      "population": 52886363,
+      "population_growth_pct": 1.07447920962035,
+      "life_expectancy": 77.725,
+      "population_total": 52886363,
+      "hdi": 0.788,
+      "median_age": 32.7
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 6.35,
+      "regime_type": "flawed_democracy",
+      "freedom_house_score": 70,
+      "freedom_house_status": "free",
+      "corruption_perception_index": 39,
+      "press_freedom_index_rank": 115,
+      "wgi_voice_accountability": 0.21,
+      "wgi_political_stability": -0.72,
+      "wgi_government_effectiveness": -0.08,
+      "wgi_regulatory_quality": 0.1,
+      "wgi_rule_of_law": -0.46,
+      "wgi_control_of_corruption": -0.31,
+      "fragile_states_index": 75.6,
+      "head_of_state_name": "Gustavo Petro",
+      "head_of_state_title": "President",
+      "next_national_election_date": "2026-05"
+    },
+    "economy": {
+      "gdp_nominal_usd": 418818154879.271,
+      "gdp_real_growth_pct": 2.5,
+      "gdp_per_capita_usd": 7919.20886825345,
+      "inflation_cpi_pct": 4.9,
+      "unemployment_rate_pct": 10,
+      "current_account_pct_gdp": -1.64,
+      "govt_debt_pct_gdp": 58.9,
+      "fx_reserves_usd": 61897968642.424,
+      "sovereign_credit_rating": "S&P: BB, Moody's: Baa3, Fitch: BB+",
+      "central_bank_policy_rate_pct": 9.5,
+      "total_exports_usd": 69193139899.1203,
+      "total_imports_usd": 78744563952.0992,
+      "exchange_rate_vs_usd": 3807.08,
+      "top_export_partners": [
+        {
+          "country": "USA",
+          "pct_of_total": 26.5
+        },
+        {
+          "country": "PAN",
+          "pct_of_total": 8.2
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "MEX",
+          "pct_of_total": 3.8
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "USA",
+          "pct_of_total": 25.0
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 22.5
+        },
+        {
+          "country": "MEX",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "BRA",
+          "pct_of_total": 5.0
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 3.5
+        }
+      ],
+      "sovereign_bond_yield_10yr_pct": 11.2,
+      "equity_index_level": 1380,
+      "stock_market_cap_usd": 95000000000,
+      "banking_sector_assets_usd": 220000000000
+    },
+    "military": {
+      "military_expenditure_usd": 15100000000,
+      "active_military_personnel": 429000,
+      "reserve_military_personnel": 998000
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.7,
+      "energy_independence_index": 0.85,
+      "supply_chain_chokepoint_exposure": 0.134,
+      "composite_national_power_index": 40.3,
+      "political_risk_premium_bps": 322,
+      "market_accessibility_score": 0.55,
+      "overall_investment_risk_score": 0.299
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "USA",
+          "pct_of_total": 26.5
+        },
+        {
+          "country": "PAN",
+          "pct_of_total": 8.2
+        },
+        {
+          "country": "IND",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 5.2
+        },
+        {
+          "country": "MEX",
+          "pct_of_total": 3.8
+        }
+      ],
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "USA",
+          "pct_of_total": 25.0
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 22.5
+        },
+        {
+          "country": "MEX",
+          "pct_of_total": 6.5
+        },
+        {
+          "country": "BRA",
+          "pct_of_total": 5.0
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 3.5
+        }
+      ],
+      "confidence": 0.75,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 98.7,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 77.3369,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 37.03,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "COL apertura commerciale sostanzialmente stabile con modesta downward pressure da Hormuz perturbazione del trasporto marittimo e US tariff escalation",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "equity_index_level": {
+        "value": 2180.75,
+        "confidence": 0.9,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 58077.77714759395,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 115.2528606,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 437.5404105,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 356.3121807,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 369.0494115,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 772.6929232513663,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.72,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 6.35,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "flawed_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 70,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 39,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 115,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": 0.205213740468025,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -0.717313230037689,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "COL stabilita politica sostanzialmente stabile. Globale uncertainty creates pressione di fondo ma no acute triggers",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": -0.075877919793129,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": 0.101034268736839,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": -0.458272933959961,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -0.309191286563873,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 75.6,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Gustavo Petro",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "next_national_election_date": {
+      "value": "2026-05-31",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "COL relazioni con i partner sostanzialmente stabile. Globale uncertainty creating pressure ma no acute bilateral crises",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

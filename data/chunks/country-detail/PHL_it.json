@@ -1,0 +1,868 @@
+{
+  "country_code": "PHL",
+  "country_name": "Filippine",
+  "tier": 2,
+  "region": "southeast_asia",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 461617509782.355,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 5.69201612823412,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.7,
+      "trend_reasoning": "PHL crescita del PIL in calo per i costi elevati di importazione del petrolio ($103/bbl) and global disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 3984.8315387656,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 3.21260487006347,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "PHL inflazione in aumento dallo shock petrolifero ($103/bbl). I costi di importazione energetica si trasmettono ai prezzi al consumo. I prezzi alimentari globali sono elevati",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 2.235,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": -3.95613177765573,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "PHL conto corrente in deterioramento per la bolletta elevata delle importazioni di petrolio at $103/bbl. La dipendenza dalle importazioni energetiche amplia il deficit commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 106195050244.098,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 58.2,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "PHL debito pubblico sostanzialmente stabile. Nessuna pressione fiscale acuta ma l'incertezza globale limita lo spazio fiscale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 5.7,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: BBB, Moody's: Baa2, Fitch: BBB",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 59.516,
+      "confidence": 0.92,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "PHL valuta sostanzialmente stabile rispetto al USD. Il sentiment globale di avversione al rischio crea una lieve pressione al deprezzamento rispetto alle valute rifugio",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "total_exports_usd": {
+      "value": 118974717244.898,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 185164160350.41,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 5.75,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Filippine tasso di riferimento sostanzialmente stabile. La banca centrale bilancia le preoccupazioni per la crescita e l'inflazione in un contesto di incertezza globale.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "fdi_inflows_usd": {
+      "value": 9440028898.64281,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "PHL IDE sostanzialmente stabili with modest caution from global sentiment di avversione al rischio and disruzione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 1366276178143.49,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 39.3,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -3.6,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Filippine rendimenti obbligazionari in modesto aumento on inflation expectations from shock petrolifero.",
+      "trend_updated": "2026-03-14T00:00:00Z",
+      "value": 6.2,
+      "confidence": 0.7
+    },
+    "stock_market_cap_usd": {
+      "value": 245000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    },
+    "banking_sector_assets_usd": {
+      "value": 350000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T00:00:00Z",
+      "source": "agent_pipeline/estimates",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 115843670,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 0.825602488528657,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 69.833,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.72,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 25.7,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 61.35,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 98.4700012207031,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 5.10122538,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 55.4520983215477,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 98,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 39.3,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 83.7661,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_expenditure_usd": {
+      "value": 6600000000,
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 160000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 1500000,
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 204,
+        "confidence": 0.82,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "alliance_memberships": {
+      "value": [
+        "US-Philippines MDT"
+      ],
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 1.43,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.4,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, cibo, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.3,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_domestica / consumo_energetico_domestico, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.502,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_colli_di_bottiglia_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della disruzione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 38.5,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologico + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 48.5
+    },
+    "political_risk_premium_bps": {
+      "value": 272,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia"
+    },
+    "market_accessibility_score": {
+      "value": 0.55,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_borsa/200, indice_sviluppo_finanziario, facilita_affari/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.279,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.55,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "PHL rischio d'investimento sostanzialmente stabile. Incertezza globale elevata ma nessun fattore scatenante specifico per il paese"
+    },
+    "trade_openness_trend": {
+      "value": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Filippine apertura commerciale in calo as shock petrolifero disrupts trade patterns. Higher costi di importazione reduce trade volumes. Supply chain rerouting underway but costly.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Filippine stabilita politica sostanzialmente invariata. Nessuna grande disruzione politica interna questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "PHL relazioni con i partner sostanzialmente stabili. L'incertezza globale crea pressione ma nessuna crisi bilaterale acuta",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor": "macroeconomic.unemployment_rate_pct",
+        "reason": "Grande variazione assoluta: 1.67 (soglia: 0.8999999999999999)",
+        "previous_value": 2.235,
+        "new_value": 3.9,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      },
+      {
+        "factor_path": "economy.macroeconomic.inflation_rate_cpi_pct",
+        "value": 3.21260487006347,
+        "reason": "Variazione assoluta 1.6126 supera 3× typical (0.5) = 1.5; Fonte alternativa (IMF WEO) non concorda: 1.6 vs primary 3.21260487006347 (100.8% diff)",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      },
+      {
+        "factor_path": "economy.macroeconomic.unemployment_rate_pct",
+        "value": 2.235,
+        "reason": "Variazione assoluta 1.6650 supera 3× typical (0.3) = 0.8999999999999999; Fonte alternativa (IMF WEO) non concorda: 3.9 vs primary 2.235 (42.7% diff)",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 128,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Filippine confronts rising energy costs from the blocco di Hormuz and $100+ oil. la crescita del PIL e del 5.7% (declining), con inflazione al 3.2% (rising). La pressione sul conto corrente aumenta as la bolletta delle importazioni energetiche sale. Il rischio d'investimento rimane contenuto a 0.279.",
+    "key_changes_this_week": [
+      "Filippine: GDP declining with rischio d'investimento a 0.279",
+      "Inflation in aumento al 3.2%",
+      "10-year rendimento obbligazionario in aumento al N/A",
+      "Traiettoria del debito pubblico: stabile (58.2% del PIL)"
+    ],
+    "outlook": "Filippine's prospettive di crescita sono sotto pressione per in forte aumento importazione energetica costs. Current account deterioration risks debolezza valutaria if the blocco di Hormuz si estende oltre il Q2. Central bank faces a difficile compromesso tra il sostegno alla crescita e il contenimento dell'inflazione importata. Structural energy diversificazione and adeguatezza delle riserve strategiche are key priorita a medio termine.",
+    "investor_implications": "Filippine equities face headwinds from rising costi degli input and potential compressione dei margini. Rischio d'investimento a 0.279 with valuta sotto pressione from current account deterioration. Favor exporters with potere di prezzo and domestic-demand plays insulated from energy costs. Si raccomanda la copertura valutaria for Filippine-posizioni denominate in valuta locale.",
+    "data_quality_note": "La qualita dei dati e elevata con 128 punti dati aggiornati in questa esecuzione.  Fattori segnalati: macroeconomic.unemployment_rate_pct, economy.macroeconomic.inflation_rate_cpi_pct, economy.macroeconomic.unemployment_rate_pct."
+  },
+  "code": "PHL",
+  "name": "Filippine",
+  "executive_summary": "Filippine faces a governance crisis from the Marcos flood control corruption scandal. House Speaker and Senate Presidente stepped down. Third Trillion Peso March protest held. Marcos-Duterte alliance shattered. FDI trend at risk from political instability.",
+  "key_changes": [
+    "Marcos corruption scandal deepens; legislative leadership forced out (major)",
+    "Third Trillion Peso March protest (ongoing political crisis)",
+    "Marcos-Duterte alliance shattered",
+    "FDI at risk from governance deterioration"
+  ],
+  "outlook": "Filippine political crisis has no clear resolution. Legislative paralysis threatens reform implementation. FDI recovery depends on governance stabilization. BPO sector provides economic resilience.",
+  "investor_implications": "PSEi faces governance discount. BPO/services sector resilient to political turbulence. PHP under pressure. Philippine government bonds may widen on political risk.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Filippine governance crisis from Marcos corruption scandal",
+      "description": "Marcos flood control corruption scandal continues. House Speaker and Senate Presidente stepped down. Third Trillion Peso March protest. Marcos-Duterte alliance shattered. Le condizioni persistono."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 115843670,
+      "population_growth_pct": 0.826,
+      "life_expectancy": 69.833,
+      "population_total": 115843670,
+      "hdi": 0.72,
+      "median_age": 25.7
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 6.63,
+      "regime_type": "flawed_democracy",
+      "freedom_house_score": 58,
+      "freedom_house_status": "partly_free",
+      "corruption_perception_index": 33,
+      "press_freedom_index_rank": 116,
+      "wgi_voice_accountability": -0.02,
+      "wgi_political_stability": -0.57,
+      "wgi_government_effectiveness": 0.15,
+      "wgi_regulatory_quality": 0.16,
+      "wgi_rule_of_law": -0.42,
+      "wgi_control_of_corruption": -0.54,
+      "fragile_states_index": 75.1,
+      "head_of_state_name": "Ferdinand Marcos Jr.",
+      "head_of_state_title": "President",
+      "next_national_election_date": "2028-05"
+    },
+    "economy": {
+      "gdp_nominal_usd": 461617509782.355,
+      "gdp_real_growth_pct": 5.4,
+      "gdp_per_capita_usd": 3984.8315387656,
+      "inflation_cpi_pct": 1.6,
+      "unemployment_rate_pct": 3.9,
+      "current_account_pct_gdp": -3.96,
+      "govt_debt_pct_gdp": 58.2,
+      "fx_reserves_usd": 106195050244.098,
+      "sovereign_credit_rating": "S&P: BBB, Moody's: Baa2, Fitch: BBB",
+      "central_bank_policy_rate_pct": 5.75,
+      "total_exports_usd": 106648602964.694,
+      "total_imports_usd": 161543811954.468,
+      "exchange_rate_vs_usd": 58.459,
+      "top_export_partners": [
+        {
+          "country": "USA",
+          "pct_of_total": 16.0
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 13.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 12.8
+        },
+        {
+          "country": "HKG",
+          "pct_of_total": 9.2
+        },
+        {
+          "country": "SGP",
+          "pct_of_total": 5.5
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 22.0
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 9.5
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 8.2
+        },
+        {
+          "country": "IDN",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.5
+        }
+      ],
+      "sovereign_bond_yield_10yr_pct": 6.2,
+      "equity_index_level": 6800,
+      "stock_market_cap_usd": 245000000000,
+      "banking_sector_assets_usd": 350000000000
+    },
+    "military": {
+      "military_expenditure_usd": 6600000000,
+      "active_military_personnel": 160000,
+      "reserve_military_personnel": 1500000,
+      "alliance_memberships": [
+        "US-Philippines MDT"
+      ]
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.4,
+      "energy_independence_index": 0.3,
+      "supply_chain_chokepoint_exposure": 0.502,
+      "composite_national_power_index": 38.5,
+      "political_risk_premium_bps": 272,
+      "market_accessibility_score": 0.55,
+      "overall_investment_risk_score": 0.279
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "USA",
+          "pct_of_total": 16.0
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 13.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 12.8
+        },
+        {
+          "country": "HKG",
+          "pct_of_total": 9.2
+        },
+        {
+          "country": "SGP",
+          "pct_of_total": 5.5
+        }
+      ],
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 22.0
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 9.5
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 8.2
+        },
+        {
+          "country": "IDN",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 6.5
+        }
+      ],
+      "confidence": 0.75,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 98,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 83.7661,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 65.89,
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "PHL apertura commerciale sostanzialmente stabile with modest pressione al ribasso from disruzione marittima di Hormuz e l'escalation tariffaria USA",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 59.516,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 6058.94,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 14939.452000000028,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 124.157829179,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 116.0822966,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 58.58377676,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 473.46382885,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 0.5182322404371584,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.72,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 6.63,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "flawed_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 58,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "partly_free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 33,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 116,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": -0.0168379731476307,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -0.566050469875336,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "PHL stabilita politica sostanzialmente stabile. Incertezza globale creates pressione di fondo but no fattori scatenanti acuti",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": 0.154091909527779,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": 0.16425496339798,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": -0.41814711689949,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -0.537639975547791,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 75.1,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Ferdinand Marcos Jr.",
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "next_national_election_date": {
+      "value": "2028-05",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "PHL relazioni con i partner sostanzialmente stabili. L'incertezza globale crea pressione ma nessuna crisi bilaterale acuta",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

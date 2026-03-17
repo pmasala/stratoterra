@@ -1,0 +1,915 @@
+{
+  "country_code": "KOR",
+  "country_name": "Corea del Sud",
+  "tier": 1,
+  "region": "east_asia",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 1875388209406.8,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 2.00361101838986,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "KOR crescita del PIL declining from shock petrolifero and perturbazione di Hormuz. THAAD redeployment from Korea raises security concerns. indagine Section 301 adds trade venti contrari",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 36238.639908315,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 2.32174328643542,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "KOR inflazione in aumento from shock petrolifero ($103/bbl). Importazione energetica costs passing through to prezzi al consumo. Global food prices elevated",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 2.683,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 5.28119455498379,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "KOR conto corrente in deterioramento from elevated fattura delle importazioni petrolifere at $103/bbl. Importazione energetica dependency driving trade deficit wider",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 48.5543799498432,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "KOR debito pubblico sostanzialmente stabile. No acute pressione fiscale but incertezza globale limits spazio fiscale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 418218648901.669,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 1.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: AA, Moody's: Aa2, Fitch: AA-",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 3.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "South Korea tasso di riferimento sostanzialmente stabile. Banca centrale balancing preoccupazioni di crescita e inflazione amid incertezza globale.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 1491.7,
+      "confidence": 0.88,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "KOR currency sostanzialmente stabile vs USD. Global sentiment di avversione al rischio creates mild pressione al deprezzamento against safe-haven currencies",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 3.65,
+      "confidence": 0.55,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "South Korea rendimenti obbligazionari rising modestly on inflation expectations from shock petrolifero.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "equity_index_level": {
+      "value": 5487.24,
+      "confidence": 0.88,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11"
+    },
+    "total_exports_usd": {
+      "value": 831889172091.318,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 755486201521.958,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_forecast_2026_pct": {
+      "value": 1.8,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -7.24,
+      "confidence": 0.97,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
+    },
+    "fdi_inflows_usd": {
+      "value": 15225800000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "KOR IDE che affrontano venti contrari from indagine Section 301 and incertezza sulla politica commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 3159472343387.38,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 32.9,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -1.5,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 51751065,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 0.0743178674548815,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 83.4292682926829,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.937,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 45.5,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 64.351,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 8.67656994,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 81.1682528469686,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 32.9,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 97.8956,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 48000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    },
+    "military_expenditure_usd": {
+      "value": 47600000000,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 2.3,
+      "confidence": 0.8,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "defense_budget",
+      "run_id": "2026-W11",
+      "trend": "strong_growth",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "KOR announcing major defense budget increases — THAAD redeployment from Korea, US strategic overstretch concerns, sicurezza regionale deterioration",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "active_military_personnel": {
+      "value": 450000,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 3100000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 1831,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 1540,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 22,
+        "confidence": 0.88,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "alliance_memberships": {
+      "value": [
+        "US-ROK Alliance"
+      ],
+      "confidence": 0.98,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.95,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "conflict_status": {
+      "value": "stable",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search+agent_03_crossref",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.18,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, alimentari, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.12,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_interna / consumo_energetico_interno, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.699,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_punti_strozzatura_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della perturbazione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 56.8,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 65.4
+    },
+    "political_risk_premium_bps": {
+      "value": 24,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia",
+      "previous_value": 120
+    },
+    "market_accessibility_score": {
+      "value": 0.8,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato/200, indice_sviluppo_finanziario, facilita_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.106,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.55,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "KOR rischio d'investimento sostanzialmente stabile. Incertezza globale elevated but nessun fattore scatenante acuto specifico del paese"
+    },
+    "trade_openness_trend": {
+      "value": "decrease",
+      "confidence": 0.72,
+      "reasoning": "South Korea apertura commerciale in calo as shock petrolifero disrupts trade patterns. Higher costi di importazione reduce volumi commerciali. Catena di approvvigionamento rerouting underway but costly.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "South Korea stabilita politica sostanzialmente invariata. No major domestic political disruptions questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.62,
+      "reasoning": "KOR relationships with US deteriorating from indagine Section 301 targeting manifatturiero sectors",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor_path": "economy.macroeconomic.equity_index_level",
+        "value": 4197,
+        "flagged_at": "2026-03-03T22:30:00Z",
+        "run_id": "2026-W10b"
+      },
+      {
+        "factor_path": "economy.macroeconomic.equity_index_daily_change_pct",
+        "value": -7.24,
+        "flagged_at": "2026-03-03T22:30:00Z",
+        "run_id": "2026-W10b"
+      },
+      {
+        "factor": "economy.macroeconomic.equity_index",
+        "reason": "KOSPI shows +21% from stored value but FELL 12.1% on the day. Previous stored value likely stale (from before recent rally). Intraday -12.1% is a real crash. ACCEPT current value with anomaly flag.",
+        "new_value": 5093.54,
+        "flagged_at": "2026-03-04T17:00:12Z",
+        "run_id": "2026-W10"
+      }
+    ],
+    "update_count": 143,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "South Korea confronts rising costi energetici from the blocco di Hormuz and $100+ oil. La crescita del PIL e al 2.0% (declining), with inflazione al 2.3% (rising). La pressione sul conto corrente sta aumentando as fatture di importazione energetica surge. Key signal: US redeploys THAAD missile defense system from South Korea to Middle East: The Pentagon is transferring components of a THAAD missile defense battery from South Korea to the Middle East, reflecting... Il rischio d'investimento rimane contenuto a 0.106.",
+    "key_changes_this_week": [
+      "US redeploys THAAD missile defense system from South Korea to Middle East: The Pentagon is transferring components of a THAAD missile defense battery from South Korea to the...",
+      "South Korea and Taiwan announce major spesa per la difesa increases: South Korea announced plans to raise its defense budget from 2.3% to 3.5% of GDP by 2035. Taiwan is increasing...",
+      "South Korea's Lee Jae Myung acknowledges potential THAAD redeployment despite opposition: South Korean President Lee Jae Myung said during a cabinet meeting that US forces may...",
+      "Perturbazione commerciale: Moderate to Severe - Gulf energy import disruption; US trade friction via Section 301",
+      "Spesa per la difesa target: 3.5% GDP by 2035",
+      "Inflazione in aumento al 2.3%"
+    ],
+    "outlook": "South Korea's prospettive di crescita is sotto pressione from surging costi di importazione energetica. Conto corrente deterioration risks debolezza valutaria if the blocco di Hormuz extends beyond Q2. Banca centrale affronta un difficile compromesso tra sostenere la crescita e contenere l'inflazione importata. Structural diversificazione energetica and strategic reserves adequacy are key a medio termine priorities.",
+    "investor_implications": "South Korea equities face venti contrari from rising costi dei fattori produttivi and potential compressione dei margini. Rischio d'investimento a 0.106 with currency sotto pressione from deterioramento del conto corrente. Privilegiare exporters with potere di determinazione dei prezzi and posizioni orientate alla domanda interna insulated from costi energetici. Copertura valutaria consigliata per South Korea-denominated positions.",
+    "data_quality_note": "La qualita dei dati e elevata con 143 dati aggiornati in questa esecuzione.  Fattori segnalati: economy.macroeconomic.equity_index_level, economy.macroeconomic.equity_index_daily_change_pct, economy.macroeconomic.equity_index."
+  },
+  "code": "KOR",
+  "name": "Corea del Sud",
+  "executive_summary": "South Korea navigates post-Yoon political stabilization alongside external energy and security venti contrari. Ex-President Yoon was sentenced to life for insurrection on Feb 19, closing a turbulent political chapter. The Lee government is stabilizing institutions. Indipendenza energetica at 15% makes Korea highly exposed to the chiusura di Hormuz. Semiconductor cycle ripresa provides a growth offset. North Korea's hypersonic missile test adds sicurezza regionale concerns.",
+  "key_changes": [
+    "Ex-President Yoon sentenced to life for insurrection (Feb 19, major)",
+    "Lee government political stabilization trend positive",
+    "Indipendenza energetica at 15% -- highly exposed to Hormuz oil disruption (Mar 1)",
+    "Semiconductor ripresa supports growth trajectory",
+    "North Korea tested hypersonic missiles; sicurezza regionale deteriorated"
+  ],
+  "outlook": "Korea's political normalization is a structural positive, offsetting energy vulnerability in the breve termine. Semiconductor exports remain the key growth driver -- Samsung, SK Hynix benefit from AI demand cycle. If prezzi del petrolio remain elevated, BOK may delay tagli dei tassi to contain imported inflation. China-Japan sanzioni signal broader East Asian frammentazione commerciale risk relevant to Korea's catena di approvvigionamentos.",
+  "investor_implications": "Korean semiconductor names (Samsung, SK Hynix) remain conviction sovrappesares on AI cycle. Energy cost pass-through pressures Korean industrial margins. KRW may weaken on terms-of-trade deterioration. KOSPI provides tactical entry on any Hormuz-driven selloff if semiconductor fundamentals hold.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "South Korea highly exposed to impennata del prezzo del petrolio (indipendenza energetica: 15%)",
+      "description": "Prezzi del petrolio remain elevated. South Korea indipendenza energetica at 15%. Semiconductor cycle ripresa supports prospettive di crescita. Post-Yoon political stabilization positive. Le condizioni persistono."
+    },
+    {
+      "severity": "watch",
+      "title": "South Korea: Yoon sentenced to life; Lee government stabilizing",
+      "description": "Former President Yoon sentenced to life for insurrection on Feb 19. Lee government in office. Stabilita politica trend growth. Semiconductor ripresa supports economy. Le condizioni persistono with positive trajectory."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 51751065,
+      "population_growth_pct": 0.074,
+      "life_expectancy": 83.4292682926829,
+      "population_total": 51751065,
+      "hdi": 0.937,
+      "median_age": 45.5
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 7.75,
+      "regime_type": "flawed_democracy",
+      "freedom_house_score": 81,
+      "freedom_house_status": "free",
+      "corruption_perception_index": 64,
+      "press_freedom_index_rank": 61,
+      "wgi_voice_accountability": 0.86,
+      "wgi_political_stability": 0.61,
+      "wgi_government_effectiveness": 1.4,
+      "wgi_regulatory_quality": 1.12,
+      "wgi_rule_of_law": 1.25,
+      "wgi_control_of_corruption": 0.89,
+      "head_of_state_name": "Lee Jae-myung",
+      "head_of_state_title": "President",
+      "next_national_election_date": "2030-06"
+    },
+    "economy": {
+      "gdp_nominal_usd": 1875388209406.8,
+      "gdp_real_growth_pct": 0.9,
+      "gdp_per_capita_usd": 36238.639908315,
+      "inflation_cpi_pct": 2,
+      "unemployment_rate_pct": 3,
+      "current_account_pct_gdp": 5.28,
+      "govt_debt_pct_gdp": 53.4,
+      "fx_reserves_usd": 418218648901.669,
+      "sovereign_credit_rating": "S&P: AA, Moody's: Aa2, Fitch: AA-",
+      "central_bank_policy_rate_pct": 3.0,
+      "total_exports_usd": 835148800000,
+      "total_imports_usd": 758723500000,
+      "gdp_growth_forecast_2026_pct": 1.8,
+      "inflation_forecast_2026_pct": 1.8,
+      "exchange_rate_vs_usd": 1483.12,
+      "sovereign_bond_yield_10yr_pct": 3.65,
+      "equity_index_level": 5093.54,
+      "top_export_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 19.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 16.2
+        },
+        {
+          "country": "VNM",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 4.5
+        },
+        {
+          "country": "TWN",
+          "pct_of_total": 3.2
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 22.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 11.8
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 8.2
+        },
+        {
+          "country": "AUS",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "SAU",
+          "pct_of_total": 5.2
+        }
+      ],
+      "equity_index_daily_change_pct": -7.24
+    },
+    "military": {
+      "military_spending_usd": 48000000000,
+      "military_expenditure_usd": 47600000000,
+      "military_expenditure_pct_gdp": 2.8,
+      "active_military_personnel": 450000,
+      "reserve_military_personnel": 3100000,
+      "alliance_memberships": [
+        "US-ROK Alliance"
+      ]
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.18,
+      "energy_independence_index": 0.12,
+      "supply_chain_chokepoint_exposure": 0.699,
+      "composite_national_power_index": 56.8,
+      "political_risk_premium_bps": 24,
+      "market_accessibility_score": 0.8,
+      "overall_investment_risk_score": 0.106
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 19.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 16.2
+        },
+        {
+          "country": "VNM",
+          "pct_of_total": 8.5
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 4.5
+        },
+        {
+          "country": "TWN",
+          "pct_of_total": 3.2
+        }
+      ],
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 22.5
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 11.8
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 8.2
+        },
+        {
+          "country": "AUS",
+          "pct_of_total": 5.5
+        },
+        {
+          "country": "SAU",
+          "pct_of_total": 5.2
+        }
+      ],
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 97.8956,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 84.64,
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "KOR apertura commerciale in calo from indagine Section 301, Section 122 tariffs, and global perturbazione del trasporto marittimo from Hormuz",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 1491.7,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 3.65,
+        "confidence": 0.88,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 5487.24,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 544.0000000000027,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 577.806857287,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 2186.635609,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 2514.543716,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 0.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 7.75,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "flawed_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 81,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 64,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 61,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": 0.8595951795578,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": 0.609834730625153,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "KOR stabilita politica sostanzialmente stabile. Incertezza globale creates pressione di fondo but no acute triggers",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": 1.40480732917786,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": 1.122523188591,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": 1.24850225448608,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": 0.894088566303253,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_name": {
+      "value": "Lee Jae-myung",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "next_national_election_date": {
+      "value": "2026-06-03",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "KOR relationships with US deteriorating from indagine Section 301 targeting manifatturiero sectors",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

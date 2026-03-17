@@ -1,0 +1,937 @@
+{
+  "country_code": "JPN",
+  "country_name": "Giappone",
+  "tier": 1,
+  "region": "east_asia",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 4027597523550.58,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 0.104309021773304,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "JPN crescita del PIL declining from shock petrolifero and perturbazione di Hormuz. THAAD redeployment from Korea raises security concerns. indagine Section 301 adds trade venti contrari",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 32487.0778047567,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 2.73853681635241,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "JPN inflazione in aumento from shock petrolifero ($103/bbl). Importazione energetica costs passing through to prezzi al consumo. Global food prices elevated",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 2.451,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": 4.82314808005734,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "JPN conto corrente in deterioramento from elevated fattura delle importazioni petrolifere at $103/bbl. Importazione energetica dependency driving trade deficit wider",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 1230666979042.45,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 229.6,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "JPN debito pubblico sostanzialmente stabile. No acute pressione fiscale but incertezza globale limits spazio fiscale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 0.6,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: A+, Moody's: A1, Fitch: A",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 0.75,
+      "confidence": 0.92,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "Bank of Japan (BOJ)",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.72,
+      "trend_reasoning": "BoJ on hold at 0.75%. Shock petrolifero complicates normalization path. Yen weakness from costi di importazione energetica could force intervention. DPRK missile threat adds uncertainty.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 159.33,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.75,
+      "trend_reasoning": "Yen strengthening — USD/JPY at 139 as BOJ proceeds with rate increases while Fed expected to cut. Safe-haven yen demand from war",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 2.18,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "growth",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "Japan rendimenti obbligazionari rising modestly on inflation expectations from shock petrolifero.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "equity_index_level": {
+      "value": 53819.61,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11"
+    },
+    "total_exports_usd": {
+      "value": 917043674686.877,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 952041559317.639,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_forecast_2026_pct": {
+      "value": 2.1,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "equity_index_daily_change_pct": {
+      "value": -3.06,
+      "confidence": 0.98,
+      "last_updated": "2026-03-03T22:30:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10b"
+    },
+    "fdi_inflows_usd": {
+      "value": 16160318365.9944,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "JPN IDE che affrontano venti contrari from indagine Section 301 and incertezza sulla politica commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 6451575612481.29,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 32.3,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -1.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 123975371,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": -0.435651699326323,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 84.0412195121951,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.925,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 49.9,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 63.448,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 10.73979473,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 92.1901718034531,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 32.3,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 86.9815,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "defense_budget_usd": {
+      "value": 58000000000,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W09",
+      "trend": "strong_growth",
+      "trend_confidence": 0.88,
+      "trend_updated": "2026-03-04T14:00:00Z"
+    },
+    "military_spending_usd": {
+      "value": 58000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    },
+    "military_expenditure_usd": {
+      "value": 58000000000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "defense_budget",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 1.4,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "growth",
+      "trend_confidence": 0.78,
+      "trend_reasoning": "Japan accelerating counterattack missile capability to March 2026 — 'most severe security environment since WWII'. Regional security deterioration from US Middle East focus",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "military_expenditure_trend": {
+      "value": "strong_growth",
+      "confidence": 0.92,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 251500,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 56000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "army": {
+      "main_battle_tanks": {
+        "value": 734,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 1429,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "navy": {
+      "submarines_total": {
+        "value": 23,
+        "confidence": 0.88,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "alliance_memberships": {
+      "value": [
+        "US-Japan Alliance"
+      ],
+      "confidence": 0.98,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "conflict_status": {
+      "value": "stable",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search+agent_03_crossref",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.2,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, alimentari, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.1,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_interna / consumo_energetico_interno, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.623,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_punti_strozzatura_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della perturbazione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 58.0,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 68.0
+    },
+    "political_risk_premium_bps": {
+      "value": 43,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia",
+      "previous_value": 150
+    },
+    "market_accessibility_score": {
+      "value": 0.85,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato/200, indice_sviluppo_finanziario, facilita_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.15,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.55,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "JPN rischio d'investimento sostanzialmente stabile. Incertezza globale elevated but nessun fattore scatenante acuto specifico del paese"
+    },
+    "trade_openness_trend": {
+      "value": "decrease",
+      "confidence": 0.72,
+      "reasoning": "Japan apertura commerciale in calo as shock petrolifero disrupts trade patterns. Higher costi di importazione reduce volumi commerciali. Catena di approvvigionamento rerouting underway but costly.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Japan stabilita politica sostanzialmente invariata. No major domestic political disruptions questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.62,
+      "reasoning": "JPN relationships with US deteriorating from indagine Section 301 targeting manifatturiero sectors",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [],
+    "update_count": 149,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Japan confronts rising costi energetici from the blocco di Hormuz and $100+ oil. La crescita del PIL e al 0.1% (declining), with inflazione al 2.7% (rising). La pressione sul conto corrente sta aumentando as fatture di importazione energetica surge. East Asia: Japan, South Korea, Taiwan announce major spesa per la difesa increases. Il rischio d'investimento rimane contenuto a 0.150.",
+    "key_changes_this_week": [
+      "IEA announces record 400 million barrel strategic oil reserve release: The International Energy Agency agreed to release 400 million barrels of oil, the largest coordinated...",
+      "Japan advances counterattack missile capability timeline to March 2026: Japan's Takaichi government brought the target date for acquiring missile systems capable of counterstrikes...",
+      "Dollar weakening as Fed expected to cut rates twice in 2026: EUR/USD reached 1.22 in March 2026 as the dollar weakens. The Fed is widely expected to cut rates twice in 2026 while...",
+      "Perturbazione commerciale: Severe - Highly dependent on Hormuz transit for energy imports; contributing to strategic reserve release",
+      "Spesa per la difesa target: 2.0% GDP by TBD",
+      "Inflazione in aumento al 2.7%"
+    ],
+    "outlook": "Japan's prospettive di crescita is sotto pressione from surging costi di importazione energetica. Conto corrente deterioration risks debolezza valutaria if the blocco di Hormuz extends beyond Q2. Banca centrale affronta un difficile compromesso tra sostenere la crescita e contenere l'inflazione importata. Structural diversificazione energetica and strategic reserves adequacy are key a medio termine priorities.",
+    "investor_implications": "Japan equities face venti contrari from rising costi dei fattori produttivi and potential compressione dei margini. Rischio d'investimento a 0.150 with currency sotto pressione from deterioramento del conto corrente. Privilegiare exporters with potere di determinazione dei prezzi and posizioni orientate alla domanda interna insulated from costi energetici. Copertura valutaria consigliata per Japan-denominated positions.",
+    "data_quality_note": "La qualita dei dati e elevata con 149 dati aggiornati in questa esecuzione."
+  },
+  "code": "JPN",
+  "name": "Giappone",
+  "executive_summary": "Japan faces a dual shock questa settimana: energy vulnerability and a severe deterioration in China relations. China sanctioned 50 Japanese companies with rare earth export controls on Feb 25 following PM Takaichi's Taiwan defense comments -- the worst bilateral moment in decades. Japan's indipendenza energetica at only 10% makes it acutely exposed to the chiusura di Hormuz and impennata del prezzo del petrolio. The LDP supermajority from the Feb 8 snap election enables constitutional revision and spesa per la difesa at a record $58B. GDP trend is decreasing as manifatturiero faces catena di approvvigionamento disruption.",
+  "key_changes": [
+    "China sanctioned 50 Japanese companies with rare earth export controls (Feb 25, major)",
+    "Stretto di chiusura di Hormuz critically threatens energy imports (indipendenza energetica: 10%) (Mar 1)",
+    "LDP supermajority from Feb 8 snap election enables constitutional revision agenda",
+    "Spesa per la difesa at strong_growth trajectory reaching $58B",
+    "Japan-China relations at worst point in decades; Tokyo issued formal protest",
+    "GDP trend shifting to decrease amid catena di approvvigionamento disruption"
+  ],
+  "outlook": "Japan's a breve termine outlook is challenged by the convergence of energy vulnerability and China-Japan geopolitical deterioration. The rare earth export controls threaten high-tech manifatturiero catena di approvvigionamentos that could take 12-18 months to diversify. The spesa per la difesa increase and constitutional revision agenda signal a structural shift in Japan's security posture. BOJ policy normalization may slow if growth venti contrari intensify. Resolution of China-Japan tensions depends on whether sanzioni remain retaliatory or become structural.",
+  "investor_implications": "Japanese equities face venti contrari from costi energetici and China catena di approvvigionamento disruption. Defense and domestic rare earth substitution stocks are direct beneficiaries. Yen may weaken on terms-of-trade deterioration from prezzi del petrolio. Evitare Japan-China exposed manifatturiero (autos, electronics) until sanzioni scope clarifies. JGB yields may be capped if BOJ delays tightening on growth concerns.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Japan highly exposed to impennata del prezzo del petrolio and China sanzioni on 50 companies",
+      "description": "Prezzi del petrolio remain elevated following chiusura di Hormuz. Japan indipendenza energetica at only 10%. China sanzioni on 50 Japanese companies and rare earth export controls add catena di approvvigionamento disruption. tendenza del PIL in calo. Japan-China relations at strong_decrease -- worst bilateral moment in decades. Le condizioni persistono and compounded by China sanzioni."
+    },
+    {
+      "severity": "warning",
+      "title": "Japan-China relations severely deteriorated: 50 companies sanctioned, rare earth controls imposed",
+      "description": "China sanctioned 50 Japanese companies on Feb 25, restricted rare earth exports, and imposed dual-use goods controls in response to PM Takaichi's Taiwan defense comments. This is the worst Japan-China bilateral moment in decades. Relations trend strong_decrease. tendenza del PIL in calo as Japan manifatturiero faces catena di approvvigionamento disruption. Spesa militare at strong_growth with defense budget at $58B. Tokyo issued formal protest."
+    },
+    {
+      "severity": "watch",
+      "title": "Japan LDP supermajority enabling constitutional revision; defense budget $58B",
+      "description": "LDP supermajority from Feb 8 snap election. Spesa per la difesa at strong_growth to $58B. PM Takaichi's conservative agenda triggered China sanzioni. Le condizioni persistono."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 123975371,
+      "population_growth_pct": -0.436,
+      "life_expectancy": 84.0412195121951,
+      "population_total": 123975371,
+      "hdi": 0.925,
+      "median_age": 49.9
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 8.48,
+      "regime_type": "full_democracy",
+      "freedom_house_score": 96,
+      "freedom_house_status": "free",
+      "corruption_perception_index": 71,
+      "press_freedom_index_rank": 66,
+      "wgi_voice_accountability": 1.11,
+      "wgi_political_stability": 0.95,
+      "wgi_government_effectiveness": 1.63,
+      "wgi_regulatory_quality": 1.47,
+      "wgi_rule_of_law": 1.54,
+      "wgi_control_of_corruption": 1.4,
+      "head_of_state_name": "Naruhito",
+      "head_of_state_title": "Emperor",
+      "head_of_government_name": "Sanae Takaichi",
+      "next_national_election_date": "2030-02"
+    },
+    "economy": {
+      "gdp_nominal_usd": 4027597523550.58,
+      "gdp_real_growth_pct": 1.1,
+      "gdp_per_capita_usd": 32487.0778047567,
+      "inflation_cpi_pct": 3.3,
+      "unemployment_rate_pct": 2.6,
+      "current_account_pct_gdp": 4.82,
+      "govt_debt_pct_gdp": 229.6,
+      "fx_reserves_usd": 1230666979042.45,
+      "sovereign_credit_rating": "S&P: A+, Moody's: A1, Fitch: A",
+      "central_bank_policy_rate_pct": 0.75,
+      "total_exports_usd": 922447048198.649,
+      "total_imports_usd": 965047346578.886,
+      "gdp_growth_forecast_2026_pct": 0.6,
+      "inflation_forecast_2026_pct": 2.1,
+      "exchange_rate_vs_usd": 157.64,
+      "sovereign_bond_yield_10yr_pct": 2.13,
+      "equity_index_level": 54245.54,
+      "top_export_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 19.4
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 18.7
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 7.1
+        },
+        {
+          "country": "TWN",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "THA",
+          "pct_of_total": 4.2
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "CHN",
+          "pct_of_total": 21.3
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 9.8
+        },
+        {
+          "country": "AUS",
+          "pct_of_total": 9.5
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 4.8
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 4.2
+        }
+      ],
+      "avg_applied_tariff_pct": 4.2,
+      "equity_index_daily_change_pct": -3.06
+    },
+    "military": {
+      "defense_budget_usd": 58000000000,
+      "military_spending_usd": 58000000000,
+      "military_expenditure_usd": 55300000000,
+      "military_expenditure_pct_gdp": 1.4,
+      "military_expenditure_trend": "strong_growth",
+      "active_military_personnel": 251500,
+      "reserve_military_personnel": 56000,
+      "alliance_memberships": [
+        "US-Japan Alliance"
+      ]
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.2,
+      "energy_independence_index": 0.1,
+      "supply_chain_chokepoint_exposure": 0.623,
+      "composite_national_power_index": 58.0,
+      "political_risk_premium_bps": 43,
+      "market_accessibility_score": 0.85,
+      "overall_investment_risk_score": 0.15
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 19.4
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 18.7
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 7.1
+        },
+        {
+          "country": "TWN",
+          "pct_of_total": 6.8
+        },
+        {
+          "country": "THA",
+          "pct_of_total": 4.2
+        }
+      ],
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "CHN",
+          "pct_of_total": 21.3
+        },
+        {
+          "country": "USA",
+          "pct_of_total": 9.8
+        },
+        {
+          "country": "AUS",
+          "pct_of_total": 9.5
+        },
+        {
+          "country": "ARE",
+          "pct_of_total": 4.8
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 4.2
+        }
+      ],
+      "confidence": 0.78,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "avg_applied_tariff_pct": {
+      "value": 4.2,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 100,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 86.9815,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 46.41,
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "JPN apertura commerciale in calo from indagine Section 301, Section 122 tariffs, and global perturbazione del trasporto marittimo from Hormuz",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 159.33,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 2.24,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 53819.61,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11",
+        "note": "L'agente fonte ha segnalato un'anomalia ma supera i controlli di validazione"
+      },
+      "central_bank_rate": {
+        "value": 0.75,
+        "confidence": 0.88,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 518.2220000000017,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 907.014828843,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 3150.565062,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 67.18981885,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 3140.32787,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 3.171707650273224,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.87,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 8.48,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "full_democracy",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 96,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 71,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 66,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": 1.10550534725189,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": 0.951136231422424,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "JPN stabilita politica sostanzialmente stabile. Incertezza globale creates pressione di fondo but no acute triggers",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": 1.63126504421234,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": 1.46932590007782,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": 1.53553938865662,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": 1.3956606388092,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_name": {
+      "value": "Naruhito",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "Emperor",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_government_name": {
+      "value": "Sanae Takaichi",
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "next_national_election_date": {
+      "value": "2030-02",
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "JPN relationships with US deteriorating from indagine Section 301 targeting manifatturiero sectors",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}

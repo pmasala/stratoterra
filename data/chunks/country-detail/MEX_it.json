@@ -1,0 +1,860 @@
+{
+  "country_code": "MEX",
+  "country_name": "Messico",
+  "tier": 1,
+  "region": "latin_america",
+  "last_updated": "2026-03-15T00:00:00Z",
+  "run_id": "2026-W11",
+  "macroeconomic": {
+    "gdp_nominal_usd": {
+      "value": 1856365616165.94,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_real_growth_pct": {
+      "value": 1.42742769080466,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "MEX crescita del PIL facing new indagine Section 301 venti contrari from US. Trade uncertainty weighs on investment",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_per_capita_usd": {
+      "value": 14185.7812248529,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_cpi_pct": {
+      "value": 4.72225588452932,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "MEX inflazione sostanzialmente stabile with modest upward pressure from global prezzi del petrolio and perturbazione commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "unemployment_rate_pct": {
+      "value": 2.673,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "current_account_pct_gdp": {
+      "value": -0.901772757867301,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "MEX conto corrente sostanzialmente stabile. Global perturbazione commerciale creates mixed impacts depending on export composition",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "govt_debt_pct_gdp": {
+      "value": 45.0297603114434,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "MEX debito pubblico sostanzialmente stabile. No acute pressione fiscale but incertezza globale limits spazio fiscale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "fx_reserves_usd": {
+      "value": 232035392464.815,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gdp_growth_forecast_2026_pct": {
+      "value": 1.5,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "sovereign_credit_rating": {
+      "value": "S&P: BBB, Moody's: Baa2, Fitch: BBB-",
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 10.0,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10",
+      "trend": "stable",
+      "trend_confidence": 0.6,
+      "trend_reasoning": "Mexico tasso di riferimento sostanzialmente stabile. Banca centrale balancing preoccupazioni di crescita e inflazione amid incertezza globale.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "exchange_rate_vs_usd": {
+      "value": 17.8215,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "MEX currency sostanzialmente stabile vs USD. Global sentiment di avversione al rischio creates mild pressione al deprezzamento against safe-haven currencies",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "sovereign_bond_yield_10yr_pct": {
+      "value": 9.42,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "prefetched_fx",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.55,
+      "trend_reasoning": "Mexico rendimenti obbligazionari sostanzialmente stabile.",
+      "trend_updated": "2026-03-14T00:00:00Z"
+    },
+    "total_exports_usd": {
+      "value": 681348718684.406,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "total_imports_usd": {
+      "value": 703294122576.641,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "inflation_forecast_2026_pct": {
+      "value": 3.3,
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "fdi_inflows_usd": {
+      "value": 45467026968,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "MEX IDE che affrontano venti contrari from indagine Section 301 and incertezza sulla politica commerciale",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "gdp_ppp_usd": {
+      "value": 3426642116491.59,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_coefficient": {
+      "value": 43.5,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "fiscal_balance_pct_gdp": {
+      "value": -4.3,
+      "confidence": 0.85,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    }
+  },
+  "demographic": {
+    "population_total": {
+      "value": 130861007,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "population_growth_pct": {
+      "value": 0.860515443690537,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "life_expectancy": {
+      "value": 75.069,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "hdi": {
+      "value": 0.789,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "median_age": {
+      "value": 30.8,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "labor_force_participation_pct": {
+      "value": 61.609,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "literacy_rate_pct": {
+      "value": 95.9040914864886,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "health_expenditure_pct_gdp": {
+      "value": 5.50398684,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "urban_population_pct": {
+      "value": 79.7538805976118,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "electricity_access_pct": {
+      "value": 99.7,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "gini_index": {
+      "value": 43.5,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 81.1832,
+      "confidence": 0.9,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    }
+  },
+  "political": {},
+  "military": {
+    "military_spending_usd": {
+      "value": 8000000000,
+      "confidence": 0.7,
+      "last_updated": "2026-03-02T00:00:00Z",
+      "source": "SIPRI/estimates",
+      "run_id": "2026-W09"
+    },
+    "military_expenditure_usd": {
+      "value": 16500000000,
+      "confidence": 0.85,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "active_military_personnel": {
+      "value": 387000,
+      "confidence": 0.88,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "reserve_military_personnel": {
+      "value": 98653,
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "air_force": {
+      "total_aircraft": {
+        "value": 424,
+        "confidence": 0.85,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "nuclear": {
+      "status": {
+        "value": "non_nuclear",
+        "confidence": 0.98,
+        "last_updated": "2026-03-02T12:05:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W10"
+      }
+    },
+    "military_expenditure_pct_gdp": {
+      "value": 0.89,
+      "confidence": 0.7,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "computed_from_usd_and_gdp",
+      "run_id": "2026-W11"
+    },
+    "military_expenditure_trend": {
+      "value": "stable",
+      "confidence": 0.5,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "default_estimate",
+      "run_id": "2026-W11"
+    }
+  },
+  "trade": {},
+  "derived": {
+    "resource_self_sufficiency_index": {
+      "value": 0.65,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di min(produzione/consumo, 1.0) per energia, alimentari, acqua, minerali"
+    },
+    "energy_independence_index": {
+      "value": 0.7,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "produzione_energetica_interna / consumo_energetico_interno, limitato a 1.0"
+    },
+    "supply_chain_chokepoint_exposure": {
+      "value": 0.209,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.6 * dipendenza_punti_strozzatura_marittimi + 0.4 * apertura_commerciale_normalizzata; elevato a causa della perturbazione attiva di Hormuz/Suez"
+    },
+    "composite_national_power_index": {
+      "value": 47.8,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.35*economico + 0.25*militare + 0.20*tecnologia + 0.10*diplomatico + 0.10*soft_power, normalizzato 0-100",
+      "previous_value": 56.8
+    },
+    "political_risk_premium_bps": {
+      "value": 241,
+      "confidence": 0.75,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Spread implicito dal rating sovrano + aggiustamenti per instabilita, conflitto, sanzioni, autocrazia"
+    },
+    "market_accessibility_score": {
+      "value": 0.65,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "Media di apertura_conto_capitale, capitalizzazione_mercato/200, indice_sviluppo_finanziario, facilita_business/100"
+    },
+    "overall_investment_risk_score": {
+      "value": 0.243,
+      "confidence": 0.7,
+      "last_updated": "2026-03-16T08:38:48Z",
+      "source": "agent_11_derived",
+      "run_id": "2026-W12",
+      "methodology": "0.30*rischio_politico + 0.30*rischio_economico + 0.20*rischio_mercati_finanziari + 0.20*rischio_sicurezza",
+      "trend_confidence": 0.55,
+      "trend": "stable",
+      "trend_updated": "2026-03-15T00:00:00Z",
+      "trend_reasoning": "MEX rischio d'investimento sostanzialmente stabile. Incertezza globale elevated but nessun fattore scatenante acuto specifico del paese"
+    },
+    "trade_openness_trend": {
+      "value": "stable",
+      "confidence": 0.6,
+      "reasoning": "Mexico apertura commerciale sostanzialmente stabile. Global perturbazione commerciale from Hormuz colpisce principalmente le rotte dipendenti dal Golfo. Alcuni ridirezionamenti commerciali avvantaggiano rotte alternative.",
+      "last_updated": "2026-03-10T12:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "political_stability_trend": {
+      "value": "stable",
+      "confidence": 0.55,
+      "reasoning": "Mexico stabilita politica sostanzialmente invariata. No major domestic political disruptions questa settimana.",
+      "last_updated": "2026-03-14T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    },
+    "top_partner_relationship_health": {
+      "value": "decrease",
+      "confidence": 0.62,
+      "reasoning": "MEX relationships with US deteriorating from indagine Section 301 targeting manifatturiero sectors",
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "agent_10_trend_estimator",
+      "run_id": "2026-W11"
+    }
+  },
+  "metadata": {
+    "active_flags": [
+      {
+        "factor": "macroeconomic.central_bank_rate_pct",
+        "reason": "Variazione assoluta elevata: 3.00 (soglia: 1.5)",
+        "previous_value": 7.0,
+        "new_value": 10.0,
+        "flagged_at": "2026-03-02T12:05:00Z",
+        "run_id": "2026-W10"
+      },
+      {
+        "factor_path": "economy.macroeconomic.public_debt_pct_gdp",
+        "value": 45.0297603114434,
+        "reason": "Variazione assoluta 13.8702 superiore a 3× typical (2.0) = 6.0; Fonte alternativa (IMF WEO) discorde: 58.9 vs primary 45.0297603114434 (23.5% diff); Contesto evento: MEX ha trigger di eventi attivi",
+        "flagged_at": "2026-03-10T00:00:00Z",
+        "run_id": "2026-W11"
+      }
+    ],
+    "update_count": 136,
+    "first_loaded": "2026-03-02T00:00:00Z",
+    "data_quality": "HIGH"
+  },
+  "narrative": {
+    "ai_generated": true,
+    "generated_at": "2026-03-15T00:00:00Z",
+    "run_id": "2026-W11",
+    "executive_summary": "Mexico records crescita del PIL of 1.4% (stable) with inflazione al 4.7% (stable). Investment risk stands at 0.243. Key signal: Latin American markets unsettled by US policy shifts and trade tensions: Growing unease is rippling through Latin American financial markets as investors grapple with diminishing US support for the... Il rischio d'investimento rimane contenuto a 0.243.",
+    "key_changes_this_week": [
+      "Latin American markets unsettled by US policy shifts and trade tensions: Growing unease is rippling through Latin American financial markets as investors grapple with diminishing...",
+      "USMCA renewal uncertainty weighs on Mexico's economic outlook: Mexico's economic outlook is clouded by uncertainty over whether Washington will renew, revise, or scrap the USMCA...",
+      "USMCA formal review talks with US set to begin March 16; review determines if treaty extended to 2042 or enters annual renegotiation; 78.5% of Mexican economic sectors support...",
+      "US tariff policy in flux: IEEPA struck down, Section 122 challenged: Supreme Court ruled IEEPA cannot authorize tariffs (Feb 20). Trump imposing 10% global tariff under Section..."
+    ],
+    "outlook": "Mexico's a breve termine trajectory shows crescita del PIL al 1.4% (stable) with moderate rischio d'investimento. The global energy shock and US trade escalation create venti contrari for export-oriented sectors. Stabilita politica is stable, which will shape policy response effectiveness.",
+    "investor_implications": "Mexico presents moderate rischio d'investimento at 0.243 with 241 bps political premio per il rischio. Market accessibility at 0.650. Selective opportunities exist across asset classes.",
+    "data_quality_note": "La qualita dei dati e elevata con 136 dati aggiornati in questa esecuzione.  Fattori segnalati: macroeconomic.central_bank_rate_pct, economy.macroeconomic.public_debt_pct_gdp."
+  },
+  "code": "MEX",
+  "name": "Messico",
+  "executive_summary": "Mexico faces 25% US tariffs effective March 4, the most significant trade policy shock since NAFTA renegotiation. Auto imports exempted until April; USMCA coverage provides partial shield. GDP trend growth from 1.0% to 1.5% remains positive. Impennata del prezzo del petrolio benefits Pemex and fiscal revenue. Judicial reform continues to erode rule-of-law perceptions among foreign investors.",
+  "key_changes": [
+    "25% US tariffs effective March 4; auto/USMCA exemptions until April (major)",
+    "Impennata del prezzo del petrolio benefits Pemex posizione fiscale",
+    "GDP trend growth (1.0% to 1.5%) showing resilienza",
+    "Judicial reform continues undermining investment climate",
+    "Peso sotto pressione from tariff uncertainty"
+  ],
+  "outlook": "Mexico's a breve termine trajectory depends on tariff duration and USMCA exemption scope. Oil revenue windfall provides fiscal buffer. The April deadline for auto/USMCA exemptions creates a policy cliff. Judicial reform impact on FDI is a a medio termine structural concern. Nearshoring thesis faces test from tariff uncertainty.",
+  "investor_implications": "MXN sotto pressione -- hedge recommended for USD-reporting investors. Pemex benefits from oil surge but structural challenges remain. Nearshoring beneficiaries (industrial REITs, logistics) face tariff uncertainty. Mexican government bonds may rally on Banxico easing if la crescita si indebolisce.",
+  "active_alerts": [
+    {
+      "severity": "warning",
+      "title": "Mexico faces 25% US tariffs and judicial reform undermining investment",
+      "description": "25% US tariffs effective March 4 with auto imports exempted until April. USMCA coverage exempted until April. GDP trend growth (1% to 1.5%) positive. Impennata del prezzo del petrolio benefits Pemex. Peso sotto pressione. Le condizioni persistono."
+    }
+  ],
+  "layers": {
+    "endowments": {
+      "population": 130861007,
+      "population_growth_pct": 0.861,
+      "life_expectancy": 75.069,
+      "population_total": 130861007,
+      "hdi": 0.789,
+      "median_age": 30.8
+    },
+    "institutions": {
+      "political_stability": {},
+      "under_international_sanctions": false,
+      "democracy_index": 5.32,
+      "regime_type": "hybrid_regime",
+      "freedom_house_score": 59,
+      "freedom_house_status": "partly_free",
+      "corruption_perception_index": 27,
+      "press_freedom_index_rank": 124,
+      "wgi_voice_accountability": -0.12,
+      "wgi_political_stability": -0.63,
+      "wgi_government_effectiveness": -0.2,
+      "wgi_regulatory_quality": -0.17,
+      "wgi_rule_of_law": -0.81,
+      "wgi_control_of_corruption": -1.02,
+      "fragile_states_index": 69.0,
+      "head_of_state_name": "Claudia Sheinbaum",
+      "head_of_state_title": "President",
+      "next_national_election_date": "2030-06"
+    },
+    "economy": {
+      "gdp_nominal_usd": 1856365616165.94,
+      "gdp_real_growth_pct": 1,
+      "gdp_per_capita_usd": 14185.7812248529,
+      "inflation_cpi_pct": 3.9,
+      "unemployment_rate_pct": 2.9,
+      "current_account_pct_gdp": -0.9,
+      "govt_debt_pct_gdp": 58.9,
+      "fx_reserves_usd": 232035392464.815,
+      "sovereign_credit_rating": "S&P: BBB, Moody's: Baa2, Fitch: BBB-",
+      "central_bank_policy_rate_pct": 10.0,
+      "total_exports_usd": 681313488945,
+      "total_imports_usd": 708940310907,
+      "gdp_growth_forecast_2026_pct": 1.5,
+      "inflation_forecast_2026_pct": 3.3,
+      "exchange_rate_vs_usd": 17.67,
+      "sovereign_bond_yield_10yr_pct": 8.76,
+      "top_export_partners": [
+        {
+          "country": "USA",
+          "pct_of_total": 80.5
+        },
+        {
+          "country": "CAN",
+          "pct_of_total": 2.8
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 1.8
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 1.2
+        },
+        {
+          "country": "BRA",
+          "pct_of_total": 1.0
+        }
+      ],
+      "top_import_partners": [
+        {
+          "country": "USA",
+          "pct_of_total": 43.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 19.8
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 3.8
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 3.5
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 3.2
+        }
+      ]
+    },
+    "military": {
+      "military_spending_usd": 8000000000,
+      "military_expenditure_usd": 16500000000,
+      "active_military_personnel": 387000,
+      "reserve_military_personnel": 98653
+    },
+    "relations": {},
+    "derived": {
+      "resource_self_sufficiency_index": 0.65,
+      "energy_independence_index": 0.7,
+      "supply_chain_chokepoint_exposure": 0.209,
+      "composite_national_power_index": 47.8,
+      "political_risk_premium_bps": 241,
+      "market_accessibility_score": 0.65,
+      "overall_investment_risk_score": 0.243
+    }
+  },
+  "economy": {
+    "top_export_partners": {
+      "value": [
+        {
+          "country": "USA",
+          "pct_of_total": 80.5
+        },
+        {
+          "country": "CAN",
+          "pct_of_total": 2.8
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 1.8
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 1.2
+        },
+        {
+          "country": "BRA",
+          "pct_of_total": 1.0
+        }
+      ],
+      "confidence": 0.82,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "top_import_partners": {
+      "value": [
+        {
+          "country": "USA",
+          "pct_of_total": 43.5
+        },
+        {
+          "country": "CHN",
+          "pct_of_total": 19.8
+        },
+        {
+          "country": "DEU",
+          "pct_of_total": 3.8
+        },
+        {
+          "country": "JPN",
+          "pct_of_total": 3.5
+        },
+        {
+          "country": "KOR",
+          "pct_of_total": 3.2
+        }
+      ],
+      "confidence": 0.8,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "electricity_access_pct": {
+      "value": 99.7,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "internet_users_pct": {
+      "value": 81.1832,
+      "confidence": 0.95,
+      "last_updated": "2026-03-10T00:00:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W11"
+    },
+    "trade_openness_pct": {
+      "value": 74.59,
+      "trend": "decrease",
+      "trend_confidence": 0.65,
+      "trend_reasoning": "MEX apertura commerciale in calo from indagine Section 301, Section 122 tariffs, and global perturbazione del trasporto marittimo from Hormuz",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "financial": {
+      "exchange_rate_vs_usd": {
+        "value": 17.8215,
+        "confidence": 0.95,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "government_bond_yield_10y": {
+        "value": 9.21,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      },
+      "equity_index_level": {
+        "value": 65648.91,
+        "confidence": 0.92,
+        "last_updated": "2026-03-14T00:00:00Z",
+        "source": "agent_pipeline",
+        "run_id": "2026-W11"
+      }
+    },
+    "energy_coal_production_mt": {
+      "value": 5692.771999999973,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_electricity_generation_bkwh": {
+      "value": 386.833963495,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_consumption_bcf": {
+      "value": 3453.647179,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_natgas_production_bcf": {
+      "value": 1104.771,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_consumption_kbpd": {
+      "value": 1850.456285,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    },
+    "energy_oil_production_kbpd": {
+      "value": 1841.777868852459,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "eia",
+      "run_id": "2026-W11"
+    }
+  },
+  "institutions": {
+    "under_international_sanctions": {
+      "value": false,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "WebSearch/news_events",
+      "run_id": "2026-W11"
+    },
+    "democracy_index": {
+      "value": 5.32,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "regime_type": {
+      "value": "hybrid_regime",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_score": {
+      "value": 59,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "freedom_house_status": {
+      "value": "partly_free",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "corruption_perception_index": {
+      "value": 27,
+      "confidence": 0.93,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "press_freedom_index_rank": {
+      "value": 124,
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "wgi_voice_accountability": {
+      "value": -0.115086063742638,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_political_stability": {
+      "value": -0.630761027336121,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11",
+      "trend": "stable",
+      "trend_confidence": 0.58,
+      "trend_reasoning": "MEX stabilita politica sostanzialmente stabile. Incertezza globale creates pressione di fondo but no acute triggers",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    },
+    "wgi_government_effectiveness": {
+      "value": -0.198361441493034,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_regulatory_quality": {
+      "value": -0.171988308429718,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_rule_of_law": {
+      "value": -0.806393921375275,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "wgi_control_of_corruption": {
+      "value": -1.02057874202728,
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "worldbank",
+      "run_id": "2026-W11"
+    },
+    "fragile_states_index": {
+      "value": 69.0,
+      "confidence": 0.9,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "head_of_state_name": {
+      "value": "Claudia Sheinbaum",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    },
+    "head_of_state_title": {
+      "value": "President",
+      "confidence": 0.95,
+      "last_updated": "2026-03-02T12:05:00Z",
+      "source": "agent_pipeline",
+      "run_id": "2026-W10"
+    },
+    "next_national_election_date": {
+      "value": "2027",
+      "confidence": 0.85,
+      "last_updated": "2026-03-15T00:00:00Z",
+      "source": "web_search",
+      "run_id": "2026-W11"
+    }
+  },
+  "relations": {
+    "top_partner_relationship_health": {
+      "trend": "decrease",
+      "trend_confidence": 0.62,
+      "trend_reasoning": "MEX relationships with US deteriorating from indagine Section 301 targeting manifatturiero sectors",
+      "trend_updated": "2026-03-15T00:00:00Z"
+    }
+  }
+}
